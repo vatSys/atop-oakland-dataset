@@ -1,5 +1,5 @@
-# vatsys-australia-dataset
-Default profile dataset for vatSys
+# atop-oakland-dataset
+ATOP Oakland profile dataset for vatSys
 
 **`Profile.xml` must be updated for each release**
 
