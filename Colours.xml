@@ -2,10 +2,10 @@
 <Colours xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <Colour id="GenericText">
 		<Use>Window Text</Use>
-		<Name>DarkRed</Name>
-		<R>96</R>
-		<G>0</G>
-		<B>0</B>
+		<Name>Black</Name>
+		<R>104</R>
+		<G>165</G>
+		<B>165</B>
 	</Colour>
   <Colour id="InteractiveText">
 		<Use>InteractiveText</Use>
@@ -16,10 +16,10 @@
 	</Colour>
   <Colour id="StripText">
 		<Use>Strip Text</Use>
-		<Name>OffWhite</Name>
-		<R>220</R>
-		<G>220</G>
-		<B>220</B>
+		<Name>Black</Name>
+		<R>0</R>
+		<G>0</G>
+		<B>0</B>
 	</Colour>
 	<Colour id="PopupASDWindowBorderFocused">
 		<Use>Popup ASD Window borders when focused</Use>
@@ -30,10 +30,10 @@
 	</Colour>
   <Colour id="StripBackground">
 		<Use>Strip Backgrounds</Use>
-		<Name>GreenGrey</Name>
-		<R>130</R>
-		<G>146</G>
-		<B>146</B>
+		<Name>LightGrey</Name>
+		<R>211</R>
+		<G>211</G>
+		<B>211</B>
 	</Colour>
   <Colour id="WindowBackgound">
 		<Use>Window Backgrounds</Use>
@@ -86,17 +86,17 @@
   </Colour>
   <Colour id="Emergency">
 		<Use>Emergency Indications</Use>
-		<Name>DarkRed</Name>
-		<R>209</R>
-		<G>46</G>
-		<B>46</B>
+		<Name>Red</Name>
+		<R>255</R>
+		<G>0</G>
+		<B>0</B>
 	</Colour>
   <Colour id="Warning">
 		<Use>Warning Indications</Use>
-		<Name>BrightYellow</Name>
-		<R>255</R>
-		<G>255</G>
-		<B>0</B>
+		<Name>Orange</Name>
+		<R>139</R>
+		<G>101</G>
+		<B>8</B>
 	</Colour>
   <Colour id="VSCSBackground">
     <Use>VSCS Background</Use>
@@ -156,13 +156,13 @@
   </Colour>
   <Colour id="VSCSButtonDepressed">
     <Use>VSCS Generic Buttons</Use>
-    <Name>DarkGrey</Name>
+    <Name>White</Name>
 <!--    <R>90</R>
     <G>90</G>
     <B>90</B>-->
-	<R>130</R>
-	<G>146</G>
-	<B>146</B>
+	<R>255</R>
+	<G>255</G>
+	<B>255</B>
   </Colour>
   <Colour id="VSCSButtonSelected">
     <Use>VSCS Buttons that are selected / highlighted</Use>
@@ -180,10 +180,10 @@
 	</Colour>
   <Colour id="ASDBackground">
 		<Use>ASD Backgrounds</Use>
-		<Name>MidGrey</Name>
-		<R>127</R>
-		<G>127</G>
-		<B>127</B>
+		<Name>Black</Name>
+		<R>0</R>
+		<G>0</G>
+		<B>0</B>
 	</Colour>
   <Colour id="CPDLCSendButton">
 		<Use>CPDLC Hot-Send Button</Use>
@@ -201,24 +201,24 @@
   </Colour>
 	<Colour id="Jurisdiction">
 		<Use>Jurisdiction</Use>
-		<Name>LightGreen</Name>
-		<R>200</R>
+		<Name>White</Name>
+		<R>255</R>
 		<G>255</G>
-		<B>200</B>
+		<B>255</B>
 	</Colour>
   <Colour id="GhostJurisdiction">
     <Use>GhostJurisdiction</Use>
-    <Name>LightYellow</Name>
-    <R>250</R>
-    <G>255</G>
-    <B>200</B>
+    <Name>Yellow</Name>
+    <R>237</R>
+    <G>230</G>
+    <B>178</B>
   </Colour>
   <Colour id="PostJurisdiction">
 		<Use>PostJurisdiction</Use>
-		<Name>Black</Name>
-		<R>0</R>
-		<G>0</G>
-		<B>0</B>
+		<Name>White</Name>
+		<R>255</R>
+		<G>255</G>
+		<B>255</B>
 	</Colour>
   <Colour id="JurisdictionIQL">
 		<Use>JurisdictionIQL</Use>
@@ -229,38 +229,38 @@
 	</Colour>
   <Colour id="Handover">
 		<Use>HandOver</Use>
-		<Name>Salmon</Name>
+		<Name>LightYellow</Name>
 		<R>255</R>
 		<G>205</G>
 		<B>105</B>
 	</Colour>
   <Colour id="Announced">
 		<Use>Announced</Use>
-		<Name>Blue</Name>
-		<R>0</R>
-		<G>0</G>
-		<B>188</B>
+		<Name>LightBlue</Name>
+		<R>173</R>
+		<G>216</G>
+		<B>255</B>
 	</Colour>
   <Colour id="NonJurisdictionIQL">
 		<Use>NonJurisdictionIQL</Use>
-		<Name>White</Name>
-		<R>255</R>
-		<G>255</G>
+		<Name>LightBlue</Name>
+		<R>173</R>
+		<G>216</G>
 		<B>255</B>
 	</Colour>
   <Colour id="NonJurisdiction">
 		<Use>Non Jurisdiction Tracks and Strips</Use>
-		<Name>Black</Name>
-		<R>0</R>
-		<G>0</G>
-		<B>0</B>
+		<Name>LightBlue</Name>
+		<R>173</R>
+		<G>216</G>
+		<B>255</B>
 	</Colour>
   <Colour id="NonJurisdictionLabel">
 		<Use>Non Jurisdiction Labels</Use>
-		<Name>VeryDarkGrey</Name>
-		<R>55</R>
-		<G>55</G>
-		<B>55</B>
+		<Name>LightBlue</Name>
+		<R>173</R>
+		<G>216</G>
+		<B>255</B>
 	</Colour>
   <Colour id="CFLHighlight">
 		<Use>New CFL Selection</Use>
@@ -271,24 +271,24 @@
 	</Colour>
   <Colour id="IdentFlash">
 		<Use>SPI</Use>
-		<Name>CyanBlue</Name>
-		<R>0</R>
+		<Name>White</Name>
+		<R>255</R>
 		<G>255</G>
 		<B>255</B>
 	</Colour>
   <Colour id="Route">
     <Use>Graphic Route</Use>
-    <Name>Lavender</Name>
-    <R>196</R>
-    <G>171</G>
-    <B>196</B>
+    <Name>Green</Name>
+    <R>0</R>
+    <G>255</G>
+    <B>0</B>
   </Colour>
   <Colour id="StaticTools">
 		<Use>BRL,PETO,NonRVSM,LATC,ETO</Use>
-		<Name>PaleOrange</Name>
+		<Name>Orange</Name>
 		<R>255</R>
-		<G>230</G>
-		<B>180</B>
+		<G>255</G>
+		<B>0</B>
 	</Colour>
   <Colour id="PostJurisdictionFlash">
 		<Use>Post Jurisdiction Transfer Flashing</Use>
@@ -334,32 +334,53 @@
 	</Colour>
   <Colour id="UserMap">
     <Use>Custom Maps and Text</Use>
-    <Name>Yellow</Name>
-    <R>235</R>
-    <G>235</G>
-    <B>0</B>
+    <Name>Orange</Name>
+		<R>139</R>
+		<G>101</G>
+		<B>8</B>
   </Colour>
+  <Colour id="Custom">
+	<Use>Special colour for my very special map</Use>
+	<Name>SkyBlue2</Name>
+		<R>94</R>
+		<G>144</G>
+		<B>179</B>
+  </Colour> 
+  <Colour id="Custom">
+		<Use>Special colour for my very special map</Use>
+		<Name>SpringGreen</Name>
+		<R>0</R>
+		<G>255</G>
+		<B>127</B>
+  </Colour>  
+  <Colour id="Custom">
+		<Use>Special colour for my very special map</Use>
+		<Name>Green</Name>
+		<R>59</R>
+		<G>250</G>
+		<B>52</B>
+  </Colour>  
   <Colour id="PrimaryMap">
 		<Use>System Maps</Use>
-		<Name>DarkGrey</Name>
-		<R>90</R>
-		<G>90</G>
-		<B>90</B>
+		<Name>YellowGreen</Name>
+		<R>102</R>
+		<G>205</G>
+		<B>0</B>
 	</Colour>
   <Colour id="Infill">
 		<Use>Filled Area Map</Use>
-		<Name>MidGrey</Name>
-		<R>133</R>
-		<G>133</G>
-		<B>133</B>
+		<Name>Orange</Name>
+		<R>139</R>
+		<G>101</G>
+		<B>8</B>
 	</Colour>
   <Colour id="SecondaryMap">
 		<Use>Alternative System Map</Use>
-		<Name>BlueGrey</Name>
-		<R>145</R>
-		<G>178</G>
-		<B>177</B>
-	</Colour>
+		<Name>Violet</Name>
+		<R>238</R>
+		<G>130</G>
+		<B>238</B>
+	</Colour>	
   <Colour id="GroundRunway">
     <Use>A-SMGCS Runway</Use>
     <Name>DarkDarkGrey</Name>
@@ -388,13 +409,6 @@
     <G>90</G>
     <B>90</B>
   </Colour>
-  <Colour id="GroundOther">
-    <Use>A-SMGCS Information / Other</Use>
-    <Name>Cream</Name>
-    <R>150</R>
-    <G>150</G>
-    <B>150</B>
-    </Colour>
 	<Colour id="DynamicTools">
 		<Use>Dynamic Tool In Use</Use>
 		<Name>OffWhite</Name>

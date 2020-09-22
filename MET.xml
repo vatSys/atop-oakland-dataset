@@ -7,11 +7,11 @@
     <NOTAM url="http://api.vateud.net/notams/%ICAO.xml" xmlDataTag="raw" />
   </ProductTypes>
   <Browsers><!--bomw0007-->
-	<AreaQNH url="http://reg.bom.gov.au/products/reg/QNH.shtml#aus" Username="bomw0007" Password="aviation" />
+	<AreaQNH url="https://www.weather.gov/zoa/#" />
 	<WXRadars url="http://www.bom.gov.au/australia/radar/" />
-    <BOM url="http://www.bom.gov.au/aviation/" />
+    <BOM url="https://www.weather.gov/zoa/#" />
     <NAIPS url="https://www.airservicesaustralia.com/naips/Account/LogOn" />
-    <AIP url="https://www.airservicesaustralia.com/aip/aip.asp" />
+    <AIP url="https://aeronav.faa.gov/Upload_313-d/supplements/CS_PAC_20200716.pdf" />
     <ATCAssist url="http://atc.vatpac.org" />
   </Browsers>
 </MET>

@@ -2,12 +2,17 @@
 <TrackSymbols>
 	<TrackSymbol Type="Primary">
 		<PathGeometry>
-			<Figure Start="-6,0" FigureBegin="Hollow" FigureEnd="Open">
-				<Line>6,0</Line>
+			<Figure Start="0,-9" FigureBegin="Hollow" FigureEnd="Open">
+				<Line>-9,5</Line>
+				<Line>9,5</Line>
+				<Line>0,-9</Line>
 			</Figure>
-			<Figure Start="0,6" FigureBegin="Hollow" FigureEnd="Open">
-				<Line>0,-6</Line>
+			<Figure Start="-4,-4" FigureBegin="Hollow" FigureEnd="Open">
+				<Line>5,5</Line>
 			</Figure>
+			<Figure Start="4,-4" FigureBegin="Hollow" FigureEnd="Open">
+				<Line>-5,5</Line>
+			</Figure>			
 		</PathGeometry>
 	</TrackSymbol>
 	
@@ -101,52 +106,79 @@
 		</PathGeometry>
 	</TrackSymbol>
 	
-	<!-- SSR Circle -->
+	<!-- SSR Triangle -->
 	<TrackSymbol Type="ModeA">
-		<EllipseGeometry Center="0,0" RadiusX="6.5" RadiusY="6.5" />
+		<PathGeometry>
+			<Figure Start="0,-9" FigureBegin="Hollow" FigureEnd="Open">
+				<Line>-9,5</Line>
+				<Line>9,5</Line>
+				<Line>0,-9</Line>
+			</Figure>
+		</PathGeometry>			
 	</TrackSymbol>
 	<TrackSymbol Type="ModeS">
-		<EllipseGeometry Center="0,0" RadiusX="6.5" RadiusY="6.5" />
-	</TrackSymbol>
-	
-	<!-- ADSB Prop -->
-	<TrackSymbol Type="ADSB">
 		<PathGeometry>
-			<Figure Start="0,-4" FigureBegin="Hollow" FigureEnd="Closed">
-				<Bezier>
-					<Point1>0,-4</Point1>
-					<Point2>12,-12</Point2>
-					<Point3>4,0</Point3>
-				</Bezier>
-				<Bezier>
-					<Point1>4, 0</Point1>
-					<Point2>12, 12</Point2>
-					<Point3>0, 4</Point3>
-				</Bezier>
-				<Bezier>
-					<Point1>0, 4</Point1>
-					<Point2>-12, 12</Point2>
-					<Point3>-4, 0</Point3>
-				</Bezier>
-				<Bezier>
-					<Point1>-4, 0</Point1>
-					<Point2>-12, -12</Point2>
-					<Point3>0, -4</Point3>
-				</Bezier>
+			<Figure Start="0,-9" FigureBegin="Hollow" FigureEnd="Open">
+				<Line>-9,5</Line>
+				<Line>9,5</Line>
+				<Line>0,-9</Line>
 			</Figure>
 		</PathGeometry>
 	</TrackSymbol>
 	
-	<!--Flight plan square-->
+	<!-- ADSB Star in Diamond -->
+	<TrackSymbol Type="ADSB">
+		<PathGeometry>
+			<Figure Start="0,-8" FigureBegin="Filled" FigureEnd="Closed">
+				<Line>-3,1</Line>
+				<Line>-13,2</Line>
+				<Line>-2,5</Line>
+				<Line>0,13</Line>
+				<Line>3,4</Line>
+				<Line>13,2</Line>
+				<Line>3,-1</Line>
+				<Line>0,-8</Line>				
+			</Figure>
+			<Figure Start="-15,0" FigureBegin="Hollow" FigureEnd="Open">
+				<Line>0,15</Line>
+				<Line>15,0</Line>
+				<Line>0,-12</Line>
+				<Line>-15,0</Line>				
+			</Figure>			
+		</PathGeometry>
+	</TrackSymbol>
+	
+	<!--Flight plan hollow plane-->
 	<TrackSymbol Type="FlightPlan">
-		<RectangleGeometry TopLeft="-6,-6" BottomRight="6,6" />
+		<PathGeometry>
+			<Figure Start="0,-10" FigureBegin="Filled" FigureEnd="Closed">
+				<Line>-2,-7</Line>
+				<Line>-2,-2</Line>
+				<Line>-12,4</Line>
+				<Line>-12,7</Line>
+				<Line>-2,4</Line>
+				<Line>-2,9</Line>
+				<Line>-6,11</Line>
+				<Line>-6,14</Line>
+				<Line>0,12</Line>
+				<Line>6,14</Line>
+				<Line>6,11</Line>
+				<Line>2,9</Line>
+				<Line>2,4</Line>
+				<Line>12,7</Line>
+				<Line>12,4</Line>
+				<Line>2,-2</Line>	
+				<Line>2,-7</Line>
+				<Line>0,-10</Line>				
+			</Figure>	
+		</PathGeometry>
 	</TrackSymbol>
 	
 	<TrackSymbol Type="Cancelled">
 		<EllipseGeometry Center="0,0" RadiusX="3" RadiusY="3" />
 	</TrackSymbol>
 	<TrackSymbol Type="HistoryMarker" StrokeWidth="0">
-		<EllipseGeometry Center="0,0" RadiusX="2" RadiusY="2" />
+		<EllipseGeometry Center="0,0" RadiusX="1" RadiusY="1" />
 	</TrackSymbol>
 	<TrackSymbol Type="VelocityMarker" StrokeWidth="0">
 		<EllipseGeometry Center="0,0" RadiusX="2" RadiusY="2" />
@@ -165,20 +197,20 @@
 		</PathGeometry>
 	</TrackSymbol>
 
-	<!-- Radar Coast Crosshair-->	
+	<!-- Radar Coast Hashtag-->	
 	<TrackSymbol Type="CoastRadar" StrokeWidth="3">
 		<PathGeometry>
-			<Figure Start="-3,0" FigureBegin="Hollow" FigureEnd="Open">
-				<Line>-7, 0</Line>
+			<Figure Start="-2,-5" FigureBegin="Hollow" FigureEnd="Open">
+				<Line>-3,6</Line>
 			</Figure>
-			<Figure Start="0,-3" FigureBegin="Hollow" FigureEnd="Open">
-				<Line>0, -7</Line>
+			<Figure Start="2,-5" FigureBegin="Hollow" FigureEnd="Open">
+				<Line>1,6</Line>
 			</Figure>
-			<Figure Start="0,3" FigureBegin="Hollow" FigureEnd="Open">
-				<Line>7, 0</Line>
-			</Figure>
-			<Figure Start="0,3" FigureBegin="Hollow" FigureEnd="Open">
-				<Line>0, 7</Line>
+			<Figure Start="-5,-2" FigureBegin="Hollow" FigureEnd="Open">
+				<Line>5,-2</Line>
+			</Figure>	
+			<Figure Start="-5,2" FigureBegin="Hollow" FigureEnd="Open">
+				<Line>5, 2</Line>
 			</Figure>
 		</PathGeometry>
 	</TrackSymbol>		
@@ -186,22 +218,22 @@
 	<!-- ADSB Coast Cross-->	
 	<TrackSymbol Type="CoastADSB" StrokeWidth="3">
 		<PathGeometry>
-			<Figure Start="-3,-3" FigureBegin="Hollow" FigureEnd="Open">
-				<Line>-7, -7</Line>
+			<Figure Start="-2,-5" FigureBegin="Hollow" FigureEnd="Open">
+				<Line>-3,6</Line>
 			</Figure>
-			<Figure Start="3,-3" FigureBegin="Hollow" FigureEnd="Open">
-				<Line>7, -7</Line>
+			<Figure Start="2,-5" FigureBegin="Hollow" FigureEnd="Open">
+				<Line>1,6</Line>
 			</Figure>
-			<Figure Start="3,3" FigureBegin="Hollow" FigureEnd="Open">
-				<Line>7, 7</Line>
-			</Figure>
-			<Figure Start="-3,3" FigureBegin="Hollow" FigureEnd="Open">
-				<Line>-7, 7</Line>
+			<Figure Start="-5,-2" FigureBegin="Hollow" FigureEnd="Open">
+				<Line>5,-2</Line>
+			</Figure>	
+			<Figure Start="-5,2" FigureBegin="Hollow" FigureEnd="Open">
+				<Line>5, 2</Line>
 			</Figure>
 		</PathGeometry>
 	</TrackSymbol>		
 	
-	<!-- Selection Octagon -->
+	<!-- Selection Octagon N/A -->
 	<TrackSymbol Type="Selection">
 		<PathGeometry>
 			<Figure Start="11,-5" FigureBegin="Hollow" FigureEnd="Closed">
