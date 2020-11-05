@@ -1,5 +1,27 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Positions xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Position Name="ZAK" Type="ASD" DefaultCenter="+270000.000-1750000.000" DefaultRange="6000">
+    <Sectors>
+      <Sector Name="ZAK" />
+    </Sectors>
+    <Maps>
+      <Map Name="FIR" />
+      <Map Name="Rts" />
+      <Map Name="Pts" />
+    </Maps>
+    <Strips Mode="State" Sort="Time">
+      <Window Type="State" State="Jurisdiction" Visible="false" />
+      <Window Type="State" State="Announced" Visible="false" />
+      <Window Type="State" State="Preactive" Visible="false" />
+    </Strips>
+    <CFL QuickLevel="999000" />
+    <ArrivalLists>
+      <Airport Name="KSFO" />
+    </ArrivalLists>
+    <ControllerInfo>
+      <Line>San Francisco Radio</Line>
+    </ControllerInfo>
+  </Position>  
   <Position Name="CWP11" Type="ASD" DefaultCenter="+270000.000-1750000.000" DefaultRange="6000">
     <Sectors/>
     <Maps>
