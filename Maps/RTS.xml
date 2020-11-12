@@ -16,12 +16,12 @@
 	<Line Name="A584">TBU.A584.NI</Line>
 	<Line Name="A590">HAMND.A590.JOM</Line>
 	<Line Name="A597">AA.A597.KEC</Line>
-	<Line Name="A598">MAJ.A598.BN</Line>
+	<Line Name="A598">MAJ.A598.BIXAD</Line>
 	<Line Name="B200">AKLOM.B200.FICKY</Line>
 	<Line Name="B220">KELPI.B220.PY</Line>
 	<Line Name="B326">HN.B326.CHOKO</Line>
 	<Line Name="B333">SALAG.B333.PY</Line>
-	<Line Name="B451">DOLSI.B451.KADBO</Line>
+	<!--Line Name="B451">DOLSI.B451.KADBO</Line-->
 	<Line Name="B452">NN.B452.TONIK</Line>
 	<Line Name="B453">MDO.B453.BOXER</Line>
 	<Line Name="B454">TUT.B454.TONYS</Line>
@@ -72,15 +72,14 @@
 	<Line Name="J123">CJAYY.J123.BRW</Line>
 	<Line Name="J125">ODK.J125.ENN</Line>
 	<Line Name="J133">GAL.J133.SIT</Line>
-	<Line Name="J143">PYE.J143.GEG</Line>
 	<Line Name="J179">MDO.J179.ENM</Line>
 	<Line Name="J188">BET.J188.SQA</Line>
 	<Line Name="J195">ANN.J195.BKA</Line>
-	<!--Line Name="J501">RZS.J501.BET</Line-->
-	<!--Line Name="J502">SEA.J502.CFQWB</Line-->	
-	<Line Name="J502">AYZOL.J502.OTZ</Line>
-	<Line Name="J511">DLG.J511.YXY</Line>
-	<Line Name="J523">BCE.J523.ANN</Line>
+	<Line Name="J501">RZS.J501.BET</Line>
+	<Line Name="J502">SEA.J502.OTZ</Line>	
+	<!--Line Name="J502">AYZOL.J502.OTZ</Line-->
+	<Line Name="J511">DLG.J511.TOVAD</Line>
+	<!--Line Name="J523">BCE.J523.ANN</Line-->
 	<Line Name="J603">ELF.J603.DLG</Line>
 	<Line Name="J604">HBT.J604.RWO</Line>
 	<Line Name="J605">BKA.J605.MDO</Line>
@@ -89,24 +88,25 @@
 	<Line Name="J804R">TED.J804R.FRIED</Line>
 	<Line Name="J889R">NOWEL.J889R.LAIRE</Line>
 	<Line Name="M501">NOMAN.M501.UNZ</Line>
+	<Line Name="M756">OLBIE.M756.KEONE</Line>
 	<Line Name="OTR10">NANAC.OTR10.KAGIS</Line>
-	<Line Name="OTR11">KAGIS.OTR11.LEPKI</Line>
+	<Line Name="OTR11">POROT.OTR11.LEPKI</Line>
 	<Line Name="OTR13">KAGIS.OTR13.SEALS</Line>
-	<Line Name="OTR15">KAGIS.OTR15.MORAY</Line>
+	<!--Line Name="OTR15">KAGIS.OTR15.MORAY</Line-->
 	<Line Name="OTR16">SMOLT.OTR16.SUNNS</Line>
-	<Line Name="OTR17">KAGIS.OTR17.FERAR</Line>
+	<Line Name="OTR17">SMOLT.OTR17.FERAR</Line>
 	<Line Name="OTR18">FORDO.OTR18.RENAU</Line>
 	<Line Name="OTR19">KAGIS.OTR19.ADKAK</Line>
 	<Line Name="OTR2">OATIS.OTR2.KAGIS</Line>
 	<Line Name="OTR20">ADKAK.OTR20.SUNNS</Line>
 	<Line Name="OTR23">PABBA.OTR23.SMOLT</Line>
 	<Line Name="OTR3">OATIS.OTR3.PUTER</Line>
-	<Line Name="OTR5">PABBA.OTR5.KALNA</Line>
+	<Line Name="OTR5">DOVIX.OTR5.KALNA</Line>
 	<Line Name="OTR7">EMRON.OTR7.ADNAP</Line>
 	<Line Name="OTR9">EMRON.OTR9.AVBET</Line>
 	<Line Name="R204">CS.R204.KEITH</Line>
 	<Line Name="R210">CS.R210.PY</Line>
-	<Line Name="R213">NIPOK.R213.MAGIT</Line>
+	<!--Line Name="R213">NIPOK.R213.MAGIT</Line-->
 	<Line Name="R220">NODLE.R220.IXE</Line>
 	<Line Name="R330">SYA.R330.POWAL</Line>
 	<Line Name="R332">NN.R332.MAJ</Line>
@@ -126,11 +126,609 @@
 	<Line Name="R583">APU.R583.BORDO</Line>
 	<Line Name="R584">AVLAS.R584.CHOKO</Line>
 	<Line Name="R585">CIVIT.R585.AUDIA</Line>
-	<Line Name="R591">SCORE.R591.HAMND</Line>
+	<Line Name="R591">ADNAP.R591.HAMND</Line>
 	<Line Name="R595">APU.R595.UNZ</Line>
 	<Line Name="R599">ENDAL.R599.DUGAN</Line>
+<Symbol Type="HollowSquare">
+		<Point Name="A216">+185051.286+1412517.771</Point>
+	    <Point Name="A216">+162438.416+1421839.740</Point>
+	    <Point Name="A216">+125936.003+1423915.155</Point>
+	    <Point Name="A216">+072814.590+1431432.838</Point>
+	    <Point Name="A216">+022912.575+1435034.597</Point>
+		<Point Name="A216">-034747.0029+1440604.0938</Point>
+		<Point Name="A216">-111402.207+1445015.5313</Point>
+		<Point Name="A216">-150903.1133+1452741.750</Point>
+		<Point Name="A216">-162854.1172+1454052.5625</Point>
+		<Point Name="A220">+335036.817-1260930.114</Point>
+		<Point Name="A220">+281202.011-1292035.142</Point>
+		<Point Name="A220">+202847.691-1331917.976</Point>
+		<Point Name="A220">+123732.477-1370128.138</Point>
+		<Point Name="A220">+060851.047-1395223.807</Point>
+		<Point Name="A220">-072843.332-1452307.967</Point>
+		<Point Name="A220">-122918.960-1472421.041</Point>
+		<Point Name="A220">-151956.420-1483849.644</Point>
+		<Point Name="A220">-163621.599-1491120.847</Point>
+		<Point Name="A220">+014350.000-1415023.000</Point>
+		<Point Name="A220">-023410.000-1432748.000</Point>		
+		<Point Name="A222">+075128.441+1663334.521</Point>
+		<Point Name="A222">+061016.532+1641040.182</Point>
+		<Point Name="A222">+060813.796+1603734.923</Point>
+		<Point Name="A222">+080816.664+1561435.866</Point>
+		<Point Name="A222">+103206.686+1513301.898</Point>
+		<Point Name="A222">+121424.240+1473733.794</Point>
+		<Point Name="A222">+130520.110+1453431.765</Point>		
+		<Point Name="A331">+444803.103-1281600.458</Point>
+		<Point Name="A331">+415631.398-1335741.015</Point>
+		<Point Name="A331">+372418.856-1413754.490</Point>
+		<Point Name="A331">+323704.796-1480901.321</Point>
+		<Point Name="A331">+274310.277-1534320.461</Point>
+		<Point Name="A331">+244533.945-1564847.209</Point>
+		<Point Name="A332">+412141.870-1304501.538</Point>
+		<Point Name="A332">+371247.806-1383541.232</Point>
+		<Point Name="A332">+323218.873-1453831.183</Point>
+		<Point Name="A332">+272345.025-1520618.659</Point>
+		<Point Name="A337">+320023.000+1424701.000</Point>
+		<Point Name="A337">+273450.000+1434347.000</Point>
+		<Point Name="A337">+230958.000+1444300.000</Point>
+		<Point Name="A337">+191102.672+1455320.655</Point>
+		<Point Name="A337">+163910.354+1463613.902</Point>
+		<Point Name="A337">+134222.320+1465404.040</Point>
+		<Point Name="A339">+325618.000+1384813.000</Point>
+		<Point Name="A339">+312004.000+1375550.000</Point>
+		<Point Name="A339">+284648.000+1363436.000</Point>
+		<Point Name="A339">+262648.000+1352713.000</Point>
+		<Point Name="A339">+231807.000+1345811.000</Point>
+		<Point Name="A339">+190713.543+1343350.539</Point>
+		<Point Name="A339">+141011.459+1331522.158</Point>
+		<Point Name="A339">+082412.098+1314945.037</Point>
+		<Point Name="A450">+210505.126-1620312.423</Point>
+		<Point Name="A450">+210821.811-1631845.939</Point>
+		<Point Name="A450">+211236.401-1665422.709</Point>
+		<Point Name="A450">+205406.6719-1760330.5625</Point>
+		<Point Name="A450">+201921.0859+1764817.000</Point>
+		<Point Name="A450">+192716.6641+1700729.750</Point>
+		<Point Name="A450">+180232.9023+1620708.8125</Point>
+		<Point Name="A450">+162816.707+1550414.4375</Point>
+		<Point Name="A450">+151836.5938+1503412.6875</Point>
+		<Point Name="A450">+143951.413+1482144.443</Point>
+		<Point Name="A450">+141445.789+1470244.691</Point>
+		<Point Name="A450">+135002.765+1455316.936</Point>
+		<Point Name="A450">+133255.434+1450341.568</Point>
+		<Point Name="A450">+130141.752+1440121.355</Point>
+		<Point Name="A450">+122658.000+1425942.000</Point>
+		<Point Name="A450">+114237.000+1420230.000</Point>
+		<Point Name="A450">+092020.000+1392919.000</Point>
+		<Point Name="A450">+051458.000+1351333.000</Point>
+		<Point Name="A450">+031107.000+1325957.000</Point>
+		<Point Name="A450">+013716.000+1303329.000</Point>		
+		<Point Name="A450">-001011.000+1274407.000</Point>		
+		<Point Name="A450">-012240.000+1253935.000</Point>		
+		<Point Name="A450">-023348.000+1233524.000</Point>		
+		<Point Name="A450">-040201.000+1211018.000</Point>		
+		<Point Name="A450">-065832.000+1171623.000</Point>
+		<Point Name="A497">+030120.045+1522213.403</Point>
+		<Point Name="A578">+063659.6523+1583651.250/</Point>
+        <Point Name="A578">+045355.4883+1603814.6875/</Point>
+        <Point Name="A578">+023811.8857+1631522.4375/</Point>
+        <Point Name="A578">+003846.898+1653305.1875/</Point>
+        <Point Name="A578">-000024.6988+1683435.6875/</Point>
+		<Point Name="A578">+005517.8135+1713701.1875/</Point>
+		<Point Name="A597">+325720.000+1360459.000</Point>
+		<Point Name="A597">+315230.000+1362744.000</Point>
+		<Point Name="A597">+304527.000+1365505.000</Point>
+		<Point Name="A597">+274519.000+1380822.000</Point>
+		<Point Name="A597">+230616.000+1395055.000</Point>
+		<Point Name="A597">+190602.931+1414250.122</Point>
+		<Point Name="A597">+160431.069+1432432.219</Point>
+		<Point Name="A597">+143016.398+1441240.199</Point>
+		<Point Name="A597">+134514.947+1443531.232</Point>
+		<Point Name="A597">+105921.410+1472741.513</Point>
+		<Point Name="A597">+081517.305+1490949.913</Point>
+		<Point Name="A597">-024657.3799+1555514.000</Point>
+		<Point Name="A597">-071853.7051+1584154.5625</Point>
+		<Point Name="A597">-155600.5117+1630803.3125</Point>
+		<Point Name="A597">-221336.8594+1662003.5625</Point>
+		<Point Name="A597">-245410.5547+1674858.5625</Point>
+		<Point Name="A597">-282417.2578+1695107.750</Point>
+		<Point Name="A597">-313201.9453+1715156.625</Point>
+		<Point Name="A597">-351711.7813+1740218.500</Point>
+		<Point Name="A579">+183626.351-1594938.230</Point>
+		<Point Name="A579">+140846.040-1623959.831</Point>
+		<Point Name="A579">+062947.448-1673027.868</Point>
+		<Point Name="A579">-010835.308-1721151.754</Point>		
+		<Point Name="A598">+051641.953+1701953.840</Point>
+		<Point Name="A598">+013529.9629+1680810.500/</Point>
+		<Point Name="A598">-014624.8184+1660203.3125/</Point>
+		<Point Name="A598">-044817.2617+1634215.6875/</Point>
+		<Point Name="A598">-080205.3066+1610741.875/</Point>
+		<Point Name="A598">-114430.332+1591322.500/</Point>
+		<Point Name="A598">-151242.4766+1575806.5625/</Point>
+		<Point Name="A598">-181119.4102+1564949.625/</Point>
+		<Point Name="A598">-233452.8672+1544240.5625/</Point>
+		<Point Name="A598">-270802.5156+1531435.6875/</Point>
+		<Point Name="B200">+305700.553-1220445.364</Point>
+		<Point Name="B200">+264807.469-1262711.563</Point>
+		<Point Name="B200">+200421.414-1325707.347</Point>
+		<Point Name="B200">+133827.483-1383025.925</Point>
+		<Point Name="B200">+074114.000-1431449.534</Point>
+		<Point Name="B200">+022138.015-1472159.005</Point>
+		<Point Name="B200">-023922.773-1511425.287</Point>
+		<Point Name="B200">-073107.479-1550001.205</Point>
+		<Point Name="B200">-123031.961-1585723.630</Point>
+		<Point Name="B200">-172900.627-1630659.446</Point>
+		<Point Name="B326">+195503.822-1613516.211</Point>
+		<Point Name="B326">+165242.895-1660250.968</Point>
+		<Point Name="B326">+113931.728-1731737.218</Point>
+		<Point Name="B326">+062157.000+1794053.000</Point>				
+		<Point Name="B452">+305242.000+1462705.000</Point>
+		<Point Name="B452">+274339.000+1474701.000</Point>
+		<Point Name="B452">+231009.000+1493017.000</Point>
+		<Point Name="B452">+182446.115+1511631.130</Point>
+		<Point Name="B452">+123828.511+1531217.999</Point>
+		<Point Name="B452">+071259.682+1544924.633</Point>
+		<Point Name="B452">+022959.797+1561008.059</Point>
+		<Point Name="B452">-022159.3125+1572641.250</Point>		
+		<Point Name="B452">-071948.0254+1590949.875</Point>	
+		<Point Name="B452">-105208.6797+1631700.4375</Point>		
+		<Point Name="B452">-133555.1367+1691947.625</Point>		
+		<Point Name="B452">-162620.625+1750701.0625</Point>		
+		<Point Name="B453">+453307.225-1280802.480</Point>
+		<Point Name="B453">+475734.171-1295649.958</Point>
+		<Point Name="B453">+483554.071-1302639.485</Point>
+		<Point Name="B453">+492905.002-1311153.843</Point>
+		<Point Name="B453">+500630.147-1314720.107</Point>
+		<Point Name="B454">+262911.795-1260044.443</Point>
+		<Point Name="B454">+191213.508-1314059.428</Point>
+	    <Point Name="B454">+122107.958-1364126.538</Point>
+	    <Point Name="B454">+061221.200-1405513.538</Point>
+	    <Point Name="B454">+014622.508-1435209.581</Point>
+	    <Point Name="B454">-072633.217-1495358.984</Point>
+	    <Point Name="B454">-022741.592-1463915.900</Point>
+		<Point Name="B454">-122637.458-1531841.293</Point>
+		<Point Name="B454">-161324.265-1560220.021</Point>
+		<Point Name="B454">-191948.440-1582125.412</Point>
+		<Point Name="B474">+160550.260-1631346.970</Point>
+		<Point Name="B474">+111942.762-1681030.109</Point>
+		<Point Name="B474">+062908.028-1725558.533</Point>
+		<Point Name="B474">+013549.976-1773527.318</Point>		
+	    <Point Name="B577">+310308.482-1221048.601</Point>
+		<Point Name="B577">+272908.761-1271005.369</Point>
+		<Point Name="B577">+213738.943-1343915.838</Point>
+		<Point Name="B577">+155431.509-1410333.558</Point>
+		<Point Name="B577">+100352.282-1470248.401</Point>
+		<Point Name="B577">+040613.068-1525024.739</Point>
+		<Point Name="B577">+015746.362-1583301.689</Point>
+		<Point Name="B580">+153351.160-1631313.640</Point>
+		<Point Name="B580">+094414.200-1680559.078</Point>
+		<Point Name="B580">+035146.409-1724635.053</Point>
+		<Point Name="B580">-020059.000-1773502.000</Point>		
+		<Point Name="B581">+310728.770-1221349.095</Point>
+		<Point Name="B581">+275923.537-1273620.081</Point>
+		<Point Name="B581">+224656.215-1354120.000</Point>
+		<Point Name="B581">+173403.073-1423922.219</Point>
+		<Point Name="B581">+131343.486-1475855.746</Point>
+		<Point Name="B581">+095127.072-1514936.264</Point>
+		<Point Name="B581">+063514.139-1552725.672</Point>
+		<Point Name="B581">+015246.063-1602834.809</Point>
+		<Point Name="B581">+030744.045-1655349.548</Point>
+		<Point Name="B589">+052136.5625+1685700.000</Point>
+		<Point Name="B589">+023745.2178+1651924.125</Point>
+		<Point Name="B589">+001226.008+1620831.5625</Point>
+		<Point Name="B589">-033538.4756+1570649.875</Point>
+		<Point Name="B589">-055726.4805+1540408.5625</Point>
+		<Point Name="B589">-072822.6348+1521621.0625</Point>
+		<Point Name="B589">-083653.9609+1503635.125</Point>
+		<Point Name="B589">-090603.668+1483851.9375</Point>		
+		<Point Name="B586">+330618.000+1394026.000</Point>
+		<Point Name="B586">+304010.000+1400757.000</Point>
+		<Point Name="B586">+291022.000+1404950.000</Point>
+		<Point Name="B586">+265211.000+1413927.000</Point>
+		<Point Name="B586">+230424.000+1422718.000</Point>
+		<Point Name="B586">+191742.120+1432702.282</Point>
+		<Point Name="B586">+161905.103+1440834.692</Point>
+		<Point Name="B586">+141613.152+1443409.878</Point>
+		<Point Name="B586">+130747.431+1444752.328</Point>
+		<Point Name="B586">+121819.334+1445556.948</Point>
+		<Point Name="B586">+103553.794+1451012.141</Point>
+		<Point Name="B586">+071211.288+1453157.897</Point>
+		<Point Name="B586">+022841.199+1455739.851</Point>
+		<Point Name="B586">-032106.3359+1462517.500</Point>
+		<Point Name="B586">-075454.5566+1465546.625</Point>
+		<Point Name="B595">+185259.106-1554942.532</Point>
+		<Point Name="B595">+144040.237-1550149.260</Point>
+		<Point Name="B595">+074951.977-1534528.815</Point>
+		<Point Name="B595">+005950.120-1523145.435</Point>
+		<Point Name="B596">+175711.705-1574058.047</Point>
+		<Point Name="B596">+132923.383-1575650.406</Point>
+		<Point Name="B596">+060707.913-1582255.513</Point>
+		<Point Name="B596">-011603.929-1584900.359</Point>		
+		<Point Name="C1155">+344837.000-1215043.000</Point>
+		<Point Name="C1156">+323914.000-1181930.000</Point>
+		<Point Name="C1176">+340222.000-1210739.000</Point>
+		<Point Name="C1177">+331505.000-1183512.000</Point>
+		<Point Name="C1177">+324803.000-1191029.000</Point>
+		<Point Name="C1177">+321346.000-1195443.000</Point>
+		<Point Name="C1177">+314616.000-1204708.000</Point>		
+		<Point Name="C1316">+334522.000-1202647.000</Point>
+		<Point Name="C1318">+332022.000-1201603.000</Point>
+		<Point Name="C1415">+403928.000-1253223.000</Point>
+		<Point Name="C1418">+461356.000-1252710.000</Point>
+		<Point Name="C1419">+435926.000-1251944.000</Point>
+		<Point Name="C1486">+394833.000-1250126.000</Point>		
+		<Point Name="G205">+104937.690+1471417.508</Point>
+		<Point Name="G205">+073122.682+1474513.499</Point>
+		<Point Name="G205">+023106.731+1482930.203</Point>
+		<Point Name="G205">+141801.190+1444737.565</Point>
+		<Point Name="G205">+141801.190+1444737.565</Point>
+		<Point Name="G205">-035928.2871+1492544.6875</Point>
+		<Point Name="G205">-092344.5234+1501314.125</Point>
+		<Point Name="G205">-123048.7227+1501539.5625</Point>
+		<Point Name="G205">-161324.1094+1500550.375</Point>
+		<Point Name="G205">-191351.3203+1492925.750</Point>		
+		<Point Name="G223">+333946.000+1424522.000</Point>
+		<Point Name="G223">+324405.000+1443543.000</Point>
+		<Point Name="G223">+305248.000+1465725.000</Point>
+		<Point Name="G223">+273822.000+1492746.000</Point>
+		<Point Name="G223">+234541.000+1521521.000</Point>
+		<Point Name="G223">+214716.000+1533758.000</Point>
+		<Point Name="G223">+190049.444+1552432.538</Point>
+		<Point Name="G223">+155850.219+1571828.792</Point>
+		<Point Name="G223">+122841.963+1592901.164</Point>
+		<Point Name="G223">+064447.298+1624952.476</Point>
+		<Point Name="G339">+313132.000+1303743.000</Point>
+		<Point Name="G339">+311313.000+1304620.000</Point>
+		<Point Name="G339">+305258.000+1305355.000</Point>
+		<Point Name="G339">+302152.000+1311142.000</Point>
+		<Point Name="G339">+294808.000+1313552.000</Point>
+		<Point Name="G339">+264816.000+1335914.000</Point>
+		<Point Name="G339">+232234.000+1362108.000</Point>
+		<Point Name="G339">+184728.318+1395442.649</Point>
+		<Point Name="G339">+161856.433+1421130.579</Point>
+		<Point Name="G339">+284552.000+1322615.000</Point>		
+		<Point Name="G339">+152353.956+1430119.986</Point>
+		<Point Name="G339">+140546.527+1441023.782</Point>		 
+		<Point Name="G457">+135921.763-1604731.785</Point>
+		<Point Name="G457">+062354.722-1631754.402</Point>
+		<Point Name="G457">-011030.584-1654519.586</Point>
+		<Point Name="G347">+135952.360-1610601.344</Point>
+		<Point Name="G347">+062452.110-1641528.474</Point>
+		<Point Name="G347">-011027.492-1672108.095</Point>
+		<Point Name="G467">+132857.454+1442449.156</Point>
+		<Point Name="G467">+133403.367+1433337.785</Point>
+		<Point Name="G467">+134301.844+1415108.985</Point>
+		<Point Name="G467">+135940.796+1375045.329</Point>
+		<Point Name="G467">+141136.466+1323124.549</Point>
+		<Point Name="G467">+142439.5547+1280502.125</Point>
+		<Point Name="G467">+143746.875+1241705.625</Point>
+		<Point Name="G575">+304659.798-1215426.349</Point>
+		<Point Name="G575">+255516.042-1251112.226</Point>
+		<Point Name="G575">+181142.176-1300650.691</Point>
+		<Point Name="G575">+105206.457-1341544.511</Point>
+		<Point Name="G575">+052000.172-1371333.511</Point>
+		<Point Name="G575">-072844.260-1434115.340</Point>
+		<Point Name="G575">-122737.949-1461356.788</Point>
+		<Point Name="G575">-152504.793-1480124.174</Point>
+		<Point Name="G575">-164314.295-1485845.639</Point>
+		<Point Name="G575">-023439.000-1412211.000</Point>
+		<Point Name="G575">+015213.000-1390738.000</Point>	
+		<Point Name="G594">+010349.682-1222146.296</Point>
+	    <Point Name="G594">-022709.350-1272241.167</Point>
+	    <Point Name="G594">-055142.456-1322439.246</Point>
+	    <Point Name="G594">-055031.558-1322423.528</Point>
+	    <Point Name="G594">-091829.331-1372209.450</Point>
+	    <Point Name="G594">-124429.053-1422312.348</Point>
+	    <Point Name="G594">-152555.690-1462240.661</Point>
+	    <Point Name="G594">-165833.007-1484112.504</Point>
+		<Point Name="M501">+152052.942+1375814.553</Point>
+		<Point Name="M501">+161445.064+1323214.993</Point>
+		<Point Name="M501">+165413.7852+1281947.9375</Point>
+		<Point Name="M501">+171553.3516+1253055.3125</Point>
+		<Point Name="M501">+172744.1953+1240447.500</Point>
+		<Point Name="M501">+174137.7227+1225550.2188</Point>
+		<Point Name="M501">+180054.500+1212605.5938</Point>
+		<Point Name="M501">+181839.1875+1201549.0313</Point>
+		<Point Name="M501">+183030.250+1195044.0938</Point>
+		<Point Name="M501">+185914.4375+1185247.0938</Point>
+		<Point Name="M501">+194108.8047+1172136.2813</Point>
+		<Point Name="M756">+054348.3555+1381245.1563</Point>
+		<Point Name="M756">+071908.1816+1314813.125</Point>
+		<Point Name="M756">+072140.1211+1340211.500</Point>		
+		<Point Name="R584">+200139.367-1614150.022</Point>
+		<Point Name="R584">+174701.570-1670407.985</Point>
+		<Point Name="R584">+134918.702-1754139.081</Point>
+		<Point Name="R204">+184836.552+1355052.788</Point>
+		<Point Name="R204">+142418.861+1374132.159</Point>
+		<Point Name="R204">+080351.692+1401858.462</Point>
+		<Point Name="R204">+020100.448+1415949.786</Point>
+		<Point Name="R204">-030106.8398+1420504.2813</Point>
+		<Point Name="R204">-074414.4238+1421705.9688</Point>
+		<Point Name="R204">-100057.4805+1421656.4688</Point>
+		<Point Name="R204">-124342.4102+1432656.4063</Point>
+		<Point Name="R204">-153601.0625+1450137.000</Point>
+		<Point Name="R210">-104509.7422+1465722.750</Point>
+		<Point Name="R210">-130519.9531+1462922.6875</Point>
+		<Point Name="R210">-153302.9258+1460003.000</Point>		
+		<Point Name="R332">+051652.609+1715500.156</Point>
+		<Point Name="R332">+022009.8564+1725121.625/</Point>
+		<Point Name="R332">-021134.1616+1741658.3125/</Point>
+		<Point Name="R332">-092158.7656+1762111.8125/</Point>
+		<Point Name="R332">-145533.6523+1771308.1875/</Point>
+		<Point Name="R337">+081725.2363+1322124.625</Point>
+		<Point Name="R337">+100702.8164+1275037.1563</Point>
+		<Point Name="R463">+374004.164-1262206.125</Point>
+		<Point Name="R463">+361344.598-1304809.469</Point>
+		<Point Name="R463">+332943.874-1381552.837</Point>
+		<Point Name="R463">+301508.395-1451949.480</Point>
+		<Point Name="R463">+263728.902-1515940.507</Point>
+		<Point Name="R463">+242315.879-1554435.205</Point>   
+		<Point Name="R464">+364410.102-1255446.806</Point>	
+		<Point Name="R464">+351419.657-1303423.853</Point>
+		<Point Name="R464">+323640.042-1374525.678</Point>
+		<Point Name="R464">+293259.719-1443447.501</Point>
+		<Point Name="R464">+260513.925-1510323.496</Point>
+		<Point Name="R464">+235527.066-1544732.557</Point>
+		<Point Name="R465">+355739.253-1252144.947</Point>	
+		<Point Name="R465">+343004.093-1294701.621</Point>
+		<Point Name="R465">+314959.731-1370459.354</Point>
+		<Point Name="R465">+284831.112-1435304.639</Point>
+		<Point Name="R465">+253040.715-1501352.318</Point>
+		<Point Name="R465">+232351.359-1535705.938</Point>
+		<Point Name="R576">+331625.744-1232950.976</Point>
+		<Point Name="R576">+320522.889-1281645.579</Point>
+		<Point Name="R576">+295456.462-1354346.643</Point>
+		<Point Name="R576">+272137.254-1424533.082</Point>
+		<Point Name="R576">+243151.542-1491916.885</Point>
+		<Point Name="R576">+224153.479-1531035.451</Point>
+		<Point Name="R577">+323451.204-1222805.092</Point>
+		<Point Name="R577">+322119.088-1233035.081</Point>
+		<Point Name="R577">+311553.848-1274737.298</Point>
+		<Point Name="R577">+290623.456-1351233.479</Point>
+		<Point Name="R577">+263600.363-1420900.472</Point>
+		<Point Name="R577">+234909.584-1484017.097</Point>
+		<Point Name="R577">+220212.587-1522924.308</Point>
+		<Point Name="R578">+312111.083-1222655.413</Point>
+		<Point Name="R578">+301217.215-1271543.847</Point>
+		<Point Name="R578">+280843.034-1343339.779</Point>
+		<Point Name="R578">+254207.057-1413355.786</Point>
+	    <Point Name="R578">+225944.962-1481104.049</Point>
+		<Point Name="R578">+211114.250-1521052.548</Point>
+		<Point Name="R584">+092228.959+1754553.754</Point>
+		<Point Name="R584">+071257.261+1705728.925</Point>
+		<Point Name="R584">+080244.971+1690650.493</Point>
+		<Point Name="R584">+082414.616+1662030.461</Point>
+		<Point Name="R584">+073259.176+1613310.436</Point>
+		<Point Name="R584">+071104.278+1550506.905</Point>
+		<Point Name="R584">+090325.359+1500106.873</Point>
+		<Point Name="R584">+110719.225+1473554.416</Point>
+		<Point Name="R584">+115641.123+1463633.678</Point>
+		<Point Name="R584">+124310.704+1453927.556</Point>
+		<Point Name="R584">+131457.515+1445841.033</Point>
+		<Point Name="R584">+135500.276+1440254.534</Point>		
+		<Point Name="R584">+150420.937+1421924.751</Point>
+		<Point Name="R584">+182146.669+1380751.806</Point>
+		<Point Name="R584">+214332.0313+1325256.6875</Point>
+		<Point Name="R584">+224231.0703+1300300.2813</Point>
+		<Point Name="R584">+233430.4063+1275319.000</Point>
+		<Point Name="R584">+242827.625+1255915.250</Point>
+		<Point Name="R584">+245219.4453+1243852.5313</Point>
+		<Point Name="R584">+250026.7969+1232926.9063</Point>
+		<Point Name="R584">+250454.9063+1223726.375</Point>
+		<Point Name="R584">+250915.4844+1220457.2188</Point>
+		<Point Name="R584">+250857.7813+1214308.7188</Point>
+		<Point Name="R585">+340535.429-1235730.642</Point>
+		<Point Name="R585">+330319.351-1284915.583</Point>
+		<Point Name="R585">+310449.201-1363249.009</Point>
+		<Point Name="R585">+283551.379-1434414.447</Point>					
+		<Point Name="R596">+134351.985+1435655.817</Point>
+		<Point Name="R596">+142515.682+1420034.363</Point>
+		<Point Name="R596">+154448.538+1384623.925</Point>
+		<Point Name="R596">+175422.952+1332335.330</Point>
+		
+<!--ZAN-->		
+		<Point Name="R336">+511642.000+1794301.000</Point>
+		<Point Name="R336">+493527.926+1722741.744</Point>
+		<Point Name="G215">+535423.000-1715816.000</Point>		
+		<Point Name="G215">+531819.000+1783460.000</Point>		
+		<Point Name="G215">+523136.000+1722118.000</Point>		
+		<Point Name="G215">+515429.000+1681335.000</Point>				
+		<Point Name="G334">+561634.000-1643524.000</Point>		
+		<Point Name="G334">+552224.000-1695641.000</Point>		
+		<Point Name="G334">+543106.000-1735256.000</Point>		
+		<Point Name="G334">+524950.000+1795710.000</Point>		
+		<Point Name="G334">+522222.397+1784000.057</Point>
+		<Point Name="G334">+513446.708+1762224.593</Point>
+		<Point Name="G334">+495817.092+1721251.448</Point>
+		<Point Name="G334">+473253.550+1654140.033</Point>
+		<Point Name="G334">+445523.000+1590937.000</Point>
+		<Point Name="G334">+411041.000+1524452.000</Point>		
+		<Point Name="R451">+515319.533+1784012.789</Point>
+		<Point Name="R451">+515005.017+1760837.459</Point>
+		<Point Name="R451">+513745.853+1731012.337</Point>
+		<Point Name="R451">+505616.041+1682548.533</Point>
+		<Point Name="R451">+495636.935+1632518.854</Point>
+		<Point Name="J115">+605309.000-1503703.000</Point>		
+		<Point Name="J115">+595444.000-1532731.000</Point>		
+		<Point Name="J115">+591004.000-1553627.000</Point>		
+		<Point Name="J115">+582317.000-1572550.000</Point>		
+		<Point Name="J115">+572844.000-1590818.000</Point>		
+		<Point Name="J115">+560744.000-1612911.000</Point>		
+		<Point Name="J115">+543658.000-1644244.000</Point>		
+		<Point Name="J115">+530120.000-1714258.000</Point>
+		<Point Name="J115">+522709.355+1770818.567</Point>
+        <Point Name="J123">+680133.000-1612301.000</Point>		
+        <Point Name="J123">+623817.000-1632438.000</Point>		
+        <Point Name="R591">+593621.000-1583909.000</Point>		
+        <Point Name="R591">+582426.000-1633820.000</Point>		
+        <Point Name="R591">+574100.000-1673335.000</Point>		
+        <Point Name="R591">+564852.000-1715817.000</Point>		
+        <Point Name="R591">+555242.000-1760234.000</Point>		
+        <Point Name="R591">+544636.000+1795808.000</Point>
+        <Point Name="R591">+532839.405+1761556.711</Point>
+        <Point Name="R591">+520717.731+1724202.436</Point>
+        <Point Name="R591">+503602.704+1684644.734</Point>
+		<Point Name="R591">+483749.442+1635155.756</Point>
+		<Point Name="R591">+460429.000+1582151.000</Point>
+		<Point Name="R591">+422560.000+1522532.000</Point>
+		<Point Name="R591">+385633.000+1474412.000</Point>
+        <Point Name="A590">+600060.000-1590320.000</Point>		
+        <Point Name="A590">+590424.000-1645326.000</Point>		
+        <Point Name="A590">+591017.000-1692634.000</Point>		
+        <Point Name="A590">+582326.000-1685104.000</Point>		
+        <Point Name="A590">+564419.000-1761420.000</Point>
+        <Point Name="A590">+542329.816+1760542.898</Point>
+        <Point Name="A590">+525214.789+1720258.786</Point>
+        <Point Name="A590">+503629.691+1684633.613</Point>
+		<Point Name="A590">+492225.000+1630320.000</Point>		
+        <Point Name="A590">+483820.129+1635203.032</Point>	
+        <Point Name="A590">+464123.000+1573153.000</Point>
+        <Point Name="A590">+425926.000+1513142.000</Point>
+        <Point Name="A590">+694502.000+1471029.000</Point>
+        <Point Name="A590">+374102.000+1444500.000</Point>
+        <Point Name="A590">+362559.000+1431634.000</Point>
+        <Point Name="A590">+352526.000+1415038.000</Point>
+        <Point Name="A590">+343138.000+1401823.000</Point>
+        <Point Name="A590">+333725.000+1391438.000</Point>
+        <Point Name="A590">+322325.000+1375321.000</Point>
+        <Point Name="A590">+304952.000+1360158.000</Point>
+        <Point Name="A590">+281501.000+1332916.000</Point>
+        <Point Name="A590">+265157.000+1320901.000</Point>
+        <Point Name="A590">+250941.000+1304244.000</Point>	
+        <Point Name="A590">+234219.000+1293533.000</Point>
+        <Point Name="A590">+190526.000+1254912.000</Point>
+		<Point Name="G469">+550658.162+1762622.510</Point>
+		<Point Name="G469">+534757.030+1703329.560</Point>
+        <Point Name="A342">+551829.000-1664435.000</Point>		
+        <Point Name="A342">+545951.000-1742059.000</Point>		
+        <Point Name="A342">+542742.000-1795108.000</Point>
+        <Point Name="A342">+535040.345+1755536.969</Point>
+        <Point Name="A342">+522715.530+1693459.693</Point>
+        <Point Name="R580">+604732.000-1593925.000</Point>		
+        <Point Name="R580">+595528.000-1651602.000</Point>		
+        <Point Name="R580">+591129.000-1692628.000</Point>		
+        <Point Name="R580">+581323.000-1735508.000</Point>		
+        <Point Name="R580">+565134.000-1792118.000</Point>
+		<Point Name="R580">+550825.221+1752707.719</Point>
+        <Point Name="R580">+533642.439+1712204.391</Point>
+        <Point Name="R580">+521317.395+1675023.461</Point>
+        <Point Name="R580">+511157.306+1650221.669</Point>
+        <Point Name="R580">+501405.575+1624711.954</Point>
+		<Point Name="R580">+491506.650+1603507.604</Point>
+		<Point Name="R580">+471958.000+1564618.000</Point>
+		<Point Name="R580">+434822.000+1510418.000</Point>
+		<Point Name="R580">+393905.000+1453841.000</Point>
+        <Point Name="R341">+555641.841+1760435.095</Point>
+        <Point Name="R220">+611434.000-1571520.000</Point>		
+        <Point Name="R220">+610014.000-1635637.000</Point>		
+        <Point Name="R220">+603423.000-1663407.000</Point>		
+        <Point Name="R220">+535655.000-1700117.000</Point>		
+        <Point Name="R220">+591911.000-1730353.000</Point>		
+        <Point Name="R220">+584350.000-1754350.000</Point>
+        <Point Name="R220">+571424.749+1784638.085</Point>
+        <Point Name="R220">+555218.787+1744406.680</Point>
+        <Point Name="R220">+542038.129+1704231.896</Point>
+        <Point Name="R220">+523204.913+1660119.060</Point>
+        <Point Name="R220">+504114.864+1613608.770</Point>
+        <Point Name="R220">+480354.000+1560452.000</Point>
+        <Point Name="R220">+441626.000+1495637.000</Point>
+        <Point Name="R220">+420732.000+1470330.000</Point>
+        <Point Name="R220">+411128.000+1455254.000</Point>
+        <Point Name="R220">+393925.000+1440343.000</Point>
+        <Point Name="R220">+383625.000+1424811.000</Point>
+        <Point Name="R220">+374605.000+1414158.000</Point>	
+		<Point Name="R338">+641943.000-1655355.000</Point>
+		<Point Name="R338">+634630.000-1675433.000</Point>
+		<Point Name="R338">+625959.000-7103056.000</Point>
+		<Point Name="R338">+620932.000-1725929.000</Point>
+		<Point Name="R338">+605905.000-1760458.000</Point>		
+		<Point Name="R338">+574945.000+1770133.000</Point>	
+		<Point Name="B757">+550917.000-1395020.000</Point>
+		<Point Name="B757">+564107.000-1461330.000</Point>
+		<Point Name="B757">+571648.000-1492821.000</Point>
+		<Point Name="B757">+573752.000-1512729.000</Point>	
+		<Point Name="B757">+581721.000-1570744.000</Point>
+		<Point Name="B757">+584733.000-1662449.000</Point>	
+		<Point Name="B757">+583740.000-1740455.000</Point>
+		<Point Name="B453">+564814.000-1404823.000</Point>
+		<Point Name="J120">+654837.000-1463223.000</Point>		
+		<Point Name="J120">+635437.000-1520714.000</Point>		
+		<Point Name="J120">+615450.000-1584941.000</Point>
+		<Point Name="J120">+594613.000-1643516.000</Point>
+		<Point Name="J120">+580310.000-1683212.000</Point>		
+		<Point Name="J120">+542748.000-1734738.000</Point>
+		<Point Name="J125">+641939.174-1491123.698</Point>
+		<Point Name="J125">+631058.035-1494207.404</Point>
+		<Point Name="J125">+615926.839-1501601.637</Point>
+		<Point Name="J125">+612518.557-1501233.701</Point>
+		<Point Name="J125">+594734.251-1505608.530</Point>
+		<Point Name="J125">+580548.904-1520727.958</Point>
+		<Point Name="J133">+630346.000-1531544.000</Point>		
+		<Point Name="J133">+575704.000-1381016.000</Point>	
+		<Point Name="J133">+591351.000-1414300.000</Point>
+		<Point Name="J133">+595123.000-1435722.000</Point>
+		<Point Name="J133">+601726.000-1454515.000</Point>
+		<Point Name="J133">+605050.000-1481652.000</Point>
+		<Point Name="J179">+600356.000-1484831.000</Point>		
+		<Point Name="J501">+604923.451-1610744.175</Point>
+		<Point Name="J501">+605843.907-1580217.734</Point>
+		<Point Name="J501">+610735.222-1534505.176</Point>
+		<Point Name="J501">+610946.269-1503452.150</Point>
+		<Point Name="J501">+604857.920-1481609.237</Point>
+		<Point Name="J501">+602347.661-1455548.490</Point>
+		<Point Name="J501">+601711.644-1445912.988</Point>
+		<Point Name="J501">+595207.715-1420911.095</Point>
+		<Point Name="J501">+592527.000-1392908.000</Point>
+		<Point Name="J501">+580317.000-1371725.000</Point>
+		<Point Name="J501">+553719.000-1340936.000</Point>
+		<Point Name="J501">+535512.000-1322625.000</Point>
+		
+		<Point Name="J501">+484208.000-1251248.000</Point>
+		<Point Name="J501">+475253.000-1242450.000</Point>
+		<Point Name="J501">+471321.000-1241139.000</Point>
+		<Point Name="J501">+463446.000-1240149.000</Point>
+		<Point Name="J501">+445558.000-1233351.000</Point>
+		<Point Name="J501">+404727.458-1225258.412</Point>
+		<Point Name="J501">+383543.618-1225202.652</Point>
+		<Point Name="J501">+370750.154-1221512.451</Point>
+		<Point Name="J501">+354911.936-1211358.790</Point>		
+		<Point Name="J501">+352321.409-1204434.587</Point>		
+		<Point Name="J501">+345435.746-1201242.506</Point>		
+		<Point Name="J603">+613147.000-1401237.000</Point>		
+		<Point Name="J603">+614048.000-1474612.000</Point>
+		<Point Name="J603">+610131.000-1504021.000</Point>
+		<Point Name="J603">+603724.000-1523203.000</Point>
+		<Point Name="J603">+600649.000-1543931.000</Point>
+		<Point Name="J603">+594402.000-1560428.000</Point>
+		<Point Name="J603">+592501.000-1571217.000</Point>
+		<Point Name="J603">+590649.000-1581236.000</Point>
+		<Point Name="J603">+571304.000-1604512.000</Point>
+		<Point Name="J604">+563803.000-1563322.000</Point>
+		<Point Name="J605">+581150.000-1402848.000</Point>		
+		<Point Name="J804R">+550742.000-1351953.000</Point>
+		<Point Name="J804R">+565539.000-1391853.000</Point>
+		<Point Name="J804R">+583558.000-1434439.000</Point>	
+		<Point Name="J804R">+595934.000-1472852.000</Point>	
+		<Point Name="J804R">+604926.000-1491345.000</Point>	
+		<Point Name="J889">+591007.798-1421513.125</Point>
+		<Point Name="J889">+594546.577-1450332.555</Point>	
+		<Point Name="J889">+601403.804-1471853.284</Point>
+	</Symbol>	
   </Map>	
   <Map Type="System" CustomColourName="SpringGreen" Name="Pts" Priority="1" Center="+270000.000-1750000.000">
+    <Symbol Type="Hexagon">
+		<Point>SQN</Point>
+		<Point>SRL</Point>
+		<Point>LTO</Point>
+		<Point>SJD</Point>
+		<Point>LAP</Point>	
+		<Point>BLI</Point>
+		<Point>MKS</Point>	
+		<Point>JOM</Point>
+		<Point>PDN</Point>
+		<Point>CEN</Point>		
+	</Symbol>
+    <Symbol Type="DotFillCircle">
+		<Point>TL</Point>	
+	</Symbol>	
     <Symbol Type="SolidTriangle">  
 		<Point>DEWSS</Point>
 		<Point>GALSS</Point>
@@ -158,7 +756,6 @@
 		<Point>ARENS</Point>
 		<Point>BAART</Point>
 		<Point>BALKS</Point>
-		<Point>TL</Point>
 		<Point>HOBBO</Point>
 		<Point>BELAN</Point>
 		<Point>BENTS</Point>
@@ -223,7 +820,6 @@
 		<Point>PASSA</Point>
 		<Point>PHILY</Point>
 		<Point>PIKOK</Point>
-		<Point>CEN</Point>
 		<Point>RAMIZ</Point>
 		<Point>RICHH</Point>
 		<Point>THOMA</Point>
@@ -312,7 +908,6 @@
 		<Point>LAMEK</Point>
 		<Point>KELPI</Point>
 		<Point>CKN</Point>
-		<Point>PDN</Point>
 		<Point>MC</Point>
 		<Point>PUPEB</Point>
 		<Point>KAPSO</Point>
@@ -352,7 +947,6 @@
 		<Point>VASKO</Point>
 		<Point>REEDE</Point>
 		<Point>TRYSH</Point>
-		<Point>LAP</Point>
 		<Point>KATHS</Point>
 		<Point>UPDOB</Point>
 		<Point>UKATA</Point>
@@ -447,7 +1041,6 @@
 		<Point>SYA</Point>
 		<Point>LAMOL</Point>
 		<Point>TUNTO</Point>
-		<Point>JOM</Point>
 		<Point>ELMAS</Point>
 		<Point>KALOK</Point>
 		<Point>GOBIN</Point>
@@ -532,9 +1125,7 @@
 		<Point>ZAPSO</Point>
 		<Point>ANEVY</Point>
 		<Point>APPLE</Point>
-		<Point>BLI</Point>
 		<Point>LIPOT</Point>
-		<Point>MKS</Point>
 		<Point>KENDO</Point>
 		<Point>TALIA</Point>
 		<Point>TELES</Point>
@@ -596,11 +1187,6 @@
 		<Point>TUNBA</Point>
 		<Point>TIAMU</Point>
 		<Point>CAVIA</Point>
-		<Point>SQN</Point>
-		<Point>SRL</Point>
-		<Point>LTO</Point>
-		<Point>SJD</Point>
-		<Point>LAP</Point>
 		<Point>DUNKO</Point>
 		<Point>DUNOS</Point>
 		<Point>MAREN</Point>
@@ -2557,7 +3143,4 @@
 		<Point>VESPA</Point>
 	</Label>  
   </Map>	
-  <Map Type="System" CustomColourName="SkyBlue2" Name="Rts_Nms" Priority="1" Center="+270000.000-1750000.000">	
-	
-  </Map>
 </Maps>	

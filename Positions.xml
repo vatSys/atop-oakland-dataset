@@ -1,10 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Positions xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <Position Name="CWP11" Type="ASD" DefaultCenter="+270000.000-1750000.000" DefaultRange="6000">
+	<ManualVisibility>
+		<Point>+2239.000-13726.000</Point>
+		<Point>+3914.000-16344.000</Point>
+		<Point>+1608.000-17005.000</Point>
+		<Point>+1941.000+15324.000</Point>		
+	</ManualVisibility>  
     <Sectors/>
     <Maps>
       <Map Name="FIR" />
-      <Map Name="GEO" />
+      <Map Name="Geo" />
     </Maps>
     <Strips Mode="State" Sort="Time">
       <Window Type="State" State="Jurisdiction" Visible="true" />
@@ -19,15 +25,23 @@
       <Line>San Francisco Radio</Line>
     </ControllerInfo>
   </Position>
-  <Position Name="CWP7" Type="ASD" DefaultCenter="+270000.000-1750000.000" DefaultRange="6000">
+  <Position Name="CWP7[OC1]" Type="ASD" DefaultCenter="+442728.740-1531610.609" DefaultRange="3000">
+	<ManualVisibility>
+		<Point>+2239.000-13726.000</Point>
+		<Point>+3914.000-16344.000</Point>
+		<Point>+1608.000-17005.000</Point>
+		<Point>+1941.000+15324.000</Point>		
+	</ManualVisibility>    
     <Sectors>
       <Sector Name="OC1" />
     </Sectors>
     <Maps>
       <Map Name="FIR" />
-      <Map Name="GEO" />
-      <Map Name="RTS" />
-      <Map Name="PTS" />	  
+      <Map Name="Geo" />
+      <Map Name="Rts" />
+      <Map Name="Pts" />
+      <Map Name="OSec" />
+      <Map Name="UTA" />	  
     </Maps>
     <Strips Mode="State" Sort="Time">
       <Window Type="State" State="Jurisdiction" Visible="true" />
@@ -42,15 +56,23 @@
       <Line>San Francisco Radio</Line>
     </ControllerInfo>
   </Position>  
-  <Position Name="CWP8" Type="ASD" DefaultCenter="+270000.000-1750000.000" DefaultRange="6000">
+  <Position Name="CWP8[OC2]" Type="ASD" DefaultCenter="+451634.535-1902108.933" DefaultRange="2400">
+	<ManualVisibility>
+		<Point>+2239.000-13726.000</Point>
+		<Point>+3914.000-16344.000</Point>
+		<Point>+1608.000-17005.000</Point>
+		<Point>+1941.000+15324.000</Point>		
+	</ManualVisibility>    
     <Sectors>
       <Sector Name="OC2" />
     </Sectors>
     <Maps>
       <Map Name="FIR" />
-      <Map Name="GEO" />
-      <Map Name="RTS" />
-      <Map Name="PTS" />	  
+      <Map Name="Geo" />
+      <Map Name="Rts" />
+      <Map Name="Pts" />
+      <Map Name="OSec" />
+      <Map Name="UTA" />	  
     </Maps>
     <Strips Mode="State" Sort="Time">
       <Window Type="State" State="Jurisdiction" Visible="true" />
@@ -65,15 +87,23 @@
       <Line>San Francisco Radio</Line>
     </ControllerInfo>
   </Position>  
-  <Position Name="CWP4" Type="ASD" DefaultCenter="+270000.000-1750000.000" DefaultRange="6000">
+  <Position Name="CWP4[OC3]" Type="ASD" DefaultCenter="+221244.704-1360859.658" DefaultRange="2600">
+	<ManualVisibility>
+		<Point>+2239.000-13726.000</Point>
+		<Point>+3914.000-16344.000</Point>
+		<Point>+1608.000-17005.000</Point>
+		<Point>+1941.000+15324.000</Point>		
+	</ManualVisibility>    
     <Sectors>
       <Sector Name="OC3" />
     </Sectors>
     <Maps>
       <Map Name="FIR" />
-      <Map Name="GEO" />
-      <Map Name="RTS" />
-      <Map Name="PTS" />	  
+      <Map Name="Geo" />
+      <Map Name="Rts" />
+      <Map Name="Pts" />
+      <Map Name="OSec" />
+      <Map Name="UTA" />	  
     </Maps>
     <Strips Mode="State" Sort="Time">
       <Window Type="State" State="Jurisdiction" Visible="true" />
@@ -82,21 +112,30 @@
     </Strips>
     <CFL QuickLevel="999000" />
     <ArrivalLists>
-      <Airport Name="KSFO" />
+      <Airport Name="PLCH" />	
+      <Airport Name="PLPA" />
     </ArrivalLists>
     <ControllerInfo>
       <Line>San Francisco Radio</Line>
     </ControllerInfo>
   </Position>
-  <Position Name="CWP10" Type="ASD" DefaultCenter="+270000.000-1750000.000" DefaultRange="6000">
+  <Position Name="CWP10[OC4]" Type="ASD" DefaultCenter="+294753.971-1420406.988" DefaultRange="2300">
+	<ManualVisibility>
+		<Point>+2239.000-13726.000</Point>
+		<Point>+3914.000-16344.000</Point>
+		<Point>+1608.000-17005.000</Point>
+		<Point>+1941.000+15324.000</Point>		
+	</ManualVisibility>    
     <Sectors>
       <Sector Name="OC4" />
     </Sectors>
     <Maps>
       <Map Name="FIR" />
-      <Map Name="GEO" />
-      <Map Name="RTS" />
-      <Map Name="PTS" />	  
+      <Map Name="Geo" />
+      <Map Name="Rts" />
+      <Map Name="Pts" />
+      <Map Name="OSec" />
+      <Map Name="UTA" />	  
     </Maps>
     <Strips Mode="State" Sort="Time">
       <Window Type="State" State="Jurisdiction" Visible="true" />
@@ -111,15 +150,23 @@
       <Line>San Francisco Radio</Line>
     </ControllerInfo>
   </Position>  
-  <Position Name="CWP2" Type="ASD" DefaultCenter="+270000.000-1750000.000" DefaultRange="6000">
+  <Position Name="CWP2[OC5]" Type="ASD" DefaultCenter="+111651.527+1450820.250" DefaultRange="3200">
+	<ManualVisibility>
+		<Point>+2239.000-13726.000</Point>
+		<Point>+3914.000-16344.000</Point>
+		<Point>+1608.000-17005.000</Point>
+		<Point>+1941.000+15324.000</Point>		
+	</ManualVisibility>    
     <Sectors>
       <Sector Name="OC5" />
     </Sectors>
     <Maps>
       <Map Name="FIR" />
-      <Map Name="GEO" />
-      <Map Name="RTS" />
-      <Map Name="PTS" />	  
+      <Map Name="Geo" />
+      <Map Name="Rts" />
+      <Map Name="Pts" />
+      <Map Name="OSec" />
+      <Map Name="UTA" />	  
     </Maps>
     <Strips Mode="State" Sort="Time">
       <Window Type="State" State="Jurisdiction" Visible="true" />
@@ -128,21 +175,32 @@
     </Strips>
     <CFL QuickLevel="999000" />
     <ArrivalLists>
-      <Airport Name="KSFO" />
+      <Airport Name="PTRO" />
+      <Airport Name="PTYA" />
+      <Airport Name="PTKK" />
+      <Airport Name="PTPN" />	  
     </ArrivalLists>
     <ControllerInfo>
       <Line>San Francisco Radio</Line>
     </ControllerInfo>
   </Position>  
-  <Position Name="CWP1" Type="ASD" DefaultCenter="+270000.000-1750000.000" DefaultRange="6000">
+  <Position Name="CWP1[OC6]" Type="ASD" DefaultCenter="+163226.320+1703631.668" DefaultRange="3200">
+	<ManualVisibility>
+		<Point>+2239.000-13726.000</Point>
+		<Point>+3914.000-16344.000</Point>
+		<Point>+1608.000-17005.000</Point>
+		<Point>+1941.000+15324.000</Point>		
+	</ManualVisibility>    
     <Sectors>
       <Sector Name="OC6" />
     </Sectors>
     <Maps>
       <Map Name="FIR" />
-      <Map Name="GEO" />
-      <Map Name="RTS" />
-      <Map Name="PTS" />	  
+      <Map Name="Geo" />
+      <Map Name="Rts" />
+      <Map Name="Pts" />
+      <Map Name="OSec" />
+      <Map Name="UTA" />	  
     </Maps>
     <Strips Mode="State" Sort="Time">
       <Window Type="State" State="Jurisdiction" Visible="true" />
@@ -151,21 +209,32 @@
     </Strips>
     <CFL QuickLevel="999000" />
     <ArrivalLists>
-      <Airport Name="KSFO" />
+      <Airport Name="PWAK" />
+      <Airport Name="PKWA" />
+      <Airport Name="PTSA" />
+      <Airport Name="PKMJ" />
     </ArrivalLists>
     <ControllerInfo>
       <Line>San Francisco Radio</Line>
     </ControllerInfo>
   </Position>  
-  <Position Name="CWP9" Type="ASD" DefaultCenter="+270000.000-1750000.000" DefaultRange="6000">
+  <Position Name="CWP9[OC7]" Type="ASD" DefaultCenter="+403411.855-1381916.409" DefaultRange="1900">
+	<ManualVisibility>
+		<Point>+2239.000-13726.000</Point>
+		<Point>+3914.000-16344.000</Point>
+		<Point>+1608.000-17005.000</Point>
+		<Point>+1941.000+15324.000</Point>		
+	</ManualVisibility>    
     <Sectors>
       <Sector Name="OC7" />
     </Sectors>
     <Maps>
       <Map Name="FIR" />
-      <Map Name="GEO" />
-      <Map Name="RTS" />
-      <Map Name="PTS" />	  
+      <Map Name="Geo" />
+      <Map Name="Rts" />
+      <Map Name="Pts" />
+      <Map Name="OSec" />
+      <Map Name="UTA" />	  
     </Maps>
     <Strips Mode="State" Sort="Time">
       <Window Type="State" State="Jurisdiction" Visible="true" />
@@ -173,22 +242,28 @@
       <Window Type="State" State="Preactive" Visible="true" />
     </Strips>
     <CFL QuickLevel="999000" />
-    <ArrivalLists>
-      <Airport Name="KSFO" />
-    </ArrivalLists>
+    <ArrivalLists/>
     <ControllerInfo>
       <Line>San Francisco Radio</Line>
     </ControllerInfo>
   </Position>
-  <Position Name="CWP3" Type="ASD" DefaultCenter="+270000.000-1750000.000" DefaultRange="6000">
+  <Position Name="CWP3[OC9]" Type="ASD" DefaultCenter="+244531.064-1755428.271" DefaultRange="5100">
+	<ManualVisibility>
+		<Point>+2239.000-13726.000</Point>
+		<Point>+3914.000-16344.000</Point>
+		<Point>+1608.000-17005.000</Point>
+		<Point>+1941.000+15324.000</Point>		
+	</ManualVisibility>    
     <Sectors>
       <Sector Name="OC9" />
     </Sectors>
     <Maps>
       <Map Name="FIR" />
-      <Map Name="GEO" />
-      <Map Name="RTS" />
-      <Map Name="PTS" />	  
+      <Map Name="Geo" />
+      <Map Name="Rts" />
+      <Map Name="Pts" />
+      <Map Name="OSec" />
+      <Map Name="UTA" />	  
     </Maps>
     <Strips Mode="State" Sort="Time">
       <Window Type="State" State="Jurisdiction" Visible="true" />
@@ -197,7 +272,8 @@
     </Strips>
     <CFL QuickLevel="999000" />
     <ArrivalLists>
-      <Airport Name="KSFO" />
+      <Airport Name="PMDY" />	
+      <Airport Name="PHHF" />
     </ArrivalLists>
     <ControllerInfo>
       <Line>San Francisco Radio</Line>

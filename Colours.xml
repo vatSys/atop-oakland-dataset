@@ -3,9 +3,9 @@
   <Colour id="GenericText">
 		<Use>Window Text</Use>
 		<Name>Black</Name>
-		<R>104</R>
-		<G>165</G>
-		<B>165</B>
+		<R>0</R>
+		<G>0</G>
+		<B>0</B>
 	</Colour>
   <Colour id="InteractiveText">
 		<Use>InteractiveText</Use>
@@ -24,9 +24,12 @@
 	<Colour id="PopupASDWindowBorderFocused">
 		<Use>Popup ASD Window borders when focused</Use>
 		<Name>PaleGreen</Name>
-		<R>130</R>
+		<R>104</R>
+		<G>165</G>
+		<B>165</B>		
+		<!--R>130</R>
 		<G>155</G>
-		<B>155</B>
+		<B>155</B-->
 	</Colour>
   <Colour id="StripBackground">
 		<Use>Strip Backgrounds</Use>
@@ -37,10 +40,10 @@
 	</Colour>
   <Colour id="WindowBackgound">
 		<Use>Window Backgrounds</Use>
-		<Name>LightGrey</Name>
-		<R>160</R>
-		<G>170</G>
-		<B>170</B>
+		<Name>Grey</Name>		
+		<R>192</R>
+		<G>192</G>
+		<B>192</B>
 	</Colour>
   <Colour id="Preactive">
 		<Use>Preactive Tracks and Strips</Use>
@@ -327,10 +330,10 @@
   </Colour>
 	<Colour id="PRDArea">
 		<Use>Restricted/Danger Areas</Use>
-		<Name>Yellow</Name>
-		<R>235</R>
-		<G>235</G>
-		<B>0</B>
+		<Name>Blue</Name>
+		<R>0</R>
+		<G>0</G>
+		<B>255</B>
 	</Colour>
   <Colour id="UserMap">
     <Use>Custom Maps and Text</Use>

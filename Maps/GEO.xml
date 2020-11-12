@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Maps>
-  <Map Type="System" Name="GEO" Priority="3">
+  <Map Type="System" Name="Geo" Priority="3">
     <Line Name="Coastline">+685937.600-1800000.000/+685934.501-1795954.398</Line>
     <Line Name="Coastline">+685934.501-1795954.398/+685346.398-1793742.099</Line>
     <Line Name="Coastline">+685346.398-1793742.099/+685601.399-1792630.400</Line>

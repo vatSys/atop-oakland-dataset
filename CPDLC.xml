@@ -205,7 +205,7 @@
     <Message Response="WU">SQUAWK IDENT</Message>
     <Message Response="NE">NEXT DATA AUTHORITY [UNIT]</Message>
   </Category>
-  <Category name="Pre-Fmt" AutoloadElements="true" SendViaTM="true">
+  <Category name="Pre-Fmt" SendViaTM="true">
     <Message Response="R">THIS IS AN AUTOMATED MESSAGE TO CONFIRM CPDLC CONNECTION TO KZAK. REPORT SPEED , CHANGES TO ATC..</Message>    
     <Message Response="NE">RESEQUENCE ADS WAYPOINTS</Message>
     <Message Response="NE">ISSUE TIME CHECK</Message>
