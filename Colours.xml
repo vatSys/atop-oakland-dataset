@@ -363,6 +363,13 @@
 		<G>250</G>
 		<B>52</B>
   </Colour>  
+  <Colour id="Custom">
+		<Use>Special colour for my very special map</Use>
+		<Name>Indigo</Name>
+		<R>83</R>
+		<G>84</G>
+		<B>228</B>
+  </Colour>  
   <Colour id="PrimaryMap">
 		<Use>System Maps</Use>
 		<Name>YellowGreen</Name>
