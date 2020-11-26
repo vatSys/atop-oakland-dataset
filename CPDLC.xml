@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Messages>
-  <Category name="Urgent">
+  <Category name="Urgent" SendViaTM="true">
     <Message Response="NE">NEGATIVE</Message>  
     <Message Response="WU">EXPEDITE CLIMB TO [LEVEL]</Message>
     <Message Response="WU">IMMEDIATELY CLIMB TO [LEVEL]</Message>
@@ -13,7 +13,7 @@
     <Message Response="NE">CONFIRM ALTITUDE</Message>
     <Message Response="NE">REPORT REMAINING FUEL AND SOULS ON BOARD</Message>	
   </Category>
-  <Category name="Rpt">
+  <Category name="Rpt" SendViaTM="true">
     <Message Response="R">REPORT PASSING [POSITION]</Message>
     <Message Response="NE">REPORT DISTANCE [TO/FROM] [POSITION]</Message>	
     <Message Response="NE">REPORT RADIAL AND DISTANCE FROM [POSITION]</Message>	
@@ -40,14 +40,14 @@
     <Message Response="NE">REQUEST POSITION REPORT</Message>
     <Message Response="NE">REPORT REMAINING FUEL AND SOULS ON BOARD</Message>	
   </Category>  
-  <Category name="Negot">
+  <Category name="Negot" SendViaTM="true">
     <Message Response="NE">WHEN CAN YOU ACCEPT [LEVEL]</Message>
     <Message Response="NE">WHEN CAN YOU ACCEPT [SPEED]</Message>	
     <Message Response="NE">WHEN CAN YOU ACCEPT [DISTANCE] [DIRECTION] OFFSET</Message>	
     <Message Response="AN">CAN YOU ACCEPT [LEVEL] AT [POSITION]</Message>
     <Message Response="AN">CAN YOU ACCEPT [LEVEL] AT [TIME]</Message>	
   </Category>  
-  <Category name="Rspn">  
+  <Category name="Rspn" SendViaTM="true">  
     <Message Response="NE">UNABLE</Message>  
     <Message Response="NE">STANDBY</Message>
     <Message Response="NE">REQUEST DEFERRED</Message>	
@@ -55,7 +55,7 @@
     <Message Response="NE">AFFIRM</Message>
     <Message Response="NE">NEGATIVE</Message>
   </Category>  
-  <Category name="Misc">
+  <Category name="Misc" SendViaTM="true">
     <Message Response="R">RADAR CONTACT [POSITION]</Message>
     <Message Response="R">RADAR CONTACT LOST</Message>
 	<Message Response="R">RADAR SERVICE TERMINATED</Message>
@@ -72,7 +72,7 @@
     <Message Response="R">CHECK STUCK MICROPHONE [FREQUENCY]</Message>
     <Message Response="R">ATIS [CODE]</Message>	
   </Category>
-  <Category name="Vert">
+  <Category name="Vert" SendViaTM="true">
     <Message Response="WU">CLIMB TO AND MAINTAIN [LEVEL]</Message>
     <Message Response="WU">CLIMB TO AND MAINTAIN BLOCK [LEVEL] TO [LEVEL]</Message>	
     <Message Response="WU">CLIMB TO REACH [LEVEL] BY [TIME]</Message>
@@ -122,7 +122,7 @@
     <Message Response="NE">SQUAWK [SSR]</Message>
 	<Message Response="NE">PDC READBACK FREQ [FREQUENCY]</Message>
   </Category>	
-  <Category name="Route">
+  <Category name="Route" SendViaTM="true">
     <Message Response="WU">CLEARED TO [POSITION] VIA [ROUTE]</Message>  
     <Message Response="WU">CLEARED [ROUTE]</Message>	
     <Message Response="WU">AT [POSITION] CLEARED [ROUTE]</Message>
@@ -149,7 +149,7 @@
     <Message Response="R">EXPECT [STAR] [TEXT]</Message>	
     <Message Response="WU">WHEN ABLE PROCEED DIRECT TO [POSITION]</Message>
   </Category>	
-  <Category name="Speed">
+  <Category name="Speed" SendViaTM="true">
     <Message Response="WU">MAINTAIN [SPEED]</Message>
     <Message Response="WU">MAINTAIN [SPEED] OR GREATER</Message>
     <Message Response="WU">MAINTAIN [SPEED] OR LESS</Message>
@@ -165,7 +165,7 @@
     <Message Response="R">AT [LEVEL] EXPECT [SPEED] TO [SPEED]</Message>
     <Message Response="WU">DO NOT EXCEED [SPEED]</Message>	
   </Category>  
-  <Category name="Cross">
+  <Category name="Cross" SendViaTM="true">
     <Message Response="R">EXPECT TO CROSS [POSITION] AT [LEVEL]</Message>
     <Message Response="R">EXPECT TO CROSS [POSITION] AT OR ABOVE [LEVEL]</Message>
     <Message Response="R">EXPECT TO CROSS [POSITION] AT OR BELOW [LEVEL]</Message>
@@ -191,7 +191,7 @@
     <Message Response="WU">CROSS [POSITION] AT OR AFTER [TIME] AT [LEVEL]</Message>
     <Message Response="WU">CROSS [POSITION] AT AND MAINTAIN [LEVEL] AT [SPEED]</Message>
   </Category>  
-  <Category name="Comms">
+  <Category name="Comms" SendViaTM="true">
     <Message Response="WU">CONTACT [UNIT] [FREQUENCY]</Message>
     <Message Response="WU">AT [POSITION] CONTACT [UNIT] [FREQUENCY]</Message>
     <Message Response="WU">AT [TIME] CONTACT [UNIT] [FREQUENCY]</Message>
@@ -204,6 +204,7 @@
     <Message Response="WU">STOP ALTITUDE SQUAWK</Message>
     <Message Response="WU">SQUAWK IDENT</Message>
     <Message Response="NE">NEXT DATA AUTHORITY [UNIT]</Message>
+    <Message Response="NE">END SERVICE</Message>	
   </Category>
   <Category name="Pre-Fmt" SendViaTM="true">
     <Message Response="R">THIS IS AN AUTOMATED MESSAGE TO CONFIRM CPDLC CONNECTION TO KZAK. REPORT SPEED , CHANGES TO ATC..</Message>    
