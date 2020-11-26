@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Profile Name="ATOP Oakland" FullName="ATOP Oakland (KZAK)">
-	<Version AIRAC="2012" Revision="a" PublishDate="20200908" UpdateURL="" />
+	<Version AIRAC="2012" Revision="b" PublishDate="20201113" UpdateURL="https://vatsys.sawbe.com/downloads/data/ATOP%20Oakland/" />
 	<Servers>
-		<VATSIMStatus url="http://status.vatsim.net/" />
-		<GRIB url="http://sawbe.com/GRIB/" />
+		<VATSIMStatus url="https://status.vatsim.net/" />
+		<GRIB url="https://sawbe.com/GRIB/" />
 		<G2G url="antifaff.vatsys.sawbe.com" port="64738" />
 	</Servers>	
 </Profile>
