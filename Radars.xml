@@ -3,5 +3,21 @@
   <Radar Name="Mill Valley QMV" Type="SSR_ModeS" Elevation="3522" MaxRange="250">
     <Lat>37.923978</Lat>
     <Long>-122.597756</Long>
-  </Radar>
+  </Radar> 
+  <Radar Name="ADSC1" Type="ADSB" Elevation="5500" MaxRange="1500">
+    <Lat>+2239.000</Lat>
+    <Long>-13726.000</Long>
+  </Radar>  
+  <Radar Name="ADSC2" Type="ADSB" Elevation="5500" MaxRange="1500">
+    <Lat>+3914.000</Lat>
+    <Long>-16344.000</Long>
+  </Radar> 
+  <Radar Name="ADSC3" Type="ADSB" Elevation="5500" MaxRange="1500">
+    <Lat>+1608.000</Lat>
+    <Long>-17005.000</Long>
+  </Radar> 
+  <Radar Name="ADSC4" Type="ADSB" Elevation="5500" MaxRange="1500">
+    <Lat>+1941.000</Lat>
+    <Long>+15324.000</Long>
+  </Radar>   
 </Radars>
