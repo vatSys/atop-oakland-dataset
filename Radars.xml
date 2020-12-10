@@ -5,19 +5,19 @@
     <Long>-122.597756</Long>
   </Radar> 
   <Radar Name="ADSC1" Type="ADSB" Elevation="5500" MaxRange="1500">
-    <Lat>+2239.000</Lat>
-    <Long>-13726.000</Long>
+    <Lat>+194511.6875</Lat>
+    <Long>+1532123.5625</Long>
   </Radar>  
   <Radar Name="ADSC2" Type="ADSB" Elevation="5500" MaxRange="1500">
-    <Lat>+3914.000</Lat>
-    <Long>-16344.000</Long>
+    <Lat>+161902.9063</Lat>
+    <Long>-1700853.250</Long>
   </Radar> 
   <Radar Name="ADSC3" Type="ADSB" Elevation="5500" MaxRange="1500">
-    <Lat>+1608.000</Lat>
-    <Long>-17005.000</Long>
+    <Lat>+392411.3281</Lat>
+    <Long>-1640402.9375</Long>
   </Radar> 
   <Radar Name="ADSC4" Type="ADSB" Elevation="5500" MaxRange="1500">
-    <Lat>+1941.000</Lat>
-    <Long>+15324.000</Long>
+    <Lat>+223856.625</Lat>
+    <Long>-1373850.625</Long>
   </Radar>   
 </Radars>
