@@ -1,23 +1,71 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Radars>
-  <Radar Name="Mill Valley QMV" Type="SSR_ModeS" Elevation="3522" MaxRange="250">
-    <Lat>37.923978</Lat>
-    <Long>-122.597756</Long>
-  </Radar> 
-  <Radar Name="ADSC1" Type="ADSB" Elevation="5500" MaxRange="5000">
+  <Radar Name="ADSC1" Type="ADSB" Elevation="1000" MaxRange="10000">
     <Lat>21.40261</Lat>
     <Long>-157.44382</Long>
   </Radar>  
-  <Radar Name="ADSC2" Type="ADSB" Elevation="5500" MaxRange="5000">
+  <Radar Name="ADSC2" Type="ADSB" Elevation="1000" MaxRange="50000">
     <Lat>31.91432</Lat>
     <Long>-132.11058</Long>
   </Radar> 
-  <Radar Name="ADSC3" Type="ADSB" Elevation="5500" MaxRange="5000">
+  <Radar Name="ADSC3" Type="ADSB" Elevation="1000" MaxRange="50000">
     <Lat>28.20243</Lat>
     <Long>-170.76009</Long>
   </Radar> 
-  <Radar Name="ADSC4" Type="ADSB" Elevation="5500" MaxRange="5000">
+  <Radar Name="ADSC4" Type="ADSB" Elevation="1000" MaxRange="50000">
     <Lat>53.41682</Lat>
     <Long>-151.95992</Long>
-  </Radar>   
+  </Radar>
+  <Radar Name="ADSC5" Type="ADSB" Elevation="1000" MaxRange="50000">
+    <Lat>31.72925</Lat>
+    <Long>-128.14543</Long>
+  </Radar>
+  <Radar Name="ADSC6" Type="ADSB" Elevation="1000" MaxRange="50000">
+    <Lat>26.72948</Lat>
+    <Long>-146.36337</Long>
+  </Radar>
+  <Radar Name="ADSC6" Type="ADSB" Elevation="1000" MaxRange="50000">
+    <Lat>37.73787</Lat>
+    <Long>-129.06823</Long>
+  </Radar>
+  <Radar Name="ADSC7" Type="ADSB" Elevation="1000" MaxRange="50000">
+    <Lat>20.62350</Lat>
+    <Long>-127.06297</Long>
+  </Radar>
+  <Radar Name="ADSC8" Type="ADSB" Elevation="1000" MaxRange="50000">
+    <Lat>32.67787</Lat>
+    <Long>-119.84105</Long>
+  </Radar>
+  <Radar Name="ADSC9" Type="ADSB" Elevation="1000" MaxRange="50000">
+    <Lat>13.23596</Lat>
+    <Long>-160.81343</Long>
+  </Radar>
+  <Radar Name="ADSC10" Type="ADSB" Elevation="1000" MaxRange="50000">
+    <Lat>27.58515</Lat>
+    <Long>-139.07233</Long>
+  </Radar>
+  <Radar Name="ADSC11" Type="ADSB" Elevation="1000" MaxRange="50000">
+    <Lat>43.74126</Lat>
+    <Long>-125.66459</Long>
+  </Radar>
+  <Radar Name="ADSC12" Type="ADSB" Elevation="1000" MaxRange="50000">
+    <Lat>39.54689</Lat>
+    <Long>-134.76789</Long>
+  </Radar>
+  <Radar Name="ADSC13" Type="ADSB" Elevation="1000" MaxRange="50000">
+    <Lat>34.27118</Lat>
+    <Long>-144.14251</Long>
+  </Radar>
+  <Radar Name="ADSC14" Type="ADSB" Elevation="1000" MaxRange="50000">
+    <Lat>30.22351</Lat>
+    <Long>-150.33610</Long>
+  </Radar>
+  <Radar Name="ADSC15" Type="ADSB" Elevation="1000" MaxRange="50000">
+    <Lat>25.20542</Lat>
+    <Long>-154.43422</Long>
+  </Radar>
+  <Radar Name="ADSC16" Type="ADSB" Elevation="1000" MaxRange="50000">
+    <Lat>45.06162</Lat>
+    <Long>-126.08538</Long>
+  </Radar>
 </Radars>

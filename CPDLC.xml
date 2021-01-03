@@ -150,20 +150,20 @@
     <Message Response="WU">WHEN ABLE PROCEED DIRECT TO [POSITION]</Message>
   </Category>	
   <Category name="Speed" SendViaTM="true">
-    <Message Response="WU">MAINTAIN [SPEED]</Message>
-    <Message Response="WU">MAINTAIN [SPEED] OR GREATER</Message>
-    <Message Response="WU">MAINTAIN [SPEED] OR LESS</Message>
-    <Message Response="WU">INCREASE SPEED TO [SPEED]</Message>
-    <Message Response="WU">INCREASE SPEED TO [SPEED] OR GREATER</Message>
-    <Message Response="WU">REDUCE SPEED TO [SPEED]</Message>
-    <Message Response="WU">REDUCE SPEED TO [SPEED] OR LESS</Message>
-    <Message Response="R">AT [TIME] EXPECT [SPEED]</Message>
-    <Message Response="R">AT [POSITION] EXPECT [SPEED]</Message>
-    <Message Response="R">AT [LEVEL] EXPECT [SPEED]</Message>
-    <Message Response="R">AT [TIME] EXPECT [SPEED] TO [SPEED]</Message>
-    <Message Response="R">AT [POSITION] EXPECT [SPEED] TO [SPEED]</Message>
-    <Message Response="R">AT [LEVEL] EXPECT [SPEED] TO [SPEED]</Message>
-    <Message Response="WU">DO NOT EXCEED [SPEED]</Message>	
+    <Message Response="WU">MAINTAIN MACH [SPEED]</Message>
+    <Message Response="WU">MAINTAIN MACH [SPEED] OR GREATER</Message>
+    <Message Response="WU">MAINTAIN MACH [SPEED] OR LESS</Message>
+    <Message Response="WU">INCREASE SPEED TO MACH [SPEED]</Message>
+    <Message Response="WU">INCREASE SPEED TO MACH [SPEED] OR GREATER</Message>
+    <Message Response="WU">REDUCE SPEED TO MACH [SPEED]</Message>
+    <Message Response="WU">REDUCE SPEED TO MACH [SPEED] OR LESS</Message>
+    <Message Response="R">AT [TIME] EXPECT MACH [SPEED]</Message>
+    <Message Response="R">AT [POSITION] EXPECT MACH [SPEED]</Message>
+    <Message Response="R">AT [LEVEL] EXPECT MACH [SPEED]</Message>
+    <Message Response="R">AT [TIME] EXPECT MACH [SPEED] TO MACH [SPEED]</Message>
+    <Message Response="R">AT [POSITION] EXPECT MACH [SPEED] TO MACH [SPEED]</Message>
+    <Message Response="R">AT [LEVEL] EXPECT MACH [SPEED] TO MACH [SPEED]</Message>
+    <Message Response="WU">DO NOT EXCEED MACH [SPEED]</Message>	
   </Category>  
   <Category name="Cross" SendViaTM="true">
     <Message Response="R">EXPECT TO CROSS [POSITION] AT [LEVEL]</Message>
@@ -210,7 +210,7 @@
     <Message Response="R">THIS IS AN AUTOMATED MESSAGE TO CONFIRM CPDLC CONNECTION TO KZAK. REPORT SPEED , CHANGES TO ATC..</Message>    
     <Message Response="NE">RESEQUENCE ADS WAYPOINTS</Message>
     <Message Response="NE">ISSUE TIME CHECK</Message>
-    <Message Response="NE">SELECT ATC COM OFF AND MANUALLY LOG ON TO [facility>]</Message>
+    <Message Response="NE">SELECT ATC COM OFF AND MANUALLY LOG ON TO KZAK</Message>
     <Message Response="NE">TO THE [name] AIRPORT.  REPORT ARRIVAL.</Message>
     <Message Response="NE">ATCR SAY FLIGHT CONDITIONS</Message>
     <Message Response="NE">ADS-C CDP PROCEDURE IS BEING APPLIED BY ATC</Message>
