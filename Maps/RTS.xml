@@ -51,7 +51,7 @@
 	<Line Name="C1418">HQM.C1418.SEDAR</Line>
 	<Line Name="C1419">ONP.C1419.HEMLO</Line>
 	<Line Name="C1486">ENI.C1486.VESPA</Line>
-	<Line Name="G205">HM.G205.TEGOD</Line>
+	<!--Line Name="G205">HM.G205.TEGOD</Line-->
 	<Line Name="G215">OLCOT.G215.DUT</Line>
 	<Line Name="G223">ADKAK.G223.SAREG</Line>
 	<Line Name="G339">UNZ.G339.PSN</Line>

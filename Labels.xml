@@ -7,7 +7,7 @@
       <Item Type="LABEL_ITEM_WARNING" Colour="Warning" P1_BackgroundColour="Emergency" LeftClick="" MiddleClick="Label_Warning" RightClick=""/>	  
     </DataLine>
     <DataLine>
-      <Item Type="LABEL_ITEM_LEVEL" Colour="" LeftClick="" MiddleClick="" RightClick="Label_Move"/>
+      <Item Type="AURORA_LEVEL" Colour="" LeftClick="" MiddleClick="" RightClick="Label_Move"/>
       <Item Type="LABEL_ITEM_VERTICALINDICATOR" Colour="" LeftClick="" MiddleClick="" RightClick=""/>
       <Item Type="LABEL_ITEM_CFL" Colour="CFLHighlight" LeftClick="Label_CFL_Popup" MiddleClick="Label_NewCFL_Toggle" RightClick=""/>
       <Item Type="LABEL_ITEM_GROUNDSPEED" Colour="" LeftClick="" MiddleClick="" RightClick="" LeftPadding="1"/>
@@ -23,7 +23,7 @@
       <Item Type="LABEL_ITEM_ACID" Colour="" P1_Colour="Warning" P1_BackgroundColour="Emergency" LeftClick="Label_ACID_Menu" MiddleClick="" RightClick=""/>
     </DataLine>
     <DataLine>
-      <Item Type="LABEL_ITEM_LEVEL" Colour="" LeftClick="" MiddleClick="" RightClick="Label_Move"/>
+      <Item Type="AURORA_LEVEL" Colour="" LeftClick="" MiddleClick="" RightClick="Label_Move"/>
       <Item Type="LABEL_ITEM_VERTICALINDICATOR" Colour="" LeftClick="" MiddleClick="" RightClick=""/>
       <Item Type="LABEL_ITEM_CFL" Colour="CFLHighlight" LeftClick="Label_CFL_Popup" MiddleClick="Label_NewCFL_Toggle" RightClick=""/>
       <Item Type="LABEL_ITEM_GROUNDSPEED" Colour="" LeftClick="" MiddleClick="" RightClick="" LeftPadding="1"/>
@@ -39,7 +39,7 @@
       <Item Type="LABEL_ITEM_WARNING" Colour="Warning" P1_BackgroundColour="Emergency" LeftClick="" MiddleClick="Label_Warning" RightClick=""/>	  
     </DataLine>
     <DataLine>
-      <Item Type="LABEL_ITEM_LEVEL" Colour="" LeftClick="" MiddleClick="" RightClick="Label_Move"/>
+      <Item Type="AURORA_LEVEL" Colour="" LeftClick="" MiddleClick="" RightClick="Label_Move"/>
       <Item Type="LABEL_ITEM_VERTICALINDICATOR" Colour="" LeftClick="" MiddleClick="" RightClick=""/>
       <Item Type="LABEL_ITEM_CFL" Colour="CFLHighlight" LeftClick="Label_CFL_Popup" MiddleClick="Label_NewCFL_Toggle" RightClick=""/>
       <Item Type="LABEL_ITEM_GROUNDSPEED" Colour="" LeftClick="" MiddleClick="" RightClick="" LeftPadding="1"/>
@@ -64,7 +64,7 @@
       <Item Type="LABEL_ITEM_CPROMPT" Colour="CFLHighlight" LeftClick="" MiddleClick="Label_CPrompt" RightClick=""/>	  
     </DataLine>
     <DataLine>
-      <Item Type="LABEL_ITEM_LEVEL" Colour="" LeftClick="Label_PRL_Popup" MiddleClick="" RightClick="Label_Move"/>
+      <Item Type="AURORA_LEVEL" Colour="" LeftClick="Label_PRL_Popup" MiddleClick="" RightClick="Label_Move"/>
       <Item Type="LABEL_ITEM_VERTICALINDICATOR" Colour="" LeftClick="" MiddleClick="" RightClick=""/>
       <Item Type="LABEL_ITEM_CFL_LOWER" Colour="CFLHighlight" LeftClick="Label_CFL_Popup" MiddleClick="Label_NewCFL_Toggle"/>	  
       <Item Type="LABEL_ITEM_CFL" Colour="CFLHighlight" LeftClick="Label_CFL_Popup" MiddleClick="Label_NewCFL_Toggle" RightClick="Label_PRW_Popup"/>
@@ -94,7 +94,7 @@
       <Item Type="LABEL_ITEM_WAKETURBCAT" Colour="" LeftClick="" MiddleClick="" RightClick="" LeftPadding="1"/>
     </DataLine>
     <DataLine>
-      <Item Type="LABEL_ITEM_LEVEL" Colour="" LeftClick="" MiddleClick="" RightClick="Label_Move"/>
+      <Item Type="AURORA_LEVEL" Colour="" LeftClick="" MiddleClick="" RightClick="Label_Move"/>
       <Item Type="LABEL_ITEM_VERTICALINDICATOR" Colour="" LeftClick="" MiddleClick="" RightClick=""/>
       <Item Type="LABEL_ITEM_GROUNDSPEED" Colour="" LeftClick="" MiddleClick="" RightClick=""/>
       <Item Type="LABEL_ITEM_GATE_N" Colour="" LeftClick="" MiddleClick="" RightClick="" LeftPadding="1"/>
