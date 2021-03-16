@@ -9,10 +9,10 @@
 	</Colour>
   <Colour id="InteractiveText">
 		<Use>InteractiveText</Use>
-		<Name>DarkBlue</Name>
+		<Name>Black</Name>
 		<R>0</R>
 		<G>0</G>
-		<B>96</B>
+		<B>0</B>
 	</Colour>
   <Colour id="StripText">
 		<Use>Strip Text</Use>
@@ -27,9 +27,6 @@
 		<R>104</R>
 		<G>165</G>
 		<B>165</B>		
-		<!--R>130</R>
-		<G>155</G>
-		<B>155</B-->
 	</Colour>
   <Colour id="StripBackground">
 		<Use>Strip Backgrounds</Use>
@@ -40,10 +37,10 @@
 	</Colour>
   <Colour id="WindowBackgound">
 		<Use>Window Backgrounds</Use>
-		<Name>Grey</Name>		
-		<R>192</R>
-		<G>192</G>
-		<B>192</B>
+		<Name>Grey</Name>
+		<R>190</R>
+		<G>190</G>
+		<B>190</B>
 	</Colour>
   <Colour id="Preactive">
 		<Use>Preactive Tracks and Strips</Use>
@@ -468,4 +465,53 @@
     <G>235</G>
     <B>0</B>
   </Colour>
+<Colour id="ListSeparator">
+        <Use>List Separator Bar</Use>
+        <Name>GreenGrey</Name>
+        <R>0</R>
+        <G>0</G>
+        <B>96</B>
+    </Colour>
+    <Colour id="ListSeparatorSelected">
+        <Use>List Separator Bar Selected</Use>
+        <Name>GreenGrey</Name>
+        <R>130</R>
+        <G>146</G>
+        <B>146</B>
+    </Colour>
+  <Colour id="WindowButtonDepressed">
+    <Use>Depressed Window Button Background</Use>
+    <Name>GreenGrey</Name>
+    <R>130</R>
+    <G>146</G>
+    <B>146</B>
+  </Colour>
+  <Colour id="WindowButtonSelected">
+    <Use>Selected Window Button Background</Use>
+    <Name>Black</Name>
+    <R>0</R>
+    <G>0</G>
+    <B>0</B>
+  </Colour>
+ <Colour id="WindowEmergency">
+    <Use>Emergency Indications in Windows</Use>
+    <Name>DarkRed</Name>
+    <R>209</R>
+    <G>46</G>
+    <B>46</B>
+  </Colour>
+  <Colour id="WindowWarning">
+    <Use>Warning Indications in Windows</Use>
+    <Name>BrightYellow</Name>
+    <R>255</R>
+    <G>255</G>
+    <B>0</B>
+  </Colour> 
+   <Colour id="WindowBorder">
+        <Use>Window Border</Use>
+		<Name>BlueGreen</Name>
+		<R>94</R>
+		<G>158</G>
+		<B>160</B>
+	</Colour>
 </Colours>
