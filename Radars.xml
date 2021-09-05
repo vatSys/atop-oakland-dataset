@@ -14,13 +14,13 @@
   </Radar>  
   <Radar Name="Rainbow Ridge (QZZ)" Type="SSR_ModeS" Elevation="2646" MaxRange="250">
     <Lat>+402340.000</Lat>
-    <Long>-124 0954.000</Long>
+    <Long>-1240954.000</Long>
   </Radar>
   <Radar Name="Vandenberg" Type="SSR_ModeS" Elevation="1593" MaxRange="255">
     <Lat>+343514.000</Lat>
     <Long>-1203542.000</Long>
   </Radar>
-  <Radar Name="San Pedro (QLA) Type="SSR_ModeS" Elevation="1457" MaxRange="255">
+  <Radar Name="San Pedro (QLA)" Type="SSR_ModeS" Elevation="1457" MaxRange="255">
     <Lat>+334445.000</Lat>
     <Long>-1182010.000</Long>
   </Radar>
