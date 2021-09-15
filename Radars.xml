@@ -1,55 +1,55 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Radars>
-  <Radar Name="Paso Robles (PRB)" Type="SSR_ModeS" Elevation="3649" MaxRange="250">
-    <Lat>+352342.000</Lat>
-    <Long>-1202116.000</Long>
-  </Radar>
-  <Radar Name="Red Bluff  (RBL)" Type="SSR_ModeS" Elevation="526" MaxRange="225">
-    <Lat>+400846.000</Lat>
-    <Long>-1221816.000</Long>
-  </Radar>
+  <!--Radar Name="Paso Robles (PRB)" Type="SSR_ModeS" Elevation="3649" MaxRange="250">
+    <Lat>+35.395</Lat>
+    <Long>-120.3544</Long>
+  </Radar-->
+  <!--Radar Name="Red Bluff  (RBL)" Type="SSR_ModeS" Elevation="526" MaxRange="225">
+    <Lat>+40.14611</Lat>
+    <Long>-122.3044</Long>
+  </Radar-->
   <Radar Name="Mill Valley QMV" Type="SSR_ModeS" Elevation="3522" MaxRange="250">
     <Lat>+37.923978</Lat>
     <Long>-122.597756</Long>
   </Radar>  
-  <Radar Name="Rainbow Ridge (QZZ)" Type="SSR_ModeS" Elevation="2646" MaxRange="250">
-    <Lat>+402340.000</Lat>
-    <Long>-1240954.000</Long>
-  </Radar>
-  <Radar Name="Vandenberg" Type="SSR_ModeS" Elevation="1593" MaxRange="255">
-    <Lat>+343514.000</Lat>
-    <Long>-1203542.000</Long>
-  </Radar>
-  <Radar Name="San Pedro (QLA)" Type="SSR_ModeS" Elevation="1457" MaxRange="255">
-    <Lat>+334445.000</Lat>
-    <Long>-1182010.000</Long>
-  </Radar>
-  <Radar Name="Salem (SLE)" Type="SSR_ModeS" Elevation="3591" MaxRange="255">
-    <Lat>+445523.000</Lat>
-    <Long>-1233422.000</Long>
-  </Radar>
-  <Radar Name="Makah (QKW)" Type="SSR_ModeS" Elevation="1431" MaxRange="255">
-    <Lat>+482219.000</Lat>
-    <Long>-1244034.000</Long>
-  </Radar>
+  <!--Radar Name="Rainbow Ridge (QZZ)" Type="SSR_ModeS" Elevation="2646" MaxRange="250">
+    <Lat>+40.39444</Lat>
+    <Long>-124.165</Long>
+  </Radar-->
+  <!--Radar Name="Vandenberg" Type="SSR_ModeS" Elevation="1593" MaxRange="255">
+    <Lat>+34.58722</Lat>
+    <Long>-120.595</Long>
+  </Radar-->
+  <!--Radar Name="San Pedro (QLA)" Type="SSR_ModeS" Elevation="1457" MaxRange="255">
+    <Lat>+33.74583</Lat>
+    <Long>-118.3361</Long>
+  </Radar-->
+  <!--Radar Name="Salem (SLE)" Type="SSR_ModeS" Elevation="3591" MaxRange="255">
+    <Lat>+44.92306</Lat>
+    <Long>-123.5728</Long>
+  </Radar-->
+  <!--Radar Name="Makah (QKW)" Type="SSR_ModeS" Elevation="1431" MaxRange="255">
+    <Lat>+48.37194</Lat>
+    <Long>-124.6761</Long>
+  </Radar-->
   <Radar Name="Puu Niauniau (QPN)" Type="SSR_ModeS" Elevation="6667" MaxRange="255">
-    <Lat>+204619.000</Lat>
-    <Long>-1561420.000</Long>
+    <Lat>+20.77194</Lat>
+    <Long>-156.2389</Long>
   </Radar>
   <Radar Name="Kokee Radar(QKK)" Type="SSR_ModeS" Elevation="4271" MaxRange="255">
-    <Lat>+220853.000</Lat>
-    <Long>-1593843.000</Long>
+    <Lat>+22.14806</Lat>
+    <Long>-159.6453</Long>
   </Radar>
   <Radar Name="Pohoa (POA)" Type="SSR_ModeS" Elevation="542" MaxRange="255">
-    <Lat>+193223.000</Lat>
-    <Long>-1545809.000</Long>
+    <Lat>+19.53972</Lat>
+    <Long>-154.9692</Long>
   </Radar>
   <Radar Name="Mt. Kaala (QKA)" Type="SSR_ModeS" Elevation="4112" MaxRange="255">
-    <Lat>+213027.000</Lat>
-    <Long>-1580831.000</Long>
+    <Lat>+21.507486</Lat>
+    <Long>-158.14218</Long>
   </Radar>
   <Radar Name="Kona (KOA)" Type="SSR_ModeS" Elevation="249" MaxRange="255">
-    <Lat>+194455.000</Lat>
-    <Long>-1560152.000</Long>
+    <Lat>+19.74861</Lat>
+    <Long>-156.0311</Long>
   </Radar>  
 </Radars>
