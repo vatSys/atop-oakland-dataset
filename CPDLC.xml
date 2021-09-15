@@ -54,8 +54,10 @@
     <Message Response="NE">ROGER</Message>
     <Message Response="NE">AFFIRM</Message>
     <Message Response="NE">NEGATIVE</Message>
+    <Message Response="R">[TEXT]</Message> 	
   </Category>  
   <Category name="Misc" SendViaTM="true">
+    <Message Response="R">[TEXT]</Message>  
     <Message Response="R">RADAR CONTACT [POSITION]</Message>
     <Message Response="R">RADAR CONTACT LOST</Message>
 	<Message Response="R">RADAR SERVICE TERMINATED</Message>
@@ -123,11 +125,12 @@
 	<Message Response="NE">PDC READBACK FREQ [FREQUENCY]</Message>
   </Category>	
   <Category name="Route" SendViaTM="true">
+    <Message Response="WU">AT [TIME] CLEARED [ADEP][ROUTE][ADES] ALT [LEVEL] FREQ [FREQUENCY] SSR [SSR], [TEXT]</Message>   
     <Message Response="WU">CLEARED TO [POSITION] VIA [ROUTE]</Message>  
     <Message Response="WU">CLEARED [ROUTE]</Message>	
     <Message Response="WU">AT [POSITION] CLEARED [ROUTE]</Message>
-    <Message Response="WU">PROCEED DIRECT TO [POSITION]</Message>
-    <Message Response="WU">AT [TIME] PROCEED DIRECT TO [POSITION]</Message>
+    <Message Response="WU">PROCEED DIRECT TO [POSITION]</Message>	
+    <Message Response="WU">AT [TIME] PROCEED DIRECT TO [POSITION]</Message>	
     <Message Response="WU">AT [POSITION] PROCEED DIRECT TO [POSITION]</Message>
     <Message Response="WU">OFFSET [DIRECTION] [DISTANCE] OF ROUTE</Message>
     <Message Response="WU">AT [POSITION] OFFSET [DIRECTION] [DISTANCE] OF ROUTE</Message>
@@ -165,7 +168,7 @@
     <Message Response="R">AT [LEVEL] EXPECT MACH [SPEED] TO MACH [SPEED]</Message>
     <Message Response="WU">DO NOT EXCEED MACH [SPEED]</Message>	
   </Category>  
-  <Category name="Cross" SendViaTM="true">
+  <Category name="X-ing" SendViaTM="true">
     <Message Response="R">EXPECT TO CROSS [POSITION] AT [LEVEL]</Message>
     <Message Response="R">EXPECT TO CROSS [POSITION] AT OR ABOVE [LEVEL]</Message>
     <Message Response="R">EXPECT TO CROSS [POSITION] AT OR BELOW [LEVEL]</Message>
@@ -191,7 +194,7 @@
     <Message Response="WU">CROSS [POSITION] AT OR AFTER [TIME] AT [LEVEL]</Message>
     <Message Response="WU">CROSS [POSITION] AT AND MAINTAIN [LEVEL] AT [SPEED]</Message>
   </Category>  
-  <Category name="Comms" SendViaTM="true">
+  <Category name="Comm" SendViaTM="true">
     <Message Response="WU">CONTACT [UNIT] [FREQUENCY]</Message>
     <Message Response="WU">AT [POSITION] CONTACT [UNIT] [FREQUENCY]</Message>
     <Message Response="WU">AT [TIME] CONTACT [UNIT] [FREQUENCY]</Message>
@@ -206,8 +209,7 @@
     <Message Response="NE">NEXT DATA AUTHORITY [UNIT]</Message>
     <Message Response="NE">END SERVICE</Message>	
   </Category>
-  <Category name="Pre-Fmt" SendViaTM="true">
-    <Message Response="R">THIS IS AN AUTOMATED MESSAGE TO CONFIRM CPDLC CONNECTION TO KZAK. REPORT SPEED , CHANGES TO ATC..</Message>    
+  <Category name="Pre-Fmt" SendViaTM="true"> 
     <Message Response="NE">RESEQUENCE ADS WAYPOINTS</Message>
     <Message Response="NE">ISSUE TIME CHECK</Message>
     <Message Response="NE">SELECT ATC COM OFF AND MANUALLY LOG ON TO KZAK</Message>
@@ -216,5 +218,8 @@
     <Message Response="NE">ADS-C CDP PROCEDURE IS BEING APPLIED BY ATC</Message>
     <Message Response="NE">ATCR SAY MACH NUMBER</Message>
 	<Message Response="NE">ATCA UNABLE REQUESTED ALTITUDE DUE TO TRAFFIC</Message>
+  </Category>
+  <Category name="WelcomeMsg" AutoloadElements="true" SendViaTM="true">
+    <Message Response="R">THIS IS AN AUTOMATED MESSAGE TO CONFIRM CPDLC CONNECTION TO KZAK. REPORT SPEED , CHANGES TO ATC..</Message>
   </Category>
 </Messages>
