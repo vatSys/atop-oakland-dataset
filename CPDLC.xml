@@ -113,19 +113,9 @@
     <Message Response="WU">CRUISE CLIMB TO [LEVEL]</Message>
     <Message Response="WU">MAINTAIN [LEVEL]</Message>
     <Message Response="WU">MAINTAIN BLOCK [LEVEL] TO [LEVEL]</Message>
-  </Category>
-  <Category name="PDC" AutoloadElements="true" SendViaTM="true">
-    <Message Response="NE">PDC [TIMESTAMP]</Message>
-    <Message Response="NE">[CALLSIGN] [ATYPE] [ADEP] [ETD]</Message>
-    <Message Response="NE">CLEARED TO [ADES] VIA [SID] DEP [TEXT]</Message>
-    <Message Response="NE">ROUTE [ROUTE]</Message>
-    <Message Response="NE">CLIMB VIA SID TO [LEVEL]</Message>
-    <Message Response="NE">DEP FREQ [FREQUENCY]</Message>
-    <Message Response="NE">SQUAWK [SSR]</Message>
-	<Message Response="NE">PDC READBACK FREQ [FREQUENCY]</Message>
   </Category>	
   <Category name="Route" SendViaTM="true">
-    <Message Response="WU">AT [TIME] CLEARED [ADEP][ROUTE][ADES] ALT [LEVEL] FREQ [FREQUENCY] SSR [SSR], [TEXT]</Message>   
+    <Message Response="WU">AT [TIME] CLEARED [ROUTE] ALT [LEVEL] FREQ [FREQUENCY] SSR [SSR], [TEXT]</Message>   
     <Message Response="WU">CLEARED TO [POSITION] VIA [ROUTE]</Message>  
     <Message Response="WU">CLEARED [ROUTE]</Message>	
     <Message Response="WU">AT [POSITION] CLEARED [ROUTE]</Message>

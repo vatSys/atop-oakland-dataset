@@ -208,16 +208,16 @@
 	</Colour>
   <Colour id="GhostJurisdiction">
     <Use>GhostJurisdiction</Use>
-    <Name>Yellow</Name>
-    <R>237</R>
-    <G>230</G>
-    <B>178</B>
+    <Name>LightBlue</Name>
+		<R>173</R>
+		<G>216</G>
+		<B>255</B>
   </Colour>
   <Colour id="PostJurisdiction">
 		<Use>PostJurisdiction</Use>
-		<Name>White</Name>
-		<R>255</R>
-		<G>255</G>
+		<Name>LightBlue</Name>
+		<R>173</R>
+		<G>216</G>
 		<B>255</B>
 	</Colour>
   <Colour id="JurisdictionIQL">
@@ -264,10 +264,10 @@
 	</Colour>
   <Colour id="CFLHighlight">
 		<Use>New CFL Selection</Use>
-		<Name>White</Name>
-		<R>255</R>
+		<Name>Green</Name>
+		<R>0</R>
 		<G>255</G>
-		<B>255</B>
+		<B>0</B>
 	</Colour>
   <Colour id="IdentFlash">
 		<Use>SPI</Use>
@@ -278,10 +278,10 @@
 	</Colour>
   <Colour id="Route">
     <Use>Graphic Route</Use>
-    <Name>Green</Name>
-    <R>0</R>
-    <G>255</G>
-    <B>0</B>
+    <Name>Orange</Name>
+		<R>139</R>
+		<G>101</G>
+		<B>8</B>
   </Colour>
   <Colour id="StaticTools">
 		<Use>BRL,PETO,NonRVSM,LATC,ETO</Use>
@@ -366,7 +366,14 @@
 		<R>83</R>
 		<G>84</G>
 		<B>228</B>
-  </Colour>  
+  </Colour> 
+  <Colour id="Custom">
+		<Use>Special colour for my very special map</Use>
+		<Name>TealGreen</Name>
+		<R>0</R>
+		<G>255</G>
+		<B>102</B>
+  </Colour>   
   <Colour id="PrimaryMap">
 		<Use>System Maps</Use>
 		<Name>YellowGreen</Name>
