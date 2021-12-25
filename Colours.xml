@@ -383,10 +383,10 @@
 	</Colour>
   <Colour id="Infill">
 		<Use>Filled Area Map</Use>
-		<Name>Orange</Name>
-		<R>139</R>
-		<G>101</G>
-		<B>8</B>
+		<Name>Dark Gray</Name>
+		<R>15</R>
+		<G>15</G>
+		<B>15</B>
 	</Colour>
   <Colour id="SecondaryMap">
 		<Use>Alternative System Map</Use>
