@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Positions xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-  <Position Name="CWP11" Type="ASD" DefaultCenter="+270000.000-1750000.000" DefaultRange="6000">
+  <Position Name="CWP11" Type="ASD" DefaultCenter="+270000.000-1750000.000" DefaultRange="7700">
 	<ManualVisibility>
 		<Point>+2239.000-13726.000</Point>
 		<Point>+3914.000-16344.000</Point>
@@ -25,6 +25,112 @@
       <Line>ATC by Oakland Center HF relay by San Francisco ARINC</Line>
     </ControllerInfo>
   </Position>
+  <Position Name="ALL" Type="ASD" DefaultCenter="+270000.000-1750000.000" DefaultRange="7700">
+	<ManualVisibility>
+		<Point>+2239.000-13726.000</Point>
+		<Point>+3914.000-16344.000</Point>
+		<Point>+1608.000-17005.000</Point>
+		<Point>+1941.000+15324.000</Point>		
+	</ManualVisibility>  
+    <Sectors>
+      <Sector Name="OC1" />
+      <Sector Name="OC2" />	  
+      <Sector Name="OC3" />	  
+      <Sector Name="OC4" />	  
+      <Sector Name="OC5" />	  
+      <Sector Name="OC6" />	  
+      <Sector Name="OC7" />	  
+      <Sector Name="OC9" />	    
+    </Sectors>
+    <Maps>
+      <Map Name="FIR" />
+      <Map Name="Geo" />
+      <Map Name="Rts" />
+      <Map Name="Pts" />
+      <Map Name="OSec" />
+      <Map Name="UTA" />	  
+    </Maps>
+    <Strips Mode="State" Sort="Time">
+      <Window Type="State" State="Jurisdiction" Visible="true" />
+      <Window Type="State" State="Announced" Visible="true" />
+      <Window Type="State" State="Preactive" Visible="true" />
+    </Strips>
+    <CFL QuickLevel="999000" />
+    <ArrivalLists>
+      <Airport Name="KSFO" />
+    </ArrivalLists>
+    <ControllerInfo>
+      <Line>ATC by Oakland Center HF relay by San Francisco ARINC</Line>
+    </ControllerInfo>
+  </Position>  
+  <Position Name="PN" Type="ASD" DefaultCenter="+390335.0711-1611727.9309" DefaultRange="4100">
+	<ManualVisibility>
+		<Point>+2239.000-13726.000</Point>
+		<Point>+3914.000-16344.000</Point>
+		<Point>+1608.000-17005.000</Point>
+		<Point>+1941.000+15324.000</Point>		
+	</ManualVisibility>  
+    <Sectors>
+      <Sector Name="OC1" />
+      <Sector Name="OC2" />	  	  
+      <Sector Name="OC4" />	  	  
+      <Sector Name="OC7" />	  	    
+    </Sectors>
+    <Maps>
+      <Map Name="FIR" />
+      <Map Name="Geo" />
+      <Map Name="Rts" />
+      <Map Name="Pts" />
+      <Map Name="OSec" />
+      <Map Name="UTA" />	  
+    </Maps>
+    <Strips Mode="State" Sort="Time">
+      <Window Type="State" State="Jurisdiction" Visible="true" />
+      <Window Type="State" State="Announced" Visible="true" />
+      <Window Type="State" State="Preactive" Visible="true" />
+    </Strips>
+    <CFL QuickLevel="999000" />
+    <ArrivalLists>
+      <Airport Name="KSFO" />
+    </ArrivalLists>
+    <ControllerInfo>
+      <Line>ATC by Oakland Center HF relay by San Francisco ARINC</Line>
+    </ControllerInfo>
+  </Position>  
+  <Position Name="PS" Type="ASD" DefaultCenter="+270000.000-1750000.000" DefaultRange="7700">
+	<ManualVisibility>
+		<Point>+2239.000-13726.000</Point>
+		<Point>+3914.000-16344.000</Point>
+		<Point>+1608.000-17005.000</Point>
+		<Point>+1941.000+15324.000</Point>		
+	</ManualVisibility>  
+    <Sectors>	  
+      <Sector Name="OC3" />	  	  
+      <Sector Name="OC5" />	  
+      <Sector Name="OC6" />	  	  
+      <Sector Name="OC9" />	    
+    </Sectors>
+    <Maps>
+      <Map Name="FIR" />
+      <Map Name="Geo" />
+      <Map Name="Rts" />
+      <Map Name="Pts" />
+      <Map Name="OSec" />
+      <Map Name="UTA" />	  
+    </Maps>
+    <Strips Mode="State" Sort="Time">
+      <Window Type="State" State="Jurisdiction" Visible="true" />
+      <Window Type="State" State="Announced" Visible="true" />
+      <Window Type="State" State="Preactive" Visible="true" />
+    </Strips>
+    <CFL QuickLevel="999000" />
+    <ArrivalLists>
+      <Airport Name="KSFO" />
+    </ArrivalLists>
+    <ControllerInfo>
+      <Line>ATC by Oakland Center HF relay by San Francisco ARINC</Line>
+    </ControllerInfo>
+  </Position>   
   <Position Name="CWP7[OC1]" Type="ASD" DefaultCenter="+442728.740-1531610.609" DefaultRange="3000">
 	<ManualVisibility>
 		<Point>+2239.000-13726.000</Point>
