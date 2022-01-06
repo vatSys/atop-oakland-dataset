@@ -208,6 +208,7 @@
     <Message Response="NE">ADS-C CDP PROCEDURE IS BEING APPLIED BY ATC</Message>
     <Message Response="NE">ATCR SAY MACH NUMBER</Message>
 	<Message Response="NE">ATCA UNABLE REQUESTED ALTITUDE DUE TO TRAFFIC</Message>
+	<Message Response="NE">SQUAWK 2000 TO LOG ON ADS-C AND CPDLC</Message>	
   </Category>
   <Category name="WelcomeMsg" AutoloadElements="true" SendViaTM="true">
     <Message Response="R">THIS IS AN AUTOMATED MESSAGE TO CONFIRM CPDLC CONNECTION TO KZAK. REPORT SPEED , CHANGES TO ATC..</Message>

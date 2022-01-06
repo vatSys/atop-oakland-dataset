@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8" ?>
-<Profile Name="ATOP Oakland" FullName="ATOP Oakland (KZAK)">
+<Profile Name="ATOP New York" FullName="ATOP New York (KZWY)">
 	<Version AIRAC="2113" Revision="a" PublishDate="20211230" UpdateURL="https://vatsys.sawbe.com/downloads/data/ATOP%20Oakland/" />
 	<Servers>
 		<VATSIMStatus url="https://status.vatsim.net/" />

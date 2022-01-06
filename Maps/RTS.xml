@@ -2377,7 +2377,7 @@
 		<Point>VESPA</Point>
 	</Symbol>
   </Map>	
-  <Map Type="System" CustomColourName="SpringGreen" Name="UTA" Priority="1" Center="+270000.000-1750000.000">	
+  <Map Type="System" CustomColourName="SpringGreen" Name="UTA" Priority="1">	
 	<Symbol Type="Circle">
 		<Point>KOAK</Point>
 		<Point>AYMD</Point>
