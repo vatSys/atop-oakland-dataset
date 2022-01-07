@@ -1,127 +1,59 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Radars>
-  <!--Radar Name="ADSC" Type="SSR_ModeS" Elevation="0" MaxRange="7000">
-    <Lat>+27.00000</Lat>
-    <Long>-175.00000</Long>
-  </Radar-->
-  <!--Radar Name="Paso Robles (PRB)" Type="SSR_ModeC" Elevation="3649" MaxRange="250">
-    <Lat>+35.395</Lat>
-    <Long>-120.3544</Long>
-  </Radar-->
-  <!--Radar Name="Red Bluff  (RBL)" Type="SSR_ModeC" Elevation="526" MaxRange="225">
-    <Lat>+40.14611</Lat>
-    <Long>-122.3044</Long>
-  </Radar-->
-  <Radar Name="Mill Valley QMV" Type="SSR_ModeC" Elevation="3522" MaxRange="250">
-    <Lat>+37.923978</Lat>
-    <Long>-122.597756</Long>
+  <Radar Name="QBA" Type="SSR_ModeC" Elevation="198" MaxRange="200">
+    <Lat>+32.36750</Lat>
+    <Long>-64.67722</Long>
+  </Radar>
+  <Radar Name="QGV" Type="SSR_ModeC" Elevation="140" MaxRange="255">
+    <Lat>+33.99029</Lat>
+    <Long>-77.91781</Long>
+  </Radar>
+  <Radar Name="QVR" Type="SSR_ModeC" Elevation="148" MaxRange="255">
+    <Lat>+36.82744</Lat>
+    <Long>-76.01374</Long>
+  </Radar>
+  <Radar Name="QIE" Type="SSR_ModeC" Elevation="371" MaxRange="255">
+    <Lat>+39.82473</Lat>
+    <Long>-74.95415</Long>
+  </Radar>
+  <Radar Name="QVH" Type="SSR_ModeC" Elevation="457" MaxRange="255">
+    <Lat>+40.87869</Lat>
+    <Long>-72.68725</Long>
   </Radar>  
-  <!--Radar Name="Rainbow Ridge (QZZ)" Type="SSR_ModeC" Elevation="2646" MaxRange="250">
-    <Lat>+40.39444</Lat>
-    <Long>-124.165</Long>
-  </Radar-->
-  <!--Radar Name="Vandenberg" Type="SSR_ModeC" Elevation="1593" MaxRange="255">
-    <Lat>+34.58722</Lat>
-    <Long>-120.595</Long>
-  </Radar-->
-  <!--Radar Name="San Pedro (QLA)" Type="SSR_ModeC" Elevation="1457" MaxRange="255">
-    <Lat>+33.74583</Lat>
-    <Long>-118.3361</Long>
-  </Radar-->
-  <!--Radar Name="Salem (SLE)" Type="SSR_ModeC" Elevation="3591" MaxRange="255">
-    <Lat>+44.92306</Lat>
-    <Long>-123.5728</Long>
-  </Radar-->
-  <!--Radar Name="Makah (QKW)" Type="SSR_ModeC" Elevation="1431" MaxRange="255">
-    <Lat>+48.37194</Lat>
-    <Long>-124.6761</Long>
-  </Radar-->
-  <Radar Name="Puu Niauniau (QPN)" Type="SSR_ModeC" Elevation="6667" MaxRange="255">
-    <Lat>+20.77194</Lat>
-    <Long>-156.2389</Long>
-  </Radar>
-  <Radar Name="Kokee Radar(QKK)" Type="SSR_ModeC" Elevation="4271" MaxRange="255">
-    <Lat>+22.14806</Lat>
-    <Long>-159.6453</Long>
-  </Radar>
-  <Radar Name="Pohoa (POA)" Type="SSR_ModeC" Elevation="542" MaxRange="255">
-    <Lat>+19.53972</Lat>
-    <Long>-154.9692</Long>
-  </Radar>
-  <Radar Name="Mt. Kaala (QKA)" Type="SSR_ModeC" Elevation="4112" MaxRange="255">
-    <Lat>+21.507486</Lat>
-    <Long>-158.14218</Long>
-  </Radar>
-  <Radar Name="Kona (KOA)" Type="SSR_ModeC" Elevation="249" MaxRange="255">
-    <Lat>+19.74861</Lat>
-    <Long>-156.0311</Long>
+  <Radar Name="QEA" Type="SSR_ModeC" Elevation="298" MaxRange="255">
+    <Lat>+42.03452</Lat>
+    <Long>-70.05433</Long>
   </Radar>  
-  <Radar Name="ADSC1" Type="SSR_ModeS" Elevation="1000" MaxRange="10000">
-    <Lat>21.40261</Lat>
-    <Long>-157.44382</Long>
-  </Radar>  
+  <Radar Name="QHA" Type="SSR_ModeC" Elevation="2918" MaxRange="255">
+    <Lat>+42.47472</Lat>
+    <Long>-72.96794</Long>
+  </Radar> 
+  <Radar Name="ADSC1" Type="SSR_ModeS" Elevation="1000" MaxRange="50000">
+    <Lat>30.000</Lat>
+    <Long>-070.000</Long>
+  </Radar> 
   <Radar Name="ADSC2" Type="SSR_ModeS" Elevation="1000" MaxRange="50000">
-    <Lat>31.91432</Lat>
-    <Long>-132.11058</Long>
-  </Radar> 
+    <Lat>37.000</Lat>
+    <Long>-061.000</Long>
+  </Radar>
   <Radar Name="ADSC3" Type="SSR_ModeS" Elevation="1000" MaxRange="50000">
-    <Lat>28.20243</Lat>
-    <Long>-170.76009</Long>
-  </Radar> 
+    <Lat>39.000</Lat>
+    <Long>-053.000</Long>
+  </Radar>
   <Radar Name="ADSC4" Type="SSR_ModeS" Elevation="1000" MaxRange="50000">
-    <Lat>53.41682</Lat>
-    <Long>-151.95992</Long>
+    <Lat>+39.000</Lat>
+    <Long>-044.000</Long>
   </Radar>
   <Radar Name="ADSC5" Type="SSR_ModeS" Elevation="1000" MaxRange="50000">
-    <Lat>31.72925</Lat>
-    <Long>-128.14543</Long>
+    <Lat>+26.000</Lat>
+    <Long>-044.000</Long>
   </Radar>
   <Radar Name="ADSC6" Type="SSR_ModeS" Elevation="1000" MaxRange="50000">
-    <Lat>26.72948</Lat>
-    <Long>-146.36337</Long>
-  </Radar>
-  <Radar Name="ADSC6" Type="SSR_ModeS" Elevation="1000" MaxRange="50000">
-    <Lat>37.73787</Lat>
-    <Long>-129.06823</Long>
+    <Lat>+24.000</Lat>
+    <Long>-050.000</Long>
   </Radar>
   <Radar Name="ADSC7" Type="SSR_ModeS" Elevation="1000" MaxRange="50000">
-    <Lat>20.62350</Lat>
-    <Long>-127.06297</Long>
-  </Radar>
-  <Radar Name="ADSC8" Type="SSR_ModeS" Elevation="1000" MaxRange="50000">
-    <Lat>32.67787</Lat>
-    <Long>-119.84105</Long>
-  </Radar>
-  <Radar Name="ADSC9" Type="SSR_ModeS" Elevation="1000" MaxRange="50000">
-    <Lat>13.23596</Lat>
-    <Long>-160.81343</Long>
-  </Radar>
-  <Radar Name="ADSC10" Type="SSR_ModeS" Elevation="1000" MaxRange="50000">
-    <Lat>27.58515</Lat>
-    <Long>-139.07233</Long>
-  </Radar>
-  <Radar Name="ADSC11" Type="SSR_ModeS" Elevation="1000" MaxRange="50000">
-    <Lat>43.74126</Lat>
-    <Long>-125.66459</Long>
-  </Radar>
-  <Radar Name="ADSC12" Type="SSR_ModeS" Elevation="1000" MaxRange="50000">
-    <Lat>39.54689</Lat>
-    <Long>-134.76789</Long>
-  </Radar>
-  <Radar Name="ADSC13" Type="SSR_ModeS" Elevation="1000" MaxRange="50000">
-    <Lat>34.27118</Lat>
-    <Long>-144.14251</Long>
-  </Radar>
-  <Radar Name="ADSC14" Type="SSR_ModeS" Elevation="1000" MaxRange="50000">
-    <Lat>30.22351</Lat>
-    <Long>-150.33610</Long>
-  </Radar>
-  <Radar Name="ADSC15" Type="SSR_ModeS" Elevation="1000" MaxRange="50000">
-    <Lat>25.20542</Lat>
-    <Long>-154.43422</Long>
-  </Radar>
-  <Radar Name="ADSC16" Type="SSR_ModeS" Elevation="1000" MaxRange="50000">
-    <Lat>45.06162</Lat>
-    <Long>-126.08538</Long> 
+    <Lat>+24.000</Lat>
+    <Long>-060.000</Long>
   </Radar>	
 </Radars>
