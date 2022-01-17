@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Positions xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<<<<<<< HEAD
   <Position Name="CWP11" Type="ASD" DefaultCenter="+270000.000-1750000.000" DefaultRange="7700">
 	<ManualVisibility>
 		<Point>+2239.000-13726.000</Point>
@@ -138,16 +139,21 @@
 		<Point>+1608.000-17005.000</Point>
 		<Point>+1941.000+15324.000</Point>		
 	</ManualVisibility>    
+=======
+  <Position Name="87" Type="ASD" DefaultCenter="+322184.000-0644072.000" DefaultRange="3500">  
+>>>>>>> bfff6a1c73c5ba0c91fce9111c340c0155f3b167
     <Sectors>
-      <Sector Name="OC1" />
+      <Sector Name="87" />
+      <Sector Name="88" />
+      <Sector Name="89" />
+      <Sector Name="90" />
+      <Sector Name="16_17" />
+      <Sector Name="18_20" />
+      <Sector Name="21_24" />	  
     </Sectors>
     <Maps>
       <Map Name="FIR" />
       <Map Name="Geo" />
-      <Map Name="Rts" />
-      <Map Name="Pts" />
-      <Map Name="OSec" />
-      <Map Name="UTA" />	  
     </Maps>
     <Strips Mode="State" Sort="Time">
       <Window Type="State" State="Jurisdiction" Visible="true" />
@@ -156,84 +162,15 @@
     </Strips>
     <CFL QuickLevel="999000" />
     <ArrivalLists>
-      <Airport Name="KSFO" />
+      <Airport Name="KTXK" />
     </ArrivalLists>
     <ControllerInfo>
-      <Line>ATC by Oakland Center HF relay by San Francisco ARINC</Line>
-    </ControllerInfo>
-  </Position>  
-  <Position Name="CWP8[OC2]" Type="ASD" DefaultCenter="+451634.535-1902108.933" DefaultRange="2400">
-	<ManualVisibility>
-		<Point>+2239.000-13726.000</Point>
-		<Point>+3914.000-16344.000</Point>
-		<Point>+1608.000-17005.000</Point>
-		<Point>+1941.000+15324.000</Point>		
-	</ManualVisibility>    
-    <Sectors>
-      <Sector Name="OC2" />
-    </Sectors>
-    <Maps>
-      <Map Name="FIR" />
-      <Map Name="Geo" />
-      <Map Name="Rts" />
-      <Map Name="Pts" />
-      <Map Name="OSec" />
-      <Map Name="UTA" />	  
-    </Maps>
-    <Strips Mode="State" Sort="Time">
-      <Window Type="State" State="Jurisdiction" Visible="true" />
-      <Window Type="State" State="Announced" Visible="true" />
-      <Window Type="State" State="Preactive" Visible="true" />
-    </Strips>
-    <CFL QuickLevel="999000" />
-    <ArrivalLists>
-      <Airport Name="KSFO" />
-    </ArrivalLists>
-    <ControllerInfo>
-      <Line>ATC by Oakland Center HF relay by San Francisco ARINC</Line>
-    </ControllerInfo>
-  </Position>  
-  <Position Name="CWP4[OC3]" Type="ASD" DefaultCenter="+221244.704-1360859.658" DefaultRange="2600">
-	<ManualVisibility>
-		<Point>+2239.000-13726.000</Point>
-		<Point>+3914.000-16344.000</Point>
-		<Point>+1608.000-17005.000</Point>
-		<Point>+1941.000+15324.000</Point>		
-	</ManualVisibility>    
-    <Sectors>
-      <Sector Name="OC3" />
-    </Sectors>
-    <Maps>
-      <Map Name="FIR" />
-      <Map Name="Geo" />
-      <Map Name="Rts" />
-      <Map Name="Pts" />
-      <Map Name="OSec" />
-      <Map Name="UTA" />	  
-    </Maps>
-    <Strips Mode="State" Sort="Time">
-      <Window Type="State" State="Jurisdiction" Visible="true" />
-      <Window Type="State" State="Announced" Visible="true" />
-      <Window Type="State" State="Preactive" Visible="true" />
-    </Strips>
-    <CFL QuickLevel="999000" />
-    <ArrivalLists>
-      <Airport Name="PLCH" />	
-      <Airport Name="PLPA" />
-    </ArrivalLists>
-    <ControllerInfo>
-      <Line>ATC by Oakland Center HF relay by San Francisco ARINC</Line>
+      <Line>ATC by New York Center HF relay by New York ARINC</Line>
     </ControllerInfo>
   </Position>
-  <Position Name="CWP10[OC4]" Type="ASD" DefaultCenter="+294753.971-1420406.988" DefaultRange="2300">
-	<ManualVisibility>
-		<Point>+2239.000-13726.000</Point>
-		<Point>+3914.000-16344.000</Point>
-		<Point>+1608.000-17005.000</Point>
-		<Point>+1941.000+15324.000</Point>		
-	</ManualVisibility>    
+  <Position Name="Sector 87" Type="ASD" DefaultCenter="+351817.9736-0690027.301" DefaultRange="1400">  
     <Sectors>
-      <Sector Name="OC4" />
+      <Sector Name="87" />
     </Sectors>
     <Maps>
       <Map Name="FIR" />
@@ -250,21 +187,15 @@
     </Strips>
     <CFL QuickLevel="999000" />
     <ArrivalLists>
-      <Airport Name="KSFO" />
+      <Airport Name="KTXK" />
     </ArrivalLists>
     <ControllerInfo>
-      <Line>ATC by Oakland Center HF relay by San Francisco ARINC</Line>
+      <Line>ATC by New York Center HF relay by New York ARINC</Line>
     </ControllerInfo>
   </Position>  
-  <Position Name="CWP2[OC5]" Type="ASD" DefaultCenter="+111651.527+1450820.250" DefaultRange="3200">
-	<ManualVisibility>
-		<Point>+2239.000-13726.000</Point>
-		<Point>+3914.000-16344.000</Point>
-		<Point>+1608.000-17005.000</Point>
-		<Point>+1941.000+15324.000</Point>		
-	</ManualVisibility>    
+  <Position Name="Sector 88" Type="ASD" DefaultCenter="+313611.4478-0732845.8148" DefaultRange="1400">  
     <Sectors>
-      <Sector Name="OC5" />
+      <Sector Name="88" />
     </Sectors>
     <Maps>
       <Map Name="FIR" />
@@ -281,87 +212,15 @@
     </Strips>
     <CFL QuickLevel="999000" />
     <ArrivalLists>
-      <Airport Name="PTRO" />
-      <Airport Name="PTYA" />
-      <Airport Name="PTKK" />
-      <Airport Name="PTPN" />	  
+      <Airport Name="KTXK" />
     </ArrivalLists>
     <ControllerInfo>
-      <Line>ATC by Oakland Center HF relay by San Francisco ARINC</Line>
-    </ControllerInfo>
-  </Position>  
-  <Position Name="CWP1[OC6]" Type="ASD" DefaultCenter="+163226.320+1703631.668" DefaultRange="3200">
-	<ManualVisibility>
-		<Point>+2239.000-13726.000</Point>
-		<Point>+3914.000-16344.000</Point>
-		<Point>+1608.000-17005.000</Point>
-		<Point>+1941.000+15324.000</Point>		
-	</ManualVisibility>    
-    <Sectors>
-      <Sector Name="OC6" />
-    </Sectors>
-    <Maps>
-      <Map Name="FIR" />
-      <Map Name="Geo" />
-      <Map Name="Rts" />
-      <Map Name="Pts" />
-      <Map Name="OSec" />
-      <Map Name="UTA" />	  
-    </Maps>
-    <Strips Mode="State" Sort="Time">
-      <Window Type="State" State="Jurisdiction" Visible="true" />
-      <Window Type="State" State="Announced" Visible="true" />
-      <Window Type="State" State="Preactive" Visible="true" />
-    </Strips>
-    <CFL QuickLevel="999000" />
-    <ArrivalLists>
-      <Airport Name="PWAK" />
-      <Airport Name="PKWA" />
-      <Airport Name="PTSA" />
-      <Airport Name="PKMJ" />
-    </ArrivalLists>
-    <ControllerInfo>
-      <Line>ATC by Oakland Center HF relay by San Francisco ARINC</Line>
-    </ControllerInfo>
-  </Position>  
-  <Position Name="CWP9[OC7]" Type="ASD" DefaultCenter="+403411.855-1381916.409" DefaultRange="1900">
-	<ManualVisibility>
-		<Point>+2239.000-13726.000</Point>
-		<Point>+3914.000-16344.000</Point>
-		<Point>+1608.000-17005.000</Point>
-		<Point>+1941.000+15324.000</Point>		
-	</ManualVisibility>    
-    <Sectors>
-      <Sector Name="OC7" />
-    </Sectors>
-    <Maps>
-      <Map Name="FIR" />
-      <Map Name="Geo" />
-      <Map Name="Rts" />
-      <Map Name="Pts" />
-      <Map Name="OSec" />
-      <Map Name="UTA" />	  
-    </Maps>
-    <Strips Mode="State" Sort="Time">
-      <Window Type="State" State="Jurisdiction" Visible="true" />
-      <Window Type="State" State="Announced" Visible="true" />
-      <Window Type="State" State="Preactive" Visible="true" />
-    </Strips>
-    <CFL QuickLevel="999000" />
-    <ArrivalLists/>
-    <ControllerInfo>
-      <Line>ATC by Oakland Center HF relay by San Francisco ARINC</Line>
+      <Line>ATC by New York Center HF relay by New York ARINC</Line>
     </ControllerInfo>
   </Position>
-  <Position Name="CWP3[OC9]" Type="ASD" DefaultCenter="+244531.064-1755428.271" DefaultRange="5100">
-	<ManualVisibility>
-		<Point>+2239.000-13726.000</Point>
-		<Point>+3914.000-16344.000</Point>
-		<Point>+1608.000-17005.000</Point>
-		<Point>+1941.000+15324.000</Point>		
-	</ManualVisibility>    
+  <Position Name="Sector 89" Type="ASD" DefaultCenter="+270449.7507-0643526.9257" DefaultRange="1400">  
     <Sectors>
-      <Sector Name="OC9" />
+      <Sector Name="89" />
     </Sectors>
     <Maps>
       <Map Name="FIR" />
@@ -378,11 +237,110 @@
     </Strips>
     <CFL QuickLevel="999000" />
     <ArrivalLists>
-      <Airport Name="PMDY" />	
-      <Airport Name="PHHF" />
+      <Airport Name="KTXK" />
     </ArrivalLists>
     <ControllerInfo>
-      <Line>ATC by Oakland Center HF relay by San Francisco ARINC</Line>
+      <Line>ATC by New York Center HF relay by New York ARINC</Line>
+    </ControllerInfo>
+  </Position>  
+  <Position Name="Sector 90" Type="ASD" DefaultCenter="+275021.0205-0713823.7781" DefaultRange="1400">  
+    <Sectors>
+      <Sector Name="90" />
+    </Sectors>
+    <Maps>
+      <Map Name="FIR" />
+      <Map Name="Geo" />
+      <Map Name="Rts" />
+      <Map Name="Pts" />
+      <Map Name="OSec" />
+      <Map Name="UTA" />	  
+    </Maps>
+    <Strips Mode="State" Sort="Time">
+      <Window Type="State" State="Jurisdiction" Visible="true" />
+      <Window Type="State" State="Announced" Visible="true" />
+      <Window Type="State" State="Preactive" Visible="true" />
+    </Strips>
+    <CFL QuickLevel="999000" />
+    <ArrivalLists>
+      <Airport Name="KTXK" />
+    </ArrivalLists>
+    <ControllerInfo>
+      <Line>ATC by New York Center HF relay by New York ARINC</Line>
+    </ControllerInfo>
+  </Position>
+  <Position Name="Sector 16_17" Type="ASD" DefaultCenter="+263737.0519-0492108.660" DefaultRange="2700">  
+    <Sectors>
+      <Sector Name="16_17" />
+    </Sectors>
+    <Maps>
+      <Map Name="FIR" />
+      <Map Name="Geo" />
+      <Map Name="Rts" />
+      <Map Name="Pts" />
+      <Map Name="OSec" />
+      <Map Name="UTA" />	  
+    </Maps>
+    <Strips Mode="State" Sort="Time">
+      <Window Type="State" State="Jurisdiction" Visible="true" />
+      <Window Type="State" State="Announced" Visible="true" />
+      <Window Type="State" State="Preactive" Visible="true" />
+    </Strips>
+    <CFL QuickLevel="999000" />
+    <ArrivalLists>
+      <Airport Name="KTXK" />
+    </ArrivalLists>
+    <ControllerInfo>
+      <Line>ATC by New York Center HF relay by New York ARINC</Line>
+    </ControllerInfo>
+  </Position>
+    <Position Name="Sector 18_20" Type="ASD" DefaultCenter="+345146.1096-0513342.5281" DefaultRange="2400">  
+    <Sectors>
+      <Sector Name="18_20" />
+    </Sectors>
+    <Maps>
+      <Map Name="FIR" />
+      <Map Name="Geo" />
+      <Map Name="Rts" />
+      <Map Name="Pts" />
+      <Map Name="OSec" />
+      <Map Name="UTA" />	  
+    </Maps>
+    <Strips Mode="State" Sort="Time">
+      <Window Type="State" State="Jurisdiction" Visible="true" />
+      <Window Type="State" State="Announced" Visible="true" />
+      <Window Type="State" State="Preactive" Visible="true" />
+    </Strips>
+    <CFL QuickLevel="999000" />
+    <ArrivalLists>
+      <Airport Name="KTXK" />
+    </ArrivalLists>
+    <ControllerInfo>
+      <Line>ATC by New York Center HF relay by New York ARINC</Line>
+    </ControllerInfo>
+  </Position>
+    <Position Name="Sector 21_24" Type="ASD" DefaultCenter="+411548.0377-0533428.7119" DefaultRange="1600">  
+    <Sectors>
+      <Sector Name="21_24" />
+    </Sectors>
+    <Maps>
+      <Map Name="FIR" />
+      <Map Name="Geo" />
+      <Map Name="Rts" />
+      <Map Name="Pts" />
+      <Map Name="OSec" />
+      <Map Name="UTA" />	  
+    </Maps>
+    <Strips Mode="State" Sort="Time">
+      <Window Type="State" State="Jurisdiction" Visible="true" />
+      <Window Type="State" State="Announced" Visible="true" />
+      <Window Type="State" State="Preactive" Visible="true" />
+    </Strips>
+    <CFL QuickLevel="999000" />
+    <ArrivalLists>
+      <Airport Name="KTXK" />
+    </ArrivalLists>
+    <ControllerInfo>
+      <Line>ATC by New York Center HF relay by New York ARINC</Line>
     </ControllerInfo>
   </Position>  
 </Positions>

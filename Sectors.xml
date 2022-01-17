@@ -1,27 +1,45 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Sectors xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-  <Sector FullName="Oakland Center Sector 1" Frequency="131.950" Callsign="ZAK_E_FSS" Name="OC1">  
-<Volumes>OC1,OC1a</Volumes> 
+  <Sector FullName="New York Center Champ Sector 87" Frequency="130.000" Callsign="NY_CL_FSS" Name="87L">  
+<Volumes>87_CHAMP</Volumes> 
   </Sector>  
-  <Sector FullName="Oakland Center Sector 2" Frequency="131.950" Callsign="ZAK_2_FSS" Name="OC2">  
-<Volumes>OC2</Volumes> 
-  </Sector>  
-  <Sector FullName="Oakland Center Sector 3" Frequency="131.950" Callsign="ZAK_3_FSS" Name="OC3">  
-<Volumes>OC3,OC3a</Volumes> 
-  </Sector>  
-  <Sector FullName="Oakland Center Sector 4" Frequency="131.950" Callsign="ZAK_4_FSS" Name="OC4">  
-<Volumes>OC4,OC4a,OC4b</Volumes> 
-  </Sector>  
-  <Sector FullName="Oakland Center Sector 5" Frequency="129.400" Callsign="ZAK_W_FSS" Name="OC5">  
-<Volumes>OC5</Volumes> 
-  </Sector>  
-  <Sector FullName="Oakland Center Sector 6" Frequency="129.400" Callsign="ZAK_6_FSS" Name="OC6">  
-<Volumes>OC6</Volumes> 
-  </Sector>  
-  <Sector FullName="Oakland Center Sector 7" Frequency="131.950" Callsign="ZAK_7_FSS" Name="OC7">  
-<Volumes>OC7</Volumes> 
-  </Sector>   
-  <Sector FullName="Oakland Center Sector 9" Frequency="131.950" Callsign="ZAK_9_FSS" Name="OC9">  
-<Volumes>OC9</Volumes> 
-  </Sector>    
+  <Sector FullName="New York Center Champ Sector 87" Frequency="130.050" Callsign="NY_CH_FSS" Name="87">  
+<Volumes>87_CHAMP</Volumes> 
+  </Sector> 
+  <Sector FullName="New York Center Bacus Sector 88" Frequency="130.100" Callsign="NY_BL_FSS" Name="88L">  
+<Volumes>88_BACUS</Volumes> 
+  </Sector> 
+  <Sector FullName="New York Center Bacus Sector 88" Frequency="130.150" Callsign="NY_BH_FSS" Name="88">  
+<Volumes>88_BACUS</Volumes> 
+  </Sector> 
+  <Sector FullName="New York Center Kraft Sector 89" Frequency="130.200" Callsign="NY_KL_FSS" Name="89L">  
+<Volumes>89_KRAFT</Volumes> 
+  </Sector>
+  <Sector FullName="New York Center Kraft Sector 89" Frequency="130.250" Callsign="NY_KH_FSS" Name="89">  
+<Volumes>89_KRAFT</Volumes> 
+  </Sector>
+  <Sector FullName="New York Center Gratx Sector 90" Frequency="130.300" Callsign="NY_XL_FSS" Name="90L">  
+<Volumes>90_GRATX</Volumes> 
+  </Sector>
+  <Sector FullName="New York Center Gratx Sector 90" Frequency="130.350" Callsign="NY_XH_FSS" Name="90">  
+<Volumes>90_GRATX</Volumes> 
+  </Sector>
+  <Sector FullName="New York Center Apollo Sector 16-17" Frequency="130.400" Callsign="NY_AL_FSS" Name="16_17L">  
+<Volumes>1617_APOLLO</Volumes> 
+  </Sector>
+  <Sector FullName="New York Center Apollo Sector 16-17" Frequency="130.450" Callsign="NY_AH_FSS" Name="16_17">  
+<Volumes>1617_APOLLO</Volumes> 
+  </Sector>
+  <Sector FullName="New York Center Gemini Sector 18-20" Frequency="130.500" Callsign="NY_GL_FSS" Name="18_20L">  
+<Volumes>18020_GEMINI</Volumes> 
+  </Sector>
+  <Sector FullName="New York Center Gemini Sector 18-20" Frequency="130.550" Callsign="NY_GH_FSS" Name="18_20">  
+<Volumes>18020_GEMINI</Volumes> 
+  </Sector>
+  <Sector FullName="New York Center Mercury Sector 21-24" Frequency="130.600" Callsign="NY_ML_FSS" Name="21_24L">  
+<Volumes>2124_MERCURY</Volumes> 
+  </Sector>
+  <Sector FullName="New York Center Mercury Sector 21-24" Frequency="130.650" Callsign="NY_MH_FSS" Name="21_24">  
+<Volumes>2124_MERCURY</Volumes> 
+  </Sector> 
 </Sectors>
