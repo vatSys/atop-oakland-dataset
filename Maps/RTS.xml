@@ -2723,7 +2723,7 @@
 	</Symbol>
   </Map>	
   <Map Type="System" CustomColourName="Green" Name="UTA_Nms" Priority="1" Center="+270000.000-1750000.000">	
-	<Label>  
+	<Label HasLeader="false">  
 		<Point>KOAK</Point>
 		<Point>KSFO</Point>
 		<Point>PTRO</Point>
@@ -2743,7 +2743,7 @@
 	</Label>
   </Map>		
   <Map Type="System" CustomColourName="SpringGreen" Name="Pts_Nms" Priority="1" Center="+270000.000-1750000.000">
-    <Label> 
+    <Label HasLeader="false"> 
 		<Point>DEWSS</Point>
 		<Point>GALSS</Point>
 		<Point>GUNSS</Point>

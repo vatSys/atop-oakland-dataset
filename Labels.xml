@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Labels>
-  <Label Type="Limited" MaximumWidth="10" Justified="true" LabelRectangle="None">
+  <Label Type="Limited" MaximumWidth="10" Justified="true" LabelRectangle="Default">
     <DataLine>
       <Item Type="LABEL_ITEM_ACID" Colour="" LeftClick="Label_Move" MiddleClick="" RightClick="Label_ACID_Menu"/>
       <Item Type="LABEL_ITEM_EMERG" Colour="Emergency" BackgroundColour="Warning" LeftClick="" MiddleClick="Label_Emerg" RightClick=""/>
@@ -13,7 +13,7 @@
       <Item Type="LABEL_ITEM_GROUNDSPEED" Colour="" LeftClick="" MiddleClick="" RightClick=""/>
     </DataLine>
   </Label>
-  <Label Type="Quicktag" MaximumWidth="11" LabelRectangle="None">
+  <Label Type="Quicktag" MaximumWidth="11" LabelRectangle="Default">
     <DataLine>
       <Item Type="LABEL_ITEM_CPROMPT" Colour="CFLHighlight" LeftClick="" MiddleClick="Label_CPrompt" RightClick=""/>
       <Item Type="LABEL_ITEM_EMERG" Colour="Emergency" BackgroundColour="Warning" LeftClick="" MiddleClick="Label_Emerg" RightClick="" LeftPadding="2"/>
@@ -32,7 +32,7 @@
       <Item Type="LABEL_ITEM_OPDATA" BackgroundColour="" Colour="" LeftClick="Label_OpData_Popup" MiddleClick="" RightClick=""/>
     </DataLine>
   </Label>
-  <Label Type="Normal" MaximumWidth="11" LabelRectangle="None">
+  <Label Type="Normal" MaximumWidth="11" LabelRectangle="Default">
     <DataLine>
       <Item Type="LABEL_ITEM_ACID" Colour="" LeftClick="Label_Move" MiddleClick="" RightClick="Label_ACID_Menu"/>
       <Item Type="LABEL_ITEM_EMERG" Colour="Emergency" BackgroundColour="Warning" LeftClick="" MiddleClick="Label_Emerg" RightClick=""/>
@@ -53,7 +53,7 @@
       <Item Type="LABEL_ITEM_OPDATA" BackgroundColour="" Colour="" LeftClick="Label_OpData_Popup" MiddleClick="" RightClick="Label_Toggle_1"/>
     </DataLine>
   </Label>
-  <Label Type="Extended" MaximumWidth="17" LabelRectangle="None">
+  <Label Type="Extended" MaximumWidth="17" LabelRectangle="Default">
     <DataLine>
       <Item Type="LABEL_ITEM_CPDLC_MESSAGE" BackgroundColour="CPDLCDownlink" LeftClick="Label_CPDLC_Menu" MiddleClick="Label_CPDLC_Message_Toggle" RightClick="Label_CPDLC_Editor"/>	
       <Item Type="LABEL_ITEM_ACID" Colour="" P1_Colour="Warning" P1_BackgroundColour="Emergency" LeftClick="Label_Move" MiddleClick="" RightClick="Label_ACID_Menu"/>
@@ -82,7 +82,7 @@
       <Item Type="LABEL_ITEM_OPDATA" BackgroundColour="" Colour="" LeftClick="Label_OpData_Popup" MiddleClick="" RightClick="Label_Toggle_1"/>
     </DataLine>
   </Label>
-  <Label Type="GroundAir" MaximumWidth="11" LabelRectangle="None">
+  <Label Type="GroundAir" MaximumWidth="11" LabelRectangle="Default">
     <DataLine>
       <Item Type="LABEL_ITEM_RWY" Colour="" LeftClick="Label_Runway" MiddleClick="" RightClick=""/>
       <Item Type="LABEL_ITEM_EMERG" Colour="Emergency" LeftClick="" MiddleClick="Label_Emerg" RightClick="" LeftPadding="1"/>
@@ -106,7 +106,7 @@
       <Item Type="LABEL_ITEM_OPDATA" BackgroundColour="" Colour="" LeftClick="Label_OpData_Popup" MiddleClick="" />
     </DataLine>
   </Label>
-  <Label Type="GroundLimited" MaximumWidth="7" Justified="true" LabelRectangle="None">
+  <Label Type="GroundLimited" MaximumWidth="7" Justified="true" LabelRectangle="Default">
     <DataLine>
       <Item Type="LABEL_ITEM_EMERG" Colour="Emergency" BackgroundColour="Warning" LeftClick="" MiddleClick="Label_Emerg" RightClick=""/>
       <Item Type="LABEL_ITEM_WARNING" Colour="Warning" P1_BackgroundColour="Emergency" LeftClick="" MiddleClick="Label_Warning" RightClick=""/>
@@ -115,7 +115,7 @@
       <Item Type="LABEL_ITEM_ACID" Colour="" LeftClick="Label_ACID_Menu"/>
     </DataLine>
   </Label>
-  <Label Type="GroundDeparture" MaximumWidth="11" LabelRectangle="None" Justified="true">
+  <Label Type="GroundDeparture" MaximumWidth="11" LabelRectangle="Default" Justified="true">
     <DataLine>
       <Item Type="LABEL_ITEM_ACID" Colour="" LeftClick="Label_ACID_Menu" />
       <Item Type="LABEL_ITEM_EMERG" Colour="Emergency" BackgroundColour="Warning" LeftClick="" MiddleClick="Label_Emerg" RightClick="" LeftPadding="1"/>
@@ -129,7 +129,7 @@
       <Item Type="LABEL_ITEM_OPDATA" LeftClick="Label_OpData_Popup" />
     </DataLine>
   </Label>
-  <Label Type="GroundArrival" MaximumWidth="11" LabelRectangle="None" Justified="true">
+  <Label Type="GroundArrival" MaximumWidth="11" LabelRectangle="Default" Justified="true">
     <DataLine>
       <Item Type="LABEL_ITEM_ACID" Colour="" LeftClick="Label_ACID_Menu" LeftPadding="1"/>
       <Item Type="LABEL_ITEM_GATE_N" Colour="" LeftClick="" MiddleClick="" RightClick="" LeftPadding="1"/>
