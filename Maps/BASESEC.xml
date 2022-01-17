@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Maps>
   <Map Type="Local_Private" CustomColourName="TealGreen" Name="BasSec_0_999" Pattern="Broken" Priority="2">
-<<<<<<< HEAD
 <Line Name="ZOA.0501">  
 +130000.000+1300000.00/
 +124708.000+1404215.00/
@@ -6678,14 +6677,10 @@
 <Line>+39.160-066.999/+39.616-067.000</Line>
 <Line>+26.840-074.248/+27.142-074.424</Line>
 <Line>+27.142-074.424/+26.909-074.290</Line>
->>>>>>> bfff6a1c73c5ba0c91fce9111c340c0155f3b167
   </Map>
   <Map Type="Local_Private" CustomColourName="TealGreen" Name="BasSec_2_239" Pattern="Broken" Priority="2">  
   </Map>  
   <Map Type="Local_Private" Name="BasSec_3_EXP_in" Priority="2">
-<<<<<<< HEAD
-
-=======
 <Line>+31.116-067.883/+31.138-067.830</Line>
 <Line>+30.039-062.551/+30.000-062.516</Line>
 <Line>+35.330-065.233/+35.280-065.223</Line>
@@ -7342,7 +7337,6 @@
 <Line>+44.116-052.821/+37.978-066.155</Line>  
   </Map>
   <Map Type="Local_Private" Name="BasSec_5_FREQ" Priority="2">   
-<<<<<<< HEAD
 <Line Name="ZOA.MANILA">
 	+023955.000+1344815.00/
 	+023957.000+1323659.00/
@@ -13922,7 +13916,6 @@
 +341600.970-1310601.80/
 +341642.610-1310607.64/
 +341724.290-1310613.040</Line>
-=======
 <Line>+44.578-050.011/+44.584-044.953</Line>
 	<Line>+44.584-044.953/+44.578-040.000</Line>
 	<Line>+44.578-040.000/+44.394-040.000</Line>

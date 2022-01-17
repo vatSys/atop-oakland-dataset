@@ -1,6 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Radars>
-<<<<<<< HEAD
   <Radar Name="ADSC" Type="SSR_ModeS" Elevation="0" MaxRange="7000">
     <Lat>27.00000</Lat>
     <Long>-175.00000</Long>
@@ -325,62 +324,4 @@
     <Lat>50.0000</Lat>
     <Long>-140.0000</Long>
   </Radar>  
-=======
-  <Radar Name="QBA" Type="SSR_ModeC" Elevation="198" MaxRange="200">
-    <Lat>+32.36750</Lat>
-    <Long>-64.67722</Long>
-  </Radar>
-  <Radar Name="QGV" Type="SSR_ModeC" Elevation="140" MaxRange="255">
-    <Lat>+33.99029</Lat>
-    <Long>-77.91781</Long>
-  </Radar>
-  <Radar Name="QVR" Type="SSR_ModeC" Elevation="148" MaxRange="255">
-    <Lat>+36.82744</Lat>
-    <Long>-76.01374</Long>
-  </Radar>
-  <Radar Name="QIE" Type="SSR_ModeC" Elevation="371" MaxRange="255">
-    <Lat>+39.82473</Lat>
-    <Long>-74.95415</Long>
-  </Radar>
-  <Radar Name="QVH" Type="SSR_ModeC" Elevation="457" MaxRange="255">
-    <Lat>+40.87869</Lat>
-    <Long>-72.68725</Long>
-  </Radar>  
-  <Radar Name="QEA" Type="SSR_ModeC" Elevation="298" MaxRange="255">
-    <Lat>+42.03452</Lat>
-    <Long>-70.05433</Long>
-  </Radar>  
-  <Radar Name="QHA" Type="SSR_ModeC" Elevation="2918" MaxRange="255">
-    <Lat>+42.47472</Lat>
-    <Long>-72.96794</Long>
-  </Radar> 
-  <Radar Name="ADSC1" Type="SSR_ModeS" Elevation="1000" MaxRange="50000">
-    <Lat>30.000</Lat>
-    <Long>-070.000</Long>
-  </Radar> 
-  <Radar Name="ADSC2" Type="SSR_ModeS" Elevation="1000" MaxRange="50000">
-    <Lat>37.000</Lat>
-    <Long>-061.000</Long>
-  </Radar>
-  <Radar Name="ADSC3" Type="SSR_ModeS" Elevation="1000" MaxRange="50000">
-    <Lat>39.000</Lat>
-    <Long>-053.000</Long>
-  </Radar>
-  <Radar Name="ADSC4" Type="SSR_ModeS" Elevation="1000" MaxRange="50000">
-    <Lat>+39.000</Lat>
-    <Long>-044.000</Long>
-  </Radar>
-  <Radar Name="ADSC5" Type="SSR_ModeS" Elevation="1000" MaxRange="50000">
-    <Lat>+26.000</Lat>
-    <Long>-044.000</Long>
-  </Radar>
-  <Radar Name="ADSC6" Type="SSR_ModeS" Elevation="1000" MaxRange="50000">
-    <Lat>+24.000</Lat>
-    <Long>-050.000</Long>
-  </Radar>
-  <Radar Name="ADSC7" Type="SSR_ModeS" Elevation="1000" MaxRange="50000">
-    <Lat>+24.000</Lat>
-    <Long>-060.000</Long>
-  </Radar>	
->>>>>>> bfff6a1c73c5ba0c91fce9111c340c0155f3b167
 </Radars>

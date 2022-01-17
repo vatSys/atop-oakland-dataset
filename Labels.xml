@@ -13,7 +13,7 @@
       <Item Type="LABEL_ITEM_GROUNDSPEED" Colour="" LeftClick="" MiddleClick="" RightClick=""/>
     </DataLine>
   </Label>
-  <Label Type="Quicktag" MaximumWidth="11" LabelRectangle="None">
+  <Label Type="Quicktag" MaximumWidth="11" LabelRectangle="Default">
     <DataLine>
       <Item Type="LABEL_ITEM_CPROMPT" Colour="CFLHighlight" LeftClick="" MiddleClick="Label_CPrompt" RightClick=""/>
       <Item Type="LABEL_ITEM_EMERG" Colour="Emergency" BackgroundColour="Warning" LeftClick="" MiddleClick="Label_Emerg" RightClick="" LeftPadding="2"/>
@@ -32,7 +32,7 @@
       <Item Type="LABEL_ITEM_OPDATA" BackgroundColour="" Colour="" LeftClick="Label_OpData_Popup" MiddleClick="" RightClick=""/>
     </DataLine>
   </Label>
-  <Label Type="Normal" MaximumWidth="11" LabelRectangle="None">
+  <Label Type="Normal" MaximumWidth="11" LabelRectangle="Default">
     <DataLine>
       <Item Type="LABEL_ITEM_ACID" Colour="" LeftClick="Label_Move" MiddleClick="" RightClick="Label_ACID_Menu"/>
       <Item Type="LABEL_ITEM_EMERG" Colour="Emergency" BackgroundColour="Warning" LeftClick="" MiddleClick="Label_Emerg" RightClick=""/>
@@ -53,7 +53,7 @@
       <Item Type="LABEL_ITEM_OPDATA" BackgroundColour="" Colour="" LeftClick="Label_OpData_Popup" MiddleClick="" RightClick="Label_Toggle_1"/>
     </DataLine>
   </Label>
-  <Label Type="Extended" MaximumWidth="17" LabelRectangle="None">
+  <Label Type="Extended" MaximumWidth="17" LabelRectangle="Default">
     <DataLine>
       <Item Type="LABEL_ITEM_CPDLC_MESSAGE" BackgroundColour="CPDLCDownlink" LeftClick="Label_CPDLC_Menu" MiddleClick="Label_CPDLC_Message_Toggle" RightClick="Label_CPDLC_Editor"/>	
       <Item Type="LABEL_ITEM_ACID" Colour="" P1_Colour="Warning" P1_BackgroundColour="Emergency" LeftClick="Label_Move" MiddleClick="" RightClick="Label_ACID_Menu"/>

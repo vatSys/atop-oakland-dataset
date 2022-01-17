@@ -5,6 +5,7 @@
 		
   <!-- Excluded Codes are never assigned -->
   <Bin>
-	<Codes Start="1001" End="1077"/>	
+	<Codes Start="1101" End="1177"/>
+	<Codes Start="1401" End="1477"/>
   </Bin>
 </SSRAssignment>
