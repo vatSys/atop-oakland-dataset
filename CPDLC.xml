@@ -113,9 +113,13 @@
     <Message Response="WU">CRUISE CLIMB TO [LEVEL]</Message>
     <Message Response="WU">MAINTAIN [LEVEL]</Message>
     <Message Response="WU">MAINTAIN BLOCK [LEVEL] TO [LEVEL]</Message>
-  </Category>	
-  <Category name="Route" SendViaTM="true">
-    <Message Response="WU">AT [TIME] CLEARED [ROUTE] ALT [LEVEL] FREQ [FREQUENCY] SSR [SSR], [TEXT]</Message>   
+  </Category>
+  <Category name="MOPS 73 (PDC)" AutoloadElements="true" SendViaTM="true">
+    <Message Response="WU">AT [TIME] CLEARED [ROUTE]</Message> 
+    <Message Response="WU">ALT F[LEVEL] FREQ 9999KhZ[FREQUENCY] SSR 2000[SSR],</Message>
+    <Message Response="WU"> CLEARANCE VOID IF NOT OFF BY [TIME]., IF NOT OFF BY [TIME] ADZ NLT [TIME] OF INTENT. ITC</Message>	
+  </Category>  
+  <Category name="Route" SendViaTM="true">  
     <Message Response="WU">CLEARED TO [POSITION] VIA [ROUTE]</Message>  
     <Message Response="WU">CLEARED [ROUTE]</Message>	
     <Message Response="WU">AT [POSITION] CLEARED [ROUTE]</Message>
