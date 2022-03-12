@@ -1,5 +1,12 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <Colours xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <!--Colour id="OverDue">
+		<Use>Strip Text</Use>
+		<Name>Melon</Name>
+		<R>133</R>
+		<G>255</G>
+		<B>182</B>
+	</Colour-->	
   <Colour id="GenericText">
 		<Use>Window Text</Use>
 		<Name>Black</Name>
@@ -50,11 +57,11 @@
 		<B>255</B>
 	</Colour>
   <Colour id="HighlightedText">
-		<Use>Highlighted Text</Use>
-		<Name>CyanBlue</Name>
-		<R>0</R>
-		<G>255</G>
-		<B>255</B>
+		<Use>LastReport</Use>
+		<Name>LightBlue</Name>
+		<R>71</R>
+		<G>131</G>
+		<B>183</B>
 	</Colour>
   <Colour id="CPDLCMessageBackground">
 		<Use>CPDLC Background</Use>
@@ -200,18 +207,18 @@
     <B>105</B>
   </Colour>
 	<Colour id="Jurisdiction">
-		<Use>Jurisdiction</Use>
-		<Name>White</Name>
-		<R>255</R>
-		<G>255</G>
-		<B>255</B>
+		<Use>PreviousEst</Use>
+		<Name>Grey</Name>
+		<R>151</R>
+		<G>151</G>
+		<B>151</B>
 	</Colour>
   <Colour id="GhostJurisdiction">
-    <Use>GhostJurisdiction</Use>
-    <Name>LightBlue</Name>
-		<R>173</R>
-		<G>216</G>
-		<B>255</B>
+		<Use>EstBackground</Use>
+		<Name>Grey</Name>
+		<R>190</R>
+		<G>190</G>
+		<B>190</B>
   </Colour>
   <Colour id="PostJurisdiction">
 		<Use>PostJurisdiction</Use>
@@ -221,11 +228,11 @@
 		<B>255</B>
 	</Colour>
   <Colour id="JurisdictionIQL">
-		<Use>JurisdictionIQL</Use>
-		<Name>Green</Name>
+		<Use>Flags</Use>
+		<Name>Cyan</Name>
 		<R>0</R>
-		<G>255</G>
-		<B>0</B>
+		<G>196</G>
+		<B>253</B>
 	</Colour>
   <Colour id="Handover">
 		<Use>HandOver</Use>

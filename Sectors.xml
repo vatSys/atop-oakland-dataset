@@ -1,27 +1,27 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Sectors xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-  <Sector FullName="Oakland Center Sector 1" Frequency="131.950" Callsign="ZAK_E_FSS" Name="OC1">  
+  <Sector FullName="Sector 1" Frequency="131.950" Callsign="ZAK_E_FSS" Name="01">  
 <Volumes>OC1,OC1a</Volumes> 
   </Sector>  
-  <Sector FullName="Oakland Center Sector 2" Frequency="131.950" Callsign="ZAK_2_FSS" Name="OC2">  
+  <Sector FullName="Sector 2" Frequency="131.950" Callsign="ZAK_2_FSS" Name="02">  
 <Volumes>OC2</Volumes> 
   </Sector>  
-  <Sector FullName="Oakland Center Sector 3" Frequency="131.950" Callsign="ZAK_3_FSS" Name="OC3">  
+  <Sector FullName="Sector 3" Frequency="131.950" Callsign="ZAK_3_FSS" Name="03">  
 <Volumes>OC3,OC3a</Volumes> 
   </Sector>  
-  <Sector FullName="Oakland Center Sector 4" Frequency="131.950" Callsign="ZAK_4_FSS" Name="OC4">  
+  <Sector FullName="Sector 4" Frequency="131.950" Callsign="ZAK_4_FSS" Name="04">  
 <Volumes>OC4,OC4a,OC4b</Volumes> 
   </Sector>  
-  <Sector FullName="Oakland Center Sector 5" Frequency="129.400" Callsign="ZAK_W_FSS" Name="OC5">  
+  <Sector FullName="Sector 5" Frequency="129.400" Callsign="ZAK_W_FSS" Name="05">  
 <Volumes>OC5</Volumes> 
   </Sector>  
-  <Sector FullName="Oakland Center Sector 6" Frequency="129.400" Callsign="ZAK_6_FSS" Name="OC6">  
+  <Sector FullName="Sector 6" Frequency="129.400" Callsign="ZAK_6_FSS" Name="06">  
 <Volumes>OC6</Volumes> 
   </Sector>  
-  <Sector FullName="Oakland Center Sector 7" Frequency="131.950" Callsign="ZAK_7_FSS" Name="OC7">  
+  <Sector FullName="Sector 7" Frequency="131.950" Callsign="ZAK_7_FSS" Name="07">  
 <Volumes>OC7</Volumes> 
   </Sector>   
-  <Sector FullName="Oakland Center Sector 9" Frequency="131.950" Callsign="ZAK_9_FSS" Name="OC9">  
+  <Sector FullName="Sector 9" Frequency="131.950" Callsign="ZAK_9_FSS" Name="09">  
 <Volumes>OC9</Volumes> 
   </Sector>    
 </Sectors>

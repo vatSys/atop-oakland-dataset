@@ -33,14 +33,14 @@
 		<Point>+1941.000+15324.000</Point>		
 	</ManualVisibility>  
     <Sectors>
-      <Sector Name="OC1" />
-      <Sector Name="OC2" />	  
-      <Sector Name="OC3" />	  
-      <Sector Name="OC4" />	  
-      <Sector Name="OC5" />	  
-      <Sector Name="OC6" />	  
-      <Sector Name="OC7" />	  
-      <Sector Name="OC9" />	    
+      <Sector Name="01" />
+      <Sector Name="02" />	  
+      <Sector Name="03" />	  
+      <Sector Name="04" />	  
+      <Sector Name="05" />	  
+      <Sector Name="06" />	  
+      <Sector Name="07" />	  
+      <Sector Name="09" />	    
     </Sectors>
     <Maps>
       <Map Name="FIR" />
@@ -71,10 +71,10 @@
 		<Point>+1941.000+15324.000</Point>		
 	</ManualVisibility>  
     <Sectors>
-      <Sector Name="OC1" />
-      <Sector Name="OC2" />	  	  
-      <Sector Name="OC4" />	  	  
-      <Sector Name="OC7" />	  	    
+      <Sector Name="01" />
+      <Sector Name="02" />	  	  
+      <Sector Name="04" />	  	  
+      <Sector Name="07" />	  	    
     </Sectors>
     <Maps>
       <Map Name="FIR" />
@@ -105,10 +105,10 @@
 		<Point>+1941.000+15324.000</Point>		
 	</ManualVisibility>  
     <Sectors>	  
-      <Sector Name="OC3" />	  	  
-      <Sector Name="OC5" />	  
-      <Sector Name="OC6" />	  	  
-      <Sector Name="OC9" />	    
+      <Sector Name="03" />	  	  
+      <Sector Name="05" />	  
+      <Sector Name="06" />	  	  
+      <Sector Name="09" />	    
     </Sectors>
     <Maps>
       <Map Name="FIR" />
@@ -139,7 +139,7 @@
 		<Point>+1941.000+15324.000</Point>		
 	</ManualVisibility>    
     <Sectors>
-      <Sector Name="OC1" />
+      <Sector Name="01" />
     </Sectors>
     <Maps>
       <Map Name="FIR" />
@@ -170,7 +170,7 @@
 		<Point>+1941.000+15324.000</Point>		
 	</ManualVisibility>    
     <Sectors>
-      <Sector Name="OC2" />
+      <Sector Name="02" />
     </Sectors>
     <Maps>
       <Map Name="FIR" />
@@ -201,7 +201,7 @@
 		<Point>+1941.000+15324.000</Point>		
 	</ManualVisibility>    
     <Sectors>
-      <Sector Name="OC3" />
+      <Sector Name="03" />
     </Sectors>
     <Maps>
       <Map Name="FIR" />
@@ -233,7 +233,7 @@
 		<Point>+1941.000+15324.000</Point>		
 	</ManualVisibility>    
     <Sectors>
-      <Sector Name="OC4" />
+      <Sector Name="04" />
     </Sectors>
     <Maps>
       <Map Name="FIR" />
@@ -264,7 +264,7 @@
 		<Point>+1941.000+15324.000</Point>		
 	</ManualVisibility>    
     <Sectors>
-      <Sector Name="OC5" />
+      <Sector Name="05" />
     </Sectors>
     <Maps>
       <Map Name="FIR" />
@@ -298,7 +298,7 @@
 		<Point>+1941.000+15324.000</Point>		
 	</ManualVisibility>    
     <Sectors>
-      <Sector Name="OC6" />
+      <Sector Name="06" />
     </Sectors>
     <Maps>
       <Map Name="FIR" />
@@ -332,7 +332,7 @@
 		<Point>+1941.000+15324.000</Point>		
 	</ManualVisibility>    
     <Sectors>
-      <Sector Name="OC7" />
+      <Sector Name="07" />
     </Sectors>
     <Maps>
       <Map Name="FIR" />
@@ -361,7 +361,7 @@
 		<Point>+1941.000+15324.000</Point>		
 	</ManualVisibility>    
     <Sectors>
-      <Sector Name="OC9" />
+      <Sector Name="09" />
     </Sectors>
     <Maps>
       <Map Name="FIR" />
