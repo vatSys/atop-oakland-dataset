@@ -12,14 +12,11 @@
       <Map Name="FIR" />
       <Map Name="Geo" />
     </Maps>
-    <Strips Mode="State" Sort="Time">
-      <Window Type="State" State="Jurisdiction" Visible="true" />
-      <Window Type="State" State="Announced" Visible="true" />
-      <Window Type="State" State="Preactive" Visible="true" />
+    <Strips Mode="Beacon" Sort="Level">
     </Strips>
     <CFL QuickLevel="999000" />
     <ArrivalLists>
-      <Airport Name="KSFO" />
+
     </ArrivalLists>
     <ControllerInfo>
       <Line>ATC by Oakland Center HF relay by San Francisco ARINC</Line>
@@ -33,14 +30,7 @@
 		<Point>+1941.000+15324.000</Point>		
 	</ManualVisibility>  
     <Sectors>
-      <Sector Name="01" />
-      <Sector Name="02" />	  
-      <Sector Name="03" />	  
-      <Sector Name="04" />	  
-      <Sector Name="05" />	  
-      <Sector Name="06" />	  
-      <Sector Name="07" />	  
-      <Sector Name="09" />	    
+      <Sector Name="77" />   
     </Sectors>
     <Maps>
       <Map Name="FIR" />
@@ -50,14 +40,10 @@
       <Map Name="OSec" />
       <Map Name="UTA" />	  
     </Maps>
-    <Strips Mode="State" Sort="Time">
-      <Window Type="State" State="Jurisdiction" Visible="true" />
-      <Window Type="State" State="Announced" Visible="true" />
-      <Window Type="State" State="Preactive" Visible="true" />
+    <Strips Mode="Beacon" Sort="Level">
     </Strips>
     <CFL QuickLevel="999000" />
     <ArrivalLists>
-      <Airport Name="KSFO" />
     </ArrivalLists>
     <ControllerInfo>
       <Line>ATC by Oakland Center HF relay by San Francisco ARINC</Line>
@@ -84,14 +70,11 @@
       <Map Name="OSec" />
       <Map Name="UTA" />	  
     </Maps>
-    <Strips Mode="State" Sort="Time">
-      <Window Type="State" State="Jurisdiction" Visible="true" />
-      <Window Type="State" State="Announced" Visible="true" />
-      <Window Type="State" State="Preactive" Visible="true" />
+    <Strips Mode="Beacon" Sort="Level">
     </Strips>
     <CFL QuickLevel="999000" />
     <ArrivalLists>
-      <Airport Name="KSFO" />
+
     </ArrivalLists>
     <ControllerInfo>
       <Line>ATC by Oakland Center HF relay by San Francisco ARINC</Line>
@@ -118,14 +101,11 @@
       <Map Name="OSec" />
       <Map Name="UTA" />	  
     </Maps>
-    <Strips Mode="State" Sort="Time">
-      <Window Type="State" State="Jurisdiction" Visible="true" />
-      <Window Type="State" State="Announced" Visible="true" />
-      <Window Type="State" State="Preactive" Visible="true" />
+    <Strips Mode="Beacon" Sort="Level">
     </Strips>
     <CFL QuickLevel="999000" />
     <ArrivalLists>
-      <Airport Name="KSFO" />
+
     </ArrivalLists>
     <ControllerInfo>
       <Line>ATC by Oakland Center HF relay by San Francisco ARINC</Line>
@@ -149,14 +129,11 @@
       <Map Name="OSec" />
       <Map Name="UTA" />	  
     </Maps>
-    <Strips Mode="State" Sort="Time">
-      <Window Type="State" State="Jurisdiction" Visible="true" />
-      <Window Type="State" State="Announced" Visible="true" />
-      <Window Type="State" State="Preactive" Visible="true" />
+    <Strips Mode="Beacon" Sort="Level">
     </Strips>
     <CFL QuickLevel="999000" />
     <ArrivalLists>
-      <Airport Name="KSFO" />
+
     </ArrivalLists>
     <ControllerInfo>
       <Line>ATC by Oakland Center HF relay by San Francisco ARINC</Line>
@@ -180,14 +157,11 @@
       <Map Name="OSec" />
       <Map Name="UTA" />	  
     </Maps>
-    <Strips Mode="State" Sort="Time">
-      <Window Type="State" State="Jurisdiction" Visible="true" />
-      <Window Type="State" State="Announced" Visible="true" />
-      <Window Type="State" State="Preactive" Visible="true" />
+    <Strips Mode="Beacon" Sort="Level">
     </Strips>
     <CFL QuickLevel="999000" />
     <ArrivalLists>
-      <Airport Name="KSFO" />
+
     </ArrivalLists>
     <ControllerInfo>
       <Line>ATC by Oakland Center HF relay by San Francisco ARINC</Line>
@@ -211,10 +185,7 @@
       <Map Name="OSec" />
       <Map Name="UTA" />	  
     </Maps>
-    <Strips Mode="State" Sort="Time">
-      <Window Type="State" State="Jurisdiction" Visible="true" />
-      <Window Type="State" State="Announced" Visible="true" />
-      <Window Type="State" State="Preactive" Visible="true" />
+    <Strips Mode="Beacon" Sort="Level">
     </Strips>
     <CFL QuickLevel="999000" />
     <ArrivalLists>
@@ -243,14 +214,11 @@
       <Map Name="OSec" />
       <Map Name="UTA" />	  
     </Maps>
-    <Strips Mode="State" Sort="Time">
-      <Window Type="State" State="Jurisdiction" Visible="true" />
-      <Window Type="State" State="Announced" Visible="true" />
-      <Window Type="State" State="Preactive" Visible="true" />
+    <Strips Mode="Beacon" Sort="Level">
     </Strips>
     <CFL QuickLevel="999000" />
     <ArrivalLists>
-      <Airport Name="KSFO" />
+
     </ArrivalLists>
     <ControllerInfo>
       <Line>ATC by Oakland Center HF relay by San Francisco ARINC</Line>
@@ -274,10 +242,7 @@
       <Map Name="OSec" />
       <Map Name="UTA" />	  
     </Maps>
-    <Strips Mode="State" Sort="Time">
-      <Window Type="State" State="Jurisdiction" Visible="true" />
-      <Window Type="State" State="Announced" Visible="true" />
-      <Window Type="State" State="Preactive" Visible="true" />
+    <Strips Mode="Beacon" Sort="Level">
     </Strips>
     <CFL QuickLevel="999000" />
     <ArrivalLists>
@@ -308,10 +273,7 @@
       <Map Name="OSec" />
       <Map Name="UTA" />	  
     </Maps>
-    <Strips Mode="State" Sort="Time">
-      <Window Type="State" State="Jurisdiction" Visible="true" />
-      <Window Type="State" State="Announced" Visible="true" />
-      <Window Type="State" State="Preactive" Visible="true" />
+    <Strips Mode="Beacon" Sort="Level">
     </Strips>
     <CFL QuickLevel="999000" />
     <ArrivalLists>
@@ -342,10 +304,7 @@
       <Map Name="OSec" />
       <Map Name="UTA" />	  
     </Maps>
-    <Strips Mode="State" Sort="Time">
-      <Window Type="State" State="Jurisdiction" Visible="true" />
-      <Window Type="State" State="Announced" Visible="true" />
-      <Window Type="State" State="Preactive" Visible="true" />
+    <Strips Mode="Beacon" Sort="Level">
     </Strips>
     <CFL QuickLevel="999000" />
     <ArrivalLists/>
@@ -371,10 +330,7 @@
       <Map Name="OSec" />
       <Map Name="UTA" />	  
     </Maps>
-    <Strips Mode="State" Sort="Time">
-      <Window Type="State" State="Jurisdiction" Visible="true" />
-      <Window Type="State" State="Announced" Visible="true" />
-      <Window Type="State" State="Preactive" Visible="true" />
+    <Strips Mode="Beacon" Sort="Level">
     </Strips>
     <CFL QuickLevel="999000" />
     <ArrivalLists>

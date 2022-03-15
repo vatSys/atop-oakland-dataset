@@ -54,7 +54,7 @@
   </Sector>
   <Sector FullName="Los Angeles NAS" Frequency="132.150" Callsign="LAX_28_CTR" Name="LA" DisplayInSectorsWindow="False"/>  
   <Sector FullName="Los Angeles NAS" Frequency="126.520" Callsign="LAX_25_CTR" Name="LA" DisplayInSectorsWindow="False"/>   
-  <Sector FullName="Los Angeles NAS" Frequency="135.550" Callsign="LAX_CTR" Name="LA" DisplayInSectorsWindow="False">  
+  <Sector FullName="Los Angeles NAS" Frequency="135.550" Callsign="LAX_55_CTR" Name="LA" DisplayInSectorsWindow="False">  
 <Volumes>KZLA</Volumes> 
   </Sector>    
   <!--Sector FullName="Manila P ACC" Frequency="" Callsign="MNL_FSS" Name="MN" DisplayInSectorsWindow="False"/-->    
@@ -94,7 +94,7 @@
 <Volumes>CZVR</Volumes> 
   </Sector>  
   <Sector FullName="PAZA" Frequency="126.400" Callsign="ANC_10_CTR" Name="ZO" DisplayInSectorsWindow="False"/>
-  <!--Sector FullName="PAZA" Frequency="" Callsign="ANC_20_CTR" Name="ZO" DisplayInSectorsWindow="False"/-->
+  <Sector FullName="PAZA" Frequency="133.300" Callsign="ANC_03_CTR" Name="ZO" DisplayInSectorsWindow="False"/>
   <Sector FullName="PAZA" Frequency="127.300" Callsign="ANC_68_CTR" Name="ZO" DisplayInSectorsWindow="False">  
 <Volumes>PAZA</Volumes> 
   </Sector>

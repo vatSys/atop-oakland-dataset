@@ -172,7 +172,7 @@
                         <StripLayoutLines>
                           <StripLayoutLine>
                             <StripItems>
-								<StripItem Type="ControllingSector" LeftClick="Strip_Controller" RightClick="Strip_State" MaxLength="2" MinLength="2" > <Colours Colour="CFLHighlight"/> </StripItem>	
+								<StripItem Type="ControllingSector" LeftClick="Strip_Controller" RightClick="Strip_State" MaxLength="2" MinLength="2" > <Colours BackColour="StripBackground" Colour="CFLHighlight"/> </StripItem>	
                             </StripItems>				
                           </StripLayoutLine>
                         </StripLayoutLines>					  
