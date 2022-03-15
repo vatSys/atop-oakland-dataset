@@ -172,7 +172,7 @@
                         <StripLayoutLines>
                           <StripLayoutLine>
                             <StripItems>
-                              <StripItem Type="CoordinationStatus" MaxLength="2" MinLength="2" />
+								<StripItem Type="ControllingSector" LeftClick="Strip_Controller" RightClick="Strip_State" MaxLength="2" MinLength="2" > <Colours Colour="CFLHighlight"/> </StripItem>	
                             </StripItems>				
                           </StripLayoutLine>
                         </StripLayoutLines>					  
@@ -298,7 +298,7 @@
                     <StripLayoutLines>
                       <StripLayoutLine>
                         <StripItems>
-                          <StripItem Type="GlobalOpsInfo" LeftClick="Strip_GlobalOps" MaxLength="75" MinLength="75" />
+                          <StripItem Type="LocalOpsInfo" LeftClick="Strip_LocalOps" MaxLength="75" MinLength="75" />
                         </StripItems>
                       </StripLayoutLine>
                     </StripLayoutLines>
