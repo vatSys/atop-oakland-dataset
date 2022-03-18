@@ -22,7 +22,7 @@
                           <StripItem Type="Callsign" LeftClick="Strip_Extend" MiddleClick="Strip_Delete" RightClick="Label_ACID_Menu" MaxLength="8" MinLength="8" FontSize="Large" />
                           <StripItem Type="OtherInfo" MaxLength="1" MinLength="1" FontSize="XtraLarge"/>						  
                           <StripItem Type="CPDLCStatus" LeftClick="Label_CPDLC_Editor" MinLength="1" FontSize="Large"/>
-                          <StripItem Type="LocalOpsInfo" LeftClick="Strip_LocalOps" MaxLength="5" MinLength="0" > <Colours BackColour="JurisdictionIQL" Colour="StripText"/> </StripItem>								  
+                          <StripItem Type="LocalOpsInfo" LeftClick="Strip_LocalOps" MaxLength="5" MinLength="0" > <Colours BackColour="JurisdictionIQL" Colour="StripText" /> </StripItem>								  
                         </StripItems>
                       </StripLayoutLine>
                       <StripLayoutLine>
@@ -79,7 +79,7 @@
                           </StripLayoutLine>
                           <StripLayoutLine>
                             <StripItems>
-                              <StripItem Type="ETOP" LeftClick="Strip_ETO" PointIndex="1" MinLength="6" > <Colours BorderColour="HighlightedText" BackColour="HighlightedText" Colour="StripBackground"/> </StripItem>
+                              <StripItem Type="ETOP" LeftClick="Strip_ETO" PointIndex="1" MinLength="6" > <Colours BorderColour="HighlightedText" BackColour="HighlightedText" Colour="StripBackground" /> </StripItem>
                             </StripItems>
                           </StripLayoutLine>
                         </StripLayoutLines>
@@ -88,12 +88,12 @@
                         <StripLayoutLines>
                           <StripLayoutLine LineSpan="2">
                             <StripItems>
-                              <StripItem Type="Point" LeftClick="Strip_Point" MiddleClick="Strip_MPR_Arm" RightClick="Strip_Point_Expand" PointIndex="2" MaxLength="6" MinLength="6" > <Colours BorderColour="GhostJurisdiction" BackColour="GhostJurisdiction" Colour="StripText"/> </StripItem>
+                              <StripItem Type="Point" LeftClick="Strip_Point" MiddleClick="Strip_MPR_Arm" RightClick="Strip_Point_Expand" PointIndex="2" MaxLength="6" MinLength="6" > <Colours BorderColour="GhostJurisdiction" BackColour="GhostJurisdiction" Colour="StripText" P4Colour="Unstable"/> </StripItem>
                             </StripItems>
                           </StripLayoutLine>
                           <StripLayoutLine>
                             <StripItems>
-                              <StripItem Type="ETOP" LeftClick="Strip_ETO" PointIndex="2" MinLength="6" > <Colours BorderColour="GhostJurisdiction" BackColour="GhostJurisdiction" Colour="StripText"/> </StripItem>
+                              <StripItem Type="ETOP" LeftClick="Strip_ETO" PointIndex="2" MinLength="6" > <Colours BorderColour="GhostJurisdiction" BackColour="GhostJurisdiction" Colour="StripText" /> </StripItem>
                             </StripItems>
                           </StripLayoutLine>
                         </StripLayoutLines>
@@ -102,12 +102,12 @@
                         <StripLayoutLines>
                           <StripLayoutLine LineSpan="2">
                             <StripItems>
-                              <StripItem Type="Point" LeftClick="Strip_Point" MiddleClick="Strip_MPR_Arm" RightClick="Strip_Point_Expand" PointIndex="3" MaxLength="6" MinLength="6" > <Colours BorderColour="GhostJurisdiction" BackColour="GhostJurisdiction" Colour="StripText"/> </StripItem>
+                              <StripItem Type="Point" LeftClick="Strip_Point" MiddleClick="Strip_MPR_Arm" RightClick="Strip_Point_Expand" PointIndex="3" MaxLength="6" MinLength="6" > <Colours BorderColour="GhostJurisdiction" BackColour="GhostJurisdiction" Colour="StripText" /> </StripItem>
                             </StripItems>
                           </StripLayoutLine>
                           <StripLayoutLine>
                             <StripItems>
-                              <StripItem Type="ETOP" LeftClick="Strip_ETO" PointIndex="3" MinLength="6" > <Colours BorderColour="GhostJurisdiction" BackColour="GhostJurisdiction" Colour="StripText"/> </StripItem>
+                              <StripItem Type="ETOP" LeftClick="Strip_ETO" PointIndex="3" MinLength="6" > <Colours BorderColour="GhostJurisdiction" BackColour="GhostJurisdiction" Colour="StripText" /> </StripItem>
                             </StripItems>
                           </StripLayoutLine>
                         </StripLayoutLines>
@@ -116,12 +116,12 @@
                         <StripLayoutLines>
                           <StripLayoutLine LineSpan="2">
                             <StripItems>
-                              <StripItem Type="Point" LeftClick="Strip_Point" MiddleClick="Strip_MPR_Arm" RightClick="Strip_Point_Expand" PointIndex="4" MaxLength="6" MinLength="6" > <Colours BorderColour="GhostJurisdiction" BackColour="GhostJurisdiction" Colour="StripText"/> </StripItem>
+                              <StripItem Type="Point" LeftClick="Strip_Point" MiddleClick="Strip_MPR_Arm" RightClick="Strip_Point_Expand" PointIndex="4" MaxLength="6" MinLength="6" > <Colours BorderColour="GhostJurisdiction" BackColour="GhostJurisdiction" Colour="StripText" /> </StripItem>
                             </StripItems>
                           </StripLayoutLine>
                           <StripLayoutLine>
                             <StripItems>
-                              <StripItem Type="ETOP" LeftClick="Strip_ETO" PointIndex="4" MinLength="6" > <Colours BorderColour="GhostJurisdiction" BackColour="GhostJurisdiction" Colour="StripText"/> </StripItem>
+                              <StripItem Type="ETOP" LeftClick="Strip_ETO" PointIndex="4" MinLength="6" > <Colours BorderColour="GhostJurisdiction" BackColour="GhostJurisdiction" Colour="StripText" /> </StripItem>
                             </StripItems>
                           </StripLayoutLine>
                         </StripLayoutLines>
@@ -130,12 +130,12 @@
                         <StripLayoutLines>
                           <StripLayoutLine LineSpan="2">
                             <StripItems>
-                              <StripItem Type="Point" LeftClick="Strip_Point" MiddleClick="Strip_MPR_Arm" RightClick="Strip_Point_Expand" PointIndex="5" MaxLength="6" MinLength="6" > <Colours BorderColour="GhostJurisdiction" BackColour="GhostJurisdiction" Colour="StripText"/> </StripItem>
+                              <StripItem Type="Point" LeftClick="Strip_Point" MiddleClick="Strip_MPR_Arm" RightClick="Strip_Point_Expand" PointIndex="5" MaxLength="6" MinLength="6" > <Colours BorderColour="GhostJurisdiction" BackColour="GhostJurisdiction" Colour="StripText" /> </StripItem>
                             </StripItems>
                           </StripLayoutLine>
                           <StripLayoutLine>
                             <StripItems>
-                              <StripItem Type="ETOP" LeftClick="Strip_ETO" PointIndex="5" MinLength="6" > <Colours BorderColour="GhostJurisdiction" BackColour="GhostJurisdiction" Colour="StripText"/> </StripItem>
+                              <StripItem Type="ETOP" LeftClick="Strip_ETO" PointIndex="5" MinLength="6" > <Colours BorderColour="GhostJurisdiction" BackColour="GhostJurisdiction" Colour="StripText" /> </StripItem>
                             </StripItems>
                           </StripLayoutLine>
                         </StripLayoutLines>
@@ -144,12 +144,12 @@
                         <StripLayoutLines>
                           <StripLayoutLine LineSpan="2">
                             <StripItems>
-                              <StripItem Type="Point" LeftClick="Strip_Point" MiddleClick="Strip_MPR_Arm" RightClick="Strip_Point_Expand" PointIndex="6" MaxLength="6" MinLength="6" > <Colours BorderColour="GhostJurisdiction" BackColour="GhostJurisdiction" Colour="StripText"/> </StripItem>
+                              <StripItem Type="Point" LeftClick="Strip_Point" MiddleClick="Strip_MPR_Arm" RightClick="Strip_Point_Expand" PointIndex="6" MaxLength="6" MinLength="6" > <Colours BorderColour="GhostJurisdiction" BackColour="GhostJurisdiction" Colour="StripText" /> </StripItem>
                             </StripItems>
                           </StripLayoutLine>
                           <StripLayoutLine>
                             <StripItems>
-                              <StripItem Type="ETOP" LeftClick="Strip_ETO" PointIndex="6" MinLength="6" > <Colours BorderColour="GhostJurisdiction" BackColour="GhostJurisdiction" Colour="StripText"/> </StripItem>
+                              <StripItem Type="ETOP" LeftClick="Strip_ETO" PointIndex="6" MinLength="6" > <Colours BorderColour="GhostJurisdiction" BackColour="GhostJurisdiction" Colour="StripText" /> </StripItem>
                             </StripItems>
                           </StripLayoutLine>
                         </StripLayoutLines>
@@ -196,12 +196,12 @@
                         <StripLayoutLines>
                           <StripLayoutLine LineSpan="2">
                             <StripItems>
-                              <StripItem Type="Point" LeftClick="Strip_Point" MiddleClick="Strip_MPR_Arm" RightClick="Strip_Point_Expand" PointIndex="7" MaxLength="6" MinLength="6" > <Colours BorderColour="GhostJurisdiction" BackColour="GhostJurisdiction" Colour="StripText"/> </StripItem>
+                              <StripItem Type="Point" LeftClick="Strip_Point" MiddleClick="Strip_MPR_Arm" RightClick="Strip_Point_Expand" PointIndex="7" MaxLength="6" MinLength="6" > <Colours BorderColour="GhostJurisdiction" BackColour="GhostJurisdiction" Colour="StripText" /> </StripItem>
                             </StripItems>
                           </StripLayoutLine>
                           <StripLayoutLine>
                             <StripItems>
-                              <StripItem Type="ETOP" LeftClick="Strip_ETO" PointIndex="7" MinLength="6" > <Colours BorderColour="GhostJurisdiction" BackColour="GhostJurisdiction" Colour="StripText"/> </StripItem>
+                              <StripItem Type="ETOP" LeftClick="Strip_ETO" PointIndex="7" MinLength="6" > <Colours BorderColour="GhostJurisdiction" BackColour="GhostJurisdiction" Colour="StripText" /> </StripItem>
                             </StripItems>
                           </StripLayoutLine>
                         </StripLayoutLines>
@@ -210,12 +210,12 @@
                         <StripLayoutLines>
                           <StripLayoutLine LineSpan="2">
                             <StripItems>
-                              <StripItem Type="Point" LeftClick="Strip_Point" MiddleClick="Strip_MPR_Arm" RightClick="Strip_Point_Expand" PointIndex="8" MaxLength="6" MinLength="6" > <Colours BorderColour="GhostJurisdiction" BackColour="GhostJurisdiction" Colour="StripText"/> </StripItem>
+                              <StripItem Type="Point" LeftClick="Strip_Point" MiddleClick="Strip_MPR_Arm" RightClick="Strip_Point_Expand" PointIndex="8" MaxLength="6" MinLength="6" > <Colours BorderColour="GhostJurisdiction" BackColour="GhostJurisdiction" Colour="StripText" /> </StripItem>
                             </StripItems>
                           </StripLayoutLine>
                           <StripLayoutLine>
                             <StripItems>
-                              <StripItem Type="ETOP" LeftClick="Strip_ETO" PointIndex="8" MinLength="6" > <Colours BorderColour="GhostJurisdiction" BackColour="GhostJurisdiction" Colour="StripText"/> </StripItem>
+                              <StripItem Type="ETOP" LeftClick="Strip_ETO" PointIndex="8" MinLength="6" > <Colours BorderColour="GhostJurisdiction" BackColour="GhostJurisdiction" Colour="StripText" /> </StripItem>
                             </StripItems>
                           </StripLayoutLine>
                         </StripLayoutLines>
@@ -224,12 +224,12 @@
                         <StripLayoutLines>
                           <StripLayoutLine LineSpan="2">
                             <StripItems>
-                              <StripItem Type="Point" LeftClick="Strip_Point" MiddleClick="Strip_MPR_Arm" RightClick="Strip_Point_Expand" PointIndex="9" MaxLength="6" MinLength="6" > <Colours BorderColour="GhostJurisdiction" BackColour="GhostJurisdiction" Colour="StripText"/> </StripItem>
+                              <StripItem Type="Point" LeftClick="Strip_Point" MiddleClick="Strip_MPR_Arm" RightClick="Strip_Point_Expand" PointIndex="9" MaxLength="6" MinLength="6" > <Colours BorderColour="GhostJurisdiction" BackColour="GhostJurisdiction" Colour="StripText" /> </StripItem>
                             </StripItems>
                           </StripLayoutLine>
                           <StripLayoutLine>
                             <StripItems>
-                              <StripItem Type="ETOP" LeftClick="Strip_ETO" PointIndex="9" MinLength="6" > <Colours BorderColour="GhostJurisdiction" BackColour="GhostJurisdiction" Colour="StripText"/> </StripItem>
+                              <StripItem Type="ETOP" LeftClick="Strip_ETO" PointIndex="9" MinLength="6" > <Colours BorderColour="GhostJurisdiction" BackColour="GhostJurisdiction" Colour="StripText" /> </StripItem>
                             </StripItems>
                           </StripLayoutLine>
                         </StripLayoutLines>
@@ -238,12 +238,12 @@
                         <StripLayoutLines>
                           <StripLayoutLine LineSpan="2">
                             <StripItems>
-                              <StripItem Type="Point" LeftClick="Strip_Point" MiddleClick="Strip_MPR_Arm" RightClick="Strip_Point_Expand" PointIndex="10" MaxLength="6" MinLength="6" > <Colours BorderColour="GhostJurisdiction" BackColour="GhostJurisdiction" Colour="StripText"/> </StripItem>
+                              <StripItem Type="Point" LeftClick="Strip_Point" MiddleClick="Strip_MPR_Arm" RightClick="Strip_Point_Expand" PointIndex="10" MaxLength="6" MinLength="6" > <Colours BorderColour="GhostJurisdiction" BackColour="GhostJurisdiction" Colour="StripText" /> </StripItem>
                             </StripItems>
                           </StripLayoutLine>
                           <StripLayoutLine>
                             <StripItems>
-                              <StripItem Type="ETOP" LeftClick="Strip_ETO" PointIndex="10" MinLength="6" > <Colours BorderColour="GhostJurisdiction" BackColour="GhostJurisdiction" Colour="StripText"/> </StripItem>
+                              <StripItem Type="ETOP" LeftClick="Strip_ETO" PointIndex="10" MinLength="6" > <Colours BorderColour="GhostJurisdiction" BackColour="GhostJurisdiction" Colour="StripText" /> </StripItem>
                             </StripItems>
                           </StripLayoutLine>
                         </StripLayoutLines>
@@ -252,12 +252,12 @@
                         <StripLayoutLines>
                           <StripLayoutLine LineSpan="2">
                             <StripItems>
-                              <StripItem Type="Point" LeftClick="Strip_Point" MiddleClick="Strip_MPR_Arm" RightClick="Strip_Point_Expand" PointIndex="11" MaxLength="6" MinLength="6" > <Colours BorderColour="GhostJurisdiction" BackColour="GhostJurisdiction" Colour="StripText"/> </StripItem>
+                              <StripItem Type="Point" LeftClick="Strip_Point" MiddleClick="Strip_MPR_Arm" RightClick="Strip_Point_Expand" PointIndex="11" MaxLength="6" MinLength="6" > <Colours BorderColour="GhostJurisdiction" BackColour="GhostJurisdiction" Colour="StripText" /> </StripItem>
                             </StripItems>
                           </StripLayoutLine>
                           <StripLayoutLine>
                             <StripItems>
-                              <StripItem Type="ETOP" LeftClick="Strip_ETO" PointIndex="11" MinLength="6" > <Colours BorderColour="GhostJurisdiction" BackColour="GhostJurisdiction" Colour="StripText"/> </StripItem>
+                              <StripItem Type="ETOP" LeftClick="Strip_ETO" PointIndex="11" MinLength="6" > <Colours BorderColour="GhostJurisdiction" BackColour="GhostJurisdiction" Colour="StripText" /> </StripItem>
                             </StripItems>
                           </StripLayoutLine>
                         </StripLayoutLines>
@@ -266,12 +266,12 @@
                         <StripLayoutLines>
                           <StripLayoutLine LineSpan="2">
                             <StripItems>
-                              <StripItem Type="Point" LeftClick="Strip_Point" MiddleClick="Strip_MPR_Arm" RightClick="Strip_Point_Expand" PointIndex="12" MaxLength="6" MinLength="6" > <Colours BorderColour="GhostJurisdiction" BackColour="GhostJurisdiction" Colour="StripText"/> </StripItem>
+                              <StripItem Type="Point" LeftClick="Strip_Point" MiddleClick="Strip_MPR_Arm" RightClick="Strip_Point_Expand" PointIndex="12" MaxLength="6" MinLength="6" > <Colours BorderColour="GhostJurisdiction" BackColour="GhostJurisdiction" Colour="StripText" /> </StripItem>
                             </StripItems>
                           </StripLayoutLine>
                           <StripLayoutLine>
                             <StripItems>
-                              <StripItem Type="ETOP" LeftClick="Strip_ETO" PointIndex="12" MinLength="6" > <Colours BorderColour="GhostJurisdiction" BackColour="GhostJurisdiction" Colour="StripText"/> </StripItem>
+                              <StripItem Type="ETOP" LeftClick="Strip_ETO" PointIndex="12" MinLength="6" > <Colours BorderColour="GhostJurisdiction" BackColour="GhostJurisdiction" Colour="StripText" /> </StripItem>
                             </StripItems>
                           </StripLayoutLine>
                         </StripLayoutLines>
@@ -280,12 +280,12 @@
                         <StripLayoutLines>
                           <StripLayoutLine LineSpan="2">
                             <StripItems>
-                              <StripItem Type="Point" LeftClick="Strip_Point" MiddleClick="Strip_MPR_Arm" RightClick="Strip_Point_Expand" PointIndex="13" MaxLength="6" MinLength="6" > <Colours BorderColour="GhostJurisdiction" BackColour="GhostJurisdiction" Colour="StripText"/> </StripItem>
+                              <StripItem Type="Point" LeftClick="Strip_Point" MiddleClick="Strip_MPR_Arm" RightClick="Strip_Point_Expand" PointIndex="13" MaxLength="6" MinLength="6" > <Colours BorderColour="GhostJurisdiction" BackColour="GhostJurisdiction" Colour="StripText" /> </StripItem>
                             </StripItems>
                           </StripLayoutLine>
                           <StripLayoutLine>
                             <StripItems>
-                              <StripItem Type="ETOP" LeftClick="Strip_ETO" PointIndex="13" MinLength="6" > <Colours BorderColour="GhostJurisdiction" BackColour="GhostJurisdiction" Colour="StripText"/> </StripItem>
+                              <StripItem Type="ETOP" LeftClick="Strip_ETO" PointIndex="13" MinLength="6" > <Colours BorderColour="GhostJurisdiction" BackColour="GhostJurisdiction" Colour="StripText" /> </StripItem>
                             </StripItems>
                           </StripLayoutLine>
                         </StripLayoutLines>

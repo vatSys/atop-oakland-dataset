@@ -41,7 +41,42 @@
 	<!-- Special Code 2 Diamond -->
 	<TrackSymbol Type="ModeA" SpecialCode="2000" RotateToTrack="True" StrokeWidth="0">
 		<PathGeometry>
-			<Figure Start="0,-10" FigureBegin="Filled" FigureEnd="Closed">
+			<Figure Start="0,-8" FigureBegin="Filled" FigureEnd="Closed">
+				<Line>-1.5,-6</Line>
+				<Line>-1.5,-1.5</Line>
+				<Line>-9,3</Line>
+				<Line>-9,5</Line>
+				<Line>-1.5,3</Line>
+				<Line>-1.5,7</Line>
+				<Line>-4,10</Line>
+				<Line>-4,11</Line>
+				<Line>4,11</Line>
+				<Line>4,10</Line>
+				<Line>1.5,7</Line>				
+				<Line>1.5,3</Line>
+				<Line>9,5</Line>
+				<Line>9,3</Line>
+				<Line>1.5,-1.5</Line>
+				<Line>1.5,-6</Line>			
+			</Figure>		
+			<!--Figure Start="0,-6" FigureBegin="Filled" FigureEnd="Closed">
+				<Line>-1,-5</Line>
+				<Line>-1,-1</Line>
+				<Line>-6,2</Line>
+				<Line>-6,4</Line>
+				<Line>-1,2</Line>
+				<Line>-1,5</Line>
+				<Line>-3,7</Line>
+				<Line>3,7</Line>
+				<Line>1,5</Line>
+				<Line>1,2</Line>
+				<Line>6,4</Line>
+				<Line>6,2</Line>
+				<Line>1,-1</Line>
+				<Line>1,-5</Line>
+				<Line>0,-6</Line>			
+			</Figure-->	
+			<!--Figure Start="0,-10" FigureBegin="Filled" FigureEnd="Closed">
 				<Line>-2,-7</Line>
 				<Line>-2,-2</Line>
 				<Line>-12,4</Line>
@@ -60,13 +95,48 @@
 				<Line>2,-2</Line>	
 				<Line>2,-7</Line>
 				<Line>0,-10</Line>				
-			</Figure>			
+			</Figure-->			
 		</PathGeometry>		
 	</TrackSymbol>
 	<!-- Simulated ADS-C symbol -->
 	<TrackSymbol Type="ModeS" SpecialCode="2000" RotateToTrack="True"  StrokeWidth="0">
 		<PathGeometry>
-			<Figure Start="0,-10" FigureBegin="Filled" FigureEnd="Closed">
+			<Figure Start="0,-8" FigureBegin="Filled" FigureEnd="Closed">
+				<Line>-1.5,-6</Line>
+				<Line>-1.5,-1.5</Line>
+				<Line>-9,3</Line>
+				<Line>-9,5</Line>
+				<Line>-1.5,3</Line>
+				<Line>-1.5,7</Line>
+				<Line>-4,10</Line>
+				<Line>-4,11</Line>
+				<Line>4,11</Line>
+				<Line>4,10</Line>
+				<Line>1.5,7</Line>				
+				<Line>1.5,3</Line>
+				<Line>9,5</Line>
+				<Line>9,3</Line>
+				<Line>1.5,-1.5</Line>
+				<Line>1.5,-6</Line>			
+			</Figure>		
+			<!--Figure Start="0,-6" FigureBegin="Filled" FigureEnd="Closed">
+				<Line>-1,-5</Line>
+				<Line>-1,-1</Line>
+				<Line>-6,2</Line>
+				<Line>-6,4</Line>
+				<Line>-1,2</Line>
+				<Line>-1,5</Line>
+				<Line>-3,7</Line>
+				<Line>3,7</Line>
+				<Line>1,5</Line>
+				<Line>1,2</Line>
+				<Line>6,4</Line>
+				<Line>6,2</Line>
+				<Line>1,-1</Line>
+				<Line>1,-5</Line>
+				<Line>0,-6</Line>			
+			</Figure-->			
+			<!--Figure Start="0,-10" FigureBegin="Filled" FigureEnd="Closed">
 				<Line>-2,-7</Line>
 				<Line>-2,-2</Line>
 				<Line>-12,4</Line>
@@ -85,18 +155,18 @@
 				<Line>2,-2</Line>	
 				<Line>2,-7</Line>
 				<Line>0,-10</Line>				
-			</Figure>			
+			</Figure-->			
 		</PathGeometry>		
 	</TrackSymbol>
 	
 	<!-- Special Code 3 Diamond -->
 	<TrackSymbol Type="ModeA" SpecialCode="0100" StrokeWidth="1">
 		<PathGeometry>
-			<Figure Start="-10,0" FigureBegin="Hollow" FigureEnd="Closed">
-				<Line>0,10</Line>
-				<Line>10,0</Line>
-				<Line>0,-10</Line>
-				<Line>-10,0</Line>				
+			<Figure Start="-5,0" FigureBegin="Hollow" FigureEnd="Closed">
+				<Line>0,5</Line>
+				<Line>5,0</Line>
+				<Line>0,-5</Line>
+				<Line>-5,0</Line>				
 			</Figure>
 		</PathGeometry>			
 	</TrackSymbol>
@@ -113,21 +183,21 @@
 	<!-- Special Code 4 Diamond -->
 	<TrackSymbol Type="ModeA" SpecialCode="1200" StrokeWidth="1">
 		<PathGeometry>
-			<Figure Start="-10,0" FigureBegin="Hollow" FigureEnd="Closed">
-				<Line>0,10</Line>
-				<Line>10,0</Line>
-				<Line>0,-10</Line>
-				<Line>-10,0</Line>				
+			<Figure Start="-5,0" FigureBegin="Hollow" FigureEnd="Closed">
+				<Line>0,5</Line>
+				<Line>5,0</Line>
+				<Line>0,-5</Line>
+				<Line>-5,0</Line>				
 			</Figure>
 		</PathGeometry>			
 	</TrackSymbol>
 	<TrackSymbol Type="ModeS" SpecialCode="1200" StrokeWidth="1">
 		<PathGeometry>
-			<Figure Start="-10,0" FigureBegin="Hollow" FigureEnd="Closed">
-				<Line>0,10</Line>
-				<Line>10,0</Line>
-				<Line>0,-10</Line>
-				<Line>-10,0</Line>				
+			<Figure Start="-5,0" FigureBegin="Hollow" FigureEnd="Closed">
+				<Line>0,5</Line>
+				<Line>5,0</Line>
+				<Line>0,-5</Line>
+				<Line>-5,0</Line>				
 			</Figure>
 		</PathGeometry>			
 	</TrackSymbol>
@@ -135,17 +205,52 @@
 	<!-- SSR Diamond -->
 	<TrackSymbol Type="ModeA" StrokeWidth="1">
 		<PathGeometry>
-			<Figure Start="-10,0" FigureBegin="Hollow" FigureEnd="Closed">
-				<Line>0,10</Line>
-				<Line>10,0</Line>
-				<Line>0,-10</Line>
-				<Line>-10,0</Line>				
+			<Figure Start="-5,0" FigureBegin="Hollow" FigureEnd="Closed">
+				<Line>0,5</Line>
+				<Line>5,0</Line>
+				<Line>0,-5</Line>
+				<Line>-5,0</Line>				
 			</Figure>
 		</PathGeometry>			
 	</TrackSymbol>
 	<TrackSymbol Type="ModeS" RotateToTrack="True" StrokeWidth="1">
 		<PathGeometry>
-			<Figure Start="0,-10" FigureBegin="Hollow" FigureEnd="Closed">
+			<Figure Start="0,-8" FigureBegin="Filled" FigureEnd="Closed">
+				<Line>-1.5,-6</Line>
+				<Line>-1.5,-1.5</Line>
+				<Line>-9,3</Line>
+				<Line>-9,5</Line>
+				<Line>-1.5,3</Line>
+				<Line>-1.5,7</Line>
+				<Line>-4,10</Line>
+				<Line>-4,11</Line>
+				<Line>4,11</Line>
+				<Line>4,10</Line>
+				<Line>1.5,7</Line>				
+				<Line>1.5,3</Line>
+				<Line>9,5</Line>
+				<Line>9,3</Line>
+				<Line>1.5,-1.5</Line>
+				<Line>1.5,-6</Line>			
+			</Figure>		
+			<!--Figure Start="0,-6" FigureBegin="Filled" FigureEnd="Closed">
+				<Line>-1,-5</Line>
+				<Line>-1,-1</Line>
+				<Line>-6,2</Line>
+				<Line>-6,4</Line>
+				<Line>-1,2</Line>
+				<Line>-1,5</Line>
+				<Line>-3,7</Line>
+				<Line>3,7</Line>
+				<Line>1,5</Line>
+				<Line>1,2</Line>
+				<Line>6,4</Line>
+				<Line>6,2</Line>
+				<Line>1,-1</Line>
+				<Line>1,-5</Line>
+				<Line>0,-6</Line>			
+			</Figure-->			
+			<!--Figure Start="0,-10" FigureBegin="Hollow" FigureEnd="Closed">
 				<Line>-2,-7</Line>
 				<Line>-2,-2</Line>
 				<Line>-12,4</Line>
@@ -164,7 +269,7 @@
 				<Line>2,-2</Line>	
 				<Line>2,-7</Line>
 				<Line>0,-10</Line>				
-			</Figure>	
+			</Figure-->	
 		</PathGeometry>		
 	</TrackSymbol>	
 	<!--TrackSymbol Type="ModeA">
@@ -233,7 +338,42 @@
 	<!--Flight plan hollow plane-->
 	<TrackSymbol Type="FlightPlan" RotateToTrack="True" StrokeWidth="1">
 		<PathGeometry>
-			<Figure Start="0,-10" FigureBegin="Hollow" FigureEnd="Closed">
+			<Figure Start="0,-8" FigureBegin="Filled" FigureEnd="Closed">
+				<Line>-1.5,-6</Line>
+				<Line>-1.5,-1.5</Line>
+				<Line>-9,3</Line>
+				<Line>-9,5</Line>
+				<Line>-1.5,3</Line>
+				<Line>-1.5,7</Line>
+				<Line>-4,10</Line>
+				<Line>-4,11</Line>
+				<Line>4,11</Line>
+				<Line>4,10</Line>
+				<Line>1.5,7</Line>				
+				<Line>1.5,3</Line>
+				<Line>9,5</Line>
+				<Line>9,3</Line>
+				<Line>1.5,-1.5</Line>
+				<Line>1.5,-6</Line>			
+			</Figure>		
+			<!--Figure Start="0,-6" FigureBegin="Filled" FigureEnd="Closed">
+				<Line>-1,-5</Line>
+				<Line>-1,-1</Line>
+				<Line>-6,2</Line>
+				<Line>-6,4</Line>
+				<Line>-1,2</Line>
+				<Line>-1,5</Line>
+				<Line>-3,7</Line>
+				<Line>3,7</Line>
+				<Line>1,5</Line>
+				<Line>1,2</Line>
+				<Line>6,4</Line>
+				<Line>6,2</Line>
+				<Line>1,-1</Line>
+				<Line>1,-5</Line>
+				<Line>0,-6</Line>			
+			</Figure-->			
+			<!--Figure Start="0,-10" FigureBegin="Hollow" FigureEnd="Closed">
 				<Line>-2,-7</Line>
 				<Line>-2,-2</Line>
 				<Line>-12,4</Line>
@@ -252,7 +392,7 @@
 				<Line>2,-2</Line>	
 				<Line>2,-7</Line>
 				<Line>0,-10</Line>				
-			</Figure>	
+			</Figure-->	
 		</PathGeometry>
 	</TrackSymbol>
 	

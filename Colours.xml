@@ -460,10 +460,10 @@
   </Colour>
   <Colour id="Unstable">
     <Use>Arrival Manager Unstable Flight</Use>
-    <Name>Orange</Name>
-    <R>255</R>
-    <G>240</G>
-    <B>0</B>
+	<Name>Melon</Name>
+	<R>133</R>
+	<G>255</G>
+	<B>182</B>
   </Colour>
   <Colour id="DelayMinor">
     <Use>Arrival Manager Minor Delay</Use>

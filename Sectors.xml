@@ -16,7 +16,7 @@
 <Volumes>OC5</Volumes> 
   </Sector>  
   <Sector FullName="Sector 6" Frequency="129.400" Callsign="ZAK_6_FSS" Name="06">  
-<Volumes>OC6</Volumes> 
+<Volumes>OC6,PKWA</Volumes> 
   </Sector>  
   <Sector FullName="Sector 7" Frequency="131.950" Callsign="ZAK_7_FSS" Name="07">  
 <Volumes>OC7</Volumes> 
@@ -25,9 +25,12 @@
 <Volumes>OC9</Volumes> 
   </Sector>  
   <Sector FullName="Sector 77" Frequency="131.950" Callsign="ZAK_FSS" Name="77">  
-<Volumes>OC1,OC1a,OC2,OC3,OC3a,OC4,OC4a,OC4b,OC5,OC6,OC7,OC9</Volumes>  
+<Volumes>OC1,OC1a,OC2,OC3,OC3a,OC4,OC4a,OC4b,OC5,OC6,OC7,OC9,MMZT</Volumes>  
 <ResponsibleSectors>01,02,03,04,05,06,07,09</ResponsibleSectors> 
   </Sector>    
+  <!--Sector FullName="PKWAT" Frequency="131.950" Callsign="ZAK_9_FSS" Name="PKWAT">  
+<Volumes>PKWA</Volumes> 
+  </Sector-->    
   <Sector FullName="Auckland ACC" Frequency="128.900" Callsign="NZZO_FSS" Name="AU" DisplayInSectorsWindow="False">  
 <Volumes>NZZO</Volumes> 
   </Sector>
@@ -53,7 +56,7 @@
 <Volumes>PKWA</Volumes> 
   </Sector>
   <Sector FullName="Los Angeles NAS" Frequency="132.150" Callsign="LAX_28_CTR" Name="LA" DisplayInSectorsWindow="False"/>  
-  <Sector FullName="Los Angeles NAS" Frequency="126.520" Callsign="LAX_25_CTR" Name="LA" DisplayInSectorsWindow="False"/>   
+  <Sector FullName="Los Angeles NAS" Frequency="126.525" Callsign="LAX_25_CTR" Name="LA" DisplayInSectorsWindow="False"/>   
   <Sector FullName="Los Angeles NAS" Frequency="135.550" Callsign="LAX_55_CTR" Name="LA" DisplayInSectorsWindow="False">  
 <Volumes>KZLA</Volumes> 
   </Sector>    
@@ -93,12 +96,12 @@
   <Sector FullName="Vancouver ACC" Frequency="133.700" Callsign="CZVR_CTR" Name="YV" DisplayInSectorsWindow="False">  
 <Volumes>CZVR</Volumes> 
   </Sector>  
-  <Sector FullName="PAZA" Frequency="126.400" Callsign="ANC_10_CTR" Name="ZO" DisplayInSectorsWindow="False"/>
-  <Sector FullName="PAZA" Frequency="133.300" Callsign="ANC_03_CTR" Name="ZO" DisplayInSectorsWindow="False"/>
-  <Sector FullName="PAZA" Frequency="127.300" Callsign="ANC_68_CTR" Name="ZO" DisplayInSectorsWindow="False">  
+  <Sector FullName="Anchorage NAS" Frequency="126.400" Callsign="ANC_10_CTR" Name="ZO" DisplayInSectorsWindow="False"/>
+  <Sector FullName="Anchorage NAS" Frequency="133.300" Callsign="ANC_03_CTR" Name="ZO" DisplayInSectorsWindow="False"/>
+  <Sector FullName="Anchorage NAS" Frequency="127.300" Callsign="ANC_68_CTR" Name="ZO" DisplayInSectorsWindow="False">  
 <Volumes>PAZA</Volumes> 
   </Sector>
-  <Sector FullName="PAZN" Frequency="127.550" Callsign="ANC_10_FSS" Name="ZN" DisplayInSectorsWindow="False">  
+  <Sector FullName="Anchorage ATOP" Frequency="127.550" Callsign="ANC_10_FSS" Name="ZN" DisplayInSectorsWindow="False">  
 <Volumes>PAZN</Volumes> 
   </Sector>  
 </Sectors>
