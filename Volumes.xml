@@ -914,7 +914,19 @@
 +470000.000-1500000.000/  
 +470000.000-1320800.000/  
 +470000.000-1272249.000</Boundary>
-  <Boundary Name="OC9">
+<Boundary Name="77">  
++083500.000-0960000.000/
++100000.000-1043000.000/
++033000.000-1200000.000/
++050000.000-1200000.000/
++200000.000-1200000.000/
++300000.000-1200000.000/
++234200.000-1124800.000/
++161100.000-1060000.000/
++150000.000-1050000.000/
++113000.000-1000000.000/
++083500.000-0960000.000</Boundary> 
+<Boundary Name="OC9">
 +350000.000-1600000.000/
 +260714.000-1600000.000/  
 +260618.000-1603754.000/  
@@ -2262,8 +2274,11 @@
   <Volume Name="OC4b" LowerLimit="0" UpperLimit="23000">
     <Boundaries>OC4b</Boundaries>	
   </Volume>	
-  <Volume Name="OC5" LowerLimit="0" UpperLimit="99000">
-    <Boundaries>OC5</Boundaries>	
+  <Volume Name="OC5N" LowerLimit="0" UpperLimit="99000">
+    <Boundaries>OC5N</Boundaries>	
+  </Volume>	  
+  <Volume Name="OC5S" LowerLimit="0" UpperLimit="99000">
+    <Boundaries>OC5S</Boundaries>	
   </Volume>	
   <Volume Name="OC6" LowerLimit="0" UpperLimit="99000">
     <Boundaries>OC6</Boundaries>	
@@ -2271,6 +2286,9 @@
   <Volume Name="OC7" LowerLimit="0" UpperLimit="99000">
     <Boundaries>OC7</Boundaries>
   </Volume>
+  <Volume Name="77" LowerLimit="0" UpperLimit="99000">
+    <Boundaries>OC7</Boundaries>
+  </Volume>  
   <Volume Name="OC9" LowerLimit="0" UpperLimit="99000">
     <Boundaries>OC9</Boundaries>
   </Volume>  	  

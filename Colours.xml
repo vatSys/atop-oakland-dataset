@@ -1,12 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <Colours xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-  <!--Colour id="OverDue">
-		<Use>Strip Text</Use>
-		<Name>Melon</Name>
-		<R>133</R>
-		<G>255</G>
-		<B>182</B>
-	</Colour-->	
   <Colour id="GenericText">
 		<Use>Window Text</Use>
 		<Name>Black</Name>
@@ -292,10 +285,10 @@
   </Colour>
   <Colour id="StaticTools">
 		<Use>BRL,PETO,NonRVSM,LATC,ETO</Use>
-		<Name>Orange</Name>
-		<R>255</R>
+		<Name>Melon</Name>
+		<R>178</R>
 		<G>255</G>
-		<B>0</B>
+		<B>178</B>
 	</Colour>
   <Colour id="PostJurisdictionFlash">
 		<Use>Post Jurisdiction Transfer Flashing</Use>
@@ -516,7 +509,7 @@
   </Colour>
   <Colour id="WindowWarning">
     <Use>Warning Indications in Windows</Use>
-    <Name>BrightYellow</Name>
+    <Name>Yellow</Name>
     <R>255</R>
     <G>255</G>
     <B>0</B>

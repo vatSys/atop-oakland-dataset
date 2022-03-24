@@ -183,21 +183,15 @@
 	<!-- Special Code 4 Diamond -->
 	<TrackSymbol Type="ModeA" SpecialCode="1200" StrokeWidth="1">
 		<PathGeometry>
-			<Figure Start="-5,0" FigureBegin="Hollow" FigureEnd="Closed">
-				<Line>0,5</Line>
-				<Line>5,0</Line>
-				<Line>0,-5</Line>
-				<Line>-5,0</Line>				
+			<Figure Start="-4,-4" FigureBegin="Hollow" FigureEnd="Open" StrokeWidth="0">
+				<Line>5,5</Line>
 			</Figure>
 		</PathGeometry>			
 	</TrackSymbol>
 	<TrackSymbol Type="ModeS" SpecialCode="1200" StrokeWidth="1">
 		<PathGeometry>
-			<Figure Start="-5,0" FigureBegin="Hollow" FigureEnd="Closed">
-				<Line>0,5</Line>
-				<Line>5,0</Line>
-				<Line>0,-5</Line>
-				<Line>-5,0</Line>				
+			<Figure Start="-4,-4" FigureBegin="Hollow" FigureEnd="Open" StrokeWidth="0">
+				<Line>5,5</Line>
 			</Figure>
 		</PathGeometry>			
 	</TrackSymbol>
@@ -205,11 +199,11 @@
 	<!-- SSR Diamond -->
 	<TrackSymbol Type="ModeA" StrokeWidth="1">
 		<PathGeometry>
-			<Figure Start="-5,0" FigureBegin="Hollow" FigureEnd="Closed">
-				<Line>0,5</Line>
-				<Line>5,0</Line>
-				<Line>0,-5</Line>
-				<Line>-5,0</Line>				
+			<Figure Start="-9,0" FigureBegin="Hollow" FigureEnd="Closed">
+				<Line>0,9</Line>
+				<Line>9,0</Line>
+				<Line>0,-9</Line>
+				<Line>-9,0</Line>				
 			</Figure>
 		</PathGeometry>			
 	</TrackSymbol>
@@ -272,25 +266,7 @@
 			</Figure-->	
 		</PathGeometry>		
 	</TrackSymbol>	
-	<!--TrackSymbol Type="ModeA">
-		<PathGeometry>
-			<Figure Start="0,-9" FigureBegin="Hollow" FigureEnd="Open">
-				<Line>-6,5</Line>
-				<Line>6,5</Line>
-				<Line>0,-9</Line>
-			</Figure>
-		</PathGeometry>			
-	</TrackSymbol>
-	<TrackSymbol Type="ModeS">
-		<PathGeometry>
-			<Figure Start="0,-9" FigureBegin="Hollow" FigureEnd="Open">
-				<Line>-6,5</Line>
-				<Line>6,5</Line>
-				<Line>0,-9</Line>
-			</Figure>
-		</PathGeometry>	
-	</TrackSymbol-->
-	
+
 	<!-- ADSB Star in Diamond -->
 	<TrackSymbol Type="ADSB" StrokeWidth="1">
 		<PathGeometry>

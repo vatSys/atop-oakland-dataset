@@ -13,7 +13,7 @@
 <Volumes>OC4,OC4a,OC4b</Volumes> 
   </Sector>  
   <Sector FullName="Sector 5" Frequency="129.400" Callsign="ZAK_W_FSS" Name="05">  
-<Volumes>OC5</Volumes> 
+<Volumes>OC5N,OC5S</Volumes> 
   </Sector>  
   <Sector FullName="Sector 6" Frequency="129.400" Callsign="ZAK_6_FSS" Name="06">  
 <Volumes>OC6,PKWA</Volumes> 
@@ -56,7 +56,8 @@
 <Volumes>PKWA</Volumes> 
   </Sector>
   <Sector FullName="Los Angeles NAS" Frequency="132.150" Callsign="LAX_28_CTR" Name="LA" DisplayInSectorsWindow="False"/>  
-  <Sector FullName="Los Angeles NAS" Frequency="126.525" Callsign="LAX_25_CTR" Name="LA" DisplayInSectorsWindow="False"/>   
+  <Sector FullName="Los Angeles NAS" Frequency="126.525" Callsign="LAX_25_CTR" Name="LA" DisplayInSectorsWindow="False"/>
+  <Sector FullName="Los Angeles NAS" Frequency="135.550" Callsign="LAX_CTR" Name="LA" DisplayInSectorsWindow="False"/>  
   <Sector FullName="Los Angeles NAS" Frequency="135.550" Callsign="LAX_55_CTR" Name="LA" DisplayInSectorsWindow="False">  
 <Volumes>KZLA</Volumes> 
   </Sector>    
