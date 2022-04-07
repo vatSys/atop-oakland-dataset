@@ -114,6 +114,14 @@
     <Message Response="WU">MAINTAIN [LEVEL]</Message>
     <Message Response="WU">MAINTAIN BLOCK [LEVEL] TO [LEVEL]</Message>
   </Category>
+  <Category name="Climb↑" AutoloadElements="true" SendViaTM="true">
+    <Message Response="WU">CLIMB TO AND MAINTAIN [LEVEL]</Message>
+    <Message Response="R">REPORT LEVEL [LEVEL]</Message>	
+  </Category>   
+  <Category name="Desc↓" AutoloadElements="true" SendViaTM="true">
+    <Message Response="WU">DESCEND TO AND MAINTAIN [LEVEL]</Message>  
+    <Message Response="R">REPORT LEVEL [LEVEL]</Message>
+  </Category>   
   <Category name="MOPS 73 (PDC)" AutoloadElements="true" SendViaTM="true">
     <Message Response="WU">AT [TIME] CLEARED [ROUTE]</Message> 
     <Message Response="WU">ALT F[LEVEL] FREQ 9999KhZ SSR 2000,</Message>
@@ -205,9 +213,9 @@
     <Message Response="NE">END SERVICE</Message>	
   </Category>
   <Category name="Pre-Fmt" SendViaTM="true"> 
-    <Message Response="NE">RESEQUENCE ADS WAYPOINTS</Message>
+    <Message Response="NE">CHECK FMS AND CORRECT ACTIVE WAYPOINT</Message>
     <Message Response="NE">ISSUE TIME CHECK</Message>
-    <Message Response="NE">SELECT ATC COM OFF AND MANUALLY LOG ON TO KZAK</Message>
+    <Message Response="NE">SELECT ATC COM OFF AND MANUALLY LOG ON TO [name]</Message>
     <Message Response="NE">TO THE [name] AIRPORT.  REPORT ARRIVAL.</Message>
     <Message Response="NE">ATCR SAY FLIGHT CONDITIONS</Message>
     <Message Response="NE">ADS-C CDP PROCEDURE IS BEING APPLIED BY ATC</Message>
@@ -216,6 +224,6 @@
 	<Message Response="NE">SQUAWK 2000 TO LOG ON ADS-C AND CPDLC</Message>	
   </Category>
   <Category name="WelcomeMsg" AutoloadElements="true" SendViaTM="true">
-    <Message Response="R">THIS IS AN AUTOMATED MESSAGE TO CONFIRM CPDLC CONNECTION TO KZAK. REPORT SPEED , CHANGES TO ATC..</Message>
+    <Message Response="R">THIS IS AN AUTOMATED MESSAGE TO CONFIRM CPDLC CONNECTION TO KZAK. REPORT SPEED CHANGES TO ATC.</Message>
   </Category>
 </Messages>
