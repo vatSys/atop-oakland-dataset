@@ -25,7 +25,7 @@
 <Volumes>OC9</Volumes> 
   </Sector>  
   <Sector FullName="Sector 77" Frequency="131.950" Callsign="ZAK_FSS" Name="77">  
-<Volumes>OC1,OC1a,OC2,OC3,OC3a,OC4,OC4a,OC4b,OC5,OC6,OC7,OC9,MMZT</Volumes>  
+<Volumes>OC1,OC1a,OC2,OC3,OC3a,OC4,OC4a,OC4b,OC5N,OC5S,OC6,OC7,OC9,MMZT</Volumes>  
 <ResponsibleSectors>01,02,03,04,05,06,07,09</ResponsibleSectors> 
   </Sector>    
   <!--Sector FullName="PKWAT" Frequency="131.950" Callsign="ZAK_9_FSS" Name="PKWAT">  
