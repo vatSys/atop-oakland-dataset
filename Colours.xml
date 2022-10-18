@@ -93,9 +93,9 @@
 	</Colour>
   <Colour id="Warning">
 		<Use>Warning Indications</Use>
-		<Name>Yellow</Name>
+		<Name>Orange</Name>
 		<R>255</R>
-		<G>255</G>
+		<G>140</G>
 		<B>0</B>
 	</Colour>
   <Colour id="VSCSBackground">
@@ -216,9 +216,9 @@
   <Colour id="PostJurisdiction">
 		<Use>PostJurisdiction</Use>
 		<Name>LightBlue</Name>
-		<R>173</R>
-		<G>216</G>
-		<B>255</B>
+		<R>141</R>
+		<G>182</G>
+		<B>205</B>
 	</Colour>
   <Colour id="JurisdictionIQL">
 		<Use>Flags</Use>
@@ -237,16 +237,16 @@
   <Colour id="Announced">
 		<Use>Announced</Use>
 		<Name>LightBlue</Name>
-		<R>173</R>
-		<G>216</G>
-		<B>255</B>
+		<R>141</R>
+		<G>182</G>
+		<B>205</B>
 	</Colour>
   <Colour id="NonJurisdictionIQL">
 		<Use>NonJurisdictionIQL</Use>
 		<Name>LightBlue</Name>
-		<R>173</R>
-		<G>216</G>
-		<B>255</B>
+		<R>141</R>
+		<G>182</G>
+		<B>205</B>
 	</Colour>
   <Colour id="NonJurisdiction">
 		<Use>Non Jurisdiction Tracks and Strips</Use>

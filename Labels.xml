@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Labels>
   <Label Type="Limited" MaximumWidth="10" LabelRectangle="Default">
-    <DataLine>
+    <DataLine Visibility="Toggle">
       <Item Type="LABEL_ITEM_ACID" Colour="" LeftClick="Label_Move" MiddleClick="" RightClick="Label_ACID_Menu"/>
       <Item Type="LABEL_ITEM_EMERG" Colour="Emergency" BackgroundColour="Warning" LeftClick="" MiddleClick="Label_Emerg" RightClick=""/>
       <Item Type="LABEL_ITEM_WARNING" Colour="Warning" P1_BackgroundColour="Emergency" LeftClick="" MiddleClick="Label_Warning" RightClick=""/>	  
