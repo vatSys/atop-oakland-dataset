@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Profile Name="ATOP Oakland" FullName="ATOP Oakland (KZAK)">
-	<Version AIRAC="2204" Revision="a" PublishDate="20220421" UpdateURL="https://vatsys.sawbe.com/downloads/data/ATOP%20Oakland/" />
+	<Version AIRAC="2208" Revision="a" PublishDate="20220811" UpdateURL="https://vatsys.sawbe.com/downloads/data/ATOP%20Oakland/" />
 	<Servers>
 		<VATSIMStatus url="https://status.vatsim.net/" />
 		<GRIB url="https://sawbe.com/GRIB/" />
