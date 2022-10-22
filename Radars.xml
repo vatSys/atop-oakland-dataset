@@ -1,9 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Radars>
-  <Radar Name="ADSC" Type="SSR_ModeS" Elevation="0" MaxRange="7000">
-    <Lat>27.00000</Lat>
-    <Long>-175.00000</Long>
-  </Radar>
   <Radar Name="Paso Robles (PRB)" Type="SSR_ModeC" Elevation="3649" MaxRange="250">
     <Lat>35.395</Lat>
     <Long>-120.3544</Long>
@@ -56,272 +52,3820 @@
     <Lat>19.74861</Lat>
     <Long>-156.0311</Long>
   </Radar>  
-  <!--Radar Name="ADSC1" Type="SSR_ModeS" Elevation="1000" MaxRange="10000">
+  <Radar Name="ADSC1" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
     <Lat>22.39000</Lat>
     <Long>-137.26000</Long>
   </Radar>  
-  <Radar Name="ADSC2" Type="SSR_ModeS" Elevation="1000" MaxRange="50000">
+  <Radar Name="ADSC2" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
     <Lat>39.14000</Lat>
     <Long>-163.44000</Long>
   </Radar> 
-  <Radar Name="ADSC3" Type="SSR_ModeS" Elevation="1000" MaxRange="50000">
+  <Radar Name="ADSC3" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
     <Lat>16.08000</Lat>
     <Long>-170.05000</Long>
   </Radar> 
-  <Radar Name="ADSC4" Type="SSR_ModeS" Elevation="1000" MaxRange="50000">
+  <Radar Name="ADSC4" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
     <Lat>19.41000</Lat>
     <Long>+153.24000</Long>
   </Radar>
-  <Radar Name="ADSC5" Type="SSR_ModeS" Elevation="1000" MaxRange="50000">
+  <Radar Name="ADSC5" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
     <Lat>31.72925</Lat>
     <Long>-128.14543</Long>
   </Radar>
-  <Radar Name="ADSC6" Type="SSR_ModeS" Elevation="1000" MaxRange="50000">
+  <Radar Name="ADSC6" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
     <Lat>26.72948</Lat>
     <Long>-146.36337</Long>
   </Radar>
-  <Radar Name="ADSC6" Type="SSR_ModeS" Elevation="1000" MaxRange="50000">
+  <Radar Name="ADSC6" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
     <Lat>37.73787</Lat>
     <Long>-129.06823</Long>
   </Radar>
-  <Radar Name="ADSC7" Type="SSR_ModeS" Elevation="1000" MaxRange="50000">
+  <Radar Name="ADSC7" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
     <Lat>20.62350</Lat>
     <Long>-127.06297</Long>
   </Radar>
-  <Radar Name="ADSC8" Type="SSR_ModeS" Elevation="1000" MaxRange="50000">
+  <Radar Name="ADSC8" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
     <Lat>32.67787</Lat>
     <Long>-119.84105</Long>
   </Radar>
-  <Radar Name="ADSC9" Type="SSR_ModeS" Elevation="1000" MaxRange="50000">
+  <Radar Name="ADSC9" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
     <Lat>13.23596</Lat>
     <Long>-160.81343</Long>
   </Radar>
-  <Radar Name="ADSC10" Type="SSR_ModeS" Elevation="1000" MaxRange="50000">
+  <Radar Name="ADSC10" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
     <Lat>27.58515</Lat>
     <Long>-139.07233</Long>
   </Radar>
-  <Radar Name="ADSC11" Type="SSR_ModeS" Elevation="1000" MaxRange="50000">
+  <Radar Name="ADSC11" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
     <Lat>43.74126</Lat>
     <Long>-125.66459</Long>
   </Radar>
-  <Radar Name="ADSC12" Type="SSR_ModeS" Elevation="1000" MaxRange="50000">
+  <Radar Name="ADSC12" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
     <Lat>39.54689</Lat>
     <Long>-134.76789</Long>
   </Radar>
-  <Radar Name="ADSC13" Type="SSR_ModeS" Elevation="1000" MaxRange="50000">
+  <Radar Name="ADSC13" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
     <Lat>34.27118</Lat>
     <Long>-144.14251</Long>
   </Radar>
-  <Radar Name="ADSC14" Type="SSR_ModeS" Elevation="1000" MaxRange="50000">
+  <Radar Name="ADSC14" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
     <Lat>30.22351</Lat>
     <Long>-150.33610</Long>
   </Radar>
-  <Radar Name="ADSC15" Type="SSR_ModeS" Elevation="1000" MaxRange="50000">
+  <Radar Name="ADSC15" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
     <Lat>25.20542</Lat>
     <Long>-154.43422</Long>
   </Radar>
-  <Radar Name="ADSC16" Type="SSR_ModeS" Elevation="1000" MaxRange="50000">
+  <Radar Name="ADSC16" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
     <Lat>45.06162</Lat>
     <Long>-126.08538</Long> 
-  </Radar-->  
-  <Radar Name="ADSC17" Type="SSR_ModeS" Elevation="1000" MaxRange="10000">
+  </Radar>
+  <Radar Name="ADSC17A" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
     <Lat>0.0000</Lat>
-    <Long>130.0000</Long>
+    <Long>-130.0000</Long>
   </Radar>  
-  <Radar Name="ADSC18" Type="SSR_ModeS" Elevation="1000" MaxRange="50000">
+  <Radar Name="ADSC17B" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
     <Lat>10.0000</Lat>
-    <Long>130.0000</Long>
+    <Long>-130.0000</Long>
   </Radar> 
-  <Radar Name="ADSC19" Type="SSR_ModeS" Elevation="1000" MaxRange="50000">
+  <Radar Name="ADSC17C" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
     <Lat>20.0000</Lat>
-    <Long>130.0000</Long>
+    <Long>-130.0000</Long>
   </Radar> 
-  <Radar Name="ADSC20" Type="SSR_ModeS" Elevation="1000" MaxRange="50000">
+    <Radar Name="ADSC17D" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>30.0000</Lat>
+    <Long>-130.0000</Long>
+  </Radar>
+    <Radar Name="ADSC17E" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>40.0000</Lat>
+    <Long>-130.0000</Long>
+  </Radar>
+    <Radar Name="ADSC17F" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>50.0000</Lat>
+    <Long>-130.0000</Long>
+  </Radar>
+  <Radar Name="ADSC18A" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
     <Lat>0.0000</Lat>
-    <Long>140.0000</Long>
+    <Long>-140.0000</Long>
   </Radar>
-  <Radar Name="ADSC21" Type="SSR_ModeS" Elevation="1000" MaxRange="50000">
+  <Radar Name="ADSC18B" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
     <Lat>10.0000</Lat>
-    <Long>140.0000</Long>
+    <Long>-140.0000</Long>
   </Radar>
-  <Radar Name="ADSC22" Type="SSR_ModeS" Elevation="1000" MaxRange="50000">
+  <Radar Name="ADSC18C" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
     <Lat>20.0000</Lat>
-    <Long>140.0000</Long>
+    <Long>-140.0000</Long>
   </Radar>
-  <Radar Name="ADSC23" Type="SSR_ModeS" Elevation="1000" MaxRange="50000">
+    <Radar Name="ADSC18D" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>30.0000</Lat>
+    <Long>-140.0000</Long>
+  </Radar>
+    <Radar Name="ADSC18E" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>40.0000</Lat>
+    <Long>-140.0000</Long>
+  </Radar>
+    <Radar Name="ADSC18F" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>50.0000</Lat>
+    <Long>-140.0000</Long>
+  </Radar>
+  <Radar Name="ADSC19A" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>0.0000</Lat>
+    <Long>-150.0000</Long>
+  </Radar>
+  <Radar Name="ADSC19B" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>10.0000</Lat>
+    <Long>-150.0000</Long>
+  </Radar>
+  <Radar Name="ADSC19C" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>20.0000</Lat>
+    <Long>-150.0000</Long>
+  </Radar>
+    <Radar Name="ADSC19D" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>30.0000</Lat>
+    <Long>-150.0000</Long>
+  </Radar>
+    <Radar Name="ADSC19E" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>40.0000</Lat>
+    <Long>-150.0000</Long>
+  </Radar>
+    <Radar Name="ADSC19F" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>50.0000</Lat>
+    <Long>-150.0000</Long>
+  </Radar>
+    <Radar Name="ADSC19G" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>55.0000</Lat>
+    <Long>-150.0000</Long>
+  </Radar>
+  <Radar Name="ADSC20A" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>0.0000</Lat>
+    <Long>-160.0000</Long>
+  </Radar>
+  <Radar Name="ADSC20B" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>10.0000</Lat>
+    <Long>-160.0000</Long>
+  </Radar>
+  <Radar Name="ADSC20C" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>20.0000</Lat>
+    <Long>-160.0000</Long>
+  </Radar>
+  <Radar Name="ADSC20D" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>30.0000</Lat>
+    <Long>-160.0000</Long>
+  </Radar>
+  <Radar Name="ADSC20E" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>40.0000</Lat>
+    <Long>-160.0000</Long>
+  </Radar>
+    <Radar Name="ADSC20F" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>50.0000</Lat>
+    <Long>-160.0000</Long>
+  </Radar>
+  <Radar Name="ADSC21A" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>0.0000</Lat>
+    <Long>-170.0000</Long>
+  </Radar>
+  <Radar Name="ADSC21B" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>10.0000</Lat>
+    <Long>-170.0000</Long>
+  </Radar>
+  <Radar Name="ADSC21C" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>20.0000</Lat>
+    <Long>-170.0000</Long>
+  </Radar>	
+  <Radar Name="ADSC21C" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>30.0000</Lat>
+    <Long>-170.0000</Long>
+  </Radar>
+  <Radar Name="ADSC21D" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>40.0000</Lat>
+    <Long>-170.0000</Long>
+  </Radar>  
+  <Radar Name="ADSC21E" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>50.0000</Lat>
+    <Long>-170.0000</Long>
+  </Radar> 
+  <Radar Name="ADSC22A" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>0.0000</Lat>
+    <Long>-180.0000</Long>
+  </Radar>
+  <Radar Name="ADSC22B" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>10.0000</Lat>
+    <Long>-180.0000</Long>
+  </Radar>
+  <Radar Name="ADSC22C" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>20.0000</Lat>
+    <Long>-180.0000</Long>
+  </Radar>	
+  <Radar Name="ADSC22D" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>30.0000</Lat>
+    <Long>-180.0000</Long>
+  </Radar>
+    <Radar Name="ADSC22E" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>40.0000</Lat>
+    <Long>-180.0000</Long>
+  </Radar>  
+  <Radar Name="ADSC22F" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>50.0000</Lat>
+    <Long>-180.0000</Long>
+  </Radar>  
+  <Radar Name="ADSC23A" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>0.0000</Lat>
+    <Long>170.0000</Long>
+  </Radar>
+  <Radar Name="ADSC23B" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>10.0000</Lat>
+    <Long>170.0000</Long>
+  </Radar>
+  <Radar Name="ADSC23C" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>20.0000</Lat>
+    <Long>170.0000</Long>
+  </Radar>	
+  <Radar Name="ADSC23E" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>30.0000</Lat>
+    <Long>170.0000</Long>
+  </Radar>
+    <Radar Name="ADSC23E" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>40.0000</Lat>
+    <Long>170.0000</Long>
+  </Radar>
+    <Radar Name="ADSC23E" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>50.0000</Lat>
+    <Long>170.0000</Long>
+  </Radar>
+  <Radar Name="ADSC24A" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>0.0000</Lat>
+    <Long>160.0000</Long>
+  </Radar>
+  <Radar Name="ADSC24B" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>10.0000</Lat>
+    <Long>160.0000</Long>
+  </Radar>
+  <Radar Name="ADSC24C" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>20.0000</Lat>
+    <Long>160.0000</Long>
+  </Radar>	
+  <Radar Name="ADSC24D" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>30.0000</Lat>
+    <Long>160.0000</Long>
+  </Radar>
+  <Radar Name="ADSC24E" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>40.0000</Lat>
+    <Long>160.0000</Long>
+  </Radar>  
+  <Radar Name="ADSC24F" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>50.0000</Lat>
+    <Long>160.0000</Long>
+  </Radar>
+    <Radar Name="ADSC25A" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
     <Lat>0.0000</Lat>
     <Long>150.0000</Long>
   </Radar>
-  <Radar Name="ADSC24" Type="SSR_ModeS" Elevation="1000" MaxRange="50000">
+  <Radar Name="ADSC25B" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
     <Lat>10.0000</Lat>
     <Long>150.0000</Long>
   </Radar>
-  <Radar Name="ADSC25" Type="SSR_ModeS" Elevation="1000" MaxRange="50000">
+  <Radar Name="ADSC25C" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
     <Lat>20.0000</Lat>
     <Long>150.0000</Long>
   </Radar>
-  <Radar Name="ADSC26" Type="SSR_ModeS" Elevation="1000" MaxRange="50000">
+  <Radar Name="ADSC26A" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
     <Lat>0.0000</Lat>
+    <Long>140.0000</Long>
+  </Radar>
+  <Radar Name="ADSC26B" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>10.0000</Lat>
+    <Long>140.0000</Long>
+  </Radar>
+  <Radar Name="ADSC26C" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>20.0000</Lat>
+    <Long>140.0000</Long>
+  </Radar>
+  <Radar Name="ADSC27A" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>0.0000</Lat>
+    <Long>130.0000</Long>
+  </Radar>
+  <Radar Name="ADSC27B" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>10.0000</Lat>
+    <Long>130.0000</Long>
+  </Radar>
+  <Radar Name="ADSC27C" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>20.0000</Lat>
+    <Long>130.0000</Long>
+  </Radar>
+  <Radar Name="ADSC0117A" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>3.0000</Lat>
+    <Long>-130.0000</Long>
+  </Radar>
+  <Radar Name="ADSC0117B" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>13.0000</Lat>
+    <Long>-130.0000</Long>
+  </Radar>
+  <Radar Name="ADSC0117C" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>23.0000</Lat>
+    <Long>-130.0000</Long>
+  </Radar>
+    <Radar Name="ADSC0117D" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>33.0000</Lat>
+    <Long>-130.0000</Long>
+  </Radar>
+    <Radar Name="ADSC0117E" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>43.0000</Lat>
+    <Long>-130.0000</Long>
+  </Radar>
+    <Radar Name="ADSC0117F" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>53.0000</Lat>
+    <Long>-130.0000</Long>
+  </Radar>
+  <Radar Name="ADSC0118A" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>3.0000</Lat>
+    <Long>-140.0000</Long>
+  </Radar>
+  <Radar Name="ADSC0118B" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>13.0000</Lat>
+    <Long>-140.0000</Long>
+  </Radar>
+  <Radar Name="ADSC0118C" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>23.0000</Lat>
+    <Long>-140.0000</Long>
+  </Radar>
+    <Radar Name="ADSC0118D" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>33.0000</Lat>
+    <Long>-140.0000</Long>
+  </Radar>
+    <Radar Name="ADSC0118E" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>43.0000</Lat>
+    <Long>-140.0000</Long>
+  </Radar>
+    <Radar Name="ADSC0118F" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>53.0000</Lat>
+    <Long>-140.0000</Long>
+  </Radar>
+  <Radar Name="ADSC0119A" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>3.0000</Lat>
+    <Long>-150.0000</Long>
+  </Radar>
+  <Radar Name="ADSC0119B" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>13.0000</Lat>
+    <Long>-150.0000</Long>
+  </Radar>
+  <Radar Name="ADSC0119C" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>23.0000</Lat>
+    <Long>-150.0000</Long>
+  </Radar>
+    <Radar Name="ADSC0119D" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>33.0000</Lat>
+    <Long>-150.0000</Long>
+  </Radar>
+    <Radar Name="ADSC0119E" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>43.0000</Lat>
+    <Long>-150.0000</Long>
+  </Radar>
+    <Radar Name="ADSC0119F" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>53.0000</Lat>
+    <Long>-150.0000</Long>
+  </Radar>
+    <Radar Name="ADSC0119G" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>55.0000</Lat>
+    <Long>-150.0000</Long>
+  </Radar>
+  <Radar Name="ADSC0120A" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>3.0000</Lat>
+    <Long>-160.0000</Long>
+  </Radar>
+  <Radar Name="ADSC0120B" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>13.0000</Lat>
+    <Long>-160.0000</Long>
+  </Radar>
+  <Radar Name="ADSC0120C" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>23.0000</Lat>
+    <Long>-160.0000</Long>
+  </Radar>
+  <Radar Name="ADSC0120D" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>33.0000</Lat>
+    <Long>-160.0000</Long>
+  </Radar>
+  <Radar Name="ADSC0120E" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>43.0000</Lat>
+    <Long>-160.0000</Long>
+  </Radar>
+    <Radar Name="ADSC0120F" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>53.0000</Lat>
+    <Long>-160.0000</Long>
+  </Radar>
+  <Radar Name="ADSC0121A" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>3.0000</Lat>
+    <Long>-170.0000</Long>
+  </Radar>
+  <Radar Name="ADSC0121B" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>13.0000</Lat>
+    <Long>-170.0000</Long>
+  </Radar>
+  <Radar Name="ADSC0121C" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>23.0000</Lat>
+    <Long>-170.0000</Long>
+  </Radar>
+  <Radar Name="ADSC0121C" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>33.0000</Lat>
+    <Long>-170.0000</Long>
+  </Radar>
+  <Radar Name="ADSC0121D" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>43.0000</Lat>
+    <Long>-170.0000</Long>
+  </Radar>
+  <Radar Name="ADSC0121E" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>53.0000</Lat>
+    <Long>-170.0000</Long>
+  </Radar>
+  <Radar Name="ADSC0122A" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>3.0000</Lat>
+    <Long>-180.0000</Long>
+  </Radar>
+  <Radar Name="ADSC0122B" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>13.0000</Lat>
+    <Long>-180.0000</Long>
+  </Radar>
+  <Radar Name="ADSC0122C" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>23.0000</Lat>
+    <Long>-180.0000</Long>
+  </Radar>
+  <Radar Name="ADSC0122D" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>33.0000</Lat>
+    <Long>-180.0000</Long>
+  </Radar>
+    <Radar Name="ADSC0122E" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>43.0000</Lat>
+    <Long>-180.0000</Long>
+  </Radar>
+  <Radar Name="ADSC0122F" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>53.0000</Lat>
+    <Long>-180.0000</Long>
+  </Radar>
+  <Radar Name="ADSC0123A" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>3.0000</Lat>
+    <Long>170.0000</Long>
+  </Radar>
+  <Radar Name="ADSC0123B" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>13.0000</Lat>
+    <Long>170.0000</Long>
+  </Radar>
+  <Radar Name="ADSC0123C" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>23.0000</Lat>
+    <Long>170.0000</Long>
+  </Radar>
+  <Radar Name="ADSC0123E" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>33.0000</Lat>
+    <Long>170.0000</Long>
+  </Radar>
+    <Radar Name="ADSC0123E" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>43.0000</Lat>
+    <Long>170.0000</Long>
+  </Radar>
+    <Radar Name="ADSC0123E" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>53.0000</Lat>
+    <Long>170.0000</Long>
+  </Radar>
+  <Radar Name="ADSC0124A" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>3.0000</Lat>
     <Long>160.0000</Long>
   </Radar>
-  <Radar Name="ADSC27" Type="SSR_ModeS" Elevation="1000" MaxRange="50000">
-    <Lat>10.0000</Lat>
+  <Radar Name="ADSC0124B" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>13.0000</Lat>
     <Long>160.0000</Long>
   </Radar>
-  <Radar Name="ADSC28" Type="SSR_ModeS" Elevation="1000" MaxRange="50000">
-    <Lat>20.0000</Lat>
+  <Radar Name="ADSC0124C" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>23.0000</Lat>
     <Long>160.0000</Long>
   </Radar>
-  <Radar Name="ADSC29" Type="SSR_ModeS" Elevation="1000" MaxRange="50000">
-    <Lat>30.0000</Lat>
+  <Radar Name="ADSC0124D" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>33.0000</Lat>
     <Long>160.0000</Long>
   </Radar>
-  <Radar Name="ADSC30" Type="SSR_ModeS" Elevation="1000" MaxRange="50000">
-    <Lat>40.0000</Lat>
+  <Radar Name="ADSC0124E" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>43.0000</Lat>
     <Long>160.0000</Long>
   </Radar>
-  <Radar Name="ADSC31" Type="SSR_ModeS" Elevation="1000" MaxRange="50000">
-    <Lat>0.0000</Lat>
-    <Long>170.0000</Long>
+  <Radar Name="ADSC0124F" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>53.0000</Lat>
+    <Long>160.0000</Long>
   </Radar>
-  <Radar Name="ADSC32" Type="SSR_ModeS" Elevation="1000" MaxRange="50000">
-    <Lat>10.0000</Lat>
-    <Long>170.0000</Long>
+    <Radar Name="ADSC0125A" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>3.0000</Lat>
+    <Long>150.0000</Long>
   </Radar>
-  <Radar Name="ADSC33" Type="SSR_ModeS" Elevation="1000" MaxRange="50000">
-    <Lat>20.0000</Lat>
-    <Long>170.0000</Long>
-  </Radar>	
-  <Radar Name="ADSC34" Type="SSR_ModeS" Elevation="1000" MaxRange="50000">
-    <Lat>30.0000</Lat>
-    <Long>170.0000</Long>
+  <Radar Name="ADSC0125B" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>13.0000</Lat>
+    <Long>150.0000</Long>
   </Radar>
-  <Radar Name="ADSC35" Type="SSR_ModeS" Elevation="1000" MaxRange="50000">
-    <Lat>40.0000</Lat>
-    <Long>170.0000</Long>
-  </Radar>  
-  <Radar Name="ADSC36" Type="SSR_ModeS" Elevation="1000" MaxRange="50000">
-    <Lat>50.0000</Lat>
-    <Long>170.0000</Long>
-  </Radar> 
-  <Radar Name="ADSC37" Type="SSR_ModeS" Elevation="1000" MaxRange="50000">
-    <Lat>0.0000</Lat>
-    <Long>180.0000</Long>
+  <Radar Name="ADSC0125C" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>23.0000</Lat>
+    <Long>150.0000</Long>
   </Radar>
-  <Radar Name="ADSC38" Type="SSR_ModeS" Elevation="1000" MaxRange="50000">
-    <Lat>10.0000</Lat>
-    <Long>180.0000</Long>
+  <Radar Name="ADSC0126A" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>3.0000</Lat>
+    <Long>140.0000</Long>
   </Radar>
-  <Radar Name="ADSC39" Type="SSR_ModeS" Elevation="1000" MaxRange="50000">
-    <Lat>20.0000</Lat>
-    <Long>180.0000</Long>
-  </Radar>	
-  <Radar Name="ADSC40" Type="SSR_ModeS" Elevation="1000" MaxRange="50000">
-    <Lat>30.0000</Lat>
-    <Long>180.0000</Long>
+  <Radar Name="ADSC0126B" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>13.0000</Lat>
+    <Long>140.0000</Long>
   </Radar>
-    <Radar Name="ADSC41" Type="SSR_ModeS" Elevation="1000" MaxRange="50000">
-    <Lat>40.0000</Lat>
-    <Long>180.0000</Long>
-  </Radar>  
-  <Radar Name="ADSC42" Type="SSR_ModeS" Elevation="1000" MaxRange="50000">
-    <Lat>50.0000</Lat>
-    <Long>180.0000</Long>
-  </Radar>  
-  <Radar Name="ADSC43" Type="SSR_ModeS" Elevation="1000" MaxRange="50000">
-    <Lat>0.0000</Lat>
-    <Long>-170.0000</Long>
+  <Radar Name="ADSC0126C" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>23.0000</Lat>
+    <Long>140.0000</Long>
   </Radar>
-  <Radar Name="ADSC44" Type="SSR_ModeS" Elevation="1000" MaxRange="50000">
-    <Lat>10.0000</Lat>
-    <Long>-170.0000</Long>
+  <Radar Name="ADSC0127A" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>3.0000</Lat>
+    <Long>130.0000</Long>
   </Radar>
-  <Radar Name="ADSC45" Type="SSR_ModeS" Elevation="1000" MaxRange="50000">
-    <Lat>20.0000</Lat>
-    <Long>-170.0000</Long>
-  </Radar>	
-  <Radar Name="ADSC46" Type="SSR_ModeS" Elevation="1000" MaxRange="50000">
-    <Lat>30.0000</Lat>
-    <Long>-170.0000</Long>
+  <Radar Name="ADSC0127B" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>13.0000</Lat>
+    <Long>130.0000</Long>
   </Radar>
-  <Radar Name="ADSC47" Type="SSR_ModeS" Elevation="1000" MaxRange="50000">
-    <Lat>40.0000</Lat>
-    <Long>-170.0000</Long>
-  </Radar>  
-  <Radar Name="ADSC48" Type="SSR_ModeS" Elevation="1000" MaxRange="50000">
-    <Lat>50.0000</Lat>
-    <Long>-170.0000</Long>
-  </Radar> 
-  <Radar Name="ADSC43" Type="SSR_ModeS" Elevation="1000" MaxRange="50000">
-    <Lat>0.0000</Lat>
-    <Long>-160.0000</Long>
+  <Radar Name="ADSC0127C" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>23.0000</Lat>
+    <Long>130.0000</Long>
   </Radar>
-  <Radar Name="ADSC44" Type="SSR_ModeS" Elevation="1000" MaxRange="50000">
-    <Lat>10.0000</Lat>
-    <Long>-160.0000</Long>
+  <Radar Name="ADSC0217A" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>6.0000</Lat>
+    <Long>-130.0000</Long>
   </Radar>
-  <Radar Name="ADSC45" Type="SSR_ModeS" Elevation="1000" MaxRange="50000">
-    <Lat>20.0000</Lat>
-    <Long>-160.0000</Long>
-  </Radar>	
-  <Radar Name="ADSC46" Type="SSR_ModeS" Elevation="1000" MaxRange="50000">
-    <Lat>30.0000</Lat>
-    <Long>-160.0000</Long>
+  <Radar Name="ADSC0217B" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>16.0000</Lat>
+    <Long>-130.0000</Long>
   </Radar>
-  <Radar Name="ADSC47" Type="SSR_ModeS" Elevation="1000" MaxRange="50000">
-    <Lat>40.0000</Lat>
-    <Long>-160.0000</Long>
-  </Radar>  
-  <Radar Name="ADSC48" Type="SSR_ModeS" Elevation="1000" MaxRange="50000">
-    <Lat>50.0000</Lat>
-    <Long>-160.0000</Long>
+  <Radar Name="ADSC0217C" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>26.0000</Lat>
+    <Long>-130.0000</Long>
   </Radar>
-    <Radar Name="ADSC43" Type="SSR_ModeS" Elevation="1000" MaxRange="50000">
-    <Lat>0.0000</Lat>
-    <Long>-150.0000</Long>
+    <Radar Name="ADSC0217D" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>36.0000</Lat>
+    <Long>-130.0000</Long>
   </Radar>
-  <Radar Name="ADSC44" Type="SSR_ModeS" Elevation="1000" MaxRange="50000">
-    <Lat>10.0000</Lat>
-    <Long>-150.0000</Long>
+    <Radar Name="ADSC0217E" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>46.0000</Lat>
+    <Long>-130.0000</Long>
   </Radar>
-  <Radar Name="ADSC45" Type="SSR_ModeS" Elevation="1000" MaxRange="50000">
-    <Lat>20.0000</Lat>
-    <Long>-150.0000</Long>
-  </Radar>	
-  <Radar Name="ADSC46" Type="SSR_ModeS" Elevation="1000" MaxRange="50000">
-    <Lat>30.0000</Lat>
-    <Long>-150.0000</Long>
+    <Radar Name="ADSC0217F" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>56.0000</Lat>
+    <Long>-130.0000</Long>
   </Radar>
-  <Radar Name="ADSC47" Type="SSR_ModeS" Elevation="1000" MaxRange="50000">
-    <Lat>40.0000</Lat>
-    <Long>-150.0000</Long>
-  </Radar>  
-  <Radar Name="ADSC48" Type="SSR_ModeS" Elevation="1000" MaxRange="50000">
-    <Lat>50.0000</Lat>
-    <Long>-150.0000</Long>
-  </Radar>
-  <Radar Name="ADSC43" Type="SSR_ModeS" Elevation="1000" MaxRange="50000">
-    <Lat>0.0000</Lat>
+  <Radar Name="ADSC0218A" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>6.0000</Lat>
     <Long>-140.0000</Long>
   </Radar>
-  <Radar Name="ADSC44" Type="SSR_ModeS" Elevation="1000" MaxRange="50000">
+  <Radar Name="ADSC0218B" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>16.0000</Lat>
+    <Long>-140.0000</Long>
+  </Radar>
+  <Radar Name="ADSC0218C" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>26.0000</Lat>
+    <Long>-140.0000</Long>
+  </Radar>
+    <Radar Name="ADSC0218D" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>36.0000</Lat>
+    <Long>-140.0000</Long>
+  </Radar>
+    <Radar Name="ADSC0218E" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>46.0000</Lat>
+    <Long>-140.0000</Long>
+  </Radar>
+    <Radar Name="ADSC0218F" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>56.0000</Lat>
+    <Long>-140.0000</Long>
+  </Radar>
+  <Radar Name="ADSC0219A" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>6.0000</Lat>
+    <Long>-150.0000</Long>
+  </Radar>
+  <Radar Name="ADSC0219B" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>16.0000</Lat>
+    <Long>-150.0000</Long>
+  </Radar>
+  <Radar Name="ADSC0219C" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>26.0000</Lat>
+    <Long>-150.0000</Long>
+  </Radar>
+    <Radar Name="ADSC0219D" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>36.0000</Lat>
+    <Long>-150.0000</Long>
+  </Radar>
+    <Radar Name="ADSC0219E" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>46.0000</Lat>
+    <Long>-150.0000</Long>
+  </Radar>
+    <Radar Name="ADSC0219F" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>56.0000</Lat>
+    <Long>-150.0000</Long>
+  </Radar>
+    <Radar Name="ADSC0219G" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>55.0000</Lat>
+    <Long>-150.0000</Long>
+  </Radar>
+  <Radar Name="ADSC0220A" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>6.0000</Lat>
+    <Long>-160.0000</Long>
+  </Radar>
+  <Radar Name="ADSC0220B" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>16.0000</Lat>
+    <Long>-160.0000</Long>
+  </Radar>
+  <Radar Name="ADSC0220C" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>26.0000</Lat>
+    <Long>-160.0000</Long>
+  </Radar>
+  <Radar Name="ADSC0220D" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>36.0000</Lat>
+    <Long>-160.0000</Long>
+  </Radar>
+  <Radar Name="ADSC0220E" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>46.0000</Lat>
+    <Long>-160.0000</Long>
+  </Radar>
+    <Radar Name="ADSC0220F" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>56.0000</Lat>
+    <Long>-160.0000</Long>
+  </Radar>
+  <Radar Name="ADSC0221A" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>6.0000</Lat>
+    <Long>-170.0000</Long>
+  </Radar>
+  <Radar Name="ADSC0221B" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>16.0000</Lat>
+    <Long>-170.0000</Long>
+  </Radar>
+  <Radar Name="ADSC0221C" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>26.0000</Lat>
+    <Long>-170.0000</Long>
+  </Radar>
+  <Radar Name="ADSC0221C" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>36.0000</Lat>
+    <Long>-170.0000</Long>
+  </Radar>
+  <Radar Name="ADSC0221D" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>46.0000</Lat>
+    <Long>-170.0000</Long>
+  </Radar>
+  <Radar Name="ADSC0221E" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>56.0000</Lat>
+    <Long>-170.0000</Long>
+  </Radar>
+  <Radar Name="ADSC0222A" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>6.0000</Lat>
+    <Long>-180.0000</Long>
+  </Radar>
+  <Radar Name="ADSC0222B" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>16.0000</Lat>
+    <Long>-180.0000</Long>
+  </Radar>
+  <Radar Name="ADSC0222C" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>26.0000</Lat>
+    <Long>-180.0000</Long>
+  </Radar>
+  <Radar Name="ADSC0222D" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>36.0000</Lat>
+    <Long>-180.0000</Long>
+  </Radar>
+    <Radar Name="ADSC0222E" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>46.0000</Lat>
+    <Long>-180.0000</Long>
+  </Radar>
+  <Radar Name="ADSC0222F" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>56.0000</Lat>
+    <Long>-180.0000</Long>
+  </Radar>
+  <Radar Name="ADSC0223A" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>6.0000</Lat>
+    <Long>170.0000</Long>
+  </Radar>
+  <Radar Name="ADSC0223B" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>16.0000</Lat>
+    <Long>170.0000</Long>
+  </Radar>
+  <Radar Name="ADSC0223C" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>26.0000</Lat>
+    <Long>170.0000</Long>
+  </Radar>
+  <Radar Name="ADSC0223E" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>36.0000</Lat>
+    <Long>170.0000</Long>
+  </Radar>
+    <Radar Name="ADSC0223E" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>46.0000</Lat>
+    <Long>170.0000</Long>
+  </Radar>
+    <Radar Name="ADSC0223E" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>56.0000</Lat>
+    <Long>170.0000</Long>
+  </Radar>
+  <Radar Name="ADSC0224A" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>6.0000</Lat>
+    <Long>160.0000</Long>
+  </Radar>
+  <Radar Name="ADSC0224B" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>16.0000</Lat>
+    <Long>160.0000</Long>
+  </Radar>
+  <Radar Name="ADSC0224C" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>26.0000</Lat>
+    <Long>160.0000</Long>
+  </Radar>
+  <Radar Name="ADSC0224D" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>36.0000</Lat>
+    <Long>160.0000</Long>
+  </Radar>
+  <Radar Name="ADSC0224E" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>46.0000</Lat>
+    <Long>160.0000</Long>
+  </Radar>
+  <Radar Name="ADSC0224F" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>56.0000</Lat>
+    <Long>160.0000</Long>
+  </Radar>
+    <Radar Name="ADSC0225A" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>6.0000</Lat>
+    <Long>150.0000</Long>
+  </Radar>
+  <Radar Name="ADSC0225B" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>16.0000</Lat>
+    <Long>150.0000</Long>
+  </Radar>
+  <Radar Name="ADSC0225C" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>26.0000</Lat>
+    <Long>150.0000</Long>
+  </Radar>
+  <Radar Name="ADSC0226A" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>6.0000</Lat>
+    <Long>140.0000</Long>
+  </Radar>
+  <Radar Name="ADSC0226B" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>16.0000</Lat>
+    <Long>140.0000</Long>
+  </Radar>
+  <Radar Name="ADSC0226C" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>26.0000</Lat>
+    <Long>140.0000</Long>
+  </Radar>
+  <Radar Name="ADSC0227A" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>6.0000</Lat>
+    <Long>130.0000</Long>
+  </Radar>
+  <Radar Name="ADSC0227B" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>16.0000</Lat>
+    <Long>130.0000</Long>
+  </Radar>
+  <Radar Name="ADSC0227C" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>26.0000</Lat>
+    <Long>130.0000</Long>
+  </Radar>
+  <Radar Name="ADSC0317A" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>8.0000</Lat>
+    <Long>-130.0000</Long>
+  </Radar>
+  <Radar Name="ADSC0317B" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>18.0000</Lat>
+    <Long>-130.0000</Long>
+  </Radar>
+  <Radar Name="ADSC0317C" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>28.0000</Lat>
+    <Long>-130.0000</Long>
+  </Radar>
+    <Radar Name="ADSC0317D" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>38.0000</Lat>
+    <Long>-130.0000</Long>
+  </Radar>
+    <Radar Name="ADSC0317E" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>48.0000</Lat>
+    <Long>-130.0000</Long>
+  </Radar>
+    <Radar Name="ADSC0317F" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>58.0000</Lat>
+    <Long>-130.0000</Long>
+  </Radar>
+  <Radar Name="ADSC0318A" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>8.0000</Lat>
+    <Long>-140.0000</Long>
+  </Radar>
+  <Radar Name="ADSC0318B" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>18.0000</Lat>
+    <Long>-140.0000</Long>
+  </Radar>
+  <Radar Name="ADSC0318C" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>28.0000</Lat>
+    <Long>-140.0000</Long>
+  </Radar>
+    <Radar Name="ADSC0318D" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>38.0000</Lat>
+    <Long>-140.0000</Long>
+  </Radar>
+    <Radar Name="ADSC0318E" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>48.0000</Lat>
+    <Long>-140.0000</Long>
+  </Radar>
+    <Radar Name="ADSC0318F" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>58.0000</Lat>
+    <Long>-140.0000</Long>
+  </Radar>
+  <Radar Name="ADSC0319A" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>8.0000</Lat>
+    <Long>-150.0000</Long>
+  </Radar>
+  <Radar Name="ADSC0319B" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>18.0000</Lat>
+    <Long>-150.0000</Long>
+  </Radar>
+  <Radar Name="ADSC0319C" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>28.0000</Lat>
+    <Long>-150.0000</Long>
+  </Radar>
+    <Radar Name="ADSC0319D" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>38.0000</Lat>
+    <Long>-150.0000</Long>
+  </Radar>
+    <Radar Name="ADSC0319E" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>48.0000</Lat>
+    <Long>-150.0000</Long>
+  </Radar>
+    <Radar Name="ADSC0319F" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>58.0000</Lat>
+    <Long>-150.0000</Long>
+  </Radar>
+    <Radar Name="ADSC0319G" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>55.0000</Lat>
+    <Long>-150.0000</Long>
+  </Radar>
+  <Radar Name="ADSC0320A" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>8.0000</Lat>
+    <Long>-160.0000</Long>
+  </Radar>
+  <Radar Name="ADSC0320B" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>18.0000</Lat>
+    <Long>-160.0000</Long>
+  </Radar>
+  <Radar Name="ADSC0320C" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>28.0000</Lat>
+    <Long>-160.0000</Long>
+  </Radar>
+  <Radar Name="ADSC0320D" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>38.0000</Lat>
+    <Long>-160.0000</Long>
+  </Radar>
+  <Radar Name="ADSC0320E" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>48.0000</Lat>
+    <Long>-160.0000</Long>
+  </Radar>
+    <Radar Name="ADSC0320F" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>58.0000</Lat>
+    <Long>-160.0000</Long>
+  </Radar>
+  <Radar Name="ADSC0321A" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>8.0000</Lat>
+    <Long>-170.0000</Long>
+  </Radar>
+  <Radar Name="ADSC0321B" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>18.0000</Lat>
+    <Long>-170.0000</Long>
+  </Radar>
+  <Radar Name="ADSC0321C" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>28.0000</Lat>
+    <Long>-170.0000</Long>
+  </Radar>
+  <Radar Name="ADSC0321C" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>38.0000</Lat>
+    <Long>-170.0000</Long>
+  </Radar>
+  <Radar Name="ADSC0321D" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>48.0000</Lat>
+    <Long>-170.0000</Long>
+  </Radar>
+  <Radar Name="ADSC0321E" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>58.0000</Lat>
+    <Long>-170.0000</Long>
+  </Radar>
+  <Radar Name="ADSC0322A" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>8.0000</Lat>
+    <Long>-180.0000</Long>
+  </Radar>
+  <Radar Name="ADSC0322B" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>18.0000</Lat>
+    <Long>-180.0000</Long>
+  </Radar>
+  <Radar Name="ADSC0322C" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>28.0000</Lat>
+    <Long>-180.0000</Long>
+  </Radar>
+  <Radar Name="ADSC0322D" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>38.0000</Lat>
+    <Long>-180.0000</Long>
+  </Radar>
+    <Radar Name="ADSC0322E" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>48.0000</Lat>
+    <Long>-180.0000</Long>
+  </Radar>
+  <Radar Name="ADSC0322F" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>58.0000</Lat>
+    <Long>-180.0000</Long>
+  </Radar>
+  <Radar Name="ADSC0323A" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>8.0000</Lat>
+    <Long>170.0000</Long>
+  </Radar>
+  <Radar Name="ADSC0323B" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>18.0000</Lat>
+    <Long>170.0000</Long>
+  </Radar>
+  <Radar Name="ADSC0323C" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>28.0000</Lat>
+    <Long>170.0000</Long>
+  </Radar>
+  <Radar Name="ADSC0323E" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>38.0000</Lat>
+    <Long>170.0000</Long>
+  </Radar>
+    <Radar Name="ADSC0323E" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>48.0000</Lat>
+    <Long>170.0000</Long>
+  </Radar>
+    <Radar Name="ADSC0323E" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>58.0000</Lat>
+    <Long>170.0000</Long>
+  </Radar>
+  <Radar Name="ADSC0324A" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>8.0000</Lat>
+    <Long>160.0000</Long>
+  </Radar>
+  <Radar Name="ADSC0324B" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>18.0000</Lat>
+    <Long>160.0000</Long>
+  </Radar>
+  <Radar Name="ADSC0324C" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>28.0000</Lat>
+    <Long>160.0000</Long>
+  </Radar>
+  <Radar Name="ADSC0324D" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>38.0000</Lat>
+    <Long>160.0000</Long>
+  </Radar>
+  <Radar Name="ADSC0324E" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>48.0000</Lat>
+    <Long>160.0000</Long>
+  </Radar>
+  <Radar Name="ADSC0324F" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>58.0000</Lat>
+    <Long>160.0000</Long>
+  </Radar>
+    <Radar Name="ADSC0325A" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>8.0000</Lat>
+    <Long>150.0000</Long>
+  </Radar>
+  <Radar Name="ADSC0325B" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>18.0000</Lat>
+    <Long>150.0000</Long>
+  </Radar>
+  <Radar Name="ADSC0325C" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>28.0000</Lat>
+    <Long>150.0000</Long>
+  </Radar>
+  <Radar Name="ADSC0326A" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>8.0000</Lat>
+    <Long>140.0000</Long>
+  </Radar>
+  <Radar Name="ADSC0326B" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>18.0000</Lat>
+    <Long>140.0000</Long>
+  </Radar>
+  <Radar Name="ADSC0326C" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>28.0000</Lat>
+    <Long>140.0000</Long>
+  </Radar>
+  <Radar Name="ADSC0327A" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>8.0000</Lat>
+    <Long>130.0000</Long>
+  </Radar>
+  <Radar Name="ADSC0327B" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>18.0000</Lat>
+    <Long>130.0000</Long>
+  </Radar>
+  <Radar Name="ADSC0327C" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>28.0000</Lat>
+    <Long>130.0000</Long>
+  </Radar>
+  <Radar Name="ADSC1017A" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>0.0000</Lat>
+    <Long>-133.0000</Long>
+  </Radar>
+  <Radar Name="ADSC1017B" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
     <Lat>10.0000</Lat>
-    <Long>-140.0000</Long>
+    <Long>-133.0000</Long>
   </Radar>
-  <Radar Name="ADSC45" Type="SSR_ModeS" Elevation="1000" MaxRange="50000">
+  <Radar Name="ADSC1017C" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
     <Lat>20.0000</Lat>
-    <Long>-140.0000</Long>
-  </Radar>	
-  <Radar Name="ADSC46" Type="SSR_ModeS" Elevation="1000" MaxRange="50000">
-    <Lat>30.0000</Lat>
-    <Long>-140.0000</Long>
+    <Long>-133.0000</Long>
   </Radar>
-  <Radar Name="ADSC47" Type="SSR_ModeS" Elevation="1000" MaxRange="50000">
+    <Radar Name="ADSC1017D" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>30.0000</Lat>
+    <Long>-133.0000</Long>
+  </Radar>
+    <Radar Name="ADSC1017E" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
     <Lat>40.0000</Lat>
-    <Long>-140.0000</Long>
-  </Radar>  
-  <Radar Name="ADSC48" Type="SSR_ModeS" Elevation="1000" MaxRange="50000">
+    <Long>-133.0000</Long>
+  </Radar>
+    <Radar Name="ADSC1017F" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
     <Lat>50.0000</Lat>
-    <Long>-140.0000</Long>
-  </Radar>  
+    <Long>-133.0000</Long>
+  </Radar>
+  <Radar Name="ADSC1018A" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>0.0000</Lat>
+    <Long>-143.0000</Long>
+  </Radar>
+  <Radar Name="ADSC1018B" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>10.0000</Lat>
+    <Long>-143.0000</Long>
+  </Radar>
+  <Radar Name="ADSC1018C" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>20.0000</Lat>
+    <Long>-143.0000</Long>
+  </Radar>
+    <Radar Name="ADSC1018D" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>30.0000</Lat>
+    <Long>-143.0000</Long>
+  </Radar>
+    <Radar Name="ADSC1018E" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>40.0000</Lat>
+    <Long>-143.0000</Long>
+  </Radar>
+    <Radar Name="ADSC1018F" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>50.0000</Lat>
+    <Long>-143.0000</Long>
+  </Radar>
+  <Radar Name="ADSC1019A" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>0.0000</Lat>
+    <Long>-153.0000</Long>
+  </Radar>
+  <Radar Name="ADSC1019B" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>10.0000</Lat>
+    <Long>-153.0000</Long>
+  </Radar>
+  <Radar Name="ADSC1019C" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>20.0000</Lat>
+    <Long>-153.0000</Long>
+  </Radar>
+    <Radar Name="ADSC1019D" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>30.0000</Lat>
+    <Long>-153.0000</Long>
+  </Radar>
+    <Radar Name="ADSC1019E" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>40.0000</Lat>
+    <Long>-153.0000</Long>
+  </Radar>
+    <Radar Name="ADSC1019F" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>50.0000</Lat>
+    <Long>-153.0000</Long>
+  </Radar>
+    <Radar Name="ADSC1019G" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>55.0000</Lat>
+    <Long>-153.0000</Long>
+  </Radar>
+  <Radar Name="ADSC1020A" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>0.0000</Lat>
+    <Long>-163.0000</Long>
+  </Radar>
+  <Radar Name="ADSC1020B" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>10.0000</Lat>
+    <Long>-163.0000</Long>
+  </Radar>
+  <Radar Name="ADSC1020C" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>20.0000</Lat>
+    <Long>-163.0000</Long>
+  </Radar>
+  <Radar Name="ADSC1020D" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>30.0000</Lat>
+    <Long>-163.0000</Long>
+  </Radar>
+  <Radar Name="ADSC1020E" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>40.0000</Lat>
+    <Long>-163.0000</Long>
+  </Radar>
+    <Radar Name="ADSC1020F" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>50.0000</Lat>
+    <Long>-163.0000</Long>
+  </Radar>
+  <Radar Name="ADSC1021A" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>0.0000</Lat>
+    <Long>-173.0000</Long>
+  </Radar>
+  <Radar Name="ADSC1021B" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>10.0000</Lat>
+    <Long>-173.0000</Long>
+  </Radar>
+  <Radar Name="ADSC1021C" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>20.0000</Lat>
+    <Long>-173.0000</Long>
+  </Radar>
+  <Radar Name="ADSC1021C" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>30.0000</Lat>
+    <Long>-173.0000</Long>
+  </Radar>
+  <Radar Name="ADSC1021D" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>40.0000</Lat>
+    <Long>-173.0000</Long>
+  </Radar>
+  <Radar Name="ADSC1021E" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>50.0000</Lat>
+    <Long>-173.0000</Long>
+  </Radar>
+  <Radar Name="ADSC1023A" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>0.0000</Lat>
+    <Long>173.0000</Long>
+  </Radar>
+  <Radar Name="ADSC1023B" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>10.0000</Lat>
+    <Long>173.0000</Long>
+  </Radar>
+  <Radar Name="ADSC1023C" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>20.0000</Lat>
+    <Long>173.0000</Long>
+  </Radar>
+  <Radar Name="ADSC1023E" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>30.0000</Lat>
+    <Long>173.0000</Long>
+  </Radar>
+    <Radar Name="ADSC1023E" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>40.0000</Lat>
+    <Long>173.0000</Long>
+  </Radar>
+    <Radar Name="ADSC1023E" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>50.0000</Lat>
+    <Long>173.0000</Long>
+  </Radar>
+  <Radar Name="ADSC1024A" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>0.0000</Lat>
+    <Long>163.0000</Long>
+  </Radar>
+  <Radar Name="ADSC1024B" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>10.0000</Lat>
+    <Long>163.0000</Long>
+  </Radar>
+  <Radar Name="ADSC1024C" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>20.0000</Lat>
+    <Long>163.0000</Long>
+  </Radar>
+  <Radar Name="ADSC1024D" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>30.0000</Lat>
+    <Long>163.0000</Long>
+  </Radar>
+  <Radar Name="ADSC1024E" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>40.0000</Lat>
+    <Long>163.0000</Long>
+  </Radar>
+  <Radar Name="ADSC1024F" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>50.0000</Lat>
+    <Long>163.0000</Long>
+  </Radar>
+    <Radar Name="ADSC1025A" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>0.0000</Lat>
+    <Long>153.0000</Long>
+  </Radar>
+  <Radar Name="ADSC1025B" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>10.0000</Lat>
+    <Long>153.0000</Long>
+  </Radar>
+  <Radar Name="ADSC1025C" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>20.0000</Lat>
+    <Long>153.0000</Long>
+  </Radar>
+  <Radar Name="ADSC1026A" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>0.0000</Lat>
+    <Long>143.0000</Long>
+  </Radar>
+  <Radar Name="ADSC1026B" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>10.0000</Lat>
+    <Long>143.0000</Long>
+  </Radar>
+  <Radar Name="ADSC1026C" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>20.0000</Lat>
+    <Long>143.0000</Long>
+  </Radar>
+  <Radar Name="ADSC1027A" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>0.0000</Lat>
+    <Long>133.0000</Long>
+  </Radar>
+  <Radar Name="ADSC1027B" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>10.0000</Lat>
+    <Long>133.0000</Long>
+  </Radar>
+  <Radar Name="ADSC1027C" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>20.0000</Lat>
+    <Long>133.0000</Long>
+  </Radar>
+  <Radar Name="ADSC1117A" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>3.0000</Lat>
+    <Long>-133.0000</Long>
+  </Radar>
+  <Radar Name="ADSC1117B" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>13.0000</Lat>
+    <Long>-133.0000</Long>
+  </Radar>
+  <Radar Name="ADSC1117C" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>23.0000</Lat>
+    <Long>-133.0000</Long>
+  </Radar>
+    <Radar Name="ADSC1117D" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>33.0000</Lat>
+    <Long>-133.0000</Long>
+  </Radar>
+    <Radar Name="ADSC1117E" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>43.0000</Lat>
+    <Long>-133.0000</Long>
+  </Radar>
+    <Radar Name="ADSC1117F" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>53.0000</Lat>
+    <Long>-133.0000</Long>
+  </Radar>
+  <Radar Name="ADSC1118A" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>3.0000</Lat>
+    <Long>-143.0000</Long>
+  </Radar>
+  <Radar Name="ADSC1118B" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>13.0000</Lat>
+    <Long>-143.0000</Long>
+  </Radar>
+  <Radar Name="ADSC1118C" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>23.0000</Lat>
+    <Long>-143.0000</Long>
+  </Radar>
+    <Radar Name="ADSC1118D" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>33.0000</Lat>
+    <Long>-143.0000</Long>
+  </Radar>
+    <Radar Name="ADSC1118E" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>43.0000</Lat>
+    <Long>-143.0000</Long>
+  </Radar>
+    <Radar Name="ADSC1118F" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>53.0000</Lat>
+    <Long>-143.0000</Long>
+  </Radar>
+  <Radar Name="ADSC1119A" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>3.0000</Lat>
+    <Long>-153.0000</Long>
+  </Radar>
+  <Radar Name="ADSC1119B" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>13.0000</Lat>
+    <Long>-153.0000</Long>
+  </Radar>
+  <Radar Name="ADSC1119C" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>23.0000</Lat>
+    <Long>-153.0000</Long>
+  </Radar>
+    <Radar Name="ADSC1119D" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>33.0000</Lat>
+    <Long>-153.0000</Long>
+  </Radar>
+    <Radar Name="ADSC1119E" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>43.0000</Lat>
+    <Long>-153.0000</Long>
+  </Radar>
+    <Radar Name="ADSC1119F" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>53.0000</Lat>
+    <Long>-153.0000</Long>
+  </Radar>
+    <Radar Name="ADSC1119G" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>55.0000</Lat>
+    <Long>-153.0000</Long>
+  </Radar>
+  <Radar Name="ADSC1120A" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>3.0000</Lat>
+    <Long>-163.0000</Long>
+  </Radar>
+  <Radar Name="ADSC1120B" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>13.0000</Lat>
+    <Long>-163.0000</Long>
+  </Radar>
+  <Radar Name="ADSC1120C" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>23.0000</Lat>
+    <Long>-163.0000</Long>
+  </Radar>
+  <Radar Name="ADSC1120D" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>33.0000</Lat>
+    <Long>-163.0000</Long>
+  </Radar>
+  <Radar Name="ADSC1120E" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>43.0000</Lat>
+    <Long>-163.0000</Long>
+  </Radar>
+    <Radar Name="ADSC1120F" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>53.0000</Lat>
+    <Long>-163.0000</Long>
+  </Radar>
+  <Radar Name="ADSC1121A" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>3.0000</Lat>
+    <Long>-173.0000</Long>
+  </Radar>
+  <Radar Name="ADSC1121B" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>13.0000</Lat>
+    <Long>-173.0000</Long>
+  </Radar>
+  <Radar Name="ADSC1121C" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>23.0000</Lat>
+    <Long>-173.0000</Long>
+  </Radar>
+  <Radar Name="ADSC1121C" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>33.0000</Lat>
+    <Long>-173.0000</Long>
+  </Radar>
+  <Radar Name="ADSC1121D" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>43.0000</Lat>
+    <Long>-173.0000</Long>
+  </Radar>
+  <Radar Name="ADSC1121E" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>53.0000</Lat>
+    <Long>-173.0000</Long>
+  </Radar>
+  <Radar Name="ADSC1122A" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>3.0000</Lat>
+    <Long>-183.0000</Long>
+  </Radar>
+  <Radar Name="ADSC1122B" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>13.0000</Lat>
+    <Long>-183.0000</Long>
+  </Radar>
+  <Radar Name="ADSC1122C" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>23.0000</Lat>
+    <Long>-183.0000</Long>
+  </Radar>
+  <Radar Name="ADSC1122D" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>33.0000</Lat>
+    <Long>-183.0000</Long>
+  </Radar>
+    <Radar Name="ADSC1122E" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>43.0000</Lat>
+    <Long>-183.0000</Long>
+  </Radar>
+  <Radar Name="ADSC1122F" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>53.0000</Lat>
+    <Long>-183.0000</Long>
+  </Radar>
+  <Radar Name="ADSC1123A" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>3.0000</Lat>
+    <Long>173.0000</Long>
+  </Radar>
+  <Radar Name="ADSC1123B" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>13.0000</Lat>
+    <Long>173.0000</Long>
+  </Radar>
+  <Radar Name="ADSC1123C" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>23.0000</Lat>
+    <Long>173.0000</Long>
+  </Radar>
+  <Radar Name="ADSC1123E" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>33.0000</Lat>
+    <Long>173.0000</Long>
+  </Radar>
+    <Radar Name="ADSC1123E" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>43.0000</Lat>
+    <Long>173.0000</Long>
+  </Radar>
+    <Radar Name="ADSC1123E" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>53.0000</Lat>
+    <Long>173.0000</Long>
+  </Radar>
+  <Radar Name="ADSC1124A" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>3.0000</Lat>
+    <Long>163.0000</Long>
+  </Radar>
+  <Radar Name="ADSC1124B" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>13.0000</Lat>
+    <Long>163.0000</Long>
+  </Radar>
+  <Radar Name="ADSC1124C" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>23.0000</Lat>
+    <Long>163.0000</Long>
+  </Radar>
+  <Radar Name="ADSC1124D" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>33.0000</Lat>
+    <Long>163.0000</Long>
+  </Radar>
+  <Radar Name="ADSC1124E" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>43.0000</Lat>
+    <Long>163.0000</Long>
+  </Radar>
+  <Radar Name="ADSC1124F" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>53.0000</Lat>
+    <Long>163.0000</Long>
+  </Radar>
+    <Radar Name="ADSC1125A" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>3.0000</Lat>
+    <Long>153.0000</Long>
+  </Radar>
+  <Radar Name="ADSC1125B" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>13.0000</Lat>
+    <Long>153.0000</Long>
+  </Radar>
+  <Radar Name="ADSC1125C" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>23.0000</Lat>
+    <Long>153.0000</Long>
+  </Radar>
+  <Radar Name="ADSC1126A" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>3.0000</Lat>
+    <Long>143.0000</Long>
+  </Radar>
+  <Radar Name="ADSC1126B" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>13.0000</Lat>
+    <Long>143.0000</Long>
+  </Radar>
+  <Radar Name="ADSC1126C" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>23.0000</Lat>
+    <Long>143.0000</Long>
+  </Radar>
+  <Radar Name="ADSC1127A" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>3.0000</Lat>
+    <Long>133.0000</Long>
+  </Radar>
+  <Radar Name="ADSC1127B" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>13.0000</Lat>
+    <Long>133.0000</Long>
+  </Radar>
+  <Radar Name="ADSC1127C" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>23.0000</Lat>
+    <Long>133.0000</Long>
+  </Radar>
+  <Radar Name="ADSC1217A" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>6.0000</Lat>
+    <Long>-133.0000</Long>
+  </Radar>
+  <Radar Name="ADSC1217B" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>16.0000</Lat>
+    <Long>-133.0000</Long>
+  </Radar>
+  <Radar Name="ADSC1217C" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>26.0000</Lat>
+    <Long>-133.0000</Long>
+  </Radar>
+    <Radar Name="ADSC1217D" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>36.0000</Lat>
+    <Long>-133.0000</Long>
+  </Radar>
+    <Radar Name="ADSC1217E" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>46.0000</Lat>
+    <Long>-133.0000</Long>
+  </Radar>
+    <Radar Name="ADSC1217F" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>56.0000</Lat>
+    <Long>-133.0000</Long>
+  </Radar>
+  <Radar Name="ADSC1218A" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>6.0000</Lat>
+    <Long>-143.0000</Long>
+  </Radar>
+  <Radar Name="ADSC1218B" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>16.0000</Lat>
+    <Long>-143.0000</Long>
+  </Radar>
+  <Radar Name="ADSC1218C" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>26.0000</Lat>
+    <Long>-143.0000</Long>
+  </Radar>
+    <Radar Name="ADSC1218D" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>36.0000</Lat>
+    <Long>-143.0000</Long>
+  </Radar>
+    <Radar Name="ADSC1218E" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>46.0000</Lat>
+    <Long>-143.0000</Long>
+  </Radar>
+    <Radar Name="ADSC1218F" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>56.0000</Lat>
+    <Long>-143.0000</Long>
+  </Radar>
+  <Radar Name="ADSC1219A" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>6.0000</Lat>
+    <Long>-153.0000</Long>
+  </Radar>
+  <Radar Name="ADSC1219B" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>16.0000</Lat>
+    <Long>-153.0000</Long>
+  </Radar>
+  <Radar Name="ADSC1219C" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>26.0000</Lat>
+    <Long>-153.0000</Long>
+  </Radar>
+    <Radar Name="ADSC1219D" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>36.0000</Lat>
+    <Long>-153.0000</Long>
+  </Radar>
+    <Radar Name="ADSC1219E" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>46.0000</Lat>
+    <Long>-153.0000</Long>
+  </Radar>
+    <Radar Name="ADSC1219F" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>56.0000</Lat>
+    <Long>-153.0000</Long>
+  </Radar>
+    <Radar Name="ADSC1219G" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>55.0000</Lat>
+    <Long>-153.0000</Long>
+  </Radar>
+  <Radar Name="ADSC1220A" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>6.0000</Lat>
+    <Long>-163.0000</Long>
+  </Radar>
+  <Radar Name="ADSC1220B" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>16.0000</Lat>
+    <Long>-163.0000</Long>
+  </Radar>
+  <Radar Name="ADSC1220C" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>26.0000</Lat>
+    <Long>-163.0000</Long>
+  </Radar>
+  <Radar Name="ADSC1220D" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>36.0000</Lat>
+    <Long>-163.0000</Long>
+  </Radar>
+  <Radar Name="ADSC1220E" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>46.0000</Lat>
+    <Long>-163.0000</Long>
+  </Radar>
+    <Radar Name="ADSC1220F" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>56.0000</Lat>
+    <Long>-163.0000</Long>
+  </Radar>
+  <Radar Name="ADSC1221A" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>6.0000</Lat>
+    <Long>-173.0000</Long>
+  </Radar>
+  <Radar Name="ADSC1221B" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>16.0000</Lat>
+    <Long>-173.0000</Long>
+  </Radar>
+  <Radar Name="ADSC1221C" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>26.0000</Lat>
+    <Long>-173.0000</Long>
+  </Radar>
+  <Radar Name="ADSC1221C" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>36.0000</Lat>
+    <Long>-173.0000</Long>
+  </Radar>
+  <Radar Name="ADSC1221D" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>46.0000</Lat>
+    <Long>-173.0000</Long>
+  </Radar>
+  <Radar Name="ADSC1221E" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>56.0000</Lat>
+    <Long>-173.0000</Long>
+  </Radar>
+  <Radar Name="ADSC1223A" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>6.0000</Lat>
+    <Long>173.0000</Long>
+  </Radar>
+  <Radar Name="ADSC1223B" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>16.0000</Lat>
+    <Long>173.0000</Long>
+  </Radar>
+  <Radar Name="ADSC1223C" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>26.0000</Lat>
+    <Long>173.0000</Long>
+  </Radar>
+  <Radar Name="ADSC1223E" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>36.0000</Lat>
+    <Long>173.0000</Long>
+  </Radar>
+    <Radar Name="ADSC1223E" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>46.0000</Lat>
+    <Long>173.0000</Long>
+  </Radar>
+    <Radar Name="ADSC1223E" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>56.0000</Lat>
+    <Long>173.0000</Long>
+  </Radar>
+  <Radar Name="ADSC1224A" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>6.0000</Lat>
+    <Long>163.0000</Long>
+  </Radar>
+  <Radar Name="ADSC1224B" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>16.0000</Lat>
+    <Long>163.0000</Long>
+  </Radar>
+  <Radar Name="ADSC1224C" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>26.0000</Lat>
+    <Long>163.0000</Long>
+  </Radar>
+  <Radar Name="ADSC1224D" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>36.0000</Lat>
+    <Long>163.0000</Long>
+  </Radar>
+  <Radar Name="ADSC1224E" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>46.0000</Lat>
+    <Long>163.0000</Long>
+  </Radar>
+  <Radar Name="ADSC1224F" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>56.0000</Lat>
+    <Long>163.0000</Long>
+  </Radar>
+    <Radar Name="ADSC1225A" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>6.0000</Lat>
+    <Long>153.0000</Long>
+  </Radar>
+  <Radar Name="ADSC1225B" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>16.0000</Lat>
+    <Long>153.0000</Long>
+  </Radar>
+  <Radar Name="ADSC1225C" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>26.0000</Lat>
+    <Long>153.0000</Long>
+  </Radar>
+  <Radar Name="ADSC1226A" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>6.0000</Lat>
+    <Long>143.0000</Long>
+  </Radar>
+  <Radar Name="ADSC1226B" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>16.0000</Lat>
+    <Long>143.0000</Long>
+  </Radar>
+  <Radar Name="ADSC1226C" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>26.0000</Lat>
+    <Long>143.0000</Long>
+  </Radar>
+  <Radar Name="ADSC1227A" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>6.0000</Lat>
+    <Long>133.0000</Long>
+  </Radar>
+  <Radar Name="ADSC1227B" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>16.0000</Lat>
+    <Long>133.0000</Long>
+  </Radar>
+  <Radar Name="ADSC1227C" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>26.0000</Lat>
+    <Long>133.0000</Long>
+  </Radar>
+  <Radar Name="ADSC1317A" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>8.0000</Lat>
+    <Long>-133.0000</Long>
+  </Radar>
+  <Radar Name="ADSC1317B" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>18.0000</Lat>
+    <Long>-133.0000</Long>
+  </Radar>
+  <Radar Name="ADSC1317C" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>28.0000</Lat>
+    <Long>-133.0000</Long>
+  </Radar>
+    <Radar Name="ADSC1317D" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>38.0000</Lat>
+    <Long>-133.0000</Long>
+  </Radar>
+    <Radar Name="ADSC1317E" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>48.0000</Lat>
+    <Long>-133.0000</Long>
+  </Radar>
+    <Radar Name="ADSC1317F" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>58.0000</Lat>
+    <Long>-133.0000</Long>
+  </Radar>
+  <Radar Name="ADSC1318A" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>8.0000</Lat>
+    <Long>-143.0000</Long>
+  </Radar>
+  <Radar Name="ADSC1318B" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>18.0000</Lat>
+    <Long>-143.0000</Long>
+  </Radar>
+  <Radar Name="ADSC1318C" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>28.0000</Lat>
+    <Long>-143.0000</Long>
+  </Radar>
+    <Radar Name="ADSC1318D" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>38.0000</Lat>
+    <Long>-143.0000</Long>
+  </Radar>
+    <Radar Name="ADSC1318E" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>48.0000</Lat>
+    <Long>-143.0000</Long>
+  </Radar>
+    <Radar Name="ADSC1318F" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>58.0000</Lat>
+    <Long>-143.0000</Long>
+  </Radar>
+  <Radar Name="ADSC1319A" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>8.0000</Lat>
+    <Long>-153.0000</Long>
+  </Radar>
+  <Radar Name="ADSC1319B" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>18.0000</Lat>
+    <Long>-153.0000</Long>
+  </Radar>
+  <Radar Name="ADSC1319C" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>28.0000</Lat>
+    <Long>-153.0000</Long>
+  </Radar>
+    <Radar Name="ADSC1319D" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>38.0000</Lat>
+    <Long>-153.0000</Long>
+  </Radar>
+    <Radar Name="ADSC1319E" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>48.0000</Lat>
+    <Long>-153.0000</Long>
+  </Radar>
+    <Radar Name="ADSC1319F" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>58.0000</Lat>
+    <Long>-153.0000</Long>
+  </Radar>
+    <Radar Name="ADSC1319G" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>55.0000</Lat>
+    <Long>-153.0000</Long>
+  </Radar>
+  <Radar Name="ADSC1320A" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>8.0000</Lat>
+    <Long>-163.0000</Long>
+  </Radar>
+  <Radar Name="ADSC1320B" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>18.0000</Lat>
+    <Long>-163.0000</Long>
+  </Radar>
+  <Radar Name="ADSC1320C" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>28.0000</Lat>
+    <Long>-163.0000</Long>
+  </Radar>
+  <Radar Name="ADSC1320D" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>38.0000</Lat>
+    <Long>-163.0000</Long>
+  </Radar>
+  <Radar Name="ADSC1320E" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>48.0000</Lat>
+    <Long>-163.0000</Long>
+  </Radar>
+    <Radar Name="ADSC1320F" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>58.0000</Lat>
+    <Long>-163.0000</Long>
+  </Radar>
+  <Radar Name="ADSC1321A" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>8.0000</Lat>
+    <Long>-173.0000</Long>
+  </Radar>
+  <Radar Name="ADSC1321B" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>18.0000</Lat>
+    <Long>-173.0000</Long>
+  </Radar>
+  <Radar Name="ADSC1321C" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>28.0000</Lat>
+    <Long>-173.0000</Long>
+  </Radar>
+  <Radar Name="ADSC1321C" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>38.0000</Lat>
+    <Long>-173.0000</Long>
+  </Radar>
+  <Radar Name="ADSC1321D" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>48.0000</Lat>
+    <Long>-173.0000</Long>
+  </Radar>
+  <Radar Name="ADSC1321E" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>58.0000</Lat>
+    <Long>-173.0000</Long>
+  </Radar>
+  <Radar Name="ADSC1323A" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>8.0000</Lat>
+    <Long>173.0000</Long>
+  </Radar>
+  <Radar Name="ADSC1323B" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>18.0000</Lat>
+    <Long>173.0000</Long>
+  </Radar>
+  <Radar Name="ADSC1323C" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>28.0000</Lat>
+    <Long>173.0000</Long>
+  </Radar>
+  <Radar Name="ADSC1323E" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>38.0000</Lat>
+    <Long>173.0000</Long>
+  </Radar>
+    <Radar Name="ADSC1323E" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>48.0000</Lat>
+    <Long>173.0000</Long>
+  </Radar>
+    <Radar Name="ADSC1323E" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>58.0000</Lat>
+    <Long>173.0000</Long>
+  </Radar>
+  <Radar Name="ADSC1324A" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>8.0000</Lat>
+    <Long>163.0000</Long>
+  </Radar>
+  <Radar Name="ADSC1324B" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>18.0000</Lat>
+    <Long>163.0000</Long>
+  </Radar>
+  <Radar Name="ADSC1324C" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>28.0000</Lat>
+    <Long>163.0000</Long>
+  </Radar>
+  <Radar Name="ADSC1324D" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>38.0000</Lat>
+    <Long>163.0000</Long>
+  </Radar>
+  <Radar Name="ADSC1324E" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>48.0000</Lat>
+    <Long>163.0000</Long>
+  </Radar>
+  <Radar Name="ADSC1324F" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>58.0000</Lat>
+    <Long>163.0000</Long>
+  </Radar>
+    <Radar Name="ADSC1325A" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>8.0000</Lat>
+    <Long>153.0000</Long>
+  </Radar>
+  <Radar Name="ADSC1325B" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>18.0000</Lat>
+    <Long>153.0000</Long>
+  </Radar>
+  <Radar Name="ADSC1325C" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>28.0000</Lat>
+    <Long>153.0000</Long>
+  </Radar>
+  <Radar Name="ADSC1326A" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>8.0000</Lat>
+    <Long>143.0000</Long>
+  </Radar>
+  <Radar Name="ADSC1326B" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>18.0000</Lat>
+    <Long>143.0000</Long>
+  </Radar>
+  <Radar Name="ADSC1326C" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>28.0000</Lat>
+    <Long>143.0000</Long>
+  </Radar>
+  <Radar Name="ADSC1327A" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>8.0000</Lat>
+    <Long>133.0000</Long>
+  </Radar>
+  <Radar Name="ADSC1327B" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>18.0000</Lat>
+    <Long>133.0000</Long>
+  </Radar>
+  <Radar Name="ADSC1327C" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>28.0000</Lat>
+    <Long>133.0000</Long>
+  </Radar>
+  <Radar Name="ADSC2017A" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>0.0000</Lat>
+    <Long>-136.0000</Long>
+  </Radar>
+  <Radar Name="ADSC2017B" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>10.0000</Lat>
+    <Long>-136.0000</Long>
+  </Radar>
+  <Radar Name="ADSC2017C" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>20.0000</Lat>
+    <Long>-136.0000</Long>
+  </Radar>
+    <Radar Name="ADSC2017D" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>30.0000</Lat>
+    <Long>-136.0000</Long>
+  </Radar>
+    <Radar Name="ADSC2017E" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>40.0000</Lat>
+    <Long>-136.0000</Long>
+  </Radar>
+    <Radar Name="ADSC2017F" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>50.0000</Lat>
+    <Long>-136.0000</Long>
+  </Radar>
+  <Radar Name="ADSC2018A" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>0.0000</Lat>
+    <Long>-146.0000</Long>
+  </Radar>
+  <Radar Name="ADSC2018B" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>10.0000</Lat>
+    <Long>-146.0000</Long>
+  </Radar>
+  <Radar Name="ADSC2018C" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>20.0000</Lat>
+    <Long>-146.0000</Long>
+  </Radar>
+    <Radar Name="ADSC2018D" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>30.0000</Lat>
+    <Long>-146.0000</Long>
+  </Radar>
+    <Radar Name="ADSC2018E" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>40.0000</Lat>
+    <Long>-146.0000</Long>
+  </Radar>
+    <Radar Name="ADSC2018F" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>50.0000</Lat>
+    <Long>-146.0000</Long>
+  </Radar>
+  <Radar Name="ADSC2019A" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>0.0000</Lat>
+    <Long>-156.0000</Long>
+  </Radar>
+  <Radar Name="ADSC2019B" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>10.0000</Lat>
+    <Long>-156.0000</Long>
+  </Radar>
+  <Radar Name="ADSC2019C" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>20.0000</Lat>
+    <Long>-156.0000</Long>
+  </Radar>
+    <Radar Name="ADSC2019D" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>30.0000</Lat>
+    <Long>-156.0000</Long>
+  </Radar>
+    <Radar Name="ADSC2019E" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>40.0000</Lat>
+    <Long>-156.0000</Long>
+  </Radar>
+    <Radar Name="ADSC2019F" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>50.0000</Lat>
+    <Long>-156.0000</Long>
+  </Radar>
+    <Radar Name="ADSC2019G" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>55.0000</Lat>
+    <Long>-156.0000</Long>
+  </Radar>
+  <Radar Name="ADSC2020A" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>0.0000</Lat>
+    <Long>-166.0000</Long>
+  </Radar>
+  <Radar Name="ADSC2020B" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>10.0000</Lat>
+    <Long>-166.0000</Long>
+  </Radar>
+  <Radar Name="ADSC2020C" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>20.0000</Lat>
+    <Long>-166.0000</Long>
+  </Radar>
+  <Radar Name="ADSC2020D" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>30.0000</Lat>
+    <Long>-166.0000</Long>
+  </Radar>
+  <Radar Name="ADSC2020E" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>40.0000</Lat>
+    <Long>-166.0000</Long>
+  </Radar>
+    <Radar Name="ADSC2020F" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>50.0000</Lat>
+    <Long>-166.0000</Long>
+  </Radar>
+  <Radar Name="ADSC2021A" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>0.0000</Lat>
+    <Long>-173.0000</Long>
+  </Radar>
+  <Radar Name="ADSC2021B" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>10.0000</Lat>
+    <Long>-173.0000</Long>
+  </Radar>
+  <Radar Name="ADSC2021C" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>20.0000</Lat>
+    <Long>-173.0000</Long>
+  </Radar>
+  <Radar Name="ADSC2021C" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>30.0000</Lat>
+    <Long>-173.0000</Long>
+  </Radar>
+  <Radar Name="ADSC2021D" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>40.0000</Lat>
+    <Long>-173.0000</Long>
+  </Radar>
+  <Radar Name="ADSC2021E" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>50.0000</Lat>
+    <Long>-173.0000</Long>
+  </Radar>
+  <Radar Name="ADSC2023A" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>0.0000</Lat>
+    <Long>176.0000</Long>
+  </Radar>
+  <Radar Name="ADSC2023B" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>10.0000</Lat>
+    <Long>176.0000</Long>
+  </Radar>
+  <Radar Name="ADSC2023C" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>20.0000</Lat>
+    <Long>176.0000</Long>
+  </Radar>
+  <Radar Name="ADSC2023E" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>30.0000</Lat>
+    <Long>176.0000</Long>
+  </Radar>
+    <Radar Name="ADSC2023E" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>40.0000</Lat>
+    <Long>176.0000</Long>
+  </Radar>
+    <Radar Name="ADSC2023E" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>50.0000</Lat>
+    <Long>176.0000</Long>
+  </Radar>
+  <Radar Name="ADSC2024A" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>0.0000</Lat>
+    <Long>166.0000</Long>
+  </Radar>
+  <Radar Name="ADSC2024B" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>10.0000</Lat>
+    <Long>166.0000</Long>
+  </Radar>
+  <Radar Name="ADSC2024C" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>20.0000</Lat>
+    <Long>166.0000</Long>
+  </Radar>
+  <Radar Name="ADSC2024D" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>30.0000</Lat>
+    <Long>166.0000</Long>
+  </Radar>
+  <Radar Name="ADSC2024E" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>40.0000</Lat>
+    <Long>166.0000</Long>
+  </Radar>
+  <Radar Name="ADSC2024F" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>50.0000</Lat>
+    <Long>166.0000</Long>
+  </Radar>
+    <Radar Name="ADSC2025A" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>0.0000</Lat>
+    <Long>156.0000</Long>
+  </Radar>
+  <Radar Name="ADSC2025B" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>10.0000</Lat>
+    <Long>156.0000</Long>
+  </Radar>
+  <Radar Name="ADSC2025C" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>20.0000</Lat>
+    <Long>156.0000</Long>
+  </Radar>
+  <Radar Name="ADSC2026A" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>0.0000</Lat>
+    <Long>146.0000</Long>
+  </Radar>
+  <Radar Name="ADSC2026B" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>10.0000</Lat>
+    <Long>146.0000</Long>
+  </Radar>
+  <Radar Name="ADSC2026C" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>20.0000</Lat>
+    <Long>146.0000</Long>
+  </Radar>
+  <Radar Name="ADSC2027A" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>0.0000</Lat>
+    <Long>136.0000</Long>
+  </Radar>
+  <Radar Name="ADSC2027B" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>10.0000</Lat>
+    <Long>136.0000</Long>
+  </Radar>
+  <Radar Name="ADSC2027C" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>20.0000</Lat>
+    <Long>136.0000</Long>
+  </Radar>
+  <Radar Name="ADSC2117A" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>3.0000</Lat>
+    <Long>-136.0000</Long>
+  </Radar>
+  <Radar Name="ADSC2117B" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>13.0000</Lat>
+    <Long>-136.0000</Long>
+  </Radar>
+  <Radar Name="ADSC2117C" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>23.0000</Lat>
+    <Long>-136.0000</Long>
+  </Radar>
+    <Radar Name="ADSC2117D" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>33.0000</Lat>
+    <Long>-136.0000</Long>
+  </Radar>
+    <Radar Name="ADSC2117E" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>43.0000</Lat>
+    <Long>-136.0000</Long>
+  </Radar>
+    <Radar Name="ADSC2117F" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>53.0000</Lat>
+    <Long>-136.0000</Long>
+  </Radar>
+  <Radar Name="ADSC2118A" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>3.0000</Lat>
+    <Long>-146.0000</Long>
+  </Radar>
+  <Radar Name="ADSC2118B" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>13.0000</Lat>
+    <Long>-146.0000</Long>
+  </Radar>
+  <Radar Name="ADSC2118C" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>23.0000</Lat>
+    <Long>-146.0000</Long>
+  </Radar>
+    <Radar Name="ADSC2118D" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>33.0000</Lat>
+    <Long>-146.0000</Long>
+  </Radar>
+    <Radar Name="ADSC2118E" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>43.0000</Lat>
+    <Long>-146.0000</Long>
+  </Radar>
+    <Radar Name="ADSC2118F" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>53.0000</Lat>
+    <Long>-146.0000</Long>
+  </Radar>
+  <Radar Name="ADSC2119A" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>3.0000</Lat>
+    <Long>-156.0000</Long>
+  </Radar>
+  <Radar Name="ADSC2119B" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>13.0000</Lat>
+    <Long>-156.0000</Long>
+  </Radar>
+  <Radar Name="ADSC2119C" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>23.0000</Lat>
+    <Long>-156.0000</Long>
+  </Radar>
+    <Radar Name="ADSC2119D" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>33.0000</Lat>
+    <Long>-156.0000</Long>
+  </Radar>
+    <Radar Name="ADSC2119E" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>43.0000</Lat>
+    <Long>-156.0000</Long>
+  </Radar>
+    <Radar Name="ADSC2119F" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>53.0000</Lat>
+    <Long>-156.0000</Long>
+  </Radar>
+    <Radar Name="ADSC2119G" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>55.0000</Lat>
+    <Long>-156.0000</Long>
+  </Radar>
+  <Radar Name="ADSC2120A" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>3.0000</Lat>
+    <Long>-166.0000</Long>
+  </Radar>
+  <Radar Name="ADSC2120B" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>13.0000</Lat>
+    <Long>-166.0000</Long>
+  </Radar>
+  <Radar Name="ADSC2120C" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>23.0000</Lat>
+    <Long>-166.0000</Long>
+  </Radar>
+  <Radar Name="ADSC2120D" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>33.0000</Lat>
+    <Long>-166.0000</Long>
+  </Radar>
+  <Radar Name="ADSC2120E" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>43.0000</Lat>
+    <Long>-166.0000</Long>
+  </Radar>
+    <Radar Name="ADSC2120F" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>53.0000</Lat>
+    <Long>-166.0000</Long>
+  </Radar>
+  <Radar Name="ADSC2121A" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>3.0000</Lat>
+    <Long>-173.0000</Long>
+  </Radar>
+  <Radar Name="ADSC2121B" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>13.0000</Lat>
+    <Long>-173.0000</Long>
+  </Radar>
+  <Radar Name="ADSC2121C" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>23.0000</Lat>
+    <Long>-173.0000</Long>
+  </Radar>
+  <Radar Name="ADSC2121C" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>33.0000</Lat>
+    <Long>-173.0000</Long>
+  </Radar>
+  <Radar Name="ADSC2121D" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>43.0000</Lat>
+    <Long>-173.0000</Long>
+  </Radar>
+  <Radar Name="ADSC2121E" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>53.0000</Lat>
+    <Long>-173.0000</Long>
+  </Radar>
+  <Radar Name="ADSC2123A" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>3.0000</Lat>
+    <Long>176.0000</Long>
+  </Radar>
+  <Radar Name="ADSC2123B" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>13.0000</Lat>
+    <Long>176.0000</Long>
+  </Radar>
+  <Radar Name="ADSC2123C" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>23.0000</Lat>
+    <Long>176.0000</Long>
+  </Radar>
+  <Radar Name="ADSC2123E" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>33.0000</Lat>
+    <Long>176.0000</Long>
+  </Radar>
+    <Radar Name="ADSC2123E" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>43.0000</Lat>
+    <Long>176.0000</Long>
+  </Radar>
+    <Radar Name="ADSC2123E" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>53.0000</Lat>
+    <Long>176.0000</Long>
+  </Radar>
+  <Radar Name="ADSC2124A" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>3.0000</Lat>
+    <Long>166.0000</Long>
+  </Radar>
+  <Radar Name="ADSC2124B" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>13.0000</Lat>
+    <Long>166.0000</Long>
+  </Radar>
+  <Radar Name="ADSC2124C" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>23.0000</Lat>
+    <Long>166.0000</Long>
+  </Radar>
+  <Radar Name="ADSC2124D" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>33.0000</Lat>
+    <Long>166.0000</Long>
+  </Radar>
+  <Radar Name="ADSC2124E" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>43.0000</Lat>
+    <Long>166.0000</Long>
+  </Radar>
+  <Radar Name="ADSC2124F" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>53.0000</Lat>
+    <Long>166.0000</Long>
+  </Radar>
+    <Radar Name="ADSC2125A" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>3.0000</Lat>
+    <Long>156.0000</Long>
+  </Radar>
+  <Radar Name="ADSC2125B" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>13.0000</Lat>
+    <Long>156.0000</Long>
+  </Radar>
+  <Radar Name="ADSC2125C" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>23.0000</Lat>
+    <Long>156.0000</Long>
+  </Radar>
+  <Radar Name="ADSC2126A" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>3.0000</Lat>
+    <Long>146.0000</Long>
+  </Radar>
+  <Radar Name="ADSC2126B" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>13.0000</Lat>
+    <Long>146.0000</Long>
+  </Radar>
+  <Radar Name="ADSC2126C" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>23.0000</Lat>
+    <Long>146.0000</Long>
+  </Radar>
+  <Radar Name="ADSC2127A" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>3.0000</Lat>
+    <Long>136.0000</Long>
+  </Radar>
+  <Radar Name="ADSC2127B" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>13.0000</Lat>
+    <Long>136.0000</Long>
+  </Radar>
+  <Radar Name="ADSC2127C" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>23.0000</Lat>
+    <Long>136.0000</Long>
+  </Radar>
+  <Radar Name="ADSC2217A" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>6.0000</Lat>
+    <Long>-136.0000</Long>
+  </Radar>
+  <Radar Name="ADSC2217B" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>16.0000</Lat>
+    <Long>-136.0000</Long>
+  </Radar>
+  <Radar Name="ADSC2217C" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>26.0000</Lat>
+    <Long>-136.0000</Long>
+  </Radar>
+    <Radar Name="ADSC2217D" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>36.0000</Lat>
+    <Long>-136.0000</Long>
+  </Radar>
+    <Radar Name="ADSC2217E" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>46.0000</Lat>
+    <Long>-136.0000</Long>
+  </Radar>
+    <Radar Name="ADSC2217F" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>56.0000</Lat>
+    <Long>-136.0000</Long>
+  </Radar>
+  <Radar Name="ADSC2218A" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>6.0000</Lat>
+    <Long>-146.0000</Long>
+  </Radar>
+  <Radar Name="ADSC2218B" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>16.0000</Lat>
+    <Long>-146.0000</Long>
+  </Radar>
+  <Radar Name="ADSC2218C" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>26.0000</Lat>
+    <Long>-146.0000</Long>
+  </Radar>
+    <Radar Name="ADSC2218D" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>36.0000</Lat>
+    <Long>-146.0000</Long>
+  </Radar>
+    <Radar Name="ADSC2218E" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>46.0000</Lat>
+    <Long>-146.0000</Long>
+  </Radar>
+    <Radar Name="ADSC2218F" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>56.0000</Lat>
+    <Long>-146.0000</Long>
+  </Radar>
+  <Radar Name="ADSC2219A" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>6.0000</Lat>
+    <Long>-156.0000</Long>
+  </Radar>
+  <Radar Name="ADSC2219B" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>16.0000</Lat>
+    <Long>-156.0000</Long>
+  </Radar>
+  <Radar Name="ADSC2219C" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>26.0000</Lat>
+    <Long>-156.0000</Long>
+  </Radar>
+    <Radar Name="ADSC2219D" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>36.0000</Lat>
+    <Long>-156.0000</Long>
+  </Radar>
+    <Radar Name="ADSC2219E" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>46.0000</Lat>
+    <Long>-156.0000</Long>
+  </Radar>
+    <Radar Name="ADSC2219F" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>56.0000</Lat>
+    <Long>-156.0000</Long>
+  </Radar>
+    <Radar Name="ADSC2219G" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>55.0000</Lat>
+    <Long>-156.0000</Long>
+  </Radar>
+  <Radar Name="ADSC2220A" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>6.0000</Lat>
+    <Long>-166.0000</Long>
+  </Radar>
+  <Radar Name="ADSC2220B" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>16.0000</Lat>
+    <Long>-166.0000</Long>
+  </Radar>
+  <Radar Name="ADSC2220C" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>26.0000</Lat>
+    <Long>-166.0000</Long>
+  </Radar>
+  <Radar Name="ADSC2220D" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>36.0000</Lat>
+    <Long>-166.0000</Long>
+  </Radar>
+  <Radar Name="ADSC2220E" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>46.0000</Lat>
+    <Long>-166.0000</Long>
+  </Radar>
+    <Radar Name="ADSC2220F" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>56.0000</Lat>
+    <Long>-166.0000</Long>
+  </Radar>
+  <Radar Name="ADSC2221A" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>6.0000</Lat>
+    <Long>-173.0000</Long>
+  </Radar>
+  <Radar Name="ADSC2221B" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>16.0000</Lat>
+    <Long>-173.0000</Long>
+  </Radar>
+  <Radar Name="ADSC2221C" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>26.0000</Lat>
+    <Long>-173.0000</Long>
+  </Radar>
+  <Radar Name="ADSC2221C" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>36.0000</Lat>
+    <Long>-173.0000</Long>
+  </Radar>
+  <Radar Name="ADSC2221D" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>46.0000</Lat>
+    <Long>-173.0000</Long>
+  </Radar>
+  <Radar Name="ADSC2221E" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>56.0000</Lat>
+    <Long>-173.0000</Long>
+  </Radar>
+  <Radar Name="ADSC2223A" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>6.0000</Lat>
+    <Long>176.0000</Long>
+  </Radar>
+  <Radar Name="ADSC2223B" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>16.0000</Lat>
+    <Long>176.0000</Long>
+  </Radar>
+  <Radar Name="ADSC2223C" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>26.0000</Lat>
+    <Long>176.0000</Long>
+  </Radar>
+  <Radar Name="ADSC2223E" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>36.0000</Lat>
+    <Long>176.0000</Long>
+  </Radar>
+    <Radar Name="ADSC2223E" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>46.0000</Lat>
+    <Long>176.0000</Long>
+  </Radar>
+    <Radar Name="ADSC2223E" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>56.0000</Lat>
+    <Long>176.0000</Long>
+  </Radar>
+  <Radar Name="ADSC2224A" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>6.0000</Lat>
+    <Long>166.0000</Long>
+  </Radar>
+  <Radar Name="ADSC2224B" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>16.0000</Lat>
+    <Long>166.0000</Long>
+  </Radar>
+  <Radar Name="ADSC2224C" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>26.0000</Lat>
+    <Long>166.0000</Long>
+  </Radar>
+  <Radar Name="ADSC2224D" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>36.0000</Lat>
+    <Long>166.0000</Long>
+  </Radar>
+  <Radar Name="ADSC2224E" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>46.0000</Lat>
+    <Long>166.0000</Long>
+  </Radar>
+  <Radar Name="ADSC2224F" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>56.0000</Lat>
+    <Long>166.0000</Long>
+  </Radar>
+    <Radar Name="ADSC2225A" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>6.0000</Lat>
+    <Long>156.0000</Long>
+  </Radar>
+  <Radar Name="ADSC2225B" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>16.0000</Lat>
+    <Long>156.0000</Long>
+  </Radar>
+  <Radar Name="ADSC2225C" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>26.0000</Lat>
+    <Long>156.0000</Long>
+  </Radar>
+  <Radar Name="ADSC2226A" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>6.0000</Lat>
+    <Long>146.0000</Long>
+  </Radar>
+  <Radar Name="ADSC2226B" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>16.0000</Lat>
+    <Long>146.0000</Long>
+  </Radar>
+  <Radar Name="ADSC2226C" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>26.0000</Lat>
+    <Long>146.0000</Long>
+  </Radar>
+  <Radar Name="ADSC2227A" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>6.0000</Lat>
+    <Long>136.0000</Long>
+  </Radar>
+  <Radar Name="ADSC2227B" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>16.0000</Lat>
+    <Long>136.0000</Long>
+  </Radar>
+  <Radar Name="ADSC2227C" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>26.0000</Lat>
+    <Long>136.0000</Long>
+  </Radar>
+  <Radar Name="ADSC2317A" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>8.0000</Lat>
+    <Long>-136.0000</Long>
+  </Radar>
+  <Radar Name="ADSC2317B" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>18.0000</Lat>
+    <Long>-136.0000</Long>
+  </Radar>
+  <Radar Name="ADSC2317C" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>28.0000</Lat>
+    <Long>-136.0000</Long>
+  </Radar>
+    <Radar Name="ADSC2317D" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>38.0000</Lat>
+    <Long>-136.0000</Long>
+  </Radar>
+    <Radar Name="ADSC2317E" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>48.0000</Lat>
+    <Long>-136.0000</Long>
+  </Radar>
+    <Radar Name="ADSC2317F" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>58.0000</Lat>
+    <Long>-136.0000</Long>
+  </Radar>
+  <Radar Name="ADSC2318A" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>8.0000</Lat>
+    <Long>-146.0000</Long>
+  </Radar>
+  <Radar Name="ADSC2318B" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>18.0000</Lat>
+    <Long>-146.0000</Long>
+  </Radar>
+  <Radar Name="ADSC2318C" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>28.0000</Lat>
+    <Long>-146.0000</Long>
+  </Radar>
+    <Radar Name="ADSC2318D" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>38.0000</Lat>
+    <Long>-146.0000</Long>
+  </Radar>
+    <Radar Name="ADSC2318E" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>48.0000</Lat>
+    <Long>-146.0000</Long>
+  </Radar>
+    <Radar Name="ADSC2318F" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>58.0000</Lat>
+    <Long>-146.0000</Long>
+  </Radar>
+  <Radar Name="ADSC2319A" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>8.0000</Lat>
+    <Long>-156.0000</Long>
+  </Radar>
+  <Radar Name="ADSC2319B" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>18.0000</Lat>
+    <Long>-156.0000</Long>
+  </Radar>
+  <Radar Name="ADSC2319C" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>28.0000</Lat>
+    <Long>-156.0000</Long>
+  </Radar>
+    <Radar Name="ADSC2319D" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>38.0000</Lat>
+    <Long>-156.0000</Long>
+  </Radar>
+    <Radar Name="ADSC2319E" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>48.0000</Lat>
+    <Long>-156.0000</Long>
+  </Radar>
+    <Radar Name="ADSC2319F" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>58.0000</Lat>
+    <Long>-156.0000</Long>
+  </Radar>
+    <Radar Name="ADSC2319G" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>55.0000</Lat>
+    <Long>-156.0000</Long>
+  </Radar>
+  <Radar Name="ADSC2320A" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>8.0000</Lat>
+    <Long>-166.0000</Long>
+  </Radar>
+  <Radar Name="ADSC2320B" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>18.0000</Lat>
+    <Long>-166.0000</Long>
+  </Radar>
+  <Radar Name="ADSC2320C" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>28.0000</Lat>
+    <Long>-166.0000</Long>
+  </Radar>
+  <Radar Name="ADSC2320D" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>38.0000</Lat>
+    <Long>-166.0000</Long>
+  </Radar>
+  <Radar Name="ADSC2320E" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>48.0000</Lat>
+    <Long>-166.0000</Long>
+  </Radar>
+    <Radar Name="ADSC2320F" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>58.0000</Lat>
+    <Long>-166.0000</Long>
+  </Radar>
+  <Radar Name="ADSC2321A" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>8.0000</Lat>
+    <Long>-173.0000</Long>
+  </Radar>
+  <Radar Name="ADSC2321B" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>18.0000</Lat>
+    <Long>-173.0000</Long>
+  </Radar>
+  <Radar Name="ADSC2321C" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>28.0000</Lat>
+    <Long>-173.0000</Long>
+  </Radar>
+  <Radar Name="ADSC2321C" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>38.0000</Lat>
+    <Long>-173.0000</Long>
+  </Radar>
+  <Radar Name="ADSC2321D" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>48.0000</Lat>
+    <Long>-173.0000</Long>
+  </Radar>
+  <Radar Name="ADSC2321E" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>58.0000</Lat>
+    <Long>-173.0000</Long>
+  </Radar>
+  <Radar Name="ADSC2323A" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>8.0000</Lat>
+    <Long>176.0000</Long>
+  </Radar>
+  <Radar Name="ADSC2323B" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>18.0000</Lat>
+    <Long>176.0000</Long>
+  </Radar>
+  <Radar Name="ADSC2323C" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>28.0000</Lat>
+    <Long>176.0000</Long>
+  </Radar>
+  <Radar Name="ADSC2323E" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>38.0000</Lat>
+    <Long>176.0000</Long>
+  </Radar>
+    <Radar Name="ADSC2323E" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>48.0000</Lat>
+    <Long>176.0000</Long>
+  </Radar>
+    <Radar Name="ADSC2323E" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>58.0000</Lat>
+    <Long>176.0000</Long>
+  </Radar>
+  <Radar Name="ADSC2324A" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>8.0000</Lat>
+    <Long>166.0000</Long>
+  </Radar>
+  <Radar Name="ADSC2324B" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>18.0000</Lat>
+    <Long>166.0000</Long>
+  </Radar>
+  <Radar Name="ADSC2324C" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>28.0000</Lat>
+    <Long>166.0000</Long>
+  </Radar>
+  <Radar Name="ADSC2324D" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>38.0000</Lat>
+    <Long>166.0000</Long>
+  </Radar>
+  <Radar Name="ADSC2324E" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>48.0000</Lat>
+    <Long>166.0000</Long>
+  </Radar>
+  <Radar Name="ADSC2324F" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>58.0000</Lat>
+    <Long>166.0000</Long>
+  </Radar>
+    <Radar Name="ADSC2325A" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>8.0000</Lat>
+    <Long>156.0000</Long>
+  </Radar>
+  <Radar Name="ADSC2325B" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>18.0000</Lat>
+    <Long>156.0000</Long>
+  </Radar>
+  <Radar Name="ADSC2325C" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>28.0000</Lat>
+    <Long>156.0000</Long>
+  </Radar>
+  <Radar Name="ADSC2326A" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>8.0000</Lat>
+    <Long>146.0000</Long>
+  </Radar>
+  <Radar Name="ADSC2326B" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>18.0000</Lat>
+    <Long>146.0000</Long>
+  </Radar>
+  <Radar Name="ADSC2326C" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>28.0000</Lat>
+    <Long>146.0000</Long>
+  </Radar>
+  <Radar Name="ADSC2327A" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>8.0000</Lat>
+    <Long>136.0000</Long>
+  </Radar>
+  <Radar Name="ADSC2327B" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>18.0000</Lat>
+    <Long>136.0000</Long>
+  </Radar>
+  <Radar Name="ADSC2327C" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>28.0000</Lat>
+    <Long>136.0000</Long>
+  </Radar>
+  <Radar Name="ADSC3017A" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>0.0000</Lat>
+    <Long>-138.0000</Long>
+  </Radar>
+  <Radar Name="ADSC3017B" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>10.0000</Lat>
+    <Long>-138.0000</Long>
+  </Radar>
+  <Radar Name="ADSC3017C" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>20.0000</Lat>
+    <Long>-138.0000</Long>
+  </Radar>
+    <Radar Name="ADSC3017D" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>30.0000</Lat>
+    <Long>-138.0000</Long>
+  </Radar>
+    <Radar Name="ADSC3017E" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>40.0000</Lat>
+    <Long>-138.0000</Long>
+  </Radar>
+    <Radar Name="ADSC3017F" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>50.0000</Lat>
+    <Long>-138.0000</Long>
+  </Radar>
+  <Radar Name="ADSC3018A" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>0.0000</Lat>
+    <Long>-148.0000</Long>
+  </Radar>
+  <Radar Name="ADSC3018B" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>10.0000</Lat>
+    <Long>-148.0000</Long>
+  </Radar>
+  <Radar Name="ADSC3018C" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>20.0000</Lat>
+    <Long>-148.0000</Long>
+  </Radar>
+    <Radar Name="ADSC3018D" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>30.0000</Lat>
+    <Long>-148.0000</Long>
+  </Radar>
+    <Radar Name="ADSC3018E" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>40.0000</Lat>
+    <Long>-148.0000</Long>
+  </Radar>
+    <Radar Name="ADSC3018F" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>50.0000</Lat>
+    <Long>-148.0000</Long>
+  </Radar>
+  <Radar Name="ADSC3019A" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>0.0000</Lat>
+    <Long>-158.0000</Long>
+  </Radar>
+  <Radar Name="ADSC3019B" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>10.0000</Lat>
+    <Long>-158.0000</Long>
+  </Radar>
+  <Radar Name="ADSC3019C" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>20.0000</Lat>
+    <Long>-158.0000</Long>
+  </Radar>
+    <Radar Name="ADSC3019D" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>30.0000</Lat>
+    <Long>-158.0000</Long>
+  </Radar>
+    <Radar Name="ADSC3019E" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>40.0000</Lat>
+    <Long>-158.0000</Long>
+  </Radar>
+    <Radar Name="ADSC3019F" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>50.0000</Lat>
+    <Long>-158.0000</Long>
+  </Radar>
+    <Radar Name="ADSC3019G" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>55.0000</Lat>
+    <Long>-158.0000</Long>
+  </Radar>
+  <Radar Name="ADSC3020A" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>0.0000</Lat>
+    <Long>-168.0000</Long>
+  </Radar>
+  <Radar Name="ADSC3020B" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>10.0000</Lat>
+    <Long>-168.0000</Long>
+  </Radar>
+  <Radar Name="ADSC3020C" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>20.0000</Lat>
+    <Long>-168.0000</Long>
+  </Radar>
+  <Radar Name="ADSC3020D" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>30.0000</Lat>
+    <Long>-168.0000</Long>
+  </Radar>
+  <Radar Name="ADSC3020E" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>40.0000</Lat>
+    <Long>-168.0000</Long>
+  </Radar>
+    <Radar Name="ADSC3020F" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>50.0000</Lat>
+    <Long>-168.0000</Long>
+  </Radar>
+  <Radar Name="ADSC3021A" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>0.0000</Lat>
+    <Long>-178.0000</Long>
+  </Radar>
+  <Radar Name="ADSC3021B" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>10.0000</Lat>
+    <Long>-178.0000</Long>
+  </Radar>
+  <Radar Name="ADSC3021C" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>20.0000</Lat>
+    <Long>-178.0000</Long>
+  </Radar>
+  <Radar Name="ADSC3021C" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>30.0000</Lat>
+    <Long>-178.0000</Long>
+  </Radar>
+  <Radar Name="ADSC3021D" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>40.0000</Lat>
+    <Long>-178.0000</Long>
+  </Radar>
+  <Radar Name="ADSC3021E" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>50.0000</Lat>
+    <Long>-178.0000</Long>
+  </Radar>
+  <Radar Name="ADSC3023A" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>0.0000</Lat>
+    <Long>178.0000</Long>
+  </Radar>
+  <Radar Name="ADSC3023B" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>10.0000</Lat>
+    <Long>178.0000</Long>
+  </Radar>
+  <Radar Name="ADSC3023C" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>20.0000</Lat>
+    <Long>178.0000</Long>
+  </Radar>
+  <Radar Name="ADSC3023E" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>30.0000</Lat>
+    <Long>178.0000</Long>
+  </Radar>
+    <Radar Name="ADSC3023E" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>40.0000</Lat>
+    <Long>178.0000</Long>
+  </Radar>
+    <Radar Name="ADSC3023E" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>50.0000</Lat>
+    <Long>178.0000</Long>
+  </Radar>
+  <Radar Name="ADSC3024A" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>0.0000</Lat>
+    <Long>168.0000</Long>
+  </Radar>
+  <Radar Name="ADSC3024B" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>10.0000</Lat>
+    <Long>168.0000</Long>
+  </Radar>
+  <Radar Name="ADSC3024C" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>20.0000</Lat>
+    <Long>168.0000</Long>
+  </Radar>
+  <Radar Name="ADSC3024D" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>30.0000</Lat>
+    <Long>168.0000</Long>
+  </Radar>
+  <Radar Name="ADSC3024E" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>40.0000</Lat>
+    <Long>168.0000</Long>
+  </Radar>
+  <Radar Name="ADSC3024F" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>50.0000</Lat>
+    <Long>168.0000</Long>
+  </Radar>
+    <Radar Name="ADSC3025A" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>0.0000</Lat>
+    <Long>158.0000</Long>
+  </Radar>
+  <Radar Name="ADSC3025B" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>10.0000</Lat>
+    <Long>158.0000</Long>
+  </Radar>
+  <Radar Name="ADSC3025C" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>20.0000</Lat>
+    <Long>158.0000</Long>
+  </Radar>
+  <Radar Name="ADSC3026A" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>0.0000</Lat>
+    <Long>148.0000</Long>
+  </Radar>
+  <Radar Name="ADSC3026B" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>10.0000</Lat>
+    <Long>148.0000</Long>
+  </Radar>
+  <Radar Name="ADSC3026C" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>20.0000</Lat>
+    <Long>148.0000</Long>
+  </Radar>
+  <Radar Name="ADSC3027A" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>0.0000</Lat>
+    <Long>138.0000</Long>
+  </Radar>
+  <Radar Name="ADSC3027B" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>10.0000</Lat>
+    <Long>138.0000</Long>
+  </Radar>
+  <Radar Name="ADSC3027C" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>20.0000</Lat>
+    <Long>138.0000</Long>
+  </Radar>
+  <Radar Name="ADSC3117A" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>3.0000</Lat>
+    <Long>-138.0000</Long>
+  </Radar>
+  <Radar Name="ADSC3117B" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>13.0000</Lat>
+    <Long>-138.0000</Long>
+  </Radar>
+  <Radar Name="ADSC3117C" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>23.0000</Lat>
+    <Long>-138.0000</Long>
+  </Radar>
+    <Radar Name="ADSC3117D" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>33.0000</Lat>
+    <Long>-138.0000</Long>
+  </Radar>
+    <Radar Name="ADSC3117E" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>43.0000</Lat>
+    <Long>-138.0000</Long>
+  </Radar>
+    <Radar Name="ADSC3117F" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>53.0000</Lat>
+    <Long>-138.0000</Long>
+  </Radar>
+  <Radar Name="ADSC3118A" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>3.0000</Lat>
+    <Long>-148.0000</Long>
+  </Radar>
+  <Radar Name="ADSC3118B" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>13.0000</Lat>
+    <Long>-148.0000</Long>
+  </Radar>
+  <Radar Name="ADSC3118C" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>23.0000</Lat>
+    <Long>-148.0000</Long>
+  </Radar>
+    <Radar Name="ADSC3118D" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>33.0000</Lat>
+    <Long>-148.0000</Long>
+  </Radar>
+    <Radar Name="ADSC3118E" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>43.0000</Lat>
+    <Long>-148.0000</Long>
+  </Radar>
+    <Radar Name="ADSC3118F" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>53.0000</Lat>
+    <Long>-148.0000</Long>
+  </Radar>
+  <Radar Name="ADSC3119A" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>3.0000</Lat>
+    <Long>-158.0000</Long>
+  </Radar>
+  <Radar Name="ADSC3119B" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>13.0000</Lat>
+    <Long>-158.0000</Long>
+  </Radar>
+  <Radar Name="ADSC3119C" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>23.0000</Lat>
+    <Long>-158.0000</Long>
+  </Radar>
+    <Radar Name="ADSC3119D" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>33.0000</Lat>
+    <Long>-158.0000</Long>
+  </Radar>
+    <Radar Name="ADSC3119E" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>43.0000</Lat>
+    <Long>-158.0000</Long>
+  </Radar>
+    <Radar Name="ADSC3119F" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>53.0000</Lat>
+    <Long>-158.0000</Long>
+  </Radar>
+    <Radar Name="ADSC3119G" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>55.0000</Lat>
+    <Long>-158.0000</Long>
+  </Radar>
+  <Radar Name="ADSC3120A" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>3.0000</Lat>
+    <Long>-168.0000</Long>
+  </Radar>
+  <Radar Name="ADSC3120B" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>13.0000</Lat>
+    <Long>-168.0000</Long>
+  </Radar>
+  <Radar Name="ADSC3120C" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>23.0000</Lat>
+    <Long>-168.0000</Long>
+  </Radar>
+  <Radar Name="ADSC3120D" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>33.0000</Lat>
+    <Long>-168.0000</Long>
+  </Radar>
+  <Radar Name="ADSC3120E" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>43.0000</Lat>
+    <Long>-168.0000</Long>
+  </Radar>
+    <Radar Name="ADSC3120F" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>53.0000</Lat>
+    <Long>-168.0000</Long>
+  </Radar>
+  <Radar Name="ADSC3121A" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>3.0000</Lat>
+    <Long>-178.0000</Long>
+  </Radar>
+  <Radar Name="ADSC3121B" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>13.0000</Lat>
+    <Long>-178.0000</Long>
+  </Radar>
+  <Radar Name="ADSC3121C" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>23.0000</Lat>
+    <Long>-178.0000</Long>
+  </Radar>
+  <Radar Name="ADSC3121C" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>33.0000</Lat>
+    <Long>-178.0000</Long>
+  </Radar>
+  <Radar Name="ADSC3121D" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>43.0000</Lat>
+    <Long>-178.0000</Long>
+  </Radar>
+  <Radar Name="ADSC3121E" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>53.0000</Lat>
+    <Long>-178.0000</Long>
+  </Radar>
+  <Radar Name="ADSC3123A" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>3.0000</Lat>
+    <Long>178.0000</Long>
+  </Radar>
+  <Radar Name="ADSC3123B" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>13.0000</Lat>
+    <Long>178.0000</Long>
+  </Radar>
+  <Radar Name="ADSC3123C" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>23.0000</Lat>
+    <Long>178.0000</Long>
+  </Radar>
+  <Radar Name="ADSC3123E" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>33.0000</Lat>
+    <Long>178.0000</Long>
+  </Radar>
+    <Radar Name="ADSC3123E" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>43.0000</Lat>
+    <Long>178.0000</Long>
+  </Radar>
+    <Radar Name="ADSC3123E" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>53.0000</Lat>
+    <Long>178.0000</Long>
+  </Radar>
+  <Radar Name="ADSC3124A" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>3.0000</Lat>
+    <Long>168.0000</Long>
+  </Radar>
+  <Radar Name="ADSC3124B" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>13.0000</Lat>
+    <Long>168.0000</Long>
+  </Radar>
+  <Radar Name="ADSC3124C" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>23.0000</Lat>
+    <Long>168.0000</Long>
+  </Radar>
+  <Radar Name="ADSC3124D" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>33.0000</Lat>
+    <Long>168.0000</Long>
+  </Radar>
+  <Radar Name="ADSC3124E" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>43.0000</Lat>
+    <Long>168.0000</Long>
+  </Radar>
+  <Radar Name="ADSC3124F" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>53.0000</Lat>
+    <Long>168.0000</Long>
+  </Radar>
+    <Radar Name="ADSC3125A" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>3.0000</Lat>
+    <Long>158.0000</Long>
+  </Radar>
+  <Radar Name="ADSC3125B" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>13.0000</Lat>
+    <Long>158.0000</Long>
+  </Radar>
+  <Radar Name="ADSC3125C" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>23.0000</Lat>
+    <Long>158.0000</Long>
+  </Radar>
+  <Radar Name="ADSC3126A" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>3.0000</Lat>
+    <Long>148.0000</Long>
+  </Radar>
+  <Radar Name="ADSC3126B" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>13.0000</Lat>
+    <Long>148.0000</Long>
+  </Radar>
+  <Radar Name="ADSC3126C" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>23.0000</Lat>
+    <Long>148.0000</Long>
+  </Radar>
+  <Radar Name="ADSC3127A" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>3.0000</Lat>
+    <Long>138.0000</Long>
+  </Radar>
+  <Radar Name="ADSC3127B" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>13.0000</Lat>
+    <Long>138.0000</Long>
+  </Radar>
+  <Radar Name="ADSC3127C" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>23.0000</Lat>
+    <Long>138.0000</Long>
+  </Radar>
+  <Radar Name="ADSC3217A" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>6.0000</Lat>
+    <Long>-138.0000</Long>
+  </Radar>
+  <Radar Name="ADSC3217B" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>16.0000</Lat>
+    <Long>-138.0000</Long>
+  </Radar>
+  <Radar Name="ADSC3217C" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>26.0000</Lat>
+    <Long>-138.0000</Long>
+  </Radar>
+    <Radar Name="ADSC3217D" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>36.0000</Lat>
+    <Long>-138.0000</Long>
+  </Radar>
+    <Radar Name="ADSC3217E" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>46.0000</Lat>
+    <Long>-138.0000</Long>
+  </Radar>
+    <Radar Name="ADSC3217F" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>56.0000</Lat>
+    <Long>-138.0000</Long>
+  </Radar>
+  <Radar Name="ADSC3218A" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>6.0000</Lat>
+    <Long>-148.0000</Long>
+  </Radar>
+  <Radar Name="ADSC3218B" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>16.0000</Lat>
+    <Long>-148.0000</Long>
+  </Radar>
+  <Radar Name="ADSC3218C" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>26.0000</Lat>
+    <Long>-148.0000</Long>
+  </Radar>
+    <Radar Name="ADSC3218D" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>36.0000</Lat>
+    <Long>-148.0000</Long>
+  </Radar>
+    <Radar Name="ADSC3218E" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>46.0000</Lat>
+    <Long>-148.0000</Long>
+  </Radar>
+    <Radar Name="ADSC3218F" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>56.0000</Lat>
+    <Long>-148.0000</Long>
+  </Radar>
+  <Radar Name="ADSC3219A" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>6.0000</Lat>
+    <Long>-158.0000</Long>
+  </Radar>
+  <Radar Name="ADSC3219B" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>16.0000</Lat>
+    <Long>-158.0000</Long>
+  </Radar>
+  <Radar Name="ADSC3219C" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>26.0000</Lat>
+    <Long>-158.0000</Long>
+  </Radar>
+    <Radar Name="ADSC3219D" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>36.0000</Lat>
+    <Long>-158.0000</Long>
+  </Radar>
+    <Radar Name="ADSC3219E" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>46.0000</Lat>
+    <Long>-158.0000</Long>
+  </Radar>
+    <Radar Name="ADSC3219F" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>56.0000</Lat>
+    <Long>-158.0000</Long>
+  </Radar>
+    <Radar Name="ADSC3219G" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>55.0000</Lat>
+    <Long>-158.0000</Long>
+  </Radar>
+  <Radar Name="ADSC3220A" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>6.0000</Lat>
+    <Long>-168.0000</Long>
+  </Radar>
+  <Radar Name="ADSC3220B" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>16.0000</Lat>
+    <Long>-168.0000</Long>
+  </Radar>
+  <Radar Name="ADSC3220C" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>26.0000</Lat>
+    <Long>-168.0000</Long>
+  </Radar>
+  <Radar Name="ADSC3220D" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>36.0000</Lat>
+    <Long>-168.0000</Long>
+  </Radar>
+  <Radar Name="ADSC3220E" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>46.0000</Lat>
+    <Long>-168.0000</Long>
+  </Radar>
+    <Radar Name="ADSC3220F" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>56.0000</Lat>
+    <Long>-168.0000</Long>
+  </Radar>
+  <Radar Name="ADSC3221A" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>6.0000</Lat>
+    <Long>-178.0000</Long>
+  </Radar>
+  <Radar Name="ADSC3221B" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>16.0000</Lat>
+    <Long>-178.0000</Long>
+  </Radar>
+  <Radar Name="ADSC3221C" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>26.0000</Lat>
+    <Long>-178.0000</Long>
+  </Radar>
+  <Radar Name="ADSC3221C" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>36.0000</Lat>
+    <Long>-178.0000</Long>
+  </Radar>
+  <Radar Name="ADSC3221D" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>46.0000</Lat>
+    <Long>-178.0000</Long>
+  </Radar>
+  <Radar Name="ADSC3221E" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>56.0000</Lat>
+    <Long>-178.0000</Long>
+  </Radar>
+  <Radar Name="ADSC3223A" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>6.0000</Lat>
+    <Long>178.0000</Long>
+  </Radar>
+  <Radar Name="ADSC3223B" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>16.0000</Lat>
+    <Long>178.0000</Long>
+  </Radar>
+  <Radar Name="ADSC3223C" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>26.0000</Lat>
+    <Long>178.0000</Long>
+  </Radar>
+  <Radar Name="ADSC3223E" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>36.0000</Lat>
+    <Long>178.0000</Long>
+  </Radar>
+    <Radar Name="ADSC3223E" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>46.0000</Lat>
+    <Long>178.0000</Long>
+  </Radar>
+    <Radar Name="ADSC3223E" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>56.0000</Lat>
+    <Long>178.0000</Long>
+  </Radar>
+  <Radar Name="ADSC3224A" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>6.0000</Lat>
+    <Long>168.0000</Long>
+  </Radar>
+  <Radar Name="ADSC3224B" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>16.0000</Lat>
+    <Long>168.0000</Long>
+  </Radar>
+  <Radar Name="ADSC3224C" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>26.0000</Lat>
+    <Long>168.0000</Long>
+  </Radar>
+  <Radar Name="ADSC3224D" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>36.0000</Lat>
+    <Long>168.0000</Long>
+  </Radar>
+  <Radar Name="ADSC3224E" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>46.0000</Lat>
+    <Long>168.0000</Long>
+  </Radar>
+  <Radar Name="ADSC3224F" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>56.0000</Lat>
+    <Long>168.0000</Long>
+  </Radar>
+    <Radar Name="ADSC3225A" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>6.0000</Lat>
+    <Long>158.0000</Long>
+  </Radar>
+  <Radar Name="ADSC3225B" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>16.0000</Lat>
+    <Long>158.0000</Long>
+  </Radar>
+  <Radar Name="ADSC3225C" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>26.0000</Lat>
+    <Long>158.0000</Long>
+  </Radar>
+  <Radar Name="ADSC3226A" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>6.0000</Lat>
+    <Long>148.0000</Long>
+  </Radar>
+  <Radar Name="ADSC3226B" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>16.0000</Lat>
+    <Long>148.0000</Long>
+  </Radar>
+  <Radar Name="ADSC3226C" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>26.0000</Lat>
+    <Long>148.0000</Long>
+  </Radar>
+  <Radar Name="ADSC3227A" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>6.0000</Lat>
+    <Long>138.0000</Long>
+  </Radar>
+  <Radar Name="ADSC3227B" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>16.0000</Lat>
+    <Long>138.0000</Long>
+  </Radar>
+  <Radar Name="ADSC3227C" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>26.0000</Lat>
+    <Long>138.0000</Long>
+  </Radar>
+  <Radar Name="ADSC3317A" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>8.0000</Lat>
+    <Long>-138.0000</Long>
+  </Radar>
+  <Radar Name="ADSC3317B" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>18.0000</Lat>
+    <Long>-138.0000</Long>
+  </Radar>
+  <Radar Name="ADSC3317C" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>28.0000</Lat>
+    <Long>-138.0000</Long>
+  </Radar>
+    <Radar Name="ADSC3317D" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>38.0000</Lat>
+    <Long>-138.0000</Long>
+  </Radar>
+    <Radar Name="ADSC3317E" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>48.0000</Lat>
+    <Long>-138.0000</Long>
+  </Radar>
+    <Radar Name="ADSC3317F" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>58.0000</Lat>
+    <Long>-138.0000</Long>
+  </Radar>
+  <Radar Name="ADSC3318A" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>8.0000</Lat>
+    <Long>-148.0000</Long>
+  </Radar>
+  <Radar Name="ADSC3318B" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>18.0000</Lat>
+    <Long>-148.0000</Long>
+  </Radar>
+  <Radar Name="ADSC3318C" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>28.0000</Lat>
+    <Long>-148.0000</Long>
+  </Radar>
+    <Radar Name="ADSC3318D" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>38.0000</Lat>
+    <Long>-148.0000</Long>
+  </Radar>
+    <Radar Name="ADSC3318E" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>48.0000</Lat>
+    <Long>-148.0000</Long>
+  </Radar>
+    <Radar Name="ADSC3318F" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>58.0000</Lat>
+    <Long>-148.0000</Long>
+  </Radar>
+  <Radar Name="ADSC3319A" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>8.0000</Lat>
+    <Long>-158.0000</Long>
+  </Radar>
+  <Radar Name="ADSC3319B" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>18.0000</Lat>
+    <Long>-158.0000</Long>
+  </Radar>
+  <Radar Name="ADSC3319C" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>28.0000</Lat>
+    <Long>-158.0000</Long>
+  </Radar>
+    <Radar Name="ADSC3319D" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>38.0000</Lat>
+    <Long>-158.0000</Long>
+  </Radar>
+    <Radar Name="ADSC3319E" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>48.0000</Lat>
+    <Long>-158.0000</Long>
+  </Radar>
+    <Radar Name="ADSC3319F" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>58.0000</Lat>
+    <Long>-158.0000</Long>
+  </Radar>
+    <Radar Name="ADSC3319G" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>55.0000</Lat>
+    <Long>-158.0000</Long>
+  </Radar>
+  <Radar Name="ADSC3320A" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>8.0000</Lat>
+    <Long>-168.0000</Long>
+  </Radar>
+  <Radar Name="ADSC3320B" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>18.0000</Lat>
+    <Long>-168.0000</Long>
+  </Radar>
+  <Radar Name="ADSC3320C" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>28.0000</Lat>
+    <Long>-168.0000</Long>
+  </Radar>
+  <Radar Name="ADSC3320D" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>38.0000</Lat>
+    <Long>-168.0000</Long>
+  </Radar>
+  <Radar Name="ADSC3320E" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>48.0000</Lat>
+    <Long>-168.0000</Long>
+  </Radar>
+    <Radar Name="ADSC3320F" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>58.0000</Lat>
+    <Long>-168.0000</Long>
+  </Radar>
+  <Radar Name="ADSC3321A" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>8.0000</Lat>
+    <Long>-178.0000</Long>
+  </Radar>
+  <Radar Name="ADSC3321B" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>18.0000</Lat>
+    <Long>-178.0000</Long>
+  </Radar>
+  <Radar Name="ADSC3321C" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>28.0000</Lat>
+    <Long>-178.0000</Long>
+  </Radar>
+  <Radar Name="ADSC3321C" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>38.0000</Lat>
+    <Long>-178.0000</Long>
+  </Radar>
+  <Radar Name="ADSC3321D" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>48.0000</Lat>
+    <Long>-178.0000</Long>
+  </Radar>
+  <Radar Name="ADSC3321E" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>58.0000</Lat>
+    <Long>-178.0000</Long>
+  </Radar>
+  <Radar Name="ADSC3323A" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>8.0000</Lat>
+    <Long>178.0000</Long>
+  </Radar>
+  <Radar Name="ADSC3323B" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>18.0000</Lat>
+    <Long>178.0000</Long>
+  </Radar>
+  <Radar Name="ADSC3323C" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>28.0000</Lat>
+    <Long>178.0000</Long>
+  </Radar>
+  <Radar Name="ADSC3323E" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>38.0000</Lat>
+    <Long>178.0000</Long>
+  </Radar>
+    <Radar Name="ADSC3323E" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>48.0000</Lat>
+    <Long>178.0000</Long>
+  </Radar>
+    <Radar Name="ADSC3323E" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>58.0000</Lat>
+    <Long>178.0000</Long>
+  </Radar>
+  <Radar Name="ADSC3324A" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>8.0000</Lat>
+    <Long>168.0000</Long>
+  </Radar>
+  <Radar Name="ADSC3324B" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>18.0000</Lat>
+    <Long>168.0000</Long>
+  </Radar>
+  <Radar Name="ADSC3324C" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>28.0000</Lat>
+    <Long>168.0000</Long>
+  </Radar>
+  <Radar Name="ADSC3324D" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>38.0000</Lat>
+    <Long>168.0000</Long>
+  </Radar>
+  <Radar Name="ADSC3324E" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>48.0000</Lat>
+    <Long>168.0000</Long>
+  </Radar>
+  <Radar Name="ADSC3324F" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>58.0000</Lat>
+    <Long>168.0000</Long>
+  </Radar>
+    <Radar Name="ADSC3325A" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>8.0000</Lat>
+    <Long>158.0000</Long>
+  </Radar>
+  <Radar Name="ADSC3325B" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>18.0000</Lat>
+    <Long>158.0000</Long>
+  </Radar>
+  <Radar Name="ADSC3325C" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>28.0000</Lat>
+    <Long>158.0000</Long>
+  </Radar>
+  <Radar Name="ADSC3326A" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>8.0000</Lat>
+    <Long>148.0000</Long>
+  </Radar>
+  <Radar Name="ADSC3326B" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>18.0000</Lat>
+    <Long>148.0000</Long>
+  </Radar>
+  <Radar Name="ADSC3326C" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>28.0000</Lat>
+    <Long>148.0000</Long>
+  </Radar>
+  <Radar Name="ADSC3327A" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>8.0000</Lat>
+    <Long>138.0000</Long>
+  </Radar>
+  <Radar Name="ADSC3327B" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>18.0000</Lat>
+    <Long>138.0000</Long>
+  </Radar>
+  <Radar Name="ADSC3327C" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>28.0000</Lat>
+    <Long>138.0000</Long>
+  </Radar>
+  <Radar Name="ADSCE1" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>0.0000</Lat>
+    <Long>-96.0000</Long>
+  </Radar>
+    <Radar Name="ADSCE2" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>0.0000</Lat>
+    <Long>-100.0000</Long>
+  </Radar>
+      <Radar Name="ADSCE3" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>0.0000</Lat>
+    <Long>-103.0000</Long>
+  </Radar>
+      <Radar Name="ADSCE4" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>0.0000</Lat>
+    <Long>-106.0000</Long>
+    </Radar>
+      <Radar Name="ADSCE5" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>0.0000</Lat>
+    <Long>-110.0000</Long>
+    </Radar>
+      <Radar Name="ADSCE6" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>0.0000</Lat>
+    <Long>-113.0000</Long>
+    </Radar>
+        <Radar Name="ADSCE7" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>0.0000</Lat>
+    <Long>-116.0000</Long>
+    </Radar>
+      <Radar Name="ADSCE8" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>0.0000</Lat>
+    <Long>-120.0000</Long>
+    </Radar>
+      <Radar Name="ADSCE9" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>0.0000</Lat>
+    <Long>-123.0000</Long>
+    </Radar>
+      <Radar Name="ADSCE10" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>0.0000</Lat>
+    <Long>-126.0000</Long>
+    </Radar>
+  <Radar Name="ADSCE11" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>3.0000</Lat>
+    <Long>-96.0000</Long>
+  </Radar>
+    <Radar Name="ADSCE12" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>3.0000</Lat>
+    <Long>-100.0000</Long>
+  </Radar>
+      <Radar Name="ADSCE13" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>3.0000</Lat>
+    <Long>-103.0000</Long>
+  </Radar>
+      <Radar Name="ADSCE14" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>3.0000</Lat>
+    <Long>-106.0000</Long>
+    </Radar>
+      <Radar Name="ADSCE15" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>3.0000</Lat>
+    <Long>-110.0000</Long>
+    </Radar>
+      <Radar Name="ADSCE16" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>3.0000</Lat>
+    <Long>-113.0000</Long>
+    </Radar>
+        <Radar Name="ADSCE17" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>3.0000</Lat>
+    <Long>-116.0000</Long>
+    </Radar>
+      <Radar Name="ADSCE18" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>3.0000</Lat>
+    <Long>-120.0000</Long>
+    </Radar>
+      <Radar Name="ADSCE19" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>3.0000</Lat>
+    <Long>-123.0000</Long>
+    </Radar>
+      <Radar Name="ADSCE110" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>3.0000</Lat>
+    <Long>-126.0000</Long>
+    </Radar>
+  <Radar Name="ADSCE21" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>6.0000</Lat>
+    <Long>-96.0000</Long>
+  </Radar>
+    <Radar Name="ADSCE22" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>6.0000</Lat>
+    <Long>-100.0000</Long>
+  </Radar>
+      <Radar Name="ADSCE23" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>6.0000</Lat>
+    <Long>-103.0000</Long>
+  </Radar>
+      <Radar Name="ADSCE24" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>6.0000</Lat>
+    <Long>-106.0000</Long>
+    </Radar>
+      <Radar Name="ADSCE25" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>6.0000</Lat>
+    <Long>-110.0000</Long>
+    </Radar>
+      <Radar Name="ADSCE26" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>6.0000</Lat>
+    <Long>-113.0000</Long>
+    </Radar>
+        <Radar Name="ADSCE27" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>6.0000</Lat>
+    <Long>-116.0000</Long>
+    </Radar>
+      <Radar Name="ADSCE28" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>6.0000</Lat>
+    <Long>-120.0000</Long>
+    </Radar>
+      <Radar Name="ADSCE29" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>6.0000</Lat>
+    <Long>-123.0000</Long>
+    </Radar>
+      <Radar Name="ADSCE210" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>6.0000</Lat>
+    <Long>-126.0000</Long>
+    </Radar>
+  <Radar Name="ADSCE31" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>10.0000</Lat>
+    <Long>-96.0000</Long>
+  </Radar>
+    <Radar Name="ADSCE32" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>10.0000</Lat>
+    <Long>-100.0000</Long>
+  </Radar>
+      <Radar Name="ADSCE33" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>10.0000</Lat>
+    <Long>-103.0000</Long>
+  </Radar>
+      <Radar Name="ADSCE34" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>10.0000</Lat>
+    <Long>-106.0000</Long>
+    </Radar>
+      <Radar Name="ADSCE35" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>10.0000</Lat>
+    <Long>-110.0000</Long>
+    </Radar>
+      <Radar Name="ADSCE36" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>10.0000</Lat>
+    <Long>-113.0000</Long>
+    </Radar>
+        <Radar Name="ADSCE37" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>10.0000</Lat>
+    <Long>-116.0000</Long>
+    </Radar>
+      <Radar Name="ADSCE38" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>10.0000</Lat>
+    <Long>-120.0000</Long>
+    </Radar>
+      <Radar Name="ADSCE39" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>10.0000</Lat>
+    <Long>-123.0000</Long>
+    </Radar>
+      <Radar Name="ADSCE310" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>10.0000</Lat>
+    <Long>-126.0000</Long>
+    </Radar>
+      <Radar Name="ADSCE43" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>13.0000</Lat>
+    <Long>-103.0000</Long>
+  </Radar>
+      <Radar Name="ADSCE44" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>13.0000</Lat>
+    <Long>-106.0000</Long>
+    </Radar>
+      <Radar Name="ADSCE45" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>13.0000</Lat>
+    <Long>-110.0000</Long>
+    </Radar>
+      <Radar Name="ADSCE46" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>13.0000</Lat>
+    <Long>-113.0000</Long>
+    </Radar>
+        <Radar Name="ADSCE47" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>13.0000</Lat>
+    <Long>-116.0000</Long>
+    </Radar>
+      <Radar Name="ADSCE48" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>13.0000</Lat>
+    <Long>-120.0000</Long>
+    </Radar>
+      <Radar Name="ADSCE49" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>13.0000</Lat>
+    <Long>-123.0000</Long>
+    </Radar>
+      <Radar Name="ADSCE410" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>13.0000</Lat>
+    <Long>-126.0000</Long>
+    </Radar>
+      <Radar Name="ADSCE54" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>16.0000</Lat>
+    <Long>-106.0000</Long>
+    </Radar>
+      <Radar Name="ADSCE55" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>16.0000</Lat>
+    <Long>-110.0000</Long>
+    </Radar>
+      <Radar Name="ADSCE56" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>16.0000</Lat>
+    <Long>-113.0000</Long>
+    </Radar>
+        <Radar Name="ADSCE57" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>16.0000</Lat>
+    <Long>-116.0000</Long>
+    </Radar>
+      <Radar Name="ADSCE58" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>16.0000</Lat>
+    <Long>-120.0000</Long>
+    </Radar>
+      <Radar Name="ADSCE59" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>16.0000</Lat>
+    <Long>-123.0000</Long>
+    </Radar>
+      <Radar Name="ADSCE510" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>16.0000</Lat>
+    <Long>-126.0000</Long>
+    </Radar>
+      <Radar Name="ADSCE65" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>20.0000</Lat>
+    <Long>-110.0000</Long>
+    </Radar>
+      <Radar Name="ADSCE66" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>20.0000</Lat>
+    <Long>-113.0000</Long>
+    </Radar>
+        <Radar Name="ADSCE67" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>20.0000</Lat>
+    <Long>-116.0000</Long>
+    </Radar>
+      <Radar Name="ADSCE68" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>20.0000</Lat>
+    <Long>-120.0000</Long>
+    </Radar>
+      <Radar Name="ADSCE69" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>20.0000</Lat>
+    <Long>-123.0000</Long>
+    </Radar>
+      <Radar Name="ADSCE610" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>20.0000</Lat>
+    <Long>-126.0000</Long>
+    </Radar>
+      <Radar Name="ADSCE76" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>23.0000</Lat>
+    <Long>-113.0000</Long>
+    </Radar>
+        <Radar Name="ADSCE77" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>23.0000</Lat>
+    <Long>-116.0000</Long>
+    </Radar>
+      <Radar Name="ADSCE78" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>23.0000</Lat>
+    <Long>-120.0000</Long>
+    </Radar>
+      <Radar Name="ADSCE79" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>23.0000</Lat>
+    <Long>-123.0000</Long>
+    </Radar>
+      <Radar Name="ADSCE710" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>23.0000</Lat>
+    <Long>-126.0000</Long>
+    </Radar>
+        <Radar Name="ADSCE87" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>26.0000</Lat>
+    <Long>-116.0000</Long>
+    </Radar>
+      <Radar Name="ADSCE88" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>26.0000</Lat>
+    <Long>-120.0000</Long>
+    </Radar>
+      <Radar Name="ADSCE89" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>26.0000</Lat>
+    <Long>-123.0000</Long>
+    </Radar>
+      <Radar Name="ADSCE810" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>26.0000</Lat>
+    <Long>-126.0000</Long>
+    </Radar>
+      <Radar Name="ADSCE98" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>30.0000</Lat>
+    <Long>-120.0000</Long>
+    </Radar>
+      <Radar Name="ADSCE99" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>30.0000</Lat>
+    <Long>-123.0000</Long>
+    </Radar>
+      <Radar Name="ADSCE910" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>30.0000</Lat>
+    <Long>-126.0000</Long>
+    </Radar>
+      <Radar Name="ADSCE119" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>36.0000</Lat>
+    <Long>-123.0000</Long>
+    </Radar>
+      <Radar Name="ADSCE1110" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
+    <Lat>36.0000</Lat>
+    <Long>-126.0000</Long>
+    </Radar>
 </Radars>

@@ -2,10 +2,10 @@
 <Positions xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <Position Name="CWP11" Type="ASD" DefaultCenter="+270000.000-1750000.000" DefaultRange="7700">
 	<ManualVisibility>
-		<Point>+225900.000-1300000.000</Point>
-		<Point>+391400.000-1634400.000</Point>
-		<Point>+155000.000-1683200.000</Point>
-		<Point>+134800.000+1443800.000</Point>		
+		<Point>+433400.000-1713300.000</Point>
+		<Point>+231200.000-1310100.000</Point>
+		<Point>+070900.000-1675100.000</Point>
+		<Point>+131400.000+1446000.000</Point>
 	</ManualVisibility>  
     <Sectors/>
     <Maps>
@@ -24,10 +24,10 @@
   </Position>
   <Position Name="CWP5" Type="ASD" DefaultCenter="+270000.000-1750000.000" DefaultRange="7700">
 	<ManualVisibility>
-		<Point>+225900.000-1300000.000</Point>
-		<Point>+391400.000-1634400.000</Point>
-		<Point>+155000.000-1683200.000</Point>
-		<Point>+134800.000+1443800.000</Point>		
+		<Point>+433400.000-1713300.000</Point>
+		<Point>+231200.000-1310100.000</Point>
+		<Point>+070900.000-1675100.000</Point>
+		<Point>+131400.000+1446000.000</Point>
 	</ManualVisibility>  
     <Sectors>
       <Sector Name="77" />   
@@ -52,10 +52,10 @@
   </Position>  
   <Position Name="PN" Type="ASD" DefaultCenter="+390335.0711-1611727.9309" DefaultRange="4100">
 	<ManualVisibility>
-		<Point>+225900.000-1300000.000</Point>
-		<Point>+391400.000-1634400.000</Point>
-		<Point>+155000.000-1683200.000</Point>
-		<Point>+134800.000+1443800.000</Point>		
+		<Point>+433400.000-1713300.000</Point>
+		<Point>+231200.000-1310100.000</Point>
+		<Point>+070900.000-1675100.000</Point>
+		<Point>+131400.000+1446000.000</Point>
 	</ManualVisibility>  
     <Sectors>
       <Sector Name="01" />
@@ -83,10 +83,10 @@
   </Position>  
   <Position Name="PS" Type="ASD" DefaultCenter="+270000.000-1750000.000" DefaultRange="7700">
 	<ManualVisibility>
-		<Point>+225900.000-1300000.000</Point>
-		<Point>+391400.000-1634400.000</Point>
-		<Point>+155000.000-1683200.000</Point>
-		<Point>+134800.000+1443800.000</Point>		
+		<Point>+433400.000-1713300.000</Point>
+		<Point>+231200.000-1310100.000</Point>
+		<Point>+070900.000-1675100.000</Point>
+		<Point>+131400.000+1446000.000</Point>
 	</ManualVisibility>  
     <Sectors>	  
       <Sector Name="03" />	  	  
@@ -114,10 +114,10 @@
   </Position>   
   <Position Name="CWP7[OC1]" Type="ASD" DefaultCenter="+442728.740-1531610.609" DefaultRange="3000">
 	<ManualVisibility>
-		<Point>+225900.000-1300000.000</Point>
-		<Point>+391400.000-1634400.000</Point>
-		<Point>+155000.000-1683200.000</Point>
-		<Point>+134800.000+1443800.000</Point>		
+		<Point>+433400.000-1713300.000</Point>
+		<Point>+231200.000-1310100.000</Point>
+		<Point>+070900.000-1675100.000</Point>
+		<Point>+131400.000+1446000.000</Point>
 	</ManualVisibility>    
     <Sectors>
       <Sector Name="01" />
@@ -142,10 +142,10 @@
   </Position>  
   <Position Name="CWP8[OC2]" Type="ASD" DefaultCenter="+451634.535-1902108.933" DefaultRange="2400">
 	<ManualVisibility>
-		<Point>+225900.000-1300000.000</Point>
-		<Point>+391400.000-1634400.000</Point>
-		<Point>+155000.000-1683200.000</Point>
-		<Point>+134800.000+1443800.000</Point>		
+		<Point>+433400.000-1713300.000</Point>
+		<Point>+231200.000-1310100.000</Point>
+		<Point>+070900.000-1675100.000</Point>
+		<Point>+131400.000+1446000.000</Point>
 	</ManualVisibility>    
     <Sectors>
       <Sector Name="02" />
@@ -170,10 +170,10 @@
   </Position>  
   <Position Name="CWP4[OC3]" Type="ASD" DefaultCenter="+221244.704-1360859.658" DefaultRange="2600">
 	<ManualVisibility>
-		<Point>+225900.000-1300000.000</Point>
-		<Point>+391400.000-1634400.000</Point>
-		<Point>+155000.000-1683200.000</Point>
-		<Point>+134800.000+1443800.000</Point>		
+		<Point>+433400.000-1713300.000</Point>
+		<Point>+231200.000-1310100.000</Point>
+		<Point>+070900.000-1675100.000</Point>
+		<Point>+131400.000+1446000.000</Point>
 	</ManualVisibility>    
     <Sectors>
       <Sector Name="03" />
@@ -200,10 +200,10 @@
   </Position>
   <Position Name="CWP10[OC4]" Type="ASD" DefaultCenter="+294753.971-1420406.988" DefaultRange="2300">
 	<ManualVisibility>
-		<Point>+225900.000-1300000.000</Point>
-		<Point>+391400.000-1634400.000</Point>
-		<Point>+155000.000-1683200.000</Point>
-		<Point>+134800.000+1443800.000</Point>		
+		<Point>+433400.000-1713300.000</Point>
+		<Point>+231200.000-1310100.000</Point>
+		<Point>+070900.000-1675100.000</Point>
+		<Point>+131400.000+1446000.000</Point>
 	</ManualVisibility>    
     <Sectors>
       <Sector Name="04" />
@@ -228,10 +228,10 @@
   </Position>  
   <Position Name="CWP2[OC5]" Type="ASD" DefaultCenter="+111651.527+1450820.250" DefaultRange="3200">
 	<ManualVisibility>
-		<Point>+225900.000-1300000.000</Point>
-		<Point>+391400.000-1634400.000</Point>
-		<Point>+155000.000-1683200.000</Point>
-		<Point>+134800.000+1443800.000</Point>		
+		<Point>+433400.000-1713300.000</Point>
+		<Point>+231200.000-1310100.000</Point>
+		<Point>+070900.000-1675100.000</Point>
+		<Point>+131400.000+1446000.000</Point>
 	</ManualVisibility>    
     <Sectors>
       <Sector Name="05" />
@@ -260,10 +260,10 @@
   </Position>  
   <Position Name="CWP1[OC6]" Type="ASD" DefaultCenter="+163226.320+1703631.668" DefaultRange="3200">
 	<ManualVisibility>
-		<Point>+225900.000-1300000.000</Point>
-		<Point>+391400.000-1634400.000</Point>
-		<Point>+155000.000-1683200.000</Point>
-		<Point>+134800.000+1443800.000</Point>		
+		<Point>+433400.000-1713300.000</Point>
+		<Point>+231200.000-1310100.000</Point>
+		<Point>+070900.000-1675100.000</Point>
+		<Point>+131400.000+1446000.000</Point>
 	</ManualVisibility>    
     <Sectors>
       <Sector Name="06" />
@@ -292,10 +292,10 @@
   </Position>  
   <Position Name="CWP9[OC7]" Type="ASD" DefaultCenter="+403411.855-1381916.409" DefaultRange="1900">
 	<ManualVisibility>
-		<Point>+225900.000-1300000.000</Point>
-		<Point>+391400.000-1634400.000</Point>
-		<Point>+155000.000-1683200.000</Point>
-		<Point>+134800.000+1443800.000</Point>		
+		<Point>+433400.000-1713300.000</Point>
+		<Point>+231200.000-1310100.000</Point>
+		<Point>+070900.000-1675100.000</Point>
+		<Point>+131400.000+1446000.000</Point>
 	</ManualVisibility>    
     <Sectors>
       <Sector Name="07" />
@@ -319,10 +319,10 @@
   </Position>
   <Position Name="CWP3[OC9]" Type="ASD" DefaultCenter="+244531.064-1755428.271" DefaultRange="5100">
 	<ManualVisibility>
-		<Point>+225900.000-1300000.000</Point>
-		<Point>+391400.000-1634400.000</Point>
-		<Point>+155000.000-1683200.000</Point>
-		<Point>+134800.000+1443800.000</Point>		
+		<Point>+433400.000-1713300.000</Point>
+		<Point>+231200.000-1310100.000</Point>
+		<Point>+070900.000-1675100.000</Point>
+		<Point>+131400.000+1446000.000</Point>
 	</ManualVisibility>    
     <Sectors>
       <Sector Name="09" />
