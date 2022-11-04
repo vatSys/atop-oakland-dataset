@@ -93,9 +93,9 @@
 	</Colour>
   <Colour id="Warning">
 		<Use>Warning Indications</Use>
-		<Name>Orange</Name>
+		<Name>Yellow</Name>
 		<R>255</R>
-		<G>140</G>
+		<G>255</G>
 		<B>0</B>
 	</Colour>
   <Colour id="VSCSBackground">

@@ -19,10 +19,12 @@
                       </StripLayoutLine>					
                       <StripLayoutLine>
                         <StripItems>
-                          <StripItem Type="AURORA_CALLSIGN" LeftClick="Strip_Extend" MiddleClick="Strip_Delete" RightClick="Label_ACID_Menu" MaxLength="8" MinLength="8" FontSize="Large" />
-                          <StripItem Type="OtherInfo" MaxLength="1" MinLength="1" FontSize="XtraLarge" />					  
-                          <StripItem Type="CPDLCStatus" LeftClick="Label_CPDLC_Editor" MinLength="1" FontSize="Large" />
-                          <StripItem Type="LocalOpsInfo" LeftClick="Strip_LocalOps" MaxLength="5" MinLength="0"> <Colours BackColour="JurisdictionIQL"/> </StripItem>						  
+                          <StripItem Type="AURORA_CALLSIGN" LeftClick="Strip_Extend" MiddleClick="Strip_Delete" RightClick="Label_ACID_Menu" MaxLength="7" MinLength="7" FontSize="XtraLarge" />
+                          <StripItem Type="AURORA_ADSB_CPDLC" FontSize="XtraLarge" RightPadding="2"/>		
+                          <StripSeparatorItem MinLength="2" >	<Colours BackColour="StripBackground"/> </StripSeparatorItem>						  
+                          <StripItem Type="AURORA_DIST_FLAG" MaxLength="1" MinLength="1" LeftPadding="2"/>
+						  <StripSeparatorItem MinLength="1" >	<Colours BackColour="StripBackground"/> </StripSeparatorItem>
+						  <StripItem Type="AURORA_RVSM_FLAG" MaxLength="1" MinLength="1" LeftPadding="1" BackColour="Default"/>
                         </StripItems>
                       </StripLayoutLine>
                       <StripLayoutLine>
