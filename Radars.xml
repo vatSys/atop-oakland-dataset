@@ -52,6 +52,10 @@
     <Lat>19.74861</Lat>
     <Long>-156.0311</Long>
   </Radar>  
+  <Radar Name="ADSC" Type="SSR_ModeS" Elevation="1000" MaxRange="6000">
+    <Lat>270000.000</Lat>
+    <Long>-1750000.000</Long>
+  </Radar> 
   <Radar Name="ADSC1" Type="SSR_ModeS" Elevation="1000" MaxRange="250">
     <Lat>22.39000</Lat>
     <Long>-137.26000</Long>

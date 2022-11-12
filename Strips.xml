@@ -21,10 +21,11 @@
                         <StripItems>
                           <StripItem Type="AURORA_CALLSIGN" LeftClick="Strip_Extend" MiddleClick="Strip_Delete" RightClick="Label_ACID_Menu" MaxLength="7" MinLength="7" FontSize="XtraLarge" />
                           <StripItem Type="AURORA_ADSB_CPDLC" FontSize="XtraLarge" RightPadding="2"/>		
-                          <StripSeparatorItem MinLength="2" >	<Colours BackColour="StripBackground"/> </StripSeparatorItem>						  
-                          <StripItem Type="AURORA_DIST_FLAG" MaxLength="1" MinLength="1" LeftPadding="2"/>
-						  <StripSeparatorItem MinLength="1" >	<Colours BackColour="StripBackground"/> </StripSeparatorItem>
-						  <StripItem Type="AURORA_RVSM_FLAG" MaxLength="1" MinLength="1" LeftPadding="1" BackColour="Default"/>
+                          <StripSeparatorItem MinLength="1" ><Colours BackColour="StripBackground"/> </StripSeparatorItem>	
+						  <StripItem Type="AURORA_T10_FLAG" MinLength="1" />
+						  <StripItem Type="AURORA_MNT_FLAG" MinLength="1" />
+                          <StripItem Type="AURORA_DIST_FLAG" MinLength="1" />
+						  <StripItem Type="AURORA_RVSM_FLAG" MinLength="1" />
                         </StripItems>
                       </StripLayoutLine>
                       <StripLayoutLine>
@@ -41,17 +42,18 @@
                     <StripLayoutLines>
                       <StripLayoutLine>
                         <StripItems>
-                          <StripItem Type="PRL" LeftClick="Label_PRL_Popup" MinLength="4" MaxLength="4" FontSize="Large" />
+                          <StripItem Type="PRL" LeftClick="Label_PRL_Popup" MinLength="6" MaxLength="6" FontSize="Large" />
+						  <StripItem Type="AURORA_STRIP_VMI" FontSize="XtraLarge" />						  
                         </StripItems>
                       </StripLayoutLine>	
                       <StripLayoutLine>
                         <StripItems>
-                          <StripItem Type="CFL" LeftClick="Label_CFL_Popup" RightClick="Strip_CFL_Expand" MinLength="4" MaxLength="4" FontSize="Large" />
+                          <StripItem Type="AURORA_CLEARED_LEVEL" LeftClick="Label_CFL_Popup" RightClick="Strip_CFL_Expand" MinLength="6" MaxLength="6" FontSize="Large" />
                         </StripItems>
                       </StripLayoutLine>					  
                       <StripLayoutLine>
                         <StripItems>
-                          <StripItem Type="RFL" MinLength="4" MaxLength="4" FontSize="Large"/>
+                          <StripItem Type="RFL" MinLength="6" MaxLength="6" FontSize="Large"/>
                         </StripItems>
                       </StripLayoutLine>
                     </StripLayoutLines>
@@ -163,11 +165,18 @@
 								<StripItem Type="Departure" MinLength="4" MaxLength="4"/>
                             </StripItems>
                           </StripLayoutLine>
-                          <StripLayoutLine LineSpan="2">
+                          <StripLayoutLine>
                             <StripItems>
 								<StripItem Type="Destination" MinLength="4" MaxLength="4"/>
                             </StripItems>
                           </StripLayoutLine>
+                          <StripLayoutLine>
+                            <StripItems>
+								<StripItem Type="AURORA_ANNOT_STRIP" MinLength="1" MaxLength="1"/>
+								<StripItem Type="AURORA_LATERAL_FLAG" MinLength="1" MaxLength="1"/>
+								<StripItem Type="AURORA_RESTR" MinLength="1" MaxLength="1"/>
+                            </StripItems>
+                          </StripLayoutLine>						  
                         </StripLayoutLines>
                       </StripLayoutSection>			
                       <StripLayoutSection FlowDirection="Horizontal" Border="Vertical"> <Colours BackColour="StripBackground"/>
@@ -194,7 +203,7 @@
                     <StripLayoutLines>
                       <StripLayoutLine>
                         <StripItems>
-						  <StripSeparatorItem MinLength="25" >	<Colours BackColour="StripBackground"/> </StripSeparatorItem>			  
+						  <StripSeparatorItem MinLength="27" >	<Colours BackColour="StripBackground"/> </StripSeparatorItem>			  
                         </StripItems>
                       </StripLayoutLine>
                     </StripLayoutLines>
