@@ -341,7 +341,7 @@
     </Values>
   </PerformanceData>
   <PerformanceData PerfCat="H" TakeoffSpeed="155" MaxSpeed="380" MaxAlt="450" Mach1="False" IsJet="True">
-    <Types>B772/H,B773/H,B77L/H,B77W/H,B788/H,B789/H</Types>
+    <Types>A359/H,A35K/H,B772/H,B773/H,B77L/H,B77W/H,B788/H,B789/H,B78X/H</Types>
     <Values Levels="30,50,100,150,200,250,300,340,380,440">
       <ClimbRates>2500,1500,2300,2300,1850,1650,1500,1250,0950,0300</ClimbRates>
       <DescentRates>0900,1300,1400,1600,1750,2100,2100,2100,2500,2700</DescentRates>
@@ -361,7 +361,7 @@
     </Values>
   </PerformanceData>
   <PerformanceData PerfCat="H" TakeoffSpeed="140" MaxSpeed="360" MaxAlt="430" Mach1="False" IsJet="True">
-    <Types>A319/M,A320/M,A321/M,B752/M,B753/M,B762/H,B763/H,B764/H</Types>
+    <Types>A319/M,A320/M,A20N/M,A321/M,A21N/M,B752/M,B753/M,B762/H,B763/H,B764/H</Types>
     <Values Levels="30,50,100,140,200,250,270,310,370,410">
       <ClimbRates>2400,2400,2400,2300,2300,2150,2150,1670,1540,0990</ClimbRates>
       <DescentRates>0900,1100,1500,2000,2200,2400,3000,3250,3000,2500</DescentRates>
@@ -421,7 +421,7 @@
     </Values>
   </PerformanceData>
   <PerformanceData PerfCat="H" TakeoffSpeed="150" MaxSpeed="480" MaxAlt="510" Mach1="False" IsJet="True">
-    <Types>B731/M,B732/M,B733/M,B734/M,B735/M,B736/M,B737/M,B738/M,B739/M,B73Y/M,DC91/M,DC92/M,DC93/M,DC94/M,DC95/M,E190/M,E55P/M,E737/M,JET/H,JET/L,JET/M,P8/M</Types>
+    <Types>B731/M,B732/M,B733/M,B734/M,B735/M,B736/M,B737/M,B738/M,B739/M,B37M/M,B38M/M,B39M/M,B73Y/M,DC91/M,DC92/M,DC93/M,DC94/M,DC95/M,E190/M,E55P/M,E737/M,JET/H,JET/L,JET/M,P8/M</Types>
     <Values Levels="30,50,100,140,200,250,270,310,370,410">
       <ClimbRates>2300,3200,3150,2080,2690,2070,2110,1960,1600,1600</ClimbRates>
       <DescentRates>0900,1300,1700,1770,1900,2200,3300,3000,2400,2000</DescentRates>
