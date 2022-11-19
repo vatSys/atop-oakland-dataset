@@ -49,7 +49,7 @@
   <Label Type="Extended" MaximumWidth="17" LabelRectangle="Default" >
     <DataLine>
       <Item Type="AURORA_COMM_ICON" Colour="" LeftClick="Label_CPDLC_Menu" MiddleClick="" RightClick="Label_CPDLC_Editor"/>
-      <Item Type="LABEL_ITEM_ACID" Colour="" P1_Colour="Emergency" LeftClick="Label_Move" MiddleClick="" RightClick="Label_ACID_Menu" MaxLength="7" MinLength="7" LeftPadding="1"/>	  
+      <Item Type="LABEL_ITEM_ACID" Colour="" P1_Colour="Emergency" LeftClick="Label_Move" MiddleClick="Label_Extend_Toggle" RightClick="Label_ACID_Menu" MaxLength="7" MinLength="7" LeftPadding="1"/>	  
       <Item Type="AURORA_ADSB_CPDLC" Colour="" LeftClick="Label_Move" MiddleClick="" RightClick="" RightPadding="1"/>	  
       <Item Type="LABEL_ITEM_EMERG" Colour="Emergency" BackgroundColour="Warning" LeftClick="" MiddleClick="Label_Emerg" RightClick=""/>
       <Item Type="LABEL_ITEM_WARNING" Colour="Warning" P1_BackgroundColour="Emergency" LeftClick="" MiddleClick="Label_Warning" RightClick=""/>  
