@@ -212,7 +212,7 @@
   <Category name="WelcomeMsg" AutoloadElements="true" SendViaTM="true">
     <Message Response="R">THIS IS AN AUTOMATED MESSAGE TO CONFIRM CPDLC CONNECTION TO KZAK. REPORT SPEED CHANGES TO ATC.</Message>
   </Category>
-  <Category name "Free Text" AutoloadElements="true" SendViaTM="true">
+  <Category name="FreeTxt" AutoloadElements="true" SendViaTM="true">
     <Message Response="R">[TEXT]</Message>
   </Category>		
   <Category name="CLIMB↑" AutoloadElements="true" SendViaTM="true">
