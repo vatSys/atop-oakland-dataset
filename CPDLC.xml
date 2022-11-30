@@ -219,6 +219,9 @@
     <Message Response="WU">CLIMB TO AND MAINTAIN [LEVEL]</Message>
     <Message Response="R">REPORT LEVEL [LEVEL]</Message>	
   </Category>  
+  <Category name="byTIME↑" AutoloadElements="true" SendViaTM="true">
+    <Message Response="WU">CLIMB TO REACH [LEVEL] BY [TIME]</Message>
+  </Category> 
   <Category name="UNA↑" AutoloadElements="true" SendViaTM="true">
 	<Message Response="NE">UNABLE REQUESTED ALTITUDE DUE TO TRAFFIC</Message>
   </Category>      
@@ -228,10 +231,7 @@
   </Category>      
   <Category name="byTIME↓" AutoloadElements="true" SendViaTM="true">
     <Message Response="WU">DESCEND TO REACH [LEVEL] BY [TIME]</Message>
-  </Category>   
-  <Category name="byFIX↓" AutoloadElements="true" SendViaTM="true">
-    <Message Response="WU">DESCEND TO REACH [LEVEL] BY [POSITION]</Message>	
-  </Category>    
+  </Category>     
   <Category name="TFC" AutoloadElements="true" SendViaTM="true">
     <Message Response="NE">UNABLE</Message>
 	<Message Response="NE">DUE TO TRAFFIC</Message>
