@@ -43,32 +43,35 @@
 	  <Item Type="AURORA_GROUNDSPEED" Colour="" LeftClick="Label_Move" MiddleClick="" RightClick="" LeftPadding="1"/>
     </DataLine>
     <DataLine >
-      <Item Type="LABEL_ITEM_OPDATA" BackgroundColour="" Colour="" LeftClick="Label_OpData_Popup" MiddleClick="" RightClick="Label_Toggle_1"/>
+      <Item Type="LABEL_ITEM_OPDATA" BackgroundColour="" Colour="" LeftClick="Label_OpData_Popup" MiddleClick="" RightClick=""/>
     </DataLine>
   </Label>
   <Label Type="Extended" MaximumWidth="17" LabelRectangle="Default" >
     <DataLine>
       <Item Type="AURORA_COMM_ICON" Colour="" LeftClick="Label_CPDLC_Menu" MiddleClick="" RightClick="Label_CPDLC_Editor"/>
-      <Item Type="LABEL_ITEM_ACID" Colour="" P1_Colour="Emergency" LeftClick="Label_Move" MiddleClick="" RightClick="Label_ACID_Menu" MaxLength="7" MinLength="7" LeftPadding="1"/>	  
-      <Item Type="AURORA_ADSB_CPDLC" Colour="" LeftClick="Label_Move" MiddleClick="" RightClick="" RightPadding="1"/>	  
+      <Item Type="LABEL_ITEM_ACID" Colour="" P1_Colour="Emergency" LeftClick="Label_Move" MiddleClick="Label_Extend_Toggle" RightClick="Label_ACID_Menu" MaxLength="7" MinLength="7" LeftPadding="1"/>	  
+      <Item Type="AURORA_ADSB_CPDLC" Colour="" LeftClick="Label_Move" MiddleClick="" RightClick="" RightPadding="1"/>
+      <!--Item Type="AURORA_ADS_FLAGS" Colour="" LeftClick="" MiddleClick="" RightClick="" RightPadding="1"/-->
+      <!--Item Type="AURORA_MNT_FLAGS" Colour="" LeftClick="" MiddleClick="" RightClick="" RightPadding="1"/-->	  
       <Item Type="LABEL_ITEM_EMERG" Colour="Emergency" BackgroundColour="Warning" LeftClick="" MiddleClick="Label_Emerg" RightClick=""/>
       <Item Type="LABEL_ITEM_WARNING" Colour="Warning" P1_BackgroundColour="Emergency" LeftClick="" MiddleClick="Label_Warning" RightClick=""/>  
     </DataLine>
     <DataLine>
-	  <Item Type="AURORA_ANNOT_IND" MaxLength="34" Colour="" LeftClick="Label_Toggle_1" MiddleClick="" RightClick="Label_OpData_Popup" LeftPadding="1"/>
-	  <Item Type="AURORA_RESTR" Colour="" LeftClick="Label_Move" MiddleClick="" RightClick="Label_OpData_Popup" />  	
-      <Item Type="LABEL_ITEM_LEVEL" Colour="" LeftClick="Label_PRL_Popup" MiddleClick="" RightClick="Label_CFL_Popup" />
+	  <Item Type="AURORA_ANNOT_IND" Colour="" LeftClick="Label_Toggle_1" MiddleClick="" RightClick=""/>
+	  <Item Type="AURORA_RESTR" Colour="" LeftClick="Label_Toggle_1" MiddleClick="" RightClick="" />  	
+      <Item Type="LABEL_ITEM_LEVEL" Colour="" LeftClick="Label_PRL_Popup" MiddleClick="" RightClick="Label_CFL_Popup" LeftPadding="1"/>
       <Item Type="AURORA_VMI" Colour="" LeftClick="Label_Move" MiddleClick="" RightClick=""/>
       <Item Type="AURORA_CLEARED_LEVEL" LeftClick="Label_Move" MiddleClick="" RightClick="Label_CFL_Popup"/>
     </DataLine>
     <DataLine>
-	  <Item Type="AURORA_RADAR_IND" Colour="" LeftClick="Label_Move" MiddleClick="" RightClick="" LeftPadding="1"/> 	
+	  <Item Type="AURORA_RADAR_IND" Colour="" LeftClick="" MiddleClick="" RightClick="" /> 	
+      <Item Type="AURORA_FILEDSPEED" Colour="" LeftClick="" MiddleClick="" RightClick="" LeftPadding="1"/>		  
       <Item Type="AURORA_GROUNDSPEED" Colour="" LeftClick="" MiddleClick="" RightClick="" />	
       <Item Type="LABEL_ITEM_ADES" BackgroundColour="" Colour="" LeftClick="" MiddleClick="" RightClick="" LeftPadding="1"/>
       <!--Item Type="LABEL_ITEM_ATYPE" BackgroundColour="" Colour="" LeftClick="" MiddleClick="" RightClick="" LeftPadding="1"/-->
     </DataLine>
-    <DataLine>
-      <Item Type="LABEL_ITEM_OPDATA" MaxLength="34" BackgroundColour="" Colour="" LeftClick="" MiddleClick="" RightClick="Label_OpData_Popup"/>
+    <DataLine id="TOGGLE1" Visibility="Toggle">
+      <Item Type="LABEL_ITEM_OPDATA" LeftClick="" MiddleClick="" RightClick="Label_OpData_Popup"/>
     </DataLine>
   </Label>
   <Label Type="GroundAir" MaximumWidth="11" LabelRectangle="Default">

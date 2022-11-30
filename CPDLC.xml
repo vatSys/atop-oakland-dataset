@@ -113,20 +113,6 @@
     <Message Response="WU">CRUISE CLIMB TO [LEVEL]</Message>
     <Message Response="WU">MAINTAIN [LEVEL]</Message>
     <Message Response="WU">MAINTAIN BLOCK [LEVEL] TO [LEVEL]</Message>
-  </Category>
-  <Category name="Climb↑" AutoloadElements="true" SendViaTM="true">
-    <Message Response="WU">CLIMB TO AND MAINTAIN [LEVEL]</Message>
-    <Message Response="R">REPORT LEVEL [LEVEL]</Message>	
-  </Category>   
-  <Category name="Desc↓" AutoloadElements="true" SendViaTM="true">
-    <Message Response="WU">DESCEND TO AND MAINTAIN [LEVEL]</Message>  
-    <Message Response="R">REPORT LEVEL [LEVEL]</Message>
-  </Category>   
-  <Category name="MOPS 73 (PDC)" AutoloadElements="true" SendViaTM="true">
-    <Message Response="WU">AT [TIME] CLEARED [ROUTE]</Message> 
-    <Message Response="WU">ALT F[LEVEL] FREQ 9999KhZ SSR 2000,</Message>
-    <Message Response="WU">CLEARANCE VOID IF NOT OFF BY [TIME]., IF NOT OFF BY [TIME] </Message> 
-    <Message Response="WU">ADZ NLT [TIME] OF INTENT. ITC </Message>	
   </Category>  
   <Category name="Route" SendViaTM="true">  
     <Message Response="WU">CLEARED TO [POSITION] VIA [ROUTE]</Message>  
@@ -226,4 +212,64 @@
   <Category name="WelcomeMsg" AutoloadElements="true" SendViaTM="true">
     <Message Response="R">THIS IS AN AUTOMATED MESSAGE TO CONFIRM CPDLC CONNECTION TO KZAK. REPORT SPEED CHANGES TO ATC.</Message>
   </Category>
+  <Category name "Free Text" AutoloadElements="true" SendViaTM="true">
+    <Message Response="R">[TEXT]</Message>
+  </Category>		
+  <Category name="CLIMB↑" AutoloadElements="true" SendViaTM="true">
+    <Message Response="WU">CLIMB TO AND MAINTAIN [LEVEL]</Message>
+    <Message Response="R">REPORT LEVEL [LEVEL]</Message>	
+  </Category>  
+  <Category name="UNA↑" AutoloadElements="true" SendViaTM="true">
+	<Message Response="NE">UNABLE REQUESTED ALTITUDE DUE TO TRAFFIC</Message>
+  </Category>      
+  <Category name="DSCND↓" AutoloadElements="true" SendViaTM="true">
+    <Message Response="WU">DESCEND TO AND MAINTAIN [LEVEL]</Message>  
+    <Message Response="R">REPORT LEVEL [LEVEL]</Message>
+  </Category>      
+  <Category name="byTIME↓" AutoloadElements="true" SendViaTM="true">
+    <Message Response="WU">DESCEND TO REACH [LEVEL] BY [TIME]</Message>
+  </Category>   
+  <Category name="byFIX↓" AutoloadElements="true" SendViaTM="true">
+    <Message Response="WU">DESCEND TO REACH [LEVEL] BY [POSITION]</Message>	
+  </Category>    
+  <Category name="TFC" AutoloadElements="true" SendViaTM="true">
+    <Message Response="NE">UNABLE</Message>
+	<Message Response="NE">DUE TO TRAFFIC</Message>
+  </Category>  
+  <Category name="UNA WX" AutoloadElements="true" SendViaTM="true">
+    <Message Response="NE">WX DEVIATION NOT AVAILABLE AT CURRENT ALTITUDE OR ROUTE</Message>
+	<Message Response="NE">SAY INTENTIONS.</Message>
+  </Category>    
+  <Category name="POS" AutoloadElements="true" SendViaTM="true">
+    <Message Response="NE">REQUEST POSITION REPORT</Message>  	
+  </Category>  
+  <Category name="WX" AutoloadElements="true" SendViaTM="true">
+    <Message Response="WU">CLEARED TO DEVIATE UP TO [DIRECTION] [DISTANCE] OF ROUTE</Message>	  
+    <Message Response="R">REPORT BACK ON ROUTE</Message>	
+  </Category>  
+  <Category name="ARR" AutoloadElements="true" SendViaTM="true">
+    <Message Response="NE">AT PILOTS DISCRETION</Message>		
+	<Message Response="WU">DESCEND TO AND MAINTAIN F055 </Message>
+	<Message Response="WU">CRUISE F055 </Message>
+	<Message Response="NE">TO THE [name] AIRPORT.</Message>
+	<Message Response="NE">REPORT ARRIVAL.</Message>	
+  </Category>  
+  <Category name="DEP" AutoloadElements="true" SendViaTM="true">
+    <Message Response="WU">AT [TIME] CLEARED [ROUTE]</Message> 
+    <Message Response="WU">ALT F[LEVEL] FREQ 9999KhZ SSR 2000,</Message>
+    <Message Response="WU">CLEARANCE VOID IF NOT OFF BY [TIME]., IF NOT OFF BY [TIME] </Message> 
+    <Message Response="WU">ADZ NLT [TIME] OF INTENT. ITC </Message>	
+  </Category> 
+  <Category name="RBOR" AutoloadElements="true" SendViaTM="true">
+	<Message Response="R">REPORT BACK ON ROUTE</Message>  
+  </Category>  
+  <Category name="WHEN" AutoloadElements="true" SendViaTM="true">
+	<Message Response="NE">WHEN CAN YOU ACCEPT [LEVEL]</Message>  
+  </Category> 
+  <Category name="ETA" AutoloadElements="true" SendViaTM="true">
+	<Message Response="NE">CONFIRM NEXT WAYPOINT ETA</Message> 
+  </Category>             
+  <Category name="NDA" AutoloadElements="true" SendViaTM="true">
+	<Message Response="NE">NEXT DATA AUTHORITY [UNIT]</Message>  
+  </Category> 	
 </Messages>
