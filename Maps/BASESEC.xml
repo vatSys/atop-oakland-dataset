@@ -5958,6 +5958,7 @@
 <Line Name="BaseSec">+08.9030556-167.9050/+09.4472222-168.4220</Line>
 <Line Name="BaseSec">+08.7452778-167.4800/+08.9030556-167.9050</Line>
 <Line Name="BaseSec">+08.9030556-167.9050/+08.7452778-167.4800</Line>
+
   </Map>
   <Map Type="Local_Private" CustomColourName="TealGreen" Name="BasSec_1_280" Pattern="Broken" Priority="2">
 <Line Name="0406">

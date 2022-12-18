@@ -1,5 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <Colours xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Colour id="State">
+		<Use>LastReport</Use>
+		<Name>LightBlue</Name>
+		<R>71</R>
+		<G>131</G>
+		<B>183</B>
+	</Colour>
+
   <Colour id="GenericText">
 		<Use>Window Text</Use>
 		<Name>Black</Name>

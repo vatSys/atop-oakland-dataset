@@ -30,7 +30,7 @@
                       </StripLayoutLine>
                       <StripLayoutLine>
                         <StripItems>
-						  <StripItem Type="ControllingSector" LeftClick="Strip_Controller" RightClick="Strip_State" MaxLength="2" MinLength="2" />
+						  <StripItem Type="AURORA_CDA" LeftClick="Strip_Controller" RightClick="Strip_State" MaxLength="2" MinLength="2" />
 						  <StripSeparatorItem MinLength="10" />						  
                           <StripItem Type="TAS" MinLength="5"/>
 						  <StripSeparatorItem MinLength="2" />
@@ -183,7 +183,7 @@
                         <StripLayoutLines>
                           <StripLayoutLine>
                             <StripItems>
-								<StripItem Type="ControllingSector" LeftClick="Strip_Controller" RightClick="Strip_State" MaxLength="2" MinLength="2" />
+								<!--StripItem Type="AURORA_NDA" LeftClick="Strip_Controller" RightClick="Strip_State"  MinLength="2" /-->
                             </StripItems>				
                           </StripLayoutLine>
                           <StripLayoutLine LineSpan="2">

@@ -210,7 +210,7 @@
 	<Message Response="NE">SQUAWK 2000 TO LOG ON ADS-C AND CPDLC</Message>	
   </Category>
   <Category name="WelcomeMsg" AutoloadElements="true" SendViaTM="true">
-    <Message Response="R">THIS IS AN AUTOMATED MESSAGE TO CONFIRM CPDLC CONNECTION TO KZAK. REPORT SPEED CHANGES TO ATC.</Message>
+    <Message Response="R">THIS IS AN AUTOMATED MESSAGE TO CONFIRM CPDLC CONNECTION TO KZAK. REPORT SPEED CHANGES TO ATC. https://oakartcc.org/pilots/oceanic</Message>
   </Category>
   <Category name="FreeTxt" AutoloadElements="true" SendViaTM="true">
     <Message Response="R">[TEXT]</Message>
