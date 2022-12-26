@@ -2,7 +2,7 @@
 <AlertParameters>
   <ConflictAlerts>
     <STCA Name="D30/30" LateralNM="30.0" SecondsLookahead="7200" AlertPriority="1">
-      <Vertical LowerLevel="055" UpperLevel="99999" Height="1899" HeightWithRVSM="899"/>
+      <Vertical LowerLevel="055" UpperLevel="99999" Height="1999" HeightWithRVSM="999"/>
      <Volumes>OC1,OC1a,OC2,OC3,OC3a,OC4,OC4a,OC4b,OC5N,OC5S,OC6,OC7,OC9</Volumes>
     </STCA>
     <MTCA Name="D30/30" LateralNM="30.0" SecondsLookahead="7200" AlertPriority="3">

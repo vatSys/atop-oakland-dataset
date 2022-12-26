@@ -16,7 +16,12 @@
                           <StripSeparatorItem MinLength="8" />
                           <StripItem Type="AircraftType" MaxLength="5"/>
                         </StripItems>
-                      </StripLayoutLine>					
+                      </StripLayoutLine>
+					  <StripLayoutLine>	
+                        <StripItems>
+                          <StripSeparatorItem MinLength="17"/>	
+                        </StripItems>						  
+					  </StripLayoutLine>					  
                       <StripLayoutLine>
                         <StripItems>
                           <StripItem Type="AURORA_CALLSIGN" LeftClick="Strip_Extend" MiddleClick="Strip_Delete" RightClick="Label_ACID_Menu" MaxLength="7" MinLength="7" FontSize="XtraLarge" />
@@ -62,11 +67,11 @@
                     <StripLayoutSubsections>
                       <StripLayoutSection FlowDirection="Horizontal">
                         <StripLayoutLines>
-                          <StripLayoutLine LineSpan="2">
+                          <StripLayoutLine LineSpan="3">
                             <StripItems>
                               <StripItem Type="Point" LeftClick="Strip_Point" MiddleClick="Strip_MPR_Arm" RightClick="Strip_Point_Expand" PointIndex="0" MaxLength="6" MinLength="6" > <Colours Colour="Jurisdiction"/> </StripItem>
                             </StripItems>
-                          </StripLayoutLine>
+                          </StripLayoutLine>					  
                           <StripLayoutLine>
                             <StripItems>
                               <StripItem Type="ETOP" LeftClick="Strip_ETO" PointIndex="0" MinLength="4"> <Colours Colour="Jurisdiction"/> </StripItem>
@@ -76,11 +81,11 @@
                       </StripLayoutSection>
                       <StripLayoutSection FlowDirection="Horizontal" Border="Vertical"> <Colours BorderColour="StripText" Colour="StripBackground" BackColour="HighlightedText"/>
                         <StripLayoutLines>
-                          <StripLayoutLine LineSpan="2">
+                          <StripLayoutLine LineSpan="3">
                             <StripItems>
                               <StripItem Type="Point" LeftClick="Strip_Point" MiddleClick="Strip_MPR_Arm" RightClick="Strip_Point_Expand" PointIndex="1" MaxLength="6" MinLength="6" />
                             </StripItems>
-                          </StripLayoutLine>
+                          </StripLayoutLine>						  
                           <StripLayoutLine>
                             <StripItems>
                               <StripItem Type="ETOP" LeftClick="Strip_ETO" PointIndex="1" MinLength="6" />
@@ -90,11 +95,11 @@
                       </StripLayoutSection>
                       <StripLayoutSection FlowDirection="Horizontal" Border="Vertical">
                         <StripLayoutLines>
-                          <StripLayoutLine LineSpan="2">
+                          <StripLayoutLine LineSpan="3">
                             <StripItems>
                               <StripItem Type="Point" LeftClick="Strip_Point" MiddleClick="Strip_MPR_Arm" RightClick="Strip_Point_Expand" PointIndex="2" MaxLength="6" MinLength="6" > <Colours P4Colour="Unstable"/> </StripItem>
                             </StripItems>
-                          </StripLayoutLine>
+                          </StripLayoutLine>						  
                           <StripLayoutLine>
                             <StripItems>
                               <StripItem Type="ETOP" LeftClick="Strip_ETO" PointIndex="2" MinLength="6" />
@@ -104,11 +109,11 @@
                       </StripLayoutSection>
                       <StripLayoutSection FlowDirection="Horizontal" Border="Vertical" >
                         <StripLayoutLines>
-                          <StripLayoutLine LineSpan="2">
+                          <StripLayoutLine LineSpan="3">
                             <StripItems>
                               <StripItem Type="Point" LeftClick="Strip_Point" MiddleClick="Strip_MPR_Arm" RightClick="Strip_Point_Expand" PointIndex="3" MaxLength="6" MinLength="6" />
                             </StripItems>
-                          </StripLayoutLine>
+                          </StripLayoutLine>						  
                           <StripLayoutLine>
                             <StripItems>
                               <StripItem Type="ETOP" LeftClick="Strip_ETO" PointIndex="3" MinLength="6" />
@@ -118,11 +123,11 @@
                       </StripLayoutSection>
                       <StripLayoutSection FlowDirection="Horizontal" Border="Vertical" >
                         <StripLayoutLines>
-                          <StripLayoutLine LineSpan="2">
+                          <StripLayoutLine LineSpan="3">
                             <StripItems>
                               <StripItem Type="Point" LeftClick="Strip_Point" MiddleClick="Strip_MPR_Arm" RightClick="Strip_Point_Expand" PointIndex="4" MaxLength="6" MinLength="6" />
                             </StripItems>
-                          </StripLayoutLine>
+                          </StripLayoutLine>						  
                           <StripLayoutLine>
                             <StripItems>
                               <StripItem Type="ETOP" LeftClick="Strip_ETO" PointIndex="4" MinLength="6" />
@@ -132,11 +137,11 @@
                       </StripLayoutSection>
                       <StripLayoutSection FlowDirection="Horizontal" Border="Vertical">
                         <StripLayoutLines>
-                          <StripLayoutLine LineSpan="2">
+                          <StripLayoutLine LineSpan="3">
                             <StripItems>
                               <StripItem Type="Point" LeftClick="Strip_Point" MiddleClick="Strip_MPR_Arm" RightClick="Strip_Point_Expand" PointIndex="5" MaxLength="6" MinLength="6" />
                             </StripItems>
-                          </StripLayoutLine>
+                          </StripLayoutLine>						  
                           <StripLayoutLine>
                             <StripItems>
                               <StripItem Type="ETOP" LeftClick="Strip_ETO" PointIndex="5" MinLength="6" />
@@ -146,11 +151,11 @@
                       </StripLayoutSection>
                       <StripLayoutSection FlowDirection="Horizontal" Border="Vertical">
                         <StripLayoutLines>
-                          <StripLayoutLine LineSpan="2">
+                          <StripLayoutLine LineSpan="3">
                             <StripItems>
                               <StripItem Type="Point" LeftClick="Strip_Point" MiddleClick="Strip_MPR_Arm" RightClick="Strip_Point_Expand" PointIndex="6" MaxLength="6" MinLength="6" />
                             </StripItems>
-                          </StripLayoutLine>
+                          </StripLayoutLine>						  
                           <StripLayoutLine>
                             <StripItems>
                               <StripItem Type="ETOP" LeftClick="Strip_ETO" PointIndex="6" MinLength="6" />
@@ -170,6 +175,12 @@
 								<StripItem Type="Destination" MinLength="4" MaxLength="4"/>
                             </StripItems>
                           </StripLayoutLine>
+						<StripLayoutLine>	
+							<StripItems>
+								<StripItem Type="AURORA_F" MinLength="1" MaxLength="1"/>	
+								<StripItem Type="AURORA_A" MinLength="1" MaxLength="1"/>								
+							</StripItems>						  
+						</StripLayoutLine>						  
                           <StripLayoutLine>
                             <StripItems>
 								<StripItem Type="AURORA_ANNOT_STRIP" MinLength="1" MaxLength="1" LeftClick="Strip_GlobalOps"/>
@@ -183,12 +194,12 @@
                         <StripLayoutLines>
                           <StripLayoutLine>
                             <StripItems>
-								<!--StripItem Type="AURORA_NDA" LeftClick="Strip_Controller" RightClick="Strip_State"  MinLength="2" /-->
+								<StripItem Type="AURORA_NDA" LeftClick="Strip_Controller" RightClick="Strip_State"  MinLength="2" />
                             </StripItems>				
                           </StripLayoutLine>
-                          <StripLayoutLine LineSpan="2">
+                          <StripLayoutLine LineSpan="3">
                             <StripItems>
-                              <StripSeparatorItem MinLength="2" >	<Colours BackColour="StripBackground"/> </StripSeparatorItem>
+                              <StripSeparatorItem MinLength="2"/>
                             </StripItems>
                           </StripLayoutLine>						  
                         </StripLayoutLines>					  

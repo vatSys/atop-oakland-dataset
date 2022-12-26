@@ -19,7 +19,7 @@
     </ArrivalLists>
     <ControllerInfo>
       <Line>ATC by Oakland Center HF relay by San Francisco ARINC</Line>
-      <Line>https://oakartcc.org/pilots/oceanic</Line>
+      <Line>oakartcc.org/pilots/oceanic</Line>
     </ControllerInfo>
   </Position>
   <Position Name="CWP5" Type="ASD" DefaultCenter="+270000.000-1750000.000" DefaultRange="7700">
@@ -48,7 +48,7 @@
     </ArrivalLists>
     <ControllerInfo>
       <Line>ATC by Oakland Center HF relay by San Francisco ARINC</Line>
-      <Line>https://oakartcc.org/pilots/oceanic</Line>	  
+      <Line>oakartcc.org/pilots/oceanic</Line>	  
     </ControllerInfo>
   </Position>  
   <Position Name="PN" Type="ASD" DefaultCenter="+390335.0711-1611727.9309" DefaultRange="4100">
@@ -80,7 +80,7 @@
     </ArrivalLists>
     <ControllerInfo>
       <Line>ATC by Oakland Center HF relay by San Francisco ARINC</Line>
-      <Line>https://oakartcc.org/pilots/oceanic</Line>	  
+      <Line>oakartcc.org/pilots/oceanic</Line>	  
     </ControllerInfo>
   </Position>  
   <Position Name="PS" Type="ASD" DefaultCenter="+270000.000-1750000.000" DefaultRange="7700">
@@ -112,7 +112,7 @@
     </ArrivalLists>
     <ControllerInfo>
       <Line>ATC by Oakland Center HF relay by San Francisco ARINC</Line>
-      <Line>https://oakartcc.org/pilots/oceanic</Line>	  
+      <Line>oakartcc.org/pilots/oceanic</Line>	  
     </ControllerInfo>
   </Position>   
   <Position Name="CWP7[OC1]" Type="ASD" DefaultCenter="+442728.740-1531610.609" DefaultRange="3000">
@@ -141,7 +141,7 @@
     </ArrivalLists>
     <ControllerInfo>
       <Line>ATC by Oakland Center HF relay by San Francisco ARINC</Line>
-      <Line>https://oakartcc.org/pilots/oceanic</Line>	  
+      <Line>oakartcc.org/pilots/oceanic</Line>	  
     </ControllerInfo>
   </Position>  
   <Position Name="CWP8[OC2]" Type="ASD" DefaultCenter="+451634.535-1902108.933" DefaultRange="2400">
@@ -170,7 +170,7 @@
     </ArrivalLists>
     <ControllerInfo>
       <Line>ATC by Oakland Center HF relay by San Francisco ARINC</Line>
-      <Line>https://oakartcc.org/pilots/oceanic</Line>	  
+      <Line>oakartcc.org/pilots/oceanic</Line>	  
     </ControllerInfo>
   </Position>  
   <Position Name="CWP4[OC3]" Type="ASD" DefaultCenter="+221244.704-1360859.658" DefaultRange="2600">
@@ -201,7 +201,7 @@
     </ArrivalLists>
     <ControllerInfo>
       <Line>ATC by Oakland Center HF relay by San Francisco ARINC</Line>
-      <Line>https://oakartcc.org/pilots/oceanic</Line>
+      <Line>oakartcc.org/pilots/oceanic</Line>
     </ControllerInfo>
   </Position>
   <Position Name="CWP10[OC4]" Type="ASD" DefaultCenter="+294753.971-1420406.988" DefaultRange="2300">
@@ -230,7 +230,7 @@
     </ArrivalLists>
     <ControllerInfo>
       <Line>ATC by Oakland Center HF relay by San Francisco ARINC</Line>
-      <Line>https://oakartcc.org/pilots/oceanic</Line>	  
+      <Line>oakartcc.org/pilots/oceanic</Line>	  
     </ControllerInfo>
   </Position>  
   <Position Name="CWP2[OC5]" Type="ASD" DefaultCenter="+111651.527+1450820.250" DefaultRange="3200">
@@ -263,7 +263,7 @@
     </ArrivalLists>
     <ControllerInfo>
       <Line>ATC by Oakland Center HF relay by San Francisco ARINC</Line>
-      <Line>https://oakartcc.org/pilots/oceanic</Line>	  
+      <Line>oakartcc.org/pilots/oceanic</Line>	  
     </ControllerInfo>
   </Position>  
   <Position Name="CWP1[OC6]" Type="ASD" DefaultCenter="+163226.320+1703631.668" DefaultRange="3200">
@@ -296,7 +296,7 @@
     </ArrivalLists>
     <ControllerInfo>
       <Line>ATC by Oakland Center HF relay by San Francisco ARINC</Line>
-      <Line>https://oakartcc.org/pilots/oceanic</Line>	  
+      <Line>oakartcc.org/pilots/oceanic</Line>	  
     </ControllerInfo>
   </Position>  
   <Position Name="CWP9[OC7]" Type="ASD" DefaultCenter="+403411.855-1381916.409" DefaultRange="1900">
@@ -324,7 +324,7 @@
     <ArrivalLists/>
     <ControllerInfo>
       <Line>ATC by Oakland Center HF relay by San Francisco ARINC</Line>
-      <Line>https://oakartcc.org/pilots/oceanic</Line>	  
+      <Line>oakartcc.org/pilots/oceanic</Line>	  
     </ControllerInfo>
   </Position>
   <Position Name="CWP3[OC9]" Type="ASD" DefaultCenter="+244531.064-1755428.271" DefaultRange="5100">
@@ -355,7 +355,7 @@
     </ArrivalLists>
     <ControllerInfo>
       <Line>ATC by Oakland Center HF relay by San Francisco ARINC</Line>
-      <Line>https://oakartcc.org/pilots/oceanic</Line>	  
+      <Line>oakartcc.org/pilots/oceanic</Line>	  
     </ControllerInfo>
   </Position>    
 </Positions>
