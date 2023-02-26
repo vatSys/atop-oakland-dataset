@@ -1,36 +1,817 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Sectors xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-  <Sector FullName="Sector 1" Frequency="131.950" Callsign="ZAK_1_FSS" Name="01">  
-<Volumes>OC1,OC1a</Volumes> 
-  </Sector>  
-  <Sector FullName="Sector 2" Frequency="131.950" Callsign="ZAK_2_FSS" Name="02">  
-<Volumes>OC2</Volumes> 
-  </Sector>  
-  <Sector FullName="Sector 3" Frequency="131.950" Callsign="ZAK_3_FSS" Name="03">  
-<Volumes>OC3,OC3a</Volumes> 
-  </Sector>  
-  <Sector FullName="Sector 4" Frequency="131.950" Callsign="ZAK_4_FSS" Name="04">  
-<Volumes>OC4,OC4a,OC4b</Volumes> 
-  </Sector>  
-  <Sector FullName="Sector 5" Frequency="129.400" Callsign="ZAK_5_FSS" Name="05">  
-<Volumes>OC5N,OC5S</Volumes> 
-  </Sector>  
-  <Sector FullName="Sector 6" Frequency="129.400" Callsign="ZAK_6_FSS" Name="06">  
-<Volumes>OC6,PKWA</Volumes> 
-  </Sector>  
-  <Sector FullName="Sector 7" Frequency="131.950" Callsign="ZAK_7_FSS" Name="07">  
-<Volumes>OC7</Volumes> 
+  <Sector FullName="OC 1" Frequency="131.950" Callsign="ZAK_1_FSS" Name="01">  
+  <Volumes>
+	ZOA.0101,
+	ZOA.0102,
+	ZOA.0103,
+	ZOA.0104,
+	ZOA.0105
+  </Volumes>  
+      <ResponsibleSectors>0101,0102,0104,0105</ResponsibleSectors>
+  </Sector>
+  <Sector FullName="OC 2" Frequency="131.950" Callsign="ZAK_2_FSS" Name="02">  
+<Volumes>
+ZOA.0214,
+ZOA.0228,
+ZOA.0242,
+ZOA.0211,
+ZOA.0225,
+ZOA.0239,
+ZOA.0210,
+ZOA.0224,
+ZOA.0238,
+ZOA.0209,
+ZOA.0223,
+ZOA.0237,
+ZOA.0208,
+ZOA.0222,
+ZOA.0236,
+ZOA.0207,
+ZOA.0221,
+ZOA.0235,
+ZOA.0206,
+ZOA.0220,
+ZOA.0234,
+ZOA.0205,
+ZOA.0219,
+ZOA.0233,
+ZOA.0204,
+ZOA.0218,
+ZOA.0232,
+ZOA.0203,
+ZOA.0217,
+ZOA.0231,
+ZOA.0202,
+ZOA.0216,
+ZOA.0230,
+ZOA.0201,
+ZOA.0215,
+ZOA.0229,
+ZOA.0245,
+ZOA.0250,
+ZOA.0255,
+ZOA.0244,
+ZOA.0249,
+ZOA.0254,
+ZOA.0243,
+ZOA.0248,
+ZOA.0253
+</Volumes>
+<ResponsibleSectors>
+0214,
+0228,
+0242,
+0211,
+0225,
+0239,
+0210,
+0224,
+0238,
+0209,
+0223,
+0237,
+0208,
+0222,
+0236,
+0207,
+0221,
+0235,
+0206,
+0220,
+0234,
+0205,
+0219,
+0233,
+0204,
+0218,
+0232,
+0203,
+0217,
+0231,
+0202,
+0216,
+0230,
+0201,
+0215,
+0229,
+0245,
+0250,
+0255,
+0244,
+0249,
+0254,
+0243,
+0248,
+0253
+</ResponsibleSectors> 
   </Sector>   
-  <Sector FullName="Sector 9" Frequency="131.950" Callsign="ZAK_9_FSS" Name="09">  
-<Volumes>OC9</Volumes> 
+  <Sector FullName="OC 3" Frequency="131.950" Callsign="ZAK_3_FSS" Name="03">  
+	<Volumes>
+	ZOA.0301,
+	ZOA.0302,
+	ZOA.0303
+	</Volumes> 
+	<ResponsibleSectors>
+	0301,
+	0302,
+	0303
+	</ResponsibleSectors>	
+  </Sector> 
+    <Sector FullName="OC 4" Frequency="131.950" Callsign="ZAK_4_FSS" Name="04">  
+<Volumes>
+ZOA.0401A,
+ZOA.0401B,
+ZOA.0402,
+ZOA.0403,
+ZOA.0404,
+ZOA.0405,
+ZOA.0406
+</Volumes>
+<ResponsibleSectors>
+0401A,
+0401B,
+0402,
+0403,
+0404,
+0405,
+0406
+</ResponsibleSectors> 
+  </Sector>
+  <Sector FullName="OC 5" Frequency="129.400" Callsign="ZAK_5_FSS" Name="05">  
+<Volumes>
+ZOA.0501,
+ZOA.0502
+</Volumes> 
+<ResponsibleSectors>
+0501,
+0502
+</ResponsibleSectors>
+  </Sector>  
+  <Sector FullName="OC 6" Frequency="129.400" Callsign="ZAK_6_FSS" Name="06">  
+<Volumes>
+ZOA.0604,
+ZOA.0605,
+ZOA.0607,
+ZOA.0609A,
+ZOA.0609B,
+ZOA.0609C,
+ZOA.0609D,
+ZOA.0609E,
+ZOA.0606,
+ZOA.0608,
+PKWA
+</Volumes> 
+<ResponsibleSectors>
+0604,
+0605,
+0607,
+0609A,
+0609B,
+0609C,
+0609D,
+0609E,
+0606,
+0608,
+PKWA
+</ResponsibleSectors>
+  </Sector>  
+  <Sector FullName="OC 7" Frequency="131.950" Callsign="ZAK_7_FSS" Name="07">  
+<Volumes>
+ZOA.0701A,
+ZOA.0701B,
+ZOA.0701C,
+ZOA.0701D,
+ZOA.0702,
+ZOA.0703
+</Volumes> 
+<ResponsibleSectors>
+0701A,
+0701B,
+0701C,
+0701D,
+0702,
+0703
+</ResponsibleSectors>
+  </Sector>
+    <Sector FullName="OC 9" Frequency="131.950" Callsign="ZAK_9_FSS" Name="09">  
+<Volumes>
+ZOA.0901,
+ZOA.0902,
+ZOA.0903,
+ZOA.0904,
+ZOA.0905,
+ZOA.0906,
+ZOA.0907,
+ZOA.0908,
+ZOA.0909,
+ZOA.0910,
+ZOA.0911,
+ZOA.0912,
+ZOA.0913,
+ZOA.0914,
+ZOA.0915,
+ZOA.0916,
+ZOA.0917,
+ZOA.0918,
+ZOA.0919,
+ZOA.0920,
+ZOA.0921,
+ZOA.0922,
+ZOA.0923,
+ZOA.0924,
+ZOA.0925,
+ZOA.0926,
+ZOA.0927,
+ZOA.0928,
+ZOA.0929,
+ZOA.0930,
+ZOA.0931,
+ZOA.0932,
+ZOA.0933,
+ZOA.0934,
+ZOA.0935,
+ZOA.0936,
+ZOA.0937,
+ZOA.0938,
+ZOA.0939,
+ZOA.0941,
+ZOA.0942,
+ZOA.0943,
+ZOA.0944,
+ZOA.0945,
+ZOA.0946,
+ZOA.0948,
+ZOA.0949,
+ZOA.0950,
+ZOA.0951
+</Volumes>
+<ResponsibleSectors>
+0901,
+0902,
+0903,
+0904,
+0905,
+0906,
+0907,
+0908,
+0909,
+0910,
+0911,
+0912,
+0913,
+0914,
+0915,
+0916,
+0917,
+0918,
+0919,
+0920,
+0921,
+0922,
+0923,
+0924,
+0925,
+0926,
+0927,
+0928,
+0929,
+0930,
+0931,
+0932,
+0933,
+0934,
+0935,
+0936,
+0937,
+0938,
+0939,
+0941,
+0942,
+0943,
+0944,
+0945,
+0946,
+0948,
+0949,
+0950,
+0951
+</ResponsibleSectors> 
   </Sector>  
   <Sector FullName="Sector 77" Frequency="131.950" Callsign="ZAK_FSS" Name="77">  
-<Volumes>OC1,OC1a,OC2,OC3,OC3a,OC4,OC4a,OC4b,OC5N,OC5S,OC6,OC7,OC9,MMZT</Volumes>  
+<Volumes>
+ZOA.0101,
+ZOA.0102,
+ZOA.0103,
+ZOA.0104,
+ZOA.0105,
+ZOA.0214,
+ZOA.0228,
+ZOA.0242,
+ZOA.0211,
+ZOA.0225,
+ZOA.0239,
+ZOA.0210,
+ZOA.0224,
+ZOA.0238,
+ZOA.0209,
+ZOA.0223,
+ZOA.0237,
+ZOA.0208,
+ZOA.0222,
+ZOA.0236,
+ZOA.0207,
+ZOA.0221,
+ZOA.0235,
+ZOA.0206,
+ZOA.0220,
+ZOA.0234,
+ZOA.0205,
+ZOA.0219,
+ZOA.0233,
+ZOA.0204,
+ZOA.0218,
+ZOA.0232,
+ZOA.0203,
+ZOA.0217,
+ZOA.0231,
+ZOA.0202,
+ZOA.0216,
+ZOA.0230,
+ZOA.0201,
+ZOA.0215,
+ZOA.0229,
+ZOA.0245,
+ZOA.0250,
+ZOA.0255,
+ZOA.0244,
+ZOA.0249,
+ZOA.0254,
+ZOA.0243,
+ZOA.0248,
+ZOA.0253,
+ZOA.0301,
+ZOA.0302,
+ZOA.0303,
+ZOA.0401A,
+ZOA.0401B,
+ZOA.0402,
+ZOA.0403,
+ZOA.0404,
+ZOA.0405,
+ZOA.0406,
+ZOA.0501,
+ZOA.0502,
+ZOA.0604,
+ZOA.0605,
+ZOA.0607,
+ZOA.0609A,
+ZOA.0609B,
+ZOA.0609C,
+ZOA.0609D,
+ZOA.0609E,
+ZOA.0606,
+ZOA.0608,
+ZOA.0701A,
+ZOA.0701B,
+ZOA.0701C,
+ZOA.0701D,
+ZOA.0702,
+ZOA.0703,
+ZOA.0901,
+ZOA.0902,
+ZOA.0903,
+ZOA.0904,
+ZOA.0905,
+ZOA.0906,
+ZOA.0907,
+ZOA.0908,
+ZOA.0909,
+ZOA.0910,
+ZOA.0911,
+ZOA.0912,
+ZOA.0913,
+ZOA.0914,
+ZOA.0915,
+ZOA.0916,
+ZOA.0917,
+ZOA.0918,
+ZOA.0919,
+ZOA.0920,
+ZOA.0921,
+ZOA.0922,
+ZOA.0923,
+ZOA.0924,
+ZOA.0925,
+ZOA.0926,
+ZOA.0927,
+ZOA.0928,
+ZOA.0929,
+ZOA.0930,
+ZOA.0931,
+ZOA.0932,
+ZOA.0933,
+ZOA.0934,
+ZOA.0935,
+ZOA.0936,
+ZOA.0937,
+ZOA.0938,
+ZOA.0939,
+ZOA.0941,
+ZOA.0942,
+ZOA.0943,
+ZOA.0944,
+ZOA.0945,
+ZOA.0946,
+ZOA.0948,
+ZOA.0949,
+ZOA.0950,
+ZOA.0951,
+ZOA.7701,
+</Volumes>  
 <ResponsibleSectors>01,02,03,04,05,06,07,09</ResponsibleSectors> 
+  </Sector>  
+  <Sector FullName="BaseSec 0101" Frequency="131.950" Callsign="ZAK_0101_FSS" Name="0101">
+  <Volumes>ZOA.0101</Volumes> 
+  </Sector>
+  <Sector FullName="BaseSec 0102" Frequency="131.950" Callsign="ZAK_0102_FSS" Name="0102">
+  <Volumes>ZOA.0102</Volumes> 
+  </Sector>
+  <Sector FullName="BaseSec 0103" Frequency="131.950" Callsign="ZAK_0103_FSS" Name="0103">
+  <Volumes>ZOA.0103</Volumes> 
+  </Sector>
+  <Sector FullName="BaseSec 0104" Frequency="131.950" Callsign="ZAK_0104_FSS" Name="0104">
+  <Volumes>ZOA.0104</Volumes> 
+  </Sector>
+  <Sector FullName="BaseSec 0105" Frequency="131.950" Callsign="ZAK_0105_FSS" Name="0105">  
+  <Volumes>ZOA.0105</Volumes> 
+  </Sector>  
+  <Sector FullName="BaseSec0214" Frequency="131.950" Callsign="ZAK_0214_FSS" Name="0214">
+  <Volumes>ZOA.0214</Volumes>
+  </Sector>
+  <Sector FullName="BaseSec0228" Frequency="131.950" Callsign="ZAK_0228_FSS" Name="0228">
+  <Volumes>ZOA.0228</Volumes>
+  </Sector>
+  <Sector FullName="BaseSec0242" Frequency="131.950" Callsign="ZAK_0242_FSS" Name="0242">
+  <Volumes>ZOA.0242</Volumes>
+  </Sector>
+  <Sector FullName="BaseSec0211" Frequency="131.950" Callsign="ZAK_0211_FSS" Name="0211">
+  <Volumes>ZOA.0211</Volumes>
+  </Sector>
+  <Sector FullName="BaseSec0225" Frequency="131.950" Callsign="ZAK_0225_FSS" Name="0225">
+  <Volumes>ZOA.0225</Volumes>
+  </Sector>
+  <Sector FullName="BaseSec0239" Frequency="131.950" Callsign="ZAK_0239_FSS" Name="0239">
+  <Volumes>ZOA.0239</Volumes>
+  </Sector>
+  <Sector FullName="BaseSec0210" Frequency="131.950" Callsign="ZAK_0210_FSS" Name="0210">
+  <Volumes>ZOA.0210</Volumes>
+  </Sector>
+  <Sector FullName="BaseSec0224" Frequency="131.950" Callsign="ZAK_0224_FSS" Name="0224">
+  <Volumes>ZOA.0224</Volumes>
+  </Sector>
+  <Sector FullName="BaseSec0238" Frequency="131.950" Callsign="ZAK_0238_FSS" Name="0238">
+  <Volumes>ZOA.0238</Volumes>
+  </Sector>
+  <Sector FullName="BaseSec0209" Frequency="131.950" Callsign="ZAK_0209_FSS" Name="0209">
+  <Volumes>ZOA.0209</Volumes>
+  </Sector>
+  <Sector FullName="BaseSec0223" Frequency="131.950" Callsign="ZAK_0223_FSS" Name="0223">
+  <Volumes>ZOA.0223</Volumes>
+  </Sector>
+  <Sector FullName="BaseSec0237" Frequency="131.950" Callsign="ZAK_0237_FSS" Name="0237">
+  <Volumes>ZOA.0237</Volumes>
+  </Sector>
+  <Sector FullName="BaseSec0208" Frequency="131.950" Callsign="ZAK_0208_FSS" Name="0208">
+  <Volumes>ZOA.0208</Volumes>
+  </Sector>
+  <Sector FullName="BaseSec0222" Frequency="131.950" Callsign="ZAK_0222_FSS" Name="0222">
+  <Volumes>ZOA.0222</Volumes>
+  </Sector>
+  <Sector FullName="BaseSec0236" Frequency="131.950" Callsign="ZAK_0236_FSS" Name="0236">
+  <Volumes>ZOA.0236</Volumes>
+  </Sector>
+  <Sector FullName="BaseSec0207" Frequency="131.950" Callsign="ZAK_0207_FSS" Name="0207">
+  <Volumes>ZOA.0207</Volumes>
+  </Sector>
+  <Sector FullName="BaseSec0221" Frequency="131.950" Callsign="ZAK_0221_FSS" Name="0221">
+  <Volumes>ZOA.0221</Volumes>
+  </Sector>
+  <Sector FullName="BaseSec0235" Frequency="131.950" Callsign="ZAK_0235_FSS" Name="0235">
+  <Volumes>ZOA.0235</Volumes>
+  </Sector>
+  <Sector FullName="BaseSec0206" Frequency="131.950" Callsign="ZAK_0206_FSS" Name="0206">
+  <Volumes>ZOA.0206</Volumes>
+  </Sector>
+  <Sector FullName="BaseSec0220" Frequency="131.950" Callsign="ZAK_0220_FSS" Name="0220">
+  <Volumes>ZOA.0220</Volumes>
+  </Sector>
+  <Sector FullName="BaseSec0234" Frequency="131.950" Callsign="ZAK_0234_FSS" Name="0234">
+  <Volumes>ZOA.0234</Volumes>
+  </Sector>
+  <Sector FullName="BaseSec0205" Frequency="131.950" Callsign="ZAK_0205_FSS" Name="0205">
+  <Volumes>ZOA.0205</Volumes>
+  </Sector>
+  <Sector FullName="BaseSec0219" Frequency="131.950" Callsign="ZAK_0219_FSS" Name="0219">
+  <Volumes>ZOA.0219</Volumes>
+  </Sector>
+  <Sector FullName="BaseSec0233" Frequency="131.950" Callsign="ZAK_0233_FSS" Name="0233">
+  <Volumes>ZOA.0233</Volumes>
+  </Sector>
+  <Sector FullName="BaseSec0204" Frequency="131.950" Callsign="ZAK_0204_FSS" Name="0204">
+  <Volumes>ZOA.0204</Volumes>
+  </Sector>
+  <Sector FullName="BaseSec0218" Frequency="131.950" Callsign="ZAK_0218_FSS" Name="0218">
+  <Volumes>ZOA.0218</Volumes>
+  </Sector>
+  <Sector FullName="BaseSec0232" Frequency="131.950" Callsign="ZAK_0232_FSS" Name="0232">
+  <Volumes>ZOA.0232</Volumes>
+  </Sector>
+  <Sector FullName="BaseSec0203" Frequency="131.950" Callsign="ZAK_0203_FSS" Name="0203">
+  <Volumes>ZOA.0203</Volumes>
+  </Sector>
+  <Sector FullName="BaseSec0217" Frequency="131.950" Callsign="ZAK_0217_FSS" Name="0217">
+  <Volumes>ZOA.0217</Volumes>
+  </Sector>
+  <Sector FullName="BaseSec0231" Frequency="131.950" Callsign="ZAK_0231_FSS" Name="0231">
+  <Volumes>ZOA.0231</Volumes>
+  </Sector>
+  <Sector FullName="BaseSec0202" Frequency="131.950" Callsign="ZAK_0202_FSS" Name="0202">
+  <Volumes>ZOA.0202</Volumes>
+  </Sector>
+  <Sector FullName="BaseSec0216" Frequency="131.950" Callsign="ZAK_0216_FSS" Name="0216">
+  <Volumes>ZOA.0216</Volumes>
+  </Sector>
+  <Sector FullName="BaseSec0230" Frequency="131.950" Callsign="ZAK_0230_FSS" Name="0230">
+  <Volumes>ZOA.0230</Volumes>
+  </Sector>
+  <Sector FullName="BaseSec0201" Frequency="131.950" Callsign="ZAK_0201_FSS" Name="0201">
+  <Volumes>ZOA.0201</Volumes>
+  </Sector>
+  <Sector FullName="BaseSec0215" Frequency="131.950" Callsign="ZAK_0215_FSS" Name="0215">
+  <Volumes>ZOA.0215</Volumes>
+  </Sector>
+  <Sector FullName="BaseSec0229" Frequency="131.950" Callsign="ZAK_0229_FSS" Name="0229">
+  <Volumes>ZOA.0229</Volumes>
+  </Sector>
+  <Sector FullName="BaseSec0245" Frequency="131.950" Callsign="ZAK_0245_FSS" Name="0245">
+  <Volumes>ZOA.0245</Volumes>
+  </Sector>
+  <Sector FullName="BaseSec0250" Frequency="131.950" Callsign="ZAK_0250_FSS" Name="0250">
+  <Volumes>ZOA.0250</Volumes>
+  </Sector>
+  <Sector FullName="BaseSec0255" Frequency="131.950" Callsign="ZAK_0255_FSS" Name="0255">
+  <Volumes>ZOA.0255</Volumes>
+  </Sector>
+  <Sector FullName="BaseSec0244" Frequency="131.950" Callsign="ZAK_0244_FSS" Name="0244">
+  <Volumes>ZOA.0244</Volumes>
+  </Sector>
+  <Sector FullName="BaseSec0249" Frequency="131.950" Callsign="ZAK_0249_FSS" Name="0249">
+  <Volumes>ZOA.0249</Volumes>
+  </Sector>
+  <Sector FullName="BaseSec0254" Frequency="131.950" Callsign="ZAK_0254_FSS" Name="0254">
+  <Volumes>ZOA.0254</Volumes>
+  </Sector>
+  <Sector FullName="BaseSec0243" Frequency="131.950" Callsign="ZAK_0243_FSS" Name="0243">
+  <Volumes>ZOA.0243</Volumes>
+  </Sector>
+  <Sector FullName="BaseSec0248" Frequency="131.950" Callsign="ZAK_0248_FSS" Name="0248">
+  <Volumes>ZOA.0248</Volumes>
+  </Sector>
+  <Sector FullName="BaseSec0253" Frequency="131.950" Callsign="ZAK_0253_FSS" Name="0253">
+  <Volumes>ZOA.0253</Volumes>
+  </Sector>  
+  <Sector FullName="BaseSec0301" Frequency="131.950" Callsign="ZAK_0301_FSS" Name="0301">
+  <Volumes>ZOA.0301</Volumes>
+  </Sector>
+  <Sector FullName="BaseSec0302" Frequency="131.950" Callsign="ZAK_0302_FSS" Name="0302">
+  <Volumes>ZOA.0302</Volumes>
+  </Sector>
+  <Sector FullName="BaseSec0303" Frequency="131.950" Callsign="ZAK_0303_FSS" Name="0303">
+  <Volumes>ZOA.0303</Volumes>
+  </Sector>   
+  <Sector FullName="BaseSec0401A" Frequency="131.950" Callsign="ZAK_0401A_FSS" Name="0401A">
+  <Volumes>ZOA.0401A</Volumes>
+  </Sector>
+  <Sector FullName="BaseSec0401B" Frequency="131.950" Callsign="ZAK_0401B_FSS" Name="0401B">
+  <Volumes>ZOA.0401B</Volumes>
+  </Sector>
+  <Sector FullName="BaseSec0402" Frequency="131.950" Callsign="ZAK_0402_FSS" Name="0402">
+  <Volumes>ZOA.0402</Volumes>
+  </Sector>
+  <Sector FullName="BaseSec0403" Frequency="131.950" Callsign="ZAK_0403_FSS" Name="0403">
+  <Volumes>ZOA.0403</Volumes>
+  </Sector>
+  <Sector FullName="BaseSec0404" Frequency="131.950" Callsign="ZAK_0404_FSS" Name="0404">
+  <Volumes>ZOA.0404</Volumes>
+  </Sector>
+  <Sector FullName="BaseSec0405" Frequency="131.950" Callsign="ZAK_0405_FSS" Name="0405">
+  <Volumes>ZOA.0405</Volumes>
+  </Sector>
+  <Sector FullName="BaseSec0406" Frequency="131.950" Callsign="ZAK_0406_FSS" Name="0406">
+  <Volumes>ZOA.0406</Volumes>
   </Sector>    
-  <!--Sector FullName="PKWAT" Frequency="131.950" Callsign="ZAK_9_FSS" Name="PKWAT">  
-<Volumes>PKWA</Volumes> 
-  </Sector-->    
+  <Sector FullName="BaseSec0501" Frequency="129.400" Callsign="ZAK_0501_FSS" Name="0501">
+  <Volumes>ZOA.0501</Volumes>
+  </Sector>
+  <Sector FullName="BaseSec0502" Frequency="129.400" Callsign="ZAK_0502_FSS" Name="0502">
+  <Volumes>ZOA.0502</Volumes>
+  </Sector>    
+  <Sector FullName="BaseSec0604" Frequency="129.400" Callsign="ZAK_0604_FSS" Name="0604">
+  <Volumes>ZOA.0604</Volumes>
+  </Sector>
+  <Sector FullName="BaseSec0605" Frequency="129.400" Callsign="ZAK_0605_FSS" Name="0605">
+  <Volumes>ZOA.0605</Volumes>
+  </Sector>
+  <Sector FullName="BaseSec0607" Frequency="129.400" Callsign="ZAK_0607_FSS" Name="0607">
+  <Volumes>ZOA.0607</Volumes>
+  </Sector>
+  <Sector FullName="BaseSec0609A" Frequency="129.400" Callsign="ZAK_0609A_FSS" Name="0609A">
+  <Volumes>ZOA.0609A</Volumes>
+  </Sector>
+  <Sector FullName="BaseSec0609B" Frequency="129.400" Callsign="ZAK_0609B_FSS" Name="0609B">
+  <Volumes>ZOA.0609B</Volumes>
+  </Sector>
+  <Sector FullName="BaseSec0609C" Frequency="129.400" Callsign="ZAK_0609C_FSS" Name="0609C">
+  <Volumes>ZOA.0609C</Volumes>
+  </Sector>
+  <Sector FullName="BaseSec0609D" Frequency="129.400" Callsign="ZAK_0609D_FSS" Name="0609D">
+  <Volumes>ZOA.0609D</Volumes>
+  </Sector>
+  <Sector FullName="BaseSec0609E" Frequency="129.400" Callsign="ZAK_0609E_FSS" Name="0609E">
+  <Volumes>ZOA.0609E</Volumes>
+  </Sector>
+  <Sector FullName="BaseSec0606" Frequency="129.400" Callsign="ZAK_0606_FSS" Name="0606">
+  <Volumes>ZOA.0606</Volumes>
+  </Sector>
+  <Sector FullName="BaseSec0608" Frequency="129.400" Callsign="ZAK_0608_FSS" Name="0608">
+  <Volumes>ZOA.0608</Volumes>
+  </Sector>  
+  <Sector FullName="BaseSec0701A" Frequency="131.950" Callsign="ZAK_0701A_FSS" Name="0701A">
+  <Volumes>ZOA.0701A</Volumes>
+  </Sector>
+  <Sector FullName="BaseSec0701B" Frequency="131.950" Callsign="ZAK_0701B_FSS" Name="0701B">
+  <Volumes>ZOA.0701B</Volumes>
+  </Sector>
+  <Sector FullName="BaseSec0701C" Frequency="131.950" Callsign="ZAK_0701C_FSS" Name="0701C">
+  <Volumes>ZOA.0701C</Volumes>
+  </Sector>
+  <Sector FullName="BaseSec0701D" Frequency="131.950" Callsign="ZAK_0701D_FSS" Name="0701D">
+  <Volumes>ZOA.0701D</Volumes>
+  </Sector>  
+  <Sector FullName="BaseSec0702" Frequency="131.950" Callsign="ZAK_0702_FSS" Name="0702">
+  <Volumes>ZOA.0702</Volumes>
+  </Sector>
+  <Sector FullName="BaseSec0703" Frequency="131.950" Callsign="ZAK_0703_FSS" Name="0703">
+  <Volumes>ZOA.0703</Volumes>
+  </Sector>  
+  <Sector FullName="BaseSec0901" Frequency="131.950" Callsign="ZAK_0901_FSS" Name="0901">
+  <Volumes>ZOA.0901</Volumes>
+  </Sector>
+  <Sector FullName="BaseSec0902" Frequency="131.950" Callsign="ZAK_0902_FSS" Name="0902">
+  <Volumes>ZOA.0902</Volumes>
+  </Sector>
+  <Sector FullName="BaseSec0903" Frequency="131.950" Callsign="ZAK_0903_FSS" Name="0903">
+  <Volumes>ZOA.0903</Volumes>
+  </Sector>
+  <Sector FullName="BaseSec0904" Frequency="131.950" Callsign="ZAK_0904_FSS" Name="0904">
+  <Volumes>ZOA.0904</Volumes>
+  </Sector>
+  <Sector FullName="BaseSec0905" Frequency="131.950" Callsign="ZAK_0905_FSS" Name="0905">
+  <Volumes>ZOA.0905</Volumes>
+  </Sector>
+  <Sector FullName="BaseSec0906" Frequency="131.950" Callsign="ZAK_0906_FSS" Name="0906">
+  <Volumes>ZOA.0906</Volumes>
+  </Sector>
+  <Sector FullName="BaseSec0907" Frequency="131.950" Callsign="ZAK_0907_FSS" Name="0907">
+  <Volumes>ZOA.0907</Volumes>
+  </Sector>
+  <Sector FullName="BaseSec0908" Frequency="131.950" Callsign="ZAK_0908_FSS" Name="0908">
+  <Volumes>ZOA.0908</Volumes>
+  </Sector>
+  <Sector FullName="BaseSec0909" Frequency="131.950" Callsign="ZAK_0909_FSS" Name="0909">
+  <Volumes>ZOA.0909</Volumes>
+  </Sector>
+  <Sector FullName="BaseSec0910" Frequency="131.950" Callsign="ZAK_0910_FSS" Name="0910">
+  <Volumes>ZOA.0910</Volumes>
+  </Sector>
+  <Sector FullName="BaseSec0911" Frequency="131.950" Callsign="ZAK_0911_FSS" Name="0911">
+  <Volumes>ZOA.0911</Volumes>
+  </Sector>
+  <Sector FullName="BaseSec0912" Frequency="131.950" Callsign="ZAK_0912_FSS" Name="0912">
+  <Volumes>ZOA.0912</Volumes>
+  </Sector>
+  <Sector FullName="BaseSec0913" Frequency="131.950" Callsign="ZAK_0913_FSS" Name="0913">
+  <Volumes>ZOA.0913</Volumes>
+  </Sector>
+  <Sector FullName="BaseSec0914" Frequency="131.950" Callsign="ZAK_0914_FSS" Name="0914">
+  <Volumes>ZOA.0914</Volumes>
+  </Sector>
+  <Sector FullName="BaseSec0915" Frequency="131.950" Callsign="ZAK_0915_FSS" Name="0915">
+  <Volumes>ZOA.0915</Volumes>
+  </Sector>
+  <Sector FullName="BaseSec0916" Frequency="131.950" Callsign="ZAK_0916_FSS" Name="0916">
+  <Volumes>ZOA.0916</Volumes>
+  </Sector>
+  <Sector FullName="BaseSec0917" Frequency="131.950" Callsign="ZAK_0917_FSS" Name="0917">
+  <Volumes>ZOA.0917</Volumes>
+  </Sector>
+  <Sector FullName="BaseSec0918" Frequency="131.950" Callsign="ZAK_0918_FSS" Name="0918">
+  <Volumes>ZOA.0918</Volumes>
+  </Sector>
+  <Sector FullName="BaseSec0919" Frequency="131.950" Callsign="ZAK_0919_FSS" Name="0919">
+  <Volumes>ZOA.0919</Volumes>
+  </Sector>
+  <Sector FullName="BaseSec0920" Frequency="131.950" Callsign="ZAK_0920_FSS" Name="0920">
+  <Volumes>ZOA.0920</Volumes>
+  </Sector>
+  <Sector FullName="BaseSec0921" Frequency="131.950" Callsign="ZAK_0921_FSS" Name="0921">
+  <Volumes>ZOA.0921</Volumes>
+  </Sector>
+  <Sector FullName="BaseSec0922" Frequency="131.950" Callsign="ZAK_0922_FSS" Name="0922">
+  <Volumes>ZOA.0922</Volumes>
+  </Sector>
+  <Sector FullName="BaseSec0923" Frequency="131.950" Callsign="ZAK_0923_FSS" Name="0923">
+  <Volumes>ZOA.0923</Volumes>
+  </Sector>
+  <Sector FullName="BaseSec0924" Frequency="131.950" Callsign="ZAK_0924_FSS" Name="0924">
+  <Volumes>ZOA.0924</Volumes>
+  </Sector>
+  <Sector FullName="BaseSec0925" Frequency="131.950" Callsign="ZAK_0925_FSS" Name="0925">
+  <Volumes>ZOA.0925</Volumes>
+  </Sector>
+  <Sector FullName="BaseSec0926" Frequency="131.950" Callsign="ZAK_0926_FSS" Name="0926">
+  <Volumes>ZOA.0926</Volumes>
+  </Sector>
+  <Sector FullName="BaseSec0927" Frequency="131.950" Callsign="ZAK_0927_FSS" Name="0927">
+  <Volumes>ZOA.0927</Volumes>
+  </Sector>
+  <Sector FullName="BaseSec0928" Frequency="131.950" Callsign="ZAK_0928_FSS" Name="0928">
+  <Volumes>ZOA.0928</Volumes>
+  </Sector>
+  <Sector FullName="BaseSec0929" Frequency="131.950" Callsign="ZAK_0929_FSS" Name="0929">
+  <Volumes>ZOA.0929</Volumes>
+  </Sector>
+  <Sector FullName="BaseSec0930" Frequency="131.950" Callsign="ZAK_0930_FSS" Name="0930">
+  <Volumes>ZOA.0930</Volumes>
+  </Sector>
+  <Sector FullName="BaseSec0931" Frequency="131.950" Callsign="ZAK_0931_FSS" Name="0931">
+  <Volumes>ZOA.0931</Volumes>
+  </Sector>
+  <Sector FullName="BaseSec0932" Frequency="131.950" Callsign="ZAK_0932_FSS" Name="0932">
+  <Volumes>ZOA.0932</Volumes>
+  </Sector>
+  <Sector FullName="BaseSec0933" Frequency="131.950" Callsign="ZAK_0933_FSS" Name="0933">
+  <Volumes>ZOA.0933</Volumes>
+  </Sector>
+  <Sector FullName="BaseSec0934" Frequency="131.950" Callsign="ZAK_0934_FSS" Name="0934">
+  <Volumes>ZOA.0934</Volumes>
+  </Sector>
+  <Sector FullName="BaseSec0935" Frequency="131.950" Callsign="ZAK_0935_FSS" Name="0935">
+  <Volumes>ZOA.0935</Volumes>
+  </Sector>
+  <Sector FullName="BaseSec0936" Frequency="131.950" Callsign="ZAK_0936_FSS" Name="0936">
+  <Volumes>ZOA.0936</Volumes>
+  </Sector>
+  <Sector FullName="BaseSec0937" Frequency="131.950" Callsign="ZAK_0937_FSS" Name="0937">
+  <Volumes>ZOA.0937</Volumes>
+  </Sector>
+  <Sector FullName="BaseSec0938" Frequency="131.950" Callsign="ZAK_0938_FSS" Name="0938">
+  <Volumes>ZOA.0938</Volumes>
+  </Sector>
+  <Sector FullName="BaseSec0939" Frequency="131.950" Callsign="ZAK_0939_FSS" Name="0939">
+  <Volumes>ZOA.0939</Volumes>
+  </Sector>
+  <Sector FullName="BaseSec0941" Frequency="131.950" Callsign="ZAK_0941_FSS" Name="0941">
+  <Volumes>ZOA.0941</Volumes>
+  </Sector>
+  <Sector FullName="BaseSec0942" Frequency="131.950" Callsign="ZAK_0942_FSS" Name="0942">
+  <Volumes>ZOA.0942</Volumes>
+  </Sector>
+  <Sector FullName="BaseSec0943" Frequency="131.950" Callsign="ZAK_0943_FSS" Name="0943">
+  <Volumes>ZOA.0943</Volumes>
+  </Sector>
+  <Sector FullName="BaseSec0944" Frequency="131.950" Callsign="ZAK_0944_FSS" Name="0944">
+  <Volumes>ZOA.0944</Volumes>
+  </Sector>
+  <Sector FullName="BaseSec0945" Frequency="131.950" Callsign="ZAK_0945_FSS" Name="0945">
+  <Volumes>ZOA.0945</Volumes>
+  </Sector>
+  <Sector FullName="BaseSec0946" Frequency="131.950" Callsign="ZAK_0946_FSS" Name="0946">
+  <Volumes>ZOA.0946</Volumes>
+  </Sector>
+  <Sector FullName="BaseSec0948" Frequency="131.950" Callsign="ZAK_0948_FSS" Name="0948">
+  <Volumes>ZOA.0948</Volumes>
+  </Sector>
+  <Sector FullName="BaseSec0949" Frequency="131.950" Callsign="ZAK_0949_FSS" Name="0949">
+  <Volumes>ZOA.0949</Volumes>
+  </Sector>
+  <Sector FullName="BaseSec0950" Frequency="131.950" Callsign="ZAK_0950_FSS" Name="0950">
+  <Volumes>ZOA.0950</Volumes>
+  </Sector>
+  <Sector FullName="BaseSec0951" Frequency="131.950" Callsign="ZAK_0951_FSS" Name="0951">
+  <Volumes>ZOA.0951</Volumes>
+  </Sector>       
   <Sector FullName="Auckland ACC" Frequency="128.900" Callsign="NZZO_FSS" Name="AU" DisplayInSectorsWindow="False">  
 <Volumes>NZZO</Volumes> 
   </Sector>
@@ -61,7 +842,7 @@
   <Sector FullName="Los Angeles NAS" Frequency="135.550" Callsign="LAX_55_CTR" Name="LA" DisplayInSectorsWindow="False">  
 <Volumes>KZLA</Volumes> 
   </Sector>    
-  <!--Sector FullName="Manila P ACC" Frequency="" Callsign="MNL_FSS" Name="MN" DisplayInSectorsWindow="False"/-->    
+  <!--Sector FullName="Manila P ACC" Frequency=" Callsign="MNL_FSS" Name="MN" DisplayInSectorsWindow="False"/-->    
   <Sector FullName="Manila P ACC" Frequency="119.300" Callsign="MNL_CTR" Name="MN" DisplayInSectorsWindow="False">  
 <Volumes>RPHI</Volumes> 
   </Sector>
@@ -74,7 +855,7 @@
   <Sector FullName="Nadi ACC" Frequency="123.600" Callsign="NFFF_FSS" Name="ND" DisplayInSectorsWindow="False">  
 <Volumes>NFFF</Volumes> 
   </Sector>
-  <!--Sector FullName="Nauru ACC" Frequency="" Callsign="" Name="NU" DisplayInSectorsWindow="False">  
+  <!--Sector FullName="Nauru ACC" Frequency=" Callsign=" Name="NU" DisplayInSectorsWindow="False">  
 <Volumes>KZOA</Volumes> 
   </Sector-->
   <Sector FullName="Oakland NAS" Frequency="119.975" Callsign="OAK_36_CTR" Name="OA" DisplayInSectorsWindow="False"/>
