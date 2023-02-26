@@ -55,7 +55,6 @@
 	<Line Name="G223">ADKAK.G223.SAREG</Line>
 	<Line Name="G339">UNZ.G339.PSN</Line>
 	<Line Name="G342">CS.G342.HN</Line>
-	<Line Name="G344">KALNA.G344.CUDDA</Line>
 	<Line Name="G347">AA.G347.DATBE</Line>
 	<Line Name="G349">NEONN.G349.MARCC</Line>
 	<Line Name="G457">DATBE.G457.SELKA</Line>
@@ -109,7 +108,6 @@
 	<Line Name="R220">NODLE.R220.IXE</Line>
 	<Line Name="R330">SYA.R330.POWAL</Line>
 	<Line Name="R332">NN.R332.MAJ</Line>
-	<Line Name="R336">ADK.R336.CARTO</Line>
 	<Line Name="R337">TAC.R337.ROR</Line>
 	<Line Name="R338">OPAKE.R338.OME</Line>
 	<Line Name="R341">ODK.R341.NATES</Line>
@@ -125,7 +123,6 @@
 	<Line Name="R583">APU.R583.BORDO</Line>
 	<Line Name="R584">AVLAS.R584.CHOKO</Line>
 	<Line Name="R585">CIVIT.R585.AUDIA</Line>
-	<Line Name="R591">ADNAP.R591.HAMND</Line>
 	<Line Name="R595">APU.R595.UNZ</Line>
 	<Line Name="R599">ENDAL.R599.DUGAN</Line>
  <Symbol Type="HollowSquare">	
@@ -417,15 +414,6 @@
 		<Point Name="G223">+155850.219+1571828.792</Point>
 		<Point Name="G223">+122841.963+1592901.164</Point>
 		<Point Name="G223">+064447.298+1624952.476</Point>
-	    <Point Name="G334">+561634.000-1643524.000</Point>
-		<Point Name="G334">+552224.000-1695641.000</Point>
-		<Point Name="G334">+543106.000-1735256.000</Point>
-		<Point Name="G334">+524950.000+1795710.000</Point>
-		<Point Name="G334">+522222.397+1784000.057</Point>
-		<Point Name="G334">+513446.708+1762224.593</Point>
-		<Point Name="G334">+495817.092+1721251.448</Point>
-		<Point Name="G334">+473253.550+1654140.033</Point>
-		<Point Name="G334">+445523.000+1590937.000</Point>
 		<Point Name="G334">+411041.000+1524452.000</Point>
 		<Point Name="G339">+313132.000+1303743.000</Point>
 		<Point Name="G339">+311313.000+1304620.000</Point>
@@ -625,8 +613,8 @@
 		<Point Name="R332">-145533.6523+1771308.1875</Point>
 		<Point Name="R337">+081725.2363+1322124.625</Point>
 		<Point Name="R337">+100702.8164+1275037.1563</Point>
-		<Point Name="R336">+511642.000+1794301.000</Point>
-		<Point Name="R336">+493527.926+1722741.744</Point>	
+		<!--Point Name="R336">+511642.000+1794301.000</Point>
+		<Point Name="R336">+493527.926+1722741.744</Point-->	
 		<Point Name="R338">+641943.000-1655355.000</Point>
 		<Point Name="R338">+634630.000-1675433.000</Point>
 		<Point Name="R338">+625959.000-7103056.000</Point>
@@ -719,21 +707,7 @@
 		<Point Name="R585">+340535.429-1235730.642</Point>
 		<Point Name="R585">+330319.351-1284915.583</Point>
 		<Point Name="R585">+310449.201-1363249.009</Point>
-		<Point Name="R585">+283551.379-1434414.447</Point>
-        <Point Name="R591">+593621.000-1583909.000</Point>		
-        <Point Name="R591">+582426.000-1633820.000</Point>		
-        <Point Name="R591">+574100.000-1673335.000</Point>		
-        <Point Name="R591">+564852.000-1715817.000</Point>		
-        <Point Name="R591">+555242.000-1760234.000</Point>		
-        <Point Name="R591">+544636.000+1795808.000</Point>
-        <Point Name="R591">+532839.405+1761556.711</Point>
-        <Point Name="R591">+520717.731+1724202.436</Point>
-        <Point Name="R591">+503602.704+1684644.734</Point>
-		<Point Name="R591">+483749.442+1635155.756</Point>
-		<Point Name="R591">+460429.000+1582151.000</Point>
-		<Point Name="R591">+422560.000+1522532.000</Point>
-		<Point Name="R591">+385633.000+1474412.000</Point>				
-		<Point Name=""></Point>				
+		<Point Name="R585">+283551.379-1434414.447</Point>				
 	</Symbol>	
   </Map>	
   <Map Type="System" CustomColourName="SkyBlue2" Name="Rts_Nms" Priority="15">  
@@ -1026,16 +1000,6 @@
 		<Point Name="G223">+155850.219+1571828.792</Point>
 		<Point Name="G223">+122841.963+1592901.164</Point>
 		<Point Name="G223">+064447.298+1624952.476</Point>
-	    <Point Name="G334">+561634.000-1643524.000</Point>
-		<Point Name="G334">+552224.000-1695641.000</Point>
-		<Point Name="G334">+543106.000-1735256.000</Point>
-		<Point Name="G334">+524950.000+1795710.000</Point>
-		<Point Name="G334">+522222.397+1784000.057</Point>
-		<Point Name="G334">+513446.708+1762224.593</Point>
-		<Point Name="G334">+495817.092+1721251.448</Point>
-		<Point Name="G334">+473253.550+1654140.033</Point>
-		<Point Name="G334">+445523.000+1590937.000</Point>
-		<Point Name="G334">+411041.000+1524452.000</Point>
 		<Point Name="G339">+313132.000+1303743.000</Point>
 		<Point Name="G339">+311313.000+1304620.000</Point>
 		<Point Name="G339">+305258.000+1305355.000</Point>
@@ -1233,9 +1197,7 @@
 		<Point Name="R332">-092158.7656+1762111.8125</Point>
 		<Point Name="R332">-145533.6523+1771308.1875</Point>
 		<Point Name="R337">+081725.2363+1322124.625</Point>
-		<Point Name="R337">+100702.8164+1275037.1563</Point>
-		<Point Name="R336">+511642.000+1794301.000</Point>
-		<Point Name="R336">+493527.926+1722741.744</Point>	
+		<Point Name="R337">+100702.8164+1275037.1563</Point>	
 		<Point Name="R338">+641943.000-1655355.000</Point>
 		<Point Name="R338">+634630.000-1675433.000</Point>
 		<Point Name="R338">+625959.000-7103056.000</Point>
@@ -1329,19 +1291,6 @@
 		<Point Name="R585">+330319.351-1284915.583</Point>
 		<Point Name="R585">+310449.201-1363249.009</Point>
 		<Point Name="R585">+283551.379-1434414.447</Point>
-        <Point Name="R591">+593621.000-1583909.000</Point>		
-        <Point Name="R591">+582426.000-1633820.000</Point>		
-        <Point Name="R591">+574100.000-1673335.000</Point>		
-        <Point Name="R591">+564852.000-1715817.000</Point>		
-        <Point Name="R591">+555242.000-1760234.000</Point>		
-        <Point Name="R591">+544636.000+1795808.000</Point>
-        <Point Name="R591">+532839.405+1761556.711</Point>
-        <Point Name="R591">+520717.731+1724202.436</Point>
-        <Point Name="R591">+503602.704+1684644.734</Point>
-		<Point Name="R591">+483749.442+1635155.756</Point>
-		<Point Name="R591">+460429.000+1582151.000</Point>
-		<Point Name="R591">+422560.000+1522532.000</Point>
-		<Point Name="R591">+385633.000+1474412.000</Point>
 </Label>
 </Map>    
   <Map Type="System" CustomColourName="SpringGreen" Name="Pts" Priority="1" Center="+270000.000-1750000.000">
