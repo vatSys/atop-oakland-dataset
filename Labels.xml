@@ -33,7 +33,7 @@
     <DataLine >
 	  <Item Type="LABEL_ITEM_ACID" Colour="" P1_Colour="Emergency" LeftClick="Label_Move" MiddleClick="Label_Extend_Toggle" RightClick="Label_ACID_Menu" MaxLength="7" MinLength="7" LeftPadding="1"/>	
 	  <Item Type="LABEL_ITEM_EMERG" Colour="Emergency" BackgroundColour="Warning" LeftClick="" MiddleClick="Label_Emerg" RightClick=""/>
-      <Item Type="LABEL_ITEM_WARNING" Colour="Warning" P1_BackgroundColour="Emergency" LeftClick="" MiddleClick="Label_Warning" RightClick=""/>	  
+      <!--Item Type="LABEL_ITEM_WARNING" Colour="Warning" LeftClick="" MiddleClick="Label_Warning" RightClick=""/-->	  
     </DataLine>
     <DataLine >    
 	  <Item Type="LABEL_ITEM_LEVEL" Colour="" LeftClick="Label_Move" MiddleClick="" RightClick="Label_PRL_Popup" LeftPadding="2"/>
@@ -73,7 +73,7 @@
       <Item Type="AURORA_ADS_FLAGS" Colour="" LeftClick="" MiddleClick="" RightClick="" />
       <Item Type="AURORA_MNT_FLAGS" Colour="" LeftClick="" MiddleClick="" RightClick="" />	  
       <Item Type="LABEL_ITEM_EMERG" Colour="Emergency" BackgroundColour="Warning" LeftClick="" MiddleClick="Label_Emerg" RightClick=""/>
-      <Item Type="LABEL_ITEM_WARNING" Colour="Warning" P1_BackgroundColour="Emergency" LeftClick="" MiddleClick="Label_Warning" RightClick=""/> 
+      <!--Item Type="LABEL_ITEM_WARNING" Colour="Warning" LeftClick="" MiddleClick="Label_Warning" RightClick=""/--> 
 	  <Item Type="SELECT_RIGHT" />	  
     </DataLine>
     <DataLine>
