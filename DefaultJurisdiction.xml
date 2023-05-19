@@ -3,9 +3,7 @@
   <RuleSets>
     <RuleSet Name="AUTO_JURISDICTION">
       <Rules>
-        <Destination Values="">
           <Rules>
-            <Runway Values="">
               <Rules>
                 <Route Values="DACEM, CEPAS, ALLBE, BAART, CREAN, MAFIC, AUDIA, AUNTI, BOARD, CEBEN">
                   <AssignSector Order="77, 04"/>
@@ -32,12 +30,10 @@
                   <AssignSector Order="77, 03"/>
                 </Route>				
               </Rules>
-            </Runway>
             <Default>
               <AssignSector Order="77"/>
             </Default>
           </Rules>
-        </Destination>
       </Rules>
     </RuleSet>
   </RuleSets>

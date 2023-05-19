@@ -2,7 +2,7 @@
 <AlertParameters>
   <ConflictAlerts>
     <STCA Name="Imminent" LateralNM="23.0" SecondsLookahead="1800" AlertPriority="1">
-      <Vertical LowerLevel="055" UpperLevel="99999" Height="1600" HeightWithRVSM="600"/>
+      <Vertical LowerLevel="5500" UpperLevel="99999" Height="1600" HeightWithRVSM="600"/>
      <Volumes>SSAPAC</Volumes>
 	 <InhibitionAreas>
   		<InhibitionArea Name="DOM" LowerLevel="0" UpperLevel="75000">
@@ -65,11 +65,70 @@
 	  </InhibitionAreas>
     </STCA>
     <STCA Name="Advisory" LateralNM="23.0" SecondsLookahead="7200" AlertPriority="2">
-      <Vertical LowerLevel="055" UpperLevel="99999" Height="1600" HeightWithRVSM="600"/>
+      <Vertical LowerLevel="5500" UpperLevel="99999" Height="1600" HeightWithRVSM="600"/>
      <Volumes>SSAPAC</Volumes>
+	 <InhibitionAreas>
+  		<InhibitionArea Name="DOM" LowerLevel="0" UpperLevel="75000">
+		+314200.000-1165300.000/
+		+332000.000-1182800.000/
+		+340100.000-1194600.000/
+		+342000.000-1204700.000/
+		+350000.000-1210000.000/
+		+361400.000-1220400.000/
+		+370900.000-1223700.000/
+		+385600.000-1235900.000/
+		+394000.000-1240300.000/
+		+402400.000-1244300.000/
+		+412500.000-1242500.000/
+		+425300.000-1245400.000/
+		+453400.000-1241400.000/
+		+452100.000-1150000.000/
+		+320600.000-1133100.000/
+		+314200.000-1165300.000
+  		</InhibitionArea>
+      <InhibitionArea Name="HCF" LowerLevel="0" UpperLevel="75000">
+		+205257.000-1525427.00/
+		+204154.000-1524831.00/
+		+192848.000-1544009.00/
+		+185226.000-1553929.00/
+		+184011.000-1572452.00/
+		+184011.000-1573957.00/
+		+184118.000-1575012.00/
+		+190758.000-1585449.00/
+		+192218.000-1593003.00/
+		+192753.000-1593834.00/
+		+193833.000-1595452.00/
+		+203703.000-1612540.00/
+		+204902.000-1614110.00/
+		+210538.000-1620245.00/
+		+212145.000-1621209.00/
+		+213201.000-1621810.00/
+		+220931.000-1621744.00/
+		+224819.000-1621506.00/
+		+225609.000-1620958.00/
+		+232250.000-1615222.00/
+		+240016.000-1612601.00/
+		+242206.000-1605200.00/
+		+243651.000-1601534.00/
+		+243714.000-1595735.00/
+		+243824.000-1585837.00/
+		+235009.000-1570655.00/
+		+232123.000-1555631.00/
+		+230853.000-1552632.00/
+		+225833.000-1550200.00/
+		+224622.000-1544056.00/
+		+223639.000-1542415.00/
+		+221917.000-1540557.00/
+		+215920.000-1534505.00/
+		+213939.000-1532449.00/
+		+212842.000-1531336.00/
+		+211653.000-1530716.00/
+		+205257.000-1525427.00
+      </InhibitionArea>
+	  </InhibitionAreas>	 
     </STCA>	
     <MTCA Name="D30/30" LateralNM="30.0" SecondsLookahead="7200" AlertPriority="3">
-      <Vertical LowerLevel="055" UpperLevel="99999" Height="1900" HeightWithRVSM="900"/>
+      <Vertical LowerLevel="5500" UpperLevel="99999" Height="1900" HeightWithRVSM="900"/>
      <Volumes>OC1,OC1a,OC2,OC3,OC3a,OC4,OC4a,OC4b,OC5N,OC5S,OC6,OC7,OC9</Volumes>
     </MTCA>
   </ConflictAlerts>
