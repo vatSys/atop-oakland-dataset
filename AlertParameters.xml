@@ -2,7 +2,7 @@
 <AlertParameters>
   <ConflictAlerts>
     <STCA Name="Imminent" LateralNM="23.0" SecondsLookahead="1800" AlertPriority="1">
-      <Vertical LowerLevel="5500" UpperLevel="99999" Height="1600" HeightWithRVSM="600"/>
+      <Vertical LowerLevel="5500" UpperLevel="99999" Height="1000" HeightWithRVSM="2000"/>
      <Volumes>SSAPAC</Volumes>
 	 <InhibitionAreas>
   		<InhibitionArea Name="DOM" LowerLevel="0" UpperLevel="75000">
@@ -65,7 +65,7 @@
 	  </InhibitionAreas>
     </STCA>
     <STCA Name="Advisory" LateralNM="23.0" SecondsLookahead="7200" AlertPriority="2">
-      <Vertical LowerLevel="5500" UpperLevel="99999" Height="1600" HeightWithRVSM="600"/>
+      <Vertical LowerLevel="5500" UpperLevel="99999" Height="1000" HeightWithRVSM="2000"/>
      <Volumes>SSAPAC</Volumes>
 	 <InhibitionAreas>
   		<InhibitionArea Name="DOM" LowerLevel="0" UpperLevel="75000">

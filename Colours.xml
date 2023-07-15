@@ -503,10 +503,10 @@
   </Colour>
   <Colour id="WindowButtonSelected">
     <Use>Selected Window Button Background</Use>
-    <Name>Black</Name>
-    <R>0</R>
-    <G>0</G>
-    <B>0</B>
+    <Name>YellowGreen</Name>
+    <R>122</R>
+    <G>255</G>
+    <B>78</B>
   </Colour>
  <Colour id="WindowEmergency">
     <Use>Emergency Indications in Windows</Use>

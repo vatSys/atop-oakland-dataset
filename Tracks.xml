@@ -19,23 +19,17 @@
 	<!-- Special Code 1 Diamond -->
 	<TrackSymbol Type="ModeA" SpecialCode="0001" StrokeWidth="1">
 		<PathGeometry>
-			<Figure Start="-10,0" FigureBegin="Hollow" FigureEnd="Closed">
-				<Line>0,10</Line>
-				<Line>10,0</Line>
-				<Line>0,-10</Line>
-				<Line>-10,0</Line>				
+			<Figure Start="-4,-4" FigureBegin="Hollow" FigureEnd="Open" StrokeWidth="0">
+				<Line>5,5</Line>
 			</Figure>
-		</PathGeometry>			
+		</PathGeometry>				
 	</TrackSymbol>
 	<TrackSymbol Type="ModeS" SpecialCode="0001" StrokeWidth="1">
 		<PathGeometry>
-			<Figure Start="-10,0" FigureBegin="Hollow" FigureEnd="Closed">
-				<Line>0,10</Line>
-				<Line>10,0</Line>
-				<Line>0,-10</Line>
-				<Line>-10,0</Line>				
+			<Figure Start="-4,-4" FigureBegin="Hollow" FigureEnd="Open" StrokeWidth="0">
+				<Line>5,5</Line>
 			</Figure>
-		</PathGeometry>			
+		</PathGeometry>				
 	</TrackSymbol>
 	
 	<!-- Special Code 2 Diamond -->
