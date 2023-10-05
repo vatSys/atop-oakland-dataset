@@ -7505,7 +7505,7 @@
 	<Boundary Name="PKWA">+085615.667+1675123.530/+085722.008+1674859.617</Boundary> 
 	<Boundary Name="PKWA">+085722.008+1674859.617/+085802.638+1674626.217</Boundary> 
 	<Boundary Name="PKWA">+085802.638+1674626.217/+085816.320+1674348.000</Boundary> 
-<Boundary Name="ZOA.PACIFICSSA">
+<!--Boundary Name="ZOA.PACIFICSSA">
 -060039.000+1170946.000/
 +100803.000+1130915.000/
 +165557.000+1130747.000/
@@ -7522,7 +7522,7 @@
 </Boundary>	
   <Volume Name="SSAPAC" LowerLimit="0" UpperLimit="99000">    
     <Boundaries>ZOA.PACIFICSSA</Boundaries>
-  </Volume>
+  </Volume-->
   <Volume Name="ZOA.0101" LowerLimit="0" UpperLimit="99000">    
     <Boundaries>ZOA.0101</Boundaries>
   </Volume>

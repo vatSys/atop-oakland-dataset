@@ -183,7 +183,7 @@
 						</StripLayoutLine>						  
                           <StripLayoutLine>
                             <StripItems>
-								<StripItem Type="AURORA_ANNOT_STRIP" MinLength="1" MaxLength="1" LeftClick="Strip_GlobalOps"/>
+								<StripItem Type="AURORA_ANNOT_STRIP" MinLength="1" MaxLength="1" LeftClick="Strip_LocalOps"/>
 								<StripItem Type="AURORA_LATERAL_FLAG" MinLength="1" MaxLength="1"/>
 								<StripItem Type="AURORA_RESTR" MinLength="1" MaxLength="1"/>
                             </StripItems>
@@ -334,7 +334,7 @@
                     <StripLayoutLines>
                       <StripLayoutLine>
                         <StripItems>
-                          <StripItem Type="GlobalOpsInfo" LeftClick="Strip_GlobalOps" MaxLength="75" MinLength="75" />
+                          <StripItem Type="LocalOpsInfo" LeftClick="Strip_LocalOps" MaxLength="75" MinLength="75" />
                         </StripItems>
                       </StripLayoutLine>
                     </StripLayoutLines>
