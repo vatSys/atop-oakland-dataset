@@ -30,6 +30,14 @@
 		<Point>+131400.000+1446000.000</Point>
 	</ManualVisibility>  
     <Sectors>
+      <Sector Name="01" />
+      <Sector Name="02" />	
+      <Sector Name="03" />
+      <Sector Name="04" />	 
+      <Sector Name="05" />
+      <Sector Name="06" />
+      <Sector Name="07" />	 
+      <Sector Name="09" />
       <Sector Name="77" />   
     </Sectors>
     <Maps>
