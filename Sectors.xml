@@ -731,9 +731,9 @@ ZOA.7701
   <!--Sector FullName="Nauru ACC" Frequency=" Callsign=" Name="NU" DisplayInSectorsWindow="False">  
 <Volumes>KZOA</Volumes> 
   </Sector-->
-  <Sector FullName="Oakland NAS" Frequency="119.975" Callsign="OAK_36_CTR" Name="OA" DisplayInSectorsWindow="False"/>
-  <Sector FullName="Oakland NAS" Frequency="134.550" Callsign="OAK_14_CTR" Name="OA" DisplayInSectorsWindow="False"/>  
-  <Sector FullName="Oakland NAS" Frequency="132.200" Callsign="OAK_CTR" Name="OA" DisplayInSectorsWindow="False">  
+  <Sector FullName="Oakland NAS" Frequency="119.975" Callsign="OAK_36_CTR" Name="OA" />
+  <Sector FullName="Oakland NAS" Frequency="134.550" Callsign="OAK_14_CTR" Name="OA" />  
+  <Sector FullName="Oakland NAS" Frequency="132.200" Callsign="OAK_CTR" Name="OA" >
 <Volumes>KZOA</Volumes> 
   </Sector>  
   <Sector FullName="Seattle NAS" Frequency="135.450" Callsign="SEA_CTR" Name="SE" DisplayInSectorsWindow="False">  

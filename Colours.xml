@@ -7,6 +7,13 @@
 		<G>131</G>
 		<B>183</B>
 	</Colour>
+    <Colour id="Default">
+		<Use>Assumed</Use>
+		<Name>Smoke</Name>
+		<R>240</R>
+		<G>255</G>
+		<B>255</B>
+	</Colour>
 
   <Colour id="GenericText">
 		<Use>Window Text</Use>

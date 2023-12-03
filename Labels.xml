@@ -46,80 +46,81 @@
   </Label>
   <Label Type="Extended" MaximumWidth="17" LabelRectangle="Default" >
     <DataLine>	
-	  <Item Type="SELECT_TOP" />
-	  <Item Type="SELECT_TOP" />
-	  <Item Type="SELECT_TOP" />
-	  <Item Type="SELECT_TOP" />
-	  <Item Type="SELECT_TOP" />
-	  <Item Type="SELECT_TOP" />
-	  <Item Type="SELECT_TOP" />
-	  <Item Type="SELECT_TOP" />
-	  <Item Type="SELECT_TOP" />
-	  <Item Type="SELECT_TOP" />
-	  <Item Type="SELECT_TOP" />
-	  <Item Type="SELECT_TOP" />
-	  <Item Type="SELECT_TOP" />
-	  <Item Type="SELECT_TOP" />
-	  <Item Type="SELECT_TOP" />
-	  <Item Type="SELECT_TOP" />
-	  <Item Type="SELECT_TOP" />  
-	  <Item Type="SELECT_TOP" />	  
+	  <Item Type="SELECT_HORI" />
+	  <Item Type="SELECT_HORI" />
+	  <Item Type="SELECT_HORI" />
+	  <Item Type="SELECT_HORI" />
+	  <Item Type="SELECT_HORI" />
+	  <Item Type="SELECT_HORI" />
+	  <Item Type="SELECT_HORI" />
+	  <Item Type="SELECT_HORI" />
+	  <Item Type="SELECT_HORI" />
+	  <Item Type="SELECT_HORI" />
+	  <Item Type="SELECT_HORI" />
+	  <Item Type="SELECT_HORI" />
+	  <Item Type="SELECT_HORI" />
+	  <Item Type="SELECT_HORI" />
+	  <Item Type="SELECT_HORI" />
+	  <Item Type="SELECT_HORI" />
+	  <Item Type="SELECT_HORI" />  
+	  <Item Type="SELECT_HORI" />	  
     </DataLine>
     <DataLine>	
-	  <Item Type="SELECT_LEFT" />
+	  <Item Type="SELECT_VERT" />
       <Item Type="AURORA_COMM_ICON" Colour="" LeftClick="Label_CPDLC_Menu" MiddleClick="" RightClick="Label_CPDLC_Editor" MinLength="2"/>		  
       <Item Type="LABEL_ITEM_ACID" Colour="" P1_Colour="Emergency" P2_Colour="Warning" LeftClick="Label_Move" MiddleClick="Label_Extend_Toggle" RightClick="Label_ACID_Menu" LeftPadding="1" MaxLength="7" MinLength="7"/>	  
       <Item Type="AURORA_ADSB_CPDLC" Colour="" LeftClick="Label_Move" MiddleClick="" RightClick="" LeftPadding="1" MinLength="3"/>
       <Item Type="AURORA_ADS_FLAGS" Colour="" LeftClick="" MiddleClick="" RightClick="" LeftPadding="1" MinLength="3"/>
-      <Item Type="AURORA_MNT_FLAGS" Colour="" LeftClick="" MiddleClick="" RightClick="" LeftPadding="1" MinLength="3"/>	  
-      <Item Type="LABEL_ITEM_EMERG" Colour="Emergency" BackgroundColour="Warning" LeftClick="" MiddleClick="Label_Emerg" RightClick=""/>
+      <Item Type="AURORA_MNT_FLAGS" Colour="" LeftClick="" MiddleClick="" RightClick="" LeftPadding="1" MinLength="3"/>
+      <Item Type="AURORA_SCC" Colour="" LeftClick="" MiddleClick="" RightClick="" LeftPadding="1" MinLength="3"/>	  
+      <!--Item Type="LABEL_ITEM_EMERG" Colour="Emergency" BackgroundColour="Warning" LeftClick="" MiddleClick="Label_Emerg" RightClick=""/-->
       <!--Item Type="LABEL_ITEM_WARNING" Colour="Warning" LeftClick="" MiddleClick="Label_Warning" RightClick=""/--> 
-	  <Item Type="SELECT_RIGHT" />	  
+	  <Item Type="SELECT_VERT" />	  
     </DataLine>
     <DataLine>
-	  <Item Type="SELECT_LEFT" />
+	  <Item Type="SELECT_VERT" />
 	  <Item Type="AURORA_ANNOT_IND" Colour="" LeftClick="Label_Toggle_1" MiddleClick="" RightClick=""/>
 	  <Item Type="AURORA_RESTR" Colour="" LeftClick="Label_Toggle_1" MiddleClick="" RightClick="" />  	
       <Item Type="AURORA_LEVEL" Colour="" LeftClick="Label_PRL_Popup" MiddleClick="" RightClick="Label_CFL_Popup" LeftPadding="1" />
       <Item Type="AURORA_VMI" Colour="" LeftClick="Label_Move" MiddleClick="" RightClick=""/>
       <Item Type="AURORA_CLEARED_LEVEL" LeftClick="Label_Move" MiddleClick="" RightClick="Label_CFL_Popup"/>
       <Item Type="AURORA_HO_IND" LeftClick="Label_Move" MiddleClick="" RightClick=""/>
-	  <Item Type="SELECT_RIGHT" LeftPadding="10"/>
+	  <Item Type="SELECT_VERT" LeftPadding="10"/>
     </DataLine>
     <DataLine>
-	  <Item Type="SELECT_LEFT" />
+	  <Item Type="SELECT_VERT" />
 	    <Item Type="AURORA_RADAR_IND" Colour="" LeftClick="" MiddleClick="" RightClick="" />
       <Item Type="AURORA_INHIBIT_IND" LeftClick="" MiddleClick="" RightClick=""/> 	
       <Item Type="AURORA_FILEDSPEED" Colour="" LeftClick="" MiddleClick="" RightClick="" LeftPadding="1"/>		  
       <Item Type="AURORA_GROUNDSPEED" Colour="" LeftClick="" MiddleClick="" RightClick="" LeftPadding="1"/>	
       <Item Type="LABEL_ITEM_ADES" BackgroundColour="" Colour="" LeftClick="" MiddleClick="" RightClick=""/>
       <!--Item Type="LABEL_ITEM_ATYPE" BackgroundColour="" Colour="" LeftClick="" MiddleClick="" RightClick="" LeftPadding="1"/-->
-	  <Item Type="SELECT_RIGHT" LeftPadding="1"/>
+	  <Item Type="SELECT_VERT" LeftPadding="1"/>
     </DataLine>
     <DataLine id="TOGGLE1" Visibility="Toggle">
-	  <Item Type="SELECT_LEFT" />
+	  <Item Type="SELECT_VERT" />
       <Item Type="LABEL_ITEM_OPDATA" LeftClick="" MiddleClick="" RightClick="Label_OpData_Popup" MinLength="17"/>
-	  <Item Type="SELECT_RIGHT" LeftPadding="5"/>
+	  <Item Type="SELECT_VERT" LeftPadding="5"/>
     </DataLine>
     <DataLine>	
-	  <Item Type="SELECT_TOP" />	
-	  <Item Type="SELECT_TOP" />
-	  <Item Type="SELECT_TOP" />
-	  <Item Type="SELECT_TOP" />	
-	  <Item Type="SELECT_TOP" />	
-	  <Item Type="SELECT_TOP" />	
-	  <Item Type="SELECT_TOP" />	
-	  <Item Type="SELECT_TOP" />	
-	  <Item Type="SELECT_TOP" />	
-	  <Item Type="SELECT_TOP" />	
-	  <Item Type="SELECT_TOP" />	
-	  <Item Type="SELECT_TOP" />	
-	  <Item Type="SELECT_TOP" />	
-	  <Item Type="SELECT_TOP" />	
-	  <Item Type="SELECT_TOP" />	
-	  <Item Type="SELECT_TOP" />	
-	  <Item Type="SELECT_TOP" />	
-	  <Item Type="SELECT_TOP" />		  
+	  <Item Type="SELECT_HORI" />	
+	  <Item Type="SELECT_HORI" />
+	  <Item Type="SELECT_HORI" />
+	  <Item Type="SELECT_HORI" />	
+	  <Item Type="SELECT_HORI" />	
+	  <Item Type="SELECT_HORI" />	
+	  <Item Type="SELECT_HORI" />	
+	  <Item Type="SELECT_HORI" />	
+	  <Item Type="SELECT_HORI" />	
+	  <Item Type="SELECT_HORI" />	
+	  <Item Type="SELECT_HORI" />	
+	  <Item Type="SELECT_HORI" />	
+	  <Item Type="SELECT_HORI" />	
+	  <Item Type="SELECT_HORI" />	
+	  <Item Type="SELECT_HORI" />	
+	  <Item Type="SELECT_HORI" />	
+	  <Item Type="SELECT_HORI" />	
+	  <Item Type="SELECT_HORI" />		  
     </DataLine>	
   </Label>
   <Label Type="GroundAir" MaximumWidth="11" LabelRectangle="Default">

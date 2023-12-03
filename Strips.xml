@@ -177,8 +177,9 @@
                           </StripLayoutLine>
 						<StripLayoutLine>	
 							<StripItems>
-								<StripItem Type="AURORA_F" MinLength="1" MaxLength="1"/>	
-								<StripItem Type="AURORA_A" MinLength="1" MaxLength="1"/>								
+								<StripItem Type="AURORA_ROUTE_STRIP" MinLength="1" MaxLength="1"/>	
+                <StripSeparatorItem MinLength="2"/>
+								<StripItem Type="AURORA_RADAR_IND" MinLength="1" MaxLength="1"/>								
 							</StripItems>						  
 						</StripLayoutLine>						  
                           <StripLayoutLine>
