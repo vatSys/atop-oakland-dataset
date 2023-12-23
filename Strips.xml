@@ -24,7 +24,7 @@
 					  </StripLayoutLine>					  
                       <StripLayoutLine>
                         <StripItems>
-                          <StripItem Type="AURORA_CALLSIGN" LeftClick="Strip_Extend" MiddleClick="Strip_Delete" RightClick="Label_ACID_Menu" MaxLength="7" MinLength="7" FontSize="XtraLarge" />
+                          <StripItem Type="AURORA_CALLSIGN" LeftClick="Label_CPDLC_Editor" RightClick="Label_ACID_Menu" MaxLength="7" MinLength="7" FontSize="XtraLarge" />
                           <StripItem Type="AURORA_ADSB_CPDLC" FontSize="XtraLarge" RightPadding="2"/>		
                           <StripSeparatorItem MinLength="1" ><Colours BackColour="StripBackground"/> </StripSeparatorItem>	
 						  <StripItem Type="AURORA_T10_FLAG" MinLength="1" />
@@ -58,7 +58,7 @@
                       </StripLayoutLine>					  
                       <StripLayoutLine>
                         <StripItems>
-                          <StripItem Type="RFL" MinLength="4" MaxLength="4" FontSize="Large"/>
+                          <StripItem Type="AURORA_REQUESTED_LEVEL" MinLength="4" MaxLength="4" FontSize="Small"/>
                         </StripItems>
                       </StripLayoutLine>
                     </StripLayoutLines>
@@ -177,7 +177,7 @@
                           </StripLayoutLine>
 						<StripLayoutLine>	
 							<StripItems>
-								<StripItem Type="AURORA_ROUTE_STRIP" MinLength="1" MaxLength="1"/>	
+								<StripItem Type="AURORA_ROUTE_STRIP" MinLength="1" MaxLength="1" LeftClick="Strip_Extend"/>	
                 <StripSeparatorItem MinLength="2"/>
 								<StripItem Type="AURORA_RADAR_IND" MinLength="1" MaxLength="1"/>								
 							</StripItems>						  
@@ -215,7 +215,7 @@
                     <StripLayoutLines>
                       <StripLayoutLine>
                         <StripItems>
-						  <StripSeparatorItem MinLength="27" >	<Colours BackColour="StripBackground"/> </StripSeparatorItem>			  
+						  <StripSeparatorItem MinLength="26" >	<Colours BackColour="StripBackground"/> </StripSeparatorItem>			  
                         </StripItems>
                       </StripLayoutLine>
                     </StripLayoutLines>
@@ -326,7 +326,7 @@
                     <StripLayoutLines>
                       <StripLayoutLine>
                         <StripItems>
-                          <StripItem Type="LocalOpsInfo" LeftClick="Strip_LocalOps" MaxLength="75" MinLength="75" />
+                          <StripItem Type="AURORA_CLRD_RTE" LeftClick="Strip_LocalOps" MaxLength="75" MinLength="75" />
                         </StripItems>
                       </StripLayoutLine>
                     </StripLayoutLines>

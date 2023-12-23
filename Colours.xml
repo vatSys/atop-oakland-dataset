@@ -398,10 +398,10 @@
 	</Colour>
   <Colour id="Infill">
 		<Use>Filled Area Map</Use>
-		<Name>Dark Gray</Name>
-		<R>15</R>
-		<G>15</G>
-		<B>15</B>
+		<Name>Black</Name>
+		<R>0</R>
+		<G>0</G>
+		<B>0</B>
 	</Colour>
   <Colour id="SecondaryMap">
 		<Use>Alternative System Map</Use>

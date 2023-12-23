@@ -685,14 +685,17 @@ ZOA.7701
   <Sector FullName="BaseSec0951" Frequency="131.950" Callsign="ZAK_0951_FSS" Name="0951">
   <Volumes>ZOA.0951</Volumes>
   </Sector>       
-  <Sector FullName="Auckland ACC" Frequency="128.900" Callsign="NZZO_FSS" Name="AU" DisplayInSectorsWindow="False">  
+  <Sector FullName="Auckland ACC" Frequency="129.900" Callsign="NZZO_FSS" Name="AU" DisplayInSectorsWindow="False">  
 <Volumes>NZZO</Volumes> 
   </Sector>
+  <Sector FullName="Faleolo" Frequency="128.900" Callsign="NFSA_FSS" Name="FA" DisplayInSectorsWindow="False">  
+<Volumes>NFSA</Volumes> 
+  </Sector>  
   <Sector FullName="Brisbane Radio (Coral)" Frequency="133.150" Callsign="BN-COL_FSS" Name="BN" />
   <Sector FullName="Brisbane Radio (Flinders)" Frequency="132.850" Callsign="BN-FLD_FSS" Name="BN" />
   <Sector FullName="Brisbane Radio (Howe)" Frequency="124.950" Callsign="BN-HWE_FSS" Name="BN" />
-  <Sector FullName="Brisbane Radio (Tasman)" Frequency="124.650" Callsign="BN-TSN_FSS" Name="BN" > 
-<Volumes>YBBB</Volumes> 
+  <Sector FullName="Brisbane Radio (Tasman)" Frequency="124.650" Callsign="BN-TSN_FSS" Name="BN" DisplayInSectorsWindow="False"> 
+<Volumes>YBBB.000/244,YBBB.245/999</Volumes> 
   </Sector>
   <Sector FullName="GUAM ACC" Frequency="118.700" Callsign="GUM_CTR" Name="GU" DisplayInSectorsWindow="False">  
 <Volumes>PGZU</Volumes> 
@@ -708,14 +711,12 @@ ZOA.7701
   </Sector>   
   <Sector FullName="Bucholtz AAF" Frequency="118.800" Callsign="PKWA_TWR" Name="KW" DisplayInSectorsWindow="False">  
 <Volumes>PKWA</Volumes> 
-  </Sector>
-  <Sector FullName="Los Angeles NAS" Frequency="132.150" Callsign="LAX_28_CTR" Name="LA" DisplayInSectorsWindow="False"/>  
-  <Sector FullName="Los Angeles NAS" Frequency="126.525" Callsign="LAX_25_CTR" Name="LA" DisplayInSectorsWindow="False"/>
-  <Sector FullName="Los Angeles NAS" Frequency="135.550" Callsign="LAX_CTR" Name="LA" DisplayInSectorsWindow="False"/>  
-  <Sector FullName="Los Angeles NAS" Frequency="135.550" Callsign="LAX_55_CTR" Name="LA" DisplayInSectorsWindow="False">  
-<Volumes>KZLA</Volumes> 
-  </Sector>    
-  <!--Sector FullName="Manila P ACC" Frequency=" Callsign="MNL_FSS" Name="MN" DisplayInSectorsWindow="False"/-->    
+  </Sector> 
+  <Sector FullName="Los Angeles NAS" Frequency="126.525" Callsign="LAX_25_CTR" Name="LA" DisplayInSectorsWindow="False"/> 
+  <Sector FullName="Los Angeles NAS" Frequency="135.550" Callsign="LAX_55_CTR" Name="LA" DisplayInSectorsWindow="False"/>  
+  <Sector FullName="Los Angeles NAS" Frequency="132.150" Callsign="LAX_28_CTR" Name="LA" DisplayInSectorsWindow="False">
+<Volumes>KZLA,KZLA240</Volumes>   
+  </Sector>        
   <Sector FullName="Manila P ACC" Frequency="119.300" Callsign="MNL_CTR" Name="MN" DisplayInSectorsWindow="False">  
 <Volumes>RPHI</Volumes> 
   </Sector>
@@ -728,15 +729,15 @@ ZOA.7701
   <Sector FullName="Nadi ACC" Frequency="123.600" Callsign="NFFF_FSS" Name="ND" DisplayInSectorsWindow="False">  
 <Volumes>NFFF</Volumes> 
   </Sector>
-  <!--Sector FullName="Nauru ACC" Frequency=" Callsign=" Name="NU" DisplayInSectorsWindow="False">  
+  <!--Sector FullName="Nauru ACC" Frequency=" Callsign=" Name="NI" DisplayInSectorsWindow="False">  
 <Volumes>KZOA</Volumes> 
   </Sector-->
-  <Sector FullName="Oakland NAS" Frequency="119.975" Callsign="OAK_36_CTR" Name="OA" />
-  <Sector FullName="Oakland NAS" Frequency="134.550" Callsign="OAK_14_CTR" Name="OA" />  
-  <Sector FullName="Oakland NAS" Frequency="132.200" Callsign="OAK_CTR" Name="OA" >
+  <Sector FullName="Oakland NAS" Frequency="119.975" Callsign="OAK_36_CTR" Name="OA" DisplayInSectorsWindow="False" />
+  <Sector FullName="Oakland NAS" Frequency="134.550" Callsign="OAK_14_CTR" Name="OA" DisplayInSectorsWindow="False" />  
+  <Sector FullName="Oakland NAS" Frequency="132.200" Callsign="OAK_42_CTR" Name="OA" DisplayInSectorsWindow="False" >
 <Volumes>KZOA</Volumes> 
   </Sector>  
-  <Sector FullName="Seattle NAS" Frequency="135.450" Callsign="SEA_CTR" Name="SE" DisplayInSectorsWindow="False">  
+  <Sector FullName="Seattle NAS" Frequency="135.450" Callsign="SEA_16_CTR" Name="SE" DisplayInSectorsWindow="False">  
 <Volumes>KZSE</Volumes> 
   </Sector>   
   <Sector FullName="Tokyo ACC" Frequency="126.700" Callsign="RJTG_FSS" Name="TO" DisplayInSectorsWindow="False">  
@@ -749,12 +750,13 @@ ZOA.7701
 <Volumes>WAAZ</Volumes> 
   </Sector>  
   <Sector FullName="Vancouver ACC" Frequency="133.700" Callsign="CZVR_CTR" Name="YV" DisplayInSectorsWindow="False">  
-<Volumes>CZVR</Volumes> 
+<Volumes>CZVR,CZVRSH</Volumes> 
   </Sector>  
   <Sector FullName="Anchorage NAS" Frequency="126.400" Callsign="ANC_10_CTR" Name="ZO" DisplayInSectorsWindow="False"/>
   <Sector FullName="Anchorage NAS" Frequency="133.300" Callsign="ANC_03_CTR" Name="ZO" DisplayInSectorsWindow="False"/>
+  <Sector FullName="Anchorage NAS" Frequency="132.300" Callsign="ANC_06_CTR" Name="ZO" DisplayInSectorsWindow="False"/> 
   <Sector FullName="Anchorage NAS" Frequency="127.300" Callsign="ANC_68_CTR" Name="ZO" DisplayInSectorsWindow="False">  
-<Volumes>PAZA</Volumes> 
+<Volumes>PAZA289,PAZA290</Volumes> 
   </Sector>
   <Sector FullName="Anchorage ATOP" Frequency="127.550" Callsign="ANC_10_FSS" Name="ZN" DisplayInSectorsWindow="False">  
 <Volumes>PAZN</Volumes> 

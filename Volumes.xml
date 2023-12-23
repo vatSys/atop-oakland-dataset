@@ -6261,31 +6261,11 @@
 	+343000.00-1231500.00/
 	+353200.00-1205100.00/
 	+354500.00-1200700.00/
-	+375300.00-1170541.00/
-	+375300.00-1161100.00/
-	+380100.00-1141200.00/
-	+375300.00-1133900.00/
-	+374300.00-1134700.00/
-	+373000.00-1130000.00/
-	+373000.00-1120330.00/
-	+372445.00-1115245.00/
-	+364400.00-1113630.00/
-	+362515.00-1113015.00/
-	+354600.00-1115030.00/
-	+352600.00-1120000.00/
-	+352300.00-1124000.00/
-	+345500.00-1133700.00/
-	+344000.00-1140000.00/
-	+341100.00-1140000.00/
-	+340200.00-1140000.00/
-	+324100.00-1140000.00/
-	+324415.00-1134105.00/
-	+320600.00-1133030.00/
-	+323019.00-1144846.00/
-	+324306.00-1144307.00/
-	+323817.00-1154150.00/
-	+323203.00-1170725.00/
-	+322648.00-1171851.00/
+	+375300.00-1170541.00</Boundary>
+
+	<Boundary Name="KZLA240">
+	+341000.00-1250000.00/
+	+343000.00-1231500.00/
 	+304500.00-1205000.00/
 	+300000.00-1223130.00/
 	+305400.00-1232010.00/
@@ -6294,11 +6274,7 @@
 	+323940.00-1241751.00/
 	+333015.00-1244323.00/
 	+335300.00-1245500.00/
-	+341000.00-1250000.00/
-	+343000.00-1231500.00/
-	+353200.00-1205100.00/
-	+354500.00-1200700.00/
-	+375300.00-1170541.00</Boundary>
+	+341000.00-1250000.00</Boundary>
 
 	<Boundary Name="KZOA">
 	+395600.00-1172200.00/
@@ -6495,7 +6471,9 @@
 	+483000.00-1250000.00/
 	+482504.00-1264324.00/
 	+482000.00-1280000.00/
-	+481000.00-1275530.00/</Boundary>
+	+481000.00-1275530.00/
+	+482000.00-1280000.00</Boundary>
+
 	<Boundary Name="CZVRSH">
 	+503550.00-1335903.00/
 	+503630.00-1324906.00/	
@@ -6528,7 +6506,8 @@
 	+150000.000-1050000.000/
 	+113000.000-1000000.000/
 	+083500.000-0960000.000/
-	+161100.000-1060000.000</Boundary>                                       
+	+161100.000-1060000.000</Boundary>          
+
 	<Boundary Name="NFFF">
 	-020000.00+1800000.00/                                                 
 	-023020.00+1800000.00/
@@ -6564,6 +6543,16 @@
 	+033000.000-1200000.000/
 	+024000.000-1200000.000</Boundary>
 
+	<Boundary Name="NFSA">
+    -052258.00-1711016.00/
+    -050000.00-1710000.00/
+    -050000.00-1630000.00/
+    -050000.00-1605022.00/
+    -050000.00-1600000.00/
+    -053517.00-1603554.00/
+    -100000.00-1650000.00/
+    -100000.00-1731304.00</Boundary>   
+
 	<Boundary Name="NZZO">
 	-050000.000-1570000.000/
 	-052500.000-1570000.000/
@@ -6577,7 +6566,22 @@
 	-050000.000-1600000.000/
 	-050000.000-1590942.000/
 	-050000.000-1570000.000/
-	-050000.000-1570000.000</Boundary>                                              
+	-050000.000-1570000.000</Boundary>    
+
+	<Boundary Name="NZZO245">
+	-050000.00-1570000.00/
+	-052500.00-1570000.00/
+	-230000.00-1570000.00/
+	-230000.00-1732600.00/
+	-250000.00-1753000.00/
+	-250000.00-1800000.00/
+	-100000.00-1731304.00/
+	-052258.00-1711016.00/
+	-050000.00-1710000.00/
+	-050000.00-1630000.00/
+	-050000.00-1605022.00/
+	-050000.00-1600000.00/
+	-050000.00-1590942.00</Boundary>                                          
 
 	<Boundary Name="PHZN">
 	+251145.000-1562516.000/
@@ -6640,7 +6644,7 @@
 	+040000.000+1291000.000/
 	+040000.000+1320000.000/
 	+033000.000+1320000.000/
-	+033000.000+1330000.000/</Boundary> 
+	+033000.000+1330000.000</Boundary> 
 
 	<Boundary Name="RJJJ">
 			+454500.00+1400000.00/
@@ -7496,7 +7500,8 @@
 +163802.48+1474811.72/
 +163630.27+1474955.18/
 +163457.15+1475137.75/
-+163323.13+1475319.43</Boundary>
++163323.13+1475319.43/
++163148.00+1475500.00</Boundary>
 
 	<Boundary Name="PKWA">
 	+085816.320+1674348.000/ 
@@ -7944,15 +7949,21 @@
   <Volume Name="KZLA" LowerLimit="0" UpperLimit="99000">
     <Boundaries>KZLA</Boundaries>
   </Volume>  
+  <Volume Name="KZLA240" LowerLimit="24000" UpperLimit="99000">
+    <Boundaries>KZLA240</Boundaries>
+  </Volume>  
   <Volume Name="KZOA" LowerLimit="0" UpperLimit="99000">
     <Boundaries>KZOA</Boundaries>
   </Volume> 
   <Volume Name="KZSE" LowerLimit="0" UpperLimit="99000">
     <Boundaries>KZSE</Boundaries>
   </Volume>  
-  <Volume Name="PAZA" LowerLimit="0" UpperLimit="99000">
-    <Boundaries>PAZA</Boundaries>
+  <Volume Name="PAZA289" LowerLimit="0" UpperLimit="28900">
+    <Boundaries>ZOA.PAZA.000/289</Boundaries>
   </Volume>  
+  <Volume Name="PAZA290" LowerLimit="29000" UpperLimit="99000">
+    <Boundaries>ZOA.PAZA.290/999</Boundaries>
+  </Volume>    
   <Volume Name="PAZN" LowerLimit="0" UpperLimit="99000">
     <Boundaries>PAZN</Boundaries>
   </Volume>  
@@ -7962,6 +7973,9 @@
   <Volume Name="CZVR" LowerLimit="0" UpperLimit="99000">
     <Boundaries>CZVR</Boundaries>
   </Volume>  
+  <Volume Name="CZVRSH" LowerLimit="0" UpperLimit="99000">
+    <Boundaries>CZVRSH</Boundaries>
+  </Volume>    
   <Volume Name="MMZT" LowerLimit="0" UpperLimit="99000">
     <Boundaries>MMZT</Boundaries>
   </Volume>  
@@ -7971,6 +7985,12 @@
   <Volume Name="NTTT" LowerLimit="0" UpperLimit="99000">
     <Boundaries>NTTT</Boundaries>
   </Volume>   
+   <Volume Name="NFSA" LowerLimit="0" UpperLimit="24400">
+    <Boundaries>NFSA</Boundaries>
+  </Volume> 
+   <Volume Name="NZZO245" LowerLimit="24500" UpperLimit="99000">
+    <Boundaries>NZZO245</Boundaries>
+  </Volume>  
    <Volume Name="NZZO" LowerLimit="0" UpperLimit="99000">
     <Boundaries>NZZO</Boundaries>
   </Volume>  
@@ -7978,7 +7998,7 @@
     <Boundaries>PHZN</Boundaries>
   </Volume>  
   <Volume Name="WAAZ" LowerLimit="0" UpperLimit="99000">
-    <Boundaries>WAAZ</Boundaries>
+    <Boundaries>WABZ</Boundaries>
   </Volume>   
   <Volume Name="RJJJ" LowerLimit="0" UpperLimit="99000">
     <Boundaries>RJJJ</Boundaries>
@@ -7986,8 +8006,11 @@
   <Volume Name="RPHI" LowerLimit="0" UpperLimit="99000">
     <Boundaries>RPHI</Boundaries>
   </Volume>  
-  <Volume Name="YBBB" LowerLimit="0" UpperLimit="99000">
-    <Boundaries>YBBB</Boundaries>
+  <Volume Name="YBBB.000/244" LowerLimit="0" UpperLimit="24400">
+    <Boundaries>YBBB.000/244</Boundaries>
+  </Volume>  
+    <Volume Name="YBBB.245/999" LowerLimit="24500" UpperLimit="99000">
+    <Boundaries>YBBB.245/999</Boundaries>
   </Volume>  
   <Volume Name="PGZU" LowerLimit="0" UpperLimit="99000">
     <Boundaries>PGZU</Boundaries>
