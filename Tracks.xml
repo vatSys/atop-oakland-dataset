@@ -264,7 +264,10 @@
 	<!-- ADSB Star in Diamond -->
 	<TrackSymbol Type="ADSB" StrokeWidth="1">
 		<PathGeometry>
-			<Figure Start="0,-8" FigureBegin="Filled" FigureEnd="Closed" >
+			<Figure Start="-4,-4" FigureBegin="Filled" FigureEnd="Closed" StrokeWidth="0">
+				<Line>5,5</Line>
+			</Figure>
+			<!--Figure Start="0,-8" FigureBegin="Filled" FigureEnd="Closed" >
 				<Line>-3,1</Line>
 				<Line>-13,2</Line>
 				<Line>-2,5</Line>
@@ -279,30 +282,8 @@
 				<Line>15,0</Line>
 				<Line>0,-12</Line>
 				<Line>-15,0</Line>				
-			</Figure>			
+			</Figure-->			
 		</PathGeometry>		
-		<!--PathGeometry>
-			<Figure Start="0,-10" FigureBegin="Filled" FigureEnd="Closed">
-				<Line>-2,-7</Line>
-				<Line>-2,-2</Line>
-				<Line>-12,4</Line>
-				<Line>-12,7</Line>
-				<Line>-2,4</Line>
-				<Line>-2,9</Line>
-				<Line>-6,11</Line>
-				<Line>-6,14</Line>
-				<Line>0,12</Line>
-				<Line>6,14</Line>
-				<Line>6,11</Line>
-				<Line>2,9</Line>
-				<Line>2,4</Line>
-				<Line>12,7</Line>
-				<Line>12,4</Line>
-				<Line>2,-2</Line>	
-				<Line>2,-7</Line>
-				<Line>0,-10</Line>				
-			</Figure>			
-		</PathGeometry-->
 	</TrackSymbol>
 	
 	<!--Flight plan hollow plane-->

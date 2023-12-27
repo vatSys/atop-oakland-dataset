@@ -47,7 +47,7 @@
                     <StripLayoutLines>
                       <StripLayoutLine>
                         <StripItems>
-                          <StripItem Type="PRL" LeftClick="Label_PRL_Popup" MinLength="4" MaxLength="4" FontSize="Large" />
+                          <StripItem Type="PRL" LeftClick="Label_PRL_Popup" MinLength="4" MaxLength="4" FontSize="Small" />
 						  <StripItem Type="AURORA_STRIP_VMI" FontSize="XtraLarge" />						  
                         </StripItems>
                       </StripLayoutLine>	
