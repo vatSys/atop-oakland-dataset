@@ -91,8 +91,8 @@
 	    <Item Type="AURORA_RADAR_IND" Colour="" LeftClick="" MiddleClick="" RightClick="" />
       <Item Type="AURORA_INHIBIT_IND" LeftClick="" MiddleClick="" RightClick=""/> 	
       <Item Type="AURORA_GROUNDSPEED" Colour="" LeftClick="" MiddleClick="" RightClick="" LeftPadding="1"/>	
-      <Item Type="AURORA_FILEDSPEED" Colour="" LeftClick="" MiddleClick="" RightClick="" LeftPadding="1"/>		  
-      <Item Type="AURORA_DESTINATION" BackgroundColour="" Colour="" LeftClick="" MiddleClick="" RightClick=""/>
+      <!--Item Type="AURORA_FILEDSPEED" Colour="" LeftClick="" MiddleClick="" RightClick="" LeftPadding="1"/-->		  
+      <!--Item Type="AURORA_DESTINATION" BackgroundColour="" Colour="" LeftClick="" MiddleClick="" RightClick=""/-->
       <!--Item Type="LABEL_ITEM_ATYPE" BackgroundColour="" Colour="" LeftClick="" MiddleClick="" RightClick="" LeftPadding="1"/-->
 	  <Item Type="SELECT_VERT" LeftPadding="1"/>
     </DataLine>
