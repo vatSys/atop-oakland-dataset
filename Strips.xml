@@ -204,7 +204,7 @@
                             </StripItems>
                           </StripLayoutLine>						  
                         </StripLayoutLines>					  
-                      </StripLayoutSection>					  						 
+                      </StripLayoutSection>                    					  						 
 					</StripLayoutSubsections>
 				  </StripLayoutSection>	
                 </StripLayoutSubsections>
@@ -350,7 +350,7 @@
                     </StripLayoutLines>
                   </StripLayoutSection>
                 </StripLayoutSubsections>
-              </StripLayoutSection>
+              </StripLayoutSection>           
             </StripLayoutSubsections>
           </StripLayoutSection>
         </StripLayoutSubsections>

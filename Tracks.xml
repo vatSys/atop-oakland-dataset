@@ -93,7 +93,7 @@
 		</PathGeometry>		
 	</TrackSymbol>
 	<!-- Simulated ADS-C symbol -->
-	<TrackSymbol Type="ModeS" SpecialCode="2000" RotateToTrack="True"  StrokeWidth="0">
+	<TrackSymbol Type="ADSC" RotateToTrack="True"  StrokeWidth="0">
 		<PathGeometry>
 			<Figure Start="0,-8" FigureBegin="Filled" FigureEnd="Closed">
 				<Line>-1.5,-6</Line>
@@ -193,11 +193,10 @@
 	<!-- SSR Diamond -->
 	<TrackSymbol Type="ModeA" StrokeWidth="1">
 		<PathGeometry>
-			<Figure Start="-9,0" FigureBegin="Hollow" FigureEnd="Closed">
-				<Line>0,9</Line>
-				<Line>9,0</Line>
-				<Line>0,-9</Line>
-				<Line>-9,0</Line>				
+			<Figure Start="-8,0" FigureBegin="Hollow" FigureEnd="Closed">
+				<Line>0,8</Line>
+				<Line>8,0</Line>
+				<Line>0,-8</Line>			
 			</Figure>
 		</PathGeometry>			
 	</TrackSymbol>
@@ -261,28 +260,24 @@
 		</PathGeometry>		
 	</TrackSymbol>	
 
-	<!-- ADSB Star in Diamond -->
+	<!-- ADSB Diamond -->
 	<TrackSymbol Type="ADSB" StrokeWidth="1">
 		<PathGeometry>
-			<Figure Start="-4,-4" FigureBegin="Filled" FigureEnd="Closed" StrokeWidth="0">
-				<Line>5,5</Line>
-			</Figure>
-			<!--Figure Start="0,-8" FigureBegin="Filled" FigureEnd="Closed" >
-				<Line>-3,1</Line>
-				<Line>-13,2</Line>
-				<Line>-2,5</Line>
-				<Line>0,13</Line>
-				<Line>3,4</Line>
-				<Line>13,2</Line>
-				<Line>3,-1</Line>
+			<Figure Start="-8,0" FigureBegin="Hollow" FigureEnd="Closed">
+				<Line>0,8</Line>
+				<Line>8,0</Line>
 				<Line>0,-8</Line>				
 			</Figure>
-			<Figure Start="-15,0" FigureBegin="Hollow" FigureEnd="Open">
-				<Line>0,15</Line>
-				<Line>15,0</Line>
-				<Line>0,-12</Line>
-				<Line>-15,0</Line>				
-			</Figure-->			
+		</PathGeometry>		
+	</TrackSymbol>
+
+		<TrackSymbol Type="ADSB" SpecialCode="2000" StrokeWidth="0">
+		<PathGeometry>
+			<Figure Start="-8,0" FigureBegin="Filled" FigureEnd="Closed">
+				<Line>0,8</Line>
+				<Line>8,0</Line>
+				<Line>0,-8</Line>				
+			</Figure>
 		</PathGeometry>		
 	</TrackSymbol>
 	

@@ -702,10 +702,10 @@ ZOA.7701
   </Sector>
   <Sector Fullname="Molokai Center" Frequency="124.100" Callsign="HNL_03_CTR" Name="HN"/>
   <Sector Fullname="Lanai Center" Frequency="119.300" Callsign="HNL_04_CTR" Name="HN"/>
-  <Sector Fullname="Big Island Center" Frequency="126.000" Callsign="HNL_05_CTR" Name="HN"/>  
+  <Sector Fullname="Big Island Center" Frequency="126.000" Callsign="HNL_05_CTR" Name="HN"/>
   <Sector Fullname="Honolulu West Center" Frequency="119.900" Callsign="HNL_06_CTR" Name="HN"/>
   <Sector Fullname="Honolulu East Center" Frequency="126.600" Callsign="HNL_07_CTR" Name="HN"/>
-  <Sector Fullname="Honolulu West Center" Frequency="127.600" Callsign="HNL_08_CTR" Name="HN"/>  
+  <Sector Fullname="Honolulu West Center" Frequency="127.600" Callsign="HNL_08_CTR" Name="HN"/>
   <Sector FullName="Honolulu NAS" Frequency="126.500" Callsign="HNL_02_CTR" Name="HN" DisplayInSectorsWindow="False">  
 <Volumes>PHZN</Volumes> 
   </Sector>   
