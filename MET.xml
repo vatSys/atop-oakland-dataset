@@ -7,7 +7,7 @@
     <NOTAM url="http://api.vateud.net/notams/%ICAO.xml" xmlDataTag="raw" />
   </ProductTypes>
   <Browsers><!--bomw0007-->
-	<JO7110.65 url="https://radio.arinc.net/pacific/" />
+	<JO7110.65 url="https://www.faa.gov/air_traffic/publications/atpubs/atc_html/chap_8.html" />
 	<ICAO4444 url="https://www.ealts.com/documents/ICAO%20Doc%204444%20Air%20Traffic%20Management.pdf" />		
 	<AIP url="https://www.faa.gov/air_traffic/publications/atpubs/aip_html/part2_enr_section_7.4.html" />
 	<ICAOFP url="https://www.faa.gov/sites/faa.gov/files/FAA%20FPL%20Quick%20Reference%20Brochure%20%282022-09-15%29.pdf" />
