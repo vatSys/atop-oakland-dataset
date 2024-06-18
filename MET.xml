@@ -14,7 +14,7 @@
 	<SOP url="https://oakartcc.org/web/viewer.html?file=/controllers/file/e8a98e09-1c16-11ec-9430-2a32edb55910" />
 	<ARINCFreqs url="https://radio.arinc.net/pacific/" />
     <WX url="https://aviationweather.gov/gfa/#sigmet" />    
-    <PacChartSupplement url="https://aeronav.faa.gov/Upload_313-d/supplements/CS_PAC_20240321.pdf" />
+    <PacChartSupplement url="https://aeronav.faa.gov/Upload_313-d/supplements/CS_PAC_20240516.pdf" />
     <Help url="https://virtualairtrafficsystem.com/docs/" />
   </Browsers>
 </MET>

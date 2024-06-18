@@ -342,10 +342,14 @@
   </Colour>
 	<Colour id="PRDArea">
 		<Use>Restricted/Danger Areas</Use>
-		<Name>Blue</Name>
+    <Name>Grey61</Name>
+    <R>157</R>
+    <G>137</G>
+    <B>157</B>
+		<!--Name>Blue</Name>
 		<R>0</R>
 		<G>0</G>
-		<B>255</B>
+		<B>255</B-->
 	</Colour>
   <Colour id="UserMap">
     <Use>Custom Maps and Text</Use>
