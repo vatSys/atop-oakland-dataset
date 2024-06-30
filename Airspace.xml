@@ -1,3 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Airspace xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<Airway Name="G457">DATBE/EGKEL/EBEBE/ELLMS/BUDRA/LAKER/TUT NDB/ONETU/RUGRO/FAROA/INTIB/SELKA</Airway>
+<Airport Elevation="83" Name="ZZZZ" Position="+51.477500-000.461389"></Airport>
 </Airspace>

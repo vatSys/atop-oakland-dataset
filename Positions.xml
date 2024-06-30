@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Positions xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-  <Position Name="CWP11" Type="ASD" DefaultCenter="+270000.000-1750000.000" DefaultRange="7700">
+  <Position Name="CWP11" Type="ASD" DefaultCenter="+270000.000-1750000.000" DefaultRange="7700" VisibilityRange="1500">
 	<ManualVisibility>
 		<Point>+433400.000-1713300.000</Point>
 		<Point>+231200.000-1310100.000</Point>
@@ -23,7 +23,7 @@
       <Line>CPDLC KZAK</Line>
     </ControllerInfo>
   </Position>
-  <Position Name="CWP5" Type="ASD" DefaultCenter="+270000.000-1750000.000" DefaultRange="7700">
+  <Position Name="CWP5" Type="ASD" DefaultCenter="+270000.000-1750000.000" DefaultRange="7700" VisibilityRange="1500">
 	<ManualVisibility>
 		<Point>+433400.000-1713300.000</Point>
 		<Point>+231200.000-1310100.000</Point>
@@ -61,7 +61,7 @@
       <Line>CPDLC KZAK</Line>      
     </ControllerInfo>
   </Position>  
-  <Position Name="PN" Type="ASD" DefaultCenter="+390335.0711-1611727.9309" DefaultRange="4100">
+  <Position Name="PN" Type="ASD" DefaultCenter="+390335.0711-1611727.9309" DefaultRange="4100" VisibilityRange="1500">
 	<ManualVisibility>
 		<Point>+433400.000-1713300.000</Point>
 		<Point>+231200.000-1310100.000</Point>
@@ -94,7 +94,7 @@
       <Line>CPDLC KZAK</Line>      
     </ControllerInfo>
   </Position>  
-  <Position Name="PS" Type="ASD" DefaultCenter="+270000.000-1750000.000" DefaultRange="7700">
+  <Position Name="PS" Type="ASD" DefaultCenter="+270000.000-1750000.000" DefaultRange="7700" VisibilityRange="1500">
 	<ManualVisibility>
 		<Point>+433400.000-1713300.000</Point>
 		<Point>+231200.000-1310100.000</Point>
@@ -127,7 +127,7 @@
       <Line>CPDLC KZAK</Line>      	  
     </ControllerInfo>
   </Position>   
-  <Position Name="CWP7[OC1]" Type="ASD" DefaultCenter="+442728.740-1531610.609" DefaultRange="3000">
+  <Position Name="CWP7[OC1]" Type="ASD" DefaultCenter="+442728.740-1531610.609" DefaultRange="3000" VisibilityRange="1500">
 	<ManualVisibility>
 		<Point>+433400.000-1713300.000</Point>
 		<Point>+231200.000-1310100.000</Point>
@@ -157,7 +157,7 @@
       <Line>CPDLC KZAK</Line>        
     </ControllerInfo>
   </Position>  
-  <Position Name="CWP8[OC2]" Type="ASD" DefaultCenter="+451634.535-1902108.933" DefaultRange="2400">
+  <Position Name="CWP8[OC2]" Type="ASD" DefaultCenter="+451634.535-1902108.933" DefaultRange="2400" VisibilityRange="1500">
 	<ManualVisibility>
 		<Point>+433400.000-1713300.000</Point>
 		<Point>+231200.000-1310100.000</Point>
@@ -187,7 +187,7 @@
       <Line>CPDLC KZAK</Line>      
     </ControllerInfo>
   </Position>  
-  <Position Name="CWP4[OC3]" Type="ASD" DefaultCenter="+221244.704-1360859.658" DefaultRange="2600">
+  <Position Name="CWP4[OC3]" Type="ASD" DefaultCenter="+221244.704-1360859.658" DefaultRange="2600" VisibilityRange="1500">
 	<ManualVisibility>
 		<Point>+433400.000-1713300.000</Point>
 		<Point>+231200.000-1310100.000</Point>
@@ -219,7 +219,7 @@
       <Line>CPDLC KZAK</Line>      
     </ControllerInfo>
   </Position>
-  <Position Name="CWP10[OC4]" Type="ASD" DefaultCenter="+294753.971-1420406.988" DefaultRange="2300">
+  <Position Name="CWP10[OC4]" Type="ASD" DefaultCenter="+294753.971-1420406.988" DefaultRange="2300" VisibilityRange="1500">
 	<ManualVisibility>
 		<Point>+433400.000-1713300.000</Point>
 		<Point>+231200.000-1310100.000</Point>
@@ -249,7 +249,7 @@
       <Line>CPDLC KZAK</Line>      
     </ControllerInfo>
   </Position>  
-  <Position Name="CWP2[OC5]" Type="ASD" DefaultCenter="+111651.527+1450820.250" DefaultRange="3200">
+  <Position Name="CWP2[OC5]" Type="ASD" DefaultCenter="+111651.527+1450820.250" DefaultRange="3200" VisibilityRange="1500">
 	<ManualVisibility>
 		<Point>+433400.000-1713300.000</Point>
 		<Point>+231200.000-1310100.000</Point>
@@ -283,7 +283,7 @@
       <Line>CPDLC KZAK</Line>      
     </ControllerInfo>
   </Position>  
-  <Position Name="CWP1[OC6]" Type="ASD" DefaultCenter="+163226.320+1703631.668" DefaultRange="3200">
+  <Position Name="CWP1[OC6]" Type="ASD" DefaultCenter="+163226.320+1703631.668" DefaultRange="3200" VisibilityRange="1500">
 	<ManualVisibility>
 		<Point>+433400.000-1713300.000</Point>
 		<Point>+231200.000-1310100.000</Point>
@@ -317,7 +317,7 @@
       <Line>CPDLC KZAK</Line>       
     </ControllerInfo>
   </Position>  
-  <Position Name="CWP9[OC7]" Type="ASD" DefaultCenter="+403411.855-1381916.409" DefaultRange="1900">
+  <Position Name="CWP9[OC7]" Type="ASD" DefaultCenter="+403411.855-1381916.409" DefaultRange="1900" VisibilityRange="1500">
 	<ManualVisibility>
 		<Point>+433400.000-1713300.000</Point>
 		<Point>+231200.000-1310100.000</Point>
@@ -346,7 +346,7 @@
       <Line>CPDLC KZAK</Line>      
     </ControllerInfo>
   </Position>
-  <Position Name="CWP3[OC9]" Type="ASD" DefaultCenter="+244531.064-1755428.271" DefaultRange="5100">
+  <Position Name="CWP3[OC9]" Type="ASD" DefaultCenter="+244531.064-1755428.271" DefaultRange="5100" VisibilityRange="1500">
 	<ManualVisibility>
 		<Point>+433400.000-1713300.000</Point>
 		<Point>+231200.000-1310100.000</Point>
