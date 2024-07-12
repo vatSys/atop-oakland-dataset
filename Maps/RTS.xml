@@ -4,7 +4,7 @@
 	<Line Name="A216">CS.A216.MONPI</Line>
 	<Line Name="A220">TAF.A220.CINNY</Line>
 	<Line Name="A221">CULPS.A221.WILLE</Line>
-	<Line Name="A222">UNZ.A222.NDJ</Line>
+	<Line Name="A222">UNZ.A222.RASON</Line>
 	<Line Name="A331">ZIGIE.A331.SEDAR</Line>
 	<Line Name="A332">AUNTI.A332.HEMLO</Line>
 	<Line Name="A337">JUNIE.A337.DAGDA</Line>
@@ -57,7 +57,7 @@
 	<Line Name="G342">CS.G342.HN</Line>
 	<Line Name="G347">AA.G347.DATBE</Line>
 	<Line Name="G349">NEONN.G349.MARCC</Line>
-	<Line Name="G457">DATBE.G457.SELKA</Line>
+	<Line Name="G457">DATBE.G457.ELPAK</Line>
 	<Line Name="G459">WP.G459.BIK</Line>
 	<Line Name="G467">UNZ.G467.VL</Line>
 	<Line Name="G469">NYMPH.G469.PDN</Line>
