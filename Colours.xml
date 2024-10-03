@@ -360,6 +360,13 @@
   </Colour>
   <Colour id="Custom">
 	<Use>Special colour for my very special map</Use>
+	<Name>RoyalBlue</Name>
+		<R>0</R>
+		<G>0</G>
+		<B>255</B>
+  </Colour> 
+  <Colour id="Custom">
+	<Use>Special colour for my very special map</Use>
 	<Name>SkyBlue2</Name>
 		<R>94</R>
 		<G>144</G>
