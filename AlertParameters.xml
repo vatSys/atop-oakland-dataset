@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <AlertParameters>
   <ConflictAlerts>
-    <STCA Name="Imminent" LateralNM="5.0" SecondsLookahead="1800" AlertPriority="1">
+    <STCA Name="Imminent" LateralNM="5.0" SecondsLookahead="30" AlertPriority="1">
       <Vertical LowerLevel="5500" UpperLevel="99999" Height="1000" HeightWithRVSM="2000"/>
      <Volumes>SSAPAC</Volumes>
 	 <InhibitionAreas>
@@ -64,7 +64,7 @@
       </InhibitionArea>
 	  </InhibitionAreas>
     </STCA>
-    <STCA Name="Advisory" LateralNM="23.0" SecondsLookahead="7200" AlertPriority="2">
+    <STCA Name="Advisory" LateralNM="23.0" SecondsLookahead="30" AlertPriority="2">
       <Vertical LowerLevel="5500" UpperLevel="99999" Height="1000" HeightWithRVSM="2000"/>
      <Volumes>SSAPAC</Volumes>
 	 <InhibitionAreas>
@@ -127,7 +127,7 @@
       </InhibitionArea>
 	  </InhibitionAreas>	 
     </STCA>	
-    <MTCA Name="D30/30" LateralNM="30.0" SecondsLookahead="7200" AlertPriority="3">
+    <MTCA Name="D30/30" LateralNM="30.0" SecondsLookahead="30" AlertPriority="3">
       <Vertical LowerLevel="5500" UpperLevel="99999" Height="1900" HeightWithRVSM="900"/>
      <Volumes>OC1,OC1a,OC2,OC3,OC3a,OC4,OC4a,OC4b,OC5N,OC5S,OC6,OC7,OC9</Volumes>
     </MTCA>

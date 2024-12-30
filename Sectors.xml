@@ -746,7 +746,9 @@ ZOA.7701
   <Sector FullName="Tahiti ACC" Frequency="125.500" Callsign="NTTT_FSS" Name="TT" DisplayInSectorsWindow="False">  
 <Volumes>NTTT</Volumes> 
   </Sector>  
-  <Sector FullName="Ujung Pandang" Frequency="128.100" Callsign="WAAF_CTR" Name="UJ" DisplayInSectorsWindow="False">  
+  <Sector FullName="Ujung Pandang" Frequency="134.250" Callsign="WAAF_CTR" Name="UJ" DisplayInSectorsWindow="False"/> 
+  <Sector FullName="Ujung Pandang" Frequency="133.100" Callsign="WAAF_PA_CTR" Name="UJ" DisplayInSectorsWindow="False"/> 
+  <Sector FullName="Ujung Pandang" Frequency="128.100" Callsign="WAAF_MO_CTR" Name="UJ" DisplayInSectorsWindow="False"> 
 <Volumes>WAAZ</Volumes> 
   </Sector>  
   <Sector FullName="Vancouver ACC" Frequency="133.700" Callsign="CZVR_CTR" Name="YV" DisplayInSectorsWindow="False">  
