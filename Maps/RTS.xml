@@ -70,11 +70,10 @@
 	<Line Name="J123">CJAYY.J123.BRW</Line>
 	<Line Name="J125">ODK.J125.TED</Line>
 	<Line Name="J133">GAL.J133.TED</Line>
-	<Line Name="J179">MDO.J179.ENM</Line>
+	<Line Name="J179">MDO.Q10.ENM</Line>
 	<Line Name="J188">BET.J188.SQA</Line>
 	<Line Name="J195">ANN.J195.BKA</Line>
 	<Line Name="J501">RZS.J501.BET</Line>
-	<Line Name="J502">SEA.J502.SSR</Line>	
 	<Line Name="J502">ORT.J502.OTZ</Line>	
 	<Line Name="J511">DLG.J511.GKN</Line>
 	<Line Name="J523">REO.J523.ANN</Line>
@@ -109,7 +108,7 @@
 	<Line Name="R330">SYA.R330.POWAL</Line>
 	<Line Name="R332">NN.R332.MAJ</Line>
 	<Line Name="R337">TAC.R337.ROR</Line>
-	<Line Name="R338">OPAKE.R338.OME</Line>
+	<Line Name="R338">HEDMI.R338.OME</Line>
 	<Line Name="R341">ODK.R341.NATES</Line>
 	<Line Name="R346">TL.R346.PY</Line>
 	<Line Name="R451">HIXOR.R451.ADK</Line>

@@ -52,10 +52,10 @@
 	</Colour>
   <Colour id="WindowBackgound">
 		<Use>Window Backgrounds</Use>
-		<Name>Grey</Name>
-		<R>190</R>
-		<G>190</G>
-		<B>190</B>
+		<Name>LightGrey</Name>
+		<R>211</R>
+		<G>211</G>
+		<B>211</B>
 	</Colour>
   <Colour id="Preactive">
 		<Use>Preactive Tracks and Strips</Use>

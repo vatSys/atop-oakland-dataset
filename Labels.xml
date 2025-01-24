@@ -19,7 +19,7 @@
 	  <Item Type="AURORA_ADSB_CPDLC" Colour="" LeftClick="Label_Move" MiddleClick="" RightClick=""/>	 
 	</DataLine>
     <DataLine>
-      <Item Type="AURORA_LEVEL" Colour="" LeftClick="" MiddleClick="" RightClick="Label_PRL_Popup"/>
+      <Item Type="AURORA_LEVEL" Colour="" LeftClick="" MiddleClick="" RightClick="Label_CFL_Popup"/>
       <Item Type="AURORA_VMI" Colour="" LeftClick="Label_Move" MiddleClick="" RightClick=""/>
       <Item Type="AURORA_CLEARED_LEVEL" LeftClick="Label_Move" MiddleClick="" RightClick="Label_CFL_Popup"/>
 	  <Item Type="LABEL_ITEM_TAS" Colour="" LeftClick="" MiddleClick="" RightClick="" LeftPadding="2" />
@@ -80,7 +80,7 @@
 	  <Item Type="SELECT_VERT" />
 	  <Item Type="AURORA_ANNOT_IND" Colour="" LeftClick="Label_Toggle_1" MiddleClick="" RightClick=""/>
 	  <Item Type="AURORA_RESTR" Colour="" LeftClick="Label_Toggle_1" MiddleClick="" RightClick="" />  	
-    <Item Type="AURORA_ALTITUDE" Colour="" LeftClick="Label_PRL_Popup" MiddleClick="" RightClick="Label_CFL_Popup" LeftPadding="1" />
+    <Item Type="AURORA_ALTITUDE" Colour="" RightClick="Label_CFL_Popup" LeftPadding="1" />
     <Item Type="AURORA_HO_IND" LeftClick="Label_Move" MiddleClick="" RightClick=""/>
 	  <Item Type="SELECT_VERT" LeftPadding="10"/>
     </DataLine>
