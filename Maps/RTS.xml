@@ -69,12 +69,9 @@
 	<Line Name="J120">ADK.J120.FYU</Line>
 	<Line Name="J123">CJAYY.J123.BRW</Line>
 	<Line Name="J125">ODK.J125.TED</Line>
-	<Line Name="J133">GAL.J133.TED</Line>
-	<Line Name="J179">MDO.Q10.ENM</Line>
 	<Line Name="J188">BET.J188.SQA</Line>
 	<Line Name="J195">ANN.J195.BKA</Line>
 	<Line Name="J501">RZS.J501.BET</Line>
-	<Line Name="J502">ORT.J502.OTZ</Line>	
 	<Line Name="J511">DLG.J511.GKN</Line>
 	<Line Name="J523">REO.J523.ANN</Line>
 	<Line Name="J603">ELF.J603.DLG</Line>
@@ -495,7 +492,7 @@
 		<Point Name="J133">+595123.000-1435722.000</Point>
 		<Point Name="J133">+601726.000-1454515.000</Point>
 		<Point Name="J133">+605050.000-1481652.000</Point>
-		<Point Name="J179">+600356.000-1484831.000</Point>		
+		<!--Point Name="J179">+600356.000-1484831.000</Point-->		
 		<Point Name="J501">+604923.451-1610744.175</Point>
 		<Point Name="J501">+605843.907-1580217.734</Point>
 		<Point Name="J501">+610735.222-1534505.176</Point>
