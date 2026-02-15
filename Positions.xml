@@ -1,5 +1,34 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Positions xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Position Name="HFRO" Type="ASD" DefaultCenter="+270000.000-1750000.000" DefaultRange="7700" VisibilityRange="1500">
+	<ManualVisibility>
+		<Point>+430600.000-1652700.000</Point>
+		<Point>+231200.000-1310100.000</Point>
+		<Point>+070900.000-1675100.000</Point>
+		<Point>+131400.000+1446000.000</Point>
+	</ManualVisibility>  
+    <Sectors>
+      <Sector Name="HFRO" />  
+    </Sectors>
+    <Maps>
+      <Map Name="FIR" />
+      <Map Name="Geo" />
+      <Map Name="Rts" />
+      <Map Name="Pts" />
+      <Map Name="OSec" />
+      <Map Name="UTA" />
+      <Map Name="SIGMET" />	  
+    </Maps>
+    <Strips Mode="Beacon" Sort="Level">
+    </Strips>
+    <CFL QuickLevel="999000" />
+    <ArrivalLists>
+    </ArrivalLists>
+    <ControllerInfo>
+      <Line>Call me San Francisco Radio</Line>
+      <Line>oakartcc.org/pilots/oceanic</Line>
+    </ControllerInfo>
+  </Position>
   <Position Name="CWP11" Type="ASD" DefaultCenter="+270000.000-1750000.000" DefaultRange="7700" VisibilityRange="1500">
 	<ManualVisibility>
 		<Point>+430600.000-1652700.000</Point>

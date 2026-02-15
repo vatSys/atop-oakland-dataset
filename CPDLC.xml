@@ -113,7 +113,47 @@
     <Message Response="WU">CRUISE CLIMB TO [LEVEL]</Message>
     <Message Response="WU">MAINTAIN [LEVEL]</Message>
     <Message Response="WU">MAINTAIN BLOCK [LEVEL] TO [LEVEL]</Message>
-  </Category>  
+  </Category>
+  <Category name="HF_Vert" SendViaTM="false">
+    <Message Response="WU">ATCC CLIMB TO AND MAINTAIN [LEVEL]</Message>
+    <Message Response="WU">ATCC CLIMB TO AND MAINTAIN BLOCK [LEVEL] TO [LEVEL]</Message>	
+    <Message Response="WU">ATCC CLIMB TO REACH [LEVEL] BY [TIME]</Message>
+    <Message Response="WU">ATCC CLIMB TO REACH [LEVEL] BY [POSITION]</Message>	
+    <Message Response="WU">ATCC AT [TIME] CLIMB TO AND MAINTAIN [LEVEL]</Message>
+    <Message Response="WU">ATCC AT [POSITION] CLIMB TO AND MAINTAIN [LEVEL]</Message>
+    <Message Response="WU">ATCC DESCEND TO AND MAINTAIN [LEVEL]</Message>
+    <Message Response="WU">ATCC AT [TIME] DESCEND TO AND MAINTAIN [LEVEL]</Message>
+    <Message Response="WU">ATCC AT [POSITION] DESCEND TO AND MAINTAIN [LEVEL]</Message>
+    <Message Response="WU">ATCC EXPEDITE CLIMB TO [LEVEL]</Message>
+    <Message Response="WU">ATCC IMMEDIATELY CLIMB TO [LEVEL]</Message>
+    <Message Response="WU">ATCC IMMEDIATELY STOP CLIMB AT [LEVEL]</Message>
+    <Message Response="WU">ATCC CLIMB AT [RATE] MINIMUM</Message>
+    <Message Response="WU">ATCC CLIMB AT [RATE] MAXIMUM</Message>
+    <Message Response="WU">ATCC DESCEND TO AND MAINTAIN [LEVEL]</Message>
+    <Message Response="WU">ATCC DESCEND TO AND MAINTAIN BLOCK [LEVEL] TO [LEVEL]</Message>
+    <Message Response="WU">ATCC AT [TIME] CROSS [POSITION] AT AND MAINTAIN [LEVEL]</Message>
+    <Message Response="WU">ATCC AT [TIME] CROSS [POSITION] AT AND MAINTAIN [LEVEL] AT [SPEED]</Message>	
+    <Message Response="WU">ATCC DESCEND TO REACH [LEVEL] BY [TIME]</Message>
+    <Message Response="WU">ATCC DESCEND TO REACH [LEVEL] BY [POSITION]</Message>
+    <Message Response="WU">ATCC EXPEDITE DESCENT TO [LEVEL]</Message>
+    <Message Response="WU">ATCC IMMEDIATELY DESCEND TO [LEVEL]</Message>
+    <Message Response="WU">ATCC IMMEDIATELY STOP DESCENT AT [LEVEL]</Message>
+    <Message Response="WU">ATCC DESCEND AT [RATE] MINIMUM</Message>
+    <Message Response="WU">ATCC DESCEND AT [RATE] MAXIMUM</Message>	
+    <Message Response="R">ATCA EXPECT [LEVEL]</Message>
+    <Message Response="R">ATCA EXPECT CLIMB AT [TIME]</Message>
+    <Message Response="R">ATCA EXPECT CLIMB AT [POSITION]</Message>
+    <Message Response="R">ATCA EXPECT DESCENT AT [TIME]</Message>
+    <Message Response="R">ATCA EXPECT DESCENT AT [POSITION]</Message>	
+    <Message Response="R">ATCA AT [TIME] EXPECT CLIMB TO [LEVEL]</Message>
+    <Message Response="R">ATCA AT [POSITION] EXPECT CLIMB TO [LEVEL]</Message>
+    <Message Response="R">ATCA AT [TIME] EXPECT DESCENT TO [LEVEL]</Message>
+    <Message Response="R">ATCA AT [POSITION] EXPECT DESCENT TO [LEVEL]</Message>	
+    <Message Response="WU">ATCC CRUISE [LEVEL]</Message>
+    <Message Response="WU">ATCC CRUISE CLIMB TO [LEVEL]</Message>
+    <Message Response="WU">ATCC MAINTAIN [LEVEL]</Message>
+    <Message Response="WU">ATCC MAINTAIN BLOCK [LEVEL] TO [LEVEL]</Message>
+  </Category>
   <Category name="Route" SendViaTM="true">  
     <Message Response="WU">CLEARED TO [POSITION] VIA [ROUTE]</Message>  
     <Message Response="WU">CLEARED [ROUTE]</Message>	
@@ -141,6 +181,33 @@
     <Message Response="R">EXPECT [STAR] [TEXT]</Message>	
     <Message Response="WU">WHEN ABLE PROCEED DIRECT TO [POSITION]</Message>
   </Category>	
+  <Category name="HF_Route" SendViaTM="false">  
+    <Message Response="WU">ATCC CLEARED TO [POSITION] VIA [ROUTE]</Message>  
+    <Message Response="WU">ATCC CLEARED [ROUTE]</Message>	
+    <Message Response="WU">ATCC AT [POSITION] CLEARED [ROUTE]</Message>
+    <Message Response="WU">ATCC PROCEED DIRECT TO [POSITION]</Message>	
+    <Message Response="WU">ATCC AT [TIME] PROCEED DIRECT TO [POSITION]</Message>	
+    <Message Response="WU">ATCC AT [POSITION] PROCEED DIRECT TO [POSITION]</Message>
+    <Message Response="WU">ATCC OFFSET [DIRECTION] [DISTANCE] OF ROUTE</Message>
+    <Message Response="WU">ATCC AT [POSITION] OFFSET [DIRECTION] [DISTANCE] OF ROUTE</Message>
+    <Message Response="WU">ATCC AT [TIME] OFFSET [DIRECTION] [DISTANCE] OF ROUTE</Message>
+    <Message Response="WU">ATCC PROCEED BACK ON ROUTE</Message>
+    <Message Response="WU">ATCC REJOIN ROUTE BY [POSITION]</Message>
+    <Message Response="WU">ATCC REJOIN ROUTE BY [TIME]</Message>	
+    <Message Response="R">ATCA EXPECT BACK ON ROUTE BY [POSITION]</Message>
+    <Message Response="R">ATCA EXPECT BACK ON ROUTE BY [TIME]</Message>	
+    <Message Response="WU">ATCR CLEARED TO DEVIATE UP TO [DIRECTION] [DISTANCE] OF ROUTE</Message>	
+    <Message Response="R">ATCA REPORT BACK ON ROUTE</Message>  
+    <Message Response="R">ATCA EXPECT [ROUTE]</Message>
+    <Message Response="R">ATCA AT [POSITION] EXPECT [ROUTE]</Message>	
+    <Message Response="R">ATCA EXPECT DIRECT TO [POSITION]</Message>
+    <Message Response="R">ATCA AT [POSITION] EXPECT DIRECT TO [POSITION]</Message>
+    <Message Response="R">ATCA AT [TIME] EXPECT DIRECT TO [POSITION]</Message>
+    <Message Response="R">ATCA AT [LEVEL] EXPECT DIRECT TO [POSITION]</Message>
+    <Message Response="R">ATCA EXPECT FURTHER CLEARANCE AT [TIME]</Message>	
+    <Message Response="R">ATCA EXPECT [STAR] [TEXT]</Message>	
+    <Message Response="WU">ATCC WHEN ABLE PROCEED DIRECT TO [POSITION]</Message>
+  </Category>	
   <Category name="Speed" SendViaTM="true">
     <Message Response="WU">MAINTAIN MACH [SPEED]</Message>
     <Message Response="WU">MAINTAIN MACH [SPEED] OR GREATER</Message>
@@ -156,6 +223,22 @@
     <Message Response="R">AT [POSITION] EXPECT MACH [SPEED] TO MACH [SPEED]</Message>
     <Message Response="R">AT [LEVEL] EXPECT MACH [SPEED] TO MACH [SPEED]</Message>
     <Message Response="WU">DO NOT EXCEED MACH [SPEED]</Message>	
+  </Category>  	
+  <Category name="HF_Speed" SendViaTM="false">
+    <Message Response="WU">ATCC MAINTAIN MACH [SPEED]</Message>
+    <Message Response="WU">ATCC MAINTAIN MACH [SPEED] OR GREATER</Message>
+    <Message Response="WU">ATCC MAINTAIN MACH [SPEED] OR LESS</Message>
+    <Message Response="WU">ATCC INCREASE SPEED TO MACH [SPEED]</Message>
+    <Message Response="WU">ATCC INCREASE SPEED TO MACH [SPEED] OR GREATER</Message>
+    <Message Response="WU">ATCC REDUCE SPEED TO MACH [SPEED]</Message>
+    <Message Response="WU">ATCC REDUCE SPEED TO MACH [SPEED] OR LESS</Message>
+    <Message Response="R">ATCA AT [TIME] EXPECT MACH [SPEED]</Message>
+    <Message Response="R">ATCA AT [POSITION] EXPECT MACH [SPEED]</Message>
+    <Message Response="R">ATCA AT [LEVEL] EXPECT MACH [SPEED]</Message>
+    <Message Response="R">ATCA AT [TIME] EXPECT MACH [SPEED] TO MACH [SPEED]</Message>
+    <Message Response="R">ATCA AT [POSITION] EXPECT MACH [SPEED] TO MACH [SPEED]</Message>
+    <Message Response="R">ATCA AT [LEVEL] EXPECT MACH [SPEED] TO MACH [SPEED]</Message>
+    <Message Response="WU">ATCC DO NOT EXCEED MACH [SPEED]</Message>	
   </Category>  
   <Category name="X-ing" SendViaTM="true">
     <Message Response="R">EXPECT TO CROSS [POSITION] AT [LEVEL]</Message>
@@ -218,9 +301,16 @@
   <Category name="CLIMB↑" AutoloadElements="true" SendViaTM="true">
     <Message Response="WU">CLIMB TO AND MAINTAIN [LEVEL]</Message>
     <Message Response="R">REPORT LEVEL [LEVEL]</Message>	
+  </Category>  		
+  <Category name="HF_CLIMB↑" AutoloadElements="true" SendViaTM="true">
+    <Message Response="WU">ATCC CLIMB TO AND MAINTAIN [LEVEL]</Message>
+    <Message Response="R">REPORT LEVEL [LEVEL]</Message>	
   </Category>  
   <Category name="byTIME↑" AutoloadElements="true" SendViaTM="true">
     <Message Response="WU">CLIMB TO REACH [LEVEL] BY [TIME]</Message>
+  </Category>   
+  <Category name="HF_byTIME↑" AutoloadElements="true" SendViaTM="true">
+    <Message Response="WU">ATCC CLIMB TO REACH [LEVEL] BY [TIME] ITC</Message>
   </Category> 
   <Category name="UNA↑" AutoloadElements="true" SendViaTM="true">
 	<Message Response="NE">UNABLE REQUESTED ALTITUDE DUE TO TRAFFIC</Message>
@@ -229,9 +319,16 @@
     <Message Response="WU">DESCEND TO AND MAINTAIN [LEVEL]</Message>  
     <Message Response="R">REPORT LEVEL [LEVEL]</Message>
   </Category>      
+  <Category name="HF_DSCND↓" AutoloadElements="true" SendViaTM="true">
+    <Message Response="WU">ATCC DESCEND TO AND MAINTAIN [LEVEL]</Message>  
+    <Message Response="R">REPORT LEVEL [LEVEL]</Message>
+  </Category>      
   <Category name="byTIME↓" AutoloadElements="true" SendViaTM="true">
     <Message Response="WU">DESCEND TO REACH [LEVEL] BY [TIME]</Message>
   </Category>     
+  <Category name="HF_byTIME↓" AutoloadElements="true" SendViaTM="true">
+    <Message Response="WU">ATCC DESCEND TO REACH [LEVEL] BY [TIME] ITC</Message>
+  </Category> 
   <Category name="TFC" AutoloadElements="true" SendViaTM="true">
     <Message Response="NE">UNABLE</Message>
 	<Message Response="NE">DUE TO TRAFFIC</Message>
@@ -242,7 +339,10 @@
   </Category>    
   <Category name="POS" AutoloadElements="true" SendViaTM="true">
     <Message Response="NE">REQUEST POSITION REPORT</Message>  	
-  </Category>  
+  </Category>     
+  <Category name="HF_POS" AutoloadElements="true" SendViaTM="true">
+    <Message Response="NE">ATCR REQUEST POSITION REPORT</Message>  	
+  </Category> 
   <Category name="WX" AutoloadElements="true" SendViaTM="true">
     <Message Response="WU">CLEARED TO DEVIATE UP TO [DIRECTION] [DISTANCE] OF ROUTE</Message>	  
     <Message Response="R">REPORT BACK ON ROUTE</Message>	
@@ -255,7 +355,7 @@
 	<Message Response="NE">REPORT ARRIVAL.</Message>	
   </Category>  
   <Category name="DEP" AutoloadElements="true" SendViaTM="true">
-    <Message Response="WU">AT [TIME] CLEARED [ROUTE]</Message> 
+    <Message Response="WU">ATCC AT [TIME] CLEARED [ROUTE]</Message> 
     <Message Response="WU">ALT F[LEVEL] FREQ 9999KhZ SSR 2000,</Message>
     <Message Response="WU">CLEARANCE VOID IF NOT OFF BY [TIME]., IF NOT OFF BY [TIME] </Message> 
     <Message Response="WU">ADZ NLT [TIME] OF INTENT. ITC </Message>	

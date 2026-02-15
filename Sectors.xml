@@ -297,7 +297,8 @@ ZOA.0951
 0950,
 0951
 </ResponsibleSectors> 
-  </Sector>  
+  </Sector>    
+  <Sector FullName="ARINC HFRO" Frequency="131.950" Callsign="SFO_RDO" Name="HFRO"></Sector>
   <Sector FullName="Sector 77" Frequency="131.950" Callsign="ZAK_FSS" Name="77">  
 <Volumes>
 ZOA.7701
