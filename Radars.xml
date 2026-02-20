@@ -172,6 +172,10 @@
     <Lat>50.0000</Lat>
     <Long>-140.0000</Long>
   </Radar>
+  <Radar Name="ADSC19" Type="ADSB" Elevation="1000" MaxRange="250">
+    <Lat>-10.0000</Lat>
+    <Long>-150.0000</Long>
+  </Radar>
   <Radar Name="ADSC19A" Type="ADSB" Elevation="1000" MaxRange="250">
     <Lat>0.0000</Lat>
     <Long>-150.0000</Long>
@@ -247,6 +251,10 @@
   <Radar Name="ADSC21E" Type="ADSB" Elevation="1000" MaxRange="250">
     <Lat>50.0000</Lat>
     <Long>-170.0000</Long>
+  </Radar> 
+  <Radar Name="ADSC22" Type="ADSB" Elevation="1000" MaxRange="250">
+    <Lat>-10.0000</Lat>
+    <Long>-180.0000</Long>
   </Radar> 
   <Radar Name="ADSC22A" Type="ADSB" Elevation="1000" MaxRange="250">
     <Lat>0.0000</Lat>

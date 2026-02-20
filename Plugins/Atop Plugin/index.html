@@ -1,0 +1,514 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ATOP Conflict Display</title>
+    <link rel="stylesheet" href="motif.css">
+</head>
+<body>
+    <!-- Connection Status -->
+    <div class="motif-connection-status" id="connection-status">Disconnected</div>
+
+    <!-- Sector Queue Window - ATOP Style per reference -->
+    <div id="sector-queue-window" style="
+        position: absolute;
+        left: 1500px; 
+        top: 50px; 
+        width: 407px; 
+        height: 149px;
+        min-width: 407px;
+        max-width: 407px;
+        background: #c0c0a0;
+        border: 4px solid #5f9ea0;
+        box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.4);
+        display: flex;
+        flex-direction: column;
+        font-family: 'VT323', monospace;
+    ">
+        <!-- Title Bar -->
+        <div style="
+            background: #5f9ea0;
+            color: white;
+            padding: 4px 8px;
+            text-align: center;
+            font-weight: bold;
+            font-size: 18px;
+            letter-spacing: 1px;
+            cursor: move;
+        ">CWP1 - default</div>
+        
+        <!-- Menu Bar -->
+        <div style="
+            background: #c0c0a0;
+            padding: 4px 12px;
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            border-bottom: 2px solid #808070;
+            font-size: 18px;
+        ">
+            <span style="cursor: pointer;"><u>O</u>pen</span>
+            <span style="cursor: pointer;"><u>S</u>tatus</span>
+            <span style="cursor: pointer;"><u>W</u>eather</span>
+            <span style="cursor: pointer;"><u>L</u>ists</span>
+            <span style="cursor: pointer;">Sign</span>
+            <span style="flex: 1;"></span>
+            <span style="color: #0000ff; font-weight: bold; font-size: 28px; font-style: italic;">ZOA</span>
+        </div>
+        
+        <!-- Status Area -->
+        <div style="
+            background: #c0c0a0;
+            padding: 12px 16px;
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            border-bottom: 2px solid #808070;
+        ">
+            <!-- Left side: SECTOR, COORD, ERROR -->
+            <div style="display: flex; gap: 24px;">
+                <!-- SECTOR -->
+                <div style="display: flex; flex-direction: column; align-items: center;">
+                    <span style="font-size: 16px; font-weight: bold; margin-bottom: 4px;">SECTOR</span>
+                    <div style="
+                        background: #ff0000;
+                        color: #ffffff;
+                        font-size: 20px;
+                        font-weight: bold;
+                        padding: 4px 12px;
+                        min-width: 44px;
+                        text-align: center;
+                        border: 2px solid;
+                        border-color: #808070 #e0e0c8 #e0e0c8 #808070;
+                    ">0</div>
+                </div>
+                <!-- COORD -->
+                <div style="display: flex; flex-direction: column; align-items: center;">
+                    <span style="font-size: 16px; font-weight: bold; margin-bottom: 4px;">COORD</span>
+                    <div style="
+                        background: #d0d0b8;
+                        color: #000000;
+                        font-size: 20px;
+                        font-weight: bold;
+                        padding: 4px 12px;
+                        min-width: 44px;
+                        text-align: center;
+                        border: 2px solid;
+                        border-color: #808070 #e0e0c8 #e0e0c8 #808070;
+                    ">0</div>
+                </div>
+                <!-- ERROR -->
+                <div style="display: flex; flex-direction: column; align-items: center;">
+                    <span style="font-size: 16px; font-weight: bold; margin-bottom: 4px;">ERROR</span>
+                    <div style="
+                        background: #ffff00;
+                        color: #000000;
+                        font-size: 20px;
+                        font-weight: bold;
+                        padding: 4px 12px;
+                        min-width: 44px;
+                        text-align: center;
+                        border: 2px solid;
+                        border-color: #808070 #e0e0c8 #e0e0c8 #808070;
+                    ">0</div>
+                </div>
+            </div>
+            
+            <!-- Right side: Connection Status, Time, Date -->
+            <div style="text-align: right; font-size: 18px;">
+                <div style="font-weight: bold;" id="sq-network">DISCONNECTED</div>
+                <div style="font-size: 20px; font-weight: bold;" id="sq-time">00:00:00</div>
+                <div id="sq-date">01 Jan 00</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Conflict Summary Window - ATOP Style matching C# ConflictSummaryWindow -->
+    <div class="motif-window active" id="conflict-summary" style="left: 50px; top: 50px; width: 490px; resize: vertical; overflow: auto; min-height: 180px; max-height: 600px;">
+        <div class="motif-titlebar">
+            <span class="motif-title">CONFLICT SUMMARY</span>
+        </div>
+        
+        <!-- Menu Bar -->
+        <div class="conflict-menubar">
+            <span class="conflict-menu-item"><u>O</u>verride</span>
+            <span class="conflict-menu-item conflict-menu-right"><u>H</u>elp</span>
+        </div>
+        
+        <!-- Column Headers - matching C# columns -->
+        <div class="conflict-header" style="
+            display: grid;
+            grid-template-columns: 80px 30px 80px 30px 40px 50px 60px 60px;
+            gap: 4px;
+            padding: 4px 8px;
+            background: #c0c0a0;
+            border-bottom: 1px solid #808070;
+            font-weight: bold;
+            font-size: 14px;
+        ">
+            <span>Intruder</span>
+            <span>Att</span>
+            <span>Active</span>
+            <span>Att</span>
+            <span>Ovrd</span>
+            <span>Type</span>
+            <span>StartTime</span>
+            <span>EndTime</span>
+        </div>
+        
+        <!-- Conflict List Area - RED background always -->
+        <div id="conflict-list-area" style="
+            background: #cc0000;
+            border: 2px solid;
+            border-color: #808070 #e0e0c8 #e0e0c8 #808070;
+            margin: 4px 8px;
+            min-height: 120px;
+            max-height: 200px;
+            overflow-y: auto;
+            font-family: 'VT323', monospace;
+            font-size: 16px;
+        ">
+            <div id="conflict-list">
+                <!-- Populated by WebSocket/Worker -->
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Conflict Report Window - matching ATOP reference image -->
+    <!-- TESTING: display: block (normally display: none) -->
+    <div id="conflict-report" style="
+        position: absolute;
+        left: 200px;
+        top: 100px;
+        width: 580px;
+        background: #c0c0a0;
+        border: 4px solid #5f9ea0;
+        box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.4);
+        font-family: 'VT323', monospace;
+        font-size: 16px;
+        display: block;
+    ">
+        <!-- Title Bar -->
+        <div style="
+            background: #5f9ea0;
+            color: white;
+            padding: 4px 8px;
+            text-align: center;
+            font-weight: bold;
+            font-size: 18px;
+            cursor: move;
+        ">CONFLICT REPORT</div>
+        
+        <!-- Main Content Area with inset border -->
+        <div style="
+            background: #d0d0b8;
+            border: 2px solid;
+            border-color: #808070 #e0e0c8 #e0e0c8 #808070;
+            margin: 8px;
+            padding: 8px;
+        ">
+            <!-- Top Info Row: Type and Required -->
+            <div style="display: flex; justify-content: space-between; margin-bottom: 4px;">
+                <span id="report-conflict-type"></span>
+                <span><span style="font-weight: bold;">REQUIRED</span> <span id="report-req-sep"></span></span>
+            </div>
+            
+            <!-- Second Row: Degrees, LOS, Actual -->
+            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px;">
+                <span><span id="report-degrees"></span> degrees</span>
+                <div style="display: flex; align-items: center; gap: 8px;">
+                    <span style="font-weight: bold;">LOS</span>
+                    <span id="report-los-time" style="
+                        padding: 2px 8px;
+                        background: #ff8c00;
+                        color: #000;
+                        font-weight: bold;
+                    "></span>
+                    <span style="font-weight: bold;">ACTUAL</span>
+                    <span id="report-act-sep"></span>
+                </div>
+            </div>
+            
+            <!-- Column Headers Row -->
+            <div style="
+                display: grid;
+                grid-template-columns: 100px 60px 100px 100px 100px;
+                border-bottom: 1px solid #808070;
+                padding-bottom: 4px;
+                margin-bottom: 4px;
+                text-align: center;
+            ">
+                <span></span>
+                <span></span>
+                <span style="font-weight: bold;">PASSING POINT</span>
+                <span style="font-weight: bold; grid-column: span 2;">CONFLICT SEGM</span>
+            </div>
+            
+            <!-- Aircraft Row 1 (Intruder) -->
+            <div style="
+                display: grid;
+                grid-template-columns: 100px 60px 100px 100px 100px;
+                border: 1px solid #808070;
+                margin-bottom: 2px;
+            ">
+                <!-- Aircraft Info Cell -->
+                <div style="border-right: 1px solid #808070; padding: 4px; text-align: center; line-height: 1.4;">
+                    <div id="report-int-type"></div>
+                    <div id="report-int-callsign"></div>
+                    <div id="report-int-tas"></div>
+                </div>
+                <!-- Altitude Cell -->
+                <div style="border-right: 1px solid #808070; padding: 4px; display: flex; align-items: center; justify-content: center;">
+                    <span id="report-int-alt"></span>
+                </div>
+                <!-- Passing Point Cell -->
+                <div style="border-right: 1px solid #808070; padding: 4px; text-align: center; line-height: 1.4;">
+                    <div id="report-int-top"></div>
+                </div>
+                <!-- Conflict Start Cell -->
+                <div style="border-right: 1px solid #808070; padding: 4px; text-align: center; line-height: 1.4;">
+                    <span id="report-int-conf-start"></span>
+                </div>
+                <!-- Conflict End Cell -->
+                <div style="padding: 4px; text-align: center; line-height: 1.4;">
+                    <span id="report-int-conf-end"></span>
+                </div>
+            </div>
+            
+            <!-- Aircraft Row 2 (Active) -->
+            <div style="
+                display: grid;
+                grid-template-columns: 100px 60px 100px 100px 100px;
+                border: 1px solid #808070;
+            ">
+                <!-- Aircraft Info Cell -->
+                <div style="border-right: 1px solid #808070; padding: 4px; text-align: center; line-height: 1.4;">
+                    <div id="report-act-type"></div>
+                    <div id="report-act-callsign"></div>
+                    <div id="report-act-tas"></div>
+                </div>
+                <!-- Altitude Cell -->
+                <div style="border-right: 1px solid #808070; padding: 4px; display: flex; align-items: center; justify-content: center;">
+                    <span id="report-act-alt"></span>
+                </div>
+                <!-- Passing Point Cell -->
+                <div style="border-right: 1px solid #808070; padding: 4px; text-align: center; line-height: 1.4;">
+                    <div id="report-act-top"></div>
+                </div>
+                <!-- Conflict Start Cell -->
+                <div style="border-right: 1px solid #808070; padding: 4px; text-align: center; line-height: 1.4;">
+                    <span id="report-act-conf-start"></span>
+                </div>
+                <!-- Conflict End Cell -->
+                <div style="padding: 4px; text-align: center; line-height: 1.4;">
+                    <span id="report-act-conf-end"></span>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Button Bar -->
+        <div style="display: flex; justify-content: space-between; padding: 8px 12px 12px 12px;">
+            <button id="report-draw-btn" style="
+                background: #c0c0a0;
+                border: 3px solid;
+                border-color: #e0e0c8 #606060 #606060 #e0e0c8;
+                padding: 4px 16px;
+                cursor: pointer;
+                font-family: 'VT323', monospace;
+                font-size: 16px;
+                box-shadow: 2px 2px 0 #404040;
+            ">Draw</button>
+            <button id="report-close-btn" style="
+                background: #c0c0a0;
+                border: 3px solid;
+                border-color: #e0e0c8 #606060 #606060 #e0e0c8;
+                padding: 4px 16px;
+                cursor: pointer;
+                font-family: 'VT323', monospace;
+                font-size: 16px;
+                box-shadow: 2px 2px 0 #404040;
+            ">Close</button>
+        </div>
+    </div>
+
+    <!-- Flight Plan Window - Matching Reference Image -->
+    <div class="motif-window active" id="flightplan-window" style="left: 500px; top: 500px; width: 540px; resize: vertical; overflow: auto; min-height: 220px; max-height: 800px;">
+        <div class="motif-titlebar">
+            <span class="motif-title">FLIGHT PLAN ENTER/AMEND</span>
+        </div>
+        
+        <!-- Menu Bar -->
+        <div class="fp-menubar">
+            <span class="fp-menu-item"><u>F</u>light Plan</span>
+            <span class="fp-menu-item"><u>N</u>ew</span>
+            <span class="fp-menu-item fp-menu-right"><u>H</u>elp</span>
+        </div>
+        
+        <!-- Flight Plan List Area (scrollable) -->
+        <div class="fp-list-area" id="fp-list-area">
+            <div class="fp-list-content" id="fp-list-content">
+                <!-- Populated by search/list results -->
+            </div>
+        </div>
+        
+        <div class="fp-content">
+            <!-- Row 1: ACID, FLT RULE, FLT TYPE -->
+            <div class="fp-row">
+                <span class="fp-label">ACID</span>
+                <input type="text" id="fp-acid" class="fp-input fp-input-md fp-input-acid" value="">
+                <span class="fp-label">FLT RULE</span>
+                <input type="text" id="fp-fltrule" class="fp-input fp-input-xs" value="">
+                <span class="fp-label">FLT TYPE</span>
+                <input type="text" id="fp-flttype" class="fp-input fp-input-xs" value="">
+            </div>
+
+            <!-- Row 2: NUMBER, AC TYPE, WTC -->
+            <div class="fp-row">
+                <span class="fp-label">NUMBER</span>
+                <input type="text" id="fp-number" class="fp-input fp-input-xs" value="">
+                <span class="fp-label">AC TYPE</span>
+                <input type="text" id="fp-actype" class="fp-input fp-input-sm" value="">
+                <span class="fp-label">WTC</span>
+                <input type="text" id="fp-wtc" class="fp-input fp-input-xs" value="">
+            </div>
+
+            <!-- Row 3: RADIO, SSR EQUIP, ACTIVE -->
+            <div class="fp-row">
+                <span class="fp-label">RADIO</span>
+                <input type="text" id="fp-radio" class="fp-input fp-input-xl" value="">
+                <span class="fp-label">SSR EQUIP</span>
+                <input type="text" id="fp-survequip" class="fp-input fp-input-sm" value="">
+                <span class="fp-label">ACTIVE</span>
+                <input type="checkbox" id="fp-active" class="fp-checkbox">
+            </div>
+
+            <!-- Row 4: DEP, TIME -->
+            <div class="fp-row">
+                <span class="fp-label">DEP</span>
+                <input type="text" id="fp-dep" class="fp-input fp-input-sm" value="">
+                <span class="fp-label">TIME</span>
+                <input type="text" id="fp-time" class="fp-input fp-input-xl" value="">
+            </div>
+
+            <!-- Row 5: ARR, CX -->
+            <div class="fp-row">
+                <span class="fp-label">ARR</span>
+                <input type="text" id="fp-arr" class="fp-input fp-input-sm" value="">
+                <span class="fp-label">CX</span>
+                <input type="text" id="fp-cx" class="fp-input fp-input-sm" value="">
+            </div>
+
+            <!-- Row 6: SPEED, LEVEL -->
+            <div class="fp-row">
+                <span class="fp-label">SPEED</span>
+                <input type="text" id="fp-speed" class="fp-input fp-input-md" value="">
+                <span class="fp-label">LEVEL</span>
+                <input type="text" id="fp-level" class="fp-input fp-input-sm" value="">
+            </div>
+
+            <!-- Row 7: ROUTE (with scrollbar) -->
+            <div class="fp-row fp-row-scroll">
+                <span class="fp-label">ROUTE</span>
+                <div class="fp-scroll-container">
+                    <textarea id="fp-route" class="fp-textarea fp-textarea-scroll" rows="2"></textarea>
+                </div>
+            </div>
+
+            <!-- Row 8: DEST, TEET, SSR CODE, ADDR, TAIL -->
+            <div class="fp-row">
+                <span class="fp-label">DEST</span>
+                <input type="text" id="fp-dest" class="fp-input fp-input-sm" value="">
+                <span class="fp-label">TEET</span>
+                <input type="text" id="fp-teet" class="fp-input fp-input-sm" value="">
+                <span class="fp-label">SSR CODE</span>
+                <input type="text" id="fp-ssrcode" class="fp-input fp-input-sm" value="">
+                <span class="fp-label">ADDR</span>
+                <input type="text" id="fp-addr" class="fp-input fp-input-md" value="">
+                
+            </div>
+
+            <!-- Row 9: SSR MODE, ALTN DEST, 2nd ALTN DEST -->
+            <div class="fp-row">
+                <span class="fp-label">SSR MODE</span>
+                <input type="text" id="fp-ssrmode" class="fp-input fp-input-xs" value="">
+                <span class="fp-label">ALTN DEST</span>
+                <input type="text" id="fp-altndest" class="fp-input fp-input-sm" value="">
+                <span class="fp-label">2nd ALTN DEST</span>
+                <input type="text" id="fp-altndest2" class="fp-input fp-input-sm" value="">
+            </div>
+
+            <!-- Row 10: OTHER (with scrollbar) -->
+            <div class="fp-row fp-row-scroll">
+                <span class="fp-label">OTHER</span>
+                <div class="fp-scroll-container">
+                    <textarea id="fp-other" class="fp-textarea fp-textarea-scroll" rows="2"></textarea>
+                </div>
+            </div>
+
+            <!-- Response/Message Area (scrollable) -->
+            <div class="fp-message-area" id="fp-response-area">
+                <div id="fp-response-content"></div>
+            </div>
+
+            <!-- Bottom Button Bar -->
+            <div class="fp-button-bar">
+                <button class="fp-btn" id="btn-modify">Modify</button>
+                <button class="fp-btn" id="btn-update">Update</button>
+                <button class="fp-btn" id="btn-delete">Delete</button>
+                <button class="fp-btn" id="btn-vfr">VFR</button>
+                <button class="fp-btn" id="btn-ifr">IFR</button>
+                <button class="fp-btn" id="btn-close">Close</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+    <script>
+        // Sector Queue Window - Clock and Network Status
+        (function() {
+            // Network status tracking
+            let networkStatus = 'DISCONNECTED';
+            
+            function updateSectorQueueClock() {
+                const now = new Date();
+                
+                // Format Zulu time as HH:MM:SS
+                const hours = now.getUTCHours().toString().padStart(2, '0');
+                const mins = now.getUTCMinutes().toString().padStart(2, '0');
+                const secs = now.getUTCSeconds().toString().padStart(2, '0');
+                const timeStr = `${hours}:${mins}:${secs}`;
+                
+                const timeEl = document.getElementById('sq-time');
+                if (timeEl) timeEl.textContent = timeStr;
+                
+                // Format date as DD Mon YY
+                const months = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
+                const day = now.getUTCDate().toString().padStart(2, '0');
+                const month = months[now.getUTCMonth()];
+                const year = now.getUTCFullYear().toString().slice(-2);
+                const dateStr = `${day} ${month} ${year}`;
+                
+                const dateEl = document.getElementById('sq-date');
+                if (dateEl) dateEl.textContent = dateStr;
+            }
+            
+            function updateNetworkStatus(status) {
+                networkStatus = status;
+                const networkEl = document.getElementById('sq-network');
+                if (networkEl) networkEl.textContent = status;
+            }
+            
+            // Expose for external use
+            window.updateSectorQueueNetwork = updateNetworkStatus;
+            
+            // Start clock on load
+            document.addEventListener('DOMContentLoaded', function() {
+                updateSectorQueueClock();
+                setInterval(updateSectorQueueClock, 1000);
+            });
+        })();
+    </script>
+</body>
+</html>

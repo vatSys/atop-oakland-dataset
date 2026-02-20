@@ -16,8 +16,7 @@
       <Map Name="Rts" />
       <Map Name="Pts" />
       <Map Name="OSec" />
-      <Map Name="UTA" />
-      <Map Name="SIGMET" />	  
+      <Map Name="UTA" />	  
     </Maps>
     <Strips Mode="Beacon" Sort="Level">
     </Strips>
@@ -76,8 +75,7 @@
       <Map Name="Rts" />
       <Map Name="Pts" />
       <Map Name="OSec" />
-      <Map Name="UTA" />
-      <Map Name="SIGMET" />	  
+      <Map Name="UTA" />	  
     </Maps>
     <Strips Mode="Beacon" Sort="Level">
     </Strips>
@@ -109,8 +107,7 @@
       <Map Name="Rts" />
       <Map Name="Pts" />
       <Map Name="OSec" />
-      <Map Name="UTA" />
-      <Map Name="SIGMET" />	  
+      <Map Name="UTA" />	  
     </Maps>
     <Strips Mode="Beacon" Sort="Level">
     </Strips>
@@ -142,8 +139,7 @@
       <Map Name="Rts" />
       <Map Name="Pts" />
       <Map Name="OSec" />
-      <Map Name="UTA" />
-      <Map Name="SIGMET" />	  
+      <Map Name="UTA" />	  
     </Maps>
     <Strips Mode="Beacon" Sort="Level">
     </Strips>
@@ -172,8 +168,7 @@
       <Map Name="Rts" />
       <Map Name="Pts" />
       <Map Name="OSec" />
-      <Map Name="UTA" />
-      <Map Name="SIGMET" />	  
+      <Map Name="UTA" />	  
     </Maps>
     <Strips Mode="Beacon" Sort="Level">
     </Strips>
@@ -202,8 +197,7 @@
       <Map Name="Rts" />
       <Map Name="Pts" />
       <Map Name="OSec" />
-      <Map Name="UTA" />
-      <Map Name="SIGMET" />	  
+      <Map Name="UTA" />	  
     </Maps>
     <Strips Mode="Beacon" Sort="Level">
     </Strips>
@@ -232,8 +226,7 @@
       <Map Name="Rts" />
       <Map Name="Pts" />
       <Map Name="OSec" />
-      <Map Name="UTA" />
-      <Map Name="SIGMET" />	  
+      <Map Name="UTA" />	  
     </Maps>
     <Strips Mode="Beacon" Sort="Level">
     </Strips>
@@ -264,8 +257,7 @@
       <Map Name="Rts" />
       <Map Name="Pts" />
       <Map Name="OSec" />
-      <Map Name="UTA" />
-      <Map Name="SIGMET" />	  
+      <Map Name="UTA" />	  
     </Maps>
     <Strips Mode="Beacon" Sort="Level">
     </Strips>
@@ -294,8 +286,7 @@
       <Map Name="Rts" />
       <Map Name="Pts" />
       <Map Name="OSec" />
-      <Map Name="UTA" />
-      <Map Name="SIGMET" />	  
+      <Map Name="UTA" />	  
     </Maps>
     <Strips Mode="Beacon" Sort="Level">
     </Strips>
@@ -328,8 +319,7 @@
       <Map Name="Rts" />
       <Map Name="Pts" />
       <Map Name="OSec" />
-      <Map Name="UTA" />
-      <Map Name="SIGMET" />	  
+      <Map Name="UTA" />	  
     </Maps>
     <Strips Mode="Beacon" Sort="Level">
     </Strips>
@@ -362,8 +352,7 @@
       <Map Name="Rts" />
       <Map Name="Pts" />
       <Map Name="OSec" />
-      <Map Name="UTA" />
-      <Map Name="SIGMET" />	  
+      <Map Name="UTA" />	  
     </Maps>
     <Strips Mode="Beacon" Sort="Level">
     </Strips>
@@ -391,8 +380,7 @@
       <Map Name="Rts" />
       <Map Name="Pts" />
       <Map Name="OSec" />
-      <Map Name="UTA" />
-      <Map Name="SIGMET" />	  
+      <Map Name="UTA" />	  
     </Maps>
     <Strips Mode="Beacon" Sort="Level">
     </Strips>

@@ -2,19 +2,20 @@
 <MET>
   <GRIB url="http://sawbe.com/GRIB/" fileName="world.grib2" />
   <ProductTypes>
-    <METAR url="http://aviationweather.gov/adds/dataserver_current/httpparam?dataSource=metars&amp;requestType=retrieve&amp;format=xml&amp;stationString=%ICAO&amp;hoursBeforeNow=2" xmlDataTag="raw_text" mostRecent="true" />
+  <METAR url="http://aviationweather.gov/adds/dataserver_current/httpparam?dataSource=metars&amp;requestType=retrieve&amp;format=xml&amp;stationString=%ICAO&amp;hoursBeforeNow=2" xmlDataTag="raw_text" mostRecent="true" />
 	<TAF url="https://aviationweather.gov/adds/dataserver_current/httpparam?dataSource=tafs&amp;requestType=retrieve&amp;format=xml&amp;stationString=%ICAO&amp;hoursBeforeNow=0&amp;timeType=valid&amp;mostRecent=true" xmlDataTag="raw_text" mostRecent="true"/>
   </ProductTypes>
   <Browsers><!--bomw0007-->
   <NOTAM url="https://www.notams.faa.gov/dinsQueryWeb/queryRetrievalMapAction.do?retrieveLocId=KZAK&amp;actionType=notamRetrievalByICAOs&amp;submit=NOTAMs" xmlDataTag="raw_text" mostRecent="true"/>
 	<JO7110.65 url="https://www.faa.gov/air_traffic/publications/atpubs/atc_html/chap_8.html" />
-	<ICAO4444 url="https://www.ealts.com/documents/ICAO%20Doc%204444%20Air%20Traffic%20Management.pdf" />		
+	<ICAO4444 url="https://www.ealts.com/documents/ICAO%20Doc%204444%20Air%20Traffic%20Management.pdf" />	
+  <ICAO7030 url="https://www.ocean360training.com/file/si1033745/ICAO%20Document%207030-fi17615237.pdf#page=233"/>	
 	<AIP url="https://www.faa.gov/air_traffic/publications/atpubs/aip_html/part2_enr_section_7.4.html" />
 	<ICAOFP url="https://www.faa.gov/sites/faa.gov/files/FAA%20FPL%20Quick%20Reference%20Brochure%20%282022-09-15%29.pdf" />
 	<SOP url="https://oakartcc.org/web/viewer.html?file=/controllers/file/e8a98e09-1c16-11ec-9430-2a32edb55910" />
 	<ARINCFreqs url="https://radio.arinc.net/pacific/" />
-    <WX url="https://aviationweather.gov/gfa/#sigmet" />    
-    <PacChartSupplement url="https://aeronav.faa.gov/Upload_313-d/supplements/CS_PAC_20250220.pdf" />
-    <Help url="https://virtualairtrafficsystem.com/docs/" />
+  <WX url="https://aviationweather.gov/gfa/#sigmet" />    
+  <PacChartSupplement url="https://aeronav.faa.gov/Upload_313-d/supplements/CS_PAC_20260122.pdf" />
+  <Help url="https://virtualairtrafficsystem.com/docs/" />
   </Browsers>
 </MET>

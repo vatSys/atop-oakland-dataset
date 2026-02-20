@@ -1,0 +1,745 @@
+/* Motif/X-Windows Style Theme - Matching ATOP Reference */
+@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
+
+:root {
+    /* Colors matched exactly to reference image */
+    --motif-bg: #c0c0a0;              /* Tan/olive gray background */
+    --motif-dark: #808070;            /* Dark border/shadow */
+    --motif-light: #e0e0c8;           /* Light highlight */
+    --motif-text: #000000;
+    --motif-input-bg: #d0d0b8;        /* Input field background */
+    --motif-alert: #ff0000;
+    --motif-warning: #ffa500;
+    --motif-ok: #00c000;
+    --motif-teal: #008080;            /* Teal for borders and button bar */
+    --motif-desktop-bg: #000000;      /* Black desktop */
+    --motif-font: 'VT323', monospace; /* Bitmap-style font */
+}
+
+* {
+    box-sizing: border-box;
+    font-family: var(--motif-font);
+    font-size: 18px;
+}
+
+body {
+    background: var(--motif-desktop-bg);
+    margin: 0;
+    padding: 20px;
+    min-height: 100vh;
+}
+
+/* Connection Status Indicator */
+.motif-connection-status {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    padding: 6px 12px;
+    background: var(--motif-bg);
+    border: 2px solid;
+    border-color: var(--motif-light) var(--motif-dark) var(--motif-dark) var(--motif-light);
+    font-weight: bold;
+    z-index: 9999;
+}
+
+.motif-connection-status.connected {
+    background: var(--motif-ok);
+    color: white;
+}
+
+.motif-connection-status.disconnected {
+    background: var(--motif-alert);
+    color: white;
+}
+
+.motif-connection-status.mock {
+    background: var(--motif-warning);
+    color: black;
+}
+
+/* Classic 3D Beveled Border */
+.motif-raised {
+    border: 2px solid;
+    border-color: var(--motif-light) var(--motif-dark) var(--motif-dark) var(--motif-light);
+}
+
+.motif-sunken {
+    border: 2px solid;
+    border-color: var(--motif-dark) var(--motif-light) var(--motif-light) var(--motif-dark);
+}
+
+/* Window Container - Light gray border by default, teal when active */
+.motif-window {
+    position: absolute;
+    background: var(--motif-bg);
+    border: 4px solid #d3d3d3;
+    box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.4);
+    min-width: 200px;
+}
+
+.motif-window.active {
+    border-color: #5f9ea0;
+}
+
+/* Title Bar - Light gray by default, teal when active */
+.motif-titlebar {
+    background: #d3d3d3;
+    color: #000000;
+    padding: 4px 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: move;
+    user-select: none;
+}
+
+.motif-window.active .motif-titlebar {
+    background: #5f9ea0;
+    color: white;
+}
+
+.motif-title {
+    font-weight: bold;
+    font-size: 18px;
+    letter-spacing: 1px;
+}
+
+.motif-window-controls {
+    display: none;
+}
+
+/* Buttons - Classic Motif raised 3D style */
+.motif-btn {
+    background: var(--motif-bg);
+    border: 2px solid;
+    border-color: var(--motif-light) var(--motif-dark) var(--motif-dark) var(--motif-light);
+    padding: 4px 12px;
+    cursor: pointer;
+    min-width: 24px;
+    font-weight: bold;
+    color: var(--motif-text);
+}
+
+.motif-btn:hover {
+    background: var(--motif-light);
+}
+
+.motif-btn:active {
+    border-color: var(--motif-dark) var(--motif-light) var(--motif-light) var(--motif-dark);
+    background: var(--motif-dark);
+    color: white;
+}
+
+.motif-btn:disabled {
+    background: #909080;
+    color: #606050;
+    cursor: not-allowed;
+}
+
+.motif-btn-close {
+    background: var(--motif-bg);
+    padding: 2px 6px;
+    font-size: 18px;
+}
+
+.motif-btn-close:hover {
+    background: #c08080;
+}
+
+.motif-btn-minimize,
+.motif-btn-maximize {
+    padding: 2px 6px;
+    font-size: 12px;
+}
+
+/* Content Area */
+.motif-content {
+    padding: 8px;
+    background: var(--motif-bg);
+}
+
+/* Status Bar */
+.motif-statusbar {
+    background: var(--motif-bg);
+    border-top: 2px solid;
+    border-color: var(--motif-dark) var(--motif-light) var(--motif-light) var(--motif-dark);
+    padding: 4px 8px;
+    font-size: 11px;
+}
+
+/* Form Elements */
+.motif-form-group {
+    margin-bottom: 8px;
+}
+
+.motif-label {
+    display: block;
+    margin-bottom: 2px;
+    font-weight: bold;
+}
+
+.motif-input,
+.motif-select {
+    width: 100%;
+    padding: 3px 4px;
+    background: var(--motif-input-bg);
+    border: 2px solid;
+    border-color: var(--motif-dark) var(--motif-light) var(--motif-light) var(--motif-dark);
+    font-family: var(--motif-font);
+}
+
+.motif-input:focus,
+.motif-select:focus {
+    outline: none;
+    background: #000000;
+    color: #ffff00;
+}
+
+.motif-input:disabled {
+    background: #a0a090;
+    color: #404040;
+}
+
+/* Table */
+.motif-table {
+    width: 100%;
+    border-collapse: collapse;
+    background: var(--motif-input-bg);
+    border: 2px solid;
+    border-color: var(--motif-dark) var(--motif-light) var(--motif-light) var(--motif-dark);
+}
+
+.motif-table th {
+    background: var(--motif-bg);
+    border: 1px solid var(--motif-dark);
+    padding: 4px;
+    text-align: left;
+    font-weight: bold;
+}
+
+.motif-table td {
+    border: 1px solid var(--motif-dark);
+    padding: 4px;
+    font-family: var(--motif-font);
+}
+
+.motif-table tr:hover {
+    background: #c0c0a0;
+    cursor: pointer;
+}
+
+/* Panels */
+.motif-panel {
+    border: 2px solid;
+    border-color: var(--motif-dark) var(--motif-light) var(--motif-light) var(--motif-dark);
+    padding: 8px;
+    margin-bottom: 8px;
+    background: var(--motif-bg);
+}
+
+.motif-panel-title {
+    background: var(--motif-bg);
+    font-weight: bold;
+    margin: -8px -8px 8px -8px;
+    padding: 4px 8px;
+    border-bottom: 1px solid var(--motif-dark);
+}
+
+.motif-panel-row {
+    display: flex;
+    gap: 8px;
+}
+
+.motif-panel-row .motif-panel {
+    flex: 1;
+}
+
+/* Response Field with Status Colors */
+.motif-response {
+    padding: 6px;
+    text-align: center;
+    font-weight: bold;
+    border: 2px solid;
+    border-color: var(--motif-dark) var(--motif-light) var(--motif-light) var(--motif-dark);
+}
+
+.motif-response.ok {
+    background: var(--motif-ok);
+    color: black;
+}
+
+.motif-response.alert {
+    background: var(--motif-alert);
+    color: white;
+}
+
+.motif-response.warning {
+    background: var(--motif-warning);
+    color: black;
+}
+
+.motif-response.logic {
+    background: yellow;
+    color: black;
+}
+
+/* Button Bar */
+.motif-button-bar {
+    display: flex;
+    gap: 4px;
+    margin: 8px 0;
+}
+
+.motif-button-bar .motif-btn {
+    flex: 1;
+}
+
+/* Grid Layout */
+.motif-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 8px;
+}
+
+.motif-value {
+    font-family: var(--motif-font);
+}
+
+.motif-alert {
+    background: var(--motif-alert);
+    color: white;
+    padding: 2px 4px;
+}
+
+/* Status indicators */
+.status-actual { color: var(--motif-alert); font-weight: bold; }
+.status-imminent { color: var(--motif-warning); font-weight: bold; }
+.status-advisory { color: #0000ff; }
+
+/* ================================================
+   FLIGHT PLAN WINDOW - Matching Reference Image
+   ================================================ */
+
+/* Flight Plan Window specific styling */
+#flightplan-window {
+    min-width: 540px;
+}
+
+#flightplan-window .motif-titlebar {
+    text-align: center;
+    justify-content: center;
+}
+
+#flightplan-window .motif-title {
+    flex: 1;
+    text-align: center;
+}
+
+/* Menu Bar - Matching reference style */
+.fp-menubar {
+    background: var(--motif-bg);
+    padding: 2px 8px;
+    border-bottom: 1px solid var(--motif-dark);
+    display: flex;
+    gap: 16px;
+}
+
+.fp-menu-item {
+    cursor: pointer;
+    padding: 2px 4px;
+}
+
+.fp-menu-item:hover {
+    background: var(--motif-light);
+}
+
+.fp-menu-item u {
+    text-decoration: underline;
+}
+
+.fp-menu-right {
+    margin-left: auto;
+}
+
+/* Flight Plan List Area - Scrollable list below menu */
+.fp-list-area {
+    background: var(--motif-input-bg);
+    border: 2px solid;
+    border-color: var(--motif-dark) var(--motif-light) var(--motif-light) var(--motif-dark);
+    margin: 4px 8px;
+    min-height: 60px;
+    max-height: 80px;
+    overflow-y: auto;
+    font-family: var(--motif-font);
+    font-size: 18px;
+}
+
+.fp-list-content {
+    padding: 2px 4px;
+}
+
+.fp-list-item {
+    padding: 1px 2px;
+    cursor: pointer;
+    white-space: nowrap;
+}
+
+.fp-list-item:hover {
+    background: var(--motif-dark);
+    color: white;
+}
+
+.fp-list-item.selected {
+    background: #000000;
+    color: #ffff00;
+}
+
+/* Flight Plan Content Area */
+.fp-content {
+    padding: 8px;
+    background: var(--motif-bg);
+}
+
+/* Form rows matching reference layout */
+.fp-row {
+    display: flex;
+    align-items: center;
+    margin-bottom: 6px;
+    gap: 8px;
+}
+
+.fp-row-spacer {
+    height: 8px;
+}
+
+/* Labels - Fixed width for alignment */
+.fp-label {
+    font-weight: bold;
+    min-width: 55px;
+    text-align: right;
+    padding-right: 4px;
+}
+
+.fp-label-wide {
+    min-width: 70px;
+}
+
+/* Input fields - Sunken 3D style */
+.fp-input {
+    background: var(--motif-input-bg);
+    border: 2px solid;
+    border-color: var(--motif-dark) var(--motif-light) var(--motif-light) var(--motif-dark);
+    padding: 3px 6px;
+    font-family: var(--motif-font);
+    font-size: 18px;
+}
+
+.fp-input:focus {
+    outline: none;
+    background: #000000;
+    color: #ffff00;
+}
+
+.fp-input:disabled {
+    background: #a0a090;
+    color: #505050;
+}
+
+/* Input field sizes - matching reference */
+.fp-input-xs { width: 30px; }
+.fp-input-sm { width: 50px; }
+.fp-input-md { width: 80px; }
+.fp-input-lg { width: 120px; }
+.fp-input-xl { width: 180px; }
+.fp-input-wide { flex: 1; }
+
+/* ACID field - Always black background with yellow text */
+.fp-input-acid {
+    background: #000000 !important;
+    color: #ffff00 !important;
+}
+
+/* Highlighted/selected input - yellow border like FLT RULE in reference */
+.fp-input-highlight {
+    border: 2px solid #ffff00;
+}
+
+/* Textarea for route/other info */
+.fp-textarea {
+    background: var(--motif-input-bg);
+    border: 2px solid;
+    border-color: var(--motif-dark) var(--motif-light) var(--motif-light) var(--motif-dark);
+    padding: 4px 6px;
+    font-family: var(--motif-font);
+    font-size: 18px;
+    resize: none;
+    width: 100%;
+}
+
+.fp-textarea:focus {
+    outline: none;
+    background: #000000;
+    color: #ffff00;
+}
+
+/* Scroll container for textareas with scrollbar */
+.fp-scroll-container {
+    flex: 1;
+    display: flex;
+    position: relative;
+}
+
+.fp-textarea-scroll {
+    flex: 1;
+    overflow-y: auto;
+}
+
+.fp-row-scroll {
+    align-items: flex-start;
+}
+
+/* Motif-style scrollbars */
+.fp-list-area::-webkit-scrollbar,
+.fp-textarea-scroll::-webkit-scrollbar,
+.fp-message-area::-webkit-scrollbar {
+    width: 16px;
+    background: var(--motif-bg);
+}
+
+.fp-list-area::-webkit-scrollbar-track,
+.fp-textarea-scroll::-webkit-scrollbar-track,
+.fp-message-area::-webkit-scrollbar-track {
+    background: var(--motif-input-bg);
+    border: 1px solid var(--motif-dark);
+}
+
+.fp-list-area::-webkit-scrollbar-thumb,
+.fp-textarea-scroll::-webkit-scrollbar-thumb,
+.fp-message-area::-webkit-scrollbar-thumb {
+    background: var(--motif-bg);
+    border: 2px solid;
+    border-color: var(--motif-light) var(--motif-dark) var(--motif-dark) var(--motif-light);
+}
+
+.fp-list-area::-webkit-scrollbar-button,
+.fp-textarea-scroll::-webkit-scrollbar-button,
+.fp-message-area::-webkit-scrollbar-button {
+    background: var(--motif-bg);
+    border: 2px solid;
+    border-color: var(--motif-light) var(--motif-dark) var(--motif-dark) var(--motif-light);
+    height: 16px;
+}
+
+/* Checkbox styling */
+.fp-checkbox-group {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.fp-checkbox {
+    width: 14px;
+    height: 14px;
+    accent-color: var(--motif-dark);
+}
+
+/* Section divider */
+.fp-divider {
+    border-top: 2px solid var(--motif-dark);
+    border-bottom: 1px solid var(--motif-light);
+    margin: 8px 0;
+}
+
+/* Message area at bottom */
+.fp-message-area {
+    background: var(--motif-input-bg);
+    border: 2px solid;
+    border-color: var(--motif-dark) var(--motif-light) var(--motif-light) var(--motif-dark);
+    padding: 8px;
+    margin: 8px 0;
+    font-family: var(--motif-font);
+    font-size: 18px;
+    min-height: 50px;
+    max-height: 80px;
+    overflow-y: auto;
+}
+
+.fp-message-line {
+    margin: 2px 0;
+}
+
+.fp-message-info {
+    color: #000000;
+}
+
+.fp-message-error {
+    color: #ff0000;
+}
+
+/* Bottom Button Bar - Same gray as content area */
+.fp-button-bar {
+    display: flex;
+    gap: 4px;
+    padding: 8px;
+    justify-content: center;
+    background: var(--motif-bg);
+    border-top: 2px solid var(--motif-dark);
+    margin: 4px -8px -8px -8px;
+}
+
+.fp-btn {
+    background: var(--motif-bg);
+    border: 2px solid;
+    border-color: var(--motif-light) var(--motif-dark) var(--motif-dark) var(--motif-light);
+    padding: 4px 16px;
+    cursor: pointer;
+    font-weight: bold;
+    min-width: 60px;
+}
+
+.fp-btn:hover {
+    background: var(--motif-light);
+}
+
+.fp-btn:active {
+    border-color: var(--motif-dark) var(--motif-light) var(--motif-light) var(--motif-dark);
+    background: var(--motif-dark);
+    color: white;
+}
+
+.fp-btn:disabled {
+    background: #909080;
+    color: #606050;
+    cursor: not-allowed;
+}
+
+/* ============================================
+   CONFLICT SUMMARY WINDOW - ATOP Style
+   ============================================ */
+
+.conflict-menubar {
+    display: flex;
+    background: var(--motif-bg);
+    padding: 2px 8px;
+    border-bottom: 2px solid var(--motif-dark);
+}
+
+.conflict-menu-item {
+    padding: 2px 8px;
+    cursor: pointer;
+    color: var(--motif-text);
+}
+
+.conflict-menu-item:hover {
+    background: #5f9ea0;
+    color: white;
+}
+
+.conflict-menu-item u {
+    text-decoration: underline;
+}
+
+.conflict-menu-right {
+    margin-left: auto;
+}
+
+/* Column Headers */
+.conflict-header {
+    display: flex;
+    background: var(--motif-bg);
+    padding: 4px 8px;
+    border-bottom: 2px solid var(--motif-dark);
+    font-weight: bold;
+    color: var(--motif-text);
+}
+
+.conflict-header span {
+    text-align: left;
+}
+
+.col-intruder { width: 70px; }
+.col-att { width: 30px; text-align: center !important; }
+.col-active { width: 70px; }
+.col-ovrd { width: 40px; text-align: center !important; }
+.col-type { width: 40px; text-align: center !important; }
+.col-time { width: 65px; text-align: right !important; }
+
+/* Conflict List Area - Red/Pink background like ATOP */
+.conflict-list-area {
+    background: #cc4444;
+    min-height: 150px;
+    max-height: 300px;
+    overflow-y: auto;
+    border: 2px solid;
+    border-color: var(--motif-dark) var(--motif-light) var(--motif-light) var(--motif-dark);
+    margin: 4px 8px;
+}
+
+.conflict-list-content {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Conflict Row */
+.conflict-row {
+    display: flex;
+    padding: 2px 8px;
+    color: #000000;
+    cursor: pointer;
+    background: #cc4444;
+}
+
+.conflict-row:hover {
+    background: #aa3333;
+}
+
+.conflict-row.selected {
+    background: #881111;
+    color: #ffffff;
+}
+
+.conflict-row span {
+    font-family: var(--motif-font);
+}
+
+.conflict-row .col-intruder,
+.conflict-row .col-active {
+    font-weight: bold;
+}
+
+/* Conflict Status Colors */
+.conflict-row.status-actual {
+    background: #ff0000;
+    color: #ffffff;
+}
+
+.conflict-row.status-actual:hover {
+    background: #dd0000;
+}
+
+.conflict-row.status-imminent {
+    background: #cc4444;
+    color: #000000;
+}
+
+.conflict-row.status-advisory {
+    background: #cc6666;
+    color: #000000;
+}
+
+/* Empty state */
+.conflict-empty {
+    padding: 20px;
+    text-align: center;
+    color: #000000;
+    font-style: italic;
+}
+
+/* Status summary display */
+#conflict-summary-status {
+    float: right;
+}
+
+.status-actual { color: #ff0000; font-weight: bold; }
+.status-imminent { color: #cc4444; font-weight: bold; }
+.status-advisory { color: #888888; }
