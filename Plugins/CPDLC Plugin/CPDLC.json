@@ -1,5 +1,5 @@
 {
-  "ServerEndpoint": "https://cpdlc.eoinmotherway.dev/hubs/controller",
+  "ServerEndpoint": "https://s7.zakcpdlc.lat/hubs/controller",
   "Stations": ["KZAK"],
   "MaxCurrentMessages": 50,
   "MaxArchivedMessages": 50,
