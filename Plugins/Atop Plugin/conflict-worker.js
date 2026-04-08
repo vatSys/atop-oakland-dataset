@@ -2,21 +2,23 @@
  * Conflict Calculation Web Worker
  * Offloads heavy O(n²) conflict detection from vatSys plugin
  * 
- * Per FAA ATOP spec Algorithm Specifications
+ * Per FAA ATOP NAS-MD-4714 Algorithm Specifications
+ * 
+ * Probing is event-driven per ATOP spec Section 12.1.1:
+ * - Triggered by C# plugin on FDR updates
+ * - No interval-based probing
  */
 
 // Store FDRs indexed by callsign
 const fdrs = new Map();
-let conflictCheckInterval = null;
 
-// Configuration per spec Section 6.2 and Appendix A.3.82
+// Configuration per NAS-MD-4714 Section 6.2 and Appendix A.3.82
 const CONFIG = {
-    checkIntervalMs: 5000, // Check conflicts every 5 seconds
     advisoryThresholdHours: 2,      // Advisory: > 30 min, <= 2 hours
     imminentThresholdMinutes: 30,   // Imminent: > 1 min, <= 30 min
     actualThresholdMinutes: 1,      // Actual: <= 1 min
     
-    // Track angle thresholds per spec Appendix A.3.82 DIR_TYPE
+    // Track angle thresholds per NAS-MD-4714 Appendix A.3.82 DIR_TYPE
     // Same: |θ| < 45° (strictly less than)
     // Reciprocal: |θ| > 135° (strictly greater than)  
     // Crossing: 45° ≤ |θ| ≤ 135°
@@ -28,56 +30,52 @@ const CONFIG = {
 self.onmessage = function(e) {
     const { type, data } = e.data;
     
+    console.log(`[ConflictWorker] Received message: ${type}`);
+    
     switch (type) {
         case 'updateFDR':
             updateFDR(data);
             break;
         case 'removeFDR':
             fdrs.delete(data.callsign);
+            console.log(`[ConflictWorker] Removed FDR: ${data.callsign}, total FDRs: ${fdrs.size}`);
             break;
         case 'bulkUpdateFDRs':
             bulkUpdateFDRs(data);
             break;
         case 'requestProbe':
+            // Event-driven probe request from C# plugin
+            console.log(`[ConflictWorker] Probe requested, FDRs in store: ${fdrs.size}`);
             const conflicts = probeAllConflicts();
             self.postMessage({ type: 'conflictResults', data: conflicts });
             break;
         case 'setConfig':
             Object.assign(CONFIG, data);
+            console.log('[ConflictWorker] Config updated:', CONFIG);
             break;
         case 'start':
-            startConflictChecking();
+            // No longer starts interval - just log ready
+            console.log('[ConflictWorker] Ready for event-driven probe requests');
             break;
         case 'stop':
-            stopConflictChecking();
+            // No interval to stop - just log
+            console.log('[ConflictWorker] Stopped');
             break;
     }
 };
 
-function startConflictChecking() {
-    if (conflictCheckInterval) return;
-    conflictCheckInterval = setInterval(() => {
-        const conflicts = probeAllConflicts();
-        self.postMessage({ type: 'conflictResults', data: conflicts });
-    }, CONFIG.checkIntervalMs);
-}
-
-function stopConflictChecking() {
-    if (conflictCheckInterval) {
-        clearInterval(conflictCheckInterval);
-        conflictCheckInterval = null;
-    }
-}
-
 function updateFDR(fdrData) {
+    const parsed = parseRoute(fdrData.route, fdrData.routeWaypoints);
+    console.log(`[ConflictWorker] updateFDR: ${fdrData.callsign} | state=${fdrData.state} | CFL=${fdrData.cfl} RFL=${fdrData.rfl} | waypoints=${parsed.length} | rnp4=${fdrData.rnp4} rnp10=${fdrData.rnp10}`);
     fdrs.set(fdrData.callsign, {
         ...fdrData,
-        parsedRoute: parseRoute(fdrData.route, fdrData.routeWaypoints),
+        parsedRoute: parsed,
         updatedAt: Date.now()
     });
 }
 
 function bulkUpdateFDRs(fdrList) {
+    console.log(`[ConflictWorker] bulkUpdateFDRs: received ${fdrList.length} FDRs`);
     // Clear stale FDRs
     const currentCallsigns = new Set(fdrList.map(f => f.callsign));
     for (const callsign of fdrs.keys()) {
@@ -87,6 +85,7 @@ function bulkUpdateFDRs(fdrList) {
     }
     // Update all
     fdrList.forEach(fdr => updateFDR(fdr));
+    console.log(`[ConflictWorker] bulkUpdateFDRs complete, total FDRs in store: ${fdrs.size}`);
 }
 
 function parseRoute(routeString, waypoints) {
@@ -110,6 +109,13 @@ function probeAllConflicts() {
     const allConflicts = [];
     const fdrArray = Array.from(fdrs.values());
     
+    console.log(`[ConflictWorker] === PROBE START === Total FDRs: ${fdrArray.length}`);
+    
+    // Log all FDRs in the store
+    fdrArray.forEach(fdr => {
+        console.log(`[ConflictWorker]   FDR: ${fdr.callsign} | state=${fdr.state} | CFL=${fdr.cfl} RFL=${fdr.rfl} | route_pts=${fdr.parsedRoute?.length || 0}`);
+    });
+    
     // Filter to only active FDRs
     const activeFdrs = fdrArray.filter(fdr => 
         fdr.state !== 'INACTIVE' && 
@@ -118,9 +124,27 @@ function probeAllConflicts() {
         fdr.parsedRoute.length >= 2
     );
     
+    console.log(`[ConflictWorker] Active FDRs after filter (state != INACTIVE/PREACTIVE/FINISHED, route >= 2 pts): ${activeFdrs.length}`);
+    
+    // Log which FDRs were filtered out and why
+    const filteredOut = fdrArray.filter(fdr => !activeFdrs.includes(fdr));
+    filteredOut.forEach(fdr => {
+        const reasons = [];
+        if (fdr.state === 'INACTIVE' || fdr.state === 'PREACTIVE' || fdr.state === 'FINISHED') reasons.push(`state=${fdr.state}`);
+        if (!fdr.parsedRoute || fdr.parsedRoute.length < 2) reasons.push(`route_pts=${fdr.parsedRoute?.length || 0}`);
+        console.log(`[ConflictWorker]   FILTERED OUT: ${fdr.callsign} (${reasons.join(', ')})`);
+    });
+    
+    if (activeFdrs.length < 2) {
+        console.log('[ConflictWorker] === PROBE END === Not enough active FDRs for conflict check (need >= 2)');
+        return groupConflicts([]);
+    }
+    
     // O(n²) comparison but in worker thread
+    let pairsChecked = 0;
     for (let i = 0; i < activeFdrs.length; i++) {
         for (let j = i + 1; j < activeFdrs.length; j++) {
+            pairsChecked++;
             const conflict = checkConflict(activeFdrs[i], activeFdrs[j]);
             if (conflict) {
                 allConflicts.push(conflict);
@@ -128,12 +152,20 @@ function probeAllConflicts() {
         }
     }
     
+    console.log(`[ConflictWorker] === PROBE END === Pairs checked: ${pairsChecked}, Conflicts found: ${allConflicts.length}`);
+    allConflicts.forEach(c => {
+        console.log(`[ConflictWorker]   CONFLICT: ${c.intruderCallsign} vs ${c.activeCallsign} | status=${c.status} | type=${c.conflictType} | vertAct=${c.verticalAct}ft vertSep=${c.verticalSep}ft | latSep=${c.latSep}nm | angle=${c.trkAngle?.toFixed(1)}° | LOS=${c.earliestLos}`);
+    });
+    
     return groupConflicts(allConflicts);
 }
 
 function checkConflict(fdr1, fdr2) {
+    const pair = `${fdr1.callsign} vs ${fdr2.callsign}`;
+    
     // 1. Temporal Test
     if (!passesTemporalTest(fdr1, fdr2)) {
+        console.log(`[ConflictWorker]   ${pair}: PASS - no temporal overlap`);
         return null;
     }
     
@@ -141,11 +173,15 @@ function checkConflict(fdr1, fdr2) {
     const verticalSep = getVerticalMinima(fdr1, fdr2);
     const verticalAct = getAltitudeDifference(fdr1, fdr2);
     if (verticalAct >= verticalSep) {
+        console.log(`[ConflictWorker]   ${pair}: PASS - vertical sep OK (act=${verticalAct}ft >= req=${verticalSep}ft)`);
         return null;
     }
     
+    console.log(`[ConflictWorker]   ${pair}: FAIL vertical (act=${verticalAct}ft < req=${verticalSep}ft), checking lateral...`);
+    
     // 3. Lateral Bounding Box Test (quick filter)
     if (!rectanglesOverlap(fdr1, fdr2)) {
+        console.log(`[ConflictWorker]   ${pair}: PASS - bounding boxes don't overlap`);
         return null;
     }
     
@@ -153,7 +189,10 @@ function checkConflict(fdr1, fdr2) {
     const latSep = getLateralMinima(fdr1, fdr2);
     const conflictSegments = calculateAreaOfConflict(fdr1, fdr2, latSep);
     
+    console.log(`[ConflictWorker]   ${pair}: lateral minima=${latSep}nm, conflict segments=${conflictSegments.length}`);
+    
     if (conflictSegments.length === 0) {
+        console.log(`[ConflictWorker]   ${pair}: PASS - no lateral conflict segments`);
         return null;
     }
     
@@ -168,7 +207,10 @@ function checkConflict(fdr1, fdr2) {
     const longDistAct = calculateDistance(firstConflict.startLatLon, firstConflict.endLatLon);
     
     const lossOfSep = longTimeAct < longTimeSep || longDistAct < longDistSep;
+    console.log(`[ConflictWorker]   ${pair}: longTime act=${(longTimeAct/60000).toFixed(1)}min sep=${(longTimeSep/60000).toFixed(1)}min | longDist act=${longDistAct.toFixed(1)}nm sep=${longDistSep}nm | LOS=${lossOfSep}`);
+    
     if (!lossOfSep) {
+        console.log(`[ConflictWorker]   ${pair}: PASS - longitudinal separation maintained`);
         return null;
     }
     
@@ -184,11 +226,14 @@ function checkConflict(fdr1, fdr2) {
     } else if (timeUntilLOS <= CONFIG.advisoryThresholdHours * 3600000) {
         status = 'Advisory';
     } else {
+        console.log(`[ConflictWorker]   ${pair}: PASS - LOS too far in future (${(timeUntilLOS/3600000).toFixed(1)}hrs)`);
         return null; // Too far in future
     }
     
     // Calculate track angle using proper method
     const trkAngle = calculateTrackAngle(fdr1, fdr2);
+    
+    console.log(`[ConflictWorker]   ${pair}: ** CONFLICT DETECTED ** status=${status} type=${determineConflictType(trkAngle)} angle=${trkAngle.toFixed(1)}°`);
     
     return {
         intruderCallsign: fdr1.callsign,
@@ -231,7 +276,7 @@ function getAltitudeDifference(fdr1, fdr2) {
 }
 
 function getVerticalMinima(fdr1, fdr2) {
-    // Per spec Section 6.2.4.1 - Vertical Separation Standards
+    // Per NAS-MD-4714 Section 6.2.4.1 - Vertical Separation Standards
     const alt1 = fdr1.cfl || fdr1.rfl || 0;
     const alt2 = fdr2.cfl || fdr2.rfl || 0;
     const maxAlt = Math.max(alt1, alt2);
@@ -262,7 +307,7 @@ function getVerticalMinima(fdr1, fdr2) {
 }
 
 function getLateralMinima(fdr1, fdr2) {
-    // Per spec Section 6.2.4.2 - Lateral Separation Standards
+    // Per NAS-MD-4714 Section 6.2.4.2 - Lateral Separation Standards
     // Check RNP capabilities from aircraft data
     const rnp4_1 = fdr1.rnp4 === true;
     const rnp4_2 = fdr2.rnp4 === true;
@@ -304,7 +349,7 @@ function getLateralMinima(fdr1, fdr2) {
 }
 
 function getLongitudinalTimeMinima(fdr1, fdr2) {
-    // Per spec Section 6.2.4.3 - Longitudinal Time Separation
+    // Per NAS-MD-4714 Section 6.2.4.3 - Longitudinal Time Separation
     // Per 6.2.4.3.2 - MNT minimum is 5 minutes, basic is 10 min
     const trackType = determineConflictType(calculateTrackAngle(fdr1, fdr2));
     
@@ -357,7 +402,7 @@ function calculateTrackAngle(fdr1, fdr2) {
 }
 
 function getLongitudinalDistanceMinima(fdr1, fdr2) {
-    // Per spec Section 6.2.4.4/6.2.4.5 - Longitudinal Distance Separation
+    // Per NAS-MD-4714 Section 6.2.4.4/6.2.4.5 - Longitudinal Distance Separation
     const rnp4_1 = fdr1.rnp4 === true;
     const rnp4_2 = fdr2.rnp4 === true;
     const rnp10_1 = fdr1.rnp10 === true;
@@ -584,7 +629,7 @@ function calculatePointFromBearingDistance(from, distanceNm, bearingDeg) {
 }
 
 function determineConflictType(trackAngle) {
-    // Per spec Appendix A.3.82 DIR_TYPE
+    // Per NAS-MD-4714 Appendix A.3.82 DIR_TYPE
     // Given the angle θ between planes containing 2 flight legs:
     //   if |θ| < 45°, then return same direction
     //   if |θ| > 135°, then return reciprocal direction
