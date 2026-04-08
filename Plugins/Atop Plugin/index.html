@@ -11,121 +11,55 @@
     <div class="motif-connection-status" id="connection-status">Disconnected</div>
 
     <!-- Sector Queue Window - ATOP Style per reference -->
-    <div id="sector-queue-window" style="
-        position: absolute;
-        left: 1500px; 
-        top: 50px; 
-        width: 407px; 
-        height: 149px;
-        min-width: 407px;
-        max-width: 407px;
-        background: #c0c0a0;
-        border: 4px solid #5f9ea0;
-        box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.4);
-        display: flex;
-        flex-direction: column;
-        font-family: 'VT323', monospace;
-    ">
-        <!-- Title Bar -->
-        <div style="
-            background: #5f9ea0;
-            color: white;
-            padding: 4px 8px;
-            text-align: center;
-            font-weight: bold;
-            font-size: 18px;
-            letter-spacing: 1px;
-            cursor: move;
-        ">CWP1 - default</div>
+    <div class="motif-window active" id="sector-queue-window" style="left: 600px; top: 50px; width: 615px; height: 298px;">
+        <div class="motif-titlebar">
+            <span class="motif-title">CWP1 - default - SIMUL</span>
+        </div>
         
         <!-- Menu Bar -->
-        <div style="
-            background: #c0c0a0;
-            padding: 4px 12px;
-            display: flex;
-            align-items: center;
-            gap: 20px;
-            border-bottom: 2px solid #808070;
-            font-size: 18px;
-        ">
-            <span style="cursor: pointer;"><u>O</u>pen</span>
-            <span style="cursor: pointer;"><u>S</u>tatus</span>
-            <span style="cursor: pointer;"><u>W</u>eather</span>
-            <span style="cursor: pointer;"><u>L</u>ists</span>
-            <span style="cursor: pointer;">Sign</span>
-            <span style="flex: 1;"></span>
-            <span style="color: #0000ff; font-weight: bold; font-size: 28px; font-style: italic;">ZOA</span>
+        <div class="sq-menubar">
+            <span class="sq-menu-item"><u>O</u>pen</span>
+            <span class="sq-menu-item"><u>S</u>tatus</span>
+            <span class="sq-menu-item"><u>W</u>eather</span>
+            <span class="sq-menu-item"><u>L</u>ists</span>
+            <span class="sq-menu-item">Sign</span>
+            <span class="sq-menu-spacer"></span>
+            <span class="sq-faa-logo">FAA</span>
         </div>
         
         <!-- Status Area -->
-        <div style="
-            background: #c0c0a0;
-            padding: 12px 16px;
-            display: flex;
-            justify-content: space-between;
-            align-items: flex-start;
-            border-bottom: 2px solid #808070;
-        ">
-            <!-- Left side: SECTOR, COORD, ERROR -->
-            <div style="display: flex; gap: 24px;">
-                <!-- SECTOR -->
-                <div style="display: flex; flex-direction: column; align-items: center;">
-                    <span style="font-size: 16px; font-weight: bold; margin-bottom: 4px;">SECTOR</span>
-                    <div style="
-                        background: #ff0000;
-                        color: #ffffff;
-                        font-size: 20px;
-                        font-weight: bold;
-                        padding: 4px 12px;
-                        min-width: 44px;
-                        text-align: center;
-                        border: 2px solid;
-                        border-color: #808070 #e0e0c8 #e0e0c8 #808070;
-                    ">0</div>
+        <div class="sq-status-area">
+            <div class="sq-status-left">
+                <div class="sq-status-group">
+                    <span class="sq-status-label">SECTOR</span>
+                    <span class="sq-status-value sq-value-alert">19</span>
                 </div>
-                <!-- COORD -->
-                <div style="display: flex; flex-direction: column; align-items: center;">
-                    <span style="font-size: 16px; font-weight: bold; margin-bottom: 4px;">COORD</span>
-                    <div style="
-                        background: #d0d0b8;
-                        color: #000000;
-                        font-size: 20px;
-                        font-weight: bold;
-                        padding: 4px 12px;
-                        min-width: 44px;
-                        text-align: center;
-                        border: 2px solid;
-                        border-color: #808070 #e0e0c8 #e0e0c8 #808070;
-                    ">0</div>
+                <div class="sq-status-group">
+                    <span class="sq-status-label">COORD</span>
+                    <span class="sq-status-value">0</span>
                 </div>
-                <!-- ERROR -->
-                <div style="display: flex; flex-direction: column; align-items: center;">
-                    <span style="font-size: 16px; font-weight: bold; margin-bottom: 4px;">ERROR</span>
-                    <div style="
-                        background: #ffff00;
-                        color: #000000;
-                        font-size: 20px;
-                        font-weight: bold;
-                        padding: 4px 12px;
-                        min-width: 44px;
-                        text-align: center;
-                        border: 2px solid;
-                        border-color: #808070 #e0e0c8 #e0e0c8 #808070;
-                    ">0</div>
+                <div class="sq-status-group">
+                    <span class="sq-status-label">ERROR</span>
+                    <span class="sq-status-value sq-value-warning">16</span>
                 </div>
             </div>
-            
-            <!-- Right side: Connection Status, Time, Date -->
-            <div style="text-align: right; font-size: 18px;">
-                <div style="font-weight: bold;" id="sq-network">DISCONNECTED</div>
-                <div style="font-size: 20px; font-weight: bold;" id="sq-time">00:00:00</div>
-                <div id="sq-date">01 Jan 00</div>
+            <div class="sq-status-right">
+                <div class="sq-oper-label">OPER (T)</div>
+                <div class="sq-time" id="sq-time">23:52:19</div>
+                <div class="sq-date" id="sq-date">16 Sep 03</div>
+            </div>
+        </div>
+        
+        <!-- Queue List Area (vertical stretch) -->
+        <div class="sq-queue-area" id="sq-queue-area">
+            <div class="sq-queue-content" id="sq-queue-list">
+                <!-- Queue items populated here -->
             </div>
         </div>
     </div>
 
-    <!-- Conflict Summary Window - ATOP Style matching C# ConflictSummaryWindow -->
-    <div class="motif-window active" id="conflict-summary" style="left: 50px; top: 50px; width: 490px; resize: vertical; overflow: auto; min-height: 180px; max-height: 600px;">
+    <!-- Conflict Summary Window - ATOP Style -->
+    <div class="motif-window active" id="conflict-summary" style="left: 50px; top: 50px; width: 520px;">
         <div class="motif-titlebar">
             <span class="motif-title">CONFLICT SUMMARY</span>
         </div>
@@ -136,205 +70,79 @@
             <span class="conflict-menu-item conflict-menu-right"><u>H</u>elp</span>
         </div>
         
-        <!-- Column Headers - matching C# columns -->
-        <div class="conflict-header" style="
-            display: grid;
-            grid-template-columns: 80px 30px 80px 30px 40px 50px 60px 60px;
-            gap: 4px;
-            padding: 4px 8px;
-            background: #c0c0a0;
-            border-bottom: 1px solid #808070;
-            font-weight: bold;
-            font-size: 14px;
-        ">
-            <span>Intruder</span>
-            <span>Att</span>
-            <span>Active</span>
-            <span>Att</span>
-            <span>Ovrd</span>
-            <span>Type</span>
-            <span>StartTime</span>
-            <span>EndTime</span>
+        <!-- Column Headers -->
+        <div class="conflict-header">
+            <span class="col-intruder">Intruder</span>
+            <span class="col-att">Att</span>
+            <span class="col-active">Active</span>
+            <span class="col-att">Att</span>
+            <span class="col-ovrd">Ovrd</span>
+            <span class="col-type">Type</span>
+            <span class="col-time">StartTime</span>
+            <span class="col-time">EndTime</span>
         </div>
         
-        <!-- Conflict List Area - RED background always -->
-        <div id="conflict-list-area" style="
-            background: #cc0000;
-            border: 2px solid;
-            border-color: #808070 #e0e0c8 #e0e0c8 #808070;
-            margin: 4px 8px;
-            min-height: 120px;
-            max-height: 200px;
-            overflow-y: auto;
-            font-family: 'VT323', monospace;
-            font-size: 16px;
-        ">
-            <div id="conflict-list">
-                <!-- Populated by WebSocket/Worker -->
+        <!-- Conflict List Area -->
+        <div class="conflict-list-area" id="conflict-list-area">
+            <div class="conflict-list-content" id="conflict-list">
+                <!-- Populated by WebSocket -->
             </div>
+        </div>
+        
+        <!-- Status bar -->
+        <div class="motif-statusbar">
+            <span id="conflict-count">0 conflict(s)</span>
+            <span id="conflict-summary-status"></span>
         </div>
     </div>
 
 
-    <!-- Conflict Report Window - matching ATOP reference image -->
-    <!-- TESTING: display: block (normally display: none) -->
-    <div id="conflict-report" style="
-        position: absolute;
-        left: 200px;
-        top: 100px;
-        width: 580px;
-        background: #c0c0a0;
-        border: 4px solid #5f9ea0;
-        box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.4);
-        font-family: 'VT323', monospace;
-        font-size: 16px;
-        display: block;
-    ">
-        <!-- Title Bar -->
-        <div style="
-            background: #5f9ea0;
-            color: white;
-            padding: 4px 8px;
-            text-align: center;
-            font-weight: bold;
-            font-size: 18px;
-            cursor: move;
-        ">CONFLICT REPORT</div>
-        
-        <!-- Main Content Area with inset border -->
-        <div style="
-            background: #d0d0b8;
-            border: 2px solid;
-            border-color: #808070 #e0e0c8 #e0e0c8 #808070;
-            margin: 8px;
-            padding: 8px;
-        ">
-            <!-- Top Info Row: Type and Required -->
-            <div style="display: flex; justify-content: space-between; margin-bottom: 4px;">
-                <span id="report-conflict-type"></span>
-                <span><span style="font-weight: bold;">REQUIRED</span> <span id="report-req-sep"></span></span>
-            </div>
-            
-            <!-- Second Row: Degrees, LOS, Actual -->
-            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px;">
-                <span><span id="report-degrees"></span> degrees</span>
-                <div style="display: flex; align-items: center; gap: 8px;">
-                    <span style="font-weight: bold;">LOS</span>
-                    <span id="report-los-time" style="
-                        padding: 2px 8px;
-                        background: #ff8c00;
-                        color: #000;
-                        font-weight: bold;
-                    "></span>
-                    <span style="font-weight: bold;">ACTUAL</span>
-                    <span id="report-act-sep"></span>
-                </div>
-            </div>
-            
-            <!-- Column Headers Row -->
-            <div style="
-                display: grid;
-                grid-template-columns: 100px 60px 100px 100px 100px;
-                border-bottom: 1px solid #808070;
-                padding-bottom: 4px;
-                margin-bottom: 4px;
-                text-align: center;
-            ">
-                <span></span>
-                <span></span>
-                <span style="font-weight: bold;">PASSING POINT</span>
-                <span style="font-weight: bold; grid-column: span 2;">CONFLICT SEGM</span>
-            </div>
-            
-            <!-- Aircraft Row 1 (Intruder) -->
-            <div style="
-                display: grid;
-                grid-template-columns: 100px 60px 100px 100px 100px;
-                border: 1px solid #808070;
-                margin-bottom: 2px;
-            ">
-                <!-- Aircraft Info Cell -->
-                <div style="border-right: 1px solid #808070; padding: 4px; text-align: center; line-height: 1.4;">
-                    <div id="report-int-type"></div>
-                    <div id="report-int-callsign"></div>
-                    <div id="report-int-tas"></div>
-                </div>
-                <!-- Altitude Cell -->
-                <div style="border-right: 1px solid #808070; padding: 4px; display: flex; align-items: center; justify-content: center;">
-                    <span id="report-int-alt"></span>
-                </div>
-                <!-- Passing Point Cell -->
-                <div style="border-right: 1px solid #808070; padding: 4px; text-align: center; line-height: 1.4;">
-                    <div id="report-int-top"></div>
-                </div>
-                <!-- Conflict Start Cell -->
-                <div style="border-right: 1px solid #808070; padding: 4px; text-align: center; line-height: 1.4;">
-                    <span id="report-int-conf-start"></span>
-                </div>
-                <!-- Conflict End Cell -->
-                <div style="padding: 4px; text-align: center; line-height: 1.4;">
-                    <span id="report-int-conf-end"></span>
-                </div>
-            </div>
-            
-            <!-- Aircraft Row 2 (Active) -->
-            <div style="
-                display: grid;
-                grid-template-columns: 100px 60px 100px 100px 100px;
-                border: 1px solid #808070;
-            ">
-                <!-- Aircraft Info Cell -->
-                <div style="border-right: 1px solid #808070; padding: 4px; text-align: center; line-height: 1.4;">
-                    <div id="report-act-type"></div>
-                    <div id="report-act-callsign"></div>
-                    <div id="report-act-tas"></div>
-                </div>
-                <!-- Altitude Cell -->
-                <div style="border-right: 1px solid #808070; padding: 4px; display: flex; align-items: center; justify-content: center;">
-                    <span id="report-act-alt"></span>
-                </div>
-                <!-- Passing Point Cell -->
-                <div style="border-right: 1px solid #808070; padding: 4px; text-align: center; line-height: 1.4;">
-                    <div id="report-act-top"></div>
-                </div>
-                <!-- Conflict Start Cell -->
-                <div style="border-right: 1px solid #808070; padding: 4px; text-align: center; line-height: 1.4;">
-                    <span id="report-act-conf-start"></span>
-                </div>
-                <!-- Conflict End Cell -->
-                <div style="padding: 4px; text-align: center; line-height: 1.4;">
-                    <span id="report-act-conf-end"></span>
-                </div>
-            </div>
+    <!-- Conflict Report Window -->
+    <div class="motif-window" id="conflict-report" style="left: 200px; top: 300px; width: 450px; display: none;">
+        <div class="motif-titlebar">
+            <span class="motif-title">Conflict Report</span>
         </div>
-        
-        <!-- Button Bar -->
-        <div style="display: flex; justify-content: space-between; padding: 8px 12px 12px 12px;">
-            <button id="report-draw-btn" style="
-                background: #c0c0a0;
-                border: 3px solid;
-                border-color: #e0e0c8 #606060 #606060 #e0e0c8;
-                padding: 4px 16px;
-                cursor: pointer;
-                font-family: 'VT323', monospace;
-                font-size: 16px;
-                box-shadow: 2px 2px 0 #404040;
-            ">Draw</button>
-            <button id="report-close-btn" style="
-                background: #c0c0a0;
-                border: 3px solid;
-                border-color: #e0e0c8 #606060 #606060 #e0e0c8;
-                padding: 4px 16px;
-                cursor: pointer;
-                font-family: 'VT323', monospace;
-                font-size: 16px;
-                box-shadow: 2px 2px 0 #404040;
-            ">Close</button>
+        <div class="motif-content">
+            <div class="motif-panel">
+                <div class="motif-panel-title">Conflict Details</div>
+                <div class="motif-grid">
+                    <div class="motif-form-group">
+                        <label class="motif-label">Type:</label>
+                        <span class="motif-value" id="report-type">-</span>
+                    </div>
+                    <div class="motif-form-group">
+                        <label class="motif-label">Track Angle:</label>
+                        <span class="motif-value" id="report-angle">-</span>
+                    </div>
+                    <div class="motif-form-group">
+                        <label class="motif-label">LOS Time:</label>
+                        <span class="motif-value motif-alert" id="report-los">-</span>
+                    </div>
+                    <div class="motif-form-group">
+                        <label class="motif-label">Required Sep:</label>
+                        <span class="motif-value" id="report-req-sep">-</span>
+                    </div>
+                    <div class="motif-form-group">
+                        <label class="motif-label">Actual Sep:</label>
+                        <span class="motif-value" id="report-act-sep">-</span>
+                    </div>
+                </div>
+            </div>
+            <div class="motif-panel-row">
+                <div class="motif-panel">
+                    <div class="motif-panel-title">Intruder</div>
+                    <div id="intruder-details"></div>
+                </div>
+                <div class="motif-panel">
+                    <div class="motif-panel-title">Active</div>
+                    <div id="active-details"></div>
+                </div>
+            </div>
         </div>
     </div>
 
     <!-- Flight Plan Window - Matching Reference Image -->
-    <div class="motif-window active" id="flightplan-window" style="left: 500px; top: 500px; width: 540px; resize: vertical; overflow: auto; min-height: 220px; max-height: 800px;">
+    <div class="motif-window active" id="flightplan-window" style="left: 100px; top: 50px; width: 540px;">
         <div class="motif-titlebar">
             <span class="motif-title">FLIGHT PLAN ENTER/AMEND</span>
         </div>
@@ -426,7 +234,8 @@
                 <input type="text" id="fp-ssrcode" class="fp-input fp-input-sm" value="">
                 <span class="fp-label">ADDR</span>
                 <input type="text" id="fp-addr" class="fp-input fp-input-md" value="">
-                
+                <span class="fp-label">TAIL</span>
+                <input type="text" id="fp-tail" class="fp-input fp-input-md" value="">
             </div>
 
             <!-- Row 9: SSR MODE, ALTN DEST, 2nd ALTN DEST -->
@@ -465,50 +274,5 @@
     </div>
 
     <script src="app.js"></script>
-    <script>
-        // Sector Queue Window - Clock and Network Status
-        (function() {
-            // Network status tracking
-            let networkStatus = 'DISCONNECTED';
-            
-            function updateSectorQueueClock() {
-                const now = new Date();
-                
-                // Format Zulu time as HH:MM:SS
-                const hours = now.getUTCHours().toString().padStart(2, '0');
-                const mins = now.getUTCMinutes().toString().padStart(2, '0');
-                const secs = now.getUTCSeconds().toString().padStart(2, '0');
-                const timeStr = `${hours}:${mins}:${secs}`;
-                
-                const timeEl = document.getElementById('sq-time');
-                if (timeEl) timeEl.textContent = timeStr;
-                
-                // Format date as DD Mon YY
-                const months = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
-                const day = now.getUTCDate().toString().padStart(2, '0');
-                const month = months[now.getUTCMonth()];
-                const year = now.getUTCFullYear().toString().slice(-2);
-                const dateStr = `${day} ${month} ${year}`;
-                
-                const dateEl = document.getElementById('sq-date');
-                if (dateEl) dateEl.textContent = dateStr;
-            }
-            
-            function updateNetworkStatus(status) {
-                networkStatus = status;
-                const networkEl = document.getElementById('sq-network');
-                if (networkEl) networkEl.textContent = status;
-            }
-            
-            // Expose for external use
-            window.updateSectorQueueNetwork = updateNetworkStatus;
-            
-            // Start clock on load
-            document.addEventListener('DOMContentLoaded', function() {
-                updateSectorQueueClock();
-                setInterval(updateSectorQueueClock, 1000);
-            });
-        })();
-    </script>
 </body>
 </html>

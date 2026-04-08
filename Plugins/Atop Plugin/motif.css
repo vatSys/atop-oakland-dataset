@@ -743,3 +743,155 @@ body {
 .status-actual { color: #ff0000; font-weight: bold; }
 .status-imminent { color: #cc4444; font-weight: bold; }
 .status-advisory { color: #888888; }
+
+/* ================================================
+   SECTOR QUEUE WINDOW - Per ATOP Reference
+   ================================================ */
+
+#sector-queue-window {
+    width: 615px;
+    height: 298px;
+    min-width: 615px;
+    max-width: 615px;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Menu Bar */
+.sq-menubar {
+    background: var(--motif-bg);
+    padding: 2px 8px;
+    border-bottom: 1px solid var(--motif-dark);
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    flex-shrink: 0;
+}
+
+.sq-menu-item {
+    cursor: pointer;
+    padding: 2px 4px;
+}
+
+.sq-menu-item:hover {
+    background: var(--motif-light);
+}
+
+.sq-menu-item u {
+    text-decoration: underline;
+}
+
+.sq-menu-spacer {
+    flex: 1;
+}
+
+.sq-faa-logo {
+    color: #0000ff;
+    font-weight: bold;
+    font-size: 24px;
+    font-style: italic;
+    padding-right: 8px;
+}
+
+/* Status Area */
+.sq-status-area {
+    background: var(--motif-bg);
+    padding: 8px 12px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    border-bottom: 1px solid var(--motif-dark);
+    flex-shrink: 0;
+}
+
+.sq-status-left {
+    display: flex;
+    gap: 16px;
+}
+
+.sq-status-group {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.sq-status-label {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 4px;
+}
+
+.sq-status-value {
+    font-size: 20px;
+    font-weight: bold;
+    padding: 4px 10px;
+    min-width: 40px;
+    text-align: center;
+    border: 2px solid;
+    border-color: var(--motif-dark) var(--motif-light) var(--motif-light) var(--motif-dark);
+    background: var(--motif-input-bg);
+}
+
+.sq-status-value.sq-value-alert {
+    background: #ff0000;
+    color: #ffffff;
+}
+
+.sq-status-value.sq-value-warning {
+    background: #ffff00;
+    color: #000000;
+}
+
+.sq-status-right {
+    text-align: right;
+    font-family: var(--motif-font);
+}
+
+.sq-oper-label {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.sq-time {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.sq-date {
+    font-size: 16px;
+}
+
+/* Queue List Area - Vertical Stretch */
+.sq-queue-area {
+    background: var(--motif-input-bg);
+    border: 2px solid;
+    border-color: var(--motif-dark) var(--motif-light) var(--motif-light) var(--motif-dark);
+    margin: 4px 8px 8px 8px;
+    flex: 1;
+    overflow-y: auto;
+    overflow-x: hidden;
+    font-family: var(--motif-font);
+    font-size: 18px;
+}
+
+.sq-queue-content {
+    padding: 2px 4px;
+}
+
+.sq-queue-item {
+    padding: 2px 4px;
+    cursor: pointer;
+    white-space: nowrap;
+    display: flex;
+    gap: 8px;
+}
+
+.sq-queue-item:hover {
+    background: var(--motif-dark);
+    color: white;
+}
+
+.sq-queue-item.selected {
+    background: #000000;
+    color: #ffff00;
+}

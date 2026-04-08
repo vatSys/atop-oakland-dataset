@@ -1304,1033 +1304,1034 @@
     <Symbol Type="DotFillCircle">
 		<Point>TL</Point>	
 	</Symbol>	
-    <Symbol Type="SolidTriangle">  
-		<Point>DEWSS</Point>
-		<Point>GALSS</Point>
-		<Point>GUNSS</Point>
-		<Point>HUTEL</Point>
-		<Point>IDAAS</Point>
-		<Point>KITSS</Point>
-		<Point>ALANN</Point>
-		<Point>GUAPO</Point>
-		<Point>FONUG</Point>
-		<Point>AXIDE</Point>
-		<Point>LOEBB</Point>
-		<Point>ADBON</Point>
-		<Point>IGOTT</Point>
-		<Point>JOWEN</Point>
-		<Point>AFONE</Point>
-		<Point>AHNDO</Point>
-		<Point>KEIKO</Point>
-		<Point>AMATT</Point>
-		<Point>PAYPO</Point>
-		<Point>MUNRI</Point>
-		<Point>ANJJE</Point>
-		<Point>ICEEE</Point>
-		<Point>APIDD</Point>
-		<Point>ARENS</Point>
-		<Point>BAART</Point>
-		<Point>BALKS</Point>
-		<Point>HOBBO</Point>
-		<Point>BELAN</Point>
-		<Point>BENTS</Point>
-		<Point>BIGBY</Point>
-		<Point>BINGE</Point>
-		<Point>BISOX</Point>
-		<Point>IDROD</Point>
-		<Point>BOILS</Point>
-		<Point>ROCET</Point>
-		<Point>BORIC</Point>
-		<Point>HUNTS</Point>
-		<Point>CAMOS</Point>
-		<Point>SYVAD</Point>
-		<Point>CANOL</Point>
-		<Point>CARLS</Point>
-		<Point>CARRP</Point>
-		<Point>AMRUD</Point>
-		<Point>LEGID</Point>
-		<Point>CAHYO</Point>
-		<Point>COMIR</Point>
-		<Point>CREAN</Point>
-		<Point>CRONN</Point>
-		<Point>CUFFY</Point>
-		<Point>CUTEE</Point>
-		<Point>AYKK</Point>
-		<Point>DOHRT</Point>
-		<Point>DUNEY</Point>
-		<Point>ELNUR</Point>
-		<Point>FACED</Point>
-		<Point>FASEL</Point>
-		<Point>FENSE</Point>
-		<Point>FULMR</Point>
-		<Point>TEKOS</Point>
-		<Point>GOOFI</Point>
-		<Point>GUPEY</Point>
-		<Point>HILCO</Point>
-		<Point>HOOPA</Point>
-		<Point>ISGOG</Point>
-		<Point>KAPPU</Point>
-		<Point>KEITH</Point>
-		<Point>KERRY</Point>
-		<Point>KIMMI</Point>
-		<Point>KISME</Point>
-		<Point>KRASY</Point>
-		<Point>KRONK</Point>
-		<Point>KURTT</Point>
-		<Point>LIDIT</Point>
-		<Point>LOOIS</Point>
-		<Point>MAEVA</Point>
-		<Point>MARTI</Point>
-		<Point>MAZZA</Point>
-		<Point>MONPI</Point>
-		<Point>MUBIT</Point>
-		<Point>NIXAM</Point>
-		<Point>NUTTI</Point>
-		<Point>OLGIS</Point>
-		<Point>OMLET</Point>
-		<Point>OMOTO</Point>
-		<Point>PAINT</Point>
-		<Point>PASRO</Point>
-		<Point>PASSA</Point>
-		<Point>PHILY</Point>
-		<Point>PIKOK</Point>
-		<Point>RAMIZ</Point>
-		<Point>RICHH</Point>
-		<Point>THOMA</Point>
-		<Point>RUTUS</Point>
-		<Point>SANTA</Point>
-		<Point>SEDAR</Point>
-		<Point>SPONJ</Point>
-		<Point>STEFF</Point>
-		<Point>TEEDE</Point>
-		<Point>TENOR</Point>
-		<Point>TILLY</Point>
-		<Point>TONYS</Point>
-		<Point>AUDIA</Point>
-		<Point>UPNAR</Point>
-		<Point>VAVEE</Point>
-		<Point>WACOS</Point>
-		<Point>WAYSE</Point>
-		<Point>WEDES</Point>
-		<Point>WIBIG</Point>
-		<Point>WINTY</Point>
-		<Point>WOOBY</Point>
-		<Point>WOSLU</Point>
-		<Point>WRNNR</Point>
-		<Point>YELLO</Point>
-		<Point>ZANNG</Point>
-		<Point>HAVNU</Point>
-		<Point>BIRUQ</Point>
-		<Point>ZINNO</Point>
-		<Point>CHOKO</Point>
-		<Point>SHREE</Point>
-		<Point>GALEE</Point>
-		<Point>HOOVR</Point>
-		<Point>KEONE</Point>
-		<Point>KERNE</Point>
-		<Point>OKOLE</Point>
-		<Point>BEEBO</Point>
-		<Point>CANOE</Point>
-		<Point>DEWOP</Point>
-		<Point>EMNAK</Point>
-		<Point>LINGO</Point>
-		<Point>MANJO</Point>
-		<Point>NUDGE</Point>
-		<Point>ORNAI</Point>
-		<Point>PRETY</Point>
-		<Point>ROUKE</Point>
-		<Point>CINNY</Point>
-		<Point>DUETS</Point>
-		<Point>EDSEL</Point>
-		<Point>FOOTS</Point>
-		<Point>HEMLO</Point>
-		<Point>KANUA</Point>
-		<Point>KYLLE</Point>
-		<Point>LENNA</Point>
-		<Point>MAFIC</Point>
-		<Point>QUIGG</Point>
-		<Point>SHARI</Point>
-		<Point>BAGBE</Point>
-		<Point>JUNIE</Point>
-		<Point>ASADE</Point>
-		<Point>STINE</Point>
-		<Point>SNAPP</Point>
-		<Point>WILLE</Point>
-		<Point>ACRON</Point>
-		<Point>PULEE</Point>
-		<Point>GUMGE</Point>
-		<Point>RIVBE</Point>
-		<Point>TZZ</Point>
-		<Point>ALCOA</Point>
-		<Point>SFO</Point>
-		<Point>NATTE</Point>
-		<Point>SEA</Point>
-		<Point>MITOH</Point>
-		<Point>BOXER</Point>
-		<Point>DANNO</Point>
-		<Point>CANON</Point>
-		<Point>BOXER</Point>
-		<Point>FATMO</Point>
-		<Point>ENDAW</Point>
-		<Point>DACEM</Point>
-		<Point>CEPAS</Point>
-		<Point>BUTEN</Point>
-		<Point>VIPAM</Point>
-		<Point>LAMEK</Point>
-		<Point>KELPI</Point>
-		<Point>CKN</Point>
-		<Point>MC</Point>
-		<Point>PUPEB</Point>
-		<Point>KAPSO</Point>
-		<Point>AA</Point>
-		<Point>DOLFF</Point>
-		<Point>KATCH</Point>
-		<Point>MDO</Point>
-		<Point>CJAYY</Point>
-		<Point>ODK</Point>
-		<Point>DUKUB</Point>
-		<Point>ISPID</Point>
-		<Point>ISTEM</Point>
-		<Point>DUBEV</Point>
-		<Point>ITGAV</Point>
-		<Point>247PQ</Point>
-		<Point>251PQ</Point>
-		<Point>TOSAS</Point>
-		<Point>BENKI</Point>
-		<Point>29SOK</Point>
-		<Point>BN</Point>
-		<Point>45SOK</Point>
-		<Point>993PQ</Point>
-		<Point>VILEY</Point>
-		<Point>GNOSS</Point>
-		<Point>HONSO</Point>
-		<Point>WIDEN</Point>
-		<Point>LIMLE</Point>
-		<Point>LEETA</Point>
-		<Point>FOZZI</Point>
-		<Point>EDWIL</Point>
-		<Point>CIN</Point>
-		<Point>ALLBE</Point>
-		<Point>CS</Point>
-		<Point>SALVA</Point>
-		<Point>ASEDA</Point>
-		<Point>VASKO</Point>
-		<Point>REEDE</Point>
-		<Point>TRYSH</Point>
-		<Point>KATHS</Point>
-		<Point>UPDOB</Point>
-		<Point>UKATA</Point>
-		<Point>OPHET</Point>
-		<Point>UNVER</Point>
-		<Point>SHENU</Point>
-		<Point>REDWD</Point>
-		<Point>BYROW</Point>
-		<Point>OMDOB</Point>
-		<Point>SKATE</Point>
-		<Point>BEDIP</Point>
-		<Point>LAO</Point>
-		<Point>DEMSA</Point>
-		<Point>ALDIS</Point>
-		<Point>MIKIN</Point>
-		<Point>NOMAN</Point>
-		<Point>GT</Point>
-		<Point>TNUGE</Point>
-		<Point>PIGFA</Point>
-		<Point>JIMOS</Point>
-		<Point>NGUEN</Point>
-		<Point>NATIE</Point>
-		<Point>RESEE</Point>
-		<Point>SYSTA</Point>
-		<Point>OVRON</Point>
-		<Point>GAPNE</Point>
-		<Point>BOLUG</Point>
-		<Point>FICKY</Point>
-		<Point>EDTOO</Point>
-		<Point>DINTY</Point>
-		<Point>KEIKI</Point>
-		<Point>HARPO</Point>
-		<Point>CAMPS</Point>
-		<Point>BEACH</Point>
-		<Point>ADUMM</Point>
-		<Point>CHAIN</Point>
-		<Point>SOBOW</Point>
-		<Point>SERAH</Point>
-		<Point>DAFRE</Point>
-		<Point>JORDA</Point>
-		<Point>SUCTU</Point>
-		<Point>HOKLA</Point>
-		<Point>FIRES</Point>
-		<Point>CRISI</Point>
-		<Point>GRAMY</Point>
-		<Point>MD</Point>
-		<Point>PY</Point>
-		<Point>UPSET</Point>
-		<Point>TEDED</Point>
-		<Point>MOK</Point>
-		<Point>SAKKI</Point>
-		<Point>SECIL</Point>
-		<Point>JULLE</Point>
-		<Point>ALANA</Point>
-		<Point>ZILNA</Point>
-		<Point>TAMMI</Point>
-		<Point>GEYEN</Point>
-		<Point>ANYN</Point>
-		<Point>NZ</Point>
-		<Point>OK</Point>
-		<Point>ON</Point>
-		<Point>LATNE</Point>
-		<Point>COBAD</Point>
-		<Point>BOSKE</Point>
-		<Point>FORSE</Point>
-		<Point>PQ</Point>
-		<Point>AKN</Point>
-		<Point>CDB</Point>
-		<Point>CUDDA</Point>
-		<Point>CRYPT</Point>
-		<Point>CURVS</Point>
-		<Point>CHIPT</Point>
-		<Point>OZZIE</Point>
-		<Point>PUGGY</Point>
-		<Point>PIPPA</Point>
-		<Point>PINSO</Point>
-		<Point>ORCCA</Point>
-		<Point>ONEOX</Point>
-		<Point>ONEIL</Point>
-		<Point>NOLTI</Point>
-		<Point>NATES</Point>
-		<Point>EHM</Point>
-		<Point>BET</Point>
-		<Point>OME</Point>
-		<Point>SPY</Point>
-		<Point>LYYLE</Point>
-		<Point>AKISU</Point>
-		<Point>PASRO</Point>
-		<Point>OMOTO</Point>
-		<Point>NIPPI</Point>
-		<Point>MUCLA</Point>
-		<Point>SYA</Point>
-		<Point>LAMOL</Point>
-		<Point>TUNTO</Point>
-		<Point>ELMAS</Point>
-		<Point>KALOK</Point>
-		<Point>GOBIN</Point>
-		<Point>BESSS</Point>
-		<Point>BUCAT</Point>
-		<Point>CLANS</Point>
-		<Point>COSAT</Point>
-		<Point>FATUM</Point>
-		<Point>FIBSS</Point>
-		<Point>GUYES</Point>
-		<Point>JOBSS</Point>
-		<Point>LADSS</Point>
-		<Point>MIKYY</Point>
-		<Point>MOGLE</Point>
-		<Point>NATSS</Point>
-		<Point>OATSS</Point>
-		<Point>OLBIE</Point>
-		<Point>OTTRE</Point>
-		<Point>POXIE</Point>
-		<Point>RIDLL</Point>
-		<Point>SHAWS</Point>
-		<Point>TERYY</Point>
-		<Point>TOESS</Point>
-		<Point>WINZR</Point>
-		<Point>YATZY</Point>
-		<Point>ABETS</Point>
-		<Point>ADGOR</Point>
-		<Point>ADKAK</Point>
-		<Point>DENKL</Point>
-		<Point>NEEEL</Point>
-		<Point>KAENA</Point>
-		<Point>KYLIO</Point>
-		<Point>HNAPI</Point>
-		<Point>ZILAN</Point>
-		<Point>EFAAI</Point>
-		<Point>DCHEE</Point>
-		<Point>AGIKA</Point>
-		<Point>DEEKE</Point>
-		<Point>KLANI</Point>
-		<Point>FRTZI</Point>
-		<Point>ALOCA</Point>
-		<Point>OUCHI</Point>
-		<Point>CONED</Point>
-		<Point>DANYA</Point>
-		<Point>BECAN</Point>
-		<Point>BAMBO</Point>
-		<Point>JOELE</Point>
-		<Point>RODAW</Point>
-		<Point>REEEF</Point>
-		<Point>AKISU</Point>
-		<Point>AKLOM</Point>
-		<Point>TKK</Point>
-		<Point>PNI</Point>
-		<Point>UKS</Point>
-		<Point>MAJ</Point>
-		<Point>NDJ</Point>
-		<Point>CKH</Point>
-		<Point>PUTER</Point>
-		<Point>ADNAP</Point>
-		<Point>KALIG</Point>
-		<Point>KALNA</Point>
-		<Point>FITTO</Point>
-		<Point>DADNU</Point>
-		<Point>EMRON</Point>
-		<Point>AVBET</Point>
-		<Point>LEPKI</Point>
-		<Point>BAYCA</Point>
-		<Point>VECKI</Point>
-		<Point>MKK</Point>
-		<Point>WANSI</Point>
-		<Point>SODZE</Point>
-		<Point>KAYAK</Point>
-		<Point>KOA</Point>
-		<Point>ROWIN</Point>
-		<Point>TYPHO</Point>
-		<Point>AMERY</Point>
-		<Point>ONOHI</Point>
-		<Point>BARBY</Point>
-		<Point>KEANY</Point>
-		<Point>MALIA</Point>
-		<Point>OKALA</Point>
-		<Point>ZAPSO</Point>
-		<Point>ANEVY</Point>
-		<Point>APPLE</Point>
-		<Point>LIPOT</Point>
-		<Point>KENDO</Point>
-		<Point>TALIA</Point>
-		<Point>TELES</Point>
-		<Point>MAHER</Point>
-		<Point>SAMGE</Point>
-		<Point>MOROT</Point>
-		<Point>BAHAR</Point>
-		<Point>ASORO</Point>
-		<Point>KINAG</Point>
-		<Point>MASBU</Point>
-		<Point>GLOEW</Point>
-		<Point>CURCH</Point>
-		<Point>MORDI</Point>
-		<Point>HILRI</Point>
-		<Point>ATIBA</Point>
-		<Point>ATIGO</Point>
-		<Point>ATRAS</Point>
-		<Point>ATVIG</Point>
-		<Point>AVLAS</Point>
-		<Point>AXELE</Point>
-		<Point>KUDER</Point>
-		<Point>BEADS</Point>
-		<Point>BEGAD</Point>
-		<Point>BIBUP</Point>
-		<Point>BIGRA</Point>
-		<Point>BILLO</Point>
-		<Point>BISTT</Point>
-		<Point>BIXAK</Point>
-		<Point>BODEG</Point>
-		<Point>FASPO</Point>
-		<Point>UDEXE</Point>
-		<Point>EKUZY</Point>
-		<Point>AVIKY</Point>
-		<Point>MAVTE</Point>
-		<Point>WADRU</Point>
-		<Point>KULVY</Point>
-		<Point>KEENG</Point>
-		<Point>FOMAK</Point>
-		<Point>KOZRY</Point>
-		<Point>FAVGA</Point>
-		<Point>OHUDA</Point>
-		<Point>KAVWO</Point>
-		<Point>UKOSY</Point>
-		<Point>UFUZO</Point>
-		<Point>IMUFO</Point>
-		<Point>ENCIN</Point>
-		<Point>CONOP</Point>
-		<Point>SAYNT</Point>
-		<Point>WORKN</Point>
-		<Point>ZENNA</Point>
-		<Point>BUBDO</Point>
-		<Point>BULRO</Point>
-		<Point>BIDOR</Point>
-		<Point>PAERE</Point>
-		<Point>TOLAB</Point>
-		<Point>TAMUR</Point>
-		<Point>TIERE</Point>
-		<Point>TARAO</Point>
-		<Point>TUNBA</Point>
-		<Point>TIAMU</Point>
-		<Point>CAVIA</Point>
-		<Point>DUNKO</Point>
-		<Point>DUNOS</Point>
-		<Point>MAREN</Point>
-		<Point>MARIN</Point>
-		<Point>TAMBA</Point>
-		<Point>GODOY</Point>
-		<Point>EIVRS</Point>
-		<Point>CORTT</Point>
-		<Point>VLI</Point>
-		<Point>CROPO</Point>
-		<Point>DIALO</Point>
-		<Point>DORCH</Point>
-		<Point>DOTIR</Point>
-		<Point>DOVAG</Point>
-		<Point>DREWS</Point>
-		<Point>DUGAN</Point>
-		<Point>ELBIS</Point>
-		<Point>ZOULU</Point>
-		<Point>AUNTI</Point>
-		<Point>BOARD</Point>
-		<Point>CEBEN</Point>
-		<Point>DRAYK</Point>
-		<Point>ELOYI</Point>
-		<Point>FAPIS</Point>
-		<Point>SAYTO</Point>
-		<Point>WILYE</Point>
-		<Point>TARDE</Point>
-		<Point>NOYES</Point>
-		<Point>RUDEE</Point>
-		<Point>DATBE</Point>
-		<Point>CHEEM</Point>
-		<Point>BARKR</Point>
-		<Point>NIXEE</Point>
-		<Point>MCFLY</Point>
-		<Point>AJINK</Point>
-		<Point>BRIUN</Point>
-		<Point>CRESP</Point>
-		<Point>DOGIF</Point>
-		<Point>ECEDO</Point>
-		<Point>FLYHM</Point>
-		<Point>GENCO</Point>
-		<Point>HABIG</Point>
-		<Point>IDAVE</Point>
-		<Point>MANRE</Point>
-		<Point>NUTTO</Point>
-		<Point>NAMIE</Point>
-		<Point>ADOWA</Point>
-		<Point>ARVII</Point>
-		<Point>ADISN</Point>
-		<Point>BOYES</Point>
-		<Point>BESTY</Point>
-		<Point>BAYUS</Point>
-		<Point>CROBY</Point>
-		<Point>CEBUR</Point>
-		<Point>DASNE</Point>
-		<Point>DULCE</Point>
-		<Point>EGKEL</Point>
-		<Point>EBEBE</Point>
-		<Point>RAGDE</Point>
-		<Point>RAYOR</Point>
-		<Point>TAKIE</Point>
-		<Point>TARPP</Point>
-		<Point>ZEMOM</Point>
-		<Point>ZAGER</Point>
-		<Point>HALLI</Point>
-		<Point>HELOP</Point>
-		<Point>HEKAB</Point>
-		<Point>ADOPE</Point>
-		<Point>ADTIL</Point>
-		<Point>BEKME</Point>
-		<Point>BARAZ</Point>
-		<Point>CIVIT</Point>
-		<Point>CUNDU</Point>
-		<Point>GITLE</Point>
-		<Point>DUSAC</Point>
-		<Point>DADIE</Point>
-		<Point>ERROT</Point>
-		<Point>ETECO</Point>
-		<Point>FOMAS</Point>
-		<Point>FLITY</Point>
-		<Point>MANEY</Point>
-		<Point>ETNIC</Point>
-		<Point>FAROA</Point>
-		<Point>FERAR</Point>
-		<Point>ZAPUM</Point>
-		<Point>ZILLI</Point>
-		<Point>BEAUT</Point>
-		<Point>PLLUT</Point>
-		<Point>RIFFT</Point>
-		<Point>LAUER</Point>
-		<Point>FIZEL</Point>
-		<Point>FLEXX</Point>
-		<Point>FORDO</Point>
-		<Point>FUGEN</Point>
-		<Point>GULEG</Point>
-		<Point>GUNAM</Point>
-		<Point>HINAG</Point>
-		<Point>HOPPY</Point>
-		<Point>IDOTO</Point>
-		<Point>IFFEY</Point>
-		<Point>IKODA</Point>
-		<Point>IKUMA</Point>
-		<Point>INTIB</Point>
-		<Point>IRRIE</Point>
-		<Point>ISAMI</Point>
-		<Point>KADEN</Point>
-		<Point>KAGIS</Point>
-		<Point>KAGLI</Point>
-		<Point>KAKNI</Point>
-		<Point>KAKOP</Point>
-		<Point>KALAG</Point>
-		<Point>KAPKI</Point>
-		<Point>KAPNO</Point>
-		<Point>KAPOK</Point>
-		<Point>KARSM</Point>
-		<Point>KASKU</Point>
-		<Point>KINKO</Point>
-		<Point>KZV</Point>
-		<Point>LAMEK</Point>
-		<Point>LEGOT</Point>
-		<Point>LEKAX</Point>
-		<Point>LEPKA</Point>
-		<Point>LOCKA</Point>
-		<Point>LOTUS</Point>
-		<Point>LELID</Point>
-		<Point>MAGBA</Point>
-		<Point>MAKDA</Point>
-		<Point>MALNI</Point>
-		<Point>MANOT</Point>
-		<Point>MAPDO</Point>
-		<Point>MASON</Point>
-		<Point>LILIA</Point>
-		<Point>MEGOG</Point>
-		<Point>MEKAD</Point>
-		<Point>MEMIG</Point>
-		<Point>MEPAB</Point>
-		<Point>KEPKO</Point>
-		<Point>MERED</Point>
-		<Point>MEVEP</Point>
-		<Point>MIKAT</Point>
-		<Point>MIKOP</Point>
-		<Point>MIMOD</Point>
-		<Point>MINET</Point>
-		<Point>MISLY</Point>
-		<Point>MOMBO</Point>
-		<Point>MORAY</Point>
-		<Point>MORNA</Point>
-		<Point>MUPOD</Point>
-		<Point>NANAC</Point>
-		<Point>NANNO</Point>
-		<Point>NANUE</Point>
-		<Point>NIKES</Point>
-		<Point>NIKOM</Point>
-		<Point>NIKON</Point>
-		<Point>NIPPI</Point>
-		<Point>NODAN</Point>
-		<Point>NOGAK</Point>
-		<Point>NUBDA</Point>
-		<Point>OATIS</Point>
-		<Point>OLDUP</Point>
-		<Point>ONEMU</Point>
-		<Point>OPLAR</Point>
-		<Point>OPULO</Point>
-		<Point>ORARE</Point>
-		<Point>ORING</Point>
-		<Point>OSUGA</Point>
-		<Point>OSUVI</Point>
-		<Point>OTTER</Point>
-		<Point>PABBA</Point>
-		<Point>PAKDO</Point>
-		<Point>PAPAE</Point>
-		<Point>PATIA</Point>
-		<Point>PATUI</Point>
-		<Point>PEBRO</Point>
-		<Point>PETAL</Point>
-		<Point>PILID</Point>
-		<Point>PONOK</Point>
-		<Point>POPIR</Point>
-		<Point>POREN</Point>
-		<Point>POXED</Point>
-		<Point>PUGAL</Point>
-		<Point>PUGEL</Point>
-		<Point>PYCRE</Point>
-		<Point>RENAU</Point>
-		<Point>RIPKI</Point>
-		<Point>RIPNA</Point>
-		<Point>ROBKO</Point>
-		<Point>RUTAK</Point>
-		<Point>SABGU</Point>
-		<Point>SADEP</Point>
-		<Point>SAGOP</Point>
-		<Point>SAKLO</Point>
-		<Point>SAKON</Point>
-		<Point>SAMAD</Point>
-		<Point>SAREG</Point>
-		<Point>SCORE</Point>
-		<Point>SEALS</Point>
-		<Point>SEDKU</Point>
-		<Point>SEGRO</Point>
-		<Point>SELKA</Point>
-		<Point>SETER</Point>
-		<Point>SGV</Point>
-		<Point>SASIK</Point>
-		<Point>SMOLT</Point>
-		<Point>SNAIL</Point>
-		<Point>SONDA</Point>
-		<Point>SUNNS</Point>
-		<Point>TABAL</Point>
-		<Point>TAERO</Point>
-		<Point>TAIME</Point>
-		<Point>TAPOP</Point>
-		<Point>TARIB</Point>
-		<Point>TASAK</Point>
-		<Point>TATAS</Point>
-		<Point>TAVAK</Point>
-		<Point>TAXON</Point>
-		<Point>TEGOD</Point>
-		<Point>TEKAN</Point>
-		<Point>TEMAR</Point>
-		<Point>TIAMA</Point>
-		<Point>TALPA</Point>
-		<Point>TONIK</Point>
-		<Point>TOPOS</Point>
-		<Point>TOZAK</Point>
-		<Point>TRIKI</Point>
-		<Point>APACK</Point>
-		<Point>CINTO</Point>
-		<Point>CLUTS</Point>
-		<Point>DENNS</Point>
-		<Point>EBBER</Point>
-		<Point>ELLMS</Point>
-		<Point>FITES</Point>
-		<Point>SCOON</Point>
-		<Point>ZIGIE</Point>
-		<Point>UMCRE</Point>
-		<Point>UPDIX</Point>
-		<Point>VACKY</Point>
-		<Point>VESUN</Point>
-		<Point>ADDPO</Point>
-		<Point>AGIRE</Point>
-		<Point>AIBIE</Point>
-		<Point>ARUYU</Point>
-		<Point>BAKKA</Point>
-		<Point>BESTS</Point>
-		<Point>BITGE</Point>
-		<Point>BOMKE</Point>
-		<Point>CABEG</Point>
-		<Point>CEVIE</Point>
-		<Point>CHRLI</Point>
-		<Point>COBAT</Point>
-		<Point>COBIN</Point>
-		<Point>COTTA</Point>
-		<Point>DIKEC</Point>
-		<Point>DOUKE</Point>
-		<Point>DRIPY</Point>
-		<Point>DUNSS</Point>
-		<Point>EDIME</Point>
-		<Point>EDOYO</Point>
-		<Point>EGEBE</Point>
-		<Point>EWILS</Point>
-		<Point>FARAX</Point>
-		<Point>FEBER</Point>
-		<Point>FELLY</Point>
-		<Point>FOLOB</Point>
-		<Point>HABDA</Point>
-		<Point>HABEL</Point>
-		<Point>HAMDI</Point>
-		<Point>HAREN</Point>
-		<Point>HARTE</Point>
-		<Point>HATHO</Point>
-		<Point>HEBUK</Point>
-		<Point>HEGIS</Point>
-		<Point>HIVRO</Point>
-		<Point>HOLOS</Point>
-		<Point>HULLE</Point>
-		<Point>HUMDU</Point>
-		<Point>HUMET</Point>
-		<Point>HURAT</Point>
-		<Point>JABEE</Point>
-		<Point>JAMAR</Point>
-		<Point>JARAY</Point>
-		<Point>JAYPE</Point>
-		<Point>JIXAL</Point>
-		<Point>JUPET</Point>
-		<Point>JUPNA</Point>
-		<Point>JUTIN</Point>
-		<Point>KATHZ</Point>
-		<Point>KAVLE</Point>
-		<Point>KEALA</Point>
-		<Point>KEMLE</Point>
-		<Point>KNOWS</Point>
-		<Point>KOONY</Point>
-		<Point>LAGSE</Point>
-		<Point>LEKIY</Point>
-		<Point>LENIA</Point>
-		<Point>LICIA</Point>
-		<Point>LOWEY</Point>
-		<Point>LYNIS</Point>
-		<Point>WEGAD</Point>
-		<Point>WEXUN</Point>
-		<Point>WOLEK</Point>
-		<Point>WUSET</Point>
-		<Point>OBOYD</Point>
-		<Point>POOFF</Point>
-		<Point>BUFIE</Point>
-		<Point>ATYRE</Point>
-		<Point>DHIGA</Point>
-		<Point>JHORI</Point>
-		<Point>SURRS</Point>
-		<Point>TANJI</Point>
-		<Point>HAABR</Point>
-		<Point>BRYRE</Point>
-		<Point>CHOKL</Point>
-		<Point>RABBS</Point>
-		<Point>CATRE</Point>
-		<Point>DOLRE</Point>
-		<Point>SYIKL</Point>
-		<Point>JIMMA</Point>
-		<Point>TORKL</Point>
-		<Point>JLAKE</Point>
-		<Point>ZAFRE</Point>
-		<Point>DEBRY</Point>
-		<Point>GOATZ</Point>
-		<Point>FITOW</Point>
-		<Point>WORSH</Point>
-		<Point>SHUSA</Point>
-		<Point>YOSHI</Point>
-		<Point>LUNTO</Point>
-		<Point>MYC</Point>
-		<Point>ALC</Point>
-		<Point>CUE</Point>
-		<Point>CVC</Point>
-		<Point>DGC</Point>
-		<Point>GBE</Point>
-		<Point>GOC</Point>
-		<Point>GTC</Point>
-		<Point>HKC</Point>
-		<Point>IKE</Point>
-		<Point>IXE</Point>
-		<Point>JEC</Point>
-		<Point>KCC</Point>
-		<Point>KEC</Point>
-		<Point>KMC</Point>
-		<Point>MJE</Point>
-		<Point>MVE</Point>
-		<Point>NAHA</Point>
-		<Point>NEU</Point>
-		<Point>OBE</Point>
-		<Point>OJC</Point>
-		<Point>ONC</Point>
-		<Point>PPT</Point>
-		<Point>RAN</Point>
-		<Point>SUC</Point>
-		<Point>TAF</Point>
-		<Point>TIC</Point>
-		<Point>TJE</Point>
-		<Point>TYE</Point>
-		<Point>UNZ</Point>
-		<Point>XAC</Point>
-		<Point>XMC</Point>
-		<Point>ZYT</Point>
-		<Point>PUMIS</Point>
-		<Point>TEDAG</Point>
-		<Point>RUGRO</Point>
-		<Point>UBRAX</Point>
-		<Point>GUBKA</Point>
-		<Point>GODAB</Point>
-		<Point>NU</Point>
-		<Point>POPAS</Point>
-		<Point>NFNA</Point>
-		<Point>LANIS</Point>
-		<Point>BODKI</Point>
-		<Point>TEPOR</Point>
-		<Point>NERKA</Point>
-		<Point>CARBU</Point>
-		<Point>AMOTT</Point>
-		<Point>MCG</Point>
-		<Point>TANIE</Point>
-		<Point>CIFJI</Point>
-		<Point>TUCKS</Point>
-		<Point>TED</Point>
-		<Point>ENA</Point>
-		<Point>POETT</Point>
-		<Point>KOWOK</Point>
-		<Point>KILLA</Point>
-		<Point>HUMPY</Point>
-		<Point>HBK</Point>
-		<Point>JOH</Point>
-		<Point>CERGU</Point>
-		<Point>SQA</Point>
-		<Point>UDENE</Point>
-		<Point>ANN</Point>
-		<Point>WAPTO</Point>
-		<Point>MOCHA</Point>
-		<Point>HOLIE</Point>
-		<Point>YAK</Point>
-		<Point>ARRUE</Point>
-		<Point>ROYST</Point>
-		<Point>PRYCE</Point>
-		<Point>DUGGS</Point>
-		<Point>GESTI</Point>
-		<Point>DOOZI</Point>
-		<Point>LVD</Point>
-		<Point>SSR</Point>
-		<Point>DB</Point>
-		<Point>ORT</Point>
-		<Point>SAHOK</Point>
-		<Point>SPAKE</Point>
-		<Point>FAGIN</Point>
-		<Point>NONDA</Point>
-		<Point>ARRIE</Point>
-		<Point>WANTA</Point>
-		<Point>INHAM</Point>
-		<Point>YZP</Point>
-		<Point>ELFEE</Point>
-		<Point>DLG</Point>
-		<Point>HBT</Point>
-		<Point>GARRS</Point>
-		<Point>NOWEL</Point>
-		<Point>SNOUT</Point>
-		<Point>EEDEN</Point>
-		<Point>FRIED</Point>
-		<Point>MOUSY</Point>
-		<Point>MALOS</Point>
-		<Point>NULUK</Point>
-		<Point>NAYLD</Point>
-		<Point>NANZA</Point>
-		<Point>NEONN</Point>
-		<Point>OFORD</Point>
-		<Point>MARCC</Point>
-		<Point>BESAT</Point>
-		<Point>NANDY</Point>
-		<Point>TRIKL</Point>
-		<Point>ALUFF</Point>
-		<Point>POKNO</Point>
-		<Point>ORVIL</Point>
-		<Point>CHUUK</Point>
-		<Point>BARMU</Point>
-		<Point>IRKAN</Point>
-		<Point>SIT</Point>
-		<Point>ARTOP</Point>
-		<Point>DOVIX</Point>
-		<Point>POROT</Point>
-		<Point>LAPIL</Point>
-		<Point>POVAL</Point>
-		<Point>ESKOK</Point>
-		<Point>PIPIK</Point>
-		<Point>AKUMO</Point>
-		<Point>NA</Point>
-		<Point>OX</Point>
-		<Point>BUNGO</Point>
-		<Point>TOPAT</Point>
-		<Point>NN</Point>
-		<Point>BN</Point>
-		<Point>DOVRR</Point>
-		<Point>MAITI</Point>
-		<Point>BITTA</Point>
-		<Point>ENDAX</Point>
-		<Point>DILIS</Point>
-		<Point>YP</Point>
-		<Point>ROR</Point>
-		<Point>POXEL</Point>
-		<Point>AWK</Point>
-		<Point>AGPOM</Point>
-		<Point>AYPY</Point>
-		<Point>BEBOP</Point>
-		<Point>BUDRA</Point>
-		<Point>ELKEY</Point>
-		<Point>GALIP</Point>
-		<Point>GITON</Point>
-		<Point>IDEMU</Point>
-		<Point>KALIN</Point>
-		<Point>KIK</Point>
-		<Point>KYWEE</Point>
-		<Point>LIBBO</Point>
-		<Point>MALIT</Point>
-		<Point>MIMAS</Point>
-		<Point>MIMIK</Point>
-		<Point>NITOT</Point>
-		<Point>OTURI</Point>
-		<Point>PPE</Point>
-		<Point>PUPIS</Point>
-		<Point>REVRO</Point>
-		<Point>RISBA</Point>
-		<Point>ROSIN</Point>
-		<Point>RPLC</Point>
-		<Point>RPLL</Point>
-		<Point>SAPIX</Point>
-		<Point>SEFIX</Point>
-		<Point>SHARI</Point>
-		<Point>TAC</Point>
-		<Point>VEVEK</Point>
-		<Point>WABB</Point>
-		<Point>LNY</Point>
-		<Point>LIH</Point>
-		<Point>SOK</Point>
-		<Point>OGG</Point>
-		<Point>PHOG</Point>
-		<Point>NONNI</Point>
-		<Point>PUPPI</Point>
-		<Point>MAGGI</Point>
-		<Point>TOADS</Point>
-		<Point>SHARK</Point>
-		<Point>UPP</Point>
-		<Point>MUE</Point>
-		<Point>NTAA</Point>
-		<Point>FLASH</Point>
-		<Point>BAXIL</Point>
-		<Point>DARMA</Point>
-		<Point>ORARA</Point>
-		<Point>ANGE</Point>
-		<Point>NCRG</Point>
-		<Point>KURE</Point>
-		<Point>DUT</Point>
-		<Point>ADK</Point>
-		<Point>WALLT</Point>
-		<Point>PORGE</Point>
-		<Point>VESPA</Point>
-		<Point>VIGOR</Point>
-		<Point>MICNO</Point>
-		<Point>BOLED</Point>
-		<Point>NONON</Point>
-		<Point>DASSA</Point>
-		<Point>IDOCA</Point>
-		<Point>CASDY</Point>
-		<Point>EPTIV</Point>
-		<Point>DOTOD</Point>
-		<Point>MABRO</Point>
-		<Point>YZT</Point>
-		<Point>YAZ</Point>
-		<Point>YYJ</Point>
-		<Point>TOU</Point>
-		<Point>HQM</Point>
-		<Point>BTG</Point>
-		<Point>AST</Point>
-		<Point>ONP</Point>
-		<Point>OED</Point>
-		<Point>FOT</Point>
-		<Point>ENI</Point>
-		<Point>PYE</Point>
-		<Point>OSI</Point>
-		<Point>BSR</Point>
-		<Point>MQO</Point>
-		<Point>OAK</Point>
-		<Point>RZS</Point>
-		<Point>LAX</Point>
-		<Point>SXC</Point>
-		<Point>MILVA</Point>
-		<Point>HABIT</Point>
-		<Point>GARRY</Point>
-		<Point>ETRON</Point>
-		<Point>AGEDI</Point>
-		<Point>PUGAL</Point>
-		<Point>OPULO</Point>
-		<Point>NOGAL</Point>
-		<Point>OGDEN</Point>
-		<Point>CARTO</Point>
-		<Point>ASPIN</Point>
-		<Point>POWAL</Point>
-		<Point>OPHET</Point>
-		<Point>OLCOT</Point>
-		<Point>AAMYY</Point>
-		<Point>PLADO</Point>
-		<Point>OPAKE</Point>
-		<Point>NYMPH</Point>
-		<Point>NIKLL</Point>
-		<Point>CHIKI</Point>
-		<Point>AMOND</Point>
-		<Point>DRAPP</Point>
-		<Point>ALDOZ</Point>
-		<Point>CAMBO</Point>
-		<Point>GRIZZ</Point>
-		<Point>HMPTN</Point>
-	</Symbol>		
+    <!--Symbol Type="SolidTriangle"-->  
+	<Label HasLeader="false">
+		<Point Name="▴">DEWSS</Point>
+		<Point Name="▴">GALSS</Point>
+		<Point Name="▴">GUNSS</Point>
+		<Point Name="▴">HUTEL</Point>
+		<Point Name="▴">IDAAS</Point>
+		<Point Name="▴">KITSS</Point>
+		<Point Name="▴">ALANN</Point>
+		<Point Name="▴">GUAPO</Point>
+		<Point Name="▴">FONUG</Point>
+		<Point Name="▴">AXIDE</Point>
+		<Point Name="▴">LOEBB</Point>
+		<Point Name="▴">ADBON</Point>
+		<Point Name="▴">IGOTT</Point>
+		<Point Name="▴">JOWEN</Point>
+		<Point Name="▴">AFONE</Point>
+		<Point Name="▴">AHNDO</Point>
+		<Point Name="▴">KEIKO</Point>
+		<Point Name="▴">AMATT</Point>
+		<Point Name="▴">PAYPO</Point>
+		<Point Name="▴">MUNRI</Point>
+		<Point Name="▴">ANJJE</Point>
+		<Point Name="▴">ICEEE</Point>
+		<Point Name="▴">APIDD</Point>
+		<Point Name="▴">ARENS</Point>
+		<Point Name="▴">BAART</Point>
+		<Point Name="▴">BALKS</Point>
+		<Point Name="▴">HOBBO</Point>
+		<Point Name="▴">BELAN</Point>
+		<Point Name="▴">BENTS</Point>
+		<Point Name="▴">BIGBY</Point>
+		<Point Name="▴">BINGE</Point>
+		<Point Name="▴">BISOX</Point>
+		<Point Name="▴">IDROD</Point>
+		<Point Name="▴">BOILS</Point>
+		<Point Name="▴">ROCET</Point>
+		<Point Name="▴">BORIC</Point>
+		<Point Name="▴">HUNTS</Point>
+		<Point Name="▴">CAMOS</Point>
+		<Point Name="▴">SYVAD</Point>
+		<Point Name="▴">CANOL</Point>
+		<Point Name="▴">CARLS</Point>
+		<Point Name="▴">CARRP</Point>
+		<Point Name="▴">AMRUD</Point>
+		<Point Name="▴">LEGID</Point>
+		<Point Name="▴">CAHYO</Point>
+		<Point Name="▴">COMIR</Point>
+		<Point Name="▴">CREAN</Point>
+		<Point Name="▴">CRONN</Point>
+		<Point Name="▴">CUFFY</Point>
+		<Point Name="▴">CUTEE</Point>
+		<Point Name="▴">AYKK</Point>
+		<Point Name="▴">DOHRT</Point>
+		<Point Name="▴">DUNEY</Point>
+		<Point Name="▴">ELNUR</Point>
+		<Point Name="▴">FACED</Point>
+		<Point Name="▴">FASEL</Point>
+		<Point Name="▴">FENSE</Point>
+		<Point Name="▴">FULMR</Point>
+		<Point Name="▴">TEKOS</Point>
+		<Point Name="▴">GOOFI</Point>
+		<Point Name="▴">GUPEY</Point>
+		<Point Name="▴">HILCO</Point>
+		<Point Name="▴">HOOPA</Point>
+		<Point Name="▴">ISGOG</Point>
+		<Point Name="▴">KAPPU</Point>
+		<Point Name="▴">KEITH</Point>
+		<Point Name="▴">KERRY</Point>
+		<Point Name="▴">KIMMI</Point>
+		<Point Name="▴">KISME</Point>
+		<Point Name="▴">KRASY</Point>
+		<Point Name="▴">KRONK</Point>
+		<Point Name="▴">KURTT</Point>
+		<Point Name="▴">LIDIT</Point>
+		<Point Name="▴">LOOIS</Point>
+		<Point Name="▴">MAEVA</Point>
+		<Point Name="▴">MARTI</Point>
+		<Point Name="▴">MAZZA</Point>
+		<Point Name="▴">MONPI</Point>
+		<Point Name="▴">MUBIT</Point>
+		<Point Name="▴">NIXAM</Point>
+		<Point Name="▴">NUTTI</Point>
+		<Point Name="▴">OLGIS</Point>
+		<Point Name="▴">OMLET</Point>
+		<Point Name="▴">OMOTO</Point>
+		<Point Name="▴">PAINT</Point>
+		<Point Name="▴">PASRO</Point>
+		<Point Name="▴">PASSA</Point>
+		<Point Name="▴">PHILY</Point>
+		<Point Name="▴">PIKOK</Point>
+		<Point Name="▴">RAMIZ</Point>
+		<Point Name="▴">RICHH</Point>
+		<Point Name="▴">THOMA</Point>
+		<Point Name="▴">RUTUS</Point>
+		<Point Name="▴">SANTA</Point>
+		<Point Name="▴">SEDAR</Point>
+		<Point Name="▴">SPONJ</Point>
+		<Point Name="▴">STEFF</Point>
+		<Point Name="▴">TEEDE</Point>
+		<Point Name="▴">TENOR</Point>
+		<Point Name="▴">TILLY</Point>
+		<Point Name="▴">TONYS</Point>
+		<Point Name="▴">AUDIA</Point>
+		<Point Name="▴">UPNAR</Point>
+		<Point Name="▴">VAVEE</Point>
+		<Point Name="▴">WACOS</Point>
+		<Point Name="▴">WAYSE</Point>
+		<Point Name="▴">WEDES</Point>
+		<Point Name="▴">WIBIG</Point>
+		<Point Name="▴">WINTY</Point>
+		<Point Name="▴">WOOBY</Point>
+		<Point Name="▴">WOSLU</Point>
+		<Point Name="▴">WRNNR</Point>
+		<Point Name="▴">YELLO</Point>
+		<Point Name="▴">ZANNG</Point>
+		<Point Name="▴">HAVNU</Point>
+		<Point Name="▴">BIRUQ</Point>
+		<Point Name="▴">ZINNO</Point>
+		<Point Name="▴">CHOKO</Point>
+		<Point Name="▴">SHREE</Point>
+		<Point Name="▴">GALEE</Point>
+		<Point Name="▴">HOOVR</Point>
+		<Point Name="▴">KEONE</Point>
+		<Point Name="▴">KERNE</Point>
+		<Point Name="▴">OKOLE</Point>
+		<Point Name="▴">BEEBO</Point>
+		<Point Name="▴">CANOE</Point>
+		<Point Name="▴">DEWOP</Point>
+		<Point Name="▴">EMNAK</Point>
+		<Point Name="▴">LINGO</Point>
+		<Point Name="▴">MANJO</Point>
+		<Point Name="▴">NUDGE</Point>
+		<Point Name="▴">ORNAI</Point>
+		<Point Name="▴">PRETY</Point>
+		<Point Name="▴">ROUKE</Point>
+		<Point Name="▴">CINNY</Point>
+		<Point Name="▴">DUETS</Point>
+		<Point Name="▴">EDSEL</Point>
+		<Point Name="▴">FOOTS</Point>
+		<Point Name="▴">HEMLO</Point>
+		<Point Name="▴">KANUA</Point>
+		<Point Name="▴">KYLLE</Point>
+		<Point Name="▴">LENNA</Point>
+		<Point Name="▴">MAFIC</Point>
+		<Point Name="▴">QUIGG</Point>
+		<Point Name="▴">SHARI</Point>
+		<Point Name="▴">BAGBE</Point>
+		<Point Name="▴">JUNIE</Point>
+		<Point Name="▴">ASADE</Point>
+		<Point Name="▴">STINE</Point>
+		<Point Name="▴">SNAPP</Point>
+		<Point Name="▴">WILLE</Point>
+		<Point Name="▴">ACRON</Point>
+		<Point Name="▴">PULEE</Point>
+		<Point Name="▴">GUMGE</Point>
+		<Point Name="▴">RIVBE</Point>
+		<Point Name="▴">TZZ</Point>
+		<Point Name="▴">ALCOA</Point>
+		<Point Name="▴">SFO</Point>
+		<Point Name="▴">NATTE</Point>
+		<Point Name="▴">SEA</Point>
+		<Point Name="▴">MITOH</Point>
+		<Point Name="▴">BOXER</Point>
+		<Point Name="▴">DANNO</Point>
+		<Point Name="▴">CANON</Point>
+		<Point Name="▴">BOXER</Point>
+		<Point Name="▴">FATMO</Point>
+		<Point Name="▴">ENDAW</Point>
+		<Point Name="▴">DACEM</Point>
+		<Point Name="▴">CEPAS</Point>
+		<Point Name="▴">BUTEN</Point>
+		<Point Name="▴">VIPAM</Point>
+		<Point Name="▴">LAMEK</Point>
+		<Point Name="▴">KELPI</Point>
+		<Point Name="▴">CKN</Point>
+		<Point Name="▴">MC</Point>
+		<Point Name="▴">PUPEB</Point>
+		<Point Name="▴">KAPSO</Point>
+		<Point Name="▴">AA</Point>
+		<Point Name="▴">DOLFF</Point>
+		<Point Name="▴">KATCH</Point>
+		<Point Name="▴">MDO</Point>
+		<Point Name="▴">CJAYY</Point>
+		<Point Name="▴">ODK</Point>
+		<Point Name="▴">DUKUB</Point>
+		<Point Name="▴">ISPID</Point>
+		<Point Name="▴">ISTEM</Point>
+		<Point Name="▴">DUBEV</Point>
+		<Point Name="▴">ITGAV</Point>
+		<Point Name="▴">247PQ</Point>
+		<Point Name="▴">251PQ</Point>
+		<Point Name="▴">TOSAS</Point>
+		<Point Name="▴">BENKI</Point>
+		<Point Name="▴">29SOK</Point>
+		<Point Name="▴">BN</Point>
+		<Point Name="▴">45SOK</Point>
+		<Point Name="▴">993PQ</Point>
+		<Point Name="▴">VILEY</Point>
+		<Point Name="▴">GNOSS</Point>
+		<Point Name="▴">HONSO</Point>
+		<Point Name="▴">WIDEN</Point>
+		<Point Name="▴">LIMLE</Point>
+		<Point Name="▴">LEETA</Point>
+		<Point Name="▴">FOZZI</Point>
+		<Point Name="▴">EDWIL</Point>
+		<Point Name="▴">CIN</Point>
+		<Point Name="▴">ALLBE</Point>
+		<Point Name="▴">CS</Point>
+		<Point Name="▴">SALVA</Point>
+		<Point Name="▴">ASEDA</Point>
+		<Point Name="▴">VASKO</Point>
+		<Point Name="▴">REEDE</Point>
+		<Point Name="▴">TRYSH</Point>
+		<Point Name="▴">KATHS</Point>
+		<Point Name="▴">UPDOB</Point>
+		<Point Name="▴">UKATA</Point>
+		<Point Name="▴">OPHET</Point>
+		<Point Name="▴">UNVER</Point>
+		<Point Name="▴">SHENU</Point>
+		<Point Name="▴">REDWD</Point>
+		<Point Name="▴">BYROW</Point>
+		<Point Name="▴">OMDOB</Point>
+		<Point Name="▴">SKATE</Point>
+		<Point Name="▴">BEDIP</Point>
+		<Point Name="▴">LAO</Point>
+		<Point Name="▴">DEMSA</Point>
+		<Point Name="▴">ALDIS</Point>
+		<Point Name="▴">MIKIN</Point>
+		<Point Name="▴">NOMAN</Point>
+		<Point Name="▴">GT</Point>
+		<Point Name="▴">TNUGE</Point>
+		<Point Name="▴">PIGFA</Point>
+		<Point Name="▴">JIMOS</Point>
+		<Point Name="▴">NGUEN</Point>
+		<Point Name="▴">NATIE</Point>
+		<Point Name="▴">RESEE</Point>
+		<Point Name="▴">SYSTA</Point>
+		<Point Name="▴">OVRON</Point>
+		<Point Name="▴">GAPNE</Point>
+		<Point Name="▴">BOLUG</Point>
+		<Point Name="▴">FICKY</Point>
+		<Point Name="▴">EDTOO</Point>
+		<Point Name="▴">DINTY</Point>
+		<Point Name="▴">KEIKI</Point>
+		<Point Name="▴">HARPO</Point>
+		<Point Name="▴">CAMPS</Point>
+		<Point Name="▴">BEACH</Point>
+		<Point Name="▴">ADUMM</Point>
+		<Point Name="▴">CHAIN</Point>
+		<Point Name="▴">SOBOW</Point>
+		<Point Name="▴">SERAH</Point>
+		<Point Name="▴">DAFRE</Point>
+		<Point Name="▴">JORDA</Point>
+		<Point Name="▴">SUCTU</Point>
+		<Point Name="▴">HOKLA</Point>
+		<Point Name="▴">FIRES</Point>
+		<Point Name="▴">CRISI</Point>
+		<Point Name="▴">GRAMY</Point>
+		<Point Name="▴">MD</Point>
+		<Point Name="▴">PY</Point>
+		<Point Name="▴">UPSET</Point>
+		<Point Name="▴">TEDED</Point>
+		<Point Name="▴">MOK</Point>
+		<Point Name="▴">SAKKI</Point>
+		<Point Name="▴">SECIL</Point>
+		<Point Name="▴">JULLE</Point>
+		<Point Name="▴">ALANA</Point>
+		<Point Name="▴">ZILNA</Point>
+		<Point Name="▴">TAMMI</Point>
+		<Point Name="▴">GEYEN</Point>
+		<Point Name="▴">ANYN</Point>
+		<Point Name="▴">NZ</Point>
+		<Point Name="▴">OK</Point>
+		<Point Name="▴">ON</Point>
+		<Point Name="▴">LATNE</Point>
+		<Point Name="▴">COBAD</Point>
+		<Point Name="▴">BOSKE</Point>
+		<Point Name="▴">FORSE</Point>
+		<Point Name="▴">PQ</Point>
+		<Point Name="▴">AKN</Point>
+		<Point Name="▴">CDB</Point>
+		<Point Name="▴">CUDDA</Point>
+		<Point Name="▴">CRYPT</Point>
+		<Point Name="▴">CURVS</Point>
+		<Point Name="▴">CHIPT</Point>
+		<Point Name="▴">OZZIE</Point>
+		<Point Name="▴">PUGGY</Point>
+		<Point Name="▴">PIPPA</Point>
+		<Point Name="▴">PINSO</Point>
+		<Point Name="▴">ORCCA</Point>
+		<Point Name="▴">ONEOX</Point>
+		<Point Name="▴">ONEIL</Point>
+		<Point Name="▴">NOLTI</Point>
+		<Point Name="▴">NATES</Point>
+		<Point Name="▴">EHM</Point>
+		<Point Name="▴">BET</Point>
+		<Point Name="▴">OME</Point>
+		<Point Name="▴">SPY</Point>
+		<Point Name="▴">LYYLE</Point>
+		<Point Name="▴">AKISU</Point>
+		<Point Name="▴">PASRO</Point>
+		<Point Name="▴">OMOTO</Point>
+		<Point Name="▴">NIPPI</Point>
+		<Point Name="▴">MUCLA</Point>
+		<Point Name="▴">SYA</Point>
+		<Point Name="▴">LAMOL</Point>
+		<Point Name="▴">TUNTO</Point>
+		<Point Name="▴">ELMAS</Point>
+		<Point Name="▴">KALOK</Point>
+		<Point Name="▴">GOBIN</Point>
+		<Point Name="▴">BESSS</Point>
+		<Point Name="▴">BUCAT</Point>
+		<Point Name="▴">CLANS</Point>
+		<Point Name="▴">COSAT</Point>
+		<Point Name="▴">FATUM</Point>
+		<Point Name="▴">FIBSS</Point>
+		<Point Name="▴">GUYES</Point>
+		<Point Name="▴">JOBSS</Point>
+		<Point Name="▴">LADSS</Point>
+		<Point Name="▴">MIKYY</Point>
+		<Point Name="▴">MOGLE</Point>
+		<Point Name="▴">NATSS</Point>
+		<Point Name="▴">OATSS</Point>
+		<Point Name="▴">OLBIE</Point>
+		<Point Name="▴">OTTRE</Point>
+		<Point Name="▴">POXIE</Point>
+		<Point Name="▴">RIDLL</Point>
+		<Point Name="▴">SHAWS</Point>
+		<Point Name="▴">TERYY</Point>
+		<Point Name="▴">TOESS</Point>
+		<Point Name="▴">WINZR</Point>
+		<Point Name="▴">YATZY</Point>
+		<Point Name="▴">ABETS</Point>
+		<Point Name="▴">ADGOR</Point>
+		<Point Name="▴">ADKAK</Point>
+		<Point Name="▴">DENKL</Point>
+		<Point Name="▴">NEEEL</Point>
+		<Point Name="▴">KAENA</Point>
+		<Point Name="▴">KYLIO</Point>
+		<Point Name="▴">HNAPI</Point>
+		<Point Name="▴">ZILAN</Point>
+		<Point Name="▴">EFAAI</Point>
+		<Point Name="▴">DCHEE</Point>
+		<Point Name="▴">AGIKA</Point>
+		<Point Name="▴">DEEKE</Point>
+		<Point Name="▴">KLANI</Point>
+		<Point Name="▴">FRTZI</Point>
+		<Point Name="▴">ALOCA</Point>
+		<Point Name="▴">OUCHI</Point>
+		<Point Name="▴">CONED</Point>
+		<Point Name="▴">DANYA</Point>
+		<Point Name="▴">BECAN</Point>
+		<Point Name="▴">BAMBO</Point>
+		<Point Name="▴">JOELE</Point>
+		<Point Name="▴">RODAW</Point>
+		<Point Name="▴">REEEF</Point>
+		<Point Name="▴">AKISU</Point>
+		<Point Name="▴">AKLOM</Point>
+		<Point Name="▴">TKK</Point>
+		<Point Name="▴">PNI</Point>
+		<Point Name="▴">UKS</Point>
+		<Point Name="▴">MAJ</Point>
+		<Point Name="▴">NDJ</Point>
+		<Point Name="▴">CKH</Point>
+		<Point Name="▴">PUTER</Point>
+		<Point Name="▴">ADNAP</Point>
+		<Point Name="▴">KALIG</Point>
+		<Point Name="▴">KALNA</Point>
+		<Point Name="▴">FITTO</Point>
+		<Point Name="▴">DADNU</Point>
+		<Point Name="▴">EMRON</Point>
+		<Point Name="▴">AVBET</Point>
+		<Point Name="▴">LEPKI</Point>
+		<Point Name="▴">BAYCA</Point>
+		<Point Name="▴">VECKI</Point>
+		<Point Name="▴">MKK</Point>
+		<Point Name="▴">WANSI</Point>
+		<Point Name="▴">SODZE</Point>
+		<Point Name="▴">KAYAK</Point>
+		<Point Name="▴">KOA</Point>
+		<Point Name="▴">ROWIN</Point>
+		<Point Name="▴">TYPHO</Point>
+		<Point Name="▴">AMERY</Point>
+		<Point Name="▴">ONOHI</Point>
+		<Point Name="▴">BARBY</Point>
+		<Point Name="▴">KEANY</Point>
+		<Point Name="▴">MALIA</Point>
+		<Point Name="▴">OKALA</Point>
+		<Point Name="▴">ZAPSO</Point>
+		<Point Name="▴">ANEVY</Point>
+		<Point Name="▴">APPLE</Point>
+		<Point Name="▴">LIPOT</Point>
+		<Point Name="▴">KENDO</Point>
+		<Point Name="▴">TALIA</Point>
+		<Point Name="▴">TELES</Point>
+		<Point Name="▴">MAHER</Point>
+		<Point Name="▴">SAMGE</Point>
+		<Point Name="▴">MOROT</Point>
+		<Point Name="▴">BAHAR</Point>
+		<Point Name="▴">ASORO</Point>
+		<Point Name="▴">KINAG</Point>
+		<Point Name="▴">MASBU</Point>
+		<Point Name="▴">GLOEW</Point>
+		<Point Name="▴">CURCH</Point>
+		<Point Name="▴">MORDI</Point>
+		<Point Name="▴">HILRI</Point>
+		<Point Name="▴">ATIBA</Point>
+		<Point Name="▴">ATIGO</Point>
+		<Point Name="▴">ATRAS</Point>
+		<Point Name="▴">ATVIG</Point>
+		<Point Name="▴">AVLAS</Point>
+		<Point Name="▴">AXELE</Point>
+		<Point Name="▴">KUDER</Point>
+		<Point Name="▴">BEADS</Point>
+		<Point Name="▴">BEGAD</Point>
+		<Point Name="▴">BIBUP</Point>
+		<Point Name="▴">BIGRA</Point>
+		<Point Name="▴">BILLO</Point>
+		<Point Name="▴">BISTT</Point>
+		<Point Name="▴">BIXAK</Point>
+		<Point Name="▴">BODEG</Point>
+		<Point Name="▴">FASPO</Point>
+		<Point Name="▴">UDEXE</Point>
+		<Point Name="▴">EKUZY</Point>
+		<Point Name="▴">AVIKY</Point>
+		<Point Name="▴">MAVTE</Point>
+		<Point Name="▴">WADRU</Point>
+		<Point Name="▴">KULVY</Point>
+		<Point Name="▴">KEENG</Point>
+		<Point Name="▴">FOMAK</Point>
+		<Point Name="▴">KOZRY</Point>
+		<Point Name="▴">FAVGA</Point>
+		<Point Name="▴">OHUDA</Point>
+		<Point Name="▴">KAVWO</Point>
+		<Point Name="▴">UKOSY</Point>
+		<Point Name="▴">UFUZO</Point>
+		<Point Name="▴">IMUFO</Point>
+		<Point Name="▴">ENCIN</Point>
+		<Point Name="▴">CONOP</Point>
+		<Point Name="▴">SAYNT</Point>
+		<Point Name="▴">WORKN</Point>
+		<Point Name="▴">ZENNA</Point>
+		<Point Name="▴">BUBDO</Point>
+		<Point Name="▴">BULRO</Point>
+		<Point Name="▴">BIDOR</Point>
+		<Point Name="▴">PAERE</Point>
+		<Point Name="▴">TOLAB</Point>
+		<Point Name="▴">TAMUR</Point>
+		<Point Name="▴">TIERE</Point>
+		<Point Name="▴">TARAO</Point>
+		<Point Name="▴">TUNBA</Point>
+		<Point Name="▴">TIAMU</Point>
+		<Point Name="▴">CAVIA</Point>
+		<Point Name="▴">DUNKO</Point>
+		<Point Name="▴">DUNOS</Point>
+		<Point Name="▴">MAREN</Point>
+		<Point Name="▴">MARIN</Point>
+		<Point Name="▴">TAMBA</Point>
+		<Point Name="▴">GODOY</Point>
+		<Point Name="▴">EIVRS</Point>
+		<Point Name="▴">CORTT</Point>
+		<Point Name="▴">VLI</Point>
+		<Point Name="▴">CROPO</Point>
+		<Point Name="▴">DIALO</Point>
+		<Point Name="▴">DORCH</Point>
+		<Point Name="▴">DOTIR</Point>
+		<Point Name="▴">DOVAG</Point>
+		<Point Name="▴">DREWS</Point>
+		<Point Name="▴">DUGAN</Point>
+		<Point Name="▴">ELBIS</Point>
+		<Point Name="▴">ZOULU</Point>
+		<Point Name="▴">AUNTI</Point>
+		<Point Name="▴">BOARD</Point>
+		<Point Name="▴">CEBEN</Point>
+		<Point Name="▴">DRAYK</Point>
+		<Point Name="▴">ELOYI</Point>
+		<Point Name="▴">FAPIS</Point>
+		<Point Name="▴">SAYTO</Point>
+		<Point Name="▴">WILYE</Point>
+		<Point Name="▴">TARDE</Point>
+		<Point Name="▴">NOYES</Point>
+		<Point Name="▴">RUDEE</Point>
+		<Point Name="▴">DATBE</Point>
+		<Point Name="▴">CHEEM</Point>
+		<Point Name="▴">BARKR</Point>
+		<Point Name="▴">NIXEE</Point>
+		<Point Name="▴">MCFLY</Point>
+		<Point Name="▴">AJINK</Point>
+		<Point Name="▴">BRIUN</Point>
+		<Point Name="▴">CRESP</Point>
+		<Point Name="▴">DOGIF</Point>
+		<Point Name="▴">ECEDO</Point>
+		<Point Name="▴">FLYHM</Point>
+		<Point Name="▴">GENCO</Point>
+		<Point Name="▴">HABIG</Point>
+		<Point Name="▴">IDAVE</Point>
+		<Point Name="▴">MANRE</Point>
+		<Point Name="▴">NUTTO</Point>
+		<Point Name="▴">NAMIE</Point>
+		<Point Name="▴">ADOWA</Point>
+		<Point Name="▴">ARVII</Point>
+		<Point Name="▴">ADISN</Point>
+		<Point Name="▴">BOYES</Point>
+		<Point Name="▴">BESTY</Point>
+		<Point Name="▴">BAYUS</Point>
+		<Point Name="▴">CROBY</Point>
+		<Point Name="▴">CEBUR</Point>
+		<Point Name="▴">DASNE</Point>
+		<Point Name="▴">DULCE</Point>
+		<Point Name="▴">EGKEL</Point>
+		<Point Name="▴">EBEBE</Point>
+		<Point Name="▴">RAGDE</Point>
+		<Point Name="▴">RAYOR</Point>
+		<Point Name="▴">TAKIE</Point>
+		<Point Name="▴">TARPP</Point>
+		<Point Name="▴">ZEMOM</Point>
+		<Point Name="▴">ZAGER</Point>
+		<Point Name="▴">HALLI</Point>
+		<Point Name="▴">HELOP</Point>
+		<Point Name="▴">HEKAB</Point>
+		<Point Name="▴">ADOPE</Point>
+		<Point Name="▴">ADTIL</Point>
+		<Point Name="▴">BEKME</Point>
+		<Point Name="▴">BARAZ</Point>
+		<Point Name="▴">CIVIT</Point>
+		<Point Name="▴">CUNDU</Point>
+		<Point Name="▴">GITLE</Point>
+		<Point Name="▴">DUSAC</Point>
+		<Point Name="▴">DADIE</Point>
+		<Point Name="▴">ERROT</Point>
+		<Point Name="▴">ETECO</Point>
+		<Point Name="▴">FOMAS</Point>
+		<Point Name="▴">FLITY</Point>
+		<Point Name="▴">MANEY</Point>
+		<Point Name="▴">ETNIC</Point>
+		<Point Name="▴">FAROA</Point>
+		<Point Name="▴">FERAR</Point>
+		<Point Name="▴">ZAPUM</Point>
+		<Point Name="▴">ZILLI</Point>
+		<Point Name="▴">BEAUT</Point>
+		<Point Name="▴">PLLUT</Point>
+		<Point Name="▴">RIFFT</Point>
+		<Point Name="▴">LAUER</Point>
+		<Point Name="▴">FIZEL</Point>
+		<Point Name="▴">FLEXX</Point>
+		<Point Name="▴">FORDO</Point>
+		<Point Name="▴">FUGEN</Point>
+		<Point Name="▴">GULEG</Point>
+		<Point Name="▴">GUNAM</Point>
+		<Point Name="▴">HINAG</Point>
+		<Point Name="▴">HOPPY</Point>
+		<Point Name="▴">IDOTO</Point>
+		<Point Name="▴">IFFEY</Point>
+		<Point Name="▴">IKODA</Point>
+		<Point Name="▴">IKUMA</Point>
+		<Point Name="▴">INTIB</Point>
+		<Point Name="▴">IRRIE</Point>
+		<Point Name="▴">ISAMI</Point>
+		<Point Name="▴">KADEN</Point>
+		<Point Name="▴">KAGIS</Point>
+		<Point Name="▴">KAGLI</Point>
+		<Point Name="▴">KAKNI</Point>
+		<Point Name="▴">KAKOP</Point>
+		<Point Name="▴">KALAG</Point>
+		<Point Name="▴">KAPKI</Point>
+		<Point Name="▴">KAPNO</Point>
+		<Point Name="▴">KAPOK</Point>
+		<Point Name="▴">KARSM</Point>
+		<Point Name="▴">KASKU</Point>
+		<Point Name="▴">KINKO</Point>
+		<Point Name="▴">KZV</Point>
+		<Point Name="▴">LAMEK</Point>
+		<Point Name="▴">LEGOT</Point>
+		<Point Name="▴">LEKAX</Point>
+		<Point Name="▴">LEPKA</Point>
+		<Point Name="▴">LOCKA</Point>
+		<Point Name="▴">LOTUS</Point>
+		<Point Name="▴">LELID</Point>
+		<Point Name="▴">MAGBA</Point>
+		<Point Name="▴">MAKDA</Point>
+		<Point Name="▴">MALNI</Point>
+		<Point Name="▴">MANOT</Point>
+		<Point Name="▴">MAPDO</Point>
+		<Point Name="▴">MASON</Point>
+		<Point Name="▴">LILIA</Point>
+		<Point Name="▴">MEGOG</Point>
+		<Point Name="▴">MEKAD</Point>
+		<Point Name="▴">MEMIG</Point>
+		<Point Name="▴">MEPAB</Point>
+		<Point Name="▴">KEPKO</Point>
+		<Point Name="▴">MERED</Point>
+		<Point Name="▴">MEVEP</Point>
+		<Point Name="▴">MIKAT</Point>
+		<Point Name="▴">MIKOP</Point>
+		<Point Name="▴">MIMOD</Point>
+		<Point Name="▴">MINET</Point>
+		<Point Name="▴">MISLY</Point>
+		<Point Name="▴">MOMBO</Point>
+		<Point Name="▴">MORAY</Point>
+		<Point Name="▴">MORNA</Point>
+		<Point Name="▴">MUPOD</Point>
+		<Point Name="▴">NANAC</Point>
+		<Point Name="▴">NANNO</Point>
+		<Point Name="▴">NANUE</Point>
+		<Point Name="▴">NIKES</Point>
+		<Point Name="▴">NIKOM</Point>
+		<Point Name="▴">NIKON</Point>
+		<Point Name="▴">NIPPI</Point>
+		<Point Name="▴">NODAN</Point>
+		<Point Name="▴">NOGAK</Point>
+		<Point Name="▴">NUBDA</Point>
+		<Point Name="▴">OATIS</Point>
+		<Point Name="▴">OLDUP</Point>
+		<Point Name="▴">ONEMU</Point>
+		<Point Name="▴">OPLAR</Point>
+		<Point Name="▴">OPULO</Point>
+		<Point Name="▴">ORARE</Point>
+		<Point Name="▴">ORING</Point>
+		<Point Name="▴">OSUGA</Point>
+		<Point Name="▴">OSUVI</Point>
+		<Point Name="▴">OTTER</Point>
+		<Point Name="▴">PABBA</Point>
+		<Point Name="▴">PAKDO</Point>
+		<Point Name="▴">PAPAE</Point>
+		<Point Name="▴">PATIA</Point>
+		<Point Name="▴">PATUI</Point>
+		<Point Name="▴">PEBRO</Point>
+		<Point Name="▴">PETAL</Point>
+		<Point Name="▴">PILID</Point>
+		<Point Name="▴">PONOK</Point>
+		<Point Name="▴">POPIR</Point>
+		<Point Name="▴">POREN</Point>
+		<Point Name="▴">POXED</Point>
+		<Point Name="▴">PUGAL</Point>
+		<Point Name="▴">PUGEL</Point>
+		<Point Name="▴">PYCRE</Point>
+		<Point Name="▴">RENAU</Point>
+		<Point Name="▴">RIPKI</Point>
+		<Point Name="▴">RIPNA</Point>
+		<Point Name="▴">ROBKO</Point>
+		<Point Name="▴">RUTAK</Point>
+		<Point Name="▴">SABGU</Point>
+		<Point Name="▴">SADEP</Point>
+		<Point Name="▴">SAGOP</Point>
+		<Point Name="▴">SAKLO</Point>
+		<Point Name="▴">SAKON</Point>
+		<Point Name="▴">SAMAD</Point>
+		<Point Name="▴">SAREG</Point>
+		<Point Name="▴">SCORE</Point>
+		<Point Name="▴">SEALS</Point>
+		<Point Name="▴">SEDKU</Point>
+		<Point Name="▴">SEGRO</Point>
+		<Point Name="▴">SELKA</Point>
+		<Point Name="▴">SETER</Point>
+		<Point Name="▴">SGV</Point>
+		<Point Name="▴">SASIK</Point>
+		<Point Name="▴">SMOLT</Point>
+		<Point Name="▴">SNAIL</Point>
+		<Point Name="▴">SONDA</Point>
+		<Point Name="▴">SUNNS</Point>
+		<Point Name="▴">TABAL</Point>
+		<Point Name="▴">TAERO</Point>
+		<Point Name="▴">TAIME</Point>
+		<Point Name="▴">TAPOP</Point>
+		<Point Name="▴">TARIB</Point>
+		<Point Name="▴">TASAK</Point>
+		<Point Name="▴">TATAS</Point>
+		<Point Name="▴">TAVAK</Point>
+		<Point Name="▴">TAXON</Point>
+		<Point Name="▴">TEGOD</Point>
+		<Point Name="▴">TEKAN</Point>
+		<Point Name="▴">TEMAR</Point>
+		<Point Name="▴">TIAMA</Point>
+		<Point Name="▴">TALPA</Point>
+		<Point Name="▴">TONIK</Point>
+		<Point Name="▴">TOPOS</Point>
+		<Point Name="▴">TOZAK</Point>
+		<Point Name="▴">TRIKI</Point>
+		<Point Name="▴">APACK</Point>
+		<Point Name="▴">CINTO</Point>
+		<Point Name="▴">CLUTS</Point>
+		<Point Name="▴">DENNS</Point>
+		<Point Name="▴">EBBER</Point>
+		<Point Name="▴">ELLMS</Point>
+		<Point Name="▴">FITES</Point>
+		<Point Name="▴">SCOON</Point>
+		<Point Name="▴">ZIGIE</Point>
+		<Point Name="▴">UMCRE</Point>
+		<Point Name="▴">UPDIX</Point>
+		<Point Name="▴">VACKY</Point>
+		<Point Name="▴">VESUN</Point>
+		<Point Name="▴">ADDPO</Point>
+		<Point Name="▴">AGIRE</Point>
+		<Point Name="▴">AIBIE</Point>
+		<Point Name="▴">ARUYU</Point>
+		<Point Name="▴">BAKKA</Point>
+		<Point Name="▴">BESTS</Point>
+		<Point Name="▴">BITGE</Point>
+		<Point Name="▴">BOMKE</Point>
+		<Point Name="▴">CABEG</Point>
+		<Point Name="▴">CEVIE</Point>
+		<Point Name="▴">CHRLI</Point>
+		<Point Name="▴">COBAT</Point>
+		<Point Name="▴">COBIN</Point>
+		<Point Name="▴">COTTA</Point>
+		<Point Name="▴">DIKEC</Point>
+		<Point Name="▴">DOUKE</Point>
+		<Point Name="▴">DRIPY</Point>
+		<Point Name="▴">DUNSS</Point>
+		<Point Name="▴">EDIME</Point>
+		<Point Name="▴">EDOYO</Point>
+		<Point Name="▴">EGEBE</Point>
+		<Point Name="▴">EWILS</Point>
+		<Point Name="▴">FARAX</Point>
+		<Point Name="▴">FEBER</Point>
+		<Point Name="▴">FELLY</Point>
+		<Point Name="▴">FOLOB</Point>
+		<Point Name="▴">HABDA</Point>
+		<Point Name="▴">HABEL</Point>
+		<Point Name="▴">HAMDI</Point>
+		<Point Name="▴">HAREN</Point>
+		<Point Name="▴">HARTE</Point>
+		<Point Name="▴">HATHO</Point>
+		<Point Name="▴">HEBUK</Point>
+		<Point Name="▴">HEGIS</Point>
+		<Point Name="▴">HIVRO</Point>
+		<Point Name="▴">HOLOS</Point>
+		<Point Name="▴">HULLE</Point>
+		<Point Name="▴">HUMDU</Point>
+		<Point Name="▴">HUMET</Point>
+		<Point Name="▴">HURAT</Point>
+		<Point Name="▴">JABEE</Point>
+		<Point Name="▴">JAMAR</Point>
+		<Point Name="▴">JARAY</Point>
+		<Point Name="▴">JAYPE</Point>
+		<Point Name="▴">JIXAL</Point>
+		<Point Name="▴">JUPET</Point>
+		<Point Name="▴">JUPNA</Point>
+		<Point Name="▴">JUTIN</Point>
+		<Point Name="▴">KATHZ</Point>
+		<Point Name="▴">KAVLE</Point>
+		<Point Name="▴">KEALA</Point>
+		<Point Name="▴">KEMLE</Point>
+		<Point Name="▴">KNOWS</Point>
+		<Point Name="▴">KOONY</Point>
+		<Point Name="▴">LAGSE</Point>
+		<Point Name="▴">LEKIY</Point>
+		<Point Name="▴">LENIA</Point>
+		<Point Name="▴">LICIA</Point>
+		<Point Name="▴">LOWEY</Point>
+		<Point Name="▴">LYNIS</Point>
+		<Point Name="▴">WEGAD</Point>
+		<Point Name="▴">WEXUN</Point>
+		<Point Name="▴">WOLEK</Point>
+		<Point Name="▴">WUSET</Point>
+		<Point Name="▴">OBOYD</Point>
+		<Point Name="▴">POOFF</Point>
+		<Point Name="▴">BUFIE</Point>
+		<Point Name="▴">ATYRE</Point>
+		<Point Name="▴">DHIGA</Point>
+		<Point Name="▴">JHORI</Point>
+		<Point Name="▴">SURRS</Point>
+		<Point Name="▴">TANJI</Point>
+		<Point Name="▴">HAABR</Point>
+		<Point Name="▴">BRYRE</Point>
+		<Point Name="▴">CHOKL</Point>
+		<Point Name="▴">RABBS</Point>
+		<Point Name="▴">CATRE</Point>
+		<Point Name="▴">DOLRE</Point>
+		<Point Name="▴">SYIKL</Point>
+		<Point Name="▴">JIMMA</Point>
+		<Point Name="▴">TORKL</Point>
+		<Point Name="▴">JLAKE</Point>
+		<Point Name="▴">ZAFRE</Point>
+		<Point Name="▴">DEBRY</Point>
+		<Point Name="▴">GOATZ</Point>
+		<Point Name="▴">FITOW</Point>
+		<Point Name="▴">WORSH</Point>
+		<Point Name="▴">SHUSA</Point>
+		<Point Name="▴">YOSHI</Point>
+		<Point Name="▴">LUNTO</Point>
+		<Point Name="▴">MYC</Point>
+		<Point Name="▴">ALC</Point>
+		<Point Name="▴">CUE</Point>
+		<Point Name="▴">CVC</Point>
+		<Point Name="▴">DGC</Point>
+		<Point Name="▴">GBE</Point>
+		<Point Name="▴">GOC</Point>
+		<Point Name="▴">GTC</Point>
+		<Point Name="▴">HKC</Point>
+		<Point Name="▴">IKE</Point>
+		<Point Name="▴">IXE</Point>
+		<Point Name="▴">JEC</Point>
+		<Point Name="▴">KCC</Point>
+		<Point Name="▴">KEC</Point>
+		<Point Name="▴">KMC</Point>
+		<Point Name="▴">MJE</Point>
+		<Point Name="▴">MVE</Point>
+		<Point Name="▴">NAHA</Point>
+		<Point Name="▴">NEU</Point>
+		<Point Name="▴">OBE</Point>
+		<Point Name="▴">OJC</Point>
+		<Point Name="▴">ONC</Point>
+		<Point Name="▴">PPT</Point>
+		<Point Name="▴">RAN</Point>
+		<Point Name="▴">SUC</Point>
+		<Point Name="▴">TAF</Point>
+		<Point Name="▴">TIC</Point>
+		<Point Name="▴">TJE</Point>
+		<Point Name="▴">TYE</Point>
+		<Point Name="▴">UNZ</Point>
+		<Point Name="▴">XAC</Point>
+		<Point Name="▴">XMC</Point>
+		<Point Name="▴">ZYT</Point>
+		<Point Name="▴">PUMIS</Point>
+		<Point Name="▴">TEDAG</Point>
+		<Point Name="▴">RUGRO</Point>
+		<Point Name="▴">UBRAX</Point>
+		<Point Name="▴">GUBKA</Point>
+		<Point Name="▴">GODAB</Point>
+		<Point Name="▴">NU</Point>
+		<Point Name="▴">POPAS</Point>
+		<Point Name="▴">NFNA</Point>
+		<Point Name="▴">LANIS</Point>
+		<Point Name="▴">BODKI</Point>
+		<Point Name="▴">TEPOR</Point>
+		<Point Name="▴">NERKA</Point>
+		<Point Name="▴">CARBU</Point>
+		<Point Name="▴">AMOTT</Point>
+		<Point Name="▴">MCG</Point>
+		<Point Name="▴">TANIE</Point>
+		<Point Name="▴">CIFJI</Point>
+		<Point Name="▴">TUCKS</Point>
+		<Point Name="▴">TED</Point>
+		<Point Name="▴">ENA</Point>
+		<Point Name="▴">POETT</Point>
+		<Point Name="▴">KOWOK</Point>
+		<Point Name="▴">KILLA</Point>
+		<Point Name="▴">HUMPY</Point>
+		<Point Name="▴">HBK</Point>
+		<Point Name="▴">JOH</Point>
+		<Point Name="▴">CERGU</Point>
+		<Point Name="▴">SQA</Point>
+		<Point Name="▴">UDENE</Point>
+		<Point Name="▴">ANN</Point>
+		<Point Name="▴">WAPTO</Point>
+		<Point Name="▴">MOCHA</Point>
+		<Point Name="▴">HOLIE</Point>
+		<Point Name="▴">YAK</Point>
+		<Point Name="▴">ARRUE</Point>
+		<Point Name="▴">ROYST</Point>
+		<Point Name="▴">PRYCE</Point>
+		<Point Name="▴">DUGGS</Point>
+		<Point Name="▴">GESTI</Point>
+		<Point Name="▴">DOOZI</Point>
+		<Point Name="▴">LVD</Point>
+		<Point Name="▴">SSR</Point>
+		<Point Name="▴">DB</Point>
+		<Point Name="▴">ORT</Point>
+		<Point Name="▴">SAHOK</Point>
+		<Point Name="▴">SPAKE</Point>
+		<Point Name="▴">FAGIN</Point>
+		<Point Name="▴">NONDA</Point>
+		<Point Name="▴">ARRIE</Point>
+		<Point Name="▴">WANTA</Point>
+		<Point Name="▴">INHAM</Point>
+		<Point Name="▴">YZP</Point>
+		<Point Name="▴">ELFEE</Point>
+		<Point Name="▴">DLG</Point>
+		<Point Name="▴">HBT</Point>
+		<Point Name="▴">GARRS</Point>
+		<Point Name="▴">NOWEL</Point>
+		<Point Name="▴">SNOUT</Point>
+		<Point Name="▴">EEDEN</Point>
+		<Point Name="▴">FRIED</Point>
+		<Point Name="▴">MOUSY</Point>
+		<Point Name="▴">MALOS</Point>
+		<Point Name="▴">NULUK</Point>
+		<Point Name="▴">NAYLD</Point>
+		<Point Name="▴">NANZA</Point>
+		<Point Name="▴">NEONN</Point>
+		<Point Name="▴">OFORD</Point>
+		<Point Name="▴">MARCC</Point>
+		<Point Name="▴">BESAT</Point>
+		<Point Name="▴">NANDY</Point>
+		<Point Name="▴">TRIKL</Point>
+		<Point Name="▴">ALUFF</Point>
+		<Point Name="▴">POKNO</Point>
+		<Point Name="▴">ORVIL</Point>
+		<Point Name="▴">CHUUK</Point>
+		<Point Name="▴">BARMU</Point>
+		<Point Name="▴">IRKAN</Point>
+		<Point Name="▴">SIT</Point>
+		<Point Name="▴">ARTOP</Point>
+		<Point Name="▴">DOVIX</Point>
+		<Point Name="▴">POROT</Point>
+		<Point Name="▴">LAPIL</Point>
+		<Point Name="▴">POVAL</Point>
+		<Point Name="▴">ESKOK</Point>
+		<Point Name="▴">PIPIK</Point>
+		<Point Name="▴">AKUMO</Point>
+		<Point Name="▴">NA</Point>
+		<Point Name="▴">OX</Point>
+		<Point Name="▴">BUNGO</Point>
+		<Point Name="▴">TOPAT</Point>
+		<Point Name="▴">NN</Point>
+		<Point Name="▴">BN</Point>
+		<Point Name="▴">DOVRR</Point>
+		<Point Name="▴">MAITI</Point>
+		<Point Name="▴">BITTA</Point>
+		<Point Name="▴">ENDAX</Point>
+		<Point Name="▴">DILIS</Point>
+		<Point Name="▴">YP</Point>
+		<Point Name="▴">ROR</Point>
+		<Point Name="▴">POXEL</Point>
+		<Point Name="▴">AWK</Point>
+		<Point Name="▴">AGPOM</Point>
+		<Point Name="▴">AYPY</Point>
+		<Point Name="▴">BEBOP</Point>
+		<Point Name="▴">BUDRA</Point>
+		<Point Name="▴">ELKEY</Point>
+		<Point Name="▴">GALIP</Point>
+		<Point Name="▴">GITON</Point>
+		<Point Name="▴">IDEMU</Point>
+		<Point Name="▴">KALIN</Point>
+		<Point Name="▴">KIK</Point>
+		<Point Name="▴">KYWEE</Point>
+		<Point Name="▴">LIBBO</Point>
+		<Point Name="▴">MALIT</Point>
+		<Point Name="▴">MIMAS</Point>
+		<Point Name="▴">MIMIK</Point>
+		<Point Name="▴">NITOT</Point>
+		<Point Name="▴">OTURI</Point>
+		<Point Name="▴">PPE</Point>
+		<Point Name="▴">PUPIS</Point>
+		<Point Name="▴">REVRO</Point>
+		<Point Name="▴">RISBA</Point>
+		<Point Name="▴">ROSIN</Point>
+		<Point Name="▴">RPLC</Point>
+		<Point Name="▴">RPLL</Point>
+		<Point Name="▴">SAPIX</Point>
+		<Point Name="▴">SEFIX</Point>
+		<Point Name="▴">SHARI</Point>
+		<Point Name="▴">TAC</Point>
+		<Point Name="▴">VEVEK</Point>
+		<Point Name="▴">WABB</Point>
+		<Point Name="▴">LNY</Point>
+		<Point Name="▴">LIH</Point>
+		<Point Name="▴">SOK</Point>
+		<Point Name="▴">OGG</Point>
+		<Point Name="▴">PHOG</Point>
+		<Point Name="▴">NONNI</Point>
+		<Point Name="▴">PUPPI</Point>
+		<Point Name="▴">MAGGI</Point>
+		<Point Name="▴">TOADS</Point>
+		<Point Name="▴">SHARK</Point>
+		<Point Name="▴">UPP</Point>
+		<Point Name="▴">MUE</Point>
+		<Point Name="▴">NTAA</Point>
+		<Point Name="▴">FLASH</Point>
+		<Point Name="▴">BAXIL</Point>
+		<Point Name="▴">DARMA</Point>
+		<Point Name="▴">ORARA</Point>
+		<Point Name="▴">ANGE</Point>
+		<Point Name="▴">NCRG</Point>
+		<Point Name="▴">KURE</Point>
+		<Point Name="▴">DUT</Point>
+		<Point Name="▴">ADK</Point>
+		<Point Name="▴">WALLT</Point>
+		<Point Name="▴">PORGE</Point>
+		<Point Name="▴">VESPA</Point>
+		<Point Name="▴">VIGOR</Point>
+		<Point Name="▴">MICNO</Point>
+		<Point Name="▴">BOLED</Point>
+		<Point Name="▴">NONON</Point>
+		<Point Name="▴">DASSA</Point>
+		<Point Name="▴">IDOCA</Point>
+		<Point Name="▴">CASDY</Point>
+		<Point Name="▴">EPTIV</Point>
+		<Point Name="▴">DOTOD</Point>
+		<Point Name="▴">MABRO</Point>
+		<Point Name="▴">YZT</Point>
+		<Point Name="▴">YAZ</Point>
+		<Point Name="▴">YYJ</Point>
+		<Point Name="▴">TOU</Point>
+		<Point Name="▴">HQM</Point>
+		<Point Name="▴">BTG</Point>
+		<Point Name="▴">AST</Point>
+		<Point Name="▴">ONP</Point>
+		<Point Name="▴">OED</Point>
+		<Point Name="▴">FOT</Point>
+		<Point Name="▴">ENI</Point>
+		<Point Name="▴">PYE</Point>
+		<Point Name="▴">OSI</Point>
+		<Point Name="▴">BSR</Point>
+		<Point Name="▴">MQO</Point>
+		<Point Name="▴">OAK</Point>
+		<Point Name="▴">RZS</Point>
+		<Point Name="▴">LAX</Point>
+		<Point Name="▴">SXC</Point>
+		<Point Name="▴">MILVA</Point>
+		<Point Name="▴">HABIT</Point>
+		<Point Name="▴">GARRY</Point>
+		<Point Name="▴">ETRON</Point>
+		<Point Name="▴">AGEDI</Point>
+		<Point Name="▴">PUGAL</Point>
+		<Point Name="▴">OPULO</Point>
+		<Point Name="▴">NOGAL</Point>
+		<Point Name="▴">OGDEN</Point>
+		<Point Name="▴">CARTO</Point>
+		<Point Name="▴">ASPIN</Point>
+		<Point Name="▴">POWAL</Point>
+		<Point Name="▴">OPHET</Point>
+		<Point Name="▴">OLCOT</Point>
+		<Point Name="▴">AAMYY</Point>
+		<Point Name="▴">PLADO</Point>
+		<Point Name="▴">OPAKE</Point>
+		<Point Name="▴">NYMPH</Point>
+		<Point Name="▴">NIKLL</Point>
+		<Point Name="▴">CHIKI</Point>
+		<Point Name="▴">AMOND</Point>
+		<Point Name="▴">DRAPP</Point>
+		<Point Name="▴">ALDOZ</Point>
+		<Point Name="▴">CAMBO</Point>
+		<Point Name="▴">GRIZZ</Point>
+		<Point Name="▴">HMPTN</Point>
+	</Label>		
   </Map>			
   <Map Type="System" CustomColourName="SpringGreen" Name="Pts_Nms" Priority="1" Center="+270000.000-1750000.000">
     <Label HasLeader="false"> 

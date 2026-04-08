@@ -625,7 +625,11 @@ function handleWorkerConflictResults(results) {
                 LateralSep: c.latSep,
                 VerticalSep: c.verticalSep,
                 VerticalAct: c.verticalAct,
-                TrkAngle: c.trkAngle
+                TrkAngle: c.trkAngle,
+                StartLat: c.startLat,
+                StartLon: c.startLon,
+                EndLat: c.endLat,
+                EndLon: c.endLon
             })),
             ActualCount: results.actual?.length || 0,
             ImminentCount: results.imminent?.length || 0,

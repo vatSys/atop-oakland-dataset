@@ -247,7 +247,11 @@ function checkConflict(fdr1, fdr2) {
         verticalAct: verticalAct,
         trkAngle: trkAngle,
         longTimeAct: longTimeAct,
-        longDistAct: longDistAct
+        longDistAct: longDistAct,
+        startLat: firstConflict.startLatLon.lat,
+        startLon: firstConflict.startLatLon.lon,
+        endLat: firstConflict.endLatLon.lat,
+        endLon: firstConflict.endLatLon.lon
     };
 }
 
@@ -270,8 +274,9 @@ function passesTemporalTest(fdr1, fdr2) {
 }
 
 function getAltitudeDifference(fdr1, fdr2) {
-    const alt1 = fdr1.cfl || fdr1.rfl || 0;
-    const alt2 = fdr2.cfl || fdr2.rfl || 0;
+    // CFL/RFL are in flight levels (hundreds of feet), convert to feet
+    const alt1 = (fdr1.cfl || fdr1.rfl || 0) * 100;
+    const alt2 = (fdr2.cfl || fdr2.rfl || 0) * 100;
     return Math.abs(alt1 - alt2);
 }
 
