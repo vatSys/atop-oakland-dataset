@@ -67,98 +67,133 @@
                     <StripLayoutSubsections>
                       <StripLayoutSection FlowDirection="Horizontal">
                         <StripLayoutLines>
-                          <StripLayoutLine LineSpan="3">
-                            <StripItems>
-                              <StripItem Type="Point" LeftClick="Strip_Point" MiddleClick="Strip_MPR_Arm" RightClick="Strip_Point_Expand" PointIndex="0" MaxLength="6" MinLength="6" > <Colours Colour="Jurisdiction"/> </StripItem>
-                            </StripItems>
-                          </StripLayoutLine>					  
                           <StripLayoutLine>
                             <StripItems>
-                              <StripItem Type="ETOP" LeftClick="Strip_ETO" PointIndex="0" MinLength="4"> <Colours Colour="Jurisdiction"/> </StripItem>
+                              <StripItem Type="AURORA_POINT_0" PointIndex="0" MaxLength="11" MinLength="6" > <Colours Colour="Jurisdiction"/> </StripItem>
+                            </StripItems>
+                          </StripLayoutLine>
+                          <StripLayoutLine LineSpan="2">
+                            <StripItems>
+                              <StripItem Type="AURORA_POINTLON_0" PointIndex="0" MaxLength="11" MinLength="6" > <Colours Colour="Jurisdiction"/> </StripItem>
+                            </StripItems>
+                          </StripLayoutLine>
+                          <StripLayoutLine>
+                            <StripItems>
+                              <StripItem Type="AURORA_ETOP_0" LeftClick="Strip_ETO" PointIndex="0" MinLength="4"> <Colours Colour="Jurisdiction"/> </StripItem>
                             </StripItems>
                           </StripLayoutLine>
                         </StripLayoutLines>
                       </StripLayoutSection>
-                      <StripLayoutSection FlowDirection="Horizontal" Border="Vertical"> <Colours BorderColour="StripText" Colour="StripBackground" BackColour="HighlightedText"/>
+                      <StripLayoutSection FlowDirection="Horizontal" Border="Vertical"> <!--Colours BorderColour="StripText" Colour="StripBackground" BackColour="HighlightedText"/-->
                         <StripLayoutLines>
-                          <StripLayoutLine LineSpan="3">
-                            <StripItems>
-                              <StripItem Type="Point" LeftClick="Strip_Point" MiddleClick="Strip_MPR_Arm" RightClick="Strip_Point_Expand" PointIndex="1" MaxLength="6" MinLength="6" />
-                            </StripItems>
-                          </StripLayoutLine>						  
                           <StripLayoutLine>
                             <StripItems>
-                              <StripItem Type="ETOP" LeftClick="Strip_ETO" PointIndex="1" MinLength="6" />
+                              <StripItem Type="AURORA_POINT_1" PointIndex="1" MaxLength="11" MinLength="6" />
+                            </StripItems>
+                          </StripLayoutLine>
+                          <StripLayoutLine LineSpan="2">
+                            <StripItems>
+                              <StripItem Type="AURORA_POINTLON_1" PointIndex="1" MaxLength="11" MinLength="6" />
+                            </StripItems>
+                          </StripLayoutLine>
+                          <StripLayoutLine>
+                            <StripItems>
+                              <StripItem Type="AURORA_ETOP_1" LeftClick="Strip_ETO" PointIndex="1" MinLength="6" />
                             </StripItems>
                           </StripLayoutLine>
                         </StripLayoutLines>
                       </StripLayoutSection>
                       <StripLayoutSection FlowDirection="Horizontal" Border="Vertical">
                         <StripLayoutLines>
-                          <StripLayoutLine LineSpan="3">
-                            <StripItems>
-                              <StripItem Type="Point" LeftClick="Strip_Point" MiddleClick="Strip_MPR_Arm" RightClick="Strip_Point_Expand" PointIndex="2" MaxLength="6" MinLength="6" > <Colours P4Colour="Unstable"/> </StripItem>
-                            </StripItems>
-                          </StripLayoutLine>						  
                           <StripLayoutLine>
                             <StripItems>
-                              <StripItem Type="ETOP" LeftClick="Strip_ETO" PointIndex="2" MinLength="6" />
+                              <StripItem Type="AURORA_POINT_2" PointIndex="2" MaxLength="11" MinLength="6"  /> 
+                            </StripItems>
+                          </StripLayoutLine>
+                          <StripLayoutLine LineSpan="2">
+                            <StripItems>
+                              <StripItem Type="AURORA_POINTLON_2" PointIndex="2" MaxLength="11" MinLength="6" />
+                            </StripItems>
+                          </StripLayoutLine>
+                          <StripLayoutLine>
+                            <StripItems>
+                              <StripItem Type="AURORA_ETOP_2" LeftClick="Strip_ETO" PointIndex="2" MinLength="6" />
                             </StripItems>
                           </StripLayoutLine>
                         </StripLayoutLines>
                       </StripLayoutSection>
                       <StripLayoutSection FlowDirection="Horizontal" Border="Vertical" >
                         <StripLayoutLines>
-                          <StripLayoutLine LineSpan="3">
-                            <StripItems>
-                              <StripItem Type="Point" LeftClick="Strip_Point" MiddleClick="Strip_MPR_Arm" RightClick="Strip_Point_Expand" PointIndex="3" MaxLength="6" MinLength="6" />
-                            </StripItems>
-                          </StripLayoutLine>						  
                           <StripLayoutLine>
                             <StripItems>
-                              <StripItem Type="ETOP" LeftClick="Strip_ETO" PointIndex="3" MinLength="6" />
+                              <StripItem Type="AURORA_POINT_3" PointIndex="3" MaxLength="11" MinLength="6" />
+                            </StripItems>
+                          </StripLayoutLine>
+                          <StripLayoutLine LineSpan="2">
+                            <StripItems>
+                              <StripItem Type="AURORA_POINTLON_3" PointIndex="3" MaxLength="11" MinLength="6" />
+                            </StripItems>
+                          </StripLayoutLine>
+                          <StripLayoutLine>
+                            <StripItems>
+                              <StripItem Type="AURORA_ETOP_3" LeftClick="Strip_ETO" PointIndex="3" MinLength="6" />
                             </StripItems>
                           </StripLayoutLine>
                         </StripLayoutLines>
                       </StripLayoutSection>
                       <StripLayoutSection FlowDirection="Horizontal" Border="Vertical" >
                         <StripLayoutLines>
-                          <StripLayoutLine LineSpan="3">
-                            <StripItems>
-                              <StripItem Type="Point" LeftClick="Strip_Point" MiddleClick="Strip_MPR_Arm" RightClick="Strip_Point_Expand" PointIndex="4" MaxLength="6" MinLength="6" />
-                            </StripItems>
-                          </StripLayoutLine>						  
                           <StripLayoutLine>
                             <StripItems>
-                              <StripItem Type="ETOP" LeftClick="Strip_ETO" PointIndex="4" MinLength="6" />
+                              <StripItem Type="AURORA_POINT_4" PointIndex="4" MaxLength="11" MinLength="6" />
+                            </StripItems>
+                          </StripLayoutLine>
+                          <StripLayoutLine LineSpan="2">
+                            <StripItems>
+                              <StripItem Type="AURORA_POINTLON_4" PointIndex="4" MaxLength="11" MinLength="6" />
+                            </StripItems>
+                          </StripLayoutLine>
+                          <StripLayoutLine>
+                            <StripItems>
+                              <StripItem Type="AURORA_ETOP_4" LeftClick="Strip_ETO" PointIndex="4" MinLength="6" />
                             </StripItems>
                           </StripLayoutLine>
                         </StripLayoutLines>
                       </StripLayoutSection>
                       <StripLayoutSection FlowDirection="Horizontal" Border="Vertical">
                         <StripLayoutLines>
-                          <StripLayoutLine LineSpan="3">
-                            <StripItems>
-                              <StripItem Type="Point" LeftClick="Strip_Point" MiddleClick="Strip_MPR_Arm" RightClick="Strip_Point_Expand" PointIndex="5" MaxLength="6" MinLength="6" />
-                            </StripItems>
-                          </StripLayoutLine>						  
                           <StripLayoutLine>
                             <StripItems>
-                              <StripItem Type="ETOP" LeftClick="Strip_ETO" PointIndex="5" MinLength="6" />
+                              <StripItem Type="AURORA_POINT_5" PointIndex="5" MaxLength="11" MinLength="6" />
+                            </StripItems>
+                          </StripLayoutLine>
+                          <StripLayoutLine LineSpan="2">
+                            <StripItems>
+                              <StripItem Type="AURORA_POINTLON_5" PointIndex="5" MaxLength="11" MinLength="6" />
+                            </StripItems>
+                          </StripLayoutLine>
+                          <StripLayoutLine>
+                            <StripItems>
+                              <StripItem Type="AURORA_ETOP_5" LeftClick="Strip_ETO" PointIndex="5" MinLength="6" />
                             </StripItems>
                           </StripLayoutLine>
                         </StripLayoutLines>
                       </StripLayoutSection>
                       <StripLayoutSection FlowDirection="Horizontal" Border="Vertical">
                         <StripLayoutLines>
-                          <StripLayoutLine LineSpan="3">
-                            <StripItems>
-                              <StripItem Type="Point" LeftClick="Strip_Point" MiddleClick="Strip_MPR_Arm" RightClick="Strip_Point_Expand" PointIndex="6" MaxLength="6" MinLength="6" />
-                            </StripItems>
-                          </StripLayoutLine>						  
                           <StripLayoutLine>
                             <StripItems>
-                              <StripItem Type="ETOP" LeftClick="Strip_ETO" PointIndex="6" MinLength="6" />
+                              <StripItem Type="AURORA_POINT_6" PointIndex="6" MaxLength="11" MinLength="6" />
+                            </StripItems>
+                          </StripLayoutLine>
+                          <StripLayoutLine LineSpan="2">
+                            <StripItems>
+                              <StripItem Type="AURORA_POINTLON_6" PointIndex="6" MaxLength="11" MinLength="6" />
+                            </StripItems>
+                          </StripLayoutLine>
+                          <StripLayoutLine>
+                            <StripItems>
+                              <StripItem Type="AURORA_ETOP_6" LeftClick="Strip_ETO" PointIndex="6" MinLength="6" />
                             </StripItems>
                           </StripLayoutLine>
                         </StripLayoutLines>
@@ -222,98 +257,133 @@
                   </StripLayoutSection>				
                       <StripLayoutSection FlowDirection="Horizontal" Border="Vertical" DisplayState="Extended"> <Colours BackColour="GhostJurisdiction"/>
                         <StripLayoutLines>
+                          <StripLayoutLine>
+                            <StripItems>
+                              <StripItem Type="AURORA_POINT_7" PointIndex="7" MaxLength="11" MinLength="6" />
+                            </StripItems>
+                          </StripLayoutLine>
                           <StripLayoutLine LineSpan="2">
                             <StripItems>
-                              <StripItem Type="Point" LeftClick="Strip_Point" MiddleClick="Strip_MPR_Arm" RightClick="Strip_Point_Expand" PointIndex="7" MaxLength="6" MinLength="6" />
+                              <StripItem Type="AURORA_POINTLON_7" PointIndex="7" MaxLength="11" MinLength="6" />
                             </StripItems>
                           </StripLayoutLine>
                           <StripLayoutLine>
                             <StripItems>
-                              <StripItem Type="ETOP" LeftClick="Strip_ETO" PointIndex="7" MinLength="6" /> 
+                              <StripItem Type="AURORA_ETOP_7" LeftClick="Strip_ETO" PointIndex="7" MinLength="6" /> 
                             </StripItems>
                           </StripLayoutLine>
                         </StripLayoutLines>
                       </StripLayoutSection>
                       <StripLayoutSection FlowDirection="Horizontal" Border="Vertical" DisplayState="Extended"> <Colours BackColour="GhostJurisdiction"/>
                         <StripLayoutLines>
+                          <StripLayoutLine>
+                            <StripItems>
+                              <StripItem Type="AURORA_POINT_8" PointIndex="8" MaxLength="11" MinLength="6" />
+                            </StripItems>
+                          </StripLayoutLine>
                           <StripLayoutLine LineSpan="2">
                             <StripItems>
-                              <StripItem Type="Point" LeftClick="Strip_Point" MiddleClick="Strip_MPR_Arm" RightClick="Strip_Point_Expand" PointIndex="8" MaxLength="6" MinLength="6" />
+                              <StripItem Type="AURORA_POINTLON_8" PointIndex="8" MaxLength="11" MinLength="6" />
                             </StripItems>
                           </StripLayoutLine>
                           <StripLayoutLine>
                             <StripItems>
-                              <StripItem Type="ETOP" LeftClick="Strip_ETO" PointIndex="8" MinLength="6" /> 
+                              <StripItem Type="AURORA_ETOP_8" LeftClick="Strip_ETO" PointIndex="8" MinLength="6" /> 
                             </StripItems>
                           </StripLayoutLine>
                         </StripLayoutLines>
                       </StripLayoutSection>
                       <StripLayoutSection FlowDirection="Horizontal" Border="Vertical" DisplayState="Extended"> <Colours BackColour="GhostJurisdiction"/>
                         <StripLayoutLines>
+                          <StripLayoutLine>
+                            <StripItems>
+                              <StripItem Type="AURORA_POINT_9" PointIndex="9" MaxLength="11" MinLength="6" />
+                            </StripItems>
+                          </StripLayoutLine>
                           <StripLayoutLine LineSpan="2">
                             <StripItems>
-                              <StripItem Type="Point" LeftClick="Strip_Point" MiddleClick="Strip_MPR_Arm" RightClick="Strip_Point_Expand" PointIndex="9" MaxLength="6" MinLength="6" />
+                              <StripItem Type="AURORA_POINTLON_9" PointIndex="9" MaxLength="11" MinLength="6" />
                             </StripItems>
                           </StripLayoutLine>
                           <StripLayoutLine>
                             <StripItems>
-                              <StripItem Type="ETOP" LeftClick="Strip_ETO" PointIndex="9" MinLength="6" />
+                              <StripItem Type="AURORA_ETOP_9" LeftClick="Strip_ETO" PointIndex="9" MinLength="6" />
                             </StripItems>
                           </StripLayoutLine>
                         </StripLayoutLines>
                       </StripLayoutSection>			
                       <StripLayoutSection FlowDirection="Horizontal" Border="Vertical" DisplayState="Extended"> <Colours BackColour="GhostJurisdiction"/>
                         <StripLayoutLines>
+                          <StripLayoutLine>
+                            <StripItems>
+                              <StripItem Type="AURORA_POINT_10" PointIndex="10" MaxLength="11" MinLength="6" />
+                            </StripItems>
+                          </StripLayoutLine>
                           <StripLayoutLine LineSpan="2">
                             <StripItems>
-                              <StripItem Type="Point" LeftClick="Strip_Point" MiddleClick="Strip_MPR_Arm" RightClick="Strip_Point_Expand" PointIndex="10" MaxLength="6" MinLength="6" />
+                              <StripItem Type="AURORA_POINTLON_10" PointIndex="10" MaxLength="11" MinLength="6" />
                             </StripItems>
                           </StripLayoutLine>
                           <StripLayoutLine>
                             <StripItems>
-                              <StripItem Type="ETOP" LeftClick="Strip_ETO" PointIndex="10" MinLength="6" />
+                              <StripItem Type="AURORA_ETOP_10" LeftClick="Strip_ETO" PointIndex="10" MinLength="6" />
                             </StripItems>
                           </StripLayoutLine>
                         </StripLayoutLines>
                       </StripLayoutSection>
                       <StripLayoutSection FlowDirection="Horizontal" Border="Vertical" DisplayState="Extended"> <Colours BackColour="GhostJurisdiction"/>
                         <StripLayoutLines>
+                          <StripLayoutLine>
+                            <StripItems>
+                              <StripItem Type="AURORA_POINT_11" PointIndex="11" MaxLength="11" MinLength="6" />
+                            </StripItems>
+                          </StripLayoutLine>
                           <StripLayoutLine LineSpan="2">
                             <StripItems>
-                              <StripItem Type="Point" LeftClick="Strip_Point" MiddleClick="Strip_MPR_Arm" RightClick="Strip_Point_Expand" PointIndex="11" MaxLength="6" MinLength="6" />
+                              <StripItem Type="AURORA_POINTLON_11" PointIndex="11" MaxLength="11" MinLength="6" />
                             </StripItems>
                           </StripLayoutLine>
                           <StripLayoutLine>
                             <StripItems>
-                              <StripItem Type="ETOP" LeftClick="Strip_ETO" PointIndex="11" MinLength="6" />
+                              <StripItem Type="AURORA_ETOP_11" LeftClick="Strip_ETO" PointIndex="11" MinLength="6" />
                             </StripItems>
                           </StripLayoutLine>
                         </StripLayoutLines>
                       </StripLayoutSection>	
                       <StripLayoutSection FlowDirection="Horizontal" Border="Vertical" DisplayState="Extended"> <Colours BackColour="GhostJurisdiction"/>
                         <StripLayoutLines>
+                          <StripLayoutLine>
+                            <StripItems>
+                              <StripItem Type="AURORA_POINT_12" PointIndex="12" MaxLength="11" MinLength="6" />
+                            </StripItems>
+                          </StripLayoutLine>
                           <StripLayoutLine LineSpan="2">
                             <StripItems>
-                              <StripItem Type="Point" LeftClick="Strip_Point" MiddleClick="Strip_MPR_Arm" RightClick="Strip_Point_Expand" PointIndex="12" MaxLength="6" MinLength="6" />
+                              <StripItem Type="AURORA_POINTLON_12" PointIndex="12" MaxLength="11" MinLength="6" />
                             </StripItems>
                           </StripLayoutLine>
                           <StripLayoutLine>
                             <StripItems>
-                              <StripItem Type="ETOP" LeftClick="Strip_ETO" PointIndex="12" MinLength="6" />
+                              <StripItem Type="AURORA_ETOP_12" LeftClick="Strip_ETO" PointIndex="12" MinLength="6" />
                             </StripItems>
                           </StripLayoutLine>
                         </StripLayoutLines>
                       </StripLayoutSection>						
                       <StripLayoutSection FlowDirection="Horizontal" Border="Vertical" DisplayState="Extended"> <Colours BackColour="GhostJurisdiction"/>
                         <StripLayoutLines>
+                          <StripLayoutLine>
+                            <StripItems>
+                              <StripItem Type="AURORA_POINT_13" PointIndex="13" MaxLength="11" MinLength="6" />
+                            </StripItems>
+                          </StripLayoutLine>
                           <StripLayoutLine LineSpan="2">
                             <StripItems>
-                              <StripItem Type="Point" LeftClick="Strip_Point" MiddleClick="Strip_MPR_Arm" RightClick="Strip_Point_Expand" PointIndex="13" MaxLength="6" MinLength="6" />
+                              <StripItem Type="AURORA_POINTLON_13" PointIndex="13" MaxLength="11" MinLength="6" />
                             </StripItems>
                           </StripLayoutLine>
                           <StripLayoutLine>
                             <StripItems>
-                              <StripItem Type="ETOP" LeftClick="Strip_ETO" PointIndex="13" MinLength="6" />
+                              <StripItem Type="AURORA_ETOP_13" LeftClick="Strip_ETO" PointIndex="13" MinLength="6" />
                             </StripItems>
                           </StripLayoutLine>
                         </StripLayoutLines>

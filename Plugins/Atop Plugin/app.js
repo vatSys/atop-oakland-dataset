@@ -191,6 +191,8 @@ function connectWebSocket() {
         ws.onopen = () => {
             console.log('Connected to ATOP WebSocket');
             updateConnectionStatus('Connected', 'connected');
+            // Explicitly request inhibition areas to ensure worker has them
+            ws.send(JSON.stringify({ Type: 'RequestInhibitionAreas' }));
         };
 
         ws.onclose = () => {
@@ -235,6 +237,9 @@ function connectWebSocket() {
                 case 'ProbeRequest':
                     // C# plugin requests a conflict probe
                     handleProbeRequest(data);
+                    break;
+                case 'InhibitionAreas':
+                    handleInhibitionAreas(data);
                     break;
                 case 'Error':
                     showError(data.Message);
@@ -697,7 +702,12 @@ function handleFDRBulkUpdate(data) {
         desAirport: fdr.DesAirport,
         aircraftType: fdr.AircraftType,
         groundSpeed: fdr.GroundSpeed,
-        mach: fdr.Mach
+        mach: fdr.Mach,
+        rnp4: fdr.rnp4,
+        rnp10: fdr.rnp10,
+        hasDatalink: fdr.hasDatalink,
+        rvsmApproved: fdr.rvsmApproved,
+        isJet: fdr.isJet
     }));
     
     conflictWorker.postMessage({
@@ -724,6 +734,21 @@ function handleProbeRequest(data) {
     
     // Request probe from worker
     conflictWorker.postMessage({ type: 'requestProbe' });
+}
+
+function handleInhibitionAreas(data) {
+    if (!conflictWorker) {
+        console.warn('[InhibitionAreas] No conflict worker available!');
+        return;
+    }
+
+    const areas = data.Areas || [];
+    console.log(`[InhibitionAreas] Received ${areas.length} inhibition area(s)`);
+
+    conflictWorker.postMessage({
+        type: 'setInhibitionAreas',
+        data: areas
+    });
 }
 
 function handleFDRUpdate(data) {
@@ -757,7 +782,12 @@ function handleFDRUpdate(data) {
             desAirport: fdr.DesAirport,
             aircraftType: fdr.AircraftType,
             groundSpeed: fdr.GroundSpeed,
-            mach: fdr.Mach
+            mach: fdr.Mach,
+            rnp4: fdr.rnp4,
+            rnp10: fdr.rnp10,
+            hasDatalink: fdr.hasDatalink,
+            rvsmApproved: fdr.rvsmApproved,
+            isJet: fdr.isJet
         }
     });
 }
