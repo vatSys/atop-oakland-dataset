@@ -1,0 +1,7 @@
+﻿/* Generated from lma28d43.pcf */
+@font-face {
+  font-family: 'MEARTS lma28D43';
+  src: url('./lma28D43.woff2') format('woff2'),
+       url('./lma28D43.woff') format('woff');
+  font-display: swap;
+}

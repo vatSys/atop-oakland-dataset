@@ -1,6 +1,8 @@
 {
   "ServerEndpoint": "https://cpdlc-server-b4ikk.ondigitalocean.app/hubs/controller",
-  "Stations": ["KZAK"],
+  "Stations": [
+    "KZAK"
+  ],
   "LogLevel": "Verbose",
   "MaxCurrentMessages": 50,
   "MaxArchivedMessages": 50,
@@ -45,10 +47,24 @@
         "ResponseType": "NoResponse"
       },
       {
+        "Id": 6,
+        "Template": "EXPECT [lev]",
+        "Parameters": [
+          {
+            "Name": "lev",
+            "Type": "Level"
+          }
+        ],
+        "ResponseType": "Roger"
+      },
+      {
         "Id": 7,
         "Template": "EXPECT CLIMB AT [time]",
         "Parameters": [
-          { "Name": "time", "Type": "Time" }
+          {
+            "Name": "time",
+            "Type": "Time"
+          }
         ],
         "ResponseType": "Roger"
       },
@@ -56,7 +72,10 @@
         "Id": 8,
         "Template": "EXPECT CLIMB AT [pos]",
         "Parameters": [
-          { "Name": "pos", "Type": "Position" }
+          {
+            "Name": "pos",
+            "Type": "Position"
+          }
         ],
         "ResponseType": "Roger"
       },
@@ -64,7 +83,10 @@
         "Id": 9,
         "Template": "EXPECT DESCENT AT [time]",
         "Parameters": [
-          { "Name": "time", "Type": "Time" }
+          {
+            "Name": "time",
+            "Type": "Time"
+          }
         ],
         "ResponseType": "Roger"
       },
@@ -72,7 +94,122 @@
         "Id": 10,
         "Template": "EXPECT DESCENT AT [pos]",
         "Parameters": [
-          { "Name": "pos", "Type": "Position" }
+          {
+            "Name": "pos",
+            "Type": "Position"
+          }
+        ],
+        "ResponseType": "Roger"
+      },
+      {
+        "Id": 11,
+        "Template": "EXPECT CRUISE CLIMB AT [time]",
+        "Parameters": [
+          {
+            "Name": "time",
+            "Type": "Time"
+          }
+        ],
+        "ResponseType": "Roger"
+      },
+      {
+        "Id": 12,
+        "Template": "EXPECT CRUISE CLIMB AT [pos]",
+        "Parameters": [
+          {
+            "Name": "pos",
+            "Type": "Position"
+          }
+        ],
+        "ResponseType": "Roger"
+      },
+      {
+        "Id": 13,
+        "Template": "AT [time] EXPECT CLIMB TO [lev]",
+        "Parameters": [
+          {
+            "Name": "time",
+            "Type": "Time"
+          },
+          {
+            "Name": "lev",
+            "Type": "Level"
+          }
+        ],
+        "ResponseType": "Roger"
+      },
+      {
+        "Id": 14,
+        "Template": "AT [pos] EXPECT CLIMB TO [lev]",
+        "Parameters": [
+          {
+            "Name": "pos",
+            "Type": "Position"
+          },
+          {
+            "Name": "lev",
+            "Type": "Level"
+          }
+        ],
+        "ResponseType": "Roger"
+      },
+      {
+        "Id": 15,
+        "Template": "AT [time] EXPECT DESCENT TO [lev]",
+        "Parameters": [
+          {
+            "Name": "time",
+            "Type": "Time"
+          },
+          {
+            "Name": "lev",
+            "Type": "Level"
+          }
+        ],
+        "ResponseType": "Roger"
+      },
+      {
+        "Id": 16,
+        "Template": "AT [pos] EXPECT DESCENT TO [lev]",
+        "Parameters": [
+          {
+            "Name": "pos",
+            "Type": "Position"
+          },
+          {
+            "Name": "lev",
+            "Type": "Level"
+          }
+        ],
+        "ResponseType": "Roger"
+      },
+      {
+        "Id": 17,
+        "Template": "AT [time] EXPECT CRUISE CLIMB TO [lev]",
+        "Parameters": [
+          {
+            "Name": "time",
+            "Type": "Time"
+          },
+          {
+            "Name": "lev",
+            "Type": "Level"
+          }
+        ],
+        "ResponseType": "Roger"
+      },
+      {
+        "Id": 18,
+        "Template": "AT [pos] EXPECT CRUISE CLIMB TO [lev]",
+        "Parameters": [
+          {
+            "Name": "pos",
+            "Type": "Position"
+          },
+          {
+            "Name": "lev",
+            "Type": "Level"
+          }
         ],
         "ResponseType": "Roger"
       },
@@ -80,23 +217,92 @@
         "Id": 19,
         "Template": "MAINTAIN [lev]",
         "Parameters": [
-          { "Name": "lev", "Type": "Level" }
+          {
+            "Name": "lev",
+            "Type": "Level"
+          }
         ],
         "ResponseType": "WilcoUnable"
       },
       {
         "Id": 20,
-        "Template": "CLIMB TO [lev]",
+        "Template": "CLIMB TO AND MAINTAIN [lev]",
         "Parameters": [
-          { "Name": "lev", "Type": "Level" }
+          {
+            "Name": "lev",
+            "Type": "Level"
+          }
+        ],
+        "ResponseType": "WilcoUnable"
+      },
+      {
+        "Id": 21,
+        "Template": "AT [time] CLIMB TO AND MAINTAIN [lev]",
+        "Parameters": [
+          {
+            "Name": "time",
+            "Type": "Time"
+          },
+          {
+            "Name": "lev",
+            "Type": "Level"
+          }
+        ],
+        "ResponseType": "WilcoUnable"
+      },
+      {
+        "Id": 22,
+        "Template": "AT [pos] CLIMB TO AND MAINTAIN [lev]",
+        "Parameters": [
+          {
+            "Name": "pos",
+            "Type": "Position"
+          },
+          {
+            "Name": "lev",
+            "Type": "Level"
+          }
         ],
         "ResponseType": "WilcoUnable"
       },
       {
         "Id": 23,
-        "Template": "DESCENT TO [lev]",
+        "Template": "DESCEND TO AND MAINTAIN [lev]",
         "Parameters": [
-          { "Name": "lev", "Type": "Level" }
+          {
+            "Name": "lev",
+            "Type": "Level"
+          }
+        ],
+        "ResponseType": "WilcoUnable"
+      },
+      {
+        "Id": 24,
+        "Template": "AT [time] DESCEND TO AND MAINTAIN [lev]",
+        "Parameters": [
+          {
+            "Name": "time",
+            "Type": "Time"
+          },
+          {
+            "Name": "lev",
+            "Type": "Level"
+          }
+        ],
+        "ResponseType": "WilcoUnable"
+      },
+      {
+        "Id": 25,
+        "Template": "AT [pos] DESCEND TO AND MAINTAIN [lev]",
+        "Parameters": [
+          {
+            "Name": "pos",
+            "Type": "Position"
+          },
+          {
+            "Name": "lev",
+            "Type": "Level"
+          }
         ],
         "ResponseType": "WilcoUnable"
       },
@@ -104,8 +310,14 @@
         "Id": 26,
         "Template": "CLIMB TO REACH [lev] BY [time]",
         "Parameters": [
-          { "Name": "lev", "Type": "Level" },
-          { "Name": "time", "Type": "Time" }
+          {
+            "Name": "lev",
+            "Type": "Level"
+          },
+          {
+            "Name": "time",
+            "Type": "Time"
+          }
         ],
         "ResponseType": "WilcoUnable"
       },
@@ -113,8 +325,14 @@
         "Id": 27,
         "Template": "CLIMB TO REACH [lev] BY [pos]",
         "Parameters": [
-          { "Name": "lev", "Type": "Level" },
-          { "Name": "pos", "Type": "Position" }
+          {
+            "Name": "lev",
+            "Type": "Level"
+          },
+          {
+            "Name": "pos",
+            "Type": "Position"
+          }
         ],
         "ResponseType": "WilcoUnable"
       },
@@ -122,8 +340,14 @@
         "Id": 28,
         "Template": "DESCEND TO REACH [lev] BY [time]",
         "Parameters": [
-          { "Name": "lev", "Type": "Level" },
-          { "Name": "time", "Type": "Time" }
+          {
+            "Name": "lev",
+            "Type": "Level"
+          },
+          {
+            "Name": "time",
+            "Type": "Time"
+          }
         ],
         "ResponseType": "WilcoUnable"
       },
@@ -131,8 +355,92 @@
         "Id": 29,
         "Template": "DESCEND TO REACH [lev] BY [pos]",
         "Parameters": [
-          { "Name": "lev", "Type": "Level" },
-          { "Name": "pos", "Type": "Position" }
+          {
+            "Name": "lev",
+            "Type": "Level"
+          },
+          {
+            "Name": "pos",
+            "Type": "Position"
+          }
+        ],
+        "ResponseType": "WilcoUnable"
+      },
+      {
+        "Id": 30,
+        "Template": "MAINTAIN BLOCK [lev] TO [lev2]",
+        "Parameters": [
+          {
+            "Name": "lev",
+            "Type": "Level"
+          },
+          {
+            "Name": "lev2",
+            "Type": "Level"
+          }
+        ],
+        "ResponseType": "WilcoUnable"
+      },
+      {
+        "Id": 31,
+        "Template": "CLIMB TO AND MAINTAIN BLOCK [lev] TO [lev2]",
+        "Parameters": [
+          {
+            "Name": "lev",
+            "Type": "Level"
+          },
+          {
+            "Name": "lev2",
+            "Type": "Level"
+          }
+        ],
+        "ResponseType": "WilcoUnable"
+      },
+      {
+        "Id": 32,
+        "Template": "DESCEND TO AND MAINTAIN BLOCK [lev] TO [lev2]",
+        "Parameters": [
+          {
+            "Name": "lev",
+            "Type": "Level"
+          },
+          {
+            "Name": "lev2",
+            "Type": "Level"
+          }
+        ],
+        "ResponseType": "WilcoUnable"
+      },
+      {
+        "Id": 33,
+        "Template": "CRUISE [lev]",
+        "Parameters": [
+          {
+            "Name": "lev",
+            "Type": "Level"
+          }
+        ],
+        "ResponseType": "WilcoUnable"
+      },
+      {
+        "Id": 34,
+        "Template": "CRUISE CLIMB TO [lev]",
+        "Parameters": [
+          {
+            "Name": "lev",
+            "Type": "Level"
+          }
+        ],
+        "ResponseType": "WilcoUnable"
+      },
+      {
+        "Id": 35,
+        "Template": "CRUISE CLIMB ABOVE [lev]",
+        "Parameters": [
+          {
+            "Name": "lev",
+            "Type": "Level"
+          }
         ],
         "ResponseType": "WilcoUnable"
       },
@@ -140,7 +448,10 @@
         "Id": 36,
         "Template": "EXPEDITE CLIMB TO [lev]",
         "Parameters": [
-          { "Name": "lev", "Type": "Level" }
+          {
+            "Name": "lev",
+            "Type": "Level"
+          }
         ],
         "ResponseType": "WilcoUnable"
       },
@@ -148,7 +459,10 @@
         "Id": 37,
         "Template": "EXPEDITE DESCENT TO [lev]",
         "Parameters": [
-          { "Name": "lev", "Type": "Level" }
+          {
+            "Name": "lev",
+            "Type": "Level"
+          }
         ],
         "ResponseType": "WilcoUnable"
       },
@@ -156,7 +470,10 @@
         "Id": 38,
         "Template": "IMMEDIATELY CLIMB TO [lev]",
         "Parameters": [
-          { "Name": "lev", "Type": "Level" }
+          {
+            "Name": "lev",
+            "Type": "Level"
+          }
         ],
         "ResponseType": "WilcoUnable"
       },
@@ -164,7 +481,107 @@
         "Id": 39,
         "Template": "IMMEDIATELY DESCEND TO [lev]",
         "Parameters": [
-          { "Name": "lev", "Type": "Level" }
+          {
+            "Name": "lev",
+            "Type": "Level"
+          }
+        ],
+        "ResponseType": "WilcoUnable"
+      },
+      {
+        "Id": 40,
+        "Template": "IMMEDIATELY STOP CLIMB AT [lev]",
+        "Parameters": [
+          {
+            "Name": "lev",
+            "Type": "Level"
+          }
+        ],
+        "ResponseType": "WilcoUnable"
+      },
+      {
+        "Id": 41,
+        "Template": "IMMEDIATELY STOP DESCENT AT [lev]",
+        "Parameters": [
+          {
+            "Name": "lev",
+            "Type": "Level"
+          }
+        ],
+        "ResponseType": "WilcoUnable"
+      },
+      {
+        "Id": 42,
+        "Template": "EXPECT TO CROSS [pos] AT [lev]",
+        "Parameters": [
+          {
+            "Name": "pos",
+            "Type": "Position"
+          },
+          {
+            "Name": "lev",
+            "Type": "Level"
+          }
+        ],
+        "ResponseType": "Roger"
+      },
+      {
+        "Id": 43,
+        "Template": "EXPECT TO CROSS [pos] AT OR ABOVE [lev]",
+        "Parameters": [
+          {
+            "Name": "pos",
+            "Type": "Position"
+          },
+          {
+            "Name": "lev",
+            "Type": "Level"
+          }
+        ],
+        "ResponseType": "Roger"
+      },
+      {
+        "Id": 44,
+        "Template": "EXPECT TO CROSS [pos] AT OR BELOW [lev]",
+        "Parameters": [
+          {
+            "Name": "pos",
+            "Type": "Position"
+          },
+          {
+            "Name": "lev",
+            "Type": "Level"
+          }
+        ],
+        "ResponseType": "Roger"
+      },
+      {
+        "Id": 45,
+        "Template": "EXPECT TO CROSS [pos] AT AND MAINTAIN [lev]",
+        "Parameters": [
+          {
+            "Name": "pos",
+            "Type": "Position"
+          },
+          {
+            "Name": "lev",
+            "Type": "Level"
+          }
+        ],
+        "ResponseType": "Roger"
+      },
+      {
+        "Id": 46,
+        "Template": "CROSS [pos] AT [lev]",
+        "Parameters": [
+          {
+            "Name": "pos",
+            "Type": "Position"
+          },
+          {
+            "Name": "lev",
+            "Type": "Level"
+          }
         ],
         "ResponseType": "WilcoUnable"
       },
@@ -172,8 +589,14 @@
         "Id": 47,
         "Template": "CROSS [pos] AT OR ABOVE [lev]",
         "Parameters": [
-          { "Name": "pos", "Type": "Position" },
-          { "Name": "lev", "Type": "Level" }
+          {
+            "Name": "pos",
+            "Type": "Position"
+          },
+          {
+            "Name": "lev",
+            "Type": "Level"
+          }
         ],
         "ResponseType": "WilcoUnable"
       },
@@ -181,8 +604,29 @@
         "Id": 48,
         "Template": "CROSS [pos] AT OR BELOW [lev]",
         "Parameters": [
-          { "Name": "pos", "Type": "Position" },
-          { "Name": "lev", "Type": "Level" }
+          {
+            "Name": "pos",
+            "Type": "Position"
+          },
+          {
+            "Name": "lev",
+            "Type": "Level"
+          }
+        ],
+        "ResponseType": "WilcoUnable"
+      },
+      {
+        "Id": 49,
+        "Template": "CROSS [pos] AT AND MAINTAIN [lev]",
+        "Parameters": [
+          {
+            "Name": "pos",
+            "Type": "Position"
+          },
+          {
+            "Name": "lev",
+            "Type": "Level"
+          }
         ],
         "ResponseType": "WilcoUnable"
       },
@@ -190,9 +634,18 @@
         "Id": 50,
         "Template": "CROSS [pos] BETWEEN [lev] AND [lev2]",
         "Parameters": [
-          { "Name": "pos", "Type": "Position" },
-          { "Name": "lev", "Type": "Level" },
-          { "Name": "lev2", "Type": "Level" }
+          {
+            "Name": "pos",
+            "Type": "Position"
+          },
+          {
+            "Name": "lev",
+            "Type": "Level"
+          },
+          {
+            "Name": "lev2",
+            "Type": "Level"
+          }
         ],
         "ResponseType": "WilcoUnable"
       },
@@ -200,8 +653,14 @@
         "Id": 51,
         "Template": "CROSS [pos] AT [time]",
         "Parameters": [
-          { "Name": "pos", "Type": "Position" },
-          { "Name": "time", "Type": "Time" }
+          {
+            "Name": "pos",
+            "Type": "Position"
+          },
+          {
+            "Name": "time",
+            "Type": "Time"
+          }
         ],
         "ResponseType": "WilcoUnable"
       },
@@ -209,8 +668,14 @@
         "Id": 52,
         "Template": "CROSS [pos] AT OR BEFORE [time]",
         "Parameters": [
-          { "Name": "pos", "Type": "Position" },
-          { "Name": "time", "Type": "Time" }
+          {
+            "Name": "pos",
+            "Type": "Position"
+          },
+          {
+            "Name": "time",
+            "Type": "Time"
+          }
         ],
         "ResponseType": "WilcoUnable"
       },
@@ -218,8 +683,14 @@
         "Id": 53,
         "Template": "CROSS [pos] AT OR AFTER [time]",
         "Parameters": [
-          { "Name": "pos", "Type": "Position" },
-          { "Name": "time", "Type": "Time" }
+          {
+            "Name": "pos",
+            "Type": "Position"
+          },
+          {
+            "Name": "time",
+            "Type": "Time"
+          }
         ],
         "ResponseType": "WilcoUnable"
       },
@@ -227,9 +698,18 @@
         "Id": 54,
         "Template": "CROSS [pos] BETWEEN [time] AND [time2]",
         "Parameters": [
-          { "Name": "pos", "Type": "Position" },
-          { "Name": "time", "Type": "Time" },
-          { "Name": "time2", "Type": "Time" }
+          {
+            "Name": "pos",
+            "Type": "Position"
+          },
+          {
+            "Name": "time",
+            "Type": "Time"
+          },
+          {
+            "Name": "time2",
+            "Type": "Time"
+          }
         ],
         "ResponseType": "WilcoUnable"
       },
@@ -237,8 +717,14 @@
         "Id": 55,
         "Template": "CROSS [pos] AT [spd]",
         "Parameters": [
-          { "Name": "pos", "Type": "Position" },
-          { "Name": "spd", "Type": "Speed" }
+          {
+            "Name": "pos",
+            "Type": "Position"
+          },
+          {
+            "Name": "spd",
+            "Type": "Speed"
+          }
         ],
         "ResponseType": "WilcoUnable"
       },
@@ -246,8 +732,14 @@
         "Id": 56,
         "Template": "CROSS [pos] AT OR LESS THAN [spd]",
         "Parameters": [
-          { "Name": "pos", "Type": "Position" },
-          { "Name": "spd", "Type": "Speed" }
+          {
+            "Name": "pos",
+            "Type": "Position"
+          },
+          {
+            "Name": "spd",
+            "Type": "Speed"
+          }
         ],
         "ResponseType": "WilcoUnable"
       },
@@ -255,8 +747,14 @@
         "Id": 57,
         "Template": "CROSS [pos] AT OR GREATER THAN [spd]",
         "Parameters": [
-          { "Name": "pos", "Type": "Position" },
-          { "Name": "spd", "Type": "Speed" }
+          {
+            "Name": "pos",
+            "Type": "Position"
+          },
+          {
+            "Name": "spd",
+            "Type": "Speed"
+          }
         ],
         "ResponseType": "WilcoUnable"
       },
@@ -264,9 +762,18 @@
         "Id": 58,
         "Template": "CROSS [pos] AT [time] AT [lev]",
         "Parameters": [
-          { "Name": "pos", "Type": "Position" },
-          { "Name": "time", "Type": "Time" },
-          { "Name": "lev", "Type": "Level" }
+          {
+            "Name": "pos",
+            "Type": "Position"
+          },
+          {
+            "Name": "time",
+            "Type": "Time"
+          },
+          {
+            "Name": "lev",
+            "Type": "Level"
+          }
         ],
         "ResponseType": "WilcoUnable"
       },
@@ -274,19 +781,37 @@
         "Id": 59,
         "Template": "CROSS [pos] AT OR BEFORE [time] AT [lev]",
         "Parameters": [
-          { "Name": "pos", "Type": "Position" },
-          { "Name": "time", "Type": "Time" },
-          { "Name": "lev", "Type": "Level" }
+          {
+            "Name": "pos",
+            "Type": "Position"
+          },
+          {
+            "Name": "time",
+            "Type": "Time"
+          },
+          {
+            "Name": "lev",
+            "Type": "Level"
+          }
         ],
         "ResponseType": "WilcoUnable"
       },
       {
         "Id": 60,
-        "Template": "CROSS [pos] AT OR AFTER [time] AND [lev]",
+        "Template": "CROSS [pos] AT OR AFTER [time] AT [lev]",
         "Parameters": [
-          { "Name": "pos", "Type": "Position" },
-          { "Name": "time", "Type": "Time" },
-          { "Name": "lev", "Type": "Level" }
+          {
+            "Name": "pos",
+            "Type": "Position"
+          },
+          {
+            "Name": "time",
+            "Type": "Time"
+          },
+          {
+            "Name": "lev",
+            "Type": "Level"
+          }
         ],
         "ResponseType": "WilcoUnable"
       },
@@ -294,9 +819,18 @@
         "Id": 61,
         "Template": "CROSS [pos] AT AND MAINTAIN [lev] AT [spd]",
         "Parameters": [
-          { "Name": "pos", "Type": "Position" },
-          { "Name": "lev", "Type": "Level" },
-          { "Name": "spd", "Type": "Speed" }
+          {
+            "Name": "pos",
+            "Type": "Position"
+          },
+          {
+            "Name": "lev",
+            "Type": "Level"
+          },
+          {
+            "Name": "spd",
+            "Type": "Speed"
+          }
         ],
         "ResponseType": "WilcoUnable"
       },
@@ -304,9 +838,18 @@
         "Id": 62,
         "Template": "AT [time] CROSS [pos] AT AND MAINTAIN [lev]",
         "Parameters": [
-          { "Name": "time", "Type": "Time" },
-          { "Name": "pos", "Type": "Position" },
-          { "Name": "lev", "Type": "Level" }
+          {
+            "Name": "time",
+            "Type": "Time"
+          },
+          {
+            "Name": "pos",
+            "Type": "Position"
+          },
+          {
+            "Name": "lev",
+            "Type": "Level"
+          }
         ],
         "ResponseType": "WilcoUnable"
       },
@@ -314,10 +857,22 @@
         "Id": 63,
         "Template": "AT [time] CROSS [pos] AT AND MAINTAIN [lev] AT [spd]",
         "Parameters": [
-          { "Name": "time", "Type": "Time" },
-          { "Name": "pos", "Type": "Position" },
-          { "Name": "lev", "Type": "Level" },
-          { "Name": "spd", "Type": "Speed" }
+          {
+            "Name": "time",
+            "Type": "Time"
+          },
+          {
+            "Name": "pos",
+            "Type": "Position"
+          },
+          {
+            "Name": "lev",
+            "Type": "Level"
+          },
+          {
+            "Name": "spd",
+            "Type": "Speed"
+          }
         ],
         "ResponseType": "WilcoUnable"
       },
@@ -325,8 +880,14 @@
         "Id": 64,
         "Template": "OFFSET [doff] [dir] OF ROUTE",
         "Parameters": [
-          { "Name": "doff", "Type": "DistanceOffset" },
-          { "Name": "dir", "Type": "Direction" }
+          {
+            "Name": "doff",
+            "Type": "DistanceOffset"
+          },
+          {
+            "Name": "dir",
+            "Type": "Direction"
+          }
         ],
         "ResponseType": "WilcoUnable"
       },
@@ -334,9 +895,18 @@
         "Id": 65,
         "Template": "AT [pos] OFFSET [doff] [dir] OF ROUTE",
         "Parameters": [
-          { "Name": "pos", "Type": "Position" },
-          { "Name": "doff", "Type": "DistanceOffset" },
-          { "Name": "dir", "Type": "Direction" }
+          {
+            "Name": "pos",
+            "Type": "Position"
+          },
+          {
+            "Name": "doff",
+            "Type": "DistanceOffset"
+          },
+          {
+            "Name": "dir",
+            "Type": "Direction"
+          }
         ],
         "ResponseType": "WilcoUnable"
       },
@@ -344,17 +914,35 @@
         "Id": 66,
         "Template": "AT [time] OFFSET [doff] [dir] OF ROUTE",
         "Parameters": [
-          { "Name": "time", "Type": "Time" },
-          { "Name": "doff", "Type": "DistanceOffset" },
-          { "Name": "dir", "Type": "Direction" }
+          {
+            "Name": "time",
+            "Type": "Time"
+          },
+          {
+            "Name": "doff",
+            "Type": "DistanceOffset"
+          },
+          {
+            "Name": "dir",
+            "Type": "Direction"
+          }
         ],
+        "ResponseType": "WilcoUnable"
+      },
+      {
+        "Id": 67,
+        "Template": "PROCEED BACK ON ROUTE",
+        "Parameters": [],
         "ResponseType": "WilcoUnable"
       },
       {
         "Id": 68,
         "Template": "REJOIN ROUTE BY [pos]",
         "Parameters": [
-          { "Name": "pos", "Type": "Position" }
+          {
+            "Name": "pos",
+            "Type": "Position"
+          }
         ],
         "ResponseType": "WilcoUnable"
       },
@@ -362,7 +950,10 @@
         "Id": 69,
         "Template": "REJOIN ROUTE BY [time]",
         "Parameters": [
-          { "Name": "time", "Type": "Time" }
+          {
+            "Name": "time",
+            "Type": "Time"
+          }
         ],
         "ResponseType": "WilcoUnable"
       },
@@ -370,7 +961,10 @@
         "Id": 70,
         "Template": "EXPECT BACK ON ROUTE BY [pos]",
         "Parameters": [
-          { "Name": "pos", "Type": "Position" }
+          {
+            "Name": "pos",
+            "Type": "Position"
+          }
         ],
         "ResponseType": "Roger"
       },
@@ -378,7 +972,10 @@
         "Id": 71,
         "Template": "EXPECT BACK ON ROUTE BY [time]",
         "Parameters": [
-          { "Name": "time", "Type": "Time" }
+          {
+            "Name": "time",
+            "Type": "Time"
+          }
         ],
         "ResponseType": "Roger"
       },
@@ -389,10 +986,40 @@
         "ResponseType": "WilcoUnable"
       },
       {
+        "Id": 73,
+        "Template": "AT [time] CLEARED [rc] ALT [lev] FREQ [freq] SSR [code]",
+        "Parameters": [
+          {
+            "Name": "time",
+            "Type": "Time"
+          },
+          {
+            "Name": "rc",
+            "Type": "RouteClearance"
+          },
+          {
+            "Name": "lev",
+            "Type": "Level"
+          },
+          {
+            "Name": "freq",
+            "Type": "Frequency"
+          },
+          {
+            "Name": "code",
+            "Type": "Code"
+          }
+        ],
+        "ResponseType": "WilcoUnable"
+      },
+      {
         "Id": 74,
         "Template": "PROCEED DIRECT TO [pos]",
         "Parameters": [
-          { "Name": "pos", "Type": "Position" }
+          {
+            "Name": "pos",
+            "Type": "Position"
+          }
         ],
         "ResponseType": "WilcoUnable"
       },
@@ -400,7 +1027,10 @@
         "Id": 75,
         "Template": "WHEN ABLE PROCEED DIRECT TO [pos]",
         "Parameters": [
-          { "Name": "pos", "Type": "Position" }
+          {
+            "Name": "pos",
+            "Type": "Position"
+          }
         ],
         "ResponseType": "WilcoUnable"
       },
@@ -408,8 +1038,14 @@
         "Id": 76,
         "Template": "AT [time] PROCEED DIRECT TO [pos]",
         "Parameters": [
-          { "Name": "time", "Type": "Time" },
-          { "Name": "pos", "Type": "Position" }
+          {
+            "Name": "time",
+            "Type": "Time"
+          },
+          {
+            "Name": "pos",
+            "Type": "Position"
+          }
         ],
         "ResponseType": "WilcoUnable"
       },
@@ -417,8 +1053,14 @@
         "Id": 77,
         "Template": "AT [pos] PROCEED DIRECT TO [pos2]",
         "Parameters": [
-          { "Name": "pos", "Type": "Position" },
-          { "Name": "pos2", "Type": "Position" }
+          {
+            "Name": "pos",
+            "Type": "Position"
+          },
+          {
+            "Name": "pos2",
+            "Type": "Position"
+          }
         ],
         "ResponseType": "WilcoUnable"
       },
@@ -426,8 +1068,14 @@
         "Id": 78,
         "Template": "AT [lev] PROCEED DIRECT TO [pos]",
         "Parameters": [
-          { "Name": "lev", "Type": "Level" },
-          { "Name": "pos", "Type": "Position" }
+          {
+            "Name": "lev",
+            "Type": "Level"
+          },
+          {
+            "Name": "pos",
+            "Type": "Position"
+          }
         ],
         "ResponseType": "WilcoUnable"
       },
@@ -435,8 +1083,14 @@
         "Id": 79,
         "Template": "CLEARED TO [pos] VIA [rc]",
         "Parameters": [
-          { "Name": "pos", "Type": "Position" },
-          { "Name": "rc", "Type": "RouteClearance" }
+          {
+            "Name": "pos",
+            "Type": "Position"
+          },
+          {
+            "Name": "rc",
+            "Type": "RouteClearance"
+          }
         ],
         "ResponseType": "WilcoUnable"
       },
@@ -444,7 +1098,10 @@
         "Id": 80,
         "Template": "CLEARED [rc]",
         "Parameters": [
-          { "Name": "rc", "Type": "RouteClearance" }
+          {
+            "Name": "rc",
+            "Type": "RouteClearance"
+          }
         ],
         "ResponseType": "WilcoUnable"
       },
@@ -452,7 +1109,10 @@
         "Id": 81,
         "Template": "CLEARED [proc name]",
         "Parameters": [
-          { "Name": "proc name", "Type": "ProcedureName" }
+          {
+            "Name": "proc name",
+            "Type": "ProcedureName"
+          }
         ],
         "ResponseType": "WilcoUnable"
       },
@@ -460,8 +1120,14 @@
         "Id": 82,
         "Template": "CLEARED TO DEVIATE UP TO [doff] [dir] OF ROUTE",
         "Parameters": [
-          { "Name": "doff", "Type": "DistanceOffset" },
-          { "Name": "dir", "Type": "Direction" }
+          {
+            "Name": "doff",
+            "Type": "DistanceOffset"
+          },
+          {
+            "Name": "dir",
+            "Type": "Direction"
+          }
         ],
         "ResponseType": "WilcoUnable"
       },
@@ -469,8 +1135,14 @@
         "Id": 83,
         "Template": "AT [pos] CLEARED [rc]",
         "Parameters": [
-          { "Name": "pos", "Type": "Position" },
-          { "Name": "rc", "Type": "RouteClearance" }
+          {
+            "Name": "pos",
+            "Type": "Position"
+          },
+          {
+            "Name": "rc",
+            "Type": "RouteClearance"
+          }
         ],
         "ResponseType": "WilcoUnable"
       },
@@ -478,20 +1150,123 @@
         "Id": 84,
         "Template": "AT [pos] CLEARED [proc name]",
         "Parameters": [
-          { "Name": "pos", "Type": "Position" },
-          { "Name": "proc name", "Type": "ProcedureName" }
+          {
+            "Name": "pos",
+            "Type": "Position"
+          },
+          {
+            "Name": "proc name",
+            "Type": "ProcedureName"
+          }
         ],
         "ResponseType": "WilcoUnable"
+      },
+      {
+        "Id": 85,
+        "Template": "EXPECT [rc]",
+        "Parameters": [
+          {
+            "Name": "rc",
+            "Type": "RouteClearance"
+          }
+        ],
+        "ResponseType": "Roger"
+      },
+      {
+        "Id": 86,
+        "Template": "AT [pos] EXPECT [rc]",
+        "Parameters": [
+          {
+            "Name": "pos",
+            "Type": "Position"
+          },
+          {
+            "Name": "rc",
+            "Type": "RouteClearance"
+          }
+        ],
+        "ResponseType": "Roger"
+      },
+      {
+        "Id": 87,
+        "Template": "EXPECT DIRECT TO [pos]",
+        "Parameters": [
+          {
+            "Name": "pos",
+            "Type": "Position"
+          }
+        ],
+        "ResponseType": "Roger"
+      },
+      {
+        "Id": 88,
+        "Template": "AT [pos] EXPECT DIRECT TO [pos2]",
+        "Parameters": [
+          {
+            "Name": "pos",
+            "Type": "Position"
+          },
+          {
+            "Name": "pos2",
+            "Type": "Position"
+          }
+        ],
+        "ResponseType": "Roger"
+      },
+      {
+        "Id": 89,
+        "Template": "AT [time] EXPECT DIRECT TO [pos]",
+        "Parameters": [
+          {
+            "Name": "time",
+            "Type": "Time"
+          },
+          {
+            "Name": "pos",
+            "Type": "Position"
+          }
+        ],
+        "ResponseType": "Roger"
+      },
+      {
+        "Id": 90,
+        "Template": "AT [lev] EXPECT DIRECT TO [pos]",
+        "Parameters": [
+          {
+            "Name": "lev",
+            "Type": "Level"
+          },
+          {
+            "Name": "pos",
+            "Type": "Position"
+          }
+        ],
+        "ResponseType": "Roger"
       },
       {
         "Id": 91,
         "Template": "HOLD AT [pos] MAINTAIN [lev] INBOUND TRACK [deg] [dir] TURNS [lev2]",
         "Parameters": [
-          { "Name": "pos", "Type": "Position" },
-          { "Name": "lev", "Type": "Level" },
-          { "Name": "deg", "Type": "Degree" },
-          { "Name": "dir", "Type": "Direction" },
-          { "Name": "lev2", "Type": "Level" }
+          {
+            "Name": "pos",
+            "Type": "Position"
+          },
+          {
+            "Name": "lev",
+            "Type": "Level"
+          },
+          {
+            "Name": "deg",
+            "Type": "Degree"
+          },
+          {
+            "Name": "dir",
+            "Type": "Direction"
+          },
+          {
+            "Name": "lev2",
+            "Type": "Level"
+          }
         ],
         "ResponseType": "WilcoUnable"
       },
@@ -499,8 +1274,14 @@
         "Id": 92,
         "Template": "HOLD AT [pos] AS PUBLISHED MAINTAIN [lev]",
         "Parameters": [
-          { "Name": "pos", "Type": "Position" },
-          { "Name": "lev", "Type": "Level" }
+          {
+            "Name": "pos",
+            "Type": "Position"
+          },
+          {
+            "Name": "lev",
+            "Type": "Level"
+          }
         ],
         "ResponseType": "WilcoUnable"
       },
@@ -508,7 +1289,10 @@
         "Id": 93,
         "Template": "EXPECT FURTHER CLEARANCE AT [time]",
         "Parameters": [
-          { "Name": "time", "Type": "Time" }
+          {
+            "Name": "time",
+            "Type": "Time"
+          }
         ],
         "ResponseType": "Roger"
       },
@@ -516,8 +1300,14 @@
         "Id": 94,
         "Template": "TURN [dir] HEADING [deg]",
         "Parameters": [
-          { "Name": "dir", "Type": "Direction" },
-          { "Name": "deg", "Type": "Degree" }
+          {
+            "Name": "dir",
+            "Type": "Direction"
+          },
+          {
+            "Name": "deg",
+            "Type": "Degree"
+          }
         ],
         "ResponseType": "WilcoUnable"
       },
@@ -525,8 +1315,14 @@
         "Id": 95,
         "Template": "TURN [dir] GROUND TRACK [deg]",
         "Parameters": [
-          { "Name": "dir", "Type": "Direction" },
-          { "Name": "deg", "Type": "Degree" }
+          {
+            "Name": "dir",
+            "Type": "Direction"
+          },
+          {
+            "Name": "deg",
+            "Type": "Degree"
+          }
         ],
         "ResponseType": "WilcoUnable"
       },
@@ -540,8 +1336,14 @@
         "Id": 97,
         "Template": "AT [pos] FLY HEADING [deg]",
         "Parameters": [
-          { "Name": "pos", "Type": "Position" },
-          { "Name": "deg", "Type": "Degree" }
+          {
+            "Name": "pos",
+            "Type": "Position"
+          },
+          {
+            "Name": "deg",
+            "Type": "Degree"
+          }
         ],
         "ResponseType": "WilcoUnable"
       },
@@ -549,8 +1351,14 @@
         "Id": 98,
         "Template": "IMMEDIATELY TURN [dir] HEADING [deg]",
         "Parameters": [
-          { "Name": "dir", "Type": "Direction" },
-          { "Name": "deg", "Type": "Degree" }
+          {
+            "Name": "dir",
+            "Type": "Direction"
+          },
+          {
+            "Name": "deg",
+            "Type": "Degree"
+          }
         ],
         "ResponseType": "WilcoUnable"
       },
@@ -558,7 +1366,10 @@
         "Id": 99,
         "Template": "EXPECT [proc name]",
         "Parameters": [
-          { "Name": "proc name", "Type": "ProcedureName" }
+          {
+            "Name": "proc name",
+            "Type": "ProcedureName"
+          }
         ],
         "ResponseType": "Roger"
       },
@@ -566,8 +1377,14 @@
         "Id": 100,
         "Template": "AT [time] EXPECT [spd]",
         "Parameters": [
-          { "Name": "time", "Type": "Time" },
-          { "Name": "spd", "Type": "Speed" }
+          {
+            "Name": "time",
+            "Type": "Time"
+          },
+          {
+            "Name": "spd",
+            "Type": "Speed"
+          }
         ],
         "ResponseType": "Roger"
       },
@@ -575,8 +1392,14 @@
         "Id": 101,
         "Template": "AT [pos] EXPECT [spd]",
         "Parameters": [
-          { "Name": "pos", "Type": "Position" },
-          { "Name": "spd", "Type": "Speed" }
+          {
+            "Name": "pos",
+            "Type": "Position"
+          },
+          {
+            "Name": "spd",
+            "Type": "Speed"
+          }
         ],
         "ResponseType": "Roger"
       },
@@ -584,8 +1407,71 @@
         "Id": 102,
         "Template": "AT [lev] EXPECT [spd]",
         "Parameters": [
-          { "Name": "lev", "Type": "Level" },
-          { "Name": "spd", "Type": "Speed" }
+          {
+            "Name": "lev",
+            "Type": "Level"
+          },
+          {
+            "Name": "spd",
+            "Type": "Speed"
+          }
+        ],
+        "ResponseType": "Roger"
+      },
+      {
+        "Id": 103,
+        "Template": "AT [time] EXPECT [spd] TO [spd2]",
+        "Parameters": [
+          {
+            "Name": "time",
+            "Type": "Time"
+          },
+          {
+            "Name": "spd",
+            "Type": "Speed"
+          },
+          {
+            "Name": "spd2",
+            "Type": "Speed"
+          }
+        ],
+        "ResponseType": "Roger"
+      },
+      {
+        "Id": 104,
+        "Template": "AT [pos] EXPECT [spd] TO [spd2]",
+        "Parameters": [
+          {
+            "Name": "pos",
+            "Type": "Position"
+          },
+          {
+            "Name": "spd",
+            "Type": "Speed"
+          },
+          {
+            "Name": "spd2",
+            "Type": "Speed"
+          }
+        ],
+        "ResponseType": "Roger"
+      },
+      {
+        "Id": 105,
+        "Template": "AT [lev] EXPECT [spd] TO [spd2]",
+        "Parameters": [
+          {
+            "Name": "lev",
+            "Type": "Level"
+          },
+          {
+            "Name": "spd",
+            "Type": "Speed"
+          },
+          {
+            "Name": "spd2",
+            "Type": "Speed"
+          }
         ],
         "ResponseType": "Roger"
       },
@@ -593,7 +1479,10 @@
         "Id": 106,
         "Template": "MAINTAIN [spd]",
         "Parameters": [
-          { "Name": "spd", "Type": "Speed" }
+          {
+            "Name": "spd",
+            "Type": "Speed"
+          }
         ],
         "ResponseType": "WilcoUnable"
       },
@@ -607,7 +1496,10 @@
         "Id": 108,
         "Template": "MAINTAIN [spd] OR GREATER",
         "Parameters": [
-          { "Name": "spd", "Type": "Speed" }
+          {
+            "Name": "spd",
+            "Type": "Speed"
+          }
         ],
         "ResponseType": "WilcoUnable"
       },
@@ -615,7 +1507,10 @@
         "Id": 109,
         "Template": "MAINTAIN [spd] OR LESS",
         "Parameters": [
-          { "Name": "spd", "Type": "Speed" }
+          {
+            "Name": "spd",
+            "Type": "Speed"
+          }
         ],
         "ResponseType": "WilcoUnable"
       },
@@ -623,8 +1518,14 @@
         "Id": 110,
         "Template": "MAINTAIN [spd] TO [spd2]",
         "Parameters": [
-          { "Name": "spd", "Type": "Speed" },
-          { "Name": "spd2", "Type": "Speed" }
+          {
+            "Name": "spd",
+            "Type": "Speed"
+          },
+          {
+            "Name": "spd2",
+            "Type": "Speed"
+          }
         ],
         "ResponseType": "WilcoUnable"
       },
@@ -632,7 +1533,10 @@
         "Id": 111,
         "Template": "INCREASE SPEED TO [spd]",
         "Parameters": [
-          { "Name": "spd", "Type": "Speed" }
+          {
+            "Name": "spd",
+            "Type": "Speed"
+          }
         ],
         "ResponseType": "WilcoUnable"
       },
@@ -640,7 +1544,10 @@
         "Id": 112,
         "Template": "INCREASE SPEED TO [spd] OR GREATER",
         "Parameters": [
-          { "Name": "spd", "Type": "Speed" }
+          {
+            "Name": "spd",
+            "Type": "Speed"
+          }
         ],
         "ResponseType": "WilcoUnable"
       },
@@ -648,7 +1555,10 @@
         "Id": 113,
         "Template": "REDUCE SPEED TO [spd]",
         "Parameters": [
-          { "Name": "spd", "Type": "Speed" }
+          {
+            "Name": "spd",
+            "Type": "Speed"
+          }
         ],
         "ResponseType": "WilcoUnable"
       },
@@ -656,7 +1566,21 @@
         "Id": 114,
         "Template": "REDUCE SPEED TO [spd] OR LESS",
         "Parameters": [
-          { "Name": "spd", "Type": "Speed" }
+          {
+            "Name": "spd",
+            "Type": "Speed"
+          }
+        ],
+        "ResponseType": "WilcoUnable"
+      },
+      {
+        "Id": 115,
+        "Template": "DO NOT EXCEED [spd]",
+        "Parameters": [
+          {
+            "Name": "spd",
+            "Type": "Speed"
+          }
         ],
         "ResponseType": "WilcoUnable"
       },
@@ -670,8 +1594,14 @@
         "Id": 117,
         "Template": "CONTACT [unit name] [freq]",
         "Parameters": [
-          { "Name": "unit name", "Type": "UnitName" },
-          { "Name": "freq", "Type": "Frequency" }
+          {
+            "Name": "unit name",
+            "Type": "UnitName"
+          },
+          {
+            "Name": "freq",
+            "Type": "Frequency"
+          }
         ],
         "ResponseType": "WilcoUnable"
       },
@@ -679,9 +1609,18 @@
         "Id": 118,
         "Template": "AT [pos] CONTACT [unit name] [freq]",
         "Parameters": [
-          { "Name": "pos", "Type": "Position" },
-          { "Name": "unit name", "Type": "UnitName" },
-          { "Name": "freq", "Type": "Frequency" }
+          {
+            "Name": "pos",
+            "Type": "Position"
+          },
+          {
+            "Name": "unit name",
+            "Type": "UnitName"
+          },
+          {
+            "Name": "freq",
+            "Type": "Frequency"
+          }
         ],
         "ResponseType": "WilcoUnable"
       },
@@ -689,9 +1628,18 @@
         "Id": 119,
         "Template": "AT [time] CONTACT [unit name] [freq]",
         "Parameters": [
-          { "Name": "time", "Type": "Time" },
-          { "Name": "unit name", "Type": "UnitName" },
-          { "Name": "freq", "Type": "Frequency" }
+          {
+            "Name": "time",
+            "Type": "Time"
+          },
+          {
+            "Name": "unit name",
+            "Type": "UnitName"
+          },
+          {
+            "Name": "freq",
+            "Type": "Frequency"
+          }
         ],
         "ResponseType": "WilcoUnable"
       },
@@ -699,8 +1647,14 @@
         "Id": 120,
         "Template": "MONITOR [unit name] [freq]",
         "Parameters": [
-          { "Name": "unit name", "Type": "UnitName" },
-          { "Name": "freq", "Type": "Frequency" }
+          {
+            "Name": "unit name",
+            "Type": "UnitName"
+          },
+          {
+            "Name": "freq",
+            "Type": "Frequency"
+          }
         ],
         "ResponseType": "WilcoUnable"
       },
@@ -708,9 +1662,18 @@
         "Id": 121,
         "Template": "AT [pos] MONITOR [unit name] [freq]",
         "Parameters": [
-          { "Name": "pos", "Type": "Position" },
-          { "Name": "unit name", "Type": "UnitName" },
-          { "Name": "freq", "Type": "Frequency" }
+          {
+            "Name": "pos",
+            "Type": "Position"
+          },
+          {
+            "Name": "unit name",
+            "Type": "UnitName"
+          },
+          {
+            "Name": "freq",
+            "Type": "Frequency"
+          }
         ],
         "ResponseType": "WilcoUnable"
       },
@@ -718,9 +1681,18 @@
         "Id": 122,
         "Template": "AT [time] MONITOR [unit name] [freq]",
         "Parameters": [
-          { "Name": "time", "Type": "Time" },
-          { "Name": "unit name", "Type": "UnitName" },
-          { "Name": "freq", "Type": "Frequency" }
+          {
+            "Name": "time",
+            "Type": "Time"
+          },
+          {
+            "Name": "unit name",
+            "Type": "UnitName"
+          },
+          {
+            "Name": "freq",
+            "Type": "Frequency"
+          }
         ],
         "ResponseType": "WilcoUnable"
       },
@@ -728,7 +1700,10 @@
         "Id": 123,
         "Template": "SQUAWK [code]",
         "Parameters": [
-          { "Name": "code", "Type": "Code" }
+          {
+            "Name": "code",
+            "Type": "Code"
+          }
         ],
         "ResponseType": "WilcoUnable"
       },
@@ -760,15 +1735,21 @@
         "Id": 128,
         "Template": "REPORT LEAVING [lev]",
         "Parameters": [
-          { "Name": "lev", "Type": "Level" }
+          {
+            "Name": "lev",
+            "Type": "Level"
+          }
         ],
         "ResponseType": "Roger"
       },
       {
         "Id": 129,
-        "Template": "REPORT MAINTAINING [lev]",
+        "Template": "REPORT LEVEL [lev]",
         "Parameters": [
-          { "Name": "lev", "Type": "Level" }
+          {
+            "Name": "lev",
+            "Type": "Level"
+          }
         ],
         "ResponseType": "Roger"
       },
@@ -776,19 +1757,34 @@
         "Id": 130,
         "Template": "REPORT PASSING [pos]",
         "Parameters": [
-          { "Name": "pos", "Type": "Position" }
+          {
+            "Name": "pos",
+            "Type": "Position"
+          }
         ],
         "ResponseType": "Roger"
       },
       {
         "Id": 131,
-        "Template": "REPORT REMAINING FUEL AND PERSONS ON BOARD",
+        "Template": "REPORT REMAINING FUEL AND SOULS ON BOARD",
+        "Parameters": [],
+        "ResponseType": "NoResponse"
+      },
+      {
+        "Id": 132,
+        "Template": "CONFIRM POSITION",
         "Parameters": [],
         "ResponseType": "NoResponse"
       },
       {
         "Id": 133,
         "Template": "CONFIRM ALTITUDE",
+        "Parameters": [],
+        "ResponseType": "NoResponse"
+      },
+      {
+        "Id": 134,
+        "Template": "CONFIRM SPEED",
         "Parameters": [],
         "ResponseType": "NoResponse"
       },
@@ -853,8 +1849,14 @@
         "ResponseType": "NoResponse"
       },
       {
+        "Id": 145,
+        "Template": "CONFIRM HEADING",
+        "Parameters": [],
+        "ResponseType": "NoResponse"
+      },
+      {
         "Id": 146,
-        "Template": "REPORT GROUND TRACK",
+        "Template": "CONFIRM GROUND TRACK",
         "Parameters": [],
         "ResponseType": "NoResponse"
       },
@@ -868,7 +1870,10 @@
         "Id": 148,
         "Template": "WHEN CAN YOU ACCEPT [lev]",
         "Parameters": [
-          { "Name": "lev", "Type": "Level" }
+          {
+            "Name": "lev",
+            "Type": "Level"
+          }
         ],
         "ResponseType": "NoResponse"
       },
@@ -876,8 +1881,14 @@
         "Id": 149,
         "Template": "CAN YOU ACCEPT [lev] AT [pos]",
         "Parameters": [
-          { "Name": "lev", "Type": "Level" },
-          { "Name": "pos", "Type": "Position" }
+          {
+            "Name": "lev",
+            "Type": "Level"
+          },
+          {
+            "Name": "pos",
+            "Type": "Position"
+          }
         ],
         "ResponseType": "AffirmativeNegative"
       },
@@ -885,8 +1896,14 @@
         "Id": 150,
         "Template": "CAN YOU ACCEPT [lev] AT [time]",
         "Parameters": [
-          { "Name": "lev", "Type": "Level" },
-          { "Name": "time", "Type": "Time" }
+          {
+            "Name": "lev",
+            "Type": "Level"
+          },
+          {
+            "Name": "time",
+            "Type": "Time"
+          }
         ],
         "ResponseType": "AffirmativeNegative"
       },
@@ -894,7 +1911,25 @@
         "Id": 151,
         "Template": "WHEN CAN YOU ACCEPT [spd]",
         "Parameters": [
-          { "Name": "spd", "Type": "Speed" }
+          {
+            "Name": "spd",
+            "Type": "Speed"
+          }
+        ],
+        "ResponseType": "NoResponse"
+      },
+      {
+        "Id": 152,
+        "Template": "WHEN CAN YOU ACCEPT [dir] [doff] OFFSET",
+        "Parameters": [
+          {
+            "Name": "dir",
+            "Type": "Direction"
+          },
+          {
+            "Name": "doff",
+            "Type": "DistanceOffset"
+          }
         ],
         "ResponseType": "NoResponse"
       },
@@ -902,15 +1937,44 @@
         "Id": 153,
         "Template": "ALTIMETER [altim]",
         "Parameters": [
-          { "Name": "altim", "Type": "Altimeter" }
+          {
+            "Name": "altim",
+            "Type": "Altimeter"
+          }
         ],
         "ResponseType": "Roger"
       },
       {
-        "Id": 157,
-        "Template": "CHECK STUCK MICROPHONE ON [freq]",
+        "Id": 154,
+        "Template": "RADAR SERVICES TERMINATED",
+        "Parameters": [],
+        "ResponseType": "NoResponse"
+      },
+      {
+        "Id": 155,
+        "Template": "RADAR CONTACT [pos]",
         "Parameters": [
-          { "Name": "freq", "Type": "Frequency" }
+          {
+            "Name": "pos",
+            "Type": "Position"
+          }
+        ],
+        "ResponseType": "NoResponse"
+      },
+      {
+        "Id": 156,
+        "Template": "RADAR CONTACT LOST ATS",
+        "Parameters": [],
+        "ResponseType": "NoResponse"
+      },
+      {
+        "Id": 157,
+        "Template": "CHECK STUCK MICROPHONE [freq]",
+        "Parameters": [
+          {
+            "Name": "freq",
+            "Type": "Frequency"
+          }
         ],
         "ResponseType": "NoResponse"
       },
@@ -918,7 +1982,10 @@
         "Id": 158,
         "Template": "ATIS [atis]",
         "Parameters": [
-          { "Name": "atis", "Type": "AtisCode" }
+          {
+            "Name": "atis",
+            "Type": "AtisCode"
+          }
         ],
         "ResponseType": "Roger"
       },
@@ -926,7 +1993,10 @@
         "Id": 160,
         "Template": "NEXT DATA AUTHORITY [icao]",
         "Parameters": [
-          { "Name": "icao", "Type": "FacilityDesignation" }
+          {
+            "Name": "icao",
+            "Type": "FacilityDesignation"
+          }
         ],
         "ResponseType": "NoResponse"
       },
@@ -937,8 +2007,20 @@
         "ResponseType": "NoResponse"
       },
       {
+        "Id": 162,
+        "Template": "SERVICE UNAVAILABLE",
+        "Parameters": [],
+        "ResponseType": "NoResponse"
+      },
+      {
         "Id": 164,
         "Template": "WHEN READY",
+        "Parameters": [],
+        "ResponseType": "NoResponse"
+      },
+      {
+        "Id": 165,
+        "Template": "THEN",
         "Parameters": [],
         "ResponseType": "NoResponse"
       },
@@ -955,18 +2037,41 @@
         "ResponseType": "NoResponse"
       },
       {
+        "Id": 168,
+        "Template": "DISREGARD",
+        "Parameters": [],
+        "ResponseType": "NoResponse"
+      },
+      {
         "Id": 169,
         "Template": "[freetext]",
         "Parameters": [
-          { "Name": "freetext", "Type": "FreeText" }
+          {
+            "Name": "freetext",
+            "Type": "FreeText"
+          }
         ],
         "ResponseType": "Roger"
+      },
+      {
+        "Id": 170,
+        "Template": "(EMERGENCY) [freetext]",
+        "Parameters": [
+          {
+            "Name": "freetext",
+            "Type": "FreeText"
+          }
+        ],
+        "ResponseType": "NoResponse"
       },
       {
         "Id": 171,
         "Template": "CLIMB AT [vert] MINIMUM",
         "Parameters": [
-          { "Name": "vert", "Type": "VerticalRate" }
+          {
+            "Name": "vert",
+            "Type": "VerticalRate"
+          }
         ],
         "ResponseType": "WilcoUnable"
       },
@@ -974,7 +2079,10 @@
         "Id": 172,
         "Template": "CLIMB AT [vert] MAXIMUM",
         "Parameters": [
-          { "Name": "vert", "Type": "VerticalRate" }
+          {
+            "Name": "vert",
+            "Type": "VerticalRate"
+          }
         ],
         "ResponseType": "WilcoUnable"
       },
@@ -982,7 +2090,10 @@
         "Id": 173,
         "Template": "DESCEND AT [vert] MINIMUM",
         "Parameters": [
-          { "Name": "vert", "Type": "VerticalRate" }
+          {
+            "Name": "vert",
+            "Type": "VerticalRate"
+          }
         ],
         "ResponseType": "WilcoUnable"
       },
@@ -990,9 +2101,35 @@
         "Id": 174,
         "Template": "DESCEND AT [vert] MAXIMUM",
         "Parameters": [
-          { "Name": "vert", "Type": "VerticalRate" }
+          {
+            "Name": "vert",
+            "Type": "VerticalRate"
+          }
         ],
         "ResponseType": "WilcoUnable"
+      },
+      {
+        "Id": 175,
+        "Template": "REPORT REACHING [lev]",
+        "Parameters": [
+          {
+            "Name": "lev",
+            "Type": "Level"
+          }
+        ],
+        "ResponseType": "NoResponse"
+      },
+      {
+        "Id": 176,
+        "Template": "MAINTAIN OWN SEPARATION AND VMC",
+        "Parameters": [],
+        "ResponseType": "WilcoUnable"
+      },
+      {
+        "Id": 177,
+        "Template": "AT PILOTS DISCRETION",
+        "Parameters": [],
+        "ResponseType": "NoResponse"
       },
       {
         "Id": 179,
@@ -1001,18 +2138,66 @@
         "ResponseType": "WilcoUnable"
       },
       {
+        "Id": 180,
+        "Template": "REPORT REACHING BLOCK [lev] TO [lev2]",
+        "Parameters": [
+          {
+            "Name": "lev",
+            "Type": "Level"
+          },
+          {
+            "Name": "lev2",
+            "Type": "Level"
+          }
+        ],
+        "ResponseType": "NoResponse"
+      },
+      {
         "Id": 181,
         "Template": "REPORT DISTANCE [to/from] [pos]",
         "Parameters": [
-          { "Name": "to/from", "Type": "ToFrom" },
-          { "Name": "pos", "Type": "Position" }
+          {
+            "Name": "to/from",
+            "Type": "ToFrom"
+          },
+          {
+            "Name": "pos",
+            "Type": "Position"
+          }
+        ],
+        "ResponseType": "NoResponse"
+      },
+      {
+        "Id": 182,
+        "Template": "CONFIRM ATIS CODE",
+        "Parameters": [],
+        "ResponseType": "NoResponse"
+      },
+      {
+        "Id": 192,
+        "Template": "NO REPORTED IFR TRAFFIC",
+        "Parameters": [],
+        "ResponseType": "NoResponse"
+      },
+      {
+        "Id": 197,
+        "Template": "REPORT RADIAL AND DISTANCE FROM [pos]",
+        "Parameters": [
+          {
+            "Name": "pos",
+            "Type": "Position"
+          }
         ],
         "ResponseType": "NoResponse"
       }
     ],
     "PermanentMessages": [
-      { "MessageId": 147 },
-      { "MessageId": 123 },
+      {
+        "MessageId": 147
+      },
+      {
+        "MessageId": 123
+      },
       {
         "MessageId": 169,
         "DefaultParameters": {
@@ -1020,58 +2205,201 @@
         },
         "ResponseType": "Roger"
       },
-      { "MessageId": 121 },
-      { "MessageId": 118 },
-      { "MessageId": 161 },
-      { "MessageId": 20 },
-      { "MessageId": 129 }
+      {
+        "MessageId": 121
+      },
+      {
+        "MessageId": 118
+      },
+      {
+        "MessageId": 161
+      },
+      {
+        "MessageId": 20
+      },
+      {
+        "MessageId": 129
+      }
     ],
     "Groups": [
       {
         "Name": "LEVEL",
         "Messages": [
-          { "MessageId": 19 },
-          { "MessageId": 20 },
-          { "MessageId": 164 },
-          { "MessageId": 26 },
-          { "MessageId": 27 },
-          { "MessageId": 129 },
-          { "MessageId": 23 },
-          { "MessageId": 28 },
-          { "MessageId": 29 },
-          { "MessageId": 128 },
-          { "MessageId": 135 },
-          { "MessageId": 171 },
-          { "MessageId": 172 },
-          { "MessageId": 173 },
-          { "MessageId": 174 },
-          { "MessageId": 36 },
-          { "MessageId": 37 },
-          { "MessageId": 38 },
-          { "MessageId": 39 }
+          {
+            "MessageId": 19
+          },
+          {
+            "MessageId": 20
+          },
+          {
+            "MessageId": 164
+          },
+          {
+            "MessageId": 26
+          },
+          {
+            "MessageId": 27
+          },
+          {
+            "MessageId": 129
+          },
+          {
+            "MessageId": 23
+          },
+          {
+            "MessageId": 28
+          },
+          {
+            "MessageId": 29
+          },
+          {
+            "MessageId": 128
+          },
+          {
+            "MessageId": 135
+          },
+          {
+            "MessageId": 171
+          },
+          {
+            "MessageId": 172
+          },
+          {
+            "MessageId": 173
+          },
+          {
+            "MessageId": 174
+          },
+          {
+            "MessageId": 36
+          },
+          {
+            "MessageId": 37
+          },
+          {
+            "MessageId": 38
+          },
+          {
+            "MessageId": 39
+          },
+          {
+            "MessageId": 33
+          },
+          {
+            "MessageId": 34
+          },
+          {
+            "MessageId": 35
+          }
         ]
       },
       {
         "Name": "ROUTE",
         "Messages": [
-          { "MessageId": 137 },
-          { "MessageId": 74 },
-          { "MessageId": 77 },
-          { "MessageId": 79 },
-          { "MessageId": 83 },
-          { "MessageId": 167 },
-          { "MessageId": 80 },
-          { "MessageId": 72 },
-          { "MessageId": 76 },
-          { "MessageId": 78 },
-          { "MessageId": 92 },
-          { "MessageId": 91 },
-          { "MessageId": 81 },
-          { "MessageId": 84 }
+          {
+            "MessageId": 137
+          },
+          {
+            "MessageId": 74
+          },
+          {
+            "MessageId": 77
+          },
+          {
+            "MessageId": 79
+          },
+          {
+            "MessageId": 83
+          },
+          {
+            "MessageId": 167
+          },
+          {
+            "MessageId": 80
+          },
+          {
+            "MessageId": 72
+          },
+          {
+            "MessageId": 76
+          },
+          {
+            "MessageId": 78
+          },
+          {
+            "MessageId": 92
+          },
+          {
+            "MessageId": 91
+          },
+          {
+            "MessageId": 81
+          },
+          {
+            "MessageId": 84
+          }
         ]
       },
       {
-        "Name": "TRANSFR",
+        "Name": "ISL ARR",
+        "Messages": [
+          {
+            "MessageId": 177
+          },
+          {
+            "MessageId": 23
+          },
+          {
+            "MessageId": 169,
+            "DefaultParameters": {
+              "freetext": "CRUISE F055"
+            },
+            "ResponseType": "Roger"
+          },
+          {
+            "MessageId": 169,
+            "DefaultParameters": {
+              "freetext": "TO THE <NAME> AIRPORT"
+            },
+            "ResponseType": "Roger"
+          },
+          {
+            "MessageId": 169,
+            "DefaultParameters": {
+              "freetext": "REPORT ARRIVAL"
+            },
+            "ResponseType": "Roger"
+          },
+          {
+            "MessageId": 175
+          },
+          {
+            "MessageId": 128
+          }
+        ]
+      },
+      {
+        "Name": "ISL DEP",
+        "Messages": [
+          {
+            "MessageId": 73
+          },
+          {
+            "MessageId": 83
+          },
+          {
+            "MessageId": 74
+          },
+          {
+            "MessageId": 160
+          },
+          {
+            "MessageId": 117
+          }
+        ]
+      },
+      {
+        "Name": "NDA",
         "Messages": [
           {
             "MessageId": 169,
@@ -1080,45 +2408,106 @@
             },
             "ResponseType": "Roger"
           },
-          { "MessageId": 160 },
-          { "MessageId": 118 },
-          { "MessageId": 121 },
-          { "MessageId": 117 },
-          { "MessageId": 120 },
-          { "MessageId": 119 },
-          { "MessageId": 122 },
-          { "MessageId": 161 }
+          {
+            "MessageId": 160
+          },
+          {
+            "MessageId": 118
+          },
+          {
+            "MessageId": 121
+          },
+          {
+            "MessageId": 117
+          },
+          {
+            "MessageId": 120
+          },
+          {
+            "MessageId": 119
+          },
+          {
+            "MessageId": 122
+          },
+          {
+            "MessageId": 161
+          },
+          {
+            "MessageId": 162
+          }
         ]
       },
       {
         "Name": "CROSS",
         "Messages": [
-          { "MessageId": 47 },
-          { "MessageId": 48 },
-          { "MessageId": 51 },
-          { "MessageId": 52 },
-          { "MessageId": 53 },
-          { "MessageId": 55 },
-          { "MessageId": 56 },
-          { "MessageId": 57 },
-          { "MessageId": 50 },
-          { "MessageId": 54 },
-          { "MessageId": 62 },
-          { "MessageId": 58 },
-          { "MessageId": 59 },
-          { "MessageId": 60 },
-          { "MessageId": 61 },
-          { "MessageId": 62 },
-          { "MessageId": 63 }
+          {
+            "MessageId": 47
+          },
+          {
+            "MessageId": 48
+          },
+          {
+            "MessageId": 51
+          },
+          {
+            "MessageId": 52
+          },
+          {
+            "MessageId": 53
+          },
+          {
+            "MessageId": 55
+          },
+          {
+            "MessageId": 56
+          },
+          {
+            "MessageId": 57
+          },
+          {
+            "MessageId": 50
+          },
+          {
+            "MessageId": 54
+          },
+          {
+            "MessageId": 62
+          },
+          {
+            "MessageId": 58
+          },
+          {
+            "MessageId": 59
+          },
+          {
+            "MessageId": 60
+          },
+          {
+            "MessageId": 61
+          },
+          {
+            "MessageId": 62
+          },
+          {
+            "MessageId": 63
+          }
         ]
       },
       {
-        "Name": "ENQ/TXT",
+        "Name": "WHEN",
         "Messages": [
-          { "MessageId": 169 },
-          { "MessageId": 148 },
-          { "MessageId": 149 },
-          { "MessageId": 150 },
+          {
+            "MessageId": 169
+          },
+          {
+            "MessageId": 148
+          },
+          {
+            "MessageId": 149
+          },
+          {
+            "MessageId": 150
+          },
           {
             "MessageId": 169,
             "DefaultParameters": {
@@ -1133,15 +2522,23 @@
             },
             "ResponseType": "Roger"
           },
-          { "MessageId": 151 }
+          {
+            "MessageId": 151
+          }
         ]
       },
       {
         "Name": "SURV",
         "Messages": [
-          { "MessageId": 123 },
-          { "MessageId": 144 },
-          { "MessageId": 179 },
+          {
+            "MessageId": 123
+          },
+          {
+            "MessageId": 144
+          },
+          {
+            "MessageId": 179
+          },
           {
             "MessageId": 169,
             "DefaultParameters": {
@@ -1163,38 +2560,94 @@
             },
             "ResponseType": "Roger"
           },
-          { "MessageId": 125 },
-          { "MessageId": 126 },
-          { "MessageId": 124 }
+          {
+            "MessageId": 125
+          },
+          {
+            "MessageId": 126
+          },
+          {
+            "MessageId": 124
+          }
         ]
       },
       {
         "Name": "EXPECT",
         "Messages": [
-          { "MessageId": 7 },
-          { "MessageId": 8 },
-          { "MessageId": 9 },
-          { "MessageId": 10 },
-          { "MessageId": 99 },
-          { "MessageId": 93 },
-          { "MessageId": 70 },
-          { "MessageId": 71 },
-          { "MessageId": 100 },
-          { "MessageId": 101 },
-          { "MessageId": 102 }
+          {
+            "MessageId": 7
+          },
+          {
+            "MessageId": 8
+          },
+          {
+            "MessageId": 9
+          },
+          {
+            "MessageId": 10
+          },
+          {
+            "MessageId": 11
+          },
+          {
+            "MessageId": 12
+          },
+          {
+            "MessageId": 17
+          },
+          {
+            "MessageId": 18
+          },
+          {
+            "MessageId": 99
+          },
+          {
+            "MessageId": 93
+          },
+          {
+            "MessageId": 70
+          },
+          {
+            "MessageId": 71
+          },
+          {
+            "MessageId": 100
+          },
+          {
+            "MessageId": 101
+          },
+          {
+            "MessageId": 102
+          }
         ]
       },
       {
-        "Name": "WX/OFF",
+        "Name": "WX DEV",
         "Messages": [
-          { "MessageId": 82 },
-          { "MessageId": 127 },
-          { "MessageId": 75 },
-          { "MessageId": 68 },
-          { "MessageId": 69 },
-          { "MessageId": 64 },
-          { "MessageId": 65 },
-          { "MessageId": 66 },
+          {
+            "MessageId": 82
+          },
+          {
+            "MessageId": 127
+          },
+          {
+            "MessageId": 75
+          },
+          {
+            "MessageId": 68
+          },
+          {
+            "MessageId": 69
+          },
+          {
+            "MessageId": 64
+          },
+          {
+            "MessageId": 65
+          },
+          {
+            "MessageId": 66
+          },
           {
             "MessageId": 169,
             "DefaultParameters": {
@@ -1202,22 +2655,44 @@
             },
             "ResponseType": "NoResponse"
           },
-          { "MessageId": 96 },
-          { "MessageId": 94 },
-          { "MessageId": 97 },
-          { "MessageId": 167 },
-          { "MessageId": 74 },
-          { "MessageId": 72 },
-          { "MessageId": 146 },
-          { "MessageId": 95 },
-          { "MessageId": 98 }
+          {
+            "MessageId": 96
+          },
+          {
+            "MessageId": 94
+          },
+          {
+            "MessageId": 97
+          },
+          {
+            "MessageId": 167
+          },
+          {
+            "MessageId": 74
+          },
+          {
+            "MessageId": 72
+          },
+          {
+            "MessageId": 146
+          },
+          {
+            "MessageId": 95
+          },
+          {
+            "MessageId": 98
+          }
         ]
       },
       {
         "Name": "COMM",
         "Messages": [
-          { "MessageId": 117 },
-          { "MessageId": 120 },
+          {
+            "MessageId": 117
+          },
+          {
+            "MessageId": 120
+          },
           {
             "MessageId": 169,
             "DefaultParameters": {
@@ -1232,7 +2707,9 @@
             },
             "ResponseType": "Roger"
           },
-          { "MessageId": 157 }
+          {
+            "MessageId": 157
+          }
         ]
       },
       {
@@ -1259,29 +2736,65 @@
             },
             "ResponseType": "Roger"
           },
-          { "MessageId": 136 },
-          { "MessageId": 106 },
-          { "MessageId": 108 },
-          { "MessageId": 109 },
-          { "MessageId": 116 },
-          { "MessageId": 55 },
-          { "MessageId": 151 },
-          { "MessageId": 107 },
-          { "MessageId": 110 },
-          { "MessageId": 111 },
-          { "MessageId": 112 },
-          { "MessageId": 113 },
-          { "MessageId": 114 }
+          {
+            "MessageId": 136
+          },
+          {
+            "MessageId": 106
+          },
+          {
+            "MessageId": 108
+          },
+          {
+            "MessageId": 109
+          },
+          {
+            "MessageId": 116
+          },
+          {
+            "MessageId": 55
+          },
+          {
+            "MessageId": 151
+          },
+          {
+            "MessageId": 107
+          },
+          {
+            "MessageId": 110
+          },
+          {
+            "MessageId": 111
+          },
+          {
+            "MessageId": 112
+          },
+          {
+            "MessageId": 113
+          },
+          {
+            "MessageId": 114
+          }
         ]
       },
       {
-        "Name": "CFM/RPT",
+        "Name": "RPT POS",
         "Messages": [
-          { "MessageId": 147 },
-          { "MessageId": 133 },
-          { "MessageId": 135 },
-          { "MessageId": 136 },
-          { "MessageId": 137 },
+          {
+            "MessageId": 147
+          },
+          {
+            "MessageId": 133
+          },
+          {
+            "MessageId": 135
+          },
+          {
+            "MessageId": 136
+          },
+          {
+            "MessageId": 137
+          },
           {
             "MessageId": 169,
             "DefaultParameters": {
@@ -1310,18 +2823,42 @@
             },
             "ResponseType": "NoResponse"
           },
-          { "MessageId": 141 },
-          { "MessageId": 181 },
-          { "MessageId": 140 },
-          { "MessageId": 142 },
-          { "MessageId": 138 },
-          { "MessageId": 129 },
-          { "MessageId": 127 },
-          { "MessageId": 139 },
-          { "MessageId": 143 },
-          { "MessageId": 144 },
-          { "MessageId": 130 },
-          { "MessageId": 131 },
+          {
+            "MessageId": 141
+          },
+          {
+            "MessageId": 181
+          },
+          {
+            "MessageId": 140
+          },
+          {
+            "MessageId": 142
+          },
+          {
+            "MessageId": 138
+          },
+          {
+            "MessageId": 129
+          },
+          {
+            "MessageId": 127
+          },
+          {
+            "MessageId": 139
+          },
+          {
+            "MessageId": 143
+          },
+          {
+            "MessageId": 144
+          },
+          {
+            "MessageId": 130
+          },
+          {
+            "MessageId": 131
+          },
           {
             "MessageId": 169,
             "DefaultParameters": {
@@ -1329,15 +2866,61 @@
             },
             "ResponseType": "NoResponse"
           },
-          { "MessageId": 146 }
+          {
+            "MessageId": 146
+          }
+        ]
+      },
+      {
+        "Name": "UNA",
+        "Messages": [
+          {
+            "MessageId": 0
+          },
+          {
+            "MessageId": 166
+          },
+          {
+            "MessageId": 167
+          },
+          {
+            "MessageId": 192
+          },
+          {
+            "MessageId": 169,
+            "DefaultParameters": {
+              "freetext": "UNABLE REQUESTED ALTITUDE DUE TO TRAFFIC"
+            },
+            "ResponseType": "Roger"
+          },
+          {
+            "MessageId": 169,
+            "DefaultParameters": {
+              "freetext": "WX DEVIATION NOT AVAILABLE AT CURRENT ALTITUDE OR ROUTE"
+            },
+            "ResponseType": "Roger"
+          },
+          {
+            "MessageId": 169,
+            "DefaultParameters": {
+              "freetext": "SAY INTENTIONS"
+            },
+            "ResponseType": "Roger"
+          }
         ]
       },
       {
         "Name": "MISC",
         "Messages": [
-          { "MessageId": 0 },
-          { "MessageId": 166 },
-          { "MessageId": 167 },
+          {
+            "MessageId": 0
+          },
+          {
+            "MessageId": 166
+          },
+          {
+            "MessageId": 167
+          },
           {
             "MessageId": 169,
             "DefaultParameters": {
@@ -1401,15 +2984,33 @@
             },
             "ResponseType": "NoResponse"
           },
-          { "MessageId": 164 },
-          { "MessageId": 1 },
-          { "MessageId": 3 },
-          { "MessageId": 4 },
-          { "MessageId": 5 },
-          { "MessageId": 2 },
-          { "MessageId": 158 },
-          { "MessageId": 153 },
-          { "MessageId": 131 }
+          {
+            "MessageId": 164
+          },
+          {
+            "MessageId": 1
+          },
+          {
+            "MessageId": 3
+          },
+          {
+            "MessageId": 4
+          },
+          {
+            "MessageId": 5
+          },
+          {
+            "MessageId": 2
+          },
+          {
+            "MessageId": 158
+          },
+          {
+            "MessageId": 153
+          },
+          {
+            "MessageId": 131
+          }
         ]
       },
       {
@@ -1429,11 +3030,21 @@
             },
             "ResponseType": "Roger"
           },
-          { "MessageId": 38 },
-          { "MessageId": 39 },
-          { "MessageId": 36 },
-          { "MessageId": 37 },
-          { "MessageId": 157 },
+          {
+            "MessageId": 38
+          },
+          {
+            "MessageId": 39
+          },
+          {
+            "MessageId": 36
+          },
+          {
+            "MessageId": 37
+          },
+          {
+            "MessageId": 157
+          },
           {
             "MessageId": 169,
             "DefaultParameters": {
@@ -1462,9 +3073,15 @@
             },
             "ResponseType": "Roger"
           },
-          { "MessageId": 131 },
-          { "MessageId": 117 },
-          { "MessageId": 98 }
+          {
+            "MessageId": 131
+          },
+          {
+            "MessageId": 117
+          },
+          {
+            "MessageId": 98
+          }
         ]
       }
     ]

@@ -7,6 +7,8 @@ let useMockData = false;
 // Conflict Worker
 let conflictWorker = null;
 let fdrCache = new Map(); // Cache FDRs received from plugin
+let afnCache = new Map(); // AFN entries keyed by callsign
+let afnSelectedCallsign = null;
 
 // Window dragging state
 let dragState = {
@@ -21,7 +23,9 @@ document.addEventListener('DOMContentLoaded', () => {
     initWindowDragging();
     initWindowActivation();
     initButtonHandlers();
+    initSectorQueueMenus();
     initConflictWorker();
+    initAfnWindow();
     initSectorQueueClock();
     connectWebSocket();
     
@@ -154,6 +158,199 @@ function initButtonHandlers() {
             }
         }
     });
+
+    // AFN close button
+    document.getElementById('afn-btn-close')?.addEventListener('click', () => {
+        const win = document.getElementById('afn-window');
+        if (win) {
+            win.style.display = 'none';
+        }
+    });
+}
+
+function initSectorQueueMenus() {
+    const openMenu = document.getElementById('sq-open-menu');
+    const dropdownItems = document.querySelectorAll('#sq-open-dropdown .sq-dropdown-item');
+
+    if (openMenu) {
+        openMenu.addEventListener('click', (e) => {
+            e.stopPropagation();
+            openMenu.classList.toggle('open');
+        });
+    }
+
+    dropdownItems.forEach((item) => {
+        item.addEventListener('click', (e) => {
+            e.stopPropagation();
+            const action = item.dataset.action;
+            if (action === 'open-afn') {
+                openAfnWindow();
+                return;
+            }
+
+            const label = item.querySelector('span')?.textContent || 'Selected menu item';
+            enqueueSectorQueueInfo(`${label} window is not implemented in this preview.`);
+            closeOpenDropdown();
+        });
+    });
+
+    document.addEventListener('keydown', (e) => {
+        if (e.key === 'F4') {
+            e.preventDefault();
+            openAfnWindow();
+        }
+    });
+
+    document.addEventListener('click', (e) => {
+        if (openMenu && !openMenu.contains(e.target)) {
+            closeOpenDropdown();
+        }
+    });
+}
+
+function closeOpenDropdown() {
+    const openMenu = document.getElementById('sq-open-menu');
+    if (openMenu) {
+        openMenu.classList.remove('open');
+    }
+}
+
+function openAfnWindow() {
+    const afnWindow = document.getElementById('afn-window');
+    if (!afnWindow) {
+        return;
+    }
+
+    afnWindow.style.display = 'block';
+    activateWindow(afnWindow);
+    closeOpenDropdown();
+}
+
+function initAfnWindow() {
+    renderAfnWindow();
+}
+
+function afnSelectEntry(el) {
+    if (typeof el === 'string') {
+        afnSelectedCallsign = el;
+    } else {
+        afnSelectedCallsign = el?.dataset?.callsign || el?.dataset?.acid || null;
+    }
+
+    renderAfnWindow();
+}
+
+function formatZuluTime(dateObj) {
+    const h = String(dateObj.getUTCHours()).padStart(2, '0');
+    const m = String(dateObj.getUTCMinutes()).padStart(2, '0');
+    return `${h}${m}Z`;
+}
+
+function upsertAfnEntryFromFlightPlan(data) {
+    if (!data?.Callsign) return;
+
+    const key = data.Callsign;
+    const existing = afnCache.get(key) || {};
+    const now = new Date();
+
+    const atcStatus = data.AfnAtcStatus || existing.atcStatus || 'NOT_CONNECTED';
+    const adsStatus = data.AfnAdsStatus || existing.adsStatus || (data.AfnHasAdsc ? 'CONNECTED' : 'NOT_REQUESTED');
+    const xfrStatus = data.AfnXfrStatus || existing.xfrStatus || (atcStatus === 'CONNECTED_NOT_CDA' ? 'NDA' : '');
+    const nextCenter = data.AfnNextCenter || data.ControllingSector || existing.nextCenter || '';
+
+    afnCache.set(key, {
+        callsign: key,
+        logonEpoch: existing.logonEpoch || now.getTime(),
+        logonDisplay: existing.logonDisplay || formatZuluTime(now),
+        reg: data.AfnRegistration || data.Registration || data.Tail || existing.reg || '',
+        xfrStatus,
+        nextCenter,
+        adsStatus,
+        atcStatus
+    });
+
+    if (!afnSelectedCallsign) {
+        afnSelectedCallsign = key;
+    }
+}
+
+function upsertAfnEntryFromFdr(fdr) {
+    if (!fdr?.Callsign) return;
+    const key = fdr.Callsign;
+    const existing = afnCache.get(key) || {};
+    const now = new Date();
+
+    afnCache.set(key, {
+        callsign: key,
+        logonEpoch: existing.logonEpoch || now.getTime(),
+        logonDisplay: existing.logonDisplay || formatZuluTime(now),
+        reg: existing.reg || '',
+        xfrStatus: existing.xfrStatus || '',
+        nextCenter: existing.nextCenter || '',
+        adsStatus: existing.adsStatus || (fdr.hasDatalink ? 'CONNECTED' : 'NOT_REQUESTED'),
+        atcStatus: existing.atcStatus || (fdr.hasDatalink ? 'CONNECTED' : 'NOT_CONNECTED')
+    });
+
+    if (!afnSelectedCallsign) {
+        afnSelectedCallsign = key;
+    }
+}
+
+function buildAfnEntryRow(entry, highlighted) {
+    return `
+        <div class="afn-entry ${highlighted ? 'afn-entry-highlighted' : ''}" data-callsign="${entry.callsign}">
+            <div class="afn-entry-row">
+                <span class="afn-col afn-col-acid">${entry.callsign || ''}</span>
+                <span class="afn-col afn-col-logon">${entry.logonDisplay || ''}</span>
+                <span class="afn-col afn-col-reg">${entry.reg || ''}</span>
+                <span class="afn-col afn-col-xfr">${entry.xfrStatus || ''}</span>
+                <span class="afn-col afn-col-conn">FAN1/2.0 ${entry.adsStatus || 'NOT_CONNECTED'}</span>
+            </div>
+            <div class="afn-entry-row">
+                <span class="afn-col afn-col-acid"></span>
+                <span class="afn-col afn-col-logon"></span>
+                <span class="afn-col afn-col-reg"></span>
+                <span class="afn-col afn-col-xfr">${entry.nextCenter || ''}</span>
+                <span class="afn-col afn-col-conn">FAN1/2.0 ${entry.atcStatus || 'NOT_CONNECTED'}</span>
+            </div>
+        </div>`;
+}
+
+function renderAfnWindow() {
+    const wsArea = document.getElementById('afn-workspace');
+    const mainArea = document.getElementById('afn-main-area');
+    if (!wsArea || !mainArea) return;
+
+    const entries = Array.from(afnCache.values()).sort((a, b) => a.logonEpoch - b.logonEpoch);
+
+    if (!entries.length) {
+        const empty = '<div class="afn-entry afn-entry-blank"><div class="afn-entry-row"><span class="afn-col afn-col-conn">No AFN entries from bridge.</span></div><div class="afn-entry-row"></div></div>';
+        wsArea.innerHTML = empty;
+        mainArea.innerHTML = empty;
+        return;
+    }
+
+    const selected = entries.find(e => e.callsign === afnSelectedCallsign) || entries[0];
+    afnSelectedCallsign = selected.callsign;
+
+    wsArea.innerHTML = buildAfnEntryRow(selected, true);
+    mainArea.innerHTML = entries.map(e => buildAfnEntryRow(e, e.callsign === selected.callsign)).join('');
+
+    document.querySelectorAll('#afn-workspace .afn-entry, #afn-main-area .afn-entry').forEach((row) => {
+        row.addEventListener('click', () => afnSelectEntry(row.dataset.callsign));
+    });
+}
+
+function enqueueSectorQueueInfo(message) {
+    const queue = document.getElementById('sq-queue-list');
+    if (!queue) {
+        return;
+    }
+
+    const row = document.createElement('div');
+    row.className = 'sq-queue-item';
+    row.textContent = message;
+    queue.prepend(row);
 }
 
 function clearFlightPlanForm() {
@@ -238,6 +435,10 @@ function connectWebSocket() {
                     // C# plugin requests a conflict probe
                     handleProbeRequest(data);
                     break;
+                case 'ProbeVirtualFDR':
+                    // C# plugin requests a virtual FDR probe (no real FDR created)
+                    handleProbeVirtualFDR(data);
+                    break;
                 case 'InhibitionAreas':
                     handleInhibitionAreas(data);
                     break;
@@ -316,6 +517,8 @@ function handleAltitudeUpdate(data) {
 
 function handleFlightPlanUpdate(data) {
     currentFDR = data;
+    upsertAfnEntryFromFlightPlan(data);
+    renderAfnWindow();
     console.log(`[FlightPlanUpdate] Received for ${data.Callsign} (state=${data.State}) - NOTE: this only updates the form UI, NOT the conflict worker`);
     
     // Update status header
@@ -575,6 +778,9 @@ function initConflictWorker() {
                 case 'conflictResults':
                     handleWorkerConflictResults(data);
                     break;
+                case 'probeVirtualResults':
+                    handleProbeVirtualResults(data);
+                    break;
             }
         };
         
@@ -688,6 +894,8 @@ function handleFDRBulkUpdate(data) {
     // Update cache
     fdrCache.clear();
     fdrs.forEach(fdr => fdrCache.set(fdr.Callsign, fdr));
+    fdrs.forEach(upsertAfnEntryFromFdr);
+    renderAfnWindow();
     
     // Transform to worker format and send
     const workerFdrs = fdrs.map(fdr => ({
@@ -767,6 +975,8 @@ function handleFDRUpdate(data) {
     console.log(`[FDRUpdate] Feeding worker: ${fdr.Callsign} | state=${fdr.State} | CFL=${fdr.CFL} RFL=${fdr.RFL} | waypoints=${fdr.RouteWaypoints?.length || 0}`);
     
     fdrCache.set(fdr.Callsign, fdr);
+    upsertAfnEntryFromFdr(fdr);
+    renderAfnWindow();
     
     conflictWorker.postMessage({
         type: 'updateFDR',
@@ -793,9 +1003,12 @@ function handleFDRUpdate(data) {
 }
 
 function handleFDRRemove(data) {
-    if (!conflictWorker) return;
-    
     fdrCache.delete(data.Callsign);
+    afnCache.delete(data.Callsign);
+    if (afnSelectedCallsign === data.Callsign) afnSelectedCallsign = null;
+    renderAfnWindow();
+
+    if (!conflictWorker) return;
     
     conflictWorker.postMessage({
         type: 'removeFDR',
@@ -806,6 +1019,81 @@ function handleFDRRemove(data) {
 function requestConflictProbe() {
     if (conflictWorker) {
         conflictWorker.postMessage({ type: 'requestProbe' });
+    }
+}
+
+// Handle virtual FDR probe request from C# plugin
+function handleProbeVirtualFDR(data) {
+    if (!conflictWorker) {
+        console.warn('[ProbeVirtualFDR] No conflict worker available!');
+        return;
+    }
+
+    console.log(`[ProbeVirtualFDR] Probing virtual FDR for ${data.Callsign} with CFL=${data.VirtualFDR?.CFL}`);
+
+    conflictWorker.postMessage({
+        type: 'probeVirtualFDR',
+        data: {
+            originalCallsign: data.Callsign,
+            virtualFDR: {
+                callsign: data.Callsign,
+                state: data.VirtualFDR.State,
+                cfl: data.VirtualFDR.CFL,
+                rfl: data.VirtualFDR.RFL,
+                route: data.VirtualFDR.Route,
+                routeWaypoints: data.VirtualFDR.RouteWaypoints || [],
+                atd: data.VirtualFDR.ATD,
+                depAirport: data.VirtualFDR.DepAirport,
+                desAirport: data.VirtualFDR.DesAirport,
+                aircraftType: data.VirtualFDR.AircraftType,
+                groundSpeed: data.VirtualFDR.GroundSpeed,
+                tas: data.VirtualFDR.TAS,
+                rnp4: data.VirtualFDR.rnp4,
+                rnp10: data.VirtualFDR.rnp10,
+                hasDatalink: data.VirtualFDR.hasDatalink,
+                rvsmApproved: data.VirtualFDR.rvsmApproved,
+                isJet: data.VirtualFDR.isJet
+            }
+        }
+    });
+}
+
+// Handle virtual probe results from worker — relay back to C# plugin
+function handleProbeVirtualResults(data) {
+    console.log(`[ProbeVirtualResults] ${data.callsign}: ${data.conflicts.all?.length || 0} conflict(s)`);
+
+    if (ws && ws.readyState === WebSocket.OPEN) {
+        ws.send(JSON.stringify({
+            Type: 'ProbeVirtualResults',
+            Callsign: data.callsign,
+            Conflicts: (data.conflicts.all || []).map(c => ({
+                IntruderCallsign: c.intruderCallsign,
+                ActiveCallsign: c.activeCallsign,
+                Status: c.status,
+                ConflictType: c.conflictType,
+                EarliestLos: c.earliestLos,
+                LatestLos: c.latestLos,
+                LateralSep: c.latSep,
+                VerticalSep: c.verticalSep,
+                VerticalAct: c.verticalAct,
+                TrkAngle: c.trkAngle,
+                StartLat: c.startLat,
+                StartLon: c.startLon,
+                EndLat: c.endLat,
+                EndLon: c.endLon
+            })),
+            ProposedProfile: {
+                RouteWaypoints: (data.proposedProfile?.routeWaypoints || []).map(wp => ({
+                    Name: wp.name,
+                    Lat: wp.lat,
+                    Lon: wp.lon,
+                    Eto: wp.eto
+                }))
+            },
+            ActualCount: data.conflicts.actual?.length || 0,
+            ImminentCount: data.conflicts.imminent?.length || 0,
+            AdvisoryCount: data.conflicts.advisory?.length || 0
+        }));
     }
 }
 

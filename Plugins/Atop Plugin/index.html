@@ -18,13 +18,51 @@
         
         <!-- Menu Bar -->
         <div class="sq-menubar">
-            <span class="sq-menu-item"><u>O</u>pen</span>
+            <div class="sq-menu-item sq-menu-dropdown" id="sq-open-menu">
+                <span><u>O</u>pen</span>
+                <div class="sq-dropdown-menu" id="sq-open-dropdown">
+                    <div class="sq-dropdown-item" data-action="open-aircraft-messages">
+                        <span>Aircraft Messages</span><span class="sq-shortcut">F8</span>
+                    </div>
+                    <div class="sq-dropdown-separator"></div>
+                    <div class="sq-dropdown-item" data-action="open-recycle-bin">
+                        <span>Recycle Bin</span><span class="sq-shortcut"></span>
+                    </div>
+                    <div class="sq-dropdown-item" data-action="open-afn">
+                        <span>AFN</span><span class="sq-shortcut">F4</span>
+                    </div>
+                    <div class="sq-dropdown-item" data-action="open-clearance">
+                        <span>Clearance</span><span class="sq-shortcut">F5</span>
+                    </div>
+                    <div class="sq-dropdown-item" data-action="open-coordination">
+                        <span>Coordination</span><span class="sq-shortcut">F6</span>
+                    </div>
+                    <div class="sq-dropdown-item" data-action="open-fpea">
+                        <span>FPEA</span><span class="sq-shortcut">F9</span>
+                    </div>
+                    <div class="sq-dropdown-item" data-action="open-mrcc">
+                        <span>MRCC</span><span class="sq-shortcut">F10</span>
+                    </div>
+                    <div class="sq-dropdown-item" data-action="open-repetitive-fps">
+                        <span>Repetitive FPs</span><span class="sq-shortcut"></span>
+                    </div>
+                    <div class="sq-dropdown-item" data-action="open-reserve-restrict">
+                        <span>Reserve/Restrict</span><span class="sq-shortcut"></span>
+                    </div>
+                    <div class="sq-dropdown-item" data-action="open-sector-strips">
+                        <span>Sector Strips</span><span class="sq-shortcut"></span>
+                    </div>
+                    <div class="sq-dropdown-item" data-action="open-scratch-pad">
+                        <span>Scratch Pad</span><span class="sq-shortcut"></span>
+                    </div>
+                </div>
+            </div>
             <span class="sq-menu-item"><u>S</u>tatus</span>
             <span class="sq-menu-item"><u>W</u>eather</span>
             <span class="sq-menu-item"><u>L</u>ists</span>
             <span class="sq-menu-item">Sign</span>
             <span class="sq-menu-spacer"></span>
-            <span class="sq-faa-logo">FAA</span>
+            <span class="sq-zoa-logo">ZOA</span>
         </div>
         
         <!-- Status Area -->
@@ -138,6 +176,139 @@
                     <div id="active-details"></div>
                 </div>
             </div>
+        </div>
+    </div>
+
+    <!-- AFN Window (opened from Sector Queue: Open > AFN / F4) -->
+    <div class="motif-window" id="afn-window" style="left: 120px; top: 110px; width: 720px; display: none;">
+        <div class="motif-titlebar">
+            <span class="motif-title">AFN</span>
+        </div>
+
+        <div class="afn-menubar">
+            <div class="afn-menu-item afn-menu-dropdown" id="afn-menu-initiate">
+                Initiate Connection
+                <div class="afn-dropdown">
+                    <div class="afn-dropdown-item" id="afn-initiate-atc">ATC</div>
+                    <div class="afn-dropdown-item" id="afn-initiate-ads">ADS</div>
+                </div>
+            </div>
+            <div class="afn-menu-item afn-menu-dropdown" id="afn-menu-terminate">
+                Terminate Connection
+                <div class="afn-dropdown">
+                    <div class="afn-dropdown-item" id="afn-terminate-atc">ATC</div>
+                    <div class="afn-dropdown-item" id="afn-terminate-ads">ADS</div>
+                    <div class="afn-dropdown-item" id="afn-terminate-datalink">Data Link</div>
+                </div>
+            </div>
+            <div class="afn-menu-item afn-menu-right" id="afn-menu-help">Help</div>
+        </div>
+
+        <div class="afn-col-headers">
+            <span class="afn-col afn-col-acid">ACID</span>
+            <span class="afn-col afn-col-logon">LOGON TIME</span>
+            <span class="afn-col afn-col-reg">REG #</span>
+            <span class="afn-col afn-col-xfr">XFR STATUS</span>
+            <span class="afn-col afn-col-conn">CONNECTION STATUS</span>
+            <span class="afn-col-headers-pad"></span>
+        </div>
+
+        <div class="afn-workspace" id="afn-workspace">
+            <div class="afn-entry afn-entry-highlighted" id="ws-entry-1" data-acid="UAL836" onclick="afnSelectEntry(this)">
+                <div class="afn-entry-row">
+                    <span class="afn-col afn-col-acid">UAL836</span>
+                    <span class="afn-col afn-col-logon">1823Z</span>
+                    <span class="afn-col afn-col-reg">N78866</span>
+                    <span class="afn-col afn-col-xfr afn-xfr-nda">NDA</span>
+                    <span class="afn-col afn-col-conn afn-cs-initiating">FAN1/2.0 INITIATING</span>
+                </div>
+                <div class="afn-entry-row">
+                    <span class="afn-col afn-col-acid"></span>
+                    <span class="afn-col afn-col-logon"></span>
+                    <span class="afn-col afn-col-reg"></span>
+                    <span class="afn-col afn-col-xfr">KZAK</span>
+                    <span class="afn-col afn-col-conn afn-cs-conn-cda">FAN1/2.0 CONNECTED_CDA</span>
+                </div>
+            </div>
+
+            <div class="afn-entry" id="ws-entry-2" data-acid="JAL008" onclick="afnSelectEntry(this)">
+                <div class="afn-entry-row">
+                    <span class="afn-col afn-col-acid">JAL008</span>
+                    <span class="afn-col afn-col-logon">1705Z</span>
+                    <span class="afn-col afn-col-reg">JA8083</span>
+                    <span class="afn-col afn-col-xfr afn-xfr-comp">COMP</span>
+                    <span class="afn-col afn-col-conn afn-cs-conn-cda">FAN1/2.0 CONNECTED_CDA</span>
+                </div>
+                <div class="afn-entry-row">
+                    <span class="afn-col afn-col-acid"></span>
+                    <span class="afn-col afn-col-logon"></span>
+                    <span class="afn-col afn-col-reg"></span>
+                    <span class="afn-col afn-col-xfr">RJJJ</span>
+                    <span class="afn-col afn-col-conn afn-cs-conn-cda">FAN1/2.0 CONNECTED_CDA</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="afn-area-divider"></div>
+
+        <div class="afn-main-area" id="afn-main-area">
+            <div class="afn-entry" data-acid="UAL836" onclick="afnSelectEntry(this)">
+                <div class="afn-entry-row">
+                    <span class="afn-col afn-col-acid">UAL836</span>
+                    <span class="afn-col afn-col-logon">1823Z</span>
+                    <span class="afn-col afn-col-reg">N78866</span>
+                    <span class="afn-col afn-col-xfr afn-xfr-nda">NDA</span>
+                    <span class="afn-col afn-col-conn afn-cs-initiating">FAN1/2.0 INITIATING</span>
+                </div>
+                <div class="afn-entry-row">
+                    <span class="afn-col afn-col-acid"></span>
+                    <span class="afn-col afn-col-logon"></span>
+                    <span class="afn-col afn-col-reg"></span>
+                    <span class="afn-col afn-col-xfr">KZAK</span>
+                    <span class="afn-col afn-col-conn afn-cs-conn-cda">FAN1/2.0 CONNECTED_CDA</span>
+                </div>
+            </div>
+
+            <div class="afn-entry" data-acid="ANA001" onclick="afnSelectEntry(this)">
+                <div class="afn-entry-row">
+                    <span class="afn-col afn-col-acid">ANA001</span>
+                    <span class="afn-col afn-col-logon">1705Z</span>
+                    <span class="afn-col afn-col-reg">JA8086</span>
+                    <span class="afn-col afn-col-xfr afn-xfr-comp">COMP</span>
+                    <span class="afn-col afn-col-conn afn-cs-conn-cda">FAN1/2.0 CONNECTED_CDA</span>
+                </div>
+                <div class="afn-entry-row">
+                    <span class="afn-col afn-col-acid"></span>
+                    <span class="afn-col afn-col-logon"></span>
+                    <span class="afn-col afn-col-reg"></span>
+                    <span class="afn-col afn-col-xfr">KZAK</span>
+                    <span class="afn-col afn-col-conn afn-cs-conn-cda">FAN1/2.0 CONNECTED_CDA</span>
+                </div>
+            </div>
+
+            <div class="afn-entry" data-acid="JAL008" onclick="afnSelectEntry(this)">
+                <div class="afn-entry-row">
+                    <span class="afn-col afn-col-acid">JAL008</span>
+                    <span class="afn-col afn-col-logon">1748Z</span>
+                    <span class="afn-col afn-col-reg">JA8083</span>
+                    <span class="afn-col afn-col-xfr afn-xfr-comp">COMP</span>
+                    <span class="afn-col afn-col-conn afn-cs-conn-cda">FAN1/2.0 CONNECTED_CDA</span>
+                </div>
+                <div class="afn-entry-row">
+                    <span class="afn-col afn-col-acid"></span>
+                    <span class="afn-col afn-col-logon"></span>
+                    <span class="afn-col afn-col-reg"></span>
+                    <span class="afn-col afn-col-xfr">RJJJ</span>
+                    <span class="afn-col afn-col-conn afn-cs-conn-cda">FAN1/2.0 CONNECTED_CDA</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="afn-button-bar">
+            <button class="motif-btn" id="afn-btn-contact-center">Contact Center</button>
+            <button class="motif-btn" id="afn-btn-edit-clear">Edit Clear</button>
+            <button class="motif-btn" id="afn-btn-edit-ads">Edit ADS</button>
+            <button class="motif-btn" id="afn-btn-close">Close</button>
         </div>
     </div>
 

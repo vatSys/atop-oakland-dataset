@@ -1,0 +1,7 @@
+﻿/* Generated from lma15d23.pcf */
+@font-face {
+  font-family: 'MEARTS lma15D23';
+  src: url('./lma15D23.woff2') format('woff2'),
+       url('./lma15D23.woff') format('woff');
+  font-display: swap;
+}

@@ -1,0 +1,7 @@
+﻿/* Generated from lma14b18.pcf */
+@font-face {
+  font-family: 'MEARTS lma14B18';
+  src: url('./lma14B18.woff2') format('woff2'),
+       url('./lma14B18.woff') format('woff');
+  font-display: swap;
+}

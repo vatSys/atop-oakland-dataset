@@ -53,6 +53,12 @@ self.onmessage = function(e) {
             const conflicts = probeAllConflicts();
             self.postMessage({ type: 'conflictResults', data: conflicts });
             break;
+        case 'probeVirtualFDR':
+            // Probe with a temporary modified FDR without persisting it.
+            // 'data' has { originalCallsign, virtualFDR } where virtualFDR
+            // is the same shape as a normal FDR but with proposed changes (e.g. CFL).
+            probeVirtualFDR(data);
+            break;
         case 'setConfig':
             Object.assign(CONFIG, data);
             console.log('[ConflictWorker] Config updated:', CONFIG);
@@ -337,6 +343,14 @@ function isPointInPolygon(lat, lon, polygon) {
 }
 
 /**
+ * Same ray-cast test, but accepting a raw polygon array directly (no inhibition
+ * area wrapper). Used by the time-correlation check in calculateAreaOfConflict.
+ */
+function isPointInPolygonDirect(lat, lon, polygon) {
+    return isPointInPolygon(lat, lon, polygon);
+}
+
+/**
  * Clip a conflict segment so only the portion outside inhibition areas remains.
  * Returns the clipped segment, or null if the entire segment is inhibited.
  *
@@ -423,16 +437,26 @@ function findInhibitionBoundaryCrossing(from, to, altFL1, altFL2) {
 // ============================================
 
 function passesTemporalTest(fdr1, fdr2) {
-    const start1 = fdr1.atd ? new Date(fdr1.atd).getTime() : 0;
-    const end1 = fdr1.parsedRoute.length > 0 && fdr1.parsedRoute[fdr1.parsedRoute.length - 1].eto
-        ? new Date(fdr1.parsedRoute[fdr1.parsedRoute.length - 1].eto).getTime()
+    // Use ATD as start, falling back to first waypoint ETO, then to now.
+    const firstEto1 = fdr1.parsedRoute.find(wp => wp.eto)?.eto;
+    const firstEto2 = fdr2.parsedRoute.find(wp => wp.eto)?.eto;
+    const lastEto1  = [...fdr1.parsedRoute].reverse().find(wp => wp.eto)?.eto;
+    const lastEto2  = [...fdr2.parsedRoute].reverse().find(wp => wp.eto)?.eto;
+
+    const start1 = fdr1.atd
+        ? new Date(fdr1.atd).getTime()
+        : firstEto1 ? new Date(firstEto1).getTime() : Date.now();
+    const end1 = lastEto1
+        ? new Date(lastEto1).getTime()
         : Date.now() + 24 * 3600000;
-    
-    const start2 = fdr2.atd ? new Date(fdr2.atd).getTime() : 0;
-    const end2 = fdr2.parsedRoute.length > 0 && fdr2.parsedRoute[fdr2.parsedRoute.length - 1].eto
-        ? new Date(fdr2.parsedRoute[fdr2.parsedRoute.length - 1].eto).getTime()
+
+    const start2 = fdr2.atd
+        ? new Date(fdr2.atd).getTime()
+        : firstEto2 ? new Date(firstEto2).getTime() : Date.now();
+    const end2 = lastEto2
+        ? new Date(lastEto2).getTime()
         : Date.now() + 24 * 3600000;
-    
+
     return !(start1 > end2 || start2 > end1);
 }
 
@@ -474,26 +498,30 @@ function getVerticalMinima(fdr1, fdr2) {
     return 2000;
 }
 
+function isPbcs(fdr) {
+    // PBCS requires: RNP4 capability, RSP180 filed (SUR/), P2 filed (PBN/),
+    // and CPDLC actively logged on (CDA) — equipment alone is not sufficient.
+    return fdr.rnp4 === true &&
+           fdr.rsp180 === true &&
+           fdr.p2Filed === true &&
+           fdr.cpdlcLoggedOn === true;
+}
+
 function getLateralMinima(fdr1, fdr2) {
-    // Per NAS-MD-4714 Section 6.2.4.2 - Lateral Separation Standards
-    // Check RNP capabilities from aircraft data
+    // Per NAS-MD-4714 / ICAO Doc 9869 PBCS lateral separation standards
     const rnp4_1 = fdr1.rnp4 === true;
     const rnp4_2 = fdr2.rnp4 === true;
     const rnp10_1 = fdr1.rnp10 === true;
     const rnp10_2 = fdr2.rnp10 === true;
-    
-    // RNP4 both aircraft - 23nm
-    if (rnp4_1 && rnp4_2) {
+
+    // PBCS (RNP4 + RSP180 + P2 + CPDLC logged on) both aircraft — 23nm
+    if (isPbcs(fdr1) && isPbcs(fdr2)) {
         return 23;
     }
-    
-    // RNP10 both aircraft - 50nm
-    if (rnp10_1 && rnp10_2) {
-        return 50;
-    }
-    
-    // Mixed RNP4/RNP10 - 50nm
-    if ((rnp4_1 && rnp10_2) || (rnp10_1 && rnp4_2)) {
+
+    // RNP4 or RNP10 both aircraft (non-PBCS) — 50nm
+    // RNP4 alone does not reduce lateral from 50nm; only PBCS achieves 23nm
+    if ((rnp4_1 || rnp10_1) && (rnp4_2 || rnp10_2)) {
         return 50;
     }
     
@@ -570,7 +598,7 @@ function calculateTrackAngle(fdr1, fdr2) {
 }
 
 function getLongitudinalDistanceMinima(fdr1, fdr2) {
-    // Per NAS-MD-4714 Section 6.2.4.4/6.2.4.5 - Longitudinal Distance Separation
+    // Per NAS-MD-4714 / ICAO Doc 9869 PBCS longitudinal separation standards
     const rnp4_1 = fdr1.rnp4 === true;
     const rnp4_2 = fdr2.rnp4 === true;
     const rnp10_1 = fdr1.rnp10 === true;
@@ -579,8 +607,13 @@ function getLongitudinalDistanceMinima(fdr1, fdr2) {
     const hasDatalink2 = fdr2.hasDatalink === true;
     const hasDme1 = fdr1.hasDme === true;
     const hasDme2 = fdr2.hasDme === true;
-    
-    // RNP4 both aircraft with ADS-C - 30nm
+
+    // PBCS (RNP4 + RSP180 + P2 + CPDLC logged on) both aircraft — 20nm
+    if (isPbcs(fdr1) && isPbcs(fdr2)) {
+        return 20;
+    }
+
+    // RNP4 both aircraft (non-PBCS) — 30nm
     if (rnp4_1 && rnp4_2) {
         return 30;
     }
@@ -633,6 +666,29 @@ function createBoundingBox(route) {
     };
 }
 
+/**
+ * Interpolate an FDR's position along its route at a given UTC timestamp.
+ * Returns {lat, lon} or null if the time is outside the route's ETO window.
+ */
+function interpolateFdrPositionAtTime(fdr, timeMs) {
+    const route = fdr.parsedRoute;
+    if (!route || route.length < 2) return null;
+
+    for (let i = 1; i < route.length; i++) {
+        const t0 = route[i - 1].eto ? new Date(route[i - 1].eto).getTime() : null;
+        const t1 = route[i].eto ? new Date(route[i].eto).getTime() : null;
+        if (t0 === null || t1 === null) continue;
+        if (timeMs >= t0 && timeMs <= t1) {
+            const ratio = (t1 > t0) ? (timeMs - t0) / (t1 - t0) : 0;
+            return {
+                lat: route[i - 1].lat + ratio * (route[i].lat - route[i - 1].lat),
+                lon: route[i - 1].lon + ratio * (route[i].lon - route[i - 1].lon)
+            };
+        }
+    }
+    return null;
+}
+
 function calculateAreaOfConflict(fdr1, fdr2, lateralSep) {
     const conflictSegments = [];
     const route1 = fdr1.parsedRoute;
@@ -657,15 +713,44 @@ function calculateAreaOfConflict(fdr1, fdr2, lateralSep) {
                 const t0 = interpolateTime(route2[j - 1], route2[j], intersections[0]);
                 const t1 = interpolateTime(route2[j - 1], route2[j], intersections[1]);
                 
+                // Skip this segment if either endpoint has no ETO — we cannot place it in time.
+                if (t0 === null || t1 === null) {
+                    console.log(`[ConflictWorker]   ${fdr1.callsign} vs ${fdr2.callsign}: segment skipped — missing ETO on route2 waypoints (cannot determine conflict time)`);
+                    continue;
+                }
+                
                 // Ensure chronological order (intersection order != time order)
                 const earlier = t0 <= t1 ? 0 : 1;
                 const later = 1 - earlier;
-                
+                const segStartTime = Math.min(t0, t1);
+                const segEndTime = Math.max(t0, t1);
+                const segMidTime = (segStartTime + segEndTime) / 2;
+
+                // Time-correlation check: verify fdr1 will actually be near the
+                // conflict zone at the same time fdr2 will be there.
+                // Find fdr1's position at fdr2's entry, mid, and exit times and
+                // check whether fdr1 is inside the protection polygon. If fdr1 is
+                // nowhere near the zone at those times the geographic overlap is a
+                // false positive caused by the static-corridor approach.
+                const checkTimes = [segStartTime, segMidTime, segEndTime];
+                const fdr1PresentInZone = checkTimes.some(t => {
+                    const pos = interpolateFdrPositionAtTime(fdr1, t);
+                    if (!pos) return false;
+                    return isPointInPolygonDirect(pos.lat, pos.lon, polygon);
+                });
+
+                if (!fdr1PresentInZone) {
+                    // fdr1 is not in its own protection corridor at the time
+                    // fdr2 passes through it — not a real-time conflict.
+                    console.log(`[ConflictWorker]   ${fdr1.callsign} vs ${fdr2.callsign}: segment skipped — ${fdr1.callsign} not in zone at fdr2 entry/mid/exit times (time-correlation filter)`);
+                    continue;
+                }
+
                 conflictSegments.push({
                     startLatLon: intersections[earlier],
                     endLatLon: intersections[later],
-                    startTime: Math.min(t0, t1),
-                    endTime: Math.max(t0, t1)
+                    startTime: segStartTime,
+                    endTime: segEndTime
                 });
             }
         }
@@ -732,7 +817,8 @@ function lineIntersection(p1, p2, p3, p4) {
 }
 
 function interpolateTime(wp1, wp2, point) {
-    if (!wp1.eto || !wp2.eto) return Date.now();
+    // If either endpoint has no ETO we cannot place this segment in time — skip it.
+    if (!wp1.eto || !wp2.eto) return null;
     
     const totalDist = calculateDistance(wp1, wp2);
     const partialDist = calculateDistance(wp1, point);
@@ -823,6 +909,61 @@ function determineConflictType(trackAngle) {
     
     // Crossing direction: 45° ≤ |θ| ≤ 135°
     return 'Crossing';
+}
+
+/**
+ * Probe with a temporary virtual FDR. Temporarily replaces the original
+ * callsign's data in the store, runs the full conflict probe, then
+ * restores the original data. Returns results tagged as 'probeVirtualResults'.
+ */
+function probeVirtualFDR(data) {
+    const { originalCallsign, virtualFDR } = data;
+    console.log(`[ConflictWorker] probeVirtualFDR for ${originalCallsign} | proposed CFL=${virtualFDR.cfl}`);
+
+    // Save the original FDR so we can restore it
+    const originalFdr = fdrs.get(originalCallsign);
+
+    // Temporarily inject the virtual FDR under the same callsign
+    const parsed = parseRoute(virtualFDR.route, virtualFDR.routeWaypoints);
+    fdrs.set(originalCallsign, {
+        ...virtualFDR,
+        callsign: originalCallsign,
+        parsedRoute: parsed,
+        updatedAt: Date.now()
+    });
+
+    // Run full conflict detection
+    const results = probeAllConflicts();
+
+    // Filter to only conflicts involving this callsign
+    const relevant = (results.all || []).filter(
+        c => c.intruderCallsign === originalCallsign || c.activeCallsign === originalCallsign
+    );
+
+    // Restore the original FDR (or remove if it didn't exist)
+    if (originalFdr) {
+        fdrs.set(originalCallsign, originalFdr);
+    } else {
+        fdrs.delete(originalCallsign);
+    }
+
+    console.log(`[ConflictWorker] probeVirtualFDR done: ${relevant.length} conflict(s) for ${originalCallsign}`);
+
+    self.postMessage({
+        type: 'probeVirtualResults',
+        data: {
+            callsign: originalCallsign,
+            conflicts: groupConflicts(relevant),
+            proposedProfile: {
+                routeWaypoints: parsed.map(wp => ({
+                    name: wp.name,
+                    lat: wp.lat,
+                    lon: wp.lon,
+                    eto: wp.eto instanceof Date ? wp.eto.toISOString() : null
+                }))
+            }
+        }
+    });
 }
 
 function groupConflicts(conflicts) {

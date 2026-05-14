@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AFN Window</title>
+    <link rel="stylesheet" href="motif.css">
+    <style>
+        body { padding: 30px; }
+    </style>
+</head>
+<body>
+
+<!--
+    AFN Window — ATS Facilities Notification
+    Structure:
+      Title Bar
+      Menu Bar  [Initiate Connection ▾] [Terminate Connection ▾]  [Help]
+      Column Headers  ACID | LOGON TIME | REG # | XFR STATUS | CONNECTION STATUS
+      Workspace Area  (0–2 emphasized entries; intruder top, active bottom)
+      ── divider ──
+      Main Entry Area (all logged-on flights, scrollable)
+      Button Bar  [Contact Center] [Edit Clear] [Edit ADS] [Close]
+
+    Each AFN Entry is 2 lines:
+      Row 1: call sign  | logon time | reg #  | TCOM status         | ADS version & status
+      Row 2: (blank)    | (blank)    | (blank)| next center address  | ATC version & status
+-->
+
+<div class="motif-window active" id="afn-window" style="position: relative; left: 0; top: 0;">
+
+    <!-- ── Title Bar ── -->
+    <div class="motif-titlebar">
+        <span class="motif-title">AFN</span>
+    </div>
+
+    <!-- ── Menu Bar ── -->
+    <div class="afn-menubar">
+        <!-- Initiate Connection -->
+        <div class="afn-menu-item afn-menu-dropdown" id="afn-menu-initiate">
+            Initiate Connection
+            <div class="afn-dropdown">
+                <div class="afn-dropdown-item" id="afn-initiate-atc">ATC</div>
+                <div class="afn-dropdown-item" id="afn-initiate-ads">ADS</div>
+            </div>
+        </div>
+
+        <!-- Terminate Connection -->
+        <div class="afn-menu-item afn-menu-dropdown" id="afn-menu-terminate">
+            Terminate Connection
+            <div class="afn-dropdown">
+                <div class="afn-dropdown-item" id="afn-terminate-atc">ATC</div>
+                <div class="afn-dropdown-item" id="afn-terminate-ads">ADS</div>
+                <div class="afn-dropdown-item" id="afn-terminate-datalink">Data Link</div>
+            </div>
+        </div>
+
+        <!-- Help (right-aligned) -->
+        <div class="afn-menu-item afn-menu-right" id="afn-menu-help">Help</div>
+    </div>
+
+    <!-- ── Column Headers ── -->
+    <!--
+        The header row has an extra .afn-col-headers-pad span on the right
+        to account for the scrollbar width in the Main Entry Area, keeping
+        column text aligned between the two sections.
+    -->
+    <div class="afn-col-headers">
+        <span class="afn-col afn-col-acid">ACID</span>
+        <span class="afn-col afn-col-logon">LOGON TIME</span>
+        <span class="afn-col afn-col-reg">REG #</span>
+        <span class="afn-col afn-col-xfr">XFR STATUS</span>
+        <span class="afn-col afn-col-conn">CONNECTION STATUS</span>
+        <span class="afn-col-headers-pad"></span>
+    </div>
+
+    <!-- ── Workspace Area ──
+         Displays AFN entries for aircraft with Selection Emphasis.
+         Single emphasis → 1 entry (highlighted).
+         Conflict emphasis → 2 entries (intruder on top, active on bottom;
+         intruder highlighted by default if it has an AFN entry).
+         If an emphasized aircraft has no AFN entry, a Blank Entry (2 blank lines)
+         is shown in its place.                                               -->
+    <div class="afn-workspace" id="afn-workspace">
+        <!-- AFN bridge data renders here at runtime -->
+
+    </div><!-- /afn-workspace -->
+
+    <!-- Divider between Workspace Area and Main Entry Area -->
+    <div class="afn-area-divider"></div>
+
+    <!-- ── Main Entry Area ──
+         Lists all AFN Entries for logged-on flights controlled by the sector.
+         LMC on an entry selects it → Aircraft Selection Emphasis.
+         Sorted earliest logon time (top) to latest (bottom).           -->
+    <div class="afn-main-area" id="afn-main-area">
+        <!-- AFN bridge data renders here at runtime -->
+
+    </div><!-- /afn-main-area -->
+
+    <!-- ── Bottom Button Bar ──
+         Contact Center — opens Center Address window for highlighted Workspace entry
+         Edit Clear     — opens Clearance window for highlighted Workspace entry
+         Edit ADS       — opens ADS-C Contract Management window for highlighted entry
+         Close          — removes AFN window from display                         -->
+    <div class="afn-button-bar">
+        <button class="motif-btn" id="afn-btn-contact-center">Contact Center</button>
+        <button class="motif-btn" id="afn-btn-edit-clear">Edit Clear</button>
+        <button class="motif-btn" id="afn-btn-edit-ads">Edit ADS</button>
+        <button class="motif-btn" id="afn-btn-close">Close</button>
+    </div>
+
+</div><!-- /afn-window -->
+
+<script>
+    /**
+     * LMC on a Main Entry Area entry selects it (Aircraft Selection Emphasis).
+     * In the Workspace Area a LMC switches the highlighted (active) entry.
+     * In a real implementation this would fire selection-emphasis events.
+     */
+    function afnSelectEntry(el) {
+        // Remove highlight from all workspace entries
+        document.querySelectorAll('#afn-workspace .afn-entry').forEach(function(e) {
+            e.classList.remove('afn-entry-highlighted');
+        });
+        // If the clicked entry is inside the workspace, highlight it
+        if (el.closest('#afn-workspace')) {
+            el.classList.add('afn-entry-highlighted');
+        }
+        // In a real implementation we would send the ACID to the C# plugin here.
+        // e.g. window.atopBridge?.selectAircraft(el.dataset.acid);
+    }
+
+    // Close button
+    document.getElementById('afn-btn-close').addEventListener('click', function () {
+        document.getElementById('afn-window').style.display = 'none';
+    });
+</script>
+
+</body>
+</html>

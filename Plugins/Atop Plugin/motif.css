@@ -1,5 +1,34 @@
 /* Motif/X-Windows Style Theme - Matching ATOP Reference */
-@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
+
+@font-face {
+    font-family: 'MEARTS Body';
+    src: url('webfonts/mearts/lma11M15.woff2') format('woff2'),
+         url('webfonts/mearts/lma11M15.woff') format('woff');
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'MEARTS Title';
+    src: url('webfonts/mearts/lma11B15.woff2') format('woff2'),
+         url('webfonts/mearts/lma11B15.woff') format('woff');
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'EDSTv302';
+    src: url('EDSTv302.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'EDSTv104';
+    src: url('EDSTv302.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
 
 :root {
     /* Colors matched exactly to reference image */
@@ -13,13 +42,15 @@
     --motif-ok: #00c000;
     --motif-teal: #008080;            /* Teal for borders and button bar */
     --motif-desktop-bg: #000000;      /* Black desktop */
-    --motif-font: 'VT323', monospace; /* Bitmap-style font */
+    /* MEARTS webfont files currently map glyphs incorrectly in-browser.
+       Keep declarations above for future fixes, but use a stable stack now. */
+    --motif-font: 'EDSTv302', 'EDSTv104', 'Terminus (TTF)', 'Courier New', monospace;
 }
 
 * {
     box-sizing: border-box;
     font-family: var(--motif-font);
-    font-size: 18px;
+    font-size: 17px;
 }
 
 body {
@@ -94,13 +125,13 @@ body {
 }
 
 .motif-window.active .motif-titlebar {
-    background: #5f9ea0;
+    background: #66a9ad;
     color: white;
 }
 
 .motif-title {
     font-weight: bold;
-    font-size: 18px;
+    font-size: 17px;
     letter-spacing: 1px;
 }
 
@@ -139,7 +170,7 @@ body {
 .motif-btn-close {
     background: var(--motif-bg);
     padding: 2px 6px;
-    font-size: 18px;
+    font-size: 17px;
 }
 
 .motif-btn-close:hover {
@@ -371,7 +402,7 @@ body {
     max-height: 80px;
     overflow-y: auto;
     font-family: var(--motif-font);
-    font-size: 18px;
+    font-size: 17px;
 }
 
 .fp-list-content {
@@ -431,7 +462,7 @@ body {
     border-color: var(--motif-dark) var(--motif-light) var(--motif-light) var(--motif-dark);
     padding: 3px 6px;
     font-family: var(--motif-font);
-    font-size: 18px;
+    font-size: 17px;
 }
 
 .fp-input:focus {
@@ -471,7 +502,7 @@ body {
     border-color: var(--motif-dark) var(--motif-light) var(--motif-light) var(--motif-dark);
     padding: 4px 6px;
     font-family: var(--motif-font);
-    font-size: 18px;
+    font-size: 17px;
     resize: none;
     width: 100%;
 }
@@ -558,7 +589,7 @@ body {
     padding: 8px;
     margin: 8px 0;
     font-family: var(--motif-font);
-    font-size: 18px;
+    font-size: 17px;
     min-height: 50px;
     max-height: 80px;
     overflow-y: auto;
@@ -773,6 +804,11 @@ body {
     padding: 2px 4px;
 }
 
+.sq-menu-dropdown {
+    position: relative;
+    user-select: none;
+}
+
 .sq-menu-item:hover {
     background: var(--motif-light);
 }
@@ -785,7 +821,51 @@ body {
     flex: 1;
 }
 
-.sq-faa-logo {
+/* Open menu dropdown */
+.sq-dropdown-menu {
+    display: none;
+    position: absolute;
+    top: calc(100% + 1px);
+    left: 0;
+    min-width: 405px;
+    background: #c0c0c0;
+    border: 2px solid;
+    border-color: var(--motif-light) var(--motif-dark) var(--motif-dark) var(--motif-light);
+    box-shadow: 3px 3px 0 rgba(0, 0, 0, 0.35);
+    z-index: 900;
+    padding: 2px 0;
+}
+
+.sq-menu-dropdown.open .sq-dropdown-menu {
+    display: block;
+}
+
+.sq-dropdown-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    padding: 4px 10px;
+    white-space: nowrap;
+    cursor: pointer;
+}
+
+.sq-dropdown-item:hover {
+    background: #000080;
+    color: #ffffff;
+}
+
+.sq-dropdown-item .sq-shortcut {
+    min-width: 44px;
+    text-align: right;
+}
+
+.sq-dropdown-separator {
+    margin: 3px 8px;
+    border-top: 2px dashed #8c8c8c;
+}
+
+.sq-zoa-logo {
     color: #0000ff;
     font-weight: bold;
     font-size: 24px;
@@ -871,7 +951,7 @@ body {
     overflow-y: auto;
     overflow-x: hidden;
     font-family: var(--motif-font);
-    font-size: 18px;
+    font-size: 17px;
 }
 
 .sq-queue-content {
@@ -894,4 +974,550 @@ body {
 .sq-queue-item.selected {
     background: #000000;
     color: #ffff00;
+}
+
+/* Embedded AFN launcher window */
+#afn-launch-window {
+    width: 760px;
+    min-width: 760px;
+    max-width: 760px;
+    height: 560px;
+    min-height: 420px;
+    display: flex;
+    flex-direction: column;
+}
+
+#afn-launch-window .motif-titlebar {
+    justify-content: space-between;
+    padding-right: 6px;
+}
+
+.afn-launch-close {
+    min-width: 72px;
+    font-size: 15px;
+    padding: 1px 8px;
+}
+
+.afn-launch-body {
+    flex: 1;
+    background: var(--motif-bg);
+    padding: 6px;
+}
+
+.afn-launch-frame {
+    width: 100%;
+    height: 100%;
+    border: 2px solid;
+    border-color: var(--motif-dark) var(--motif-light) var(--motif-light) var(--motif-dark);
+    background: #000;
+}
+
+/* ================================================
+   AFN WINDOW — ATS Facilities Notification
+   Per NASP-4508K Chapter 7, Section 7.1
+   ================================================ */
+
+/* Window: fixed horizontal width (spec: cannot be resized horizontally) */
+#afn-window {
+    width: 720px;
+    min-width: 720px;
+    max-width: 720px;
+}
+
+/* Menu Bar */
+.afn-menubar {
+    background: var(--motif-menu-top, var(--motif-bg));
+    padding: 1px 4px;
+    border-bottom: 1px solid var(--motif-dark);
+    display: flex;
+    align-items: stretch;
+}
+
+.afn-menu-item {
+    padding: 2px 8px;
+    cursor: pointer;
+    white-space: nowrap;
+    position: relative;
+    user-select: none;
+}
+
+.afn-menu-item:hover {
+    background: var(--motif-light);
+}
+
+.afn-menu-right {
+    margin-left: auto;
+}
+
+/* Dropdown sub-menus */
+.afn-menu-dropdown .afn-dropdown {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: var(--motif-bg);
+    border: 2px solid;
+    border-color: var(--motif-light) var(--motif-dark) var(--motif-dark) var(--motif-light);
+    z-index: 200;
+    min-width: 140px;
+    box-shadow: 3px 3px 4px rgba(0,0,0,0.35);
+}
+
+.afn-menu-dropdown:hover .afn-dropdown {
+    display: block;
+}
+
+.afn-dropdown-item {
+    padding: 3px 14px;
+    cursor: pointer;
+    white-space: nowrap;
+}
+
+.afn-dropdown-item:hover {
+    background: #000080;
+    color: #ffffff;
+}
+
+/* Column header bar — spans both workspace and main areas */
+.afn-col-headers {
+    display: flex;
+    align-items: center;
+    background: var(--motif-bg);
+    border-top: 1px solid var(--motif-light);
+    border-bottom: 2px solid var(--motif-dark);
+    padding: 2px 6px;
+    font-weight: bold;
+}
+
+/* Scrollbar track width correction: when scrollbar is present in main area
+   the headers need the same offset so columns stay aligned */
+.afn-col-headers-pad {
+    width: 16px; /* matches scrollbar width */
+    min-width: 16px;
+    flex-shrink: 0;
+}
+
+/* Workspace Area — displays 0–2 emphasized AFN entries (sunken) */
+.afn-workspace {
+    background: var(--motif-input-bg);
+    border: 2px solid;
+    border-color: var(--motif-dark) var(--motif-light) var(--motif-light) var(--motif-dark);
+    margin: 3px 4px 0 4px;
+}
+
+/* Main Entry Area — all logged-on flights, scrollable */
+.afn-main-area {
+    background: var(--motif-input-bg);
+    border: 2px solid;
+    border-color: var(--motif-dark) var(--motif-light) var(--motif-light) var(--motif-dark);
+    margin: 0 4px 3px 4px;
+    overflow-y: auto;
+    min-height: 100px;
+    max-height: 280px;
+    border-top: none; /* shares border with workspace bottom */
+}
+
+/* Divider between workspace and main area */
+.afn-area-divider {
+    height: 0;
+    border-top: 2px solid var(--motif-dark);
+    border-bottom: 1px solid var(--motif-light);
+    margin: 0 4px;
+}
+
+/* AFN Entry: 2-line block per aircraft */
+.afn-entry {
+    border-bottom: 1px solid var(--motif-dark);
+    cursor: pointer;
+}
+
+.afn-entry:last-child {
+    border-bottom: none;
+}
+
+.afn-entry:hover {
+    background: rgba(255, 255, 255, 0.10);
+}
+
+/* Highlighted entry (workspace selection — LMC to change) */
+.afn-entry-highlighted {
+    outline: 2px solid #f0e060;
+    outline-offset: -2px;
+    background: rgba(10, 10, 60, 0.18);
+}
+
+/* Blank entry: shown when emphasized aircraft has no AFN entry */
+.afn-entry-blank {
+    cursor: default;
+    background: transparent;
+}
+
+.afn-entry-blank:hover {
+    background: transparent;
+}
+
+/* Entry rows */
+.afn-entry-row {
+    display: flex;
+    align-items: baseline;
+    padding: 1px 6px;
+    line-height: 1.35;
+    min-height: 22px;
+}
+
+/* Column definitions — must remain in sync with .afn-col-headers */
+.afn-col {
+    overflow: hidden;
+    text-overflow: clip;
+    white-space: nowrap;
+    padding-right: 6px;
+    font-family: var(--motif-font);
+}
+
+.afn-col-acid  { width: 82px;  min-width: 82px; }
+.afn-col-logon { width: 94px;  min-width: 94px; }
+.afn-col-reg   { width: 90px;  min-width: 90px; }
+.afn-col-xfr   { width: 108px; min-width: 108px; }
+.afn-col-conn  { flex: 1; }   /* fills the remaining width */
+
+/* XFR STATUS color coding */
+.afn-xfr-nda  { color: #e0c020; }
+.afn-xfr-cad  { color: #80c0e0; }
+.afn-xfr-resp { color: #80e080; }
+.afn-xfr-comp { color: #40e040; font-weight: bold; }
+
+/* CONNECTION STATUS color coding (per connection state) */
+.afn-cs-conn-cda      { color: #00e060; font-weight: bold; }  /* CONNECTED_CDA     — active CDA, bright green */
+.afn-cs-connected     { color: #40c080; }                      /* CONNECTED (pending) */
+.afn-cs-conn-not-cda  { color: #20a060; }                      /* CONNECTED_NOT_CDA */
+.afn-cs-initiating    { color: #d0a800; }                      /* INITIATING        */
+.afn-cs-terminating   { color: #d07020; }                      /* TERMINATING       */
+.afn-cs-not-supported { color: #e03030; }                      /* NOT_SUPPORTED     */
+.afn-cs-deleted       { color: #808070; }                      /* DELETED           */
+.afn-cs-not-connected { color: inherit; }                      /* NOT_CONNECTED     */
+.afn-cs-not-requested { color: #909080; font-style: italic; }  /* NOT_REQUESTED     */
+
+/* Motif-style scrollbar for main area */
+.afn-main-area::-webkit-scrollbar {
+    width: 16px;
+    background: var(--motif-bg);
+}
+.afn-main-area::-webkit-scrollbar-track {
+    background: var(--motif-input-bg);
+    border: 1px solid var(--motif-dark);
+}
+.afn-main-area::-webkit-scrollbar-thumb {
+    background: var(--motif-bg);
+    border: 2px solid;
+    border-color: var(--motif-light) var(--motif-dark) var(--motif-dark) var(--motif-light);
+}
+.afn-main-area::-webkit-scrollbar-button {
+    background: var(--motif-bg);
+    border: 2px solid;
+    border-color: var(--motif-light) var(--motif-dark) var(--motif-dark) var(--motif-light);
+    height: 16px;
+}
+
+/* Button Bar */
+.afn-button-bar {
+    display: flex;
+    gap: 4px;
+    padding: 5px 6px;
+    background: var(--motif-bg);
+    border-top: 2px solid;
+    border-color: var(--motif-light) transparent transparent transparent;
+}
+
+.afn-button-bar .motif-btn {
+    flex: 1;
+    text-align: center;
+    font-size: 15px;
+    padding: 3px 6px;
+}
+
+/* ==================================================
+   Motif Authenticity Override Pass (X11/CDE inspired)
+   ================================================== */
+
+:root {
+    --motif-bg: #bdb8a6;
+    --motif-light: #e7e2cf;
+    --motif-midlight: #d4cfbd;
+    --motif-dark: #6d6858;
+    --motif-deep: #2e2b22;
+    --motif-input-bg: #d7d2c0;
+    --motif-desktop-bg: #111111;
+    --motif-active-title: #5a9da3;
+    --motif-inactive-title: #a7a79b;
+    --motif-focus: #ffff55;
+    --motif-font: "EDSTv302", "EDSTv104", "Lucida Sans Typewriter", "Liberation Mono", "Courier New", monospace;
+    --motif-title-font: "EDSTv302", "EDSTv104", "Lucida Sans Typewriter", "Liberation Mono", "Courier New", monospace;
+    --motif-title-active-top: #74b4b8;
+    --motif-title-active-bottom: #5a9da3;
+    --motif-title-inactive-top: #d7d7cc;
+    --motif-title-inactive-bottom: #a7a79b;
+    --motif-menu-top: #cec8b6;
+    --motif-menu-bottom: #b8b29f;
+    --motif-menu-item-padding-y: 1px;
+    --motif-menu-item-padding-x: 7px;
+    --motif-window-shadow-x: 6px;
+    --motif-window-shadow-y: 6px;
+    --motif-title-height: 28px;
+}
+
+/* Optional variants: set on <html> or <body>
+   data-motif-variant="hpux" | "sgi" to switch palettes. */
+[data-motif-variant="hpux"] {
+    --motif-bg: #c4c1b2;
+    --motif-light: #ece7d9;
+    --motif-midlight: #d6d1c2;
+    --motif-dark: #6f6a5b;
+    --motif-deep: #242017;
+    --motif-input-bg: #ddd7c9;
+    --motif-title-active-top: #7e94b1;
+    --motif-title-active-bottom: #526987;
+    --motif-title-inactive-top: #ddddcf;
+    --motif-title-inactive-bottom: #b0b0a2;
+}
+
+[data-motif-variant="sgi"] {
+    --motif-bg: #b8b3a1;
+    --motif-light: #e8e3d2;
+    --motif-midlight: #ccc7b5;
+    --motif-dark: #676253;
+    --motif-deep: #211e16;
+    --motif-input-bg: #d3cebd;
+    --motif-title-active-top: #6c8e93;
+    --motif-title-active-bottom: #3e6066;
+    --motif-title-inactive-top: #d0d0c2;
+    --motif-title-inactive-bottom: #9e9e90;
+}
+
+body {
+    background:
+        radial-gradient(circle at 18% 15%, rgba(255, 255, 255, 0.05), transparent 30%),
+        radial-gradient(circle at 76% 22%, rgba(255, 255, 255, 0.035), transparent 28%),
+        linear-gradient(180deg, #1a1a1a, #0f0f0f 60%, #090909);
+    color: var(--motif-text);
+    letter-spacing: 0.2px;
+}
+
+.motif-window {
+    border: 2px solid;
+    border-color: var(--motif-light) var(--motif-deep) var(--motif-deep) var(--motif-light);
+    box-shadow:
+        0 0 0 1px #8d8a7b,
+        0 0 0 2px var(--motif-midlight),
+        4px 5px 0 rgba(0, 0, 0, 0.45);
+}
+
+.motif-window:not(.active) {
+    filter: saturate(0.82) brightness(0.96);
+}
+
+.motif-window.active {
+    box-shadow:
+        0 0 0 1px #9fa4a0,
+        0 0 0 2px #7ea8ac,
+        var(--motif-window-shadow-x) var(--motif-window-shadow-y) 0 rgba(0, 0, 0, 0.5);
+}
+
+.motif-titlebar {
+    background:
+        linear-gradient(180deg, rgba(255, 255, 255, 0.2), transparent 28%),
+        repeating-linear-gradient(90deg, rgba(255, 255, 255, 0.03) 0, rgba(255, 255, 255, 0.03) 1px, transparent 1px, transparent 3px),
+        linear-gradient(180deg, var(--motif-title-inactive-top) 0%, var(--motif-title-inactive-bottom) 100%);
+    border-bottom: 1px solid #4d4a3f;
+    min-height: var(--motif-title-height);
+    padding: 4px 10px;
+}
+
+.motif-window.active .motif-titlebar {
+    background:
+        linear-gradient(180deg, rgba(255, 255, 255, 0.16), transparent 30%),
+        repeating-linear-gradient(90deg, rgba(255, 255, 255, 0.04) 0, rgba(255, 255, 255, 0.04) 1px, transparent 1px, transparent 3px),
+        linear-gradient(180deg, var(--motif-title-active-top) 0%, var(--motif-title-active-bottom) 100%);
+    color: #ffffff;
+}
+
+.motif-title {
+    font-family: var(--motif-title-font);
+    font-weight: 700;
+    font-size: 14px;
+    letter-spacing: 0.8px;
+    text-transform: uppercase;
+    text-shadow: 0 1px 0 rgba(0, 0, 0, 0.22);
+}
+
+.motif-btn,
+.fp-btn,
+.fp-menu-item,
+.sq-menu-item,
+.conflict-menu-item {
+    border: 2px solid;
+    border-color: var(--motif-light) var(--motif-dark) var(--motif-dark) var(--motif-light);
+    background: linear-gradient(180deg, var(--motif-midlight), var(--motif-bg));
+    box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.32);
+}
+
+.motif-btn:hover,
+.fp-btn:hover,
+.fp-menu-item:hover,
+.sq-menu-item:hover,
+.conflict-menu-item:hover {
+    background: linear-gradient(180deg, #ede8d8, #c6c1ae);
+    color: #000000;
+}
+
+.motif-btn:active,
+.fp-btn:active,
+.fp-menu-item:active,
+.sq-menu-item:active,
+.conflict-menu-item:active {
+    border-color: var(--motif-dark) var(--motif-light) var(--motif-light) var(--motif-dark);
+    background: linear-gradient(180deg, #98937f, #bdb8a6);
+    box-shadow: inset 1px 1px 1px rgba(0, 0, 0, 0.35);
+    color: #101010;
+}
+
+.motif-input,
+.motif-select,
+.fp-input,
+.fp-textarea,
+.fp-list-area,
+.fp-message-area,
+.conflict-list-area,
+.sq-queue-area {
+    border: 2px solid;
+    border-color: var(--motif-dark) var(--motif-light) var(--motif-light) var(--motif-dark);
+    background: var(--motif-input-bg);
+    box-shadow: inset 1px 1px 0 rgba(0, 0, 0, 0.1);
+}
+
+.motif-input:focus,
+.motif-select:focus,
+.fp-input:focus,
+.fp-textarea:focus,
+.fp-list-item.selected,
+.sq-queue-item.selected,
+.conflict-row.selected {
+    outline: 1px dotted #000000;
+    outline-offset: -3px;
+    box-shadow: inset 0 0 0 1px var(--motif-focus);
+}
+
+.motif-statusbar,
+.fp-button-bar,
+.conflict-header,
+.sq-status-area,
+.fp-menubar,
+.sq-menubar,
+.conflict-menubar {
+    background: linear-gradient(180deg, var(--motif-menu-top), var(--motif-menu-bottom));
+}
+
+.fp-menubar,
+.sq-menubar,
+.conflict-menubar {
+    min-height: 24px;
+    align-items: center;
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.fp-menu-item,
+.sq-menu-item,
+.conflict-menu-item {
+    padding: var(--motif-menu-item-padding-y) var(--motif-menu-item-padding-x);
+    line-height: 1.2;
+    letter-spacing: 0.25px;
+    text-transform: none;
+}
+
+.fp-menu-item u,
+.sq-menu-item u,
+.conflict-menu-item u {
+    text-underline-offset: 1px;
+    text-decoration-thickness: 1px;
+}
+
+.motif-content,
+.fp-content {
+    background: linear-gradient(180deg, var(--motif-bg), #b6b19f 65%, #b2ad9b);
+}
+
+.fp-label,
+.sq-status-label,
+.conflict-header,
+.motif-label {
+    letter-spacing: 0.3px;
+}
+
+.fp-row {
+    gap: 6px;
+    margin-bottom: 5px;
+}
+
+.motif-statusbar {
+    border-top: 2px solid;
+    border-color: var(--motif-dark) var(--motif-light) var(--motif-light) var(--motif-dark);
+}
+
+/* Browser scrollbars with old-toolkit feel */
+* {
+    scrollbar-color: #9d9988 #c9c3b0;
+    scrollbar-width: auto;
+}
+
+::-webkit-scrollbar {
+    width: 15px;
+    height: 15px;
+}
+
+::-webkit-scrollbar-track {
+    background: #c9c3b0;
+    border: 1px solid #7a7566;
+}
+
+::-webkit-scrollbar-thumb {
+    background: linear-gradient(180deg, #e1dccb, #b8b29f);
+    border: 2px solid;
+    border-color: var(--motif-light) var(--motif-dark) var(--motif-dark) var(--motif-light);
+}
+
+::-webkit-scrollbar-corner {
+    background: #b8b29f;
+}
+
+/* Keep desktop windows visible on small screens by stacking and shrinking */
+@media (max-width: 1200px) {
+    body {
+        padding: 10px;
+    }
+
+    .motif-window {
+        position: relative !important;
+        left: auto !important;
+        top: auto !important;
+        width: 100% !important;
+        max-width: 100% !important;
+        min-width: 0 !important;
+        margin: 0 0 12px 0;
+    }
+
+    #sector-queue-window {
+        height: min(56vh, 420px);
+    }
+
+    #flightplan-window {
+        width: 100% !important;
+    }
+
+    .fp-row {
+        flex-wrap: wrap;
+    }
+
+    .fp-label {
+        min-width: 64px;
+        text-align: left;
+    }
 }
