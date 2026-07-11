@@ -11,11 +11,11 @@
 	<ICAO4444 url="https://www.ealts.com/documents/ICAO%20Doc%204444%20Air%20Traffic%20Management.pdf" />	
   <ICAO7030 url="https://www.ocean360training.com/file/si1033745/ICAO%20Document%207030-fi17615237.pdf#page=233"/>	
 	<AIP url="https://www.faa.gov/air_traffic/publications/atpubs/aip_html/part2_enr_section_7.4.html" />
-	<ICAOFP url="https://www.faa.gov/sites/faa.gov/files/FAA%20FPL%20Quick%20Reference%20Brochure%20%282022-09-15%29.pdf" />
+	<ICAOFP url="https://www.faa.gov/about/office_org/headquarters_offices/ato/service_units/air_traffic_services/flight_plan_filing/doc/Flight_Plan_Brochure.pdf" />
 	<SOP url="https://oakartcc.org/web/viewer.html?file=/controllers/file/e8a98e09-1c16-11ec-9430-2a32edb55910" />
 	<ARINCFreqs url="https://radio.arinc.net/pacific/" />
   <WX url="https://aviationweather.gov/gfa/#sigmet" />    
-  <PacChartSupplement url="https://aeronav.faa.gov/Upload_313-d/supplements/CS_PAC_20260514.pdf" />
+  <PacChartSupplement url="https://aeronav.faa.gov/Upload_313-d/supplements/CS_PAC_20260709.pdf" />
   <Help url="https://virtualairtrafficsystem.com/docs/" />
   </Browsers>
 </MET>

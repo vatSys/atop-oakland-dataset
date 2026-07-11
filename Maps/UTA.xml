@@ -344,6 +344,9 @@
 			<Point>WAAU</Point>
 			<Point>ANYN</Point>
 			<Point>04CA</Point>
+			<Point Name="PTYW">+072227.000+1435420.000</Point>
+			<Point Name="PTYU">+100112.000+1394723.000</Point>
+			<Point Name="PTKT">+051706.000+1533918.000</Point>
 		</Symbol>
   </Map>
   <Map Type="System" CustomColourName="Green" Name="UTA_Nms" Priority="1" Center="+270000.000-1750000.000">	
@@ -689,7 +692,10 @@
 			<Point>PWAK</Point>
 			<Point>WAAU</Point>
 			<Point>ANYN</Point>
-			<Point>04CA</Point>	
+			<Point>04CA</Point>
+			<Point Name="PTYW">+072227.000+1435420.000</Point>
+			<Point Name="PTYU">+100112.000+1394723.000</Point>
+			<Point Name="PTKT">+051706.000+1533918.000</Point>
 	</Label>
   </Map>	  
 </Maps>  
