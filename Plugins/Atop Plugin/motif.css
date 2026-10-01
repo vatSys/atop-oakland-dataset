@@ -14,22 +14,6 @@
     font-display: swap;
 }
 
-@font-face {
-    font-family: 'EDSTv302';
-    src: url('EDSTv302.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'EDSTv104';
-    src: url('EDSTv302.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-    font-display: swap;
-}
-
 :root {
     /* Colors matched exactly to reference image */
     --motif-bg: #c0c0a0;              /* Tan/olive gray background */
@@ -44,13 +28,13 @@
     --motif-desktop-bg: #000000;      /* Black desktop */
     /* MEARTS webfont files currently map glyphs incorrectly in-browser.
        Keep declarations above for future fixes, but use a stable stack now. */
-    --motif-font: 'EDSTv302', 'EDSTv104', 'Terminus (TTF)', 'Courier New', monospace;
+    --motif-font: 'Terminus (TTF)', 'Courier New', monospace;
 }
 
 * {
     box-sizing: border-box;
     font-family: var(--motif-font);
-    font-size: 17px;
+    font-size: 18px;
 }
 
 body {
@@ -86,6 +70,61 @@ body {
 .motif-connection-status.mock {
     background: var(--motif-warning);
     color: black;
+}
+
+/* Sector Queue Launcher — persistent button that toggles the Sector Queue
+   window. Colour reflects the highest-priority queued message: EM (red),
+   UR (yellow), otherwise the normal motif button colour. */
+.sq-launcher {
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    z-index: 9999;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    padding: 4px 10px;
+    background: var(--motif-bg);
+    border: 2px solid;
+    border-color: var(--motif-light) var(--motif-dark) var(--motif-dark) var(--motif-light);
+    font-family: var(--motif-font);
+    font-weight: bold;
+    font-size: 16px;
+    cursor: pointer;
+    color: inherit;
+}
+
+.sq-launcher:active {
+    border-color: var(--motif-dark) var(--motif-light) var(--motif-light) var(--motif-dark);
+}
+
+.sq-launcher-count {
+    min-width: 18px;
+    padding: 0 4px;
+    text-align: center;
+    background: var(--motif-input-bg);
+    border: 1px solid var(--motif-dark);
+}
+
+.sq-launcher.sq-has-em {
+    background: #cc0000;
+    color: white;
+}
+
+.sq-launcher.sq-has-em .sq-launcher-count {
+    background: white;
+    color: #cc0000;
+    border-color: white;
+}
+
+.sq-launcher.sq-has-ur {
+    background: #ffcc00;
+    color: black;
+}
+
+.sq-launcher.sq-has-ur .sq-launcher-count {
+    background: white;
+    color: #806600;
 }
 
 /* Classic 3D Beveled Border */
@@ -125,13 +164,13 @@ body {
 }
 
 .motif-window.active .motif-titlebar {
-    background: #66a9ad;
+    background: #5f9ea0;
     color: white;
 }
 
 .motif-title {
     font-weight: bold;
-    font-size: 17px;
+    font-size: 18px;
     letter-spacing: 1px;
 }
 
@@ -170,7 +209,7 @@ body {
 .motif-btn-close {
     background: var(--motif-bg);
     padding: 2px 6px;
-    font-size: 17px;
+    font-size: 18px;
 }
 
 .motif-btn-close:hover {
@@ -402,7 +441,7 @@ body {
     max-height: 80px;
     overflow-y: auto;
     font-family: var(--motif-font);
-    font-size: 17px;
+    font-size: 18px;
 }
 
 .fp-list-content {
@@ -462,7 +501,7 @@ body {
     border-color: var(--motif-dark) var(--motif-light) var(--motif-light) var(--motif-dark);
     padding: 3px 6px;
     font-family: var(--motif-font);
-    font-size: 17px;
+    font-size: 18px;
 }
 
 .fp-input:focus {
@@ -502,7 +541,7 @@ body {
     border-color: var(--motif-dark) var(--motif-light) var(--motif-light) var(--motif-dark);
     padding: 4px 6px;
     font-family: var(--motif-font);
-    font-size: 17px;
+    font-size: 18px;
     resize: none;
     width: 100%;
 }
@@ -589,7 +628,7 @@ body {
     padding: 8px;
     margin: 8px 0;
     font-family: var(--motif-font);
-    font-size: 17px;
+    font-size: 18px;
     min-height: 50px;
     max-height: 80px;
     overflow-y: auto;
@@ -804,11 +843,6 @@ body {
     padding: 2px 4px;
 }
 
-.sq-menu-dropdown {
-    position: relative;
-    user-select: none;
-}
-
 .sq-menu-item:hover {
     background: var(--motif-light);
 }
@@ -819,50 +853,6 @@ body {
 
 .sq-menu-spacer {
     flex: 1;
-}
-
-/* Open menu dropdown */
-.sq-dropdown-menu {
-    display: none;
-    position: absolute;
-    top: calc(100% + 1px);
-    left: 0;
-    min-width: 405px;
-    background: #c0c0c0;
-    border: 2px solid;
-    border-color: var(--motif-light) var(--motif-dark) var(--motif-dark) var(--motif-light);
-    box-shadow: 3px 3px 0 rgba(0, 0, 0, 0.35);
-    z-index: 900;
-    padding: 2px 0;
-}
-
-.sq-menu-dropdown.open .sq-dropdown-menu {
-    display: block;
-}
-
-.sq-dropdown-item {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 20px;
-    padding: 4px 10px;
-    white-space: nowrap;
-    cursor: pointer;
-}
-
-.sq-dropdown-item:hover {
-    background: #000080;
-    color: #ffffff;
-}
-
-.sq-dropdown-item .sq-shortcut {
-    min-width: 44px;
-    text-align: right;
-}
-
-.sq-dropdown-separator {
-    margin: 3px 8px;
-    border-top: 2px dashed #8c8c8c;
 }
 
 .sq-zoa-logo {
@@ -951,7 +941,7 @@ body {
     overflow-y: auto;
     overflow-x: hidden;
     font-family: var(--motif-font);
-    font-size: 17px;
+    font-size: 18px;
 }
 
 .sq-queue-content {
@@ -976,40 +966,127 @@ body {
     color: #ffff00;
 }
 
-/* Embedded AFN launcher window */
-#afn-launch-window {
-    width: 760px;
-    min-width: 760px;
-    max-width: 760px;
-    height: 560px;
-    min-height: 420px;
+/* Priority colour coding per NASP-4508L 3.3.1 (EM/UR/NM) */
+.sq-queue-item.sq-em {
+    color: #cc0000;
+    font-weight: bold;
+}
+
+.sq-queue-item.sq-ur {
+    color: #b8860b;
+    font-weight: bold;
+}
+
+.sq-queue-item.sq-nm {
+    color: inherit;
+}
+
+.sq-queue-item.selected.sq-em,
+.sq-queue-item.selected.sq-ur,
+.sq-queue-item.selected.sq-nm {
+    color: #ffff00;
+}
+
+/* Column Headers (above Message Summary List) */
+.sq-column-header {
     display: flex;
-    flex-direction: column;
-}
-
-#afn-launch-window .motif-titlebar {
-    justify-content: space-between;
-    padding-right: 6px;
-}
-
-.afn-launch-close {
-    min-width: 72px;
-    font-size: 15px;
-    padding: 1px 8px;
-}
-
-.afn-launch-body {
-    flex: 1;
+    gap: 8px;
+    padding: 2px 8px;
+    font-family: var(--motif-font);
+    font-size: 14px;
+    font-weight: bold;
     background: var(--motif-bg);
-    padding: 6px;
+    border-bottom: 1px solid var(--motif-dark);
+    flex-shrink: 0;
 }
 
-.afn-launch-frame {
-    width: 100%;
-    height: 100%;
+.sq-col-priority {
+    width: 20px;
+    flex-shrink: 0;
+}
+
+.sq-col-type {
+    width: 34px;
+    flex-shrink: 0;
+}
+
+.sq-col-acid {
+    width: 90px;
+    flex-shrink: 0;
+}
+
+.sq-col-time {
+    width: 70px;
+    flex-shrink: 0;
+}
+
+/* Separator Bar between Message Summary List and Message Text Area */
+.sq-separator {
+    height: 5px;
+    flex-shrink: 0;
+    margin: 0 8px;
+    background: var(--motif-bg);
+    border-top: 1px solid var(--motif-light);
+    border-bottom: 1px solid var(--motif-dark);
+    cursor: ns-resize;
+}
+
+/* Message Text Area — shows the full text of the selected queue message */
+.sq-text-area {
+    background: var(--motif-input-bg);
     border: 2px solid;
     border-color: var(--motif-dark) var(--motif-light) var(--motif-light) var(--motif-dark);
-    background: #000;
+    margin: 0 8px;
+    min-height: 60px;
+    height: 60px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    font-family: var(--motif-font);
+    font-size: 16px;
+    flex-shrink: 0;
+}
+
+.sq-text-content {
+    padding: 4px 6px;
+    white-space: pre-wrap;
+    word-break: break-word;
+}
+
+/* Sector Queue action buttons — same raised/pressed look as the Flight Plan button bar */
+.sq-button-bar {
+    display: flex;
+    gap: 4px;
+    padding: 8px;
+    justify-content: center;
+    background: var(--motif-bg);
+    border-top: 2px solid var(--motif-dark);
+    flex-shrink: 0;
+}
+
+.sq-btn {
+    background: var(--motif-bg);
+    border: 2px solid;
+    border-color: var(--motif-light) var(--motif-dark) var(--motif-dark) var(--motif-light);
+    padding: 4px 14px;
+    cursor: pointer;
+    font-weight: bold;
+    min-width: 56px;
+}
+
+.sq-btn:hover {
+    background: var(--motif-light);
+}
+
+.sq-btn:active {
+    border-color: var(--motif-dark) var(--motif-light) var(--motif-light) var(--motif-dark);
+    background: var(--motif-dark);
+    color: white;
+}
+
+.sq-btn:disabled {
+    background: #909080;
+    color: #606050;
+    cursor: not-allowed;
 }
 
 /* ================================================
@@ -1247,13 +1324,13 @@ body {
     --motif-deep: #2e2b22;
     --motif-input-bg: #d7d2c0;
     --motif-desktop-bg: #111111;
-    --motif-active-title: #5a9da3;
+    --motif-active-title: #2f6f7a;
     --motif-inactive-title: #a7a79b;
     --motif-focus: #ffff55;
-    --motif-font: "EDSTv302", "EDSTv104", "Lucida Sans Typewriter", "Liberation Mono", "Courier New", monospace;
-    --motif-title-font: "EDSTv302", "EDSTv104", "Lucida Sans Typewriter", "Liberation Mono", "Courier New", monospace;
-    --motif-title-active-top: #74b4b8;
-    --motif-title-active-bottom: #5a9da3;
+    --motif-font: "Lucida Sans Typewriter", "Liberation Mono", "Courier New", monospace;
+    --motif-title-font: "Helvetica", "Arial", sans-serif;
+    --motif-title-active-top: #65a5b0;
+    --motif-title-active-bottom: #2f6f7a;
     --motif-title-inactive-top: #d7d7cc;
     --motif-title-inactive-bottom: #a7a79b;
     --motif-menu-top: #cec8b6;

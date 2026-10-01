@@ -7,8 +7,10 @@ let useMockData = false;
 // Conflict Worker
 let conflictWorker = null;
 let fdrCache = new Map(); // Cache FDRs received from plugin
-let afnCache = new Map(); // AFN entries keyed by callsign
-let afnSelectedCallsign = null;
+
+// Sector Queue Window state
+let sectorQueue = []; // { id, priority, msgType, sourceType, acid, content, time }
+let selectedQueueItemId = null;
 
 // Window dragging state
 let dragState = {
@@ -23,10 +25,9 @@ document.addEventListener('DOMContentLoaded', () => {
     initWindowDragging();
     initWindowActivation();
     initButtonHandlers();
-    initSectorQueueMenus();
     initConflictWorker();
-    initAfnWindow();
     initSectorQueueClock();
+    initSectorQueueButtons();
     connectWebSocket();
     
     // Initial render of empty conflict table
@@ -158,199 +159,6 @@ function initButtonHandlers() {
             }
         }
     });
-
-    // AFN close button
-    document.getElementById('afn-btn-close')?.addEventListener('click', () => {
-        const win = document.getElementById('afn-window');
-        if (win) {
-            win.style.display = 'none';
-        }
-    });
-}
-
-function initSectorQueueMenus() {
-    const openMenu = document.getElementById('sq-open-menu');
-    const dropdownItems = document.querySelectorAll('#sq-open-dropdown .sq-dropdown-item');
-
-    if (openMenu) {
-        openMenu.addEventListener('click', (e) => {
-            e.stopPropagation();
-            openMenu.classList.toggle('open');
-        });
-    }
-
-    dropdownItems.forEach((item) => {
-        item.addEventListener('click', (e) => {
-            e.stopPropagation();
-            const action = item.dataset.action;
-            if (action === 'open-afn') {
-                openAfnWindow();
-                return;
-            }
-
-            const label = item.querySelector('span')?.textContent || 'Selected menu item';
-            enqueueSectorQueueInfo(`${label} window is not implemented in this preview.`);
-            closeOpenDropdown();
-        });
-    });
-
-    document.addEventListener('keydown', (e) => {
-        if (e.key === 'F4') {
-            e.preventDefault();
-            openAfnWindow();
-        }
-    });
-
-    document.addEventListener('click', (e) => {
-        if (openMenu && !openMenu.contains(e.target)) {
-            closeOpenDropdown();
-        }
-    });
-}
-
-function closeOpenDropdown() {
-    const openMenu = document.getElementById('sq-open-menu');
-    if (openMenu) {
-        openMenu.classList.remove('open');
-    }
-}
-
-function openAfnWindow() {
-    const afnWindow = document.getElementById('afn-window');
-    if (!afnWindow) {
-        return;
-    }
-
-    afnWindow.style.display = 'block';
-    activateWindow(afnWindow);
-    closeOpenDropdown();
-}
-
-function initAfnWindow() {
-    renderAfnWindow();
-}
-
-function afnSelectEntry(el) {
-    if (typeof el === 'string') {
-        afnSelectedCallsign = el;
-    } else {
-        afnSelectedCallsign = el?.dataset?.callsign || el?.dataset?.acid || null;
-    }
-
-    renderAfnWindow();
-}
-
-function formatZuluTime(dateObj) {
-    const h = String(dateObj.getUTCHours()).padStart(2, '0');
-    const m = String(dateObj.getUTCMinutes()).padStart(2, '0');
-    return `${h}${m}Z`;
-}
-
-function upsertAfnEntryFromFlightPlan(data) {
-    if (!data?.Callsign) return;
-
-    const key = data.Callsign;
-    const existing = afnCache.get(key) || {};
-    const now = new Date();
-
-    const atcStatus = data.AfnAtcStatus || existing.atcStatus || 'NOT_CONNECTED';
-    const adsStatus = data.AfnAdsStatus || existing.adsStatus || (data.AfnHasAdsc ? 'CONNECTED' : 'NOT_REQUESTED');
-    const xfrStatus = data.AfnXfrStatus || existing.xfrStatus || (atcStatus === 'CONNECTED_NOT_CDA' ? 'NDA' : '');
-    const nextCenter = data.AfnNextCenter || data.ControllingSector || existing.nextCenter || '';
-
-    afnCache.set(key, {
-        callsign: key,
-        logonEpoch: existing.logonEpoch || now.getTime(),
-        logonDisplay: existing.logonDisplay || formatZuluTime(now),
-        reg: data.AfnRegistration || data.Registration || data.Tail || existing.reg || '',
-        xfrStatus,
-        nextCenter,
-        adsStatus,
-        atcStatus
-    });
-
-    if (!afnSelectedCallsign) {
-        afnSelectedCallsign = key;
-    }
-}
-
-function upsertAfnEntryFromFdr(fdr) {
-    if (!fdr?.Callsign) return;
-    const key = fdr.Callsign;
-    const existing = afnCache.get(key) || {};
-    const now = new Date();
-
-    afnCache.set(key, {
-        callsign: key,
-        logonEpoch: existing.logonEpoch || now.getTime(),
-        logonDisplay: existing.logonDisplay || formatZuluTime(now),
-        reg: existing.reg || '',
-        xfrStatus: existing.xfrStatus || '',
-        nextCenter: existing.nextCenter || '',
-        adsStatus: existing.adsStatus || (fdr.hasDatalink ? 'CONNECTED' : 'NOT_REQUESTED'),
-        atcStatus: existing.atcStatus || (fdr.hasDatalink ? 'CONNECTED' : 'NOT_CONNECTED')
-    });
-
-    if (!afnSelectedCallsign) {
-        afnSelectedCallsign = key;
-    }
-}
-
-function buildAfnEntryRow(entry, highlighted) {
-    return `
-        <div class="afn-entry ${highlighted ? 'afn-entry-highlighted' : ''}" data-callsign="${entry.callsign}">
-            <div class="afn-entry-row">
-                <span class="afn-col afn-col-acid">${entry.callsign || ''}</span>
-                <span class="afn-col afn-col-logon">${entry.logonDisplay || ''}</span>
-                <span class="afn-col afn-col-reg">${entry.reg || ''}</span>
-                <span class="afn-col afn-col-xfr">${entry.xfrStatus || ''}</span>
-                <span class="afn-col afn-col-conn">FAN1/2.0 ${entry.adsStatus || 'NOT_CONNECTED'}</span>
-            </div>
-            <div class="afn-entry-row">
-                <span class="afn-col afn-col-acid"></span>
-                <span class="afn-col afn-col-logon"></span>
-                <span class="afn-col afn-col-reg"></span>
-                <span class="afn-col afn-col-xfr">${entry.nextCenter || ''}</span>
-                <span class="afn-col afn-col-conn">FAN1/2.0 ${entry.atcStatus || 'NOT_CONNECTED'}</span>
-            </div>
-        </div>`;
-}
-
-function renderAfnWindow() {
-    const wsArea = document.getElementById('afn-workspace');
-    const mainArea = document.getElementById('afn-main-area');
-    if (!wsArea || !mainArea) return;
-
-    const entries = Array.from(afnCache.values()).sort((a, b) => a.logonEpoch - b.logonEpoch);
-
-    if (!entries.length) {
-        const empty = '<div class="afn-entry afn-entry-blank"><div class="afn-entry-row"><span class="afn-col afn-col-conn">No AFN entries from bridge.</span></div><div class="afn-entry-row"></div></div>';
-        wsArea.innerHTML = empty;
-        mainArea.innerHTML = empty;
-        return;
-    }
-
-    const selected = entries.find(e => e.callsign === afnSelectedCallsign) || entries[0];
-    afnSelectedCallsign = selected.callsign;
-
-    wsArea.innerHTML = buildAfnEntryRow(selected, true);
-    mainArea.innerHTML = entries.map(e => buildAfnEntryRow(e, e.callsign === selected.callsign)).join('');
-
-    document.querySelectorAll('#afn-workspace .afn-entry, #afn-main-area .afn-entry').forEach((row) => {
-        row.addEventListener('click', () => afnSelectEntry(row.dataset.callsign));
-    });
-}
-
-function enqueueSectorQueueInfo(message) {
-    const queue = document.getElementById('sq-queue-list');
-    if (!queue) {
-        return;
-    }
-
-    const row = document.createElement('div');
-    row.className = 'sq-queue-item';
-    row.textContent = message;
-    queue.prepend(row);
 }
 
 function clearFlightPlanForm() {
@@ -390,6 +198,8 @@ function connectWebSocket() {
             updateConnectionStatus('Connected', 'connected');
             // Explicitly request inhibition areas to ensure worker has them
             ws.send(JSON.stringify({ Type: 'RequestInhibitionAreas' }));
+            // Explicitly request the Sector Queue snapshot (CPDLC + buffered SYS/TXT history)
+            ws.send(JSON.stringify({ Type: 'RequestQueueSnapshot' }));
         };
 
         ws.onclose = () => {
@@ -441,6 +251,9 @@ function connectWebSocket() {
                     break;
                 case 'InhibitionAreas':
                     handleInhibitionAreas(data);
+                    break;
+                case 'QueueMessage':
+                    handleQueueMessage(data);
                     break;
                 case 'Error':
                     showError(data.Message);
@@ -517,8 +330,6 @@ function handleAltitudeUpdate(data) {
 
 function handleFlightPlanUpdate(data) {
     currentFDR = data;
-    upsertAfnEntryFromFlightPlan(data);
-    renderAfnWindow();
     console.log(`[FlightPlanUpdate] Received for ${data.Callsign} (state=${data.State}) - NOTE: this only updates the form UI, NOT the conflict worker`);
     
     // Update status header
@@ -758,6 +569,145 @@ function updateSectorQueueClock() {
 }
 
 // ============================================
+// SECTOR QUEUE WINDOW - Message Queue (Figure 3-3)
+// Aggregates CPDLC downlinks (CPD, via CpdlcPluginBridge), vatSys native
+// System Messages (SYS), and vatSys Controller/ATC Messages (TXT) into a
+// single priority-sorted Message Summary List.
+// ============================================
+
+const SQ_PRIORITY_ORDER = { EM: 0, UR: 1, NM: 2 };
+
+// Handles a single 'QueueMessage' broadcast from the plugin — upserts by Id
+// so repeated CPDLC snapshots don't create duplicate rows.
+function handleQueueMessage(data) {
+    const item = {
+        id: data.Id,
+        priority: (data.Priority || 'NM').toUpperCase(),
+        msgType: data.MsgType || '',
+        sourceType: data.SourceType || data.MsgType || '',
+        acid: data.Acid || '',
+        content: data.Content || '',
+        time: data.Time
+    };
+
+    const idx = sectorQueue.findIndex(q => q.id === item.id);
+    if (idx >= 0) {
+        sectorQueue[idx] = item;
+    } else {
+        sectorQueue.push(item);
+    }
+
+    renderSectorQueue();
+}
+
+function formatQueueTime(iso) {
+    if (!iso) return '';
+    const d = new Date(iso);
+    if (isNaN(d.getTime())) return '';
+    return d.toTimeString().substring(0, 8);
+}
+
+function renderSectorQueue() {
+    const list = document.getElementById('sq-queue-list');
+    if (!list) return;
+
+    const sorted = [...sectorQueue].sort((a, b) => {
+        const pa = SQ_PRIORITY_ORDER[a.priority] ?? 2;
+        const pb = SQ_PRIORITY_ORDER[b.priority] ?? 2;
+        if (pa !== pb) return pa - pb;
+        return new Date(a.time) - new Date(b.time);
+    });
+
+    list.innerHTML = '';
+
+    sorted.forEach(item => {
+        const row = document.createElement('div');
+        row.className = `sq-queue-item sq-${item.priority.toLowerCase()}`;
+        if (item.id === selectedQueueItemId) row.classList.add('selected');
+
+        row.innerHTML = `
+            <span class="sq-col-priority">${item.priority}</span>
+            <span class="sq-col-type">${item.msgType}</span>
+            <span class="sq-col-acid">${item.acid}</span>
+            <span class="sq-col-time">${formatQueueTime(item.time)}</span>
+        `;
+        row.addEventListener('click', () => selectQueueItem(item.id));
+
+        list.appendChild(row);
+    });
+
+    updateSectorQueueLauncher();
+}
+
+// Updates the persistent SECTOR launcher button: message count, and colour
+// reflecting the highest-priority message currently queued (EM > UR > normal).
+function updateSectorQueueLauncher() {
+    const btn = document.getElementById('sq-launcher-btn');
+    const countEl = document.getElementById('sq-launcher-count');
+    if (!btn || !countEl) return;
+
+    countEl.textContent = sectorQueue.length.toString();
+
+    const hasEm = sectorQueue.some(q => q.priority === 'EM');
+    const hasUr = sectorQueue.some(q => q.priority === 'UR');
+
+    btn.classList.toggle('sq-has-em', hasEm);
+    btn.classList.toggle('sq-has-ur', !hasEm && hasUr);
+}
+
+function selectQueueItem(id) {
+    selectedQueueItemId = id;
+    renderSectorQueue();
+
+    const item = sectorQueue.find(q => q.id === id);
+    const textEl = document.getElementById('sq-text-content');
+    if (!textEl) return;
+
+    textEl.textContent = item ? (item.acid ? `${item.acid} : ${item.content}` : item.content) : '';
+}
+
+function initSectorQueueButtons() {
+    document.getElementById('sq-launcher-btn')?.addEventListener('click', () => {
+        const win = document.getElementById('sector-queue-window');
+        if (!win) return;
+
+        const isHidden = win.style.display === 'none';
+        win.style.display = isHidden ? '' : 'none';
+        if (isHidden) activateWindow(win);
+    });
+
+    document.getElementById('sq-btn-delete')?.addEventListener('click', () => {
+        if (!selectedQueueItemId) return;
+        sectorQueue = sectorQueue.filter(q => q.id !== selectedQueueItemId);
+        selectedQueueItemId = null;
+        const textEl = document.getElementById('sq-text-content');
+        if (textEl) textEl.textContent = '';
+        renderSectorQueue();
+    });
+
+    document.getElementById('sq-btn-close')?.addEventListener('click', () => {
+        const win = document.getElementById('sector-queue-window');
+        if (win) win.style.display = 'none';
+    });
+
+    document.getElementById('sq-btn-process')?.addEventListener('click', () => {
+        const item = sectorQueue.find(q => q.id === selectedQueueItemId);
+        // Only CPDLC entries have a processing window (ATOP Clearance window) — per spec,
+        // "Not all messages have a processing window; in this case, Process has no effect."
+        if (!item || item.sourceType !== 'CPD' || !item.acid) return;
+        ws?.send(JSON.stringify({ Type: 'ProcessQueueMessage', Callsign: item.acid }));
+    });
+
+    document.getElementById('sq-btn-route')?.addEventListener('click', () => {
+        showResponse('Route is not yet implemented for this message.');
+    });
+
+    document.getElementById('sq-btn-print')?.addEventListener('click', () => {
+        window.print();
+    });
+}
+
+// ============================================
 // CONFLICT WORKER INTEGRATION
 // ============================================
 
@@ -894,8 +844,6 @@ function handleFDRBulkUpdate(data) {
     // Update cache
     fdrCache.clear();
     fdrs.forEach(fdr => fdrCache.set(fdr.Callsign, fdr));
-    fdrs.forEach(upsertAfnEntryFromFdr);
-    renderAfnWindow();
     
     // Transform to worker format and send
     const workerFdrs = fdrs.map(fdr => ({
@@ -975,8 +923,6 @@ function handleFDRUpdate(data) {
     console.log(`[FDRUpdate] Feeding worker: ${fdr.Callsign} | state=${fdr.State} | CFL=${fdr.CFL} RFL=${fdr.RFL} | waypoints=${fdr.RouteWaypoints?.length || 0}`);
     
     fdrCache.set(fdr.Callsign, fdr);
-    upsertAfnEntryFromFdr(fdr);
-    renderAfnWindow();
     
     conflictWorker.postMessage({
         type: 'updateFDR',
@@ -1003,12 +949,9 @@ function handleFDRUpdate(data) {
 }
 
 function handleFDRRemove(data) {
-    fdrCache.delete(data.Callsign);
-    afnCache.delete(data.Callsign);
-    if (afnSelectedCallsign === data.Callsign) afnSelectedCallsign = null;
-    renderAfnWindow();
-
     if (!conflictWorker) return;
+    
+    fdrCache.delete(data.Callsign);
     
     conflictWorker.postMessage({
         type: 'removeFDR',
