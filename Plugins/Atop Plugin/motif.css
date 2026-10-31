@@ -14,6 +14,12 @@
     font-display: swap;
 }
 
+@font-face {
+    font-family: 'EDST';
+    src: url('fonts/EDSTv302.ttf') format('truetype');
+    font-display: swap;
+}
+
 :root {
     /* Colors matched exactly to reference image */
     --motif-bg: #c0c0a0;              /* Tan/olive gray background */
@@ -28,7 +34,7 @@
     --motif-desktop-bg: #000000;      /* Black desktop */
     /* MEARTS webfont files currently map glyphs incorrectly in-browser.
        Keep declarations above for future fixes, but use a stable stack now. */
-    --motif-font: 'Terminus (TTF)', 'Courier New', monospace;
+    --motif-font: 'EDST', 'Terminus (TTF)', 'Courier New', monospace;
 }
 
 * {
@@ -70,61 +76,6 @@ body {
 .motif-connection-status.mock {
     background: var(--motif-warning);
     color: black;
-}
-
-/* Sector Queue Launcher — persistent button that toggles the Sector Queue
-   window. Colour reflects the highest-priority queued message: EM (red),
-   UR (yellow), otherwise the normal motif button colour. */
-.sq-launcher {
-    position: fixed;
-    top: 10px;
-    left: 10px;
-    z-index: 9999;
-    display: flex;
-    align-items: center;
-    gap: 6px;
-    padding: 4px 10px;
-    background: var(--motif-bg);
-    border: 2px solid;
-    border-color: var(--motif-light) var(--motif-dark) var(--motif-dark) var(--motif-light);
-    font-family: var(--motif-font);
-    font-weight: bold;
-    font-size: 16px;
-    cursor: pointer;
-    color: inherit;
-}
-
-.sq-launcher:active {
-    border-color: var(--motif-dark) var(--motif-light) var(--motif-light) var(--motif-dark);
-}
-
-.sq-launcher-count {
-    min-width: 18px;
-    padding: 0 4px;
-    text-align: center;
-    background: var(--motif-input-bg);
-    border: 1px solid var(--motif-dark);
-}
-
-.sq-launcher.sq-has-em {
-    background: #cc0000;
-    color: white;
-}
-
-.sq-launcher.sq-has-em .sq-launcher-count {
-    background: white;
-    color: #cc0000;
-    border-color: white;
-}
-
-.sq-launcher.sq-has-ur {
-    background: #ffcc00;
-    color: black;
-}
-
-.sq-launcher.sq-has-ur .sq-launcher-count {
-    background: white;
-    color: #806600;
 }
 
 /* Classic 3D Beveled Border */
@@ -892,6 +843,7 @@ body {
 }
 
 .sq-status-value {
+    font-family: var(--motif-font);
     font-size: 20px;
     font-weight: bold;
     padding: 4px 10px;
@@ -900,6 +852,12 @@ body {
     border: 2px solid;
     border-color: var(--motif-dark) var(--motif-light) var(--motif-light) var(--motif-dark);
     background: var(--motif-input-bg);
+    color: inherit;
+    cursor: pointer;
+}
+
+.sq-status-value:active {
+    border-color: var(--motif-light) var(--motif-dark) var(--motif-dark) var(--motif-light);
 }
 
 .sq-status-value.sq-value-alert {
@@ -1327,7 +1285,7 @@ body {
     --motif-active-title: #2f6f7a;
     --motif-inactive-title: #a7a79b;
     --motif-focus: #ffff55;
-    --motif-font: "Lucida Sans Typewriter", "Liberation Mono", "Courier New", monospace;
+    --motif-font: 'EDST', "Lucida Sans Typewriter", "Liberation Mono", "Courier New", monospace;
     --motif-title-font: "Helvetica", "Arial", sans-serif;
     --motif-title-active-top: #65a5b0;
     --motif-title-active-bottom: #2f6f7a;

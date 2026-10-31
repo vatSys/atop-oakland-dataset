@@ -10,15 +10,8 @@
     <!-- Connection Status -->
     <div class="motif-connection-status" id="connection-status">Disconnected</div>
 
-    <!-- Sector Queue Launcher — persistent button; count + colour reflect the highest
-         priority message currently queued (EM=red, UR=yellow, none=normal). -->
-    <button class="sq-launcher" id="sq-launcher-btn">
-        <span class="sq-launcher-label">SECTOR</span>
-        <span class="sq-launcher-count" id="sq-launcher-count">0</span>
-    </button>
-
     <!-- Sector Queue Window - ATOP Style per reference -->
-    <div class="motif-window active" id="sector-queue-window" style="left: 600px; top: 50px; width: 615px; height: 420px; display: none;">
+    <div class="motif-window active" id="sector-queue-window" style="left: 600px; top: 50px; width: 615px; height: 420px;">
         <div class="motif-titlebar">
             <span class="motif-title">CWP1 - default - SIMUL</span>
         </div>
@@ -31,7 +24,7 @@
             <span class="sq-menu-item"><u>L</u>ists</span>
             <span class="sq-menu-item">Sign</span>
             <span class="sq-menu-spacer"></span>
-            <span class="sq-faa-logo">FAA</span>
+            <span class="sq-faa-logo">vZOA</span>
         </div>
         
         <!-- Status Area -->
@@ -39,7 +32,7 @@
             <div class="sq-status-left">
                 <div class="sq-status-group">
                     <span class="sq-status-label">SECTOR</span>
-                    <span class="sq-status-value sq-value-alert">19</span>
+                    <button type="button" class="sq-status-value" id="sq-status-sector">0</button>
                 </div>
                 <div class="sq-status-group">
                     <span class="sq-status-label">COORD</span>

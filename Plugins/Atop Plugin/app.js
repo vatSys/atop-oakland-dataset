@@ -636,23 +636,22 @@ function renderSectorQueue() {
         list.appendChild(row);
     });
 
-    updateSectorQueueLauncher();
+    updateSectorStatusIndicator();
 }
 
-// Updates the persistent SECTOR launcher button: message count, and colour
+// Updates the in-window SECTOR status button: message count, and colour
 // reflecting the highest-priority message currently queued (EM > UR > normal).
-function updateSectorQueueLauncher() {
-    const btn = document.getElementById('sq-launcher-btn');
-    const countEl = document.getElementById('sq-launcher-count');
-    if (!btn || !countEl) return;
+function updateSectorStatusIndicator() {
+    const btn = document.getElementById('sq-status-sector');
+    if (!btn) return;
 
-    countEl.textContent = sectorQueue.length.toString();
+    btn.textContent = sectorQueue.length.toString();
 
     const hasEm = sectorQueue.some(q => q.priority === 'EM');
     const hasUr = sectorQueue.some(q => q.priority === 'UR');
 
-    btn.classList.toggle('sq-has-em', hasEm);
-    btn.classList.toggle('sq-has-ur', !hasEm && hasUr);
+    btn.classList.toggle('sq-value-alert', hasEm);
+    btn.classList.toggle('sq-value-warning', !hasEm && hasUr);
 }
 
 function selectQueueItem(id) {
@@ -667,15 +666,6 @@ function selectQueueItem(id) {
 }
 
 function initSectorQueueButtons() {
-    document.getElementById('sq-launcher-btn')?.addEventListener('click', () => {
-        const win = document.getElementById('sector-queue-window');
-        if (!win) return;
-
-        const isHidden = win.style.display === 'none';
-        win.style.display = isHidden ? '' : 'none';
-        if (isHidden) activateWindow(win);
-    });
-
     document.getElementById('sq-btn-delete')?.addEventListener('click', () => {
         if (!selectedQueueItemId) return;
         sectorQueue = sectorQueue.filter(q => q.id !== selectedQueueItemId);
@@ -796,24 +786,6 @@ function handleWorkerConflictResults(results) {
             ImminentCount: results.imminent?.length || 0,
             AdvisoryCount: results.advisory?.length || 0
         }));
-    }
-    
-    // Update conflict count display
-    updateConflictSummary(results);
-}
-
-function updateConflictSummary(results) {
-    const summaryEl = document.getElementById('conflict-summary');
-    if (summaryEl) {
-        const actual = results.actual?.length || 0;
-        const imminent = results.imminent?.length || 0;
-        const advisory = results.advisory?.length || 0;
-        
-        summaryEl.innerHTML = `
-            <span class="status-actual">ACT: ${actual}</span>
-            <span class="status-imminent">IMM: ${imminent}</span>
-            <span class="status-advisory">ADV: ${advisory}</span>
-        `;
     }
 }
 
